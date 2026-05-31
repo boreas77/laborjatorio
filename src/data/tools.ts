@@ -66,11 +66,11 @@ export const tools: Tool[] = [
     status: "uso-actual",
     updatedAt: "2026-05-30",
     intro:
-      "ChatGPT es una herramienta potente para profesores cuando se usa como compañero de pensamiento, no como piloto automático.",
+      "ChatGPT puede ser un compañero de pensamiento muy útil para profesores, siempre que no le entregues el volante como si fuera un oráculo con WiFi.",
     whatItDoes:
       "Ayuda a generar borradores, ordenar ideas, transformar contenidos, crear ejemplos, preparar actividades y analizar decisiones.",
     howIUseIt:
-      "Lo usaría para pasar de una idea en bruto a una estructura clara: una clase, una ficha, una secuencia, un guion o una lista de tareas.",
+      "Lo uso para pasar de una idea con forma de ovillo a una estructura clara: una clase, una ficha, una secuencia, un guion o una lista de tareas.",
     teacherUseCases: [
       "Crear una primera versión de una actividad comunicativa.",
       "Adaptar un texto a distintos niveles.",
@@ -78,7 +78,7 @@ export const tools: Tool[] = [
       "Convertir notas sueltas en un esquema de clase."
     ],
     honestVerdict:
-      "Merece la pena si tienes criterio y revisas. Si esperas que piense por ti, acabará produciendo materiales correctos pero sin alma."
+      "Merece la pena si tienes criterio y revisas. Si esperas que piense por ti, te devolverá materiales correctos, limpios y un poco muertos por dentro."
   },
   {
     name: "Canva",
@@ -112,7 +112,7 @@ export const tools: Tool[] = [
     status: "uso-actual",
     updatedAt: "2026-05-30",
     intro:
-      "Canva es una buena puerta de entrada para crear materiales visuales sin convertir cada ficha en una sesión de diseño.",
+      "Canva es una buena puerta de entrada para crear materiales visuales sin convertir cada ficha en una peregrinación al monte del diseño.",
     whatItDoes:
       "Permite crear presentaciones, fichas, publicaciones, portadas, miniaturas, PDFs y recursos visuales a partir de plantillas.",
     howIUseIt:
@@ -124,7 +124,7 @@ export const tools: Tool[] = [
       "Hacer miniaturas o imágenes para contenidos educativos."
     ],
     honestVerdict:
-      "Muy útil para profes. La trampa es dejar que la plantilla mande más que la actividad. Primero va la idea didáctica, luego el diseño."
+      "Muy útil para profes. La trampa es dejar que la plantilla mande más que la actividad. Primero va la idea didáctica; luego ya le ponemos zapatos bonitos."
   },
   {
     name: "Notion",
@@ -161,7 +161,7 @@ export const tools: Tool[] = [
     status: "probada",
     updatedAt: "2026-05-30",
     intro:
-      "Notion puede ser un buen taller interno para profesores que acumulan ideas, materiales y proyectos en demasiados sitios.",
+      "Notion puede ser un buen taller interno para profesores que acumulan ideas, materiales y proyectos en demasiados rincones digitales.",
     whatItDoes:
       "Combina documentos, bases de datos, listas, calendarios y páginas enlazadas en un espacio editable.",
     howIUseIt:
@@ -173,6 +173,6 @@ export const tools: Tool[] = [
       "Documentar procesos repetibles del negocio educativo."
     ],
     honestVerdict:
-      "Tiene mucho potencial si se usa con sobriedad. Si empiezas a diseñar el sistema perfecto, pierdes justo el tiempo que querías ahorrar."
+      "Tiene mucho potencial si se usa con sobriedad. Si empiezas a diseñar el sistema perfecto, acabas construyendo una catedral para guardar tres notas y una lista de tareas."
   }
 ];

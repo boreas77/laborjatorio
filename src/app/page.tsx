@@ -16,7 +16,10 @@ export default function HomePage() {
         <div className="home-hero__image" aria-hidden="true" />
         <div className="home-intro home-intro--compact">
           <h1>Has entrado al laborjatorio</h1>
-          <p>Un espacio para profes que enseñan online y no saben qué herramientas utilizar.</p>
+          <p>
+            Un espacio para profes que enseñan online y quieren elegir herramientas
+            sin perder media vida probando botones.
+          </p>
         </div>
       </section>
 
@@ -27,7 +30,7 @@ export default function HomePage() {
             <input
               id="home-search-input"
               name="q"
-              placeholder="Ej. subtítulos, IA, podcast, materiales..."
+              placeholder="Ej. subtítulos, IA, podcast, materiales, caos administrativo..."
               type="search"
             />
             <button type="submit">Buscar</button>
@@ -56,7 +59,7 @@ export default function HomePage() {
       <section className="home-about">
         <div className="home-about__copy">
           <p className="eyebrow">Quién está detrás</p>
-          <h2>Esto no lo escribe un comparador de herramientas</h2>
+          <h2>Esto no lo escribe un comparador con bata de cartón</h2>
           <p>
             ¿Eres más analógico que un botijo de Badajoz? ¿O simplemente estás
             cansado de perder tiempo probando herramientas que no terminan de encajar
@@ -71,8 +74,8 @@ export default function HomePage() {
           </p>
           <p>
             La tecnología aquí no viene con bata blanca y cara de póster corporativo.
-            Viene con criterio docente, pruebas reales y la pregunta que importa: ¿esto
-            ayuda a enseñar mejor o solo hace ruido?
+            Viene con criterio docente, pruebas reales y una pregunta bastante poco
+            glamourosa: ¿esto ayuda a enseñar mejor o solo hace ruido con luces?
           </p>
           <Link className="button button--primary" href="/sobre">
             Sobre mí

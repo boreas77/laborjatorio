@@ -9,13 +9,13 @@ export const categories: Category[] = [
     name: "IA y agentes",
     slug: "ia-y-agentes",
     description:
-      "Herramientas para pensar, escribir, crear materiales, automatizar decisiones y construir asistentes útiles."
+      "Herramientas para pensar mejor, escribir con menos barro mental y construir asistentes que no den vergüenza ajena."
   },
   {
     name: "Creación de materiales",
     slug: "creacion-de-materiales",
     description:
-      "Recursos para convertir ideas, textos, imágenes y actividades en materiales listos para clase."
+      "Recursos para convertir ideas, textos e imágenes en materiales que puedan entrar en clase sin pedir disculpas."
   },
   {
     name: "Diseño e imagen",
@@ -27,7 +27,7 @@ export const categories: Category[] = [
     name: "Audio y vídeo",
     slug: "audio-y-video",
     description:
-      "Edición, grabación, subtítulos y contenido multimedia para profesores que crean contenido."
+      "Edición, grabación, subtítulos y contenido multimedia para profes que no quieren pelearse con cada píxel."
   },
   {
     name: "Equipo físico",
@@ -39,7 +39,7 @@ export const categories: Category[] = [
     name: "Organización",
     slug: "organizacion",
     description:
-      "Sistemas para ordenar ideas, recursos, alumnos, proyectos, publicaciones y procesos."
+      "Sistemas para que ideas, recursos, alumnos y proyectos no vivan todos en una mochila incendiada."
   },
   {
     name: "Automatización",

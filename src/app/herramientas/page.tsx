@@ -25,8 +25,9 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
         <p className="eyebrow">Directorio</p>
         <h1>Herramientas para profesores</h1>
         <p>
-          Busca por nombre, categoría o problema. La idea no es acumular software,
-          sino encontrar herramientas que ayuden de verdad a trabajar mejor.
+          Busca por nombre, categoría o problema. La idea no es acumular software
+          como quien colecciona cables que nunca usa, sino encontrar herramientas que
+          ayuden de verdad a trabajar mejor.
         </p>
       </div>
       <ToolFilters tools={tools} categories={categories} initialQuery={initialQuery} />
