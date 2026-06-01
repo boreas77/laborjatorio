@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { BrandName } from "@/components/BrandName";
-import { categories } from "@/data/categories";
 
 const searchSuggestions = [
   "Crear materiales",
@@ -8,6 +7,37 @@ const searchSuggestions = [
   "Editar vídeo",
   "Organizar proyectos",
   "Vender cursos"
+];
+
+const whatYouWillFind = [
+  "Las herramientas que uso ahora mismo para crear cursos, clases, materiales y contenido sin montar una feria de pestañas.",
+  "Mis opciones para grabar, editar vídeos, preparar podcasts, organizar proyectos y automatizar tareas repetitivas.",
+  "Cosas muy poco glamurosas pero importantes: desde el equipo con el que trabajo hasta la silla en la que me siento.",
+  "Notas honestas sobre por qué uso cada cosa, cuándo me compensa pagar y cuándo creo que puedes pasar sin ella.",
+  "Cambios cuando cambie mi flujo de trabajo: si dejo de usar algo, intentaré contar qué lo ha sustituido y por qué."
+];
+
+const faqs = [
+  {
+    question: "¿Cómo sé que una herramienta me va a funcionar?",
+    answer:
+      "No lo sabes. Y yo tampoco puedo prometerlo. Te cuento lo que uso a día de hoy porque, para mi caso, es la mejor opción que he encontrado. Ojalá también lo sea para el tuyo. Si no, investigas, pruebas otra y me la recomiendas."
+  },
+  {
+    question: "¿Esto es una lista de herramientas con ranking y medallitas?",
+    answer:
+      "No va de coronar a la herramienta definitiva. Va de explicar qué uso, para qué lo uso y qué problema me resuelve en una semana normal de trabajo."
+  },
+  {
+    question: "¿Recomiendas herramientas que no usas?",
+    answer:
+      "La idea es que no. Puede que mencione alternativas, pero el corazón del Laborjatorio son las herramientas que han pasado por mi mesa, mis clases, mis cursos o mis pequeñas crisis de calendario."
+  },
+  {
+    question: "¿Hay enlaces de afiliado?",
+    answer:
+      "Puede haberlos. Si comprobara que una herramienta no merece la pena, no entraría aquí por mucho enlace bonito que tuviera. El criterio editorial va antes que la comisión."
+  }
 ];
 
 export default function HomePage() {
@@ -48,44 +78,40 @@ export default function HomePage() {
         </form>
       </section>
 
-      <section className="home-categories" aria-label="Categorías de herramientas">
-        <div className="home-categories__grid">
-          {categories.map((category) => (
-            <Link className="home-category" href={`/categorias/${category.slug}`} key={category.slug}>
-              <h2>{category.name}</h2>
-              <p>{category.description}</p>
-            </Link>
-          ))}
+      <section className="home-intent" aria-labelledby="home-intent-title">
+        <div className="home-intent__inner">
+          <p className="eyebrow">Lo que vas a encontrar</p>
+          <h2 id="home-intent-title">No te voy a recomendar cualquier herramienta</h2>
+          <p>
+            Te voy a enseñar las que uso yo: las que me ayudan a crear, vender,
+            organizar, grabar, editar y sentarme a trabajar sin sentir que el software
+            me está mirando por encima del hombro.
+          </p>
+          <ul>
+            {whatYouWillFind.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <Link className="button button--primary" href="/herramientas">
+            Ver herramientas
+          </Link>
         </div>
       </section>
 
-      <section className="home-about">
-        <div className="home-about__copy">
-          <p className="eyebrow">Quién está detrás</p>
-          <h2>Esto no lo escribe un comparador con bata de cartón</h2>
-          <p>
-            ¿Eres más analógico que un botijo de Badajoz? ¿O simplemente estás
-            cansado de perder tiempo probando herramientas que no terminan de encajar
-            en tu forma de trabajar?
-          </p>
-          <p>
-            Aquí encontrarás las herramientas que utilizo de verdad en mi negocio.
-            Las que me ayudan a crear contenido, gestionar estudiantes, grabar podcasts,
-            organizar proyectos y ahorrar tiempo. Sin listas infinitas ni recomendaciones
-            patrocinadas. Si algún día dejo de usar una, te explicaré por qué y qué la
-            ha sustituido.
-          </p>
-          <p>
-            La tecnología aquí no viene con bata blanca y cara de póster corporativo.
-            Viene con criterio docente, pruebas reales y una pregunta bastante poco
-            glamourosa: ¿esto ayuda a enseñar mejor o solo hace ruido con luces?
-          </p>
-          <Link className="button button--primary" href="/sobre">
-            Sobre mí
-          </Link>
-        </div>
-        <div className="home-about__portrait" aria-label="Espacio para foto de Borja">
-          <span>B</span>
+      <section className="home-faq" aria-labelledby="home-faq-title">
+        <div className="home-faq__inner">
+          <div className="home-faq__header">
+            <p className="eyebrow">Preguntas provisionales</p>
+            <h2 id="home-faq-title">Antes de que esto se llene de tornillos</h2>
+          </div>
+          <div className="home-faq__list">
+            {faqs.map((faq) => (
+              <article className="home-faq__item" key={faq.question}>
+                <h3>{faq.question}</h3>
+                <p>{faq.answer}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </>
