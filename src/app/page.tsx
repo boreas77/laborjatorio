@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandName } from "@/components/BrandName";
 import { categories } from "@/data/categories";
 
 const searchSuggestions = [
@@ -15,7 +16,9 @@ export default function HomePage() {
       <section className="home-hero">
         <div className="home-hero__image" aria-hidden="true" />
         <div className="home-intro home-intro--compact">
-          <h1>Has entrado al laborjatorio</h1>
+          <h1>
+            Has entrado al <BrandName />
+          </h1>
           <p>
             Un espacio para profes que enseñan online y quieren elegir herramientas
             sin perder media vida probando botones.

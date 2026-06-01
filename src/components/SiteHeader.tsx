@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { siteConfig } from "@/data/site";
+import { BrandName } from "@/components/BrandName";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="site-header__brand" href="/">
-        {siteConfig.name}
+        <BrandName casing="upper" />
       </Link>
       <nav aria-label="Navegacion principal">
         <Link href="/herramientas">Herramientas</Link>
