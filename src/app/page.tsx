@@ -10,33 +10,45 @@ const searchSuggestions = [
 ];
 
 const whatYouWillFind = [
-  "Las herramientas que uso ahora mismo para crear cursos, clases, materiales y contenido sin montar una feria de pestañas.",
-  "Mis opciones para grabar, editar vídeos, preparar podcasts, organizar proyectos y automatizar tareas repetitivas.",
-  "Cosas muy poco glamurosas pero importantes: desde el equipo con el que trabajo hasta la silla en la que me siento.",
-  "Notas honestas sobre por qué uso cada cosa, cuándo me compensa pagar y cuándo creo que puedes pasar sin ella.",
-  "Cambios cuando cambie mi flujo de trabajo: si dejo de usar algo, intentaré contar qué lo ha sustituido y por qué."
+  "— Las herramientas con las que creo cursos, materiales y contenido sin montar una feria de pestañas abiertas.",
+  "— Lo que uso para grabar, editar vídeo, preparar podcasts y organizar proyectos sin que el software me mire por encima del hombro.",
+  "— Cosas poco glamurosas pero importantes: desde el equipo físico hasta cuándo compensa pagar y cuándo no.",
+  "— Y si dejo de usar algo, intento contar qué lo ha sustituido y por qué. Esto no es una lista congelada."
 ];
 
 const faqs = [
   {
-    question: "¿Cómo sé que una herramienta me va a funcionar?",
-    answer:
-      "No lo sabes. Y yo tampoco puedo prometerlo. Te cuento lo que uso a día de hoy porque, para mi caso, es la mejor opción que he encontrado. Ojalá también lo sea para el tuyo. Si no, investigas, pruebas otra y me la recomiendas."
-  },
-  {
-    question: "¿Esto es una lista de herramientas con ranking y medallitas?",
-    answer:
-      "No va de coronar a la herramienta definitiva. Va de explicar qué uso, para qué lo uso y qué problema me resuelve en una semana normal de trabajo."
-  },
-  {
-    question: "¿Recomiendas herramientas que no usas?",
-    answer:
-      "La idea es que no. Puede que mencione alternativas, pero el corazón del Laborjatorio son las herramientas que han pasado por mi mesa, mis clases, mis cursos o mis pequeñas crisis de calendario."
-  },
-  {
     question: "¿Hay enlaces de afiliado?",
-    answer:
-      "Puede haberlos. Si comprobara que una herramienta no merece la pena, no entraría aquí por mucho enlace bonito que tuviera. El criterio editorial va antes que la comisión."
+    answer: [
+      "Sí, puede haberlos. Si compras desde uno de esos enlaces, yo recibo una comisión pequeña. A ti te cuesta exactamente lo mismo.",
+      "Lo que no cambia por eso: qué herramientas aparecen aquí. Primero uso una herramienta. Luego decido si merece estar en el Laborjatorio. Si tiene afiliado, bien. Si no lo tiene, también.",
+      "No todas las herramientas tienen enlace de afiliado. Y hay herramientas sin afiliado que recomendaría antes que otras que sí lo tienen. El orden es ese: primero el criterio, luego la comisión.",
+      "Los enlaces ayudan a sostener el proyecto. Pero no determinan el contenido."
+    ]
+  },
+  {
+    question: "¿Qué tipo de herramientas recomiendas?",
+    answer: [
+      "En realidad no recomiendo herramientas en abstracto. Comparto las que uso.",
+      "Eso puede incluir inteligencia artificial, edición de vídeo y audio, diseño, automatización, email marketing, creación de materiales didácticos o hardware: pantallas, micrófonos, sillas, lo que sea.",
+      "Si forma parte de mi trabajo y considero que merece la pena, puede acabar apareciendo aquí. No hay una lista cerrada de categorías. Hay un criterio: si lo uso y me sirve, tiene un sitio."
+    ]
+  },
+  {
+    question: "¿Cómo encuentro una herramienta concreta?",
+    answer: [
+      "Puedes buscar por nombre directamente en el buscador, o navegar por categorías si todavía no tienes una en mente.",
+      "Las categorías también sirven para descubrir herramientas que quizá no conocías pero que hacen algo parecido a lo que estás buscando. La idea es que encontrar lo que necesitas no requiera más de dos clics."
+    ]
+  },
+  {
+    question: "¿Seguro que estas herramientas me van a funcionar?",
+    answer: [
+      "No.",
+      "Cada persona trabaja de una forma diferente. Lo que me funciona a mí puede no funcionarte a ti, y lo que yo descarté igual es exactamente lo que tú necesitas.",
+      "Muchas de las herramientas que uso hoy las descubrí después de probar otras que no me convencieron. Ese proceso de ensayo y error es inevitable. Lo que el Laborjatorio puede hacer es ahorrarte parte del camino: saber qué usa alguien que trabaja de una forma parecida a la tuya, por qué lo usa y qué limitaciones tiene.",
+      "Certezas, ninguna. Referencias basadas en experiencia real, esas sí."
+    ]
   }
 ];
 
@@ -49,9 +61,16 @@ export default function HomePage() {
           <h1>
             Has entrado al <BrandName />
           </h1>
+          <p>Un directorio de herramientas para profesores de idiomas.</p>
           <p>
-            Un espacio para profes que enseñan online y quieren elegir herramientas
-            sin perder media vida probando botones.
+            No para todos los profesores de idiomas. Para los que ya tienen suficiente
+            con preparar clases, grabar vídeos, responder correos y encontrar el cable
+            del micro.
+          </p>
+          <p>
+            Aquí no hay top 10 ni estrellas ni «soluciones integrales». Hay criterio,
+            experiencia y honestidad. Lo que uso, para qué lo uso y cuándo no merece
+            la pena pagar.
           </p>
         </div>
       </section>
@@ -81,19 +100,21 @@ export default function HomePage() {
       <section className="home-intent" aria-labelledby="home-intent-title">
         <div className="home-intent__inner">
           <p className="eyebrow">Lo que vas a encontrar</p>
-          <h2 id="home-intent-title">No te voy a recomendar cualquier herramienta</h2>
+          <h2 id="home-intent-title">
+            No vengo a decirte cuáles son las mejores herramientas del universo.
+          </h2>
           <p>
-            Te voy a enseñar las que uso yo: las que me ayudan a crear, vender,
-            organizar, grabar, editar y sentarme a trabajar sin sentir que el software
-            me está mirando por encima del hombro.
+            Vengo a enseñarte las que uso yo, para qué las uso y qué hostias me han
+            evitado —o provocado— por el camino.
           </p>
+          <p>Eso incluye:</p>
           <ul>
             {whatYouWillFind.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
           <Link className="button button--primary" href="/herramientas">
-            Ver herramientas
+            Ver herramientas →
           </Link>
         </div>
       </section>
@@ -101,14 +122,15 @@ export default function HomePage() {
       <section className="home-faq" aria-labelledby="home-faq-title">
         <div className="home-faq__inner">
           <div className="home-faq__header">
-            <p className="eyebrow">Preguntas provisionales</p>
             <h2 id="home-faq-title">Antes de que esto se llene de tornillos</h2>
           </div>
           <div className="home-faq__list">
             {faqs.map((faq) => (
               <article className="home-faq__item" key={faq.question}>
                 <h3>{faq.question}</h3>
-                <p>{faq.answer}</p>
+                {faq.answer.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </article>
             ))}
           </div>

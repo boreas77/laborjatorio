@@ -326,6 +326,10 @@ main {
   margin: 0;
 }
 
+.home-faq__item p + p {
+  margin-top: 12px;
+}
+
 .hero--minimal {
   min-height: calc(100vh - 67px);
 }

@@ -6,5 +6,5 @@ export const siteConfig = {
   author: "Borja",
   newsletterUrl: "",
   affiliateDisclosure:
-    "Algunos enlaces pueden ser de afiliado. Si compras desde ellos, puedo recibir una comisión sin coste adicional para ti. Solo recomiendo herramientas que considero útiles o interesantes para profesores."
+    "Algunos enlaces son de afiliado. Si compras desde ellos, puedo recibir una comisión sin coste adicional para ti. Solo recomiendo herramientas que considero útiles o interesantes para profesores. Duna también lo agradece, aunque ella no entiende de fiscalidad."
 };
