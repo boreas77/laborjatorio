@@ -97,6 +97,9 @@ Archivos estrategicos actuales:
 - Se actualizo `docs/Herramientas.md` para incluir LastPass como herramienta importante con etiquetas de productividad, seguridad y organizacion.
 - Tras revisar la primera publicacion, se simplifico la ficha de LastPass: una sola columna, sin subtitulo repetido bajo el H1, sin bloque lateral de veredicto, texto mas oscuro y alternativas sin descripciones inventadas.
 - Se anadio enlace oficial a LastPass en la primera mencion y un boton rojo de acceso dentro del cuerpo. Borja comprobo Impact, pero LastPass no acepto la solicitud de afiliacion, asi que el enlace queda como enlace oficial no afiliado.
+- Se detecto un fallo en el flujo del bot: al responder `PASAR A CLOD` despues de varias ampliaciones, la ruta solo veia el ultimo mensaje y generaba un paquete sin la informacion acumulada.
+- Se corrigio el bot para guardar memoria temporal por chat: cada nota o audio se suma al contexto de la herramienta, `PASAR A CLAUDE` y `PASAR A CLOD` generan el paquete con todo lo acumulado, `AMPLIAR` pide mas informacion y `DESCARTAR` borra la conversacion.
+- Limitacion asumida del MVP: esa memoria vive en la funcion de Vercel y puede perderse si la funcion se reinicia o pasa demasiado tiempo. Si el flujo se vuelve central, la siguiente mejora debe ser persistir esa memoria en Vercel KV, Redis, una base de datos pequena o GitHub.
 
 ### 2026-06-02
 

@@ -8,6 +8,7 @@ El MVP esta disenado en modo solo borrador:
 
 - Recibe mensajes de Telegram.
 - Transcribe audios.
+- Acumula las ampliaciones de una misma conversacion.
 - Lee el contexto editorial del repositorio.
 - Genera un paquete editorial Markdown revisable.
 - Separa hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles y advertencias.
@@ -37,6 +38,26 @@ La arquitectura recomendada es:
    - opciones para ampliar, pasar a Claude o descartar.
 
 No hay servidor dedicado, base de datos ni panel de administracion.
+
+## Memoria de conversacion del MVP
+
+El bot guarda temporalmente las notas de cada chat para que Borja pueda construir una ficha por partes:
+
+1. Borja envia una primera nota sobre una herramienta.
+2. El bot genera un primer paquete editorial y hace preguntas.
+3. Borja responde con mas informacion en texto o audio.
+4. El bot suma esa ampliacion al contexto anterior.
+5. Cuando Borja escribe `PASAR A CLAUDE` o `PASAR A CLOD`, el bot genera el paquete usando todo lo acumulado.
+
+Comandos actuales:
+
+- `AMPLIAR`: el bot espera mas informacion y no llama a OpenAI.
+- `PASAR A CLAUDE`: genera el paquete editorial final con todo el contexto acumulado.
+- `PASAR A CLOD`: hace lo mismo que `PASAR A CLAUDE`, para aceptar la forma rapida dictada o escrita.
+- `DESCARTAR`: borra el contexto acumulado y permite empezar otra herramienta.
+- `/start`: reinicia la conversacion y borra el contexto acumulado.
+
+Limitacion importante: esta memoria es temporal y vive dentro de la funcion de Vercel. Para el MVP es suficiente si la conversacion se hace seguida. Si Vercel reinicia la funcion o pasa demasiado tiempo, el bot puede perder el contexto acumulado. Si ocurre, basta con reenviar un resumen de la herramienta. La version robusta futura deberia guardar esta memoria en un almacenamiento persistente como Vercel KV, Redis, una base de datos pequena o GitHub.
 
 ## Archivos que consulta
 
@@ -152,7 +173,7 @@ Quiero una ficha sobre Tally. Lo uso para crear formularios sencillos para profe
 Resultado esperado:
 
 1. El bot responde que ha recibido el mensaje.
-2. Despues devuelve un borrador Markdown.
+2. Despues devuelve un paquete editorial Markdown.
 3. El borrador incluye:
    - hechos confirmados.
    - respuestas de Borja.
@@ -166,12 +187,21 @@ Resultado esperado:
 
 Tambien puedes probar con una nota de voz diciendo lo mismo.
 
+Para probar la memoria:
+
+1. Envia una nota inicial sobre una herramienta.
+2. Responde a una de las preguntas del bot con otra nota.
+3. Envia otra ampliacion si hace falta.
+4. Escribe `PASAR A CLOD`.
+5. Comprueba que el paquete incluye la informacion de todas las notas anteriores, no solo la ultima frase.
+
 ## Que hace y que no hace
 
 Hace:
 
 - convierte notas brutas en paquetes editoriales utiles para Claude.
 - transcribe audios.
+- acumula ampliaciones de una misma herramienta durante la conversacion.
 - usa el contexto editorial del proyecto.
 - limita el bot a tu `TELEGRAM_CHAT_ID`.
 - protege el webhook con `TELEGRAM_WEBHOOK_SECRET`.

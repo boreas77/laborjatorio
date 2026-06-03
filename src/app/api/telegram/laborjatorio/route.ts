@@ -28,6 +28,13 @@ type TelegramUpdate = {
   message?: TelegramMessage;
 };
 
+type SessionState = {
+  notes: string[];
+  updatedAt: number;
+};
+
+type BotCommand = "start" | "ampliar" | "pasar-a-claude" | "descartar" | null;
+
 const CONTEXT_FILES = [
   "docs/fundamentos-laborjatorio.md",
   "docs/BORJISMO_UNIVERSAL.md",
@@ -38,6 +45,10 @@ const CONTEXT_FILES = [
 
 const MAX_TELEGRAM_CHARS = 3800;
 const MAX_CONTEXT_CHARS_PER_FILE = 18000;
+const SESSION_TTL_MS = 1000 * 60 * 60 * 8;
+const MAX_SESSION_NOTES = 24;
+const MAX_SESSION_CHARS = 28000;
+const sessionStore = new Map<string, SessionState>();
 
 export async function POST(request: NextRequest) {
   try {
@@ -61,11 +72,13 @@ export async function POST(request: NextRequest) {
     }
 
     const rawNotes = await extractRawNotes(message);
+    const command = detectCommand(rawNotes);
 
-    if (rawNotes.trim().startsWith("/start")) {
+    if (command === "start") {
+      clearSession(message.chat.id);
       await sendTelegramMessage(
         message.chat.id,
-        "Laborjatorio listo. Enviame una nota de texto o audio sobre una herramienta y te devolvere un borrador revisable."
+        "Laborjatorio listo. Enviame una nota de texto o audio sobre una herramienta y acumulare el contexto hasta que me digas PASAR A CLAUDE."
       );
 
       return NextResponse.json({ ok: true });
@@ -80,10 +93,49 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    await sendTelegramMessage(message.chat.id, "Recibido. Estoy preparando el borrador del Laborjatorio.");
+    if (command === "descartar") {
+      clearSession(message.chat.id);
+      await sendTelegramMessage(
+        message.chat.id,
+        "Descartado. He borrado el contexto acumulado de esta herramienta. Cuando quieras, empezamos otra."
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
+    if (command === "ampliar") {
+      await sendTelegramMessage(
+        message.chat.id,
+        "Perfecto. Enviame la ampliacion en texto o audio y la sumare al contexto de esta herramienta."
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
+    if (command !== "pasar-a-claude") {
+      appendSessionNote(message.chat.id, rawNotes);
+    }
+
+    const accumulatedNotes = getSessionText(message.chat.id);
+
+    if (!accumulatedNotes) {
+      await sendTelegramMessage(
+        message.chat.id,
+        "No tengo contexto acumulado para pasar a Claude. Enviame primero una nota sobre la herramienta o reenvia un resumen."
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
+    const statusMessage =
+      command === "pasar-a-claude"
+        ? "Recibido. Estoy preparando el paquete editorial con todo lo acumulado."
+        : "Recibido. He guardado esta nota y estoy regenerando el paquete editorial.";
+
+    await sendTelegramMessage(message.chat.id, statusMessage);
 
     const context = await loadLaborjatorioContext();
-    const draft = await generateLaborjatorioDraft(rawNotes, context);
+    const draft = await generateLaborjatorioDraft(accumulatedNotes, context);
     const response = formatTelegramDraftResponse(draft);
 
     await sendLongTelegramMessage(message.chat.id, response);
@@ -146,6 +198,103 @@ async function extractRawNotes(message: TelegramMessage) {
   }
 
   return transcribeTelegramAudio(fileId);
+}
+
+function detectCommand(rawNotes: string): BotCommand {
+  const normalizedText = normalizeCommandText(rawNotes);
+
+  if (normalizedText.startsWith("/START")) {
+    return "start";
+  }
+
+  if (normalizedText === "AMPLIAR") {
+    return "ampliar";
+  }
+
+  if (
+    normalizedText === "PASAR A CLAUDE" ||
+    normalizedText === "PASAR A CLOD" ||
+    normalizedText === "PASAR A CLOUD" ||
+    normalizedText === "PASAR A CLOD." ||
+    normalizedText === "PASAR A CLAUDE."
+  ) {
+    return "pasar-a-claude";
+  }
+
+  if (normalizedText === "DESCARTAR") {
+    return "descartar";
+  }
+
+  return null;
+}
+
+function normalizeCommandText(text: string) {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toUpperCase();
+}
+
+function appendSessionNote(chatId: number, note: string) {
+  const session = getChatSession(chatId);
+  session.notes.push(note.trim());
+  session.updatedAt = Date.now();
+
+  while (session.notes.length > MAX_SESSION_NOTES) {
+    session.notes.shift();
+  }
+
+  while (session.notes.join("\n\n").length > MAX_SESSION_CHARS && session.notes.length > 1) {
+    session.notes.shift();
+  }
+}
+
+function getSessionText(chatId: number) {
+  const session = getExistingChatSession(chatId);
+
+  if (!session || session.notes.length === 0) {
+    return "";
+  }
+
+  return session.notes
+    .map((note, index) => `Nota ${index + 1} de Borja:\n${note}`)
+    .join("\n\n---\n\n");
+}
+
+function getChatSession(chatId: number) {
+  cleanupExpiredSessions();
+
+  const key = String(chatId);
+  const currentSession = sessionStore.get(key);
+
+  if (currentSession) {
+    return currentSession;
+  }
+
+  const session = { notes: [], updatedAt: Date.now() };
+  sessionStore.set(key, session);
+  return session;
+}
+
+function getExistingChatSession(chatId: number) {
+  cleanupExpiredSessions();
+  return sessionStore.get(String(chatId));
+}
+
+function clearSession(chatId: number) {
+  sessionStore.delete(String(chatId));
+}
+
+function cleanupExpiredSessions() {
+  const now = Date.now();
+
+  for (const [key, session] of sessionStore.entries()) {
+    if (now - session.updatedAt > SESSION_TTL_MS) {
+      sessionStore.delete(key);
+    }
+  }
 }
 
 function getAudioFileId(message: TelegramMessage) {
