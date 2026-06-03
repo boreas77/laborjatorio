@@ -61,6 +61,11 @@ export default function HomePage() {
           <h1>
             Has entrado al <BrandName />
           </h1>
+        </div>
+      </section>
+
+      <section className="home-lede" aria-label="Introducción al Laborjatorio">
+        <div className="home-lede__inner">
           <p>
             Aquí documento las herramientas que uso para <strong>enseñar español, crear
             contenido y gestionar mi negocio online</strong>. No las mejores del mercado

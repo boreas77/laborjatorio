@@ -97,7 +97,6 @@ main {
 
 .home-hero {
   background: #ebe7df;
-  padding-bottom: 88px;
   position: relative;
 }
 
@@ -107,7 +106,7 @@ main {
     url("/images/laborjatorio-hero-lab.png");
   background-position: center 44%;
   background-size: cover;
-  min-height: 480px;
+  min-height: 440px;
 }
 
 .home-intro {
@@ -121,15 +120,14 @@ main {
   padding: clamp(24px, 4vw, 42px);
   position: absolute;
   text-align: center;
-  top: 72px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: min(calc(100% - 36px), 720px);
 }
 
 .home-intro--compact {
   max-width: 620px;
   padding: clamp(20px, 3vw, 34px);
-  top: 108px;
   width: min(calc(100% - 36px), 620px);
 }
 
@@ -142,7 +140,7 @@ main {
 
 .home-intro--compact h1 {
   font-size: clamp(2rem, 5vw, 3.8rem);
-  margin-bottom: 14px;
+  margin-bottom: 0;
 }
 
 .home-intro--compact p {
@@ -157,6 +155,29 @@ main {
 }
 
 .home-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.home-lede {
+  background: #ebe7df;
+  padding: clamp(28px, 4vw, 44px) clamp(18px, 5vw, 72px) clamp(20px, 3vw, 28px);
+}
+
+.home-lede__inner {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.home-lede__inner p {
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.55vw, 1.22rem);
+  line-height: 1.62;
+  margin: 0 auto 14px;
+  max-width: 860px;
+  text-align: center;
+}
+
+.home-lede__inner p:last-child {
   margin-bottom: 0;
 }
 
@@ -1009,29 +1030,41 @@ main {
   }
 
   .home-hero {
-    padding-bottom: 46px;
+    padding-bottom: 0;
   }
 
   .home-hero__image {
-    min-height: 260px;
+    min-height: 320px;
   }
 
   .home-intro {
-    border-radius: 0;
-    box-shadow: none;
-    left: auto;
-    margin: 0;
-    position: relative;
-    text-align: left;
-    top: auto;
-    transform: none;
-    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 16px 44px rgb(28 26 23 / 18%);
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(100% - 28px), 620px);
   }
 
   .home-intro--compact {
-    max-width: none;
-    top: auto;
-    width: 100%;
+    max-width: 620px;
+    padding: 18px 14px;
+    width: min(calc(100% - 28px), 620px);
+  }
+
+  .home-intro--compact h1 {
+    font-size: clamp(1.8rem, 8.6vw, 2.35rem);
+  }
+
+  .home-lede {
+    padding-top: 30px;
+  }
+
+  .home-lede__inner p {
+    font-size: 1.05rem;
+    text-align: left;
   }
 
   .home-intent {
