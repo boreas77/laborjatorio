@@ -91,6 +91,10 @@ Archivos estrategicos actuales:
 - Nueva regla central del bot: no inventar experiencia, no rellenar huecos y no convertir una nota breve en ficha final.
 - Se decidio que el bot no debe generar el articulo final. Debe generar un "paquete editorial para Claude" con hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles, tono deseado, estructura esperada y advertencias sobre no inventar experiencia.
 - Nuevo flujo editorial: Telegram prepara el paquete; Borja lo pasa a Claude; cuando Borja pegue en Codex el articulo final de Claude, Codex lo convierte en ficha web, actualiza archivos necesarios y prepara el commit.
+- Se recibio el articulo final de Claude para LastPass y se convirtio en ficha web dentro del sistema de herramientas.
+- LastPass se anadio a `src/data/tools.ts` con bloques editoriales ricos: aviso de brecha de 2022, metricas reales, ventajas/inconvenientes, precio, alternativas y veredicto honesto.
+- Se amplio la plantilla de `src/app/herramientas/[slug]/page.tsx` para mostrar campos opcionales de fichas ricas sin romper las fichas antiguas.
+- Se actualizo `docs/Herramientas.md` para incluir LastPass como herramienta importante con etiquetas de productividad, seguridad y organizacion.
 
 ### 2026-06-02
 

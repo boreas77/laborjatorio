@@ -42,6 +42,12 @@ export const categories: Category[] = [
       "Sistemas para que ideas, recursos, alumnos y proyectos no vivan todos en una mochila incendiada."
   },
   {
+    name: "Productividad",
+    slug: "productividad",
+    description:
+      "Herramientas para trabajar con menos fricción, menos caos y menos contraseñas apuntadas donde no toca."
+  },
+  {
     name: "Automatización",
     slug: "automatizacion",
     description:

@@ -1,10 +1,35 @@
 export type Pricing = "gratis" | "freemium" | "pago" | "pago-unico" | "suscripcion";
 export type Difficulty = "facil" | "media" | "alta";
-export type ToolStatus = "uso-actual" | "probada" | "pendiente" | "descartada";
+export type ToolStatus =
+  | "uso-actual"
+  | "probada"
+  | "pendiente"
+  | "descartada"
+  | "imprescindible"
+  | "importante"
+  | "secundaria"
+  | "en-prueba"
+  | "abandonada";
+
+export type ToolMetric = {
+  label: string;
+  value: string;
+};
+
+export type ToolPriceRow = {
+  label: string;
+  value: string;
+};
+
+export type ToolAlternativeDetail = {
+  name: string;
+  description: string;
+};
 
 export type Tool = {
   name: string;
   slug: string;
+  title?: string;
   tagline: string;
   category: string;
   subcategories: string[];
@@ -27,6 +52,12 @@ export type Tool = {
   howIUseIt: string;
   teacherUseCases: string[];
   honestVerdict: string;
+  importantNotice?: string;
+  metrics?: ToolMetric[];
+  priceRows?: ToolPriceRow[];
+  priceNote?: string;
+  alternativeDetails?: ToolAlternativeDetail[];
+  cta?: string;
 };
 
 export const tools: Tool[] = [
@@ -125,6 +156,146 @@ export const tools: Tool[] = [
     ],
     honestVerdict:
       "Muy útil para profes. La trampa es dejar que la plantilla mande más que la actividad. Primero va la idea didáctica; luego ya le ponemos zapatos bonitos."
+  },
+  {
+    name: "Squoosh",
+    slug: "squoosh",
+    tagline: "Compresor de imágenes rápido, gratuito y privado para aligerar materiales y páginas web.",
+    category: "Diseño e imagen",
+    subcategories: ["imagen", "optimización", "web", "materiales"],
+    pricing: "gratis",
+    officialUrl: "https://squoosh.app/",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo usaría para comprimir imágenes antes de subirlas a la web, insertarlas en materiales descargables o preparar recursos visuales que no pesen como una mudanza.",
+    bestFor: [
+      "Profes que suben imágenes a su web",
+      "Creadores de materiales descargables",
+      "Quien quiere convertir imágenes a formatos más ligeros"
+    ],
+    notFor: [
+      "Procesar muchas imágenes a la vez",
+      "Editar diseños complejos",
+      "Quien necesita una cadena automática de optimización"
+    ],
+    pros: [
+      "Gratis y muy directo",
+      "Funciona en el navegador",
+      "Permite comparar la imagen original y la comprimida",
+      "Las imágenes se procesan localmente en el dispositivo"
+    ],
+    cons: [
+      "No está pensado para trabajo por lotes",
+      "Puede requerir probar varios ajustes hasta encontrar el equilibrio",
+      "No sustituye una estrategia completa de optimización web"
+    ],
+    alternatives: ["TinyPNG", "ImageOptim", "iLoveIMG"],
+    rating: 4,
+    difficulty: "facil",
+    status: "probada",
+    updatedAt: "2026-06-03",
+    intro:
+      "Squoosh es una de esas herramientas pequeñas que arreglan un problema muy concreto: imágenes demasiado pesadas para una web, una ficha o un recurso descargable.",
+    whatItDoes:
+      "Permite comprimir, redimensionar y convertir imágenes desde el navegador, con vista comparativa entre el original y el resultado final.",
+    howIUseIt:
+      "Lo usaría antes de publicar imágenes en WordPress, preparar miniaturas o reducir el peso de recursos visuales sin abrir un programa de diseño más grande.",
+    teacherUseCases: [
+      "Comprimir imágenes antes de subirlas a una entrada de blog.",
+      "Reducir el peso de una ficha en PDF con muchas imágenes.",
+      "Convertir una imagen a WebP para mejorar la carga de una página.",
+      "Comparar calidad y tamaño antes de publicar un recurso visual."
+    ],
+    honestVerdict:
+      "Muy recomendable como herramienta de paso final. No te organiza la biblioteca ni automatiza todo, pero para dejar una imagen ligera y decente en dos minutos cumple de maravilla."
+  },
+  {
+    name: "LastPass",
+    slug: "lastpass",
+    title: "LastPass: 336 contraseñas guardadas y solo recuerdo una",
+    tagline: "336 contraseñas guardadas. Solo recuerdo una.",
+    category: "Productividad",
+    subcategories: ["seguridad", "organización"],
+    pricing: "freemium",
+    officialUrl: "https://www.lastpass.com",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso en mi ordenador principal para guardar las contraseñas de plataformas educativas, hosting, redes sociales, banca, herramientas de edición y servicios de facturación.",
+    bestFor: [
+      "Profes que gestionan muchas cuentas desde un ordenador principal",
+      "Personas que quieren dejar de reutilizar contraseñas simples",
+      "Quien necesita generar claves largas sin acordarse de todas"
+    ],
+    notFor: [
+      "Quien no quiera depender de una contraseña maestra",
+      "Quien necesita sincronización gratuita entre móvil, tablet y ordenador",
+      "Quien prefiere una opción abierta y auditable por diseño"
+    ],
+    pros: [
+      "La extensión detecta formularios y rellena automáticamente.",
+      "Generador de contraseñas seguras integrado.",
+      "Organización en carpetas para tener orden con muchas cuentas.",
+      "Versión gratuita completa para un dispositivo.",
+      "No tiene curva de aprendizaje real."
+    ],
+    cons: [
+      "Tuvo una brecha de seguridad en 2022 que no se puede ignorar.",
+      "La contraseña maestra hay que cuidarla: si se pierde, se pierde todo.",
+      "Sin plan de pago no hay sincronización entre dispositivos.",
+      "Como toda herramienta en la nube, requiere confiar en un tercero."
+    ],
+    alternatives: ["Bitwarden", "1Password", "Dashlane"],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-03",
+    intro:
+      "LastPass es el gestor de contraseñas que uso para no tener que recordar las 336 claves que viven repartidas por mi vida digital.",
+    whatItDoes:
+      "LastPass es un gestor de contraseñas que funciona como extensión del navegador. Guarda credenciales en una bóveda cifrada, las rellena automáticamente cuando las necesitas y genera contraseñas nuevas seguras cuando creas una cuenta. La única contraseña que tienes que recordar es la maestra.",
+    howIUseIt:
+      "Tengo LastPass en mi ordenador principal y uso la versión gratuita, que para un único dispositivo es suficiente. Cuando entro en cualquier plataforma, la extensión detecta el formulario y rellena usuario y contraseña. Antes tenía dos opciones igual de malas: reutilizar contraseñas simples o apuntarlas en algún sitio poco seguro. Ahora cada cuenta tiene una contraseña generada, larga y única, y yo no sé ninguna de ellas. Solo la maestra.",
+    teacherUseCases: [
+      "Guardar accesos de plataformas educativas y herramientas de clase.",
+      "Gestionar credenciales de hosting, web, redes sociales y servicios de facturación.",
+      "Generar contraseñas largas y únicas al crear cuentas nuevas.",
+      "Organizar muchas cuentas en carpetas sin convertir el navegador en una libreta de claves."
+    ],
+    honestVerdict:
+      "Llevo cuatro o cinco años con LastPass y no lo he cambiado, incluso después del susto de 2022. Funciona y la versión gratuita es suficiente para trabajar desde un ordenador. No lo recomendaría sin mencionar la brecha, porque eso sería hacerte un flaco favor. Pero tampoco lo descarto por eso: ellos avisaron, yo reforcé mis hábitos y aquí seguimos. Si buscas algo más transparente por principio, Bitwarden es la respuesta. Si quieres algo que funcione sin pensar demasiado, LastPass cumple.",
+    importantNotice:
+      "Ojo antes de seguir: en 2022 LastPass sufrió una brecha de seguridad. Ellos mismos avisaron a todos los usuarios. Lo cuento aquí porque si no lo cuento, esta ficha miente por omisión. Sigo usándolo, pero con más criterio: contraseña maestra muy larga, vigilancia activa y autenticación de dos factores en las cuentas críticas con herramientas externas, no dentro de LastPass.",
+    metrics: [
+      { label: "contraseñas guardadas", value: "336" },
+      { label: "años de uso continuo", value: "4-5" },
+      { label: "coste en un dispositivo", value: "0 €" }
+    ],
+    priceRows: [
+      { label: "Un solo dispositivo", value: "Gratis" },
+      { label: "Sincronización entre varios dispositivos", value: "Plan de pago" },
+      { label: "Cuándo pagar", value: "Si trabajas desde móvil, tablet y ordenador" }
+    ],
+    priceNote:
+      "Si solo usas el ordenador, la versión gratuita llega. Si necesitas que tu móvil y tu ordenador estén coordinados, el plan de pago existe, funciona y el precio no va a ser el problema.",
+    alternativeDetails: [
+      {
+        name: "Bitwarden",
+        description:
+          "Código abierto, auditable públicamente y gratuito en varios dispositivos. Si la brecha de LastPass te incomoda, esta es la alternativa más seria. Menos pulida visualmente, pero más transparente por diseño."
+      },
+      {
+        name: "1Password",
+        description:
+          "Muy bien integrado en el ecosistema Apple. Sin versión gratuita real. Más orientado a equipos o usuarios que ya pagan sin problema."
+      },
+      {
+        name: "Dashlane",
+        description:
+          "Propuesta similar. Ha limitado bastante su versión gratuita en los últimos años. Menos razones para elegirla frente a Bitwarden si buscas algo sin coste."
+      }
+    ],
+    cta:
+      "Si te interesa organizar mejor tu vida digital como profesor, en borjaprofe.com cuento estas cosas con calma."
   },
   {
     name: "Notion",

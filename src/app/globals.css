@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@400;500&display=swap");
+
 :root {
   --bg: #f8f5ef;
   --paper: #fffdf8;
@@ -20,7 +22,7 @@ html {
   background: var(--bg);
   color: var(--ink);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "DM Sans", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
@@ -695,6 +697,202 @@ main {
   margin-top: 0;
 }
 
+.tool-page .tool-hero h1,
+.tool-page .prose h2,
+.tool-verdict p:last-child {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+}
+
+.tool-page .tool-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.tool-alert {
+  background: #f2ecdf;
+  border-left: 3px solid #e24b4a;
+  border-radius: 0 8px 8px 0;
+  color: var(--ink);
+  margin-bottom: 26px;
+  padding: 16px 20px;
+}
+
+.tool-alert p {
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.tool-metrics {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tool-metric {
+  background: #f2ecdf;
+  border-radius: 8px;
+  display: grid;
+  gap: 4px;
+  min-height: 112px;
+  padding: 18px 12px;
+  place-items: center;
+  text-align: center;
+}
+
+.tool-metric strong {
+  color: var(--ink);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tool-metric span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.tool-pros-cons {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tool-pros-cons > div {
+  background: #f2ecdf;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.tool-pros-cons h3,
+.tool-alternatives h3 {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.tool-pros-cons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tool-pros-cons li {
+  color: var(--ink);
+  line-height: 1.6;
+  margin: 0 0 10px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.tool-pros-cons li::before {
+  color: var(--muted);
+  content: "·";
+  left: 6px;
+  position: absolute;
+}
+
+.tool-pros li::before {
+  color: #3b6d11;
+  content: "✓";
+  font-weight: 800;
+  left: 0;
+}
+
+.tool-price-table {
+  background: #f2ecdf;
+  border-radius: 8px;
+  display: grid;
+  margin-bottom: 16px;
+  padding: 14px 18px;
+}
+
+.tool-price-table div {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 11px 0;
+}
+
+.tool-price-table div:last-child {
+  border-bottom: 0;
+}
+
+.tool-price-table span {
+  color: var(--muted);
+}
+
+.tool-price-table strong {
+  color: var(--ink);
+  font-weight: 850;
+  text-align: right;
+}
+
+.tool-alternatives {
+  display: grid;
+  gap: 10px;
+}
+
+.tool-alternatives article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.tool-alternatives h3 {
+  color: var(--ink);
+  margin-bottom: 4px;
+  text-transform: none;
+}
+
+.tool-alternatives p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.tool-verdict {
+  border: 1px solid #c8b99f;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.tool-verdict__label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 850;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.tool-verdict p:last-child {
+  color: var(--ink);
+  font-size: 1.04rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.tool-cta {
+  border-bottom: 0;
+  border-top: 1px solid var(--line);
+}
+
+.tool-cta a {
+  color: var(--accent-dark);
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .empty-state {
   margin-top: 18px;
 }
@@ -731,6 +929,16 @@ main {
 
   .side-panel {
     position: static;
+  }
+
+  .tool-metrics,
+  .tool-pros-cons {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-price-table div {
+    align-items: start;
+    display: grid;
   }
 
   .home-hero {

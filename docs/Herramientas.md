@@ -88,6 +88,11 @@
 * Estado: Imprescindible
 * Etiquetas: Diseño, Redes Sociales, Contenido
 
+## Squoosh
+
+* Estado: Importante
+* Etiquetas: Diseño, Web, Contenido, Productividad
+
 ## H5P
 
 * Estado: Importante
@@ -177,6 +182,11 @@
 
 * Estado: Imprescindible
 * Etiquetas: Productividad, Web
+
+## LastPass
+
+* Estado: Importante
+* Etiquetas: Productividad, Seguridad, OrganizaciÃ³n
 
 ## Divi
 
@@ -279,4 +289,4 @@
 
 ## Total actual
 
-43 herramientas registradas.
+45 herramientas registradas.

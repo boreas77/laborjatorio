@@ -34,7 +34,12 @@ export function labelFromStatus(status: string) {
     "uso-actual": "Uso actual",
     probada: "Probada",
     pendiente: "Pendiente",
-    descartada: "Descartada"
+    descartada: "Descartada",
+    imprescindible: "Imprescindible",
+    importante: "Importante",
+    secundaria: "Secundaria",
+    "en-prueba": "En prueba",
+    abandonada: "Abandonada"
   };
 
   return labels[status] ?? status;
