@@ -102,6 +102,8 @@ Archivos estrategicos actuales:
 - Limitacion asumida del MVP: esa memoria vive en la funcion de Vercel y puede perderse si la funcion se reinicia o pasa demasiado tiempo. Si el flujo se vuelve central, la siguiente mejora debe ser persistir esa memoria en Vercel KV, Redis, una base de datos pequena o GitHub.
 - Tras comprobar que Claude sigue dando mejores articulos finales que Codex para este flujo, se decidio mantener Claude como redactor y reducir la friccion: el bot dejara de enviar paquetes largos en varios mensajes y pasara a enviar el paquete completo como archivo Markdown descargable.
 - Se ajusto el flujo para que el archivo Markdown no se genere inmediatamente tras cada nota. Ahora el bot primero procesa la informacion, devuelve un resumen con preguntas y ofrece `AMPLIAR`, `CREAR ARCHIVO`, `ERROR` o `DESCARTAR`. El `.md` solo se adjunta cuando Borja escribe `CREAR ARCHIVO`, `PASAR A CLAUDE` o `PASAR A CLOD`.
+- Se reforzo el flujo editorial de estilo: las transcripciones de audio deben tratarse como fuente de informacion y tambien como fuente de voz. Antes de redactar una ficha hay que detectar expresiones, comparaciones, bromas, juicios, frustraciones y giros propios de Borja para conservarlos cuando funcionen.
+- Se creo `propuestas-borjismo.md` como archivo de observacion previa para patrones repetibles de Borjismo detectados en multiples transcripciones. No se deben incorporar patrones nuevos directamente a `docs/BORJISMO_UNIVERSAL.md` sin evidencia repetida.
 
 ### 2026-06-02
 
