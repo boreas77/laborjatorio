@@ -100,6 +100,7 @@ Archivos estrategicos actuales:
 - Se detecto un fallo en el flujo del bot: al responder `PASAR A CLOD` despues de varias ampliaciones, la ruta solo veia el ultimo mensaje y generaba un paquete sin la informacion acumulada.
 - Se corrigio el bot para guardar memoria temporal por chat: cada nota o audio se suma al contexto de la herramienta, `PASAR A CLAUDE` y `PASAR A CLOD` generan el paquete con todo lo acumulado, `AMPLIAR` pide mas informacion y `DESCARTAR` borra la conversacion.
 - Limitacion asumida del MVP: esa memoria vive en la funcion de Vercel y puede perderse si la funcion se reinicia o pasa demasiado tiempo. Si el flujo se vuelve central, la siguiente mejora debe ser persistir esa memoria en Vercel KV, Redis, una base de datos pequena o GitHub.
+- Tras comprobar que Claude sigue dando mejores articulos finales que Codex para este flujo, se decidio mantener Claude como redactor y reducir la friccion: el bot dejara de enviar paquetes largos en varios mensajes y pasara a enviar el paquete completo como archivo Markdown descargable.
 
 ### 2026-06-02
 

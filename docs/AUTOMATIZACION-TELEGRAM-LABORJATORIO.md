@@ -13,7 +13,7 @@ El MVP esta disenado en modo solo borrador:
 - Genera un paquete editorial Markdown revisable.
 - Separa hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles y advertencias.
 - Hace maximo 3 preguntas para extraer experiencia real.
-- Devuelve el borrador por Telegram.
+- Devuelve el paquete por Telegram como archivo Markdown descargable.
 - No modifica archivos.
 - No hace commit.
 - No hace push.
@@ -33,7 +33,8 @@ La arquitectura recomendada es:
    - transcripcion de audio.
    - generacion del paquete editorial para Claude.
 5. Telegram:
-   - envio del paquete editorial.
+   - envio de un resumen corto.
+   - envio del paquete editorial como archivo `.md`.
    - preguntas prioritarias.
    - opciones para ampliar, pasar a Claude o descartar.
 
@@ -48,6 +49,7 @@ El bot guarda temporalmente las notas de cada chat para que Borja pueda construi
 3. Borja responde con mas informacion en texto o audio.
 4. El bot suma esa ampliacion al contexto anterior.
 5. Cuando Borja escribe `PASAR A CLAUDE` o `PASAR A CLOD`, el bot genera el paquete usando todo lo acumulado.
+6. El bot envia un mensaje breve y adjunta el paquete completo como archivo Markdown.
 
 Comandos actuales:
 
@@ -173,8 +175,9 @@ Quiero una ficha sobre Tally. Lo uso para crear formularios sencillos para profe
 Resultado esperado:
 
 1. El bot responde que ha recibido el mensaje.
-2. Despues devuelve un paquete editorial Markdown.
-3. El borrador incluye:
+2. Despues devuelve un mensaje breve.
+3. Adjunta un archivo `.md` con el paquete editorial completo.
+4. El archivo incluye:
    - hechos confirmados.
    - respuestas de Borja.
    - dudas resueltas.
@@ -193,7 +196,8 @@ Para probar la memoria:
 2. Responde a una de las preguntas del bot con otra nota.
 3. Envia otra ampliacion si hace falta.
 4. Escribe `PASAR A CLOD`.
-5. Comprueba que el paquete incluye la informacion de todas las notas anteriores, no solo la ultima frase.
+5. Descarga el archivo `.md`.
+6. Comprueba que el paquete incluye la informacion de todas las notas anteriores, no solo la ultima frase.
 
 ## Que hace y que no hace
 
@@ -202,6 +206,7 @@ Hace:
 - convierte notas brutas en paquetes editoriales utiles para Claude.
 - transcribe audios.
 - acumula ampliaciones de una misma herramienta durante la conversacion.
+- envia el paquete como archivo Markdown descargable para subirlo a Claude.
 - usa el contexto editorial del proyecto.
 - limita el bot a tu `TELEGRAM_CHAT_ID`.
 - protege el webhook con `TELEGRAM_WEBHOOK_SECRET`.

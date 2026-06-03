@@ -48,6 +48,7 @@ const MAX_CONTEXT_CHARS_PER_FILE = 18000;
 const SESSION_TTL_MS = 1000 * 60 * 60 * 8;
 const MAX_SESSION_NOTES = 24;
 const MAX_SESSION_CHARS = 28000;
+const TELEGRAM_DOCUMENT_CAPTION_LIMIT = 1000;
 const sessionStore = new Map<string, SessionState>();
 
 export async function POST(request: NextRequest) {
@@ -138,7 +139,17 @@ export async function POST(request: NextRequest) {
     const draft = await generateLaborjatorioDraft(accumulatedNotes, context);
     const response = formatTelegramDraftResponse(draft);
 
-    await sendLongTelegramMessage(message.chat.id, response);
+    await sendTelegramMessage(
+      message.chat.id,
+      [
+        "Paquete editorial listo.",
+        "",
+        "Te lo envio como archivo Markdown para que puedas descargarlo y subirlo a Claude sin copiar varios mensajes.",
+        "",
+        "Responde con AMPLIAR, PASAR A CLAUDE o DESCARTAR."
+      ].join("\n")
+    );
+    await sendTelegramMarkdownDocument(message.chat.id, response, buildDraftFileName(draft));
 
     return NextResponse.json({ ok: true });
   } catch (error) {
@@ -430,6 +441,42 @@ function extractResponseText(payload: unknown) {
 
 function formatTelegramDraftResponse(draft: string) {
   return `LABORJATORIO\n\n${draft}\n\n---\n\nResponde con AMPLIAR, PASAR A CLAUDE o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para preparar el paquete editorial sin tocar GitHub.`;
+}
+
+function buildDraftFileName(draft: string) {
+  const titleMatch = draft.match(/Confirmacion breve:\s*(.+)/i);
+  const title = titleMatch?.[1] || "paquete-editorial-laborjatorio";
+  const slug = title
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 70);
+
+  return `${slug || "paquete-editorial-laborjatorio"}.md`;
+}
+
+async function sendTelegramMarkdownDocument(chatId: number | string, markdown: string, fileName: string) {
+  const token = getRequiredEnv("TELEGRAM_BOT_TOKEN");
+  const formData = new FormData();
+  const caption = [
+    "Archivo Markdown del paquete editorial.",
+    "Descargalo y subelo a Claude cuando quieras redactar el articulo."
+  ].join("\n");
+
+  formData.append("chat_id", String(chatId));
+  formData.append("caption", caption.slice(0, TELEGRAM_DOCUMENT_CAPTION_LIMIT));
+  formData.append("document", new Blob([markdown], { type: "text/markdown;charset=utf-8" }), fileName);
+
+  const response = await fetch(`https://api.telegram.org/bot${token}/sendDocument`, {
+    method: "POST",
+    body: formData
+  });
+
+  if (!response.ok) {
+    throw new Error(await response.text());
+  }
 }
 
 async function sendLongTelegramMessage(chatId: number | string, text: string) {
