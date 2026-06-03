@@ -95,6 +95,7 @@ Archivos estrategicos actuales:
 - LastPass se anadio a `src/data/tools.ts` con bloques editoriales ricos: aviso de brecha de 2022, metricas reales, ventajas/inconvenientes, precio, alternativas y veredicto honesto.
 - Se amplio la plantilla de `src/app/herramientas/[slug]/page.tsx` para mostrar campos opcionales de fichas ricas sin romper las fichas antiguas.
 - Se actualizo `docs/Herramientas.md` para incluir LastPass como herramienta importante con etiquetas de productividad, seguridad y organizacion.
+- Tras revisar la primera publicacion, se simplifico la ficha de LastPass: una sola columna, sin subtitulo repetido bajo el H1, sin bloque lateral de veredicto, texto mas oscuro y alternativas sin descripciones inventadas.
 
 ### 2026-06-02
 

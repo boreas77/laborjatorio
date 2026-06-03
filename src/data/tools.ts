@@ -23,7 +23,8 @@ export type ToolPriceRow = {
 
 export type ToolAlternativeDetail = {
   name: string;
-  description: string;
+  description?: string;
+  url?: string;
 };
 
 export type Tool = {
@@ -228,8 +229,7 @@ export const tools: Tool[] = [
     ],
     notFor: [
       "Quien no quiera depender de una contraseña maestra",
-      "Quien necesita sincronización gratuita entre móvil, tablet y ordenador",
-      "Quien prefiere una opción abierta y auditable por diseño"
+      "Quien necesita sincronización gratuita entre móvil, tablet y ordenador"
     ],
     pros: [
       "La extensión detecta formularios y rellena automáticamente.",
@@ -262,14 +262,9 @@ export const tools: Tool[] = [
       "Organizar muchas cuentas en carpetas sin convertir el navegador en una libreta de claves."
     ],
     honestVerdict:
-      "Llevo cuatro o cinco años con LastPass y no lo he cambiado, incluso después del susto de 2022. Funciona y la versión gratuita es suficiente para trabajar desde un ordenador. No lo recomendaría sin mencionar la brecha, porque eso sería hacerte un flaco favor. Pero tampoco lo descarto por eso: ellos avisaron, yo reforcé mis hábitos y aquí seguimos. Si buscas algo más transparente por principio, Bitwarden es la respuesta. Si quieres algo que funcione sin pensar demasiado, LastPass cumple.",
+      "Llevo cuatro o cinco años con LastPass y no lo he cambiado, incluso después del susto de 2022. Funciona y la versión gratuita es suficiente para trabajar desde un ordenador. No lo recomendaría sin mencionar la brecha, porque eso sería hacerte un flaco favor. Pero tampoco lo descarto por eso: ellos avisaron, yo reforcé mis hábitos y aquí seguimos.",
     importantNotice:
       "Ojo antes de seguir: en 2022 LastPass sufrió una brecha de seguridad. Ellos mismos avisaron a todos los usuarios. Lo cuento aquí porque si no lo cuento, esta ficha miente por omisión. Sigo usándolo, pero con más criterio: contraseña maestra muy larga, vigilancia activa y autenticación de dos factores en las cuentas críticas con herramientas externas, no dentro de LastPass.",
-    metrics: [
-      { label: "contraseñas guardadas", value: "336" },
-      { label: "años de uso continuo", value: "4-5" },
-      { label: "coste en un dispositivo", value: "0 €" }
-    ],
     priceRows: [
       { label: "Un solo dispositivo", value: "Gratis" },
       { label: "Sincronización entre varios dispositivos", value: "Plan de pago" },
@@ -280,18 +275,15 @@ export const tools: Tool[] = [
     alternativeDetails: [
       {
         name: "Bitwarden",
-        description:
-          "Código abierto, auditable públicamente y gratuito en varios dispositivos. Si la brecha de LastPass te incomoda, esta es la alternativa más seria. Menos pulida visualmente, pero más transparente por diseño."
+        url: "https://bitwarden.com/"
       },
       {
         name: "1Password",
-        description:
-          "Muy bien integrado en el ecosistema Apple. Sin versión gratuita real. Más orientado a equipos o usuarios que ya pagan sin problema."
+        url: "https://1password.com/"
       },
       {
         name: "Dashlane",
-        description:
-          "Propuesta similar. Ha limitado bastante su versión gratuita en los últimos años. Menos razones para elegirla frente a Bitwarden si buscas algo sin coste."
+        url: "https://www.dashlane.com/"
       }
     ],
     cta:

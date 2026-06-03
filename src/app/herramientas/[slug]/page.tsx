@@ -66,42 +66,44 @@ export default async function ToolPage({ params }: ToolPageProps) {
           </Link>
           <p className="eyebrow">Ficha de laboratorio / {tool.category}</p>
           <h1>{title}</h1>
-          <p>{tool.tagline}</p>
+          {!hasRichEditorialBlocks ? <p>{tool.tagline}</p> : null}
           <div className="lab-notes lab-notes--dark" aria-label="Resumen editorial">
             <span>{labelFromPricing(tool.pricing)}</span>
             <span>Dificultad {labelFromDifficulty(tool.difficulty)}</span>
             <span>{labelFromStatus(tool.status)}</span>
           </div>
         </div>
-        <aside className="tool-summary" aria-label="Resumen rápido">
-          <p className="tool-summary__label">Veredicto corto</p>
-          <p className="tool-summary__verdict">{tool.honestVerdict}</p>
-          <dl>
-            <div>
-              <dt>Precio</dt>
-              <dd>{labelFromPricing(tool.pricing)}</dd>
-            </div>
-            <div>
-              <dt>Dificultad</dt>
-              <dd>{labelFromDifficulty(tool.difficulty)}</dd>
-            </div>
-            <div>
-              <dt>Estado</dt>
-              <dd>{labelFromStatus(tool.status)}</dd>
-            </div>
-            <div>
-              <dt>Valoración</dt>
-              <dd>{tool.rating}/5</dd>
-            </div>
-          </dl>
-          <a className="button button--primary" href={primaryUrl} rel="nofollow sponsored noopener" target="_blank">
-            Ir a {tool.name}
-          </a>
-          {tool.hasAffiliate ? <p className="affiliate-note">Este enlace puede ser de afiliado.</p> : null}
-        </aside>
+        {!hasRichEditorialBlocks ? (
+          <aside className="tool-summary" aria-label="Resumen rápido">
+            <p className="tool-summary__label">Veredicto corto</p>
+            <p className="tool-summary__verdict">{tool.honestVerdict}</p>
+            <dl>
+              <div>
+                <dt>Precio</dt>
+                <dd>{labelFromPricing(tool.pricing)}</dd>
+              </div>
+              <div>
+                <dt>Dificultad</dt>
+                <dd>{labelFromDifficulty(tool.difficulty)}</dd>
+              </div>
+              <div>
+                <dt>Estado</dt>
+                <dd>{labelFromStatus(tool.status)}</dd>
+              </div>
+              <div>
+                <dt>Valoración</dt>
+                <dd>{tool.rating}/5</dd>
+              </div>
+            </dl>
+            <a className="button button--primary" href={primaryUrl} rel="nofollow sponsored noopener" target="_blank">
+              Ir a {tool.name}
+            </a>
+            {tool.hasAffiliate ? <p className="affiliate-note">Este enlace puede ser de afiliado.</p> : null}
+          </aside>
+        ) : null}
       </div>
 
-      <div className="content-grid">
+      <div className={hasRichEditorialBlocks ? "tool-single-column" : "content-grid"}>
         <div className="prose">
           {tool.importantNotice ? (
             <aside className="tool-alert">
@@ -209,16 +211,44 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 {tool.priceNote ? <p>{tool.priceNote}</p> : null}
               </section>
               <section>
+                <h2>Para quién tiene sentido</h2>
+                <ul>
+                  {tool.bestFor.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+              <section>
+                <h2>No la usaría para...</h2>
+                <ul>
+                  {tool.notFor.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
+              <section>
+                <div className="tool-verdict">
+                  <p className="tool-verdict__label">Veredicto honesto</p>
+                  <p>{tool.honestVerdict}</p>
+                </div>
+              </section>
+              <section>
                 <h2>Alternativas</h2>
                 {tool.alternativeDetails?.length ? (
-                  <div className="tool-alternatives">
+                  <ul className="tool-alternative-links">
                     {tool.alternativeDetails.map((alternative) => (
-                      <article key={alternative.name}>
-                        <h3>{alternative.name}</h3>
-                        <p>{alternative.description}</p>
-                      </article>
+                      <li key={alternative.name}>
+                        {alternative.url ? (
+                          <a href={alternative.url} target="_blank" rel="noopener noreferrer">
+                            {alternative.name}
+                          </a>
+                        ) : (
+                          alternative.name
+                        )}
+                        {alternative.description ? <span>{alternative.description}</span> : null}
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 ) : (
                   <ul>
                     {tool.alternatives.map((item) => (
@@ -226,12 +256,6 @@ export default async function ToolPage({ params }: ToolPageProps) {
                     ))}
                   </ul>
                 )}
-              </section>
-              <section>
-                <div className="tool-verdict">
-                  <p className="tool-verdict__label">Veredicto honesto</p>
-                  <p>{tool.honestVerdict}</p>
-                </div>
               </section>
               {tool.cta ? (
                 <section className="tool-cta">
@@ -248,26 +272,28 @@ export default async function ToolPage({ params }: ToolPageProps) {
           ) : null}
         </div>
 
-        <aside className="side-panel">
-          <h2>Te interesa si...</h2>
-          <ul>
-            {tool.bestFor.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <h2>No la usaría para...</h2>
-          <ul>
-            {tool.notFor.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <h2>Alternativas</h2>
-          <ul>
-            {tool.alternatives.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </aside>
+        {!hasRichEditorialBlocks ? (
+          <aside className="side-panel">
+            <h2>Te interesa si...</h2>
+            <ul>
+              {tool.bestFor.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <h2>No la usaría para...</h2>
+            <ul>
+              {tool.notFor.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <h2>Alternativas</h2>
+            <ul>
+              {tool.alternatives.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </aside>
+        ) : null}
       </div>
     </article>
   );
