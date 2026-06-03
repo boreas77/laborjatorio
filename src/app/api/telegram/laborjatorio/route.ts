@@ -228,8 +228,18 @@ async function generateLaborjatorioDraft(rawNotes: string, context: string) {
     body: JSON.stringify({
       model: process.env.OPENAI_DRAFT_MODEL || "gpt-4.1-mini",
       instructions:
-        "Eres el asistente editorial del Laborjatorio. Generas borradores de fichas Markdown para Borja a partir de notas brutas. Respetas la filosofia del proyecto, el Borjismo Universal y las reglas SEO. No publicas, no prometes cambios realizados y no inventas experiencia real: si falta informacion, lo marcas como pendiente.",
-      input: `Contexto obligatorio del repositorio:\n\n${context}\n\nNotas brutas recibidas por Telegram:\n\n${rawNotes}\n\nGenera una respuesta en Markdown con esta estructura exacta:\n\n# Borrador de ficha\n\nIncluye una ficha completa y revisable para el Laborjatorio. Debe tener titulo, descripcion SEO, estado sugerido, etiquetas, enlace oficial si aparece en las notas, posible slug, y secciones editoriales utiles.\n\n# Cambios sugeridos\n\nResume si habria que crear herramienta nueva, actualizar Herramientas.md, cambiar estado, o actualizar memoria. No digas que has cambiado archivos: solo son sugerencias.\n\n# Dudas para Borja\n\nLista preguntas concretas para mejorar o aprobar la ficha.\n\n# Accion recomendada\n\nTermina preguntando si quiere aprobar, corregir o descartar el borrador.`,
+        [
+          "Eres el asistente editorial del Laborjatorio.",
+          "Tu trabajo no es fabricar fichas largas: es entrevistar a Borja para convertir experiencia real en fichas utiles, honestas y publicables.",
+          "Regla central: no inventes experiencia, no rellenes huecos y no conviertas una nota breve en ficha final.",
+          "Distingue siempre hechos confirmados, conocimiento externo objetivo y dudas pendientes.",
+          "Puedes usar conocimiento general solo para datos objetivos: enlace oficial, categoria aproximada o funcion basica.",
+          "Nunca presentes como experiencia de Borja algo que Borja no haya dicho.",
+          "Prohibido inventar alternativas probadas, limitaciones vividas, precio percibido, valoracion personal, frustraciones, casos de uso, veredictos emocionales o recomendaciones fuertes.",
+          "Evita lenguaje de marketing y SaaS: simplifica tu vida digital, aliado silencioso, herramienta imprescindible, solucion ideal, potente y versatil, para profesores ocupados.",
+          "Escribe claro, directo, conversacional, practico y honesto. La experiencia de Borja pesa mas que la descripcion tecnica."
+        ].join(" "),
+      input: `Contexto obligatorio del repositorio:\n\n${context}\n\nNotas brutas recibidas por Telegram:\n\n${rawNotes}\n\nSigue este proceso editorial:\n\n1. Extrae solo hechos confirmados por Borja. No anadas nada no mencionado.\n2. Separa conocimiento externo objetivo de experiencia personal.\n3. Decide si hay informacion suficiente para ficha final.\n4. Si falta informacion, genera una ficha preliminar, no una ficha final.\n5. Haz maximo 3 preguntas buenas para extraer experiencia real.\n\nHay informacion suficiente para ficha final solo si puedes responder con datos de Borja a estas preguntas: que es, para que la usa Borja, por que sigue utilizandola, que limitaciones reales ha encontrado, que alternativas conoce o ha probado y si la considera imprescindible, importante, secundaria, en prueba o abandonada.\n\nSi falta cualquiera de esos bloques, responde con esta estructura exacta:\n\nConfirmacion breve: una frase corta.\n\n# Ficha preliminar\n\n# [Nombre de herramienta]\n\n## Lo que sabemos\n\n- Lista solo hechos confirmados.\n\n## Para que la usa Borja\n\n- Solo usos mencionados por Borja.\n\n## Por que le interesa\n\n- Solo motivos mencionados por Borja.\n\n## Lo que todavia no sabemos\n\n- Lista huecos concretos. No inventes respuestas.\n\n## Preguntas prioritarias\n\n1. Maximo tres preguntas concretas para extraer experiencia real.\n2. Pregunta por problema resuelto, alternativa anterior, molestia, pago o estado solo si falta.\n3. No hagas preguntas genericas.\n\n## Posible clasificacion provisional\n\nEstado: Pendiente, Imprescindible provisional, Importante provisional, Secundaria provisional, En prueba o Abandonada.\nCategoria: categoria aproximada.\nFrontmatter provisional: usa Pendiente cuando un dato no este confirmado. Usa alternatives: [] si Borja no ha mencionado alternativas o si no estan en inventario.\n\n# Opciones\n\nAMPLIAR - si Borja quiere responder a las preguntas.\nGENERAR FICHA - solo si Borja considera que ya hay experiencia suficiente.\nDESCARTAR - si no quiere seguir.\n\nSi de verdad hay informacion suficiente para ficha final, genera una ficha final clara, honesta y basada en experiencia real. Aun asi marca como Pendiente cualquier dato no confirmado.\n\nEstados permitidos: Imprescindible si Borja no podria trabajar normalmente sin ella; Importante si la usa a menudo y aporta valor claro; Secundaria si la usa de vez en cuando; En prueba si todavia no tiene criterio suficiente; Abandonada si ya no la usa.`,
       store: false
     })
   });
@@ -268,7 +278,7 @@ function extractResponseText(payload: unknown) {
 }
 
 function formatTelegramDraftResponse(draft: string) {
-  return `BORRADOR DEL LABORJATORIO\n\n${draft}\n\n---\n\nResponde con APROBAR, CORREGIR o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para revisar el borrador sin tocar GitHub.`;
+  return `LABORJATORIO\n\n${draft}\n\n---\n\nResponde con AMPLIAR, GENERAR FICHA o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para revisar el borrador sin tocar GitHub.`;
 }
 
 async function sendLongTelegramMessage(chatId: number | string, text: string) {

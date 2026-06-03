@@ -40,8 +40,9 @@ Archivos estrategicos actuales:
 
 ## Decisiones ya tomadas
 
-- La carpeta fuente del proyecto es `C:\Users\borja\OneDrive\Documentos\LABORJATORIO`.
-- No trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`.
+- La carpeta fuente activa del proyecto para Codex es `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`.
+- El contenido reciente de `LABORJATORIO` fue copiado a `MI TALLER DE ELE` para trabajar desde la carpeta que Codex abre por defecto.
+- `C:\Users\borja\OneDrive\Documentos\LABORJATORIO` queda como referencia/copia externa, pero no debe usarse como carpeta principal mientras esta configuracion siga asi.
 - Vercel despliega desde GitHub: `https://github.com/boreas77/laborjatorio.git`.
 - La rama de trabajo principal es `main`.
 - La web publicada es `https://laborjatorio.vercel.app/`.
@@ -65,6 +66,29 @@ Archivos estrategicos actuales:
 - Se documento el sistema en `docs/AUTOMATIZACION-TELEGRAM-LABORJATORIO.md`.
 - Variables necesarias para probar: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_WEBHOOK_SECRET` y `OPENAI_API_KEY`.
 - Se detecto que la copia ligera local no tiene `node_modules`, por lo que `npm run typecheck` no puede ejecutarse hasta instalar dependencias.
+- Borja creo el bot de Telegram, obtuvo `TELEGRAM_CHAT_ID`, creo `TELEGRAM_WEBHOOK_SECRET`, creo `OPENAI_API_KEY` y anadio las cuatro variables en Vercel para Production.
+- Se creo el commit local `d6ddad0 Crea MVP de bot Telegram para borradores`.
+- El `git push origin main` quedo bloqueado por autenticacion de GitHub en la sesion de Codex.
+- Se diagnostico que Git fallaba con `schannel` y se configuro el repositorio local para usar `http.sslbackend=openssl`, lo que permite conectar con GitHub.
+- Queda pendiente crear una credencial/token de GitHub estable y limitado para `boreas77/laborjatorio`; este punto es prioritario porque el flujo futuro Telegram -> GitHub -> Vercel no debe depender de credenciales locales fragiles.
+- Borja copio el contenido reciente de `C:\Users\borja\OneDrive\Documentos\LABORJATORIO` a `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`, porque esta es la carpeta que Codex abre como workspace por defecto.
+- Se confirmo que `MI TALLER DE ELE` contiene la ruta del bot, los documentos nuevos, el commit local `d6ddad0`, el remoto correcto y la configuracion `http.sslbackend=openssl`.
+- Desde este momento, para evitar redirecciones constantes, se decide trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`.
+- La carpeta `.git-desactivado/` queda ignorada en `.gitignore` para que Git no la muestre como contenido pendiente.
+- Se creo y guardo en Vercel un fine-grained token de GitHub para `boreas77/laborjatorio`, junto con `GITHUB_REPO=boreas77/laborjatorio` y `GITHUB_BRANCH=main`.
+- Se guardo la credencial de GitHub en Git Credential Manager para el usuario `boreas77`.
+- Se subio a GitHub el commit local `d6ddad0 Crea MVP de bot Telegram para borradores`.
+- Se activo el webhook de Telegram apuntando a `https://laborjatorio.vercel.app/api/telegram/laborjatorio`.
+- Al probar el webhook aparecio un bucle de reintentos porque el endpoint devolvia error 500; se corrigio con el commit `a28104f Evita reintentos del webhook de Telegram`.
+- Se mejoro el diagnostico de errores por Telegram con el commit `496d288 Muestra error seguro del bot Telegram`.
+- El primer error real fue `insufficient_quota` de OpenAI; Borja anadio 10 dolares de saldo sin recarga automatica.
+- La prueba de texto genero correctamente un borrador de ficha.
+- La prueba de audio fallo inicialmente porque Telegram envia notas de voz como `.oga`; se corrigio renombrando el archivo a `.ogg` antes de enviarlo a OpenAI con el commit `d374913 Acepta notas de voz de Telegram`.
+- La prueba final de audio funciono y genero un borrador completo dividido en varios mensajes de Telegram.
+- Estado actual del MVP: recibe texto/audio por Telegram, transcribe audio, genera borradores y los devuelve por Telegram. Sigue sin publicar ni modificar archivos automaticamente.
+- Se detecto que los borradores salian demasiado completos a partir de poca informacion y rellenaban huecos con conocimiento general.
+- Se ajusto el enfoque editorial del bot: debe actuar como entrevistador editorial, extraer hechos confirmados, separar conocimiento externo de experiencia personal, generar ficha preliminar si falta informacion y hacer maximo 3 preguntas buenas.
+- Nueva regla central del bot: no inventar experiencia, no rellenar huecos y no convertir una nota breve en ficha final.
 
 ### 2026-06-02
 
@@ -94,10 +118,13 @@ Archivos estrategicos actuales:
 
 ## Pendiente inmediato
 
-- Borrar manualmente la carpeta antigua `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE` cuando Windows lo permita. Ahora mismo esta neutralizada porque su carpeta `.git` fue renombrada a `.git-desactivado`.
+- No borrar `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`: vuelve a ser la carpeta activa del proyecto en Codex.
+- Si se quiere limpiar la carpeta, borrar manualmente `.git-desactivado/`; Git ya la ignora y no afecta al repositorio activo.
 - Mantener actualizado `docs/Herramientas.md` cuando se incorporen, descarten o reclasifiquen herramientas.
 - Actualizar esta memoria al cerrar cada sesion de trabajo importante.
 - Revisar si las paginas actuales del sitio siguen alineadas con el Borjismo Universal ampliado.
+- Revisar la calidad editorial de los borradores del bot y ajustar el prompt si salen demasiado genericos, demasiado largos o poco alineados con Borjismo.
+- Decidir si la fase 2 debe guardar borradores como archivos pendientes o abrir Pull Requests tras una aprobacion explicita por Telegram.
 
 ## Proximos pasos posibles
 
@@ -109,7 +136,7 @@ Archivos estrategicos actuales:
 
 ## Riesgos a vigilar
 
-- Volver a trabajar por error desde `MI TALLER DE ELE`.
+- Volver a trabajar por error desde `LABORJATORIO` cuando Codex este usando `MI TALLER DE ELE` como workspace activo.
 - Que LABORJATORIO suene como un comparador SEO generico.
 - Que la voz de Borja se convierta en una capa de chistes anadida al final.
 - Que se construyan funciones tecnicas antes de tener contenido suficiente.
@@ -120,7 +147,7 @@ Archivos estrategicos actuales:
 
 Para futuros cambios:
 
-1. Abrir `C:\Users\borja\OneDrive\Documentos\LABORJATORIO`.
+1. Abrir `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`.
 2. Leer los documentos obligatorios.
 3. Confirmar `git status`.
 4. Editar archivos.
@@ -131,19 +158,20 @@ Para futuros cambios:
 
 Si Git dice `Your branch is ahead of 'origin/main' by 1 commit`, no falta otro commit: falta ejecutar `git push`.
 
-Si vuelve a aparecer un problema de permisos con `.git/index.lock`, revisar permisos/propietario de `C:\Users\borja\OneDrive\Documentos\LABORJATORIO\.git` antes de perder tiempo tocando archivos de la web.
+Si vuelve a aparecer un problema de permisos con `.git/index.lock`, revisar permisos/propietario de `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE\.git` antes de perder tiempo tocando archivos de la web.
 
 ## Ultima sesion registrada
 
-Fecha: 2026-06-02
+Fecha: 2026-06-03
 
 Resumen:
 
-- Se aclaro que la carpeta fuente del proyecto es `C:\Users\borja\OneDrive\Documentos\LABORJATORIO`.
-- Se confirmo que Vercel despliega desde GitHub `boreas77/laborjatorio`.
-- Se desactivo Git en `MI TALLER DE ELE` renombrando `.git` a `.git-desactivado`.
-- Se actualizo esta memoria para incluir `SEO-LABORATORIO.md`, `Herramientas.md` y la neutralizacion de la carpeta antigua.
+- Se decidio trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`, porque es la carpeta que Codex abre como workspace por defecto.
+- Borja copio ahi el contenido reciente de `LABORJATORIO`.
+- Se confirmo que `MI TALLER DE ELE` contiene el MVP del bot de Telegram, los documentos nuevos, el commit local `d6ddad0` y el remoto correcto `boreas77/laborjatorio`.
+- Se anadio `.git-desactivado/` a `.gitignore` para que Git no lo muestre como contenido pendiente.
+- El siguiente bloqueo real es la autenticacion estable con GitHub.
 
 Proximo paso recomendado:
 
-- Borrar manualmente `MI TALLER DE ELE` cuando Windows lo permita y seguir trabajando siempre desde `LABORJATORIO`.
+- Probar varios audios reales con herramientas distintas y ajustar el prompt del bot antes de automatizar escritura en GitHub.
