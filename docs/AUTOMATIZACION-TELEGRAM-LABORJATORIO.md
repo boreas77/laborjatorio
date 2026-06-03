@@ -2,15 +2,15 @@
 
 ## Objetivo del MVP
 
-Este sistema permite enviar textos o audios a un bot de Telegram y recibir una ficha preliminar del Laborjatorio.
+Este sistema permite enviar textos o audios a un bot de Telegram y recibir un paquete editorial para Claude.
 
 El MVP esta disenado en modo solo borrador:
 
 - Recibe mensajes de Telegram.
 - Transcribe audios.
 - Lee el contexto editorial del repositorio.
-- Genera una ficha preliminar Markdown revisable.
-- Separa hechos confirmados, dudas pendientes y posible clasificacion.
+- Genera un paquete editorial Markdown revisable.
+- Separa hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles y advertencias.
 - Hace maximo 3 preguntas para extraer experiencia real.
 - Devuelve el borrador por Telegram.
 - No modifica archivos.
@@ -30,11 +30,11 @@ La arquitectura recomendada es:
    - `src/app/api/telegram/laborjatorio/route.ts`
 4. OpenAI:
    - transcripcion de audio.
-   - generacion de ficha preliminar o ficha final si hay informacion suficiente.
+   - generacion del paquete editorial para Claude.
 5. Telegram:
-   - envio de la ficha preliminar.
+   - envio del paquete editorial.
    - preguntas prioritarias.
-   - opciones para ampliar, generar ficha o descartar.
+   - opciones para ampliar, pasar a Claude o descartar.
 
 No hay servidor dedicado, base de datos ni panel de administracion.
 
@@ -155,10 +155,14 @@ Resultado esperado:
 2. Despues devuelve un borrador Markdown.
 3. El borrador incluye:
    - hechos confirmados.
-   - usos mencionados por Borja.
-   - huecos pendientes.
+   - respuestas de Borja.
+   - dudas resueltas.
+   - datos utiles.
+   - tono deseado.
+   - estructura esperada.
+   - advertencias para no inventar experiencia.
    - maximo 3 preguntas buenas.
-   - opciones `AMPLIAR`, `GENERAR FICHA` o `DESCARTAR`.
+   - opciones `AMPLIAR`, `PASAR A CLAUDE` o `DESCARTAR`.
 
 Tambien puedes probar con una nota de voz diciendo lo mismo.
 
@@ -166,17 +170,18 @@ Tambien puedes probar con una nota de voz diciendo lo mismo.
 
 Hace:
 
-- convierte notas brutas en fichas preliminares utiles.
+- convierte notas brutas en paquetes editoriales utiles para Claude.
 - transcribe audios.
 - usa el contexto editorial del proyecto.
 - limita el bot a tu `TELEGRAM_CHAT_ID`.
 - protege el webhook con `TELEGRAM_WEBHOOK_SECRET`.
 - evita inventar experiencia personal no mencionada.
 - evita rellenar huecos con frases genericas o de marketing.
+- no genera el articulo final.
 
 No hace todavia:
 
-- guardar borradores en el repositorio.
+- convertir el articulo final de Claude en ficha web.
 - actualizar `Herramientas.md`.
 - actualizar `MEMORIA-PROYECTO-LABORJATORIO.md`.
 - hacer commits.
@@ -201,26 +206,25 @@ Recomendacion: empezar con Pull Request, no commit directo, para conservar revis
 
 ## Regla editorial actual
 
-El bot debe comportarse como entrevistador editorial, no como redactor automatico.
+El bot debe comportarse como entrevistador editorial y preparador de contexto para Claude, no como redactor automatico.
 
 Reglas principales:
 
 - No inventar experiencia.
 - No rellenar huecos.
-- No convertir una nota breve en ficha final.
+- No convertir una nota breve en articulo final.
 - Usar conocimiento externo solo para datos objetivos.
 - Marcar como `Pendiente` lo que no este confirmado.
 - No inventar alternativas, limitaciones, precio percibido, frustraciones, valoraciones ni recomendaciones fuertes.
-- Si falta informacion, generar ficha preliminar y preguntas.
+- Generar un paquete editorial con hechos, respuestas, dudas, datos, tono, estructura y advertencias.
+- Hacer maximo 3 preguntas para completar experiencia real.
 
-La ficha final solo debe aparecer cuando haya suficiente informacion real sobre:
+El articulo final lo escribira Claude aparte. Cuando Borja pegue ese articulo final en Codex, entonces se hara la conversion a ficha web:
 
-- que es la herramienta.
-- para que la usa Borja.
-- por que sigue utilizandola.
-- que limitaciones reales ha encontrado.
-- que alternativas conoce o ha probado.
-- que estado merece dentro del Laborjatorio.
+- crear o actualizar la ficha web.
+- actualizar `docs/Herramientas.md` si procede.
+- actualizar `docs/MEMORIA-PROYECTO-LABORJATORIO.md`.
+- preparar commit.
 
 ## Motivo de esta arquitectura
 

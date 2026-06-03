@@ -89,6 +89,8 @@ Archivos estrategicos actuales:
 - Se detecto que los borradores salian demasiado completos a partir de poca informacion y rellenaban huecos con conocimiento general.
 - Se ajusto el enfoque editorial del bot: debe actuar como entrevistador editorial, extraer hechos confirmados, separar conocimiento externo de experiencia personal, generar ficha preliminar si falta informacion y hacer maximo 3 preguntas buenas.
 - Nueva regla central del bot: no inventar experiencia, no rellenar huecos y no convertir una nota breve en ficha final.
+- Se decidio que el bot no debe generar el articulo final. Debe generar un "paquete editorial para Claude" con hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles, tono deseado, estructura esperada y advertencias sobre no inventar experiencia.
+- Nuevo flujo editorial: Telegram prepara el paquete; Borja lo pasa a Claude; cuando Borja pegue en Codex el articulo final de Claude, Codex lo convierte en ficha web, actualiza archivos necesarios y prepara el commit.
 
 ### 2026-06-02
 
@@ -123,8 +125,8 @@ Archivos estrategicos actuales:
 - Mantener actualizado `docs/Herramientas.md` cuando se incorporen, descarten o reclasifiquen herramientas.
 - Actualizar esta memoria al cerrar cada sesion de trabajo importante.
 - Revisar si las paginas actuales del sitio siguen alineadas con el Borjismo Universal ampliado.
-- Revisar la calidad editorial de los borradores del bot y ajustar el prompt si salen demasiado genericos, demasiado largos o poco alineados con Borjismo.
-- Decidir si la fase 2 debe guardar borradores como archivos pendientes o abrir Pull Requests tras una aprobacion explicita por Telegram.
+- Revisar la calidad de los paquetes editoriales para Claude y ajustar el prompt si salen demasiado genericos, demasiado largos o poco alineados con Borjismo.
+- Definir el flujo de entrada para cuando Borja pegue el articulo final de Claude: convertir a ficha web, actualizar inventario/memoria y preparar commit.
 
 ## Proximos pasos posibles
 
@@ -174,4 +176,4 @@ Resumen:
 
 Proximo paso recomendado:
 
-- Probar varios audios reales con herramientas distintas y ajustar el prompt del bot antes de automatizar escritura en GitHub.
+- Probar varios audios reales con herramientas distintas y comprobar que el bot genera paquetes editoriales utiles para Claude, no articulos finales.
