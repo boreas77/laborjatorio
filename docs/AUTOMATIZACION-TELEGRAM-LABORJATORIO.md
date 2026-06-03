@@ -13,7 +13,8 @@ El MVP esta disenado en modo solo borrador:
 - Genera un paquete editorial Markdown revisable.
 - Separa hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles y advertencias.
 - Hace maximo 3 preguntas para extraer experiencia real.
-- Devuelve el paquete por Telegram como archivo Markdown descargable.
+- Devuelve primero preguntas y opciones por Telegram.
+- Solo genera el archivo Markdown descargable cuando Borja lo pide.
 - No modifica archivos.
 - No hace commit.
 - No hace push.
@@ -34,9 +35,9 @@ La arquitectura recomendada es:
    - generacion del paquete editorial para Claude.
 5. Telegram:
    - envio de un resumen corto.
-   - envio del paquete editorial como archivo `.md`.
    - preguntas prioritarias.
-   - opciones para ampliar, pasar a Claude o descartar.
+   - opciones para ampliar, crear archivo, marcar error o descartar.
+   - envio del paquete editorial como archivo `.md` cuando Borja lo pide.
 
 No hay servidor dedicado, base de datos ni panel de administracion.
 
@@ -48,14 +49,17 @@ El bot guarda temporalmente las notas de cada chat para que Borja pueda construi
 2. El bot genera un primer paquete editorial y hace preguntas.
 3. Borja responde con mas informacion en texto o audio.
 4. El bot suma esa ampliacion al contexto anterior.
-5. Cuando Borja escribe `PASAR A CLAUDE` o `PASAR A CLOD`, el bot genera el paquete usando todo lo acumulado.
-6. El bot envia un mensaje breve y adjunta el paquete completo como archivo Markdown.
+5. El bot vuelve a procesar el contexto y hace preguntas para completar experiencia real.
+6. Cuando Borja escribe `CREAR ARCHIVO`, `PASAR A CLAUDE` o `PASAR A CLOD`, el bot genera el paquete usando todo lo acumulado.
+7. El bot envia un mensaje breve y adjunta el paquete completo como archivo Markdown.
 
 Comandos actuales:
 
 - `AMPLIAR`: el bot espera mas informacion y no llama a OpenAI.
-- `PASAR A CLAUDE`: genera el paquete editorial final con todo el contexto acumulado.
-- `PASAR A CLOD`: hace lo mismo que `PASAR A CLAUDE`, para aceptar la forma rapida dictada o escrita.
+- `CREAR ARCHIVO`: genera el paquete editorial final como archivo Markdown.
+- `PASAR A CLAUDE`: hace lo mismo que `CREAR ARCHIVO`.
+- `PASAR A CLOD`: hace lo mismo que `CREAR ARCHIVO`, para aceptar la forma rapida dictada o escrita.
+- `ERROR`: permite indicar que algo esta mal y enviar una correccion.
 - `DESCARTAR`: borra el contexto acumulado y permite empezar otra herramienta.
 - `/start`: reinicia la conversacion y borra el contexto acumulado.
 
@@ -175,9 +179,15 @@ Quiero una ficha sobre Tally. Lo uso para crear formularios sencillos para profe
 Resultado esperado:
 
 1. El bot responde que ha recibido el mensaje.
-2. Despues devuelve un mensaje breve.
-3. Adjunta un archivo `.md` con el paquete editorial completo.
-4. El archivo incluye:
+2. Despues devuelve un resumen breve.
+3. Hace hasta 3 preguntas para completar experiencia real.
+4. Ofrece opciones:
+   - `AMPLIAR`
+   - `CREAR ARCHIVO`
+   - `ERROR`
+   - `DESCARTAR`
+5. Si respondes `CREAR ARCHIVO`, adjunta un archivo `.md` con el paquete editorial completo.
+6. El archivo incluye:
    - hechos confirmados.
    - respuestas de Borja.
    - dudas resueltas.
@@ -195,7 +205,7 @@ Para probar la memoria:
 1. Envia una nota inicial sobre una herramienta.
 2. Responde a una de las preguntas del bot con otra nota.
 3. Envia otra ampliacion si hace falta.
-4. Escribe `PASAR A CLOD`.
+4. Escribe `CREAR ARCHIVO` o `PASAR A CLOD`.
 5. Descarga el archivo `.md`.
 6. Comprueba que el paquete incluye la informacion de todas las notas anteriores, no solo la ultima frase.
 
@@ -206,7 +216,8 @@ Hace:
 - convierte notas brutas en paquetes editoriales utiles para Claude.
 - transcribe audios.
 - acumula ampliaciones de una misma herramienta durante la conversacion.
-- envia el paquete como archivo Markdown descargable para subirlo a Claude.
+- hace preguntas antes de generar el archivo final.
+- envia el paquete como archivo Markdown descargable para subirlo a Claude solo cuando Borja lo pide.
 - usa el contexto editorial del proyecto.
 - limita el bot a tu `TELEGRAM_CHAT_ID`.
 - protege el webhook con `TELEGRAM_WEBHOOK_SECRET`.

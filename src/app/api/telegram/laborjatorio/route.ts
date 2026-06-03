@@ -33,7 +33,7 @@ type SessionState = {
   updatedAt: number;
 };
 
-type BotCommand = "start" | "ampliar" | "pasar-a-claude" | "descartar" | null;
+type BotCommand = "start" | "ampliar" | "crear-archivo" | "error" | "descartar" | null;
 
 const CONTEXT_FILES = [
   "docs/fundamentos-laborjatorio.md",
@@ -79,7 +79,7 @@ export async function POST(request: NextRequest) {
       clearSession(message.chat.id);
       await sendTelegramMessage(
         message.chat.id,
-        "Laborjatorio listo. Enviame una nota de texto o audio sobre una herramienta y acumulare el contexto hasta que me digas PASAR A CLAUDE."
+        "Laborjatorio listo. Enviame una nota de texto o audio sobre una herramienta. Primero te hare preguntas para ampliar; cuando este listo, escribe CREAR ARCHIVO."
       );
 
       return NextResponse.json({ ok: true });
@@ -113,7 +113,16 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    if (command !== "pasar-a-claude") {
+    if (command === "error") {
+      await sendTelegramMessage(
+        message.chat.id,
+        "Dime que esta mal o que dato debo corregir. Mandamelo como texto o audio y lo sumare al contexto antes de generar el archivo."
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
+    if (command !== "crear-archivo") {
       appendSessionNote(message.chat.id, rawNotes);
     }
 
@@ -129,9 +138,9 @@ export async function POST(request: NextRequest) {
     }
 
     const statusMessage =
-      command === "pasar-a-claude"
-        ? "Recibido. Estoy preparando el paquete editorial con todo lo acumulado."
-        : "Recibido. He guardado esta nota y estoy regenerando el paquete editorial.";
+      command === "crear-archivo"
+        ? "Recibido. Estoy creando el archivo Markdown con todo lo acumulado."
+        : "Recibido. He guardado esta nota y estoy preparando preguntas para afinar el paquete.";
 
     await sendTelegramMessage(message.chat.id, statusMessage);
 
@@ -139,17 +148,21 @@ export async function POST(request: NextRequest) {
     const draft = await generateLaborjatorioDraft(accumulatedNotes, context);
     const response = formatTelegramDraftResponse(draft);
 
-    await sendTelegramMessage(
-      message.chat.id,
-      [
-        "Paquete editorial listo.",
-        "",
-        "Te lo envio como archivo Markdown para que puedas descargarlo y subirlo a Claude sin copiar varios mensajes.",
-        "",
-        "Responde con AMPLIAR, PASAR A CLAUDE o DESCARTAR."
-      ].join("\n")
-    );
-    await sendTelegramMarkdownDocument(message.chat.id, response, buildDraftFileName(draft));
+    if (command === "crear-archivo") {
+      await sendTelegramMessage(
+        message.chat.id,
+        [
+          "Paquete editorial listo.",
+          "",
+          "Te lo envio como archivo Markdown para que puedas descargarlo y subirlo a Claude sin copiar varios mensajes.",
+          "",
+          "Si ves algo mal, responde ERROR y dime que hay que corregir."
+        ].join("\n")
+      );
+      await sendTelegramMarkdownDocument(message.chat.id, response, buildDraftFileName(draft));
+    } else {
+      await sendLongTelegramMessage(message.chat.id, formatTelegramInterviewResponse(draft));
+    }
 
     return NextResponse.json({ ok: true });
   } catch (error) {
@@ -223,13 +236,26 @@ function detectCommand(rawNotes: string): BotCommand {
   }
 
   if (
+    normalizedText === "CREAR ARCHIVO" ||
+    normalizedText === "GENERAR ARCHIVO" ||
     normalizedText === "PASAR A CLAUDE" ||
     normalizedText === "PASAR A CLOD" ||
     normalizedText === "PASAR A CLOUD" ||
     normalizedText === "PASAR A CLOD." ||
-    normalizedText === "PASAR A CLAUDE."
+    normalizedText === "PASAR A CLAUDE." ||
+    normalizedText === "CREAR ARCHIVO." ||
+    normalizedText === "GENERAR ARCHIVO."
   ) {
-    return "pasar-a-claude";
+    return "crear-archivo";
+  }
+
+  if (
+    normalizedText === "ERROR" ||
+    normalizedText === "HAY UN ERROR" ||
+    normalizedText === "MARCAR ERROR" ||
+    normalizedText === "CORREGIR"
+  ) {
+    return "error";
   }
 
   if (normalizedText === "DESCARTAR") {
@@ -401,7 +427,7 @@ async function generateLaborjatorioDraft(rawNotes: string, context: string) {
           "Escribe claro, directo, conversacional, practico y honesto. La experiencia de Borja pesa mas que la descripcion tecnica.",
           "Cuando Borja pegue mas adelante un articulo final de Claude, entonces se convertira en ficha web, se actualizaran archivos y se preparara el commit. Ahora no hagas eso."
         ].join(" "),
-      input: `Contexto obligatorio del repositorio:\n\n${context}\n\nNotas brutas recibidas por Telegram:\n\n${rawNotes}\n\nGenera un paquete editorial para Claude. No generes el articulo final, no generes ficha web definitiva y no prepares commit.\n\nSigue este proceso:\n\n1. Extrae solo hechos confirmados por Borja. No anadas nada no mencionado.\n2. Separa respuestas literales o casi literales de Borja de datos utiles objetivos.\n3. Identifica dudas resueltas y dudas todavia pendientes.\n4. Prepara instrucciones claras para que Claude escriba mas adelante sin inventar experiencia.\n5. Haz maximo 3 preguntas si faltan datos importantes.\n\nResponde con esta estructura exacta:\n\nConfirmacion breve: una frase corta.\n\n# Paquete editorial para Claude\n\n## 1. Hechos confirmados\n\n- Lista solo hechos que Borja ha dicho claramente.\n- Si algo es inferencia, marcalo como inferencia.\n\n## 2. Respuestas de Borja\n\n- Recoge las respuestas, frases o ideas de Borja que conviene conservar.\n- No las mejores ni las conviertas en copy.\n\n## 3. Dudas resueltas\n\n- Lista las dudas que las notas ya resuelven.\n- Si no hay dudas resueltas suficientes, dilo.\n\n## 4. Datos utiles\n\n- Datos objetivos que pueden ayudar a Claude: enlace oficial, categoria aproximada, funcion basica, estado provisional, etiquetas posibles.\n- Marca como Pendiente cualquier dato no confirmado.\n- Usa alternatives: [] si Borja no ha mencionado alternativas o si no estan en el inventario.\n\n## 5. Tono deseado\n\n- Indica el tono Laborjatorio que debe usar Claude: claro, directo, conversacional, practico, honesto, sin lenguaje corporativo ni ficha SaaS.\n- Incluye una advertencia breve sobre evitar frases genericas.\n\n## 6. Estructura esperada\n\n- Propón una estructura para el futuro articulo de Claude.\n- Debe priorizar experiencia real de Borja antes que descripcion tecnica.\n- Si falta informacion, indica que Claude debe escribir una version incompleta o pedir mas datos, no inventar.\n\n## 7. Advertencias para Claude\n\n- Incluye advertencias explicitas: no inventar experiencia, no rellenar huecos, no atribuir a Borja limitaciones/precios/alternativas/veredictos no mencionados.\n- Indica que el articulo final debe dejar como Pendiente lo no confirmado.\n\n## Preguntas pendientes para Borja\n\n1. Maximo tres preguntas concretas para completar experiencia real.\n2. Prioriza problema resuelto, alternativa anterior, molestia, pago o estado si falta.\n3. No hagas preguntas genericas.\n\n# Opciones\n\nAMPLIAR - responder a las preguntas y enriquecer el paquete.\nPASAR A CLAUDE - pegar este paquete en Claude para redactar el articulo.\nDESCARTAR - no seguir con esta herramienta.\n\nEstados permitidos para clasificacion provisional: Imprescindible si Borja no podria trabajar normalmente sin ella; Importante si la usa a menudo y aporta valor claro; Secundaria si la usa de vez en cuando; En prueba si todavia no tiene criterio suficiente; Abandonada si ya no la usa.`,
+      input: `Contexto obligatorio del repositorio:\n\n${context}\n\nNotas brutas recibidas por Telegram:\n\n${rawNotes}\n\nGenera un paquete editorial para Claude. No generes el articulo final, no generes ficha web definitiva y no prepares commit.\n\nSigue este proceso:\n\n1. Extrae solo hechos confirmados por Borja. No anadas nada no mencionado.\n2. Separa respuestas literales o casi literales de Borja de datos utiles objetivos.\n3. Identifica dudas resueltas y dudas todavia pendientes.\n4. Prepara instrucciones claras para que Claude escriba mas adelante sin inventar experiencia.\n5. Haz maximo 3 preguntas si faltan datos importantes.\n\nResponde con esta estructura exacta:\n\nConfirmacion breve: una frase corta.\n\n# Paquete editorial para Claude\n\n## 1. Hechos confirmados\n\n- Lista solo hechos que Borja ha dicho claramente.\n- Si algo es inferencia, marcalo como inferencia.\n\n## 2. Respuestas de Borja\n\n- Recoge las respuestas, frases o ideas de Borja que conviene conservar.\n- No las mejores ni las conviertas en copy.\n\n## 3. Dudas resueltas\n\n- Lista las dudas que las notas ya resuelven.\n- Si no hay dudas resueltas suficientes, dilo.\n\n## 4. Datos utiles\n\n- Datos objetivos que pueden ayudar a Claude: enlace oficial, categoria aproximada, funcion basica, estado provisional, etiquetas posibles.\n- Marca como Pendiente cualquier dato no confirmado.\n- Usa alternatives: [] si Borja no ha mencionado alternativas o si no estan en el inventario.\n\n## 5. Tono deseado\n\n- Indica el tono Laborjatorio que debe usar Claude: claro, directo, conversacional, practico, honesto, sin lenguaje corporativo ni ficha SaaS.\n- Incluye una advertencia breve sobre evitar frases genericas.\n\n## 6. Estructura esperada\n\n- Propón una estructura para el futuro articulo de Claude.\n- Debe priorizar experiencia real de Borja antes que descripcion tecnica.\n- Si falta informacion, indica que Claude debe escribir una version incompleta o pedir mas datos, no inventar.\n\n## 7. Advertencias para Claude\n\n- Incluye advertencias explicitas: no inventar experiencia, no rellenar huecos, no atribuir a Borja limitaciones/precios/alternativas/veredictos no mencionados.\n- Indica que el articulo final debe dejar como Pendiente lo no confirmado.\n\n## Preguntas pendientes para Borja\n\n1. Maximo tres preguntas concretas para completar experiencia real.\n2. Prioriza problema resuelto, alternativa anterior, molestia, pago o estado si falta.\n3. No hagas preguntas genericas.\n\n# Opciones\n\nAMPLIAR - responder a las preguntas y enriquecer el paquete.\nCREAR ARCHIVO - generar el archivo Markdown para subirlo a Claude.\nERROR - indicar que hay algo mal y mandar una correccion.\nDESCARTAR - no seguir con esta herramienta.\n\nEstados permitidos para clasificacion provisional: Imprescindible si Borja no podria trabajar normalmente sin ella; Importante si la usa a menudo y aporta valor claro; Secundaria si la usa de vez en cuando; En prueba si todavia no tiene criterio suficiente; Abandonada si ya no la usa.`,
       store: false
     })
   });
@@ -440,7 +466,52 @@ function extractResponseText(payload: unknown) {
 }
 
 function formatTelegramDraftResponse(draft: string) {
-  return `LABORJATORIO\n\n${draft}\n\n---\n\nResponde con AMPLIAR, PASAR A CLAUDE o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para preparar el paquete editorial sin tocar GitHub.`;
+  return `LABORJATORIO\n\n${draft}\n\n---\n\nResponde con AMPLIAR, CREAR ARCHIVO, ERROR o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para preparar el paquete editorial sin tocar GitHub.`;
+}
+
+function formatTelegramInterviewResponse(draft: string) {
+  const confirmation = extractSection(
+    draft,
+    /Confirmacion breve:\s*/i,
+    /\n\s*# Paquete editorial para Claude/i
+  );
+  const questions = extractSection(
+    draft,
+    /## Preguntas pendientes para Borja\s*/i,
+    /\n\s*# Opciones/i
+  );
+
+  return [
+    "He procesado lo que me has enviado.",
+    "",
+    confirmation ? `Resumen: ${confirmation}` : "Resumen: ya tengo contexto acumulado para esta herramienta.",
+    "",
+    "Preguntas para afinar antes de crear el archivo:",
+    "",
+    questions || "No veo preguntas imprescindibles ahora mismo. Si estas conforme, puedo crear el archivo.",
+    "",
+    "Opciones:",
+    "",
+    "AMPLIAR - responder a estas preguntas o anadir mas informacion.",
+    "CREAR ARCHIVO - generar el Markdown completo para subirlo a Claude.",
+    "ERROR - decirme que dato esta mal y corregirlo.",
+    "DESCARTAR - borrar esta herramienta y empezar otra."
+  ].join("\n");
+}
+
+function extractSection(text: string, startPattern: RegExp, endPattern: RegExp) {
+  const startMatch = startPattern.exec(text);
+
+  if (!startMatch || startMatch.index < 0) {
+    return "";
+  }
+
+  const startIndex = startMatch.index + startMatch[0].length;
+  const rest = text.slice(startIndex);
+  const endMatch = endPattern.exec(rest);
+  const section = endMatch ? rest.slice(0, endMatch.index) : rest;
+
+  return section.trim();
 }
 
 function buildDraftFileName(draft: string) {
