@@ -62,6 +62,15 @@ export async function POST(request: NextRequest) {
 
     const rawNotes = await extractRawNotes(message);
 
+    if (rawNotes.trim().startsWith("/start")) {
+      await sendTelegramMessage(
+        message.chat.id,
+        "Laborjatorio listo. Enviame una nota de texto o audio sobre una herramienta y te devolvere un borrador revisable."
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
     if (!rawNotes.trim()) {
       await sendTelegramMessage(
         message.chat.id,
@@ -85,13 +94,17 @@ export async function POST(request: NextRequest) {
     const fallbackChatId = process.env.TELEGRAM_CHAT_ID;
 
     if (fallbackChatId) {
-      await sendTelegramMessage(
-        fallbackChatId,
-        "Ha fallado la automatizacion del Laborjatorio. Revisa los logs de Vercel para ver el error."
-      );
+      try {
+        await sendTelegramMessage(
+          fallbackChatId,
+          "Ha fallado la automatizacion del Laborjatorio. Revisa los logs de Vercel para ver el error."
+        );
+      } catch (telegramError) {
+        console.error(telegramError);
+      }
     }
 
-    return NextResponse.json({ ok: false }, { status: 500 });
+    return NextResponse.json({ ok: false, retry: false });
   }
 }
 
