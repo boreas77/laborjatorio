@@ -183,7 +183,7 @@ async function transcribeTelegramAudio(fileId: string) {
   const audioBlob = await audioResponse.blob();
   const formData = new FormData();
   formData.append("model", process.env.OPENAI_TRANSCRIPTION_MODEL || "gpt-4o-mini-transcribe");
-  formData.append("file", audioBlob, path.basename(filePath));
+  formData.append("file", audioBlob, getOpenAiAudioFileName(filePath));
 
   const transcriptionResponse = await fetch("https://api.openai.com/v1/audio/transcriptions", {
     method: "POST",
@@ -326,6 +326,16 @@ function getRequiredEnv(name: string) {
   }
 
   return value;
+}
+
+function getOpenAiAudioFileName(filePath: string) {
+  const fileName = path.basename(filePath);
+
+  if (fileName.toLowerCase().endsWith(".oga")) {
+    return fileName.replace(/\.oga$/i, ".ogg");
+  }
+
+  return fileName;
 }
 
 function formatErrorMessage(error: unknown) {
