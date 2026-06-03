@@ -27,10 +27,17 @@ export type ToolAlternativeDetail = {
   url?: string;
 };
 
+export type ToolFaq = {
+  question: string;
+  answer: string;
+};
+
 export type Tool = {
   name: string;
   slug: string;
   title?: string;
+  metaDescription?: string;
+  keywords?: string[];
   tagline: string;
   category: string;
   subcategories: string[];
@@ -58,6 +65,7 @@ export type Tool = {
   priceRows?: ToolPriceRow[];
   priceNote?: string;
   alternativeDetails?: ToolAlternativeDetail[];
+  faqs?: ToolFaq[];
   cta?: string;
 };
 
@@ -247,6 +255,128 @@ export const tools: Tool[] = [
     ],
     cta:
       "Si quieres ver cómo convierto contenido largo en piezas más pequeñas para redes, en borjaprofe.com voy contando estas pruebas con calma."
+  },
+  {
+    name: "DaVinci Resolve",
+    slug: "davinci-resolve-editor-video-gratis-profesores",
+    title: "DaVinci Resolve: el editor de vídeo gratis con el que edito siendo profe (y no técnico)",
+    metaDescription:
+      "Por qué edito mis vídeos y mi audio con DaVinci Resolve siendo profe y sin ser técnico: el editor de vídeo gratis que me hizo dejar Premiere, lo bueno y lo que me irrita.",
+    keywords: [
+      "DaVinci Resolve",
+      "editor de vídeo gratis",
+      "editar vídeos para clases",
+      "software para profesores",
+      "edición de audio"
+    ],
+    tagline:
+      "El editor de vídeo gratis que uso para montar vídeos y mejorar audio sin ser técnico.",
+    category: "Audio y vídeo",
+    subcategories: ["vídeo", "audio", "contenido", "editor de vídeo", "software gratuito"],
+    pricing: "gratis",
+    officialUrl: "https://www.blackmagicdesign.com/products/davinciresolve",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso desde al menos 2020 para editar vídeos y audio de clase, materiales y contenido sin pagar una suscripción ni depender de Premiere.",
+    bestFor: [
+      "Profes online que necesitan editar vídeos sin pagar una suscripción",
+      "Profes de idiomas que quieren cuidar el audio de sus materiales",
+      "Profes de español que graban explicaciones, clases o contenido",
+      "Creadores educativos que quieren una herramienta seria, gratis y legal"
+    ],
+    notFor: [
+      "Quien busca el editor más ligero para un ordenador modesto",
+      "Quien solo necesita cortar un vídeo muy simple una vez al año",
+      "Quien quiere comparar editores profesionales en profundidad"
+    ],
+    pros: [
+      "La versión gratuita es muy completa.",
+      "Incluye recursos suficientes para editar vídeo y audio sin comprar extras.",
+      "Permite mejorar el audio sin ser técnico de sonido.",
+      "Evita pagar otra suscripción mensual.",
+      "Me hizo dejar Premiere porque cubría mis necesidades igual o mejor."
+    ],
+    cons: [
+      "Al principio puede resultar un poco abrumador.",
+      "Consume bastantes recursos del ordenador.",
+      "Si tienes muchas pestañas y programas abiertos, se nota.",
+      "No he probado la versión Studio, así que no comparo desde experiencia propia."
+    ],
+    alternatives: ["Adobe Premiere Pro", "CapCut", "Final Cut Pro"],
+    rating: 5,
+    difficulty: "media",
+    status: "importante",
+    updatedAt: "2026-06-04",
+    intro:
+      "DaVinci Resolve es el editor de vídeo que uso para montar vídeos de clase, materiales y contenido sin ser editor profesional. Lo uso desde al menos 2020 y lo meto en el Laborjatorio porque resuelve un problema muy concreto: necesito editar esto, quiero que se vea y suene limpio, y no quiero pagar otra suscripción.",
+    whatItDoes:
+      "DaVinci Resolve es un programa de Blackmagic Design para editar vídeo, audio, color y posproducción. En el mundo profesional se usa para trabajos muy serios, pero su versión gratuita ya es más que suficiente para un profesor que necesita montar vídeos claros, mejorar audio y preparar contenido educativo sin entrar en una cadena de plugins y pagos extra.",
+    howIUseIt:
+      "Lo uso siendo profe, no técnico. No vengo del mundo del vídeo: vengo del mundo de las clases. Para mí la clave es que puedo editar un vídeo, limpiar el audio y dejar una pieza decente sin sentir que estoy delante de un programa reservado a gente con bata de posproducción. Antes usaba Premiere en una versión pirateada. Era pobre, no me juzgues. Cambié porque DaVinci era gratis, legal y cubría mis necesidades igual o mejor.",
+    teacherUseCases: [
+      "Editar tutoriales, explicaciones grabadas o clases asíncronas.",
+      "Mejorar el audio de materiales donde la pronunciación y la escucha importan.",
+      "Montar vídeos para alumnos sin pagar una suscripción mensual.",
+      "Preparar contenido para YouTube, cursos o redes a partir de grabaciones propias.",
+      "Trabajar vídeo y audio en el mismo programa sin saltar entre cinco herramientas."
+    ],
+    honestVerdict:
+      "DaVinci Resolve cumple lo que necesito como profe, que no es edición de cine: vídeo y audio limpios, sin complicaciones absurdas, sin pagar y sin sentirme un impostor delante de un programa carísimo. Lo uso desde 2020, me hizo dejar Premiere y solo me pide a cambio que mi ordenador respire un poco. Para mí, ese trato es justo. ¿Lo seguiría recomendando hoy? Sí.",
+    importantNotice:
+      "Esta ficha habla desde el uso de la versión gratuita. No he probado DaVinci Resolve Studio, así que cualquier comentario sobre la versión de pago queda como posibilidad, no como experiencia real.",
+    metrics: [
+      { label: "Año aproximado desde el que lo uso", value: "2020" },
+      { label: "Coste de la versión que uso", value: "0 €" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceRows: [
+      { label: "DaVinci Resolve", value: "Gratis" },
+      { label: "DaVinci Resolve Studio", value: "Versión de pago" },
+      { label: "Cuándo pagaría", value: "Si necesitara una función concreta y fuera pago único" }
+    ],
+    priceNote:
+      "La versión gratuita me cubre. Si algún día necesitara algo más específico, posiblemente invertiría, sobre todo si fuera de pago único. Una suscripción mensual más me da pereza; un pago único útil lo puedo entender.",
+    alternativeDetails: [
+      {
+        name: "Adobe Premiere Pro",
+        description:
+          "Es la alternativa que usaba antes. Cambié porque DaVinci era gratis, legal y suficiente para mi forma de editar."
+      },
+      {
+        name: "CapCut",
+        description:
+          "Puede servir para ediciones sencillas o contenido social, pero esta ficha no nace de una comparación profunda con CapCut."
+      },
+      {
+        name: "Final Cut Pro",
+        description:
+          "Otra opción conocida en edición de vídeo, especialmente en Mac, pero no es una alternativa que valore aquí desde experiencia propia."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿DaVinci Resolve es gratis de verdad?",
+        answer:
+          "Sí. Hay una versión gratuita muy completa que puedes usar sin caducidad. Por encima existe DaVinci Resolve Studio, con funciones más avanzadas."
+      },
+      {
+        question: "¿Sirve si no tengo ni idea de edición?",
+        answer:
+          "Sí. Al principio puede abrumar un poco, pero la interfaz es visual y permite hacer ediciones útiles sin conocimientos técnicos avanzados."
+      },
+      {
+        question: "¿Va lento?",
+        answer:
+          "Puede consumir bastantes recursos. Si tu ordenador va justo o trabajas con muchos programas abiertos, es posible que lo notes."
+      },
+      {
+        question: "¿Es mejor que Premiere?",
+        answer:
+          "Para lo que hago yo como profesor, me cumple igual o mejor y encima es gratis y legal. Para edición profesional pesada, esa comparación ya no la hago yo."
+      }
+    ],
+    cta:
+      "Si quieres que te cuente estas movidas de herramientas con más calma, te las cuento en borjaprofe.com."
   },
   {
     name: "Squoosh",

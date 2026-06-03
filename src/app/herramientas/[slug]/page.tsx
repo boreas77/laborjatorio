@@ -29,13 +29,14 @@ export async function generateMetadata({ params }: ToolPageProps): Promise<Metad
 
   return {
     title,
-    description: tool.tagline,
+    description: tool.metaDescription || tool.tagline,
+    keywords: tool.keywords,
     alternates: {
       canonical: `/herramientas/${tool.slug}`
     },
     openGraph: {
       title,
-      description: tool.tagline,
+      description: tool.metaDescription || tool.tagline,
       type: "article"
     }
   };
@@ -243,6 +244,14 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 </ul>
               </section>
               <section>
+                <h2>Casos de uso para profes</h2>
+                <ul>
+                  {tool.teacherUseCases.map((useCase) => (
+                    <li key={useCase}>{useCase}</li>
+                  ))}
+                </ul>
+              </section>
+              <section>
                 <div className="tool-verdict">
                   <p className="tool-verdict__label">Veredicto honesto</p>
                   <p>{tool.honestVerdict}</p>
@@ -273,6 +282,17 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   </ul>
                 )}
               </section>
+              {tool.faqs?.length ? (
+                <section>
+                  <h2>Preguntas frecuentes</h2>
+                  {tool.faqs.map((faq) => (
+                    <div className="tool-faq" key={faq.question}>
+                      <h3>{faq.question}</h3>
+                      <p>{faq.answer}</p>
+                    </div>
+                  ))}
+                </section>
+              ) : null}
               {tool.cta ? (
                 <section className="tool-cta">
                   <p>{tool.cta}</p>
