@@ -169,7 +169,7 @@ Para futuros cambios:
 5. Ejecutar comprobaciones si procede.
 6. Hacer commit.
 7. Hacer `git push`.
-8. Comprobar `https://laborjatorio.vercel.app/`.
+8. Comprobar `https://laborjatorio.com/`.
 
 Si Git dice `Your branch is ahead of 'origin/main' by 1 commit`, no falta otro commit: falta ejecutar `git push`.
 
@@ -177,10 +177,14 @@ Si vuelve a aparecer un problema de permisos con `.git/index.lock`, revisar perm
 
 ## Ultima sesion registrada
 
-Fecha: 2026-06-03
+Fecha: 2026-06-04
 
 Resumen:
 
+- Borja compro y conecto el dominio `laborjatorio.com`.
+- Vercel reconoce el proyecto `laborjatorio` con `https://laborjatorio.com` como URL de produccion.
+- `https://laborjatorio.com/`, `/herramientas`, `/herramientas/opusclip` y `/herramientas/davinci-resolve-editor-video-gratis-profesores` responden correctamente.
+- A partir de ahora, toda publicacion debe comprobarse en `https://laborjatorio.com`, no solo en `laborjatorio.vercel.app`.
 - Se decidio trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`, porque es la carpeta que Codex abre como workspace por defecto.
 - Borja copio ahi el contenido reciente de `LABORJATORIO`.
 - Se confirmo que `MI TALLER DE ELE` contiene el MVP del bot de Telegram, los documentos nuevos, el commit local `d6ddad0` y el remoto correcto `boreas77/laborjatorio`.
