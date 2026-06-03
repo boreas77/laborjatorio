@@ -61,16 +61,19 @@ export default function HomePage() {
           <h1>
             Has entrado al <BrandName />
           </h1>
-          <p>Un directorio de herramientas para profesores de idiomas.</p>
           <p>
-            No para todos los profesores de idiomas. Para los que ya tienen suficiente
-            con preparar clases, grabar vídeos, responder correos y encontrar el cable
-            del micro.
+            Aquí documento las herramientas que uso para <strong>enseñar español, crear
+            contenido y gestionar mi negocio online</strong>. No las mejores del mercado
+            según ningún ranking. Las mías. <strong>Las que me rodean mientras escribo
+            esto</strong>.
           </p>
           <p>
-            Aquí no hay top 10 ni estrellas ni «soluciones integrales». Hay criterio,
-            experiencia y honestidad. Lo que uso, para qué lo uso y cuándo no merece
-            la pena pagar.
+            Algunas son imprescindibles. Otras son un experimento. Alguna la sigo usando
+            aunque no te la recomendaría.
+          </p>
+          <p>
+            Te lo cuento todo aquí abajo. Aunque si tienes prisa, puedes empezar a buscar
+            tu herramienta.
           </p>
         </div>
       </section>
