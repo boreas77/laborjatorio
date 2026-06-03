@@ -97,14 +97,14 @@ export async function POST(request: NextRequest) {
       try {
         await sendTelegramMessage(
           fallbackChatId,
-          "Ha fallado la automatizacion del Laborjatorio. Revisa los logs de Vercel para ver el error."
+          formatErrorMessage(error)
         );
       } catch (telegramError) {
         console.error(telegramError);
       }
     }
 
-    return NextResponse.json({ ok: false, retry: false });
+  return NextResponse.json({ ok: false, retry: false });
   }
 }
 
@@ -326,4 +326,22 @@ function getRequiredEnv(name: string) {
   }
 
   return value;
+}
+
+function formatErrorMessage(error: unknown) {
+  const rawMessage = error instanceof Error ? error.message : String(error);
+  const safeMessage = rawMessage
+    .replace(/Bearer\s+[A-Za-z0-9._-]+/g, "Bearer [oculto]")
+    .replace(/sk-[A-Za-z0-9._-]+/g, "sk-[oculto]")
+    .replace(/github_pat_[A-Za-z0-9_]+/g, "github_pat_[oculto]")
+    .replace(/bot\d+:[A-Za-z0-9_-]+/g, "bot[oculto]");
+
+  return [
+    "Ha fallado la automatizacion del Laborjatorio, pero ya sin bucle.",
+    "",
+    "Error resumido:",
+    safeMessage.slice(0, 1200),
+    "",
+    "Mandame este mensaje tal cual y lo ajusto."
+  ].join("\n");
 }
