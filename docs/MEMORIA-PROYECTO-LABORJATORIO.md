@@ -96,6 +96,7 @@ Archivos estrategicos actuales:
 - Se amplio la plantilla de `src/app/herramientas/[slug]/page.tsx` para mostrar campos opcionales de fichas ricas sin romper las fichas antiguas.
 - Se actualizo `docs/Herramientas.md` para incluir LastPass como herramienta importante con etiquetas de productividad, seguridad y organizacion.
 - Tras revisar la primera publicacion, se simplifico la ficha de LastPass: una sola columna, sin subtitulo repetido bajo el H1, sin bloque lateral de veredicto, texto mas oscuro y alternativas sin descripciones inventadas.
+- Se anadio enlace oficial a LastPass en la primera mencion y un boton rojo de acceso dentro del cuerpo. Borja comprobo Impact, pero LastPass no acepto la solicitud de afiliacion, asi que el enlace queda como enlace oficial no afiliado.
 
 ### 2026-06-02
 

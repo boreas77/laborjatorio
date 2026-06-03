@@ -742,6 +742,29 @@ main {
   margin: 0;
 }
 
+.tool-inline-link {
+  color: var(--rose);
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.tool-action-button {
+  background: var(--rose);
+  border: 1px solid rgb(184 92 92 / 40%);
+  border-radius: 8px;
+  color: #fffdf8;
+  display: inline-flex;
+  font-weight: 850;
+  margin-top: 14px;
+  padding: 12px 18px;
+}
+
+.tool-action-button:hover {
+  background: #984545;
+}
+
 .tool-metrics {
   display: grid;
   gap: 12px;

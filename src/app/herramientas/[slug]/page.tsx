@@ -120,7 +120,23 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
           <section>
             <h2>{hasRichEditorialBlocks ? "Qué es y para qué sirve" : "Para qué sirve"}</h2>
-            <p>{tool.whatItDoes}</p>
+            <p>
+              {hasRichEditorialBlocks ? (
+                <>
+                  <a className="tool-inline-link" href={primaryUrl} target="_blank" rel="noopener noreferrer">
+                    {tool.name}
+                  </a>
+                  {tool.whatItDoes.startsWith(tool.name) ? tool.whatItDoes.slice(tool.name.length) : ` ${tool.whatItDoes}`}
+                </>
+              ) : (
+                tool.whatItDoes
+              )}
+            </p>
+            {hasRichEditorialBlocks ? (
+              <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
+                Ir a {tool.name}
+              </a>
+            ) : null}
           </section>
 
           {tool.metrics?.length ? (
