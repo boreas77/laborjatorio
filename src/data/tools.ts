@@ -159,6 +159,96 @@ export const tools: Tool[] = [
       "Muy útil para profes. La trampa es dejar que la plantilla mande más que la actividad. Primero va la idea didáctica; luego ya le ponemos zapatos bonitos."
   },
   {
+    name: "OpusClip",
+    slug: "opusclip",
+    title: "OpusClip: cómo publico clips de Gramaticón y el podcast de Palabras",
+    tagline:
+      "La herramienta que uso para convertir vídeos largos en clips cortos y verticales para redes sociales.",
+    category: "Audio y vídeo",
+    subcategories: ["video", "redes sociales", "contenido", "ia", "podcast"],
+    pricing: "suscripcion",
+    officialUrl: "https://www.opus.pro/",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso para transformar episodios largos de Gramaticón y el podcast de Palabras en clips cortos para Instagram, TikTok, YouTube Shorts y otras redes.",
+    bestFor: [
+      "Profes que ya graban vídeos largos, clases, episodios o tutoriales",
+      "Profes de idiomas que quieren aparecer en redes sin editar cada clip a mano",
+      "Creadores educativos con un ritmo mínimo de publicación semanal",
+      "Quien entiende los clips como inversión de visibilidad, no como adorno"
+    ],
+    notFor: [
+      "Quien publica vídeos largos solo de vez en cuando",
+      "Quien no tiene una estrategia clara de distribución",
+      "Quien busca una herramienta barata para usar una vez al mes",
+      "Quien quiere delegar también la programación de publicaciones"
+    ],
+    pros: [
+      "Detecta momentos interesantes dentro de vídeos largos.",
+      "El subtitulado automático en español funciona bastante bien.",
+      "Permite guardar fuentes y colores de marca.",
+      "La detección de caras en entrevistas ayuda mucho en formato vertical.",
+      "Ahorra el tiempo que antes hacía que directamente no publicara clips."
+    ],
+    cons: [
+      "El precio da respeto al principio.",
+      "Tiene más sentido si ya produces contenido con cierta regularidad.",
+      "La puntuación de viralidad orienta, pero no sustituye el criterio propio.",
+      "No lo uso para programar publicaciones, aunque la plataforma lo permite."
+    ],
+    alternatives: ["CapCut", "Descript", "Klap", "Captions"],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-03",
+    intro:
+      "OpusClip es la herramienta que uso para convertir episodios largos de Gramaticón y el podcast de Palabras en clips cortos y verticales para redes. Empecé a usarla en 2026 y, aunque al principio me costó aceptar el precio, ha cambiado bastante mi forma de distribuir contenido.",
+    whatItDoes:
+      "OpusClip analiza un vídeo largo con inteligencia artificial, detecta momentos que pueden funcionar como clips y los convierte en piezas verticales preparadas para redes sociales. También ayuda con subtítulos automáticos, eliminación de silencios, ajustes de encuadre, efectos básicos y plantillas de marca.",
+    howIUseIt:
+      "Cuando sale un episodio nuevo de Gramaticón, subo el vídeo a OpusClip y reviso los momentos que propone. Elijo los que me parecen más interesantes, corrijo los subtítulos cuando hace falta y exporto. Con el podcast de Palabras hago algo parecido: vídeo largo dentro, varios clips fuera. Antes no publicaba clips porque localizar el momento, cortarlo, subtitularlo y pasarlo a vertical era una movida que no cabía en mi flujo de trabajo. Ahora publico contenido en redes prácticamente cada día con muy poco esfuerzo.",
+    teacherUseCases: [
+      "Convertir una clase grabada en varios clips breves para redes.",
+      "Sacar fragmentos didácticos de un episodio largo de YouTube.",
+      "Reutilizar entrevistas o podcasts educativos en formato vertical.",
+      "Crear piezas cortas para atraer alumnos hacia contenidos más largos.",
+      "Mantener presencia en redes sin dedicar horas a edición manual."
+    ],
+    honestVerdict:
+      "OpusClip merece la pena si ya produces vídeos largos y quieres distribuirlos mejor. Para mí ha sido la diferencia entre publicar clips y no publicarlos. No lo recomendaría como capricho aislado: necesita volumen, estrategia y cierta continuidad. Pero si grabas cada semana, el precio empieza a parecer menos un gasto y más una forma razonable de comprar tiempo y visibilidad.",
+    metrics: [
+      { label: "Créditos incluidos en el plan anual", value: "3.600" },
+      { label: "Horas de vídeo al año", value: "60" },
+      { label: "Año en que empecé a usarlo", value: "2026" }
+    ],
+    priceRows: [
+      { label: "Plan anual Pro", value: "~174 euros" },
+      { label: "Créditos incluidos", value: "3.600 minutos al año" },
+      { label: "Crédito", value: "1 minuto de vídeo procesado" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Al verlo por primera vez me pareció caro. Luego me pregunté cuánto estaría dispuesto a pagar en publicidad para conseguir esa visibilidad, y 174 euros al año dejó de parecer tanto. Eso sí: solo tiene sentido si vas a darle uso real.",
+    alternativeDetails: [
+      {
+        name: "CapCut",
+        description:
+          "Lo probé brevemente, pero me pareció algo lioso y no encontré claro cómo encajaba en mi flujo."
+      },
+      {
+        name: "Descript"
+      },
+      {
+        name: "Klap"
+      },
+      {
+        name: "Captions"
+      }
+    ],
+    cta:
+      "Si quieres ver cómo convierto contenido largo en piezas más pequeñas para redes, en borjaprofe.com voy contando estas pruebas con calma."
+  },
+  {
     name: "Squoosh",
     slug: "squoosh",
     tagline: "Compresor de imágenes rápido, gratuito y privado para aligerar materiales y páginas web.",
@@ -288,6 +378,72 @@ export const tools: Tool[] = [
     ],
     cta:
       "Si te interesa organizar mejor tu vida digital como profesor, en borjaprofe.com cuento estas cosas con calma."
+  },
+  {
+    name: "Standing Desk Maidesite",
+    slug: "standing-desk-maidesite",
+    title: "Standing Desk Maidesite: ergonomía también es productividad",
+    tagline:
+      "Mesa elevable para alternar trabajo sentado y de pie en un puesto de profesor online.",
+    category: "Equipo físico",
+    subcategories: ["ergonomía", "productividad", "hardware", "stamindesk", "standing desk"],
+    pricing: "pago-unico",
+    officialUrl: "https://www.maidesite.de/",
+    hasAffiliate: false,
+    myUseCase:
+      "La tengo registrada en el Laborjatorio como parte del equipo físico que sostiene muchas horas de clases, escritura, grabación y trabajo online.",
+    bestFor: [
+      "Profes online que pasan muchas horas delante del ordenador",
+      "Creadores educativos que graban, editan y escriben en el mismo puesto",
+      "Quien quiere mejorar la ergonomía sin convertir el escritorio en una reforma completa"
+    ],
+    notFor: [
+      "Quien trabaja pocas horas sentado al día",
+      "Quien no tiene espacio para una mesa regulable",
+      "Quien espera que una mesa solucione por sí sola todos los problemas posturales"
+    ],
+    pros: [
+      "Permite alternar trabajo sentado y de pie.",
+      "Recuerda que el equipo físico también influye en la energía de trabajo.",
+      "Tiene sentido para rutinas largas de clases, edición, escritura y gestión.",
+      "Encaja mejor como inversión de puesto de trabajo que como capricho tecnológico."
+    ],
+    cons: [
+      "Ocupa más espacio y exige medir bien antes de comprar.",
+      "No sustituye pausas, movimiento ni una buena organización del puesto.",
+      "La ficha necesita ampliarse con detalles concretos de uso y modelo exacto.",
+      "El precio depende del modelo y de la tienda."
+    ],
+    alternatives: ["FlexiSpot", "IKEA Bekant", "Escritorio fijo con soporte elevador"],
+    rating: 4,
+    difficulty: "media",
+    status: "importante",
+    updatedAt: "2026-06-03",
+    intro:
+      "Standing Desk Maidesite aparece en el Laborjatorio por una razón sencilla: el trabajo de un profesor online no vive solo dentro del navegador. También vive en la espalda, en la postura, en las horas sentado y en el puesto físico desde el que grabas, corriges, escribes y das clase.",
+    whatItDoes:
+      "Una standing desk es una mesa regulable en altura que permite trabajar sentado o de pie. En un proyecto como este no entra por ser un mueble bonito, sino porque la ergonomía afecta directamente a la constancia, la comodidad y la energía con la que se trabaja.",
+    howIUseIt:
+      "La tengo clasificada como herramienta importante dentro del bloque de ergonomía y productividad. No es software, pero forma parte del sistema: si pasas muchas horas preparando clases, grabando vídeos, editando podcasts o escribiendo materiales, el escritorio deja de ser decorado y empieza a ser infraestructura.",
+    teacherUseCases: [
+      "Alternar postura durante jornadas largas de clases online.",
+      "Grabar vídeos o explicaciones de pie con más naturalidad.",
+      "Preparar materiales, corregir y escribir sin estar siempre en la misma posición.",
+      "Construir un puesto de trabajo más sostenible para un negocio educativo online."
+    ],
+    honestVerdict:
+      "No es una herramienta mágica ni va a arreglar por sí sola una mala rutina. Pero si trabajas muchas horas desde casa, una mesa elevable puede ser una decisión bastante sensata. Esta ficha queda publicada como entrada breve y pendiente de ampliar con modelo exacto, precio pagado y experiencia concreta de uso.",
+    importantNotice:
+      "Ficha breve: Standing Desk Maidesite estaba registrada como herramienta importante en la documentación interna, pero todavía falta ampliar la experiencia concreta antes de convertirla en un artículo largo.",
+    priceRows: [
+      { label: "Modelo", value: "Pendiente de concretar" },
+      { label: "Tipo de pago", value: "Compra única" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "No fijo un precio aquí porque depende del modelo, país y tienda. Conviene confirmarlo antes de actualizar la ficha definitiva.",
+    cta:
+      "Si te interesa montar un puesto de trabajo más cómodo para enseñar, grabar y crear contenido, en borjaprofe.com voy contando estas decisiones sin convertirlas en postureo de escritorio."
   },
   {
     name: "Notion",

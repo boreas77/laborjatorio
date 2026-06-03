@@ -275,13 +275,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
               </section>
               {tool.cta ? (
                 <section className="tool-cta">
-                  <p>
-                    Si te interesa organizar mejor tu vida digital como profesor, en{" "}
-                    <a href="https://borjaprofe.com" target="_blank" rel="noopener noreferrer">
-                      borjaprofe.com
-                    </a>{" "}
-                    cuento estas cosas con calma.
-                  </p>
+                  <p>{tool.cta}</p>
                 </section>
               ) : null}
             </>

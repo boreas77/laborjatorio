@@ -25,7 +25,7 @@ export function getCategoryBySlug(slug: string) {
 }
 
 export function searchTools(query: string) {
-  const normalizedQuery = query.trim().toLowerCase();
+  const normalizedQuery = normalizeSearchText(query);
 
   if (!normalizedQuery) {
     return tools;
@@ -41,9 +41,16 @@ export function searchTools(query: string) {
       ...tool.bestFor,
       ...tool.teacherUseCases
     ]
-      .join(" ")
-      .toLowerCase();
+      .join(" ");
 
-    return haystack.includes(normalizedQuery);
+    return normalizeSearchText(haystack).includes(normalizedQuery);
   });
+}
+
+function normalizeSearchText(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[\s._-]+/g, "");
 }

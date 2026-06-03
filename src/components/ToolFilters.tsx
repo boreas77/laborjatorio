@@ -20,6 +20,7 @@ export function ToolFilters({ tools, categories, initialQuery = "" }: ToolFilter
   const filteredTools = useMemo(() => {
     return tools.filter((tool) => {
       const matchesCategory = category === "todas" || slugify(tool.category) === category;
+      const normalizedQuery = normalizeSearchText(query);
       const haystack = [
         tool.name,
         tool.tagline,
@@ -29,10 +30,10 @@ export function ToolFilters({ tools, categories, initialQuery = "" }: ToolFilter
         ...tool.bestFor,
         ...tool.teacherUseCases
       ]
-        .join(" ")
-        .toLowerCase();
+        .join(" ");
+      const normalizedHaystack = normalizeSearchText(haystack);
 
-      return matchesCategory && haystack.includes(query.trim().toLowerCase());
+      return matchesCategory && normalizedHaystack.includes(normalizedQuery);
     });
   }, [category, query, tools]);
 
@@ -79,4 +80,12 @@ export function ToolFilters({ tools, categories, initialQuery = "" }: ToolFilter
       ) : null}
     </section>
   );
+}
+
+function normalizeSearchText(value: string) {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[\s._-]+/g, "");
 }
