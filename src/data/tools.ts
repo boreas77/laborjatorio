@@ -652,6 +652,128 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Metricool",
+    slug: "metricool",
+    title: "Metricool: cómo veo mis métricas y programo en redes sin entrar en ellas",
+    metaDescription:
+      "Llevo más de seis años usando Metricool para ver las métricas de mi web y programar en redes sin tener que entrar en ellas. Te cuento para qué la uso, sus límites y cuándo merece pagarla.",
+    keywords: [
+      "Metricool",
+      "métricas de web",
+      "programar publicaciones en redes",
+      "analítica web sencilla",
+      "alternativa a Google Analytics",
+      "programación de redes sociales"
+    ],
+    tagline:
+      "La herramienta que uso para ver métricas sencillas y programar publicaciones sin vivir dentro de cada red social.",
+    category: "Marketing y ventas",
+    subcategories: ["analítica", "redes sociales", "productividad", "contenido", "programación"],
+    pricing: "gratis-con-plan-pago",
+    officialUrl: "https://metricool.com",
+    affiliateUrl: "https://f.mtr.cool/laborjatorio",
+    hasAffiliate: true,
+    myUseCase:
+      "La uso desde hace más de seis años para consultar métricas básicas de mi web y programar publicaciones en Instagram, TikTok, Shorts y Facebook sin entrar constantemente en cada red.",
+    bestFor: [
+      "Profes que quieren ver métricas web sencillas sin pelearse con Google Analytics",
+      "Creadores educativos que programan contenido en varias redes",
+      "Quien quiere publicar en redes sin tener que entrar en ellas cada día",
+      "Profes con una marca o proyecto que necesitan un panel claro para redes y métricas"
+    ],
+    notFor: [
+      "Quien necesita analítica web profunda y muy técnica",
+      "Quien ya programa publicaciones desde otra herramienta que paga y le cubre",
+      "Quien publica muy poco y no supera los límites del plan gratuito",
+      "Quien necesita LinkedIn o X/Twitter dentro del plan gratis"
+    ],
+    pros: [
+      "El plan gratuito es generoso para empezar.",
+      "La interfaz es mucho más amable que Google Analytics para mirar lo básico.",
+      "Centraliza métricas y programación en un solo sitio.",
+      "Permite programar sin tener que entrar en cada red social.",
+      "Los informes son personalizables y digeribles."
+    ],
+    cons: [
+      "El plan gratuito tiene límite de 20 publicaciones programadas al mes.",
+      "LinkedIn y X/Twitter quedan fuera del plan gratuito.",
+      "Solo permite una marca en el plan gratis.",
+      "Las autolistas existen, pero no las he explorado mucho.",
+      "En mi caso actual no pagaría la mensualidad porque tengo una licencia antigua y OpusClip ya cubre parte de la programación."
+    ],
+    alternatives: ["OpusClip", "Google Analytics"],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-04",
+    intro:
+      "Metricool es una pedazo de herramienta que llevo usando desde hace más de seis años para dos cosas que suelen dar bastante pereza: mirar métricas de la web y programar publicaciones en redes. Me permite ver lo básico sin marearme y publicar sin vivir pegado a Instagram, TikTok, Shorts o Facebook.",
+    whatItDoes:
+      "Metricool muestra métricas de web y redes sociales, genera informes y permite programar publicaciones desde un solo panel. Su valor, para mí, no está en tener mil datos, sino en que puedo ver visitas, actividad y planificación sin abrir cada red por separado ni pelearme con paneles llenos de ruido.",
+    howIUseIt:
+      "Antes no usaba ninguna herramienta de métricas. Probé Google Analytics y acabé tan horrorizado que no lo volví a abrir: siempre me ha parecido lioso y con demasiada información para lo que necesito. Metricool fue mi alternativa amable. Hoy miro ahí las métricas básicas de la web y también programo contenido en Instagram, Reels, TikTok, Shorts y Facebook, aunque a Facebook no entro prácticamente nunca. Esa es la clave: publicar sin estar ahí.",
+    teacherUseCases: [
+      "Consultar visitas mensuales, semanales y en tiempo real sin entrar en Google Analytics.",
+      "Programar publicaciones educativas en varias redes desde un solo panel.",
+      "Publicar en Facebook u otras redes sin tener que entrar a distraerse.",
+      "Preparar informes sencillos de evolución del contenido.",
+      "Centralizar redes y métricas si tienes una marca educativa online."
+    ],
+    honestVerdict:
+      "Metricool me acompaña desde hace más de seis años, y eso ya dice bastante. Me parece comodísima para ver métricas sencillas y programar redes sin entrar en ellas. Mi matiz honesto es que hoy yo no pagaría la mensualidad en mi caso concreto: tengo una licencia antigua de pago único y OpusClip ya incorpora programación. Pero si empiezas de cero y quieres una herramienta sencilla para métricas básicas y redes, Metricool es una opción muy sólida. Empieza por el gratis y paga solo cuando sus límites te aprieten.",
+    importantNotice:
+      "Mi situación no es la habitual: compré en su día una oferta de pago único que ya no está disponible. Hoy Metricool funciona con planes recurrentes, así que mi coste real y el de alguien que entre ahora no son el mismo.",
+    metrics: [
+      { label: "Tiempo usándola", value: "+6 años" },
+      { label: "Límite gratis", value: "20 posts/mes" },
+      { label: "Primer plan de pago", value: "20 $/mes" }
+    ],
+    priceRows: [
+      { label: "Free", value: "1 marca, hasta 20 posts/mes" },
+      { label: "Starter", value: "Hasta 5 marcas, 20 $/mes" },
+      { label: "Mi caso", value: "Pago único antiguo, ya no disponible" },
+      { label: "Afiliación", value: "Sí" }
+    ],
+    priceNote:
+      "El plan gratis permite empezar sin coste, pero tiene límites: una marca, 20 publicaciones programadas al mes y sin conexión de LinkedIn ni X/Twitter. El primer plan de pago añade hasta 5 marcas y elimina varios límites. Como los precios cambian, conviene confirmarlos en la web oficial antes de pagar.",
+    alternativeDetails: [
+      {
+        name: "OpusClip",
+        url: "/herramientas/opusclip",
+        description:
+          "La pago cada mes para crear clips y ahora también permite programar publicaciones. Si algún día tuviera que elegir, podría mover parte de la programación ahí."
+      },
+      {
+        name: "Google Analytics",
+        url: "https://analytics.google.com/",
+        description:
+          "Es el estándar para analítica web profunda, pero a mí me resulta demasiado lioso para mirar lo básico que necesito en mi día a día."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Metricool sirve como alternativa a Google Analytics?",
+        answer:
+          "Para métricas sencillas, sí. Si quieres ver visitas y evolución sin entrar en un panel complejo, Metricool puede ser mucho más amable. Para analítica profunda, Google Analytics sigue siendo otra cosa."
+      },
+      {
+        question: "¿El plan gratuito de Metricool merece la pena?",
+        answer:
+          "Sí, sobre todo si tienes una sola marca y no programas más de 20 publicaciones al mes. Para empezar, da bastante de sí."
+      },
+      {
+        question: "¿Pagaría Metricool hoy?",
+        answer:
+          "En mi caso concreto, no pagaría la mensualidad porque tengo una licencia antigua y otra herramienta que ya cubre parte de la programación. Pero para alguien que empieza de cero y publica mucho, el pago puede tener sentido."
+      },
+      {
+        question: "¿Uso mucho las autolistas?",
+        answer:
+          "No demasiado. Sé que existen y pueden ser útiles para republicar contenido que funcionó, pero yo sigo siendo un poquito analógico para esa parte."
+      }
+    ]
+  },
+  {
     name: "Squoosh",
     slug: "squoosh",
     tagline: "Compresor de imágenes rápido, gratuito y privado para aligerar materiales y páginas web.",
