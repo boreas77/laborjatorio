@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <section className="page-shell narrow">
-      <div className="page-heading">
+      <div className="page-heading about-page__heading">
         <p className="eyebrow">Sobre mí</p>
         <h1>Las herramientas no son importantes</h1>
       </div>
       <div className="prose about-page">
-        <p>
-          Igual te suena raro en una web dedicada precisamente a hablar de herramientas.
-          Pero tiene una explicación. Te cuento.
+        <p className="about-page__lede">
+          Igual te suena raro en una web dedicada precisamente a hablar de herramientas,
+          pero tiene una explicación. Te cuento.
         </p>
         <p>
           Durante la pandemia de 2020, muchísimos profesores me escribieron con la misma
@@ -24,9 +24,10 @@ export default function AboutPage() {
         </p>
         <p>—Borja, ¿me echas una mano con esto de enseñar online?</p>
         <p>
-          Muchos llevaban más años dando clase que yo. Pero de repente se encontraron
-          grabando vídeos, dando clases por Zoom, creando materiales digitales, mandando
-          newsletters e intentando vender cursos por internet.
+          Muchos llevaban más años dando clase que yo, pero yo llevaba más tiempo
+          viviendo de internet. El caso es que de repente todos estos profes se
+          encontraron grabando vídeos, dando clases por Zoom, creando materiales
+          digitales, mandando newsletters e intentando vender cursos por internet.
         </p>
         <p>
           Y claro, me preguntaban por las herramientas. Qué programa usaba para grabar.
@@ -93,9 +94,11 @@ export default function AboutPage() {
           Si quieres que estemos en contacto y ver en qué otras mandangas ando metido, te
           recomiendo darte una vuelta por aquí:
         </p>
-        <a className="button button--primary" href="https://borjaprofe.com">
-          borjaprofe.com
-        </a>
+        <div className="about-page__cta">
+          <a className="button button--primary" href="https://borjaprofe.com">
+            borjaprofe.com
+          </a>
+        </div>
         <div className="about-page__photo" aria-label="Foto de Borja pendiente" />
       </div>
     </section>

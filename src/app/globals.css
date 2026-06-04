@@ -604,7 +604,23 @@ main {
   font-size: 1.05rem;
 }
 
-.about-page__highlight {
+.about-page,
+.about-page p {
+  color: #25211d;
+}
+
+.about-page__heading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-page__lede {
+  font-size: clamp(1.16rem, 2vw, 1.38rem);
+  line-height: 1.62;
+}
+
+.about-page .about-page__highlight {
   color: var(--rose);
   font-weight: 850;
 }
@@ -617,6 +633,12 @@ main {
   margin: 34px auto;
   max-width: 680px;
   text-align: center;
+}
+
+.about-page__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
 }
 
 .about-page__photo {
