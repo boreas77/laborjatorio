@@ -516,6 +516,142 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "HappyScribe",
+    slug: "happyscribe",
+    title: "HappyScribe: cómo transcribo mis podcasts y formaciones cada semana",
+    metaDescription:
+      "Uso HappyScribe todas las semanas para transcribir mis podcasts y formaciones. Te cuento cómo funciona, qué planes tiene, cuándo merece pagarlo y por qué es de lo mejor que he probado.",
+    keywords: [
+      "HappyScribe",
+      "transcribir audio y vídeo",
+      "transcripciones para podcast",
+      "generar subtítulos",
+      "transcripción automática",
+      "transcripción con IA"
+    ],
+    tagline:
+      "La herramienta que uso cada semana para transcribir podcasts, formaciones y vídeos sin pelearme con el audio.",
+    category: "Audio y vídeo",
+    subcategories: ["ia", "audio", "contenido", "productividad", "transcripción", "subtítulos"],
+    pricing: "suscripcion",
+    officialUrl: "https://www.happyscribe.com",
+    affiliateUrl: "https://happyscribe.cello.so/QLTRpQgTSlY",
+    hasAffiliate: true,
+    myUseCase:
+      "La uso todas las semanas para transcribir podcasts y formaciones, sacar subtítulos, reutilizar contenido y mantener organizado el material por proyectos.",
+    bestFor: [
+      "Profes que graban formaciones y quieren reutilizar el contenido",
+      "Creadores educativos con podcast o canal de vídeo",
+      "Profes de idiomas que necesitan subtítulos o transcripciones limpias",
+      "Quien transcribe con frecuencia y quiere un flujo estable"
+    ],
+    notFor: [
+      "Quien solo necesita transcribir un audio suelto de vez en cuando",
+      "Quien espera una transcripción perfecta sin revisar nada",
+      "Quien busca exclusivamente una herramienta para grabar reuniones",
+      "Quien no quiere pagar una suscripción y no necesita transcripción habitual"
+    ],
+    pros: [
+      "La calidad de transcripción es de lo mejor que he probado.",
+      "Permite editar la transcripción y nombrar interlocutores.",
+      "Genera subtítulos a partir del archivo transcrito.",
+      "Las carpetas ayudan a separar proyectos y no mezclar materiales.",
+      "La IA interna permite pedir resúmenes, citas y elementos destacados."
+    ],
+    cons: [
+      "La oferta de pago único de AppSumo con la que entré ya no existe.",
+      "La transcripción automática sigue necesitando un repasito humano.",
+      "No he probado la revisión humana de pago.",
+      "No he usado la grabación de reuniones con transcripción directa.",
+      "Para uso muy esporádico, una suscripción puede no tener sentido."
+    ],
+    alternatives: ["ChatGPT", "Zoom", "Audacity", "Spotify for Podcasters"],
+    rating: 5,
+    difficulty: "facil",
+    status: "imprescindible",
+    updatedAt: "2026-06-04",
+    intro:
+      "HappyScribe es la herramienta que uso todas las semanas para pasar a texto podcasts, vídeos y formaciones. Me sirve para sacar subtítulos, convertir audios en artículos, reutilizar ideas y tener a mano el texto de cosas que antes solo existían en una grabación.",
+    whatItDoes:
+      "HappyScribe permite subir archivos de audio o vídeo y generar una transcripción automática. Después puedes corregir el texto, identificar quién habla, exportar la transcripción o generar subtítulos. No se queda solo en convertir audio en texto: te da un espacio para trabajar ese contenido.",
+    howIUseIt:
+      "La uso sobre todo con mis formaciones y mi podcast. Subo el archivo, dejo que HappyScribe genere la transcripción y después reviso lo necesario. También organizo los proyectos en carpetas para no mezclar audios de distintas formaciones o episodios. Últimamente he incorporado su IA interna para pedir resúmenes, citas y elementos destacados sin tener que sacar siempre el texto a otra herramienta.",
+    teacherUseCases: [
+      "Transcribir una formación grabada para convertirla en material escrito.",
+      "Sacar subtítulos de vídeos educativos.",
+      "Convertir episodios de podcast en artículos o notas de apoyo.",
+      "Tener por escrito una clase, explicación o entrevista.",
+      "Enviar una transcripción a una IA para limpiar incoherencias o sacar ideas."
+    ],
+    honestVerdict:
+      "HappyScribe es de esas herramientas que uso sin pensarlo. Me da buenas transcripciones, me organiza el trabajo y me permite exprimir mejor lo que ya he grabado. La pega real es que mi oferta de pago único de AppSumo ya no existe, así que hoy entras por suscripción. Si transcribes a menudo, merece mucho la pena. Si transcribes de pascuas a ramos, empieza por el gratis.",
+    importantNotice:
+      "Yo entré con una oferta antigua de AppSumo que me da 2 horas semanales. Esa oferta ya no existe, así que mi situación no es la misma que la de alguien que entre hoy por los planes actuales.",
+    metrics: [
+      { label: "Uso real", value: "Semanal" },
+      { label: "Mi plan antiguo", value: "2 h/semana" },
+      { label: "Oferta original", value: "AppSumo" }
+    ],
+    priceRows: [
+      { label: "Gratis", value: "45 min por grabación y 10 min de prueba IA" },
+      { label: "Basic anual", value: "8,50 €/mes, 1.440 min/año" },
+      { label: "Pro anual", value: "19 €/mes, 7.200 min/año" },
+      { label: "Business anual", value: "59 €/mes, 72.000 min/año" },
+      { label: "Créditos extra", value: "0,20 $/min en la página oficial" },
+      { label: "Afiliación", value: "Sí" }
+    ],
+    priceNote:
+      "Tomo como referencia los precios que se muestran para España en planes anuales. El plan gratis permite grabaciones de hasta 45 minutos, pero la prueba de transcripción/subtítulos/traducción IA es de 10 minutos. Como los precios cambian, conviene confirmarlos siempre en la web oficial antes de pagar.",
+    alternativeDetails: [
+      {
+        name: "ChatGPT",
+        url: "/herramientas/chatgpt",
+        description:
+          "No transcribe el archivo por sí solo en mi flujo, pero lo uso para pulir transcripciones, detectar incoherencias y convertir texto bruto en material útil."
+      },
+      {
+        name: "Zoom",
+        url: "https://zoom.us/",
+        description:
+          "Lo uso para reuniones y clases online. Si necesito transcripción de reuniones, esa parte la cubro por ahí, no con HappyScribe."
+      },
+      {
+        name: "Audacity",
+        url: "https://www.audacityteam.org/",
+        description:
+          "Juega en otra parte del proceso: editar audio. No sustituye a HappyScribe, pero puede ir antes si necesitas limpiar o preparar el archivo."
+      },
+      {
+        name: "Spotify for Podcasters",
+        url: "https://podcasters.spotify.com/",
+        description:
+          "Sirve para publicar podcast, no para transcribir. Lo menciono como herramienta relacionada dentro del flujo de audio."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿HappyScribe transcribe perfecto?",
+        answer:
+          "No. La transcripción automática es muy buena, pero siempre conviene revisar. En mi caso, con una revisión ligera y apoyo de IA queda bastante limpio."
+      },
+      {
+        question: "¿Merece la pena pagar HappyScribe?",
+        answer:
+          "Sí, si transcribes a menudo: podcasts, vídeos, formaciones o clases grabadas. Si solo tienes un audio suelto cada mucho tiempo, empieza por el plan gratuito."
+      },
+      {
+        question: "¿Uso la revisión humana de HappyScribe?",
+        answer:
+          "No. Existe como servicio extra de pago, pero no la he necesitado. Con la transcripción automática y mi revisión me basta."
+      },
+      {
+        question: "¿Uso HappyScribe para grabar reuniones?",
+        answer:
+          "No. Sé que han añadido funciones de grabación y notas de reuniones, pero esa parte la cubro con Zoom."
+      }
+    ]
+  },
+  {
     name: "Squoosh",
     slug: "squoosh",
     tagline: "Compresor de imágenes rápido, gratuito y privado para aligerar materiales y páginas web.",
