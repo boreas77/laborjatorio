@@ -793,6 +793,11 @@ main {
   padding: 12px 18px;
 }
 
+.tool-action-row {
+  display: flex;
+  justify-content: center;
+}
+
 .tool-action-button:hover {
   background: #984545;
 }
@@ -978,6 +983,11 @@ main {
   font-size: 1.04rem;
   line-height: 1.75;
   margin: 0;
+}
+
+.tool-final-action {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .tool-cta {

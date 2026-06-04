@@ -133,9 +133,11 @@ export default async function ToolPage({ params }: ToolPageProps) {
               )}
             </p>
             {hasRichEditorialBlocks ? (
-              <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
-                Ir a {tool.name}
-              </a>
+              <div className="tool-action-row">
+                <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
+                  Ir a {tool.name}
+                </a>
+              </div>
             ) : null}
           </section>
 
@@ -296,22 +298,12 @@ export default async function ToolPage({ params }: ToolPageProps) {
               ) : null}
             </>
           ) : null}
-          <section>
-            <h2>Enlaces</h2>
-            <ul>
-              <li>
-                <a href={tool.officialUrl} target="_blank" rel="noopener noreferrer">
-                  Enlace oficial de {tool.name}
-                </a>
-              </li>
-              {tool.affiliateUrl ? (
-                <li>
-                  <a href={tool.affiliateUrl} target="_blank" rel="nofollow sponsored noopener noreferrer">
-                    Enlace de afiliado
-                  </a>
-                </li>
-              ) : null}
-            </ul>
+          <section className="tool-final-action">
+            <div className="tool-action-row">
+              <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
+                Ir a {tool.name}
+              </a>
+            </div>
           </section>
         </div>
 
