@@ -258,33 +258,35 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   <p>{tool.honestVerdict}</p>
                 </div>
               </section>
-              <section>
-                <h2>Alternativas</h2>
-                {tool.alternativeDetails?.length ? (
-                  <ul className="tool-alternative-links">
-                    {tool.alternativeDetails.map((alternative) => (
-                      <li key={alternative.name}>
-                        {alternative.url?.startsWith("/") ? (
-                          <Link href={alternative.url}>{alternative.name}</Link>
-                        ) : alternative.url ? (
-                          <a href={alternative.url} target="_blank" rel="noopener noreferrer">
-                            {alternative.name}
-                          </a>
-                        ) : (
-                          alternative.name
-                        )}
-                        {alternative.description ? <span>{alternative.description}</span> : null}
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <ul>
-                    {tool.alternatives.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                )}
-              </section>
+              {tool.alternativeDetails?.length || tool.alternatives.length ? (
+                <section>
+                  <h2>Alternativas</h2>
+                  {tool.alternativeDetails?.length ? (
+                    <ul className="tool-alternative-links">
+                      {tool.alternativeDetails.map((alternative) => (
+                        <li key={alternative.name}>
+                          {alternative.url?.startsWith("/") ? (
+                            <Link href={alternative.url}>{alternative.name}</Link>
+                          ) : alternative.url ? (
+                            <a href={alternative.url} target="_blank" rel="noopener noreferrer">
+                              {alternative.name}
+                            </a>
+                          ) : (
+                            alternative.name
+                          )}
+                          {alternative.description ? <span>{alternative.description}</span> : null}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <ul>
+                      {tool.alternatives.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              ) : null}
               {tool.faqs?.length ? (
                 <section>
                   <h2>Preguntas frecuentes</h2>

@@ -776,54 +776,105 @@ export const tools: Tool[] = [
   {
     name: "Squoosh",
     slug: "squoosh",
-    tagline: "Compresor de imágenes rápido, gratuito y privado para aligerar materiales y páginas web.",
+    title: "Squoosh: cómo comprimo imágenes para que no me revienten la web",
+    metaDescription:
+      "Uso Squoosh para comprimir imágenes y que no me ralenticen la web ni me saturen el correo. Te cuento cómo funciona, para qué la uso y por qué deberías tenerla a mano.",
+    keywords: [
+      "Squoosh",
+      "comprimir imágenes",
+      "reducir peso de imágenes",
+      "optimizar imágenes para web",
+      "comprimir imágenes gratis",
+      "imágenes ligeras para la web"
+    ],
+    tagline: "Compresor de imágenes gratuito y rápido para que una foto pesada no te reviente la web, el podcast o el correo.",
     category: "Diseño e imagen",
-    subcategories: ["imagen", "optimización", "web", "materiales"],
+    subcategories: ["diseño", "productividad", "web", "contenido", "imagen", "optimización"],
     pricing: "gratis",
     officialUrl: "https://squoosh.app/",
     hasAffiliate: false,
     myUseCase:
-      "Lo usaría para comprimir imágenes antes de subirlas a la web, insertarlas en materiales descargables o preparar recursos visuales que no pesen como una mudanza.",
+      "Lo uso de vez en cuando para comprimir imágenes antes de subirlas a la web, preparar portadas de podcast o enviar archivos sin saturar el correo.",
     bestFor: [
       "Profes que suben imágenes a su web",
-      "Creadores de materiales descargables",
-      "Quien quiere convertir imágenes a formatos más ligeros"
+      "Creadores que preparan portadas de podcast o imágenes para contenido",
+      "Quien quiere aligerar imágenes sin aprender Photoshop",
+      "Quien necesita resolver rápido un aviso de imagen demasiado pesada"
     ],
     notFor: [
-      "Procesar muchas imágenes a la vez",
+      "Procesar muchas imágenes a la vez de forma automatizada",
       "Editar diseños complejos",
-      "Quien necesita una cadena automática de optimización"
+      "Quien necesita una cadena completa de optimización web",
+      "Quien quiere tener una herramienta abierta todo el día"
     ],
     pros: [
-      "Gratis y muy directo",
-      "Funciona en el navegador",
-      "Permite comparar la imagen original y la comprimida",
-      "Las imágenes se procesan localmente en el dispositivo"
+      "Es gratis y no tiene plan de pago.",
+      "El flujo es subir, comprimir y descargar.",
+      "La vista previa en tiempo real permite controlar la calidad.",
+      "Funciona directamente en el navegador.",
+      "Procesa las imágenes en tu propio navegador.",
+      "Ayuda a evitar webs lentas, hosting saturado y correos pesados."
     ],
     cons: [
-      "No está pensado para trabajo por lotes",
-      "Puede requerir probar varios ajustes hasta encontrar el equilibrio",
-      "No sustituye una estrategia completa de optimización web"
+      "Si te pasas con la compresión, la imagen pierde calidad.",
+      "Es una herramienta de uso puntual, no una solución completa para toda la optimización web.",
+      "No está pensada para editar diseños complejos.",
+      "No la usaría como sistema automático para procesar grandes lotes."
     ],
-    alternatives: ["TinyPNG", "ImageOptim", "iLoveIMG"],
+    alternatives: [],
     rating: 4,
     difficulty: "facil",
-    status: "probada",
-    updatedAt: "2026-06-03",
+    status: "importante",
+    updatedAt: "2026-06-04",
     intro:
-      "Squoosh es una de esas herramientas pequeñas que arreglan un problema muy concreto: imágenes demasiado pesadas para una web, una ficha o un recurso descargable.",
+      "Squoosh parece una tontería hasta que tienes una web, un podcast o un correo que te dice que esa imagen pesa demasiado. Entonces entiendes la gracia: abres la herramienta, metes la imagen, bajas el peso y sigues con tu vida.",
     whatItDoes:
-      "Permite comprimir, redimensionar y convertir imágenes desde el navegador, con vista comparativa entre el original y el resultado final.",
+      "Squoosh comprime imágenes desde el navegador. Reduce el peso del archivo, permite ajustar la calidad viendo el resultado en tiempo real y también ofrece opciones básicas para redimensionar, recortar o exportar a formatos modernos como WebP.",
     howIUseIt:
-      "Lo usaría antes de publicar imágenes en WordPress, preparar miniaturas o reducir el peso de recursos visuales sin abrir un programa de diseño más grande.",
+      "La uso sobre todo cuando una imagen pesa demasiado para subirla a la web o cuando preparo portadas de podcast y me encuentro el aviso de que la imagen pasa de tres megas. También me sirve antes de enviar archivos por correo para no ir llenando Gmail con imágenes absurdamente grandes. No la uso todos los días; quizá una vez a la semana. Pero cuando la necesitas, la necesitas ya.",
     teacherUseCases: [
       "Comprimir imágenes antes de subirlas a una entrada de blog.",
-      "Reducir el peso de una ficha en PDF con muchas imágenes.",
+      "Reducir portadas, miniaturas o imágenes de podcast que superan el límite permitido.",
+      "Preparar imágenes ligeras para materiales descargables o páginas de cursos.",
       "Convertir una imagen a WebP para mejorar la carga de una página.",
-      "Comparar calidad y tamaño antes de publicar un recurso visual."
+      "Enviar imágenes por correo sin saturar el almacenamiento."
     ],
     honestVerdict:
-      "Muy recomendable como herramienta de paso final. No te organiza la biblioteca ni automatiza todo, pero para dejar una imagen ligera y decente en dos minutos cumple de maravilla."
+      "Squoosh es gratis, simple y de tener siempre a mano. No la vas a usar todo el día, y no pasa nada: su valor está en resolver rápido el problema concreto de una imagen demasiado pesada. Si tienes web, blog o podcast, yo la tendría en marcadores. Solo hay que comprimir con cabeza para no cargarse la calidad.",
+    metrics: [
+      { label: "Precio", value: "0 €" },
+      { label: "Instalación", value: "No" },
+      { label: "Uso aproximado", value: "Semanal" }
+    ],
+    priceRows: [
+      { label: "Squoosh", value: "Gratis" },
+      { label: "Plan de pago", value: "No" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Squoosh es gratis. No hay suscripción, ni plan premium, ni asterisco raro por el camino.",
+    faqs: [
+      {
+        question: "¿Squoosh sube mis imágenes a internet?",
+        answer:
+          "No. Procesa las imágenes en tu propio navegador, en tu equipo, así que tus archivos no viajan a un servidor para comprimirse."
+      },
+      {
+        question: "¿Cuánto puedo comprimir sin que se note?",
+        answer:
+          "No hay un número mágico. Para eso está la vista previa en tiempo real: bajas la calidad y te paras antes de que la imagen empiece a verse fea."
+      },
+      {
+        question: "¿A qué formato conviene exportar?",
+        answer:
+          "Para web, WebP suele ser una buena opción porque pesa menos que JPG o PNG manteniendo buena calidad. Pero depende de dónde vayas a usar la imagen."
+      },
+      {
+        question: "¿Necesito instalar algo?",
+        answer:
+          "No. Funciona directamente en el navegador: abres Squoosh, comprimes, descargas y cierras."
+      }
+    ]
   },
   {
     name: "LastPass",
