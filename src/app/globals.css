@@ -609,6 +609,16 @@ main {
   font-weight: 850;
 }
 
+.about-page__pullquote {
+  color: var(--ink);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 850;
+  line-height: 1.15;
+  margin: 34px auto;
+  max-width: 680px;
+  text-align: center;
+}
+
 .about-page__photo {
   background:
     linear-gradient(135deg, rgb(184 92 92 / 14%), rgb(42 127 118 / 12%)),

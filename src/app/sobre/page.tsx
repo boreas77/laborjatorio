@@ -38,7 +38,7 @@ export default function AboutPage() {
           Las herramientas ayudan, sí. Las herramientas son necesarias, es verdad. Pero
           las herramientas son un medio, no el fin.
         </p>
-        <p>Son el martillo. No la casa.</p>
+        <p className="about-page__pullquote">Son el martillo. No la casa.</p>
         <p>
           Te lo digo porque he visto a profes hacer cosas increíbles con herramientas
           sencillas. También he visto a muchos (pero muchísimos) profes acumulando
@@ -69,7 +69,10 @@ export default function AboutPage() {
           internet. Aspira a encontrar las pocas herramientas que de verdad merecen la
           pena. Al menos para mí. Espero que para ti también.
         </p>
-        <p>Por cierto, no me he presentado. Me llamo Borja y soy profe de español online.</p>
+        <p>
+          Por cierto, no me he presentado.{" "}
+          <strong>Me llamo Borja y soy profe de español online.</strong>
+        </p>
         <p>
           Llevo más de diez años usando internet para enseñar, crear materiales, ayudar a
           otros profes y montar proyectos que a veces salen bien y otras más regular.
