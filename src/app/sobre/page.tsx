@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <section className="page-shell narrow">
+    <section className="page-shell narrow about-page-shell">
       <div className="page-heading about-page__heading">
-        <p className="eyebrow">Sobre mí</p>
         <h1>Las herramientas no son importantes</h1>
       </div>
       <div className="prose about-page">
