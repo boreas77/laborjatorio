@@ -604,6 +604,21 @@ main {
   font-size: 1.05rem;
 }
 
+.about-page__highlight {
+  color: var(--rose);
+  font-weight: 850;
+}
+
+.about-page__photo {
+  background:
+    linear-gradient(135deg, rgb(184 92 92 / 14%), rgb(42 127 118 / 12%)),
+    #f2ecdf;
+  border: 1px dashed #c8b99f;
+  border-radius: 8px;
+  margin-top: 26px;
+  min-height: clamp(260px, 42vw, 420px);
+}
+
 .prose section {
   border-bottom: 1px solid var(--line);
   padding: 0 0 26px;
