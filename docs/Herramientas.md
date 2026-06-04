@@ -98,10 +98,11 @@
 * Estado: Importante
 * Etiquetas: Educación, Formación, Web
 
-## Komododecks
+## Kommodo
 
-* Estado: Importante
+* Estado: Opcional
 * Etiquetas: Educación, Formación, Vídeo
+* Nota: Antes Komodo Decks (komododecks.com). Comprada como pago único en AppSumo. Útil pero de uso ocasional.
 
 ## Notion
 

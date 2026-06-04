@@ -10,6 +10,7 @@
   --accent-dark: #184f4a;
   --gold: #c7892b;
   --rose: #b85c5c;
+  --rojo-borja: #b85c5c;
   --blueprint: #213b5a;
   --shadow: 0 18px 45px rgb(44 33 20 / 10%);
 }
@@ -976,6 +977,24 @@ main {
 
 .tool-cta a {
   color: var(--accent-dark);
+  font-weight: 850;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cta-laborjatorio {
+  background: rgb(184 92 92 / 8%);
+  border: 2px solid var(--rojo-borja);
+  border-left-width: 5px;
+  border-radius: 8px;
+  color: var(--ink);
+  font-weight: 650;
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+}
+
+.cta-laborjatorio a {
+  color: var(--rojo-borja);
   font-weight: 850;
   text-decoration: underline;
   text-underline-offset: 3px;

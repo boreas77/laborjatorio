@@ -293,13 +293,35 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   ))}
                 </section>
               ) : null}
-              {tool.cta ? (
-                <section className="tool-cta">
-                  <p>{tool.cta}</p>
-                </section>
-              ) : null}
             </>
           ) : null}
+          <section>
+            <h2>Enlaces</h2>
+            <ul>
+              <li>
+                <a href={tool.officialUrl} target="_blank" rel="noopener noreferrer">
+                  Enlace oficial de {tool.name}
+                </a>
+              </li>
+              {tool.affiliateUrl ? (
+                <li>
+                  <a href={tool.affiliateUrl} target="_blank" rel="nofollow sponsored noopener noreferrer">
+                    Enlace de afiliado
+                  </a>{" "}
+                  <span className="affiliate-note">
+                    A ti te cuesta lo mismo y yo puedo recibir una pequeña comisión.
+                  </span>
+                </li>
+              ) : null}
+            </ul>
+          </section>
+          <section className="cta-laborjatorio">
+            Aquí te enseño las herramientas, lo que hago con ellas está en{" "}
+            <a href="https://borjaprofe.com" target="_blank" rel="noopener noreferrer">
+              borjaprofe.com
+            </a>
+            .
+          </section>
         </div>
 
         {!hasRichEditorialBlocks ? (

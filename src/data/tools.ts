@@ -7,6 +7,7 @@ export type ToolStatus =
   | "descartada"
   | "imprescindible"
   | "importante"
+  | "opcional"
   | "secundaria"
   | "en-prueba"
   | "abandonada";
@@ -377,6 +378,145 @@ export const tools: Tool[] = [
     ],
     cta:
       "Si quieres que te cuente estas movidas de herramientas con más calma, te las cuento en borjaprofe.com."
+  },
+  {
+    name: "Kommodo",
+    slug: "kommodo",
+    title: "Kommodo: cómo grabo y alojo vídeos para mis estudiantes",
+    metaDescription:
+      "Uso Kommodo (antes Komodo Decks) para grabar tutoriales, explicar a mis estudiantes cómo entrar en mis cursos y alojar algunos vídeos. Te cuento para qué me sirve, qué me chirría y cuándo merece la pena.",
+    keywords: [
+      "Kommodo",
+      "Komodo Decks",
+      "grabar pantalla",
+      "alojar vídeos online",
+      "tutoriales para estudiantes",
+      "grabar cámara y pantalla",
+      "AppSumo"
+    ],
+    tagline:
+      "Grabador de pantalla y cámara para tutoriales rápidos, soporte a estudiantes y vídeos alojados fuera de YouTube.",
+    category: "Audio y vídeo",
+    subcategories: ["vídeo", "contenido", "educación", "formación", "tutoriales", "AppSumo"],
+    pricing: "freemium",
+    officialUrl: "https://kommodo.ai",
+    affiliateUrl: "https://kommodo.ai/?via=borja",
+    hasAffiliate: true,
+    myUseCase:
+      "Lo uso de forma ocasional para grabar tutoriales, explicar a estudiantes cómo entrar en mis cursos y alojar algunos vídeos sin pasarlos por YouTube.",
+    bestFor: [
+      "Profes que necesitan grabar tutoriales rápidos para estudiantes",
+      "Profes online que quieren compartir pantalla y cámara sin mucha edición",
+      "Quien necesita alojar vídeos puntuales fuera de YouTube",
+      "Quien quiere mandar enlaces privados o protegidos con contraseña"
+    ],
+    notFor: [
+      "Alojar vídeos importantes como único almacén",
+      "Editar cursos completos con un editor principal",
+      "Quien necesita una infraestructura de vídeo muy fiable",
+      "Quien solo busca grabación avanzada con mucho control técnico"
+    ],
+    pros: [
+      "Permite grabar pantalla y cámara a la vez sin complicarse.",
+      "El vídeo queda alojado en la propia plataforma y se comparte por enlace.",
+      "El plan gratuito sirve para probar y para uso puntual.",
+      "Las landings sencillas con contraseña y botones pueden resolver tutoriales privados.",
+      "El plan de pago promete vídeos ilimitados y almacenamiento sin tope."
+    ],
+    cons: [
+      "A veces aparece una marca de tiempo junto a la cámara y no he conseguido quitarla.",
+      "Tuve un fallo concreto: un vídeo dejó de mostrarse y tuve que volver a subirlo.",
+      "No la usaría como único sitio de almacenamiento para vídeos importantes.",
+      "El editor incorporado sirve para apuros, pero no lo usaría como editor principal.",
+      "Ha añadido funciones de IA que no he explorado, así que no las valoro desde experiencia real."
+    ],
+    alternatives: ["Loom", "OBS", "YouTube", "Vimeo", "DaVinci Resolve"],
+    rating: 3,
+    difficulty: "facil",
+    status: "opcional",
+    updatedAt: "2026-06-04",
+    intro:
+      "Kommodo es una de esas herramientas que tengo en el cajón para cuando necesito grabar un tutorial rápido: enseñar una pantalla, explicar a un estudiante cómo entrar en una plataforma o dejar grabada esa cosa que por email se vuelve una procesión de flechas, botones azules y malentendidos.",
+    whatItDoes:
+      "Kommodo, antes Komodo Decks, permite grabar pantalla, cámara o ambas cosas a la vez. La diferencia frente a un grabador básico es que también aloja el vídeo dentro de la plataforma, lo comparte por enlace y permite crear páginas sencillas con contraseña, botones y texto.",
+    howIUseIt:
+      "La compré en AppSumo cuando todavía se llamaba Komodo Decks, con una oferta de pago único. La he usado a veces con estudiantes para explicarles cómo acceder a una plataforma o a mis cursos. También he alojado algunos vídeos ahí cuando quería que no estuvieran en abierto en YouTube. No la uso de forma constante ni la pondría en el centro de mi infraestructura de vídeo, pero para soporte, tutoriales sueltos y vídeos rápidos me ha dado servicio.",
+    teacherUseCases: [
+      "Grabar un tutorial corto para explicar cómo entrar en un curso.",
+      "Resolver dudas repetidas de estudiantes con un vídeo reutilizable.",
+      "Compartir una explicación con pantalla y cámara por enlace privado.",
+      "Alojar vídeos puntuales fuera de YouTube.",
+      "Montar una landing sencilla con vídeo, contraseña y algún botón."
+    ],
+    honestVerdict:
+      "Kommodo es útil y práctica para grabar y compartir rápido, pero no la convertiría en mi único almacén de vídeo. En su día, comprada como pago único en AppSumo, fue una compra razonable. Hoy, con planes recurrentes, la miraría con más calma: el gratuito sirve para uso puntual y el pago solo tiene sentido si vas a vivir dentro de la herramienta.",
+    importantNotice:
+      "Nota de fiabilidad: tuve un caso en el que un vídeo dejó de mostrarse por un fallo del reproductor y tuve que volver a subirlo. Fue una vez, pero suficiente para no confiarle lo que no pueda permitirme perder.",
+    metrics: [
+      { label: "Vídeos en el plan gratuito", value: "15" },
+      { label: "Precio anual Premium desde", value: "108 $" },
+      { label: "Mi compra original", value: "AppSumo" }
+    ],
+    priceRows: [
+      { label: "Starter", value: "Gratis, 15 vídeos" },
+      { label: "Premium anual", value: "9 $/mes, 108 $/año" },
+      { label: "Premium mensual", value: "15 $/mes, 180 $/año" },
+      { label: "Mi caso", value: "Pago único antiguo en AppSumo" },
+      { label: "Afiliación", value: "Sí" }
+    ],
+    priceNote:
+      "El plan gratuito ya sirve para probar y para uso esporádico. Pagaría solo si vas a crear muchos tutoriales, necesitas vídeos ilimitados o quieres usar sus landings y opciones de compartir como parte habitual de tu trabajo. Si usas mi enlace de afiliado, a ti te cuesta lo mismo y yo puedo recibir una pequeña comisión.",
+    alternativeDetails: [
+      {
+        name: "Loom",
+        url: "https://www.loom.com",
+        description:
+          "La alternativa más directa para grabar y compartir pantalla en el día a día. La he probado, pero no la uso lo suficiente como para hacer una ficha a fondo."
+      },
+      {
+        name: "OBS",
+        description:
+          "Mejor si quieres más control sobre la grabación. Juega en otra liga, pero también exige otra relación con la herramienta."
+      },
+      {
+        name: "YouTube",
+        description:
+          "Más sólido para alojar vídeos importantes, aunque no siempre encaja si quieres algo privado o con apariencia de página propia."
+      },
+      {
+        name: "Vimeo",
+        url: "https://vimeo.com",
+        description:
+          "Opción más seria para alojamiento de vídeo cuando la fiabilidad pesa más que la rapidez de grabar y compartir."
+      },
+      {
+        name: "DaVinci Resolve",
+        description:
+          "No es alternativa para alojar, sino para editar de verdad. Para montar vídeo con calma, prefiero DaVinci antes que el editor interno de Kommodo."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Kommodo es lo mismo que Komodo Decks?",
+        answer:
+          "Sí. Yo la compré cuando se llamaba Komodo Decks y hoy el producto se llama Kommodo, en kommodo.ai."
+      },
+      {
+        question: "¿Sirve para alojar vídeos de cursos?",
+        answer:
+          "Puede servir para algunos vídeos, pero no la usaría como único almacén de vídeos importantes. Para eso conviene tener copia en otra plataforma."
+      },
+      {
+        question: "¿Merece la pena pagar Kommodo?",
+        answer:
+          "Solo si vas a usarla de forma habitual: muchos tutoriales, vídeos ilimitados, landings y enlaces privados como parte de tu flujo real. Para uso puntual, el plan gratuito puede bastar."
+      },
+      {
+        question: "¿Puedo editar dentro de Kommodo?",
+        answer:
+          "Tiene editor sencillo, pero lo dejaría para apuros. Para editar en serio, usaría una herramienta específica como DaVinci Resolve."
+      }
+    ]
   },
   {
     name: "Squoosh",

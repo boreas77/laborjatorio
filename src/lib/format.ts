@@ -37,6 +37,7 @@ export function labelFromStatus(status: string) {
     descartada: "Descartada",
     imprescindible: "Imprescindible",
     importante: "Importante",
+    opcional: "Opcional",
     secundaria: "Secundaria",
     "en-prueba": "En prueba",
     abandonada: "Abandonada"

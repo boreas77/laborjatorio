@@ -538,10 +538,36 @@ Si existe afiliación:
 
 * declararla claramente
 * mantener transparencia total
+* explicar que no cambia el precio para el lector
+* mantener separado el enlace oficial del enlace de afiliado cuando ambos existan
 
 Nunca exagerar beneficios para aumentar conversiones.
 
 La confianza es más importante que una venta.
+
+---
+
+# CTA final estándar
+
+Todas las fichas deben cerrar con este recuadro final:
+
+> Aquí te enseño las herramientas, lo que hago con ellas está en borjaprofe.com.
+
+Debe enlazar a `https://borjaprofe.com` y usar la clase `cta-laborjatorio`.
+
+Borjaprofe.com no debe presentarse como una web de herramientas, sino como el corazón del proyecto de Borja como profesor. Las herramientas son el medio.
+
+---
+
+# Estados editoriales
+
+Escala editorial principal:
+
+* Imprescindible
+* Importante
+* Opcional
+
+`Opcional` se utiliza para herramientas útiles pero de uso no constante.
 
 ---
 

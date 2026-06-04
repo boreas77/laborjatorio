@@ -185,6 +185,10 @@ Resumen:
 - Vercel reconoce el proyecto `laborjatorio` con `https://laborjatorio.com` como URL de produccion.
 - `https://laborjatorio.com/`, `/herramientas`, `/herramientas/opusclip` y `/herramientas/davinci-resolve-editor-video-gratis-profesores` responden correctamente.
 - A partir de ahora, toda publicacion debe comprobarse en `https://laborjatorio.com`, no solo en `laborjatorio.vercel.app`.
+- Se preparo la ficha de Kommodo, antes Komodo Decks, con estado `Opcional`.
+- Se estreno el estado `Opcional` para herramientas utiles pero de uso no constante.
+- Se fijo el CTA final estandar con recuadro `cta-laborjatorio`: "Aqui te enseno las herramientas, lo que hago con ellas esta en borjaprofe.com."
+- Se fijo el color de marca `#b85c5c` como variable `--rojo-borja`.
 - Se decidio trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`, porque es la carpeta que Codex abre como workspace por defecto.
 - Borja copio ahi el contenido reciente de `LABORJATORIO`.
 - Se confirmo que `MI TALLER DE ELE` contiene el MVP del bot de Telegram, los documentos nuevos, el commit local `d6ddad0` y el remoto correcto `boreas77/laborjatorio`.
