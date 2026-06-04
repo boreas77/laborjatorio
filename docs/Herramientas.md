@@ -102,7 +102,7 @@
 
 * Estado: Opcional
 * Etiquetas: Educación, Formación, Vídeo
-* Nota: Antes Komodo Decks (komododecks.com). Comprada como pago único en AppSumo. Útil pero de uso ocasional.
+* Nota: Antes Komodo Decks (komododecks.com). Comprada como pago único en AppSumo, pero actualmente disponible por suscripción. Útil pero de uso ocasional.
 
 ## Notion
 

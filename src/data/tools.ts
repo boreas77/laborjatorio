@@ -1,4 +1,4 @@
-export type Pricing = "gratis" | "freemium" | "pago" | "pago-unico" | "suscripcion";
+export type Pricing = "gratis" | "gratis-con-plan-pago" | "pago" | "pago-unico" | "suscripcion";
 export type Difficulty = "facil" | "media" | "alta";
 export type ToolStatus =
   | "uso-actual"
@@ -77,7 +77,7 @@ export const tools: Tool[] = [
     tagline: "Asistente de IA para pensar, escribir, ordenar ideas y crear materiales.",
     category: "IA y agentes",
     subcategories: ["escritura", "automatización", "materiales"],
-    pricing: "freemium",
+    pricing: "gratis-con-plan-pago",
     officialUrl: "https://chatgpt.com/",
     hasAffiliate: false,
     myUseCase:
@@ -127,7 +127,7 @@ export const tools: Tool[] = [
     tagline: "Diseño rápido para materiales, portadas, recursos visuales y contenido en redes.",
     category: "Diseño e imagen",
     subcategories: ["diseño", "materiales", "redes sociales"],
-    pricing: "freemium",
+    pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.canva.com/",
     hasAffiliate: false,
     myUseCase:
@@ -398,7 +398,7 @@ export const tools: Tool[] = [
       "Grabador de pantalla y cámara para tutoriales rápidos, soporte a estudiantes y vídeos alojados fuera de YouTube.",
     category: "Audio y vídeo",
     subcategories: ["vídeo", "contenido", "educación", "formación", "tutoriales", "AppSumo"],
-    pricing: "freemium",
+    pricing: "suscripcion",
     officialUrl: "https://kommodo.ai",
     affiliateUrl: "https://kommodo.ai/?via=borja",
     hasAffiliate: true,
@@ -710,7 +710,7 @@ export const tools: Tool[] = [
     tagline: "336 contraseñas guardadas. Solo recuerdo una.",
     category: "Productividad",
     subcategories: ["seguridad", "organización"],
-    pricing: "freemium",
+    pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.lastpass.com",
     hasAffiliate: false,
     myUseCase:
@@ -854,7 +854,7 @@ export const tools: Tool[] = [
     tagline: "Un espacio flexible para organizar recursos, proyectos, ideas y bases de conocimiento.",
     category: "Organización",
     subcategories: ["productividad", "bases de conocimiento", "planificación"],
-    pricing: "freemium",
+    pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.notion.so/",
     hasAffiliate: false,
     myUseCase:

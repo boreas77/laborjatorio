@@ -10,7 +10,7 @@ export function slugify(value: string) {
 export function labelFromPricing(pricing: string) {
   const labels: Record<string, string> = {
     gratis: "Gratis",
-    freemium: "Freemium",
+    "gratis-con-plan-pago": "Gratis con plan de pago",
     pago: "Pago",
     "pago-unico": "Pago único",
     suscripcion: "Suscripción"
