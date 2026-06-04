@@ -18,15 +18,6 @@ const whatYouWillFind = [
 
 const faqs = [
   {
-    question: "¿Hay enlaces de afiliado?",
-    answer: [
-      "Sí, puede haberlos. Si compras desde uno de esos enlaces, yo recibo una comisión pequeña. A ti te cuesta exactamente lo mismo.",
-      "Lo que no cambia por eso: qué herramientas aparecen aquí. Primero uso una herramienta. Luego decido si merece estar en el Laborjatorio. Si tiene afiliado, bien. Si no lo tiene, también.",
-      "No todas las herramientas tienen enlace de afiliado. Y hay herramientas sin afiliado que recomendaría antes que otras que sí lo tienen. El orden es ese: primero el criterio, luego la comisión.",
-      "Los enlaces ayudan a sostener el proyecto. Pero no determinan el contenido."
-    ]
-  },
-  {
     question: "¿Qué tipo de herramientas recomiendas?",
     answer: [
       "En realidad no recomiendo herramientas en abstracto. Comparto las que uso.",

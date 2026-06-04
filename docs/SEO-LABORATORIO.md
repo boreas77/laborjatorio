@@ -547,15 +547,15 @@ La confianza es más importante que una venta.
 
 ---
 
-# CTA final estándar
+# Faldón final estándar
 
-Todas las fichas deben cerrar con este recuadro final:
+Todas las páginas, subpáginas y fichas deben terminar con este aviso global:
 
-> Aquí te enseño las herramientas, lo que hago con ellas está en borjaprofe.com.
+> Aquí solo hay herramientas que uso de verdad, en mis clases y en mi negocio. Si dejo de usar alguna, lo sabrás y te enseñaré la nueva. Algunos enlaces son de afiliado: si compras desde ellos, me llevo una comisión sin coste extra para ti.
 
-Debe enlazar a `https://borjaprofe.com` y usar la clase `cta-laborjatorio`.
+Debe aparecer en el pie común de la web.
 
-Borjaprofe.com no debe presentarse como una web de herramientas, sino como el corazón del proyecto de Borja como profesor. Las herramientas son el medio.
+No duplicar avisos de afiliación en otros puntos salvo que haga falta identificar un enlace concreto como afiliado.
 
 ---
 

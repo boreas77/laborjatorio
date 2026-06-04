@@ -465,7 +465,7 @@ export const tools: Tool[] = [
       { label: "Afiliación", value: "Sí" }
     ],
     priceNote:
-      "El plan gratuito ya sirve para probar y para uso esporádico. Pagaría solo si vas a crear muchos tutoriales, necesitas vídeos ilimitados o quieres usar sus landings y opciones de compartir como parte habitual de tu trabajo. Si usas mi enlace de afiliado, a ti te cuesta lo mismo y yo puedo recibir una pequeña comisión.",
+      "El plan gratuito ya sirve para probar y para uso esporádico. Pagaría solo si vas a crear muchos tutoriales, necesitas vídeos ilimitados o quieres usar sus landings y opciones de compartir como parte habitual de tu trabajo.",
     alternativeDetails: [
       {
         name: "Loom",

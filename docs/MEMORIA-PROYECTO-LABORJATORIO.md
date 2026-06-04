@@ -187,7 +187,7 @@ Resumen:
 - A partir de ahora, toda publicacion debe comprobarse en `https://laborjatorio.com`, no solo en `laborjatorio.vercel.app`.
 - Se preparo la ficha de Kommodo, antes Komodo Decks, con estado `Opcional`.
 - Se estreno el estado `Opcional` para herramientas utiles pero de uso no constante.
-- Se fijo el CTA final estandar con recuadro `cta-laborjatorio`: "Aqui te enseno las herramientas, lo que hago con ellas esta en borjaprofe.com."
+- Se sustituyo el CTA final anterior por un faldon global unico: "Aqui solo hay herramientas que uso de verdad, en mis clases y en mi negocio. Si dejo de usar alguna, lo sabras y te ensenare la nueva. Algunos enlaces son de afiliado: si compras desde ellos, me llevo una comision sin coste extra para ti."
 - Se fijo el color de marca `#b85c5c` como variable `--rojo-borja`.
 - Se decidio trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`, porque es la carpeta que Codex abre como workspace por defecto.
 - Borja copio ahi el contenido reciente de `LABORJATORIO`.

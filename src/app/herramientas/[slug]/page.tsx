@@ -99,7 +99,6 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <a className="button button--primary" href={primaryUrl} rel="nofollow sponsored noopener" target="_blank">
               Ir a {tool.name}
             </a>
-            {tool.hasAffiliate ? <p className="affiliate-note">Este enlace puede ser de afiliado.</p> : null}
           </aside>
         ) : null}
       </div>
@@ -307,20 +306,10 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 <li>
                   <a href={tool.affiliateUrl} target="_blank" rel="nofollow sponsored noopener noreferrer">
                     Enlace de afiliado
-                  </a>{" "}
-                  <span className="affiliate-note">
-                    A ti te cuesta lo mismo y yo puedo recibir una pequeña comisión.
-                  </span>
+                  </a>
                 </li>
               ) : null}
             </ul>
-          </section>
-          <section className="cta-laborjatorio">
-            Aquí te enseño las herramientas, lo que hago con ellas está en{" "}
-            <a href="https://borjaprofe.com" target="_blank" rel="noopener noreferrer">
-              borjaprofe.com
-            </a>
-            .
           </section>
         </div>
 
