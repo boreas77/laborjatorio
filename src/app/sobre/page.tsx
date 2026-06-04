@@ -21,12 +21,17 @@ export default function AboutPage() {
           Durante la pandemia de 2020, muchísimos profesores me escribieron con la misma
           pregunta:
         </p>
-        <p>—Borja, ¿me echas una mano con esto de enseñar online?</p>
         <p>
-          Muchos llevaban más años dando clase que yo, pero yo llevaba más tiempo
-          viviendo de internet. El caso es que de repente todos estos profes se
-          encontraron grabando vídeos, dando clases por Zoom, creando materiales
-          digitales, mandando newsletters e intentando vender cursos por internet.
+          <em>
+            —Borja, estoy perdido con esto de enseñar online. ¿Me echas una mano con X
+            herramienta?
+          </em>
+        </p>
+        <p>
+          La mayoría tenía mucha más experiencia como profe, pero yo llevaba más tiempo
+          viviendo de internet. El caso es que de repente todos estos profes se encontraron
+          grabando vídeos, dando clases por Zoom, creando materiales digitales, mandando
+          newsletters e intentando vender cursos por internet.
         </p>
         <p>
           Y claro, me preguntaban por las herramientas. Qué programa usaba para grabar.
