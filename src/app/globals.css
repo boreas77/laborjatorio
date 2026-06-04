@@ -77,17 +77,21 @@ main {
 }
 
 .site-footer {
-  background: rgb(184 92 92 / 8%);
-  border-top: 2px solid var(--rojo-borja);
-  color: var(--muted);
-  font-weight: 650;
-  line-height: 1.65;
+  background: var(--bg);
   padding: 32px clamp(18px, 4vw, 56px);
 }
 
-.site-footer p {
+.site-footer__notice {
+  background: rgb(184 92 92 / 8%);
+  border: 2px solid var(--rojo-borja);
+  border-radius: 8px;
+  color: var(--ink);
+  font-weight: 650;
+  line-height: 1.65;
   margin: 0 auto;
   max-width: 980px;
+  padding: 1rem 1.25rem;
+  text-align: center;
 }
 
 .hero {
@@ -991,11 +995,16 @@ main {
 .cta-laborjatorio {
   background: rgb(184 92 92 / 8%);
   border: 2px solid var(--rojo-borja);
-  border-left-width: 5px;
   border-radius: 8px;
   color: var(--ink);
   font-weight: 650;
   margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+
+.prose section.cta-laborjatorio {
+  border: 2px solid var(--rojo-borja);
   padding: 1rem 1.25rem;
 }
 
