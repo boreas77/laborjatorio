@@ -430,7 +430,7 @@ export const tools: Tool[] = [
       "El editor incorporado sirve para apuros, pero no lo usaría como editor principal.",
       "Ha añadido funciones de IA que no he explorado, así que no las valoro desde experiencia real."
     ],
-    alternatives: ["Loom", "OBS", "YouTube", "Vimeo", "DaVinci Resolve"],
+    alternatives: ["Loom", "OBS", "Vimeo", "DaVinci Resolve"],
     rating: 3,
     difficulty: "facil",
     status: "opcional",
@@ -475,13 +475,9 @@ export const tools: Tool[] = [
       },
       {
         name: "OBS",
+        url: "https://obsproject.com/",
         description:
           "Mejor si quieres más control sobre la grabación. Juega en otra liga, pero también exige otra relación con la herramienta."
-      },
-      {
-        name: "YouTube",
-        description:
-          "Más sólido para alojar vídeos importantes, aunque no siempre encaja si quieres algo privado o con apariencia de página propia."
       },
       {
         name: "Vimeo",
@@ -491,6 +487,7 @@ export const tools: Tool[] = [
       },
       {
         name: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores",
         description:
           "No es alternativa para alojar, sino para editar de verdad. Para montar vídeo con calma, prefiero DaVinci antes que el editor interno de Kommodo."
       }

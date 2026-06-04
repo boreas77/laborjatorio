@@ -391,6 +391,13 @@ Perfil ideal.
 
 Otras opciones.
 
+Cuando se incluyan alternativas:
+
+* si existe ficha interna publicada, enlazar a esa ficha
+* si no existe ficha interna, enlazar a la web oficial cuando aporte valor
+* evitar mezclar alternativas con enlace y sin enlace dentro del mismo bloque
+* no incluir plataformas relacionadas si no son realmente una alternativa útil para ese caso concreto
+
 ## Veredicto final
 
 Opinión honesta.

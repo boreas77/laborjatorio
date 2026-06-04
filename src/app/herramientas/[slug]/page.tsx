@@ -262,7 +262,9 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   <ul className="tool-alternative-links">
                     {tool.alternativeDetails.map((alternative) => (
                       <li key={alternative.name}>
-                        {alternative.url ? (
+                        {alternative.url?.startsWith("/") ? (
+                          <Link href={alternative.url}>{alternative.name}</Link>
+                        ) : alternative.url ? (
                           <a href={alternative.url} target="_blank" rel="noopener noreferrer">
                             {alternative.name}
                           </a>
