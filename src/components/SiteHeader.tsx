@@ -8,7 +8,6 @@ export function SiteHeader() {
         <BrandName casing="upper" />
       </Link>
       <nav aria-label="Navegacion principal">
-        <Link href="/">Inicio</Link>
         <Link href="/herramientas">Herramientas</Link>
         <Link href="/sobre">Sobre mí</Link>
       </nav>
