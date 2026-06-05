@@ -774,6 +774,127 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "MailPoet",
+    slug: "mailpoet",
+    title: "MailPoet: cómo envío mis newsletters desde mi propio WordPress",
+    metaDescription:
+      "Llevo más de seis años usando MailPoet para enviar mis newsletters desde mi propia web en WordPress. Te cuento cómo funciona, sus límites, sus planes y por qué es el corazón de mi negocio.",
+    keywords: [
+      "MailPoet",
+      "email marketing para profesores",
+      "newsletter en WordPress",
+      "plugin de newsletter",
+      "enviar newsletters",
+      "alternativa a Mailchimp"
+    ],
+    tagline:
+      "El plugin de WordPress con el que envío mis newsletters y mantengo viva mi lista de suscriptores.",
+    category: "Marketing y ventas",
+    subcategories: ["email marketing", "ventas", "web", "productividad", "newsletter"],
+    pricing: "gratis-con-plan-pago",
+    officialUrl: "https://www.mailpoet.com",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso desde hace más de seis años para enviar mis newsletters desde mi propio WordPress. Para mí es imprescindible: es el corazón de mi negocio.",
+    bestFor: [
+      "Profes con una web en WordPress que quieren empezar una newsletter",
+      "Profes que venden cursos, clases o formaciones y necesitan una lista propia",
+      "Negocios educativos que quieren gestionar sus suscriptores dentro de WordPress",
+      "Quien quiere enviar newsletters sin conectar mil herramientas distintas"
+    ],
+    notFor: [
+      "Quien no tiene WordPress ni quiere trabajar dentro de WordPress",
+      "Quien busca una plataforma de newsletter independiente de su web",
+      "Quien necesita automatizaciones muy complejas desde el primer día",
+      "Quien quiere delegar toda la estrategia de email marketing en la herramienta"
+    ],
+    pros: [
+      "Está integrado dentro de WordPress.",
+      "Es sencillo e intuitivo para enviar newsletters.",
+      "Permite crear formularios, listas, campañas y automatizaciones básicas.",
+      "Puedes exportar tu lista y llevártela a otra herramienta.",
+      "El soporte me ha respondido bien cuando he tenido problemas."
+    ],
+    cons: [
+      "Las actualizaciones del plugin pueden dar algún fallo puntual.",
+      "Un reporte de spam puede bloquear temporalmente los envíos.",
+      "Los planes actuales dependen del tamaño de la lista.",
+      "Si no usas WordPress, seguramente te encajen mejor otras opciones."
+    ],
+    alternatives: ["Mailchimp", "Substack"],
+    rating: 5,
+    difficulty: "facil",
+    status: "imprescindible",
+    updatedAt: "2026-06-05",
+    intro:
+      "Si tienes una web en WordPress y quieres mandar newsletters sin montar un circo de herramientas conectadas entre sí, MailPoet es de las opciones más cómodas que existen. Es la herramienta que yo utilizo para enviar mis newsletters desde hace por lo menos seis años. Para que te hagas una idea de cuánto la valoro: para mí es imprescindible, porque realmente es el corazón de mi negocio.",
+    whatItDoes:
+      "MailPoet es un plugin de WordPress para hacer email marketing. Puedes crear formularios de suscripción, gestionar listas de suscriptores, enviar campañas y montar automatizaciones sencillas desde el mismo panel de WordPress. No te vas a una plataforma externa: lo gestionas todo dentro de tu web.",
+    howIUseIt:
+      "Lo uso para mantener mi lista de suscriptores y enviar newsletters a mi comunidad. Creo el formulario, gestiono la lista, preparo los correos y envío desde WordPress. Y si algún día quisiera moverme a otra herramienta, puedo exportar la base de datos de suscriptores y llevármela. La lista es mía, que en email marketing no es un detalle menor.",
+    teacherUseCases: [
+      "Crear un formulario de suscripción en tu web de profe.",
+      "Enviar una newsletter semanal o mensual a tus estudiantes y comunidad.",
+      "Dar la bienvenida automáticamente a quien se suscribe.",
+      "Mantener una lista propia para vender cursos, clases o formaciones.",
+      "Comprobar cómo funciona una newsletter real apuntándote a la mía en borjaprofe.com."
+    ],
+    honestVerdict:
+      "Para mí MailPoet es imprescindible, sin matices: es el corazón de mi negocio y lo que me permite mantener vivo el vínculo con mi comunidad. Es sencillo, está integrado en mi web y, cuando algo ha fallado, el soporte ha respondido. Si tienes WordPress y quieres una newsletter sin líos, es de lo más cómodo que hay. Lo importante no es encontrar la herramienta perfecta: es empezar.",
+    importantNotice:
+      "No actualices el plugin justo antes de un envío importante. En mi experiencia, a veces las actualizaciones pueden traer fallos puntuales durante las primeras horas. Mejor actualizar con margen y dormir con menos ruido mental.",
+    metrics: [
+      { label: "Tiempo usándola", value: "+6 años" },
+      { label: "Plan gratis", value: "Hasta 500 suscriptores" },
+      { label: "Emails gratis", value: "5.000/mes" }
+    ],
+    priceRows: [
+      { label: "Starter", value: "Gratis hasta 500 suscriptores y 5.000 emails/mes" },
+      { label: "Business", value: "Pago recurrente; escala según número de suscriptores" },
+      { label: "Creator", value: "Para gestionar tu propio sistema de envío" },
+      { label: "Mi caso", value: "Vengo de un pago único antiguo que ya no es la entrada normal" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Yo entré en su día con una versión de pago único y pronto tendré que pasar por los planes actuales. MailPoet mantiene un plan gratuito para empezar, y los planes de pago dependen mucho del tamaño de tu lista. Antes de pagar, confirma el precio exacto en su web oficial.",
+    alternativeDetails: [
+      {
+        name: "Mailchimp",
+        url: "https://mailchimp.com/",
+        description:
+          "Es la alternativa más famosa, pero a mí me pareció abrumadora para empezar: demasiadas cosas encima desde el primer minuto."
+      },
+      {
+        name: "Substack",
+        url: "https://substack.com/",
+        description:
+          "La estoy valorando para un proyecto secundario. Puede tener sentido si quieres una newsletter independiente de tu web, pero no encaja igual si quieres tenerlo todo integrado en WordPress."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿MailPoet sirve para profesores?",
+        answer:
+          "Sí, sobre todo si ya tienes una web en WordPress y quieres construir una lista propia para vender cursos, llenar clases o mantener una comunidad."
+      },
+      {
+        question: "¿MailPoet tiene plan gratis?",
+        answer:
+          "Sí. Según su página oficial, el plan Starter permite empezar gratis hasta 500 suscriptores y 5.000 emails al mes."
+      },
+      {
+        question: "¿Puedo llevarme mi lista si cambio de herramienta?",
+        answer:
+          "Sí. Puedes exportar tus suscriptores y moverlos a otra plataforma. Para mí eso es clave: tu lista no debería quedar secuestrada por una herramienta."
+      },
+      {
+        question: "¿Recomiendo Mailchimp como alternativa?",
+        answer:
+          "No para empezar. Es potente y conocida, pero a mí me resultó demasiado abrumadora. Si tienes WordPress, MailPoet me parece una entrada más sencilla."
+      }
+    ]
+  },
+  {
     name: "Audacity",
     slug: "audacity",
     title: "Audacity: con qué edito mi podcast desde hace más de 200 episodios",
