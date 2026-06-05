@@ -1269,6 +1269,113 @@ export const tools: Tool[] = [
       "Si te interesa montar un puesto de trabajo más cómodo para enseñar, grabar y crear contenido, en borjaprofe.com voy contando estas decisiones sin convertirlas en postureo de escritorio."
   },
   {
+    name: "Inphic PM6",
+    slug: "inphic-pm6",
+    title: "Inphic PM6: el ratón inalámbrico barato con el que trabajo cada día",
+    metaDescription:
+      "Uso un ratón inalámbrico barato, de unos 20 euros, con botones laterales para navegar rápido entre mis mil pestañas. Te cuento por qué repito el mismo modelo y para quién tiene sentido.",
+    keywords: [
+      "Inphic PM6",
+      "ratón inalámbrico barato",
+      "ratón con botones laterales",
+      "ratón para teletrabajo",
+      "ratón recargable",
+      "ratón para profesores online"
+    ],
+    tagline:
+      "El ratón inalámbrico barato que uso a diario por una razón muy simple: funciona y tiene botones laterales.",
+    category: "Equipo físico",
+    subcategories: ["ergonomía", "productividad", "hardware", "ratón", "teletrabajo"],
+    pricing: "pago-unico",
+    officialUrl: "https://www.amazon.es/",
+    affiliateUrl: "https://amzn.to/4uexpYP",
+    hasAffiliate: true,
+    myUseCase:
+      "Lo uso como ratón principal para trabajar, navegar entre pestañas, preparar clases y moverme rápido por el navegador gracias a sus botones laterales.",
+    bestFor: [
+      "Profes online que quieren un ratón inalámbrico barato",
+      "Quien trabaja con muchas pestañas abiertas",
+      "Personas que quieren botones laterales para avanzar y retroceder",
+      "Quien busca una compra sencilla y funcional sin gastar de más"
+    ],
+    notFor: [
+      "Quien necesita un ratón ergonómico vertical o muy específico",
+      "Gamers exigentes que buscan precisión y respuesta de gama alta",
+      "Diseñadores o editores que necesitan funciones avanzadas",
+      "Quien quiere una comparativa técnica profunda de ratones"
+    ],
+    pros: [
+      "Es barato: ronda los 20 euros o menos.",
+      "Tiene dos botones laterales muy útiles para navegar.",
+      "Es inalámbrico y recargable.",
+      "Se puede usar mientras carga.",
+      "Me ha durado varios años con uso diario."
+    ],
+    cons: [
+      "No tiene características ergonómicas avanzadas.",
+      "No es una compra para quien necesita precisión gaming seria.",
+      "No hay una web oficial clara del producto fuera de Amazon.",
+      "No he hecho una comparativa real con otros modelos."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-05",
+    intro:
+      "Vamos a hablar de algo que como profes online usamos todos los días y que, a la vez, no es ni de lejos lo más importante de nuestro equipo: el ratón. Te lo digo ya para rebajar expectativas: aquí no tienes que tomar una decisión súper acertada, cualquiera te sirve. Pero ya que toca comprar uno, te cuento cuál uso yo y por qué repito el mismo modelo.",
+    whatItDoes:
+      "El Inphic PM6 es un ratón inalámbrico económico. Lo que me interesa de él no es una lista infinita de especificaciones, sino cuatro cosas muy concretas: no tiene cable, se carga por USB, puedes seguir usándolo mientras carga y trae dos botones laterales para avanzar y retroceder en el navegador.",
+    howIUseIt:
+      "Lo uso cada día para trabajar con muchas pestañas abiertas. Los botones laterales son la clave: avanzar y retroceder con el pulgar, sin ir a buscar la flecha del navegador, agiliza mucho cuando estás investigando, preparando clases o creando materiales. Cuando el anterior se gastó después de unos años, no me puse a estudiar el mercado: compré el mismo otra vez.",
+    teacherUseCases: [
+      "Moverte rápido entre páginas mientras preparas una clase.",
+      "Trabajar con muchas pestañas sin depender tanto del teclado o de la barra del navegador.",
+      "Tener un ratón inalámbrico barato para clases, administración y creación de materiales.",
+      "Seguir trabajando aunque se agote la batería, conectándolo por USB.",
+      "Resolver una compra pequeña sin convertirla en una investigación de tres tardes."
+    ],
+    honestVerdict:
+      "No te voy a vender que este ratón te va a cambiar la vida, porque sería mentira y porque un ratón es un ratón. Pero es cómodo, es barato, tiene los botones laterales que de verdad uso a diario y me ha durado años. Por eso repito modelo sin pensármelo. Si eres profe online y solo quieres algo que funcione sin gastar de más, es una opción de las de compra y olvídate.",
+    importantNotice:
+      "No he valorado alternativas reales a este ratón porque, para mi uso, no merece ese debate. Si algún día pruebo otro modelo y me sorprende, lo contaré; mientras tanto, prefiero no inventarme una comparativa.",
+    metrics: [
+      { label: "Precio habitual", value: "~20 € o menos" },
+      { label: "Duración anterior", value: "2-3 años" },
+      { label: "Botones laterales", value: "Sí" }
+    ],
+    priceRows: [
+      { label: "Tipo de compra", value: "Pago único" },
+      { label: "Precio orientativo", value: "Alrededor de 20 € o menos" },
+      { label: "Dónde lo compro", value: "Amazon" },
+      { label: "Afiliación", value: "Sí, Amazon" }
+    ],
+    priceNote:
+      "El precio puede cambiar según disponibilidad y vendedor. Lo importante aquí no es perseguir una oferta exacta, sino la idea: un ratón inalámbrico barato con botones laterales basta para la mayoría de profes online.",
+    faqs: [
+      {
+        question: "¿El Inphic PM6 merece la pena para dar clases online?",
+        answer:
+          "Sí, si buscas un ratón barato, inalámbrico y cómodo para trabajo diario. No es una pieza crítica del equipo, pero cumple de sobra."
+      },
+      {
+        question: "¿Por qué me importan tanto los botones laterales?",
+        answer:
+          "Porque sirven para avanzar y retroceder en el navegador con el pulgar. Cuando trabajas con muchas pestañas, ese gesto pequeño se nota muchísimo."
+      },
+      {
+        question: "¿Se puede usar mientras carga?",
+        answer:
+          "Sí. Si se queda sin batería, lo conectas por USB y puedes seguir usándolo."
+      },
+      {
+        question: "¿Lo recomiendo para gaming?",
+        answer:
+          "No como recomendación especializada. Yo juego, pero esta ficha va de trabajo diario como profesor online, no de ratones gaming de alto rendimiento."
+      }
+    ]
+  },
+  {
     name: "Logitech C920",
     slug: "logitech-c920",
     title: "Logitech C920: la webcam que llevo más de 10 años usando (y sigue viva)",
