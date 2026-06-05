@@ -1022,6 +1022,113 @@ export const tools: Tool[] = [
       "Si te interesa montar un puesto de trabajo más cómodo para enseñar, grabar y crear contenido, en borjaprofe.com voy contando estas decisiones sin convertirlas en postureo de escritorio."
   },
   {
+    name: "Logitech C920",
+    slug: "logitech-c920",
+    title: "Logitech C920: la webcam que llevo más de 10 años usando (y sigue viva)",
+    metaDescription:
+      "Llevo más de diez años dando clases con la misma Logitech C920. Te cuento por qué sigo con ella, qué problemas me ha dado, su calidad real y cuándo tiene sentido comprarla.",
+    keywords: [
+      "Logitech C920",
+      "webcam para clases online",
+      "webcam para profesores",
+      "mejor webcam duradera",
+      "webcam 1080p",
+      "cámara para dar clase online"
+    ],
+    tagline:
+      "La webcam que uso desde 2016 para clases, videollamadas y entrevistas, y que sigue funcionando como el primer día.",
+    category: "Equipo físico",
+    subcategories: ["vídeo", "comunicación", "formación", "contenido", "webcam", "clases online"],
+    pricing: "pago-unico",
+    officialUrl: "https://www.logitech.com/es-es/shop/p/c920-pro-hd-webcam.960-001055",
+    affiliateUrl: "https://amzn.to/4e2eGd0",
+    hasAffiliate: true,
+    myUseCase:
+      "La uso desde 2016 como cámara principal para clases online, videollamadas y entrevistas. Para entrevistas suelo acompañarla de un micrófono externo.",
+    bestFor: [
+      "Profes online que quieren una webcam fiable para dar clase",
+      "Quien busca calidad suficiente sin gastar una fortuna",
+      "Profes que valoran más la durabilidad que tener la última cámara del mercado",
+      "Quien quiere una webcam USB sencilla para clases, llamadas y entrevistas"
+    ],
+    notFor: [
+      "Quien busca la mejor calidad de imagen posible en 2026",
+      "Quien quiere una cámara 4K o con estética de producción avanzada",
+      "Quien necesita resolver problemas de conexión: una webcam no arregla el ancho de banda",
+      "Quien espera buen audio solo con el micrófono integrado de la cámara"
+    ],
+    pros: [
+      "Me ha durado más de diez años funcionando a diario.",
+      "La calidad 1080p es suficiente para clases, videollamadas y entrevistas.",
+      "Se conecta por USB y no exige complicarse.",
+      "El software de Logitech permite ajustar brillo y otros parámetros.",
+      "Es una compra razonable si priorizas fiabilidad y duración."
+    ],
+    cons: [
+      "Hoy hay webcams con mejor calidad de imagen.",
+      "El conector USB puede acusar el paso de los años.",
+      "A mí me dio una época de desconexiones por desgaste del cable o conector.",
+      "El audio conviene resolverlo con un micrófono externo si vas a grabar o hacer entrevistas."
+    ],
+    alternatives: [],
+    rating: 5,
+    difficulty: "facil",
+    status: "imprescindible",
+    updatedAt: "2026-06-05",
+    intro:
+      "Cuando haya un apocalipsis nuclear van a sobrevivir dos cosas: las cucarachas y mi Logitech. La Logitech C920 es la webcam con la que doy clase desde 2016, y sigue funcionando como el primer día. Más de diez años, miles de clases, viajes interoceánicos e incluso un conejo que le pegó un mordisco al cable... y aquí sigue.",
+    whatItDoes:
+      "La Logitech C920 es una webcam externa USB para clases, videollamadas y entrevistas. Graba y transmite en Full HD 1080p a 30 fps, tiene campo de visión de 78° y corrección automática de iluminación. No es la cámara más moderna del mercado, pero hace su trabajo con una fiabilidad bastante seria.",
+    howIUseIt:
+      "La compré aproximadamente un año después de empezar a dar clases online. Antes daba clase con la cámara del portátil, y me da vergüenza solo de pensarlo. La compré en Nicaragua, para mi bolsillo de entonces fue cara aunque no un disparate, y desde aquel día la uso para todo: clases, videollamadas y entrevistas. Para las entrevistas le sumo un micrófono externo, porque el audio es otra historia.",
+    teacherUseCases: [
+      "Dar clases online con una imagen más limpia que la cámara del portátil.",
+      "Hacer videollamadas profesionales con estudiantes o clientes.",
+      "Grabar entrevistas sencillas acompañándola de un micrófono externo.",
+      "Tener una cámara USB fiable para trabajar durante años.",
+      "Evitar cambiar de webcam cada dos o tres temporadas."
+    ],
+    honestVerdict:
+      "La Logitech C920 no es la webcam que elegirías si buscas la mejor imagen posible en 2026. Pero si quieres una cámara que dé buena calidad para clases y entrevistas, que se enchufe sin drama y que te dure media vida, es difícil discutir con una webcam que lleva más de diez años aguantándome el ritmo. Para profes online, sigue siendo una compra de las que no te arrepientes.",
+    importantNotice:
+      "La imagen borrosa en una videollamada no siempre es culpa de la cámara. Si tu conexión va mal, el ancho de banda puede hacer que te vean peor aunque la webcam sea decente.",
+    metrics: [
+      { label: "Uso desde", value: "2016" },
+      { label: "Resolución", value: "1080p" },
+      { label: "Campo de visión", value: "78°" }
+    ],
+    priceRows: [
+      { label: "Tipo de compra", value: "Pago único" },
+      { label: "Precio actual", value: "Variable según tienda" },
+      { label: "Mi compra", value: "Nicaragua, hace más de 10 años" },
+      { label: "Afiliación", value: "Sí, Amazon" }
+    ],
+    priceNote:
+      "No recuerdo el precio exacto al que la compré. Para mi bolsillo de entonces, en Nicaragua, fue una compra cara, aunque no exagerada. Hoy suele moverse en una franja razonable para una webcam Full HD, pero conviene comprobar el precio actual antes de comprar.",
+    faqs: [
+      {
+        question: "¿La Logitech C920 sigue mereciendo la pena?",
+        answer:
+          "Sí, si buscas una webcam fiable, duradera y suficiente para clases online. No es la opción más moderna, pero mi experiencia con ella ha sido excelente."
+      },
+      {
+        question: "¿La C920 tiene la mejor imagen del mercado?",
+        answer:
+          "No. Hoy hay webcams con mejor imagen. La razón por la que la recomiendo no es ser la más moderna, sino la durabilidad y la calidad suficiente para trabajar."
+      },
+      {
+        question: "¿Sirve para entrevistas?",
+        answer:
+          "Sí. Yo la uso para entrevistas, pero suelo añadir un micrófono externo porque el audio no debería depender de la webcam."
+      },
+      {
+        question: "¿Qué problema técnico me ha dado?",
+        answer:
+          "Durante una época se desconectaba sola por desgaste del conector USB. Lo resolví dejando el cable lo más quieto posible y no he tenido que reemplazarla."
+      }
+    ]
+  },
+  {
     name: "Notion",
     slug: "notion",
     tagline: "Un espacio flexible para organizar recursos, proyectos, ideas y bases de conocimiento.",

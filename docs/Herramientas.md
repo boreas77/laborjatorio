@@ -278,7 +278,7 @@
 
 ## Logitech C920
 
-* Estado: Importante
+* Estado: Imprescindible
 * Etiquetas: Vídeo, Comunicación, Formación, Contenido
 
 ## Audio-Technica ATR2100x-USB
