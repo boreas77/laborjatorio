@@ -176,7 +176,7 @@ export const tools: Tool[] = [
     category: "Audio y vídeo",
     subcategories: ["video", "redes sociales", "contenido", "ia", "podcast"],
     pricing: "suscripcion",
-    officialUrl: "https://www.opus.pro/",
+    officialUrl: "https://www.opus.pro/?via=laborjatorio",
     hasAffiliate: false,
     myUseCase:
       "Lo uso para transformar episodios largos de Gramaticón y el podcast de Palabras en clips cortos para Instagram, TikTok, YouTube Shorts y otras redes.",
