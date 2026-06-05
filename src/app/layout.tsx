@@ -11,10 +11,28 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  icons: {
+    icon: "/images/laborjatorio-avatar-provisional.jpg",
+    apple: "/images/laborjatorio-avatar-provisional.jpg"
+  },
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "/images/laborjatorio-avatar-provisional.jpg",
+        width: 640,
+        height: 640,
+        alt: "Icono provisional de Laborjatorio"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: ["/images/laborjatorio-avatar-provisional.jpg"]
   }
 };
 
