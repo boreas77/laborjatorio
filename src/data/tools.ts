@@ -774,6 +774,132 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Audacity",
+    slug: "audacity",
+    title: "Audacity: con qué edito mi podcast desde hace más de 200 episodios",
+    metaDescription:
+      "Audacity es el único editor de audio que he usado en mi vida, y con él llevo más de 200 episodios de podcast. Te cuento para qué sirve, sus límites y por qué sigo con él.",
+    keywords: [
+      "Audacity",
+      "editar audio gratis",
+      "editar podcast",
+      "programa de edición de audio",
+      "cortar audio",
+      "editor de audio gratuito"
+    ],
+    tagline:
+      "El editor de audio gratuito, rústico y manual con el que llevo más de 200 episodios de podcast.",
+    category: "Audio y vídeo",
+    subcategories: ["audio", "contenido", "productividad", "podcast", "edición"],
+    pricing: "gratis",
+    officialUrl: "https://www.audacityteam.org/",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso para editar la mayoría de los episodios de mis podcasts en solo audio, especialmente ¡Palabras! y Gramaticón, y también para mejorar pistas de sonido de algunos vídeos.",
+    bestFor: [
+      "Profes que quieren editar audio sin pagar",
+      "Creadores educativos que editan podcast de forma manual",
+      "Quien busca cortar, ajustar volumen y aplicar efectos básicos",
+      "Quien prefiere control artesanal antes que automatización"
+    ],
+    notFor: [
+      "Quien quiere una interfaz moderna y bonita",
+      "Quien necesita automatizar la edición de muchos audios",
+      "Quien necesita arreglar problemas de audio muy raros o complejos",
+      "Quien busca una herramienta integrada con IA"
+    ],
+    pros: [
+      "Es gratis y de código abierto.",
+      "Da control absoluto sobre cada corte.",
+      "Es sencillo si lo que quieres es editar audio puro.",
+      "Tiene lo necesario para cortar, ajustar volumen y aplicar efectos.",
+      "No se interpone demasiado entre tú y el audio."
+    ],
+    cons: [
+      "La interfaz es fea y rústica.",
+      "Todo es muy manual.",
+      "No automatiza la edición.",
+      "Se queda corto con problemas de audio extraordinarios.",
+      "Hay que entender bien la diferencia entre exportar audio y guardar proyecto."
+    ],
+    alternatives: ["DaVinci Resolve"],
+    rating: 5,
+    difficulty: "media",
+    status: "imprescindible",
+    updatedAt: "2026-06-05",
+    intro:
+      "Audacity es el único programa de edición de audio que he utilizado en mi vida. Y mira que ha llovido: con él llevo editados más de 200 episodios de mi podcast. Te lo presento con el aviso por delante: Audacity es más feo que un frigorífico visto desde atrás. Si superas eso, puede que te encante.",
+    whatItDoes:
+      "Audacity es un editor y grabador de audio gratuito y de código abierto. Permite cargar una pista, ver las ondas en una línea de tiempo, cortar, ajustar volumen, aplicar efectos y exportar el resultado final en formatos como MP3 o WAV. No promete magia: promete edición de audio directa.",
+    howIUseIt:
+      "Lo uso, sobre todo, para editar la mayoría de episodios de mis podcasts en formato solo audio: ¡Palabras! y Gramaticón. También lo he usado para mejorar pistas de sonido en algunos vídeos. Para mí hay algo artesanal en editar podcast así: necesito decidir cada corte con criterio, y Audacity me da sencillez y control.",
+    teacherUseCases: [
+      "Editar un podcast educativo sin pagar una herramienta mensual.",
+      "Cortar silencios, errores o repeticiones de una grabación.",
+      "Ajustar volumen de una pista de voz.",
+      "Preparar audios para materiales de clase o recursos descargables.",
+      "Exportar un episodio final en MP3 después de editarlo a mano."
+    ],
+    honestVerdict:
+      "Audacity es feo, rústico y manual, y aun así es el único editor de audio que he necesitado en toda mi vida. Más de 200 episodios de podcast lo avalan. Su gracia no está en lo que automatiza, sino en el control absoluto que te da. Si editas audio y quieres control total sin pagar, es difícil pedirle más.",
+    importantNotice:
+      "Ojo con una diferencia importante: exportar el audio no es lo mismo que guardar el proyecto. Exportar genera el MP3 final; guardar el proyecto conserva tus cortes y tu línea de tiempo para seguir editando después. Yo perdí algunos audios al principio por no tener esto claro.",
+    metrics: [
+      { label: "Episodios editados", value: "+200" },
+      { label: "Precio", value: "0 €" },
+      { label: "Licencia", value: "Open source" }
+    ],
+    priceRows: [
+      { label: "Audacity", value: "Gratis" },
+      { label: "Código abierto", value: "Sí" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Audacity es gratis y de código abierto. No hay suscripción ni enlace de afiliado.",
+    alternativeDetails: [
+      {
+        name: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores",
+        description:
+          "Lo uso para editar el audio que va asociado a vídeo dentro del propio montaje. Para tocar audio puro, Audacity me resulta más directo."
+      },
+      {
+        name: "HappyScribe",
+        url: "/herramientas/happyscribe",
+        description:
+          "No edita audio: transcribe. Lo uso después o alrededor del proceso cuando necesito pasar una grabación a texto."
+      },
+      {
+        name: "Spotify for Podcasters",
+        url: "https://podcasters.spotify.com/",
+        description:
+          "Sirve para publicar el podcast, no para editarlo. Lo dejo como parte relacionada del flujo mientras no tenga ficha propia."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Audacity es gratis de verdad?",
+        answer:
+          "Sí. Audacity es gratuito y de código abierto. Puedes usarlo para grabar y editar audio sin pagar una suscripción."
+      },
+      {
+        question: "¿Audacity sirve para editar podcasts?",
+        answer:
+          "Sí. Yo lo uso para editar podcasts desde hace años y con él llevo más de 200 episodios."
+      },
+      {
+        question: "¿Qué diferencia hay entre guardar y exportar?",
+        answer:
+          "Guardar conserva el proyecto editable; exportar crea el archivo final, por ejemplo un MP3. Conviene hacer las dos cosas si quieres poder retocar después."
+      },
+      {
+        question: "¿Audacity tiene IA?",
+        answer:
+          "En mi uso, no. Lo utilizo como editor manual. Si algún día necesito automatización o limpieza avanzada, quizá busque otra herramienta."
+      }
+    ]
+  },
+  {
     name: "Squoosh",
     slug: "squoosh",
     title: "Squoosh: cómo comprimo imágenes para que no me revienten la web",
