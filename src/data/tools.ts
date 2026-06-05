@@ -1337,8 +1337,6 @@ export const tools: Tool[] = [
     ],
     honestVerdict:
       "No te voy a vender que este ratón te va a cambiar la vida, porque sería mentira y porque un ratón es un ratón. Pero es cómodo, es barato, tiene los botones laterales que de verdad uso a diario y me ha durado años. Por eso repito modelo sin pensármelo. Si eres profe online y solo quieres algo que funcione sin gastar de más, es una opción de las de compra y olvídate.",
-    importantNotice:
-      "No he valorado alternativas reales a este ratón porque, para mi uso, no merece ese debate. Si algún día pruebo otro modelo y me sorprende, lo contaré; mientras tanto, prefiero no inventarme una comparativa.",
     metrics: [
       { label: "Precio habitual", value: "~20 € o menos" },
       { label: "Duración anterior", value: "2-3 años" },
