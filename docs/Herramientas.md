@@ -256,6 +256,12 @@
 
 # HARDWARE
 
+## Acer Nitro 5
+
+* Estado: Imprescindible
+* Etiquetas: Productividad, Vídeo, Comunicación, Formación, Contenido
+* Nota: Portátil principal de Borja desde 2022. No se recomienda comprar este modelo en 2026; la ficha sirve como criterio para elegir portátil.
+
 ## Standing Desk Maidesite
 
 * Estado: Importante
@@ -290,4 +296,4 @@
 
 ## Total actual
 
-45 herramientas registradas.
+46 herramientas registradas.

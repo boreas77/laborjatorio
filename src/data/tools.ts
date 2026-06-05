@@ -1255,6 +1255,137 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Acer Nitro 5",
+    slug: "acer-nitro-5",
+    title: "Acer Nitro 5: mi portátil para dar clases, editar y jugar (y por qué no te lo recomiendo hoy)",
+    metaDescription:
+      "Doy clases, edito y juego con un Acer Nitro 5 desde 2022. Estoy contento, pero no te lo recomiendo comprar hoy. Te cuento mis criterios para elegir portátil y qué tendría de referencia.",
+    keywords: [
+      "Acer Nitro 5",
+      "portátil para dar clases online",
+      "portátil para profesores",
+      "ordenador para editar vídeo",
+      "portátil para profes y gaming",
+      "qué portátil comprar"
+    ],
+    tagline:
+      "Mi portátil principal desde 2022: útil para explicar qué miro al elegir ordenador, no para recomendarte comprar ese modelo hoy.",
+    category: "Equipo físico",
+    subcategories: ["productividad", "vídeo", "comunicación", "formación", "contenido", "portátil", "gaming"],
+    pricing: "pago-unico",
+    officialUrl: "https://store.acer.com/en-us/nitro-5-gaming-laptop-an515-44-r078",
+    hasAffiliate: false,
+    myUseCase:
+      "Uso mi Acer Nitro 5 AN515-44 desde 2022 como ordenador principal para dar clases, editar vídeo y audio, tareas administrativas, grabar contenido y jugar.",
+    bestFor: [
+      "Profes que quieren pensar bien qué portátil necesitan",
+      "Profes online que también editan vídeo o audio",
+      "Creadores educativos que abren muchas pestañas y usan programas pesados",
+      "Quien además de trabajar quiere jugar en el mismo equipo"
+    ],
+    notFor: [
+      "Comprar este modelo concreto en 2026",
+      "Quien no juega y puede ahorrar comprando un equipo menos gaming",
+      "Quien busca una recomendación técnica cerrada de procesadores y gráficas",
+      "Usuarios de Mac que quieren una recomendación dentro del ecosistema Apple"
+    ],
+    pros: [
+      "Me ha servido para dar clases, editar, trabajar y jugar.",
+      "Un portátil gaming suele ir sobrado para Zoom, edición ligera y mil pestañas.",
+      "Me ha ayudado a definir criterios claros para comprar mi próximo equipo.",
+      "Sigo contento con él después de varios años de uso real."
+    ],
+    cons: [
+      "El modelo AN515-44 ya es antiguo para comprarlo nuevo en 2026.",
+      "Posiblemente sea difícil de encontrar a la venta.",
+      "No es una recomendación directa de compra actual.",
+      "Si no juegas, pagar potencia gaming puede no tener sentido.",
+      "Para afinar detalles técnicos conviene consultar a alguien que sepa de hardware."
+    ],
+    alternatives: ["ASUS TUF Gaming A16", "Lenovo gaming actual"],
+    rating: 4,
+    difficulty: "media",
+    status: "imprescindible",
+    updatedAt: "2026-06-05",
+    intro:
+      "Mi Acer Nitro 5, modelo AN515-44, es el portátil con el que hago literalmente todo mi trabajo desde 2022: clases, administración, edición de vídeo y audio, grabaciones, veinte pestañas abiertas y juegos. Estoy muy contento con él. Y, aun así, no te recomiendo comprarlo hoy.",
+    whatItDoes:
+      "El Acer Nitro 5 es un portátil gaming. En mi caso, eso significa que tiene potencia suficiente para dar clases online, mover programas de edición y aguantar un uso bastante intenso. Pero esta ficha no va de venderte este modelo: va de usar mi experiencia para explicar qué criterios miro al elegir un portátil para trabajar como profesor online.",
+    howIUseIt:
+      "Lo uso como ordenador principal para Zoom, grabar vídeos, editar, escribir, hacer tareas administrativas y jugar. También soy de tener muchas pestañas abiertas, y eso consume más recursos de lo que parece. Por eso uso el gaming como vara de medir: si un portátil puede con juegos actuales, normalmente va sobrado para clases, edición y trabajo diario.",
+    teacherUseCases: [
+      "Dar clases online con Zoom sin que el ordenador sufra.",
+      "Editar vídeo y audio sin que el equipo se ahogue a la primera.",
+      "Trabajar con muchas pestañas, documentos y programas abiertos.",
+      "Grabar contenido educativo y gestionar un negocio online desde el mismo equipo.",
+      "Elegir un portátil pensando en potencia real, no solo en precio."
+    ],
+    honestVerdict:
+      "El Acer Nitro 5 ha sido un grandísimo compañero de trabajo, pero no compraría este modelo concreto en 2026. Lo importante no es copiar mi portátil, sino mis criterios: mínimo 16 GB de RAM, potencia suficiente para editar y margen para trabajar cómodo. Si juegas, sube presupuesto; si no juegas, probablemente con 800-1.000 euros tengas más que suficiente.",
+    importantNotice:
+      "Esta ficha no recomienda comprar el Acer Nitro 5 AN515-44 hoy. Es mi ordenador actual y me ha salido bueno, pero en 2026 lo usaría como referencia de criterios, no como compra directa.",
+    metrics: [
+      { label: "Uso desde", value: "2022" },
+      { label: "RAM mínima futura", value: "16 GB" },
+      { label: "Presupuesto gaming", value: "~1.200 €" }
+    ],
+    priceRows: [
+      { label: "Mi Acer Nitro 5", value: "Comprado en 2022" },
+      { label: "Si juegas", value: "Referencia alrededor de 1.200 €" },
+      { label: "Si no juegas", value: "800-1.000 € puede bastar" },
+      { label: "Afiliación", value: "Sí, solo en la referencia ASUS" }
+    ],
+    priceNote:
+      "No pongo un precio actual del Nitro 5 porque este modelo ya no es una compra que recomendaría. Para mi próxima compra miro equipos actuales alrededor de 1.200 euros si incluyen gaming. Si no juegas, no pagues el sobreprecio de una gráfica que no vas a usar.",
+    alternativeDetails: [
+      {
+        name: "ASUS TUF Gaming A16 FA608UM-RV005",
+        url: "https://amzn.to/4ulS4Kt",
+        description:
+          "Es el portátil que tengo fichado como referencia futura, no un equipo que ya haya probado. Lo miro por sus 32 GB de RAM, 1 TB SSD, RTX 5060 y porque viene sin sistema operativo."
+      },
+      {
+        name: "Lenovo gaming actual",
+        description:
+          "Lenovo es una de las marcas que miraría para mi próxima compra, siempre comparando ofertas y especificaciones reales en ese momento."
+      },
+      {
+        name: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores",
+        description:
+          "No es alternativa de portátil, pero sí una de las razones por las que necesito margen de potencia: editar vídeo consume recursos."
+      },
+      {
+        name: "Audacity",
+        url: "/herramientas/audacity",
+        description:
+          "Para edición de audio no hace falta tanta máquina, pero forma parte de mi uso real del ordenador."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Recomiendo comprar el Acer Nitro 5 en 2026?",
+        answer:
+          "No este modelo concreto. A mí me ha salido muy bueno, pero en 2026 lo usaría como referencia de criterios, no como compra directa."
+      },
+      {
+        question: "¿Por qué uso un portátil gaming para dar clases?",
+        answer:
+          "Porque si un ordenador puede con juegos actuales, normalmente va sobrado para Zoom, edición, grabación y muchas pestañas abiertas."
+      },
+      {
+        question: "¿Cuánta RAM pediría como mínimo?",
+        answer:
+          "Mínimo 16 GB. Por debajo de eso, yo no me lo plantearía para un equipo principal de trabajo."
+      },
+      {
+        question: "¿Y si no juego?",
+        answer:
+          "Entonces probablemente no necesitas gastar tanto. Para clases, tareas normales y edición básica, una franja de 800 a 1.000 euros puede ser suficiente."
+      }
+    ]
+  },
+  {
     name: "Notion",
     slug: "notion",
     tagline: "Un espacio flexible para organizar recursos, proyectos, ideas y bases de conocimiento.",
