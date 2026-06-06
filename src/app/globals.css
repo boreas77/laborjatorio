@@ -368,13 +368,15 @@ main {
 }
 
 .home-borja-cta__photo {
-  background:
-    linear-gradient(135deg, rgb(184 92 92 / 16%), rgb(42 127 118 / 14%)),
-    #f2ecdf;
-  border: 1px dashed #c8b99f;
+  aspect-ratio: 1;
+  background: #f2ecdf;
+  border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  min-height: clamp(280px, 36vw, 430px);
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
 }
 
 .home-borja-cta__body {

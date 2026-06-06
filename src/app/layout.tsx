@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   icons: {
-    icon: "/images/laborjatorio-avatar-provisional.jpg",
-    apple: "/images/laborjatorio-avatar-provisional.jpg"
+    icon: "/images/laborjatorio-borja-avatar.jpg",
+    apple: "/images/laborjatorio-borja-avatar.jpg"
   },
   openGraph: {
     title: siteConfig.name,
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/laborjatorio-avatar-provisional.jpg",
-        width: 640,
-        height: 640,
-        alt: "Icono provisional de Laborjatorio"
+        url: "/images/laborjatorio-borja-avatar.jpg",
+        width: 512,
+        height: 512,
+        alt: "Borja en el Laborjatorio"
       }
     ]
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ["/images/laborjatorio-avatar-provisional.jpg"]
+    images: ["/images/laborjatorio-borja-avatar.jpg"]
   }
 };
 

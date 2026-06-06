@@ -48,7 +48,11 @@ export default function HomePage() {
       <section className="home-borja-cta" aria-labelledby="home-borja-cta-title">
         <div className="home-borja-cta__inner">
           <h2 id="home-borja-cta-title">Y esas son las herramientas que utilizo en mi día a día.</h2>
-          <div className="home-borja-cta__photo" aria-label="Foto de Borja pendiente" />
+          <img
+            alt="Borja en el Laborjatorio"
+            className="home-borja-cta__photo"
+            src="/images/laborjatorio-borja-avatar.jpg"
+          />
           <div className="home-borja-cta__body">
             <p>
               Si quieres ver <strong>cómo las uso para ayudar a estudiantes y a otros
