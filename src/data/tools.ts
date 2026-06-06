@@ -894,6 +894,113 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Webempresa",
+    slug: "webempresa",
+    title: "Webempresa: el hosting español donde tengo mi web (y por qué no me cambio)",
+    metaDescription:
+      "Tengo mi web y mi dominio en Webempresa: hosting español, soporte rápido en español y precios honestos. Te cuento mi experiencia, lo que pago y para quién tiene sentido.",
+    keywords: [
+      "Webempresa",
+      "hosting español",
+      "hosting para WordPress",
+      "dónde alojar mi web",
+      "hosting con soporte en español",
+      "registrar dominio"
+    ],
+    tagline:
+      "El hosting español donde tengo alojada mi web y mis dominios, con soporte en español y precios claros.",
+    category: "Web",
+    subcategories: ["hosting", "wordpress", "dominios", "web", "productividad"],
+    pricing: "suscripcion",
+    officialUrl: "https://www.webempresa.com/",
+    hasAffiliate: false,
+    myUseCase:
+      "Tengo mi web y mis dominios alojados en Webempresa. Lo uso como base técnica del negocio: hosting, dominio, correos asociados y soporte cuando algo se complica.",
+    bestFor: [
+      "Profes en España que quieren montar una web en WordPress",
+      "Quien valora soporte técnico en español",
+      "Personas que empiezan y quieren acompañamiento al configurar la web",
+      "Negocios educativos que necesitan una base fiable para su web"
+    ],
+    notFor: [
+      "Quien busca el hosting más barato posible sin mirar soporte",
+      "Quien ya tiene un proveedor fiable y no necesita cambiar",
+      "Proyectos que requieren una arquitectura técnica muy personalizada",
+      "Quien no quiere pagar anualmente por la base de su web"
+    ],
+    pros: [
+      "Soporte en español rápido y útil.",
+      "Me han parecido honestos con el precio.",
+      "Acompañan bien al instalar WordPress y arrancar.",
+      "Permiten gestionar hosting, dominio y correos en el mismo entorno.",
+      "La documentación es amplia si quieres resolver cosas por tu cuenta."
+    ],
+    cons: [
+      "No es gratis ni tiene sentido medirlo como una herramienta menor.",
+      "La documentación es tan extensa que puede dar pereza.",
+      "El precio público puede variar mucho entre promoción, renovación e impuestos.",
+      "El enlace afiliado está pendiente y todavía no está añadido."
+    ],
+    alternatives: [],
+    rating: 5,
+    difficulty: "media",
+    status: "importante",
+    updatedAt: "2026-06-06",
+    intro:
+      "Toda web necesita un sitio donde vivir, y ese sitio es el hosting. El mío es Webempresa, un hosting español, y ahí es donde tengo alojada mi web y también mis dominios. La verdad es que solo tengo cosas buenas que decir.",
+    whatItDoes:
+      "Webempresa es una empresa española de hosting y registro de dominios. En cristiano: es donde guardas tu web para que esté disponible en internet, y donde puedes registrar el nombre de tu dominio. También puedes gestionar correos asociados a ese dominio y pedir soporte cuando algo técnico se atasca.",
+    howIUseIt:
+      "Vengo de otro hosting cuyo nombre ya ni recuerdo. Funcionaba, pero tuve una mala experiencia con el precio de renovación. Con Webempresa valoro justo lo contrario: tranquilidad con el precio, soporte en español y ayuda cuando toca configurar cosas como WordPress, correos o problemas concretos de la web. A veces consulto su documentación, aunque para respuestas rápidas también tiro de ChatGPT.",
+    teacherUseCases: [
+      "Alojar una web profesional de profe online.",
+      "Registrar y mantener dominios propios.",
+      "Instalar WordPress con acompañamiento.",
+      "Crear correos asociados al dominio.",
+      "Tener soporte en español cuando algo técnico se rompe o no se entiende."
+    ],
+    honestVerdict:
+      "Webempresa hace su trabajo y me da algo que valoro mucho después de un mal susto con otro proveedor: tranquilidad. Precios honestos, soporte en español y la mano tendida para arrancar. Para mí, es la base sobre la que se sostiene todo lo demás. Si estás en España y quieres alojar tu web sin dolores de cabeza, le echaría un ojo.",
+    importantNotice:
+      "El enlace afiliado está pendiente. Hasta que lo tenga, esta ficha enlaza a la web oficial y no incluye mención de afiliación en el cuerpo.",
+    metrics: [
+      { label: "Mi hosting", value: "126 €/año" },
+      { label: "Mi dominio", value: "19 €/año" },
+      { label: "Soporte", value: "Español" }
+    ],
+    priceRows: [
+      { label: "Mi hosting", value: "126 €/año" },
+      { label: "Mis dominios", value: "19 €/año cada uno" },
+      { label: "Plan WordPress Micro", value: "Precio normal 70 €/año; promoción 35 €/año + impuestos" },
+      { label: "Plan WordPress Mini", value: "Precio normal 142 €/año; promoción 35,50 €/año + impuestos" },
+      { label: "Afiliación", value: "Pendiente de enlace" }
+    ],
+    priceNote:
+      "Mis cifras son mi caso real. En la web pública de Webempresa hay precios promocionales y precios normales, y pueden cambiar según plan, renovación e impuestos. Antes de contratar, conviene mirar el precio actual y el precio normal tras promoción.",
+    faqs: [
+      {
+        question: "¿Webempresa sirve para WordPress?",
+        answer:
+          "Sí. Tiene planes específicos de hosting para WordPress y acompañamiento para instalarlo y arrancar."
+      },
+      {
+        question: "¿Por qué valoro que sea español?",
+        answer:
+          "Porque el soporte en español reduce mucho la fricción cuando no dominas la parte técnica. Para un profe que empieza, eso puede marcar la diferencia."
+      },
+      {
+        question: "¿Es barato?",
+        answer:
+          "No lo mediría así. Para mí es una base de negocio: pagar algo más de 10 euros al mes por alojar una web profesional me parece razonable si la web genera trabajo."
+      },
+      {
+        question: "¿He probado otros hostings para comparar?",
+        answer:
+          "No desde que estoy en Webempresa. Vengo de otro proveedor, tuve un susto con la renovación y desde que cambié no he sentido necesidad de probar más."
+      }
+    ]
+  },
+  {
     name: "MailPoet",
     slug: "mailpoet",
     title: "MailPoet: cómo envío mis newsletters desde mi propio WordPress",

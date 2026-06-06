@@ -43,6 +43,12 @@
 * Estado: Imprescindible
 * Etiquetas: Web, Ventas, Documentación
 
+## Webempresa
+
+* Estado: Importante
+* Etiquetas: Web, Productividad
+* Nota: Hosting y dominios de Borja. Enlace de afiliado pendiente.
+
 ## LearnDash
 
 * Estado: Imprescindible
@@ -314,4 +320,4 @@
 
 ## Total actual
 
-49 herramientas registradas.
+50 herramientas registradas.
