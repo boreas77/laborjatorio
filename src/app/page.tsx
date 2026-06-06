@@ -17,15 +17,15 @@ export default function HomePage() {
       <section className="home-lede" aria-label="Introducción al Laborjatorio">
         <div className="home-lede__inner">
           <p>
-            Aquí documento las herramientas que uso para <strong>enseñar español, crear
-            contenido y gestionar mi negocio online</strong>. No las mejores del mercado
-            según ningún ranking. Las mías. <strong>Las que me rodean mientras escribo
-            esto</strong>.
+            Aquí no vas a encontrar las 837 mejores herramientas para profes, solo{" "}
+            <strong>
+              las que uso de verdad para enseñar español, crear contenido y gestionar mi
+              negocio
+            </strong>
+            . Las que me rodean mientras escribo esto.
           </p>
-          <p>
-            Algunas son imprescindibles. Otras son un experimento. Alguna la sigo usando
-            aunque no te la recomendaría.
-          </p>
+          <p>Si puedo, cada año serán menos.</p>
+          <p>Pero hablemos de lo importante:</p>
         </div>
       </section>
 
