@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BrandName } from "@/components/BrandName";
+import { HeaderSearch } from "@/components/HeaderSearch";
 
 export function SiteHeader() {
   return (
@@ -10,6 +11,7 @@ export function SiteHeader() {
       <nav aria-label="Navegación principal">
         <Link href="/inventario">Inventario</Link>
         <Link href="/sobre">Sobre mí</Link>
+        <HeaderSearch />
       </nav>
     </header>
   );
