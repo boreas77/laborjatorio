@@ -267,6 +267,12 @@
 * Estado: Importante
 * Etiquetas: Ergonomía, Productividad
 
+## Silla de oficina de malla
+
+* Estado: Importante
+* Etiquetas: Ergonomía, Productividad
+* Nota: Incluye dentro de la ficha el protector de suelo PVC transparente 120x90 cm. Enlaces de afiliado pendientes.
+
 ## Inphic PM6
 
 * Estado: Importante
@@ -308,4 +314,4 @@
 
 ## Total actual
 
-48 herramientas registradas.
+49 herramientas registradas.

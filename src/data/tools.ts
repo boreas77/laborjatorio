@@ -1269,6 +1269,90 @@ export const tools: Tool[] = [
       "Si te interesa montar un puesto de trabajo más cómodo para enseñar, grabar y crear contenido, en borjaprofe.com voy contando estas decisiones sin convertirlas en postureo de escritorio."
   },
   {
+    name: "Silla de oficina de malla",
+    slug: "silla-oficina-malla",
+    title: "Silla de oficina de malla: la que uso para dar clases (y el protector que salva mi suelo)",
+    metaDescription:
+      "Una silla de oficina de malla ligera y fresca, de 50-60 euros, y un protector de suelo para no rayar la madera: el dúo con el que trabajo en casa.",
+    keywords: [
+      "silla de oficina de malla",
+      "silla para teletrabajo",
+      "silla para dar clases online",
+      "silla giratoria barata",
+      "silla transpirable",
+      "protector de suelo para silla"
+    ],
+    tagline:
+      "La silla ligera y fresca que uso para dar clase, con el protector de suelo que evita disgustos en la madera.",
+    category: "Equipo físico",
+    subcategories: ["ergonomía", "productividad", "hardware", "silla", "teletrabajo"],
+    pricing: "pago-unico",
+    hasAffiliate: false,
+    myUseCase:
+      "La uso a diario para dar clases y trabajar desde casa. El protector de suelo va debajo para que las ruedas no acaben marcando la madera.",
+    bestFor: [
+      "Profes online que quieren una silla barata y digna para trabajar",
+      "Quien busca una silla fresca para pasar horas sentado en verano",
+      "Personas que prefieren una silla ligera y fácil de mover",
+      "Quien tiene suelo de madera y necesita protegerlo de las ruedas"
+    ],
+    notFor: [
+      "Quien busca una silla ergonómica premium",
+      "Quien necesita soporte lumbar avanzado o ajustes profesionales",
+      "Quien trabaja sobre alfombra y quiere que las ruedas deslicen bien",
+      "Quien espera una silla definitiva para muchísimas horas sin mirar gamas superiores"
+    ],
+    pros: [
+      "La malla transpirable resulta fresca en verano.",
+      "Es ligera, giratoria y regulable en altura.",
+      "Por 50-60 euros me parece una compra sensata.",
+      "El montaje no tiene mayor complicación.",
+      "El protector de suelo evita rayar parqué o tarima."
+    ],
+    cons: [
+      "No es una silla premium.",
+      "Hay sillas de gama alta bastante superiores si puedes invertir más.",
+      "Las ruedas pueden marcar la madera si no usas protector.",
+      "Sobre alfombra no desliza demasiado bien.",
+      "Los enlaces concretos de Amazon están pendientes."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-06",
+    intro:
+      "Cuando empecé a dar clases online en Nicaragua, usaba una silla de plástico cutre, no muy diferente de la de la portada del último disco de Bad Bunny. Para salir del paso valía, pero en cuanto volví a España y quise montarme un setup más permanente, di el salto a una silla de oficina de malla de las de verdad. No es la silla de mis sueños, pero es la que uso cada día y me sirve.",
+    whatItDoes:
+      "Es una silla de oficina giratoria, con ruedas, regulable en altura y con respaldo y asiento de malla transpirable. No es de gama alta, pero es cómoda y, sobre todo, fresca: no se te queda la espalda pegada en verano. El protector de suelo es una pieza aparte, de PVC transparente antideslizante, que pongo debajo para no rayar la madera.",
+    howIUseIt:
+      "La uso a diario para dar clases, escribir, preparar materiales y trabajar en el ordenador. Para mí era importante que fuera ligera, no el típico trasto pesado que cuesta mover. La mueves con un dedo, la giras, ajustas la altura y listo. Y debajo tengo el protector de suelo de 120x90 cm: es feo, sí, pero prefiero eso a dejar marcas en la madera de casa.",
+    teacherUseCases: [
+      "Dar clases online durante varias horas con una silla cómoda y fresca.",
+      "Teletrabajar sin gastar en una silla premium.",
+      "Moverte con facilidad en un puesto de trabajo pequeño.",
+      "Proteger parqué o tarima de las ruedas de la silla.",
+      "Montar un setup de profe online sensato sin convertirlo en showroom."
+    ],
+    honestVerdict:
+      "Esta silla de malla no te va a cambiar la vida, pero por 50-60 euros es una compra muy sensata para dar clases o teletrabajar: ligera, fresca y ajustable. Eso sí, no te olvides del protector de suelo si tienes madera, porque ahí sí te puede dar un disgusto. Es una solución económica que cumple, no la silla definitiva de la humanidad.",
+    importantNotice:
+      "Si tienes suelo de madera, cuidadito: las ruedas pueden dejar marcas. Y si tienes alfombra, probablemente no va a deslizar demasiado bien. El protector de suelo no es bonito, pero puede ahorrarte un disgusto bastante más feo.",
+    metrics: [
+      { label: "Precio silla", value: "50-60 €" },
+      { label: "Protector", value: "120x90 cm" },
+      { label: "Material clave", value: "Malla" }
+    ],
+    priceRows: [
+      { label: "Silla", value: "50-60 € aprox." },
+      { label: "Protector de suelo", value: "Extra barato, PVC transparente 120x90 cm" },
+      { label: "Dónde", value: "Amazon" },
+      { label: "Afiliación", value: "Pendiente de enlaces" }
+    ],
+    priceNote:
+      "Los enlaces concretos de Amazon están pendientes: uno para la silla y otro para el protector de suelo. Cuando los tenga, los añadiré. Mientras tanto, la referencia útil es el tipo de compra: silla de oficina de malla barata, ligera y regulable, más protector de suelo si tienes madera."
+  },
+  {
     name: "Inphic PM6",
     slug: "inphic-pm6",
     title: "Inphic PM6: el ratón inalámbrico barato con el que trabajo cada día",
