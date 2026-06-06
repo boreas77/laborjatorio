@@ -617,13 +617,13 @@ export const tools: Tool[] = [
       },
       {
         name: "Audacity",
-        url: "https://www.audacityteam.org/",
+        url: "/herramientas/audacity",
         description:
           "Juega en otra parte del proceso: editar audio. No sustituye a HappyScribe, pero puede ir antes si necesitas limpiar o preparar el archivo."
       },
       {
         name: "Spotify for Podcasters",
-        url: "https://podcasters.spotify.com/",
+        url: "/herramientas/spotify-for-podcasters",
         description:
           "Sirve para publicar podcast, no para transcribir. Lo menciono como herramienta relacionada dentro del flujo de audio."
       }
@@ -992,9 +992,9 @@ export const tools: Tool[] = [
       },
       {
         name: "Spotify for Podcasters",
-        url: "https://podcasters.spotify.com/",
+        url: "/herramientas/spotify-for-podcasters",
         description:
-          "Sirve para publicar el podcast, no para editarlo. Lo dejo como parte relacionada del flujo mientras no tenga ficha propia."
+          "Sirve para publicar el podcast, no para editarlo. Es la pieza del flujo que entra cuando el audio ya está listo."
       }
     ],
     faqs: [
@@ -1017,6 +1017,112 @@ export const tools: Tool[] = [
         question: "¿Audacity tiene IA?",
         answer:
           "En mi uso, no. Lo utilizo como editor manual. Si algún día necesito automatización o limpieza avanzada, quizá busque otra herramienta."
+      }
+    ]
+  },
+  {
+    name: "Spotify for Podcasters",
+    slug: "spotify-for-podcasters",
+    title: "Spotify for Podcasters: cómo subo y distribuyo mis podcasts (gratis)",
+    metaDescription:
+      "Uso Spotify for Podcasters, ahora integrado en Spotify for Creators, desde 2022 para subir mis episodios y gestionar mis podcasts gratis.",
+    keywords: [
+      "Spotify for Podcasters",
+      "subir un podcast",
+      "distribuir podcast en todas las plataformas",
+      "dónde publicar un podcast",
+      "Anchor",
+      "panel para gestionar podcast"
+    ],
+    tagline:
+      "El panel gratuito desde el que subo episodios, reviso estadísticas y mantengo vivos mis podcasts.",
+    category: "Audio y vídeo",
+    subcategories: ["audio", "contenido", "comunicación", "podcast", "distribución"],
+    pricing: "gratis",
+    officialUrl: "https://podcasters.spotify.com/",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso desde 2022 como panel de publicación y gestión de mis podcasts. Llego con el episodio ya grabado y editado, lo subo y desde ahí controlo publicación, RSS y estadísticas.",
+    bestFor: [
+      "Profes que quieren publicar un podcast sin pagar hosting al principio",
+      "Creadores educativos que necesitan un panel sencillo para episodios",
+      "Quien quiere publicar audio o vídeo en Spotify",
+      "Quien necesita generar y usar un RSS para llevar el podcast a otras plataformas"
+    ],
+    notFor: [
+      "Quien busca una herramienta para grabar o editar el episodio",
+      "Quien quiere una plataforma que haga por ti toda la configuración externa",
+      "Quien necesita una suite profesional avanzada de podcasting",
+      "Quien espera pasar mucho tiempo dentro del panel: aquí se entra, se sube y se sale"
+    ],
+    pros: [
+      "Es gratis.",
+      "Sirve como panel central para subir episodios y consultar estadísticas.",
+      "Permite alojar audio y también trabajar con vídeo en Spotify.",
+      "Genera RSS para llevar el podcast a otras plataformas.",
+      "Para mi uso, no me ha dado motivos para buscar otra cosa."
+    ],
+    cons: [
+      "La configuración inicial de otras plataformas puede llevar una o dos horas.",
+      "No graba ni edita por ti: llegas con el episodio ya hecho.",
+      "Para plataformas fuera de Spotify tienes que activar y enviar el RSS donde corresponda.",
+      "El cambio de nombres, de Anchor a Spotify for Podcasters y luego Spotify for Creators, puede confundir."
+    ],
+    alternatives: [],
+    rating: 5,
+    difficulty: "facil",
+    status: "imprescindible",
+    updatedAt: "2026-06-06",
+    intro:
+      "Si tienes un podcast o planes de crearlo, necesitas un sitio desde el que subir los episodios y gestionar la publicación. Spotify for Podcasters, lo que antes se llamaba Anchor y que ahora vive bajo Spotify for Creators, es justo eso. Lo uso desde 2022 y para mí es fantástico porque funciona como panel de control del podcast.",
+    whatItDoes:
+      "Spotify for Podcasters permite subir episodios de audio o vídeo, gestionar el programa, ver estadísticas y trabajar con el RSS del podcast. Si alojas el podcast ahí, se publica automáticamente en Spotify. Para llegar a otras plataformas, como Apple Podcasts o Amazon Music, tienes que activar el RSS y configurarlas la primera vez; después, los episodios nuevos se actualizan a través de ese feed.",
+    howIUseIt:
+      "No grabo dentro de Spotify for Podcasters. Mi flujo real es este: escribo el guion en Notion, grabo o edito el audio con Audacity, preparo vídeo cuando toca con DaVinci Resolve y subo el resultado a Spotify for Podcasters. Es la última pieza del proceso: no crea el alma del podcast, pero hace que el episodio salga al mundo. Así gestiono mis podcasts ¡Palabras! y Gramaticón.",
+    teacherUseCases: [
+      "Subir episodios de podcast sin pagar una plataforma de hosting al principio.",
+      "Mantener un panel sencillo con episodios y estadísticas.",
+      "Publicar audio o vídeo en Spotify.",
+      "Activar un RSS para enviar el podcast a otras plataformas.",
+      "Separar bien el trabajo creativo de la parte de publicación."
+    ],
+    honestVerdict:
+      "Spotify for Podcasters hace una cosa y la hace muy bien: ser el centro desde el que subes y gestionas tu podcast. Es gratis, es sencillo y, salvo la pereza de configurar el RSS y las plataformas externas al principio, no me ha dado problemas en años. Para cualquiera que tenga o quiera tener un podcast, lo recomiendo sin dudar.",
+    importantNotice:
+      "Matiz importante: Spotify publica tu podcast automáticamente en Spotify. Para llegar a otras plataformas tienes que activar el RSS y enviarlo donde corresponda la primera vez. No es difícil, pero conviene saberlo para no esperar magia automática.",
+    metrics: [
+      { label: "Uso desde", value: "2022" },
+      { label: "Precio", value: "Gratis" },
+      { label: "Antes", value: "Anchor" }
+    ],
+    priceRows: [
+      { label: "Uso del panel", value: "Gratis" },
+      { label: "Publicación en Spotify", value: "Incluida" },
+      { label: "RSS", value: "Disponible tras publicar el primer episodio" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "No conozco planes de pago para el uso básico que hago. La lógica es clara: Spotify quiere que haya creadores subiendo contenido a su ecosistema, y a mí el panel me resuelve la publicación sin coste.",
+    faqs: [
+      {
+        question: "¿Spotify for Podcasters sigue existiendo?",
+        answer:
+          "La herramienta se ha integrado bajo la marca Spotify for Creators. Antes fue Anchor y después Spotify for Podcasters. La URL de Podcasters redirige al entorno actual de creadores."
+      },
+      {
+        question: "¿Es gratis?",
+        answer:
+          "Sí, para el uso que hago: subir y gestionar podcasts desde el panel de Spotify."
+      },
+      {
+        question: "¿Distribuye automáticamente a todas las plataformas?",
+        answer:
+          "No exactamente. En Spotify se publica automáticamente si alojas ahí el podcast. Para otras plataformas tienes que activar el RSS y configurarlas la primera vez."
+      },
+      {
+        question: "¿Sirve para grabar o editar?",
+        answer:
+          "No es mi herramienta para eso. Yo llego con el episodio ya preparado y uso Spotify for Podcasters para publicarlo y gestionarlo."
       }
     ]
   },
