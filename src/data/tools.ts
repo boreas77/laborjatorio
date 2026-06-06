@@ -2151,6 +2151,113 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Petit BamBou",
+    slug: "petit-bambou",
+    title: "Petit BamBou: la app con la que medito (y me relajo paseando a mi perra)",
+    metaDescription:
+      "Uso Petit BamBou para meditar a diario y para relajarme respirando al ritmo de sonidos cuando paseo a mi perra. Te cuento cómo la uso, qué incluye y sus planes.",
+    keywords: [
+      "Petit BamBou",
+      "app de meditación",
+      "meditación diaria",
+      "meditar para desconectar",
+      "aplicación para relajarse",
+      "mindfulness"
+    ],
+    tagline:
+      "La app de meditación que uso para bajar revoluciones, respirar y llegar con la cabeza más colocada al final del día.",
+    category: "Bienestar",
+    subcategories: ["bienestar", "productividad", "meditación", "mindfulness", "respiración"],
+    pricing: "gratis-con-plan-pago",
+    officialUrl: "https://www.petitbambou.com/",
+    hasAffiliate: false,
+    myUseCase:
+      "La uso para la meditación diaria y, últimamente, para meditar caminando con sonidos de respiración mientras paseo a Duna.",
+    bestFor: [
+      "Profes que quieren una rutina sencilla para parar un poco",
+      "Quien necesita desconectar entre pantallas, clases y trabajo",
+      "Personas que prefieren una meditación guiada o una propuesta diaria",
+      "Quien quiere usar respiración y sonidos para relajarse caminando"
+    ],
+    notFor: [
+      "Quien busca una solución mágica al estrés",
+      "Quien no quiere crear ningún hábito, aunque sea pequeño",
+      "Quien necesita apoyo terapéutico profesional",
+      "Quien espera una herramienta directamente didáctica para sus alumnos"
+    ],
+    pros: [
+      "Me aporta calma y buen rollo.",
+      "La meditación diaria evita tener que decidir qué hacer.",
+      "La meditación libre con sonidos funciona muy bien para pasear.",
+      "Tiene catálogo amplio de programas y temas.",
+      "Tiene versión gratuita sin límite de tiempo para probar."
+    ],
+    cons: [
+      "No hace nada por sí sola si no la usas.",
+      "Parte del catálogo está detrás de suscripción.",
+      "No sustituye terapia ni ayuda profesional si la necesitas.",
+      "Los precios pueden variar entre web, app y promociones."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-06",
+    intro:
+      "En el Laborjatorio no todo son micrófonos y plugins. Parte de hacer bien este trabajo es cuidar la cabeza del que lo hace, y para eso uso Petit BamBou, una app de meditación que tengo metida en la rutina. No te va a editar un vídeo ni a montarte una web, pero te ayuda a llegar a la clase con la cabeza en su sitio.",
+    whatItDoes:
+      "Petit BamBou es una aplicación de meditación, respiración y relajación. Cada día propone una meditación diaria, y además tiene un catálogo amplio con programas sobre sueño, estrés, relaciones familiares, autohipnosis, respiración y otros temas. Puedes seguir la propuesta del día o entrar al catálogo cuando quieras trabajar algo concreto.",
+    howIUseIt:
+      "Mi uso real es sencillo: hago sobre todo la meditación diaria. De vez en cuando entro al catálogo, especialmente a programas de temas como relaciones familiares. Y últimamente me ha enganchado la meditación libre: salgo a pasear con Duna, pongo una sesión de unos minutos con sonidos rítmicos y voy respirando al compás. Meditar no tiene por qué ser sentarse quieto en una habitación; también puede ser caminar y respirar.",
+    teacherUseCases: [
+      "Crear una rutina breve para desconectar entre clases.",
+      "Bajar revoluciones después de muchas horas de pantalla.",
+      "Usar respiración guiada para recuperar calma.",
+      "Meditar caminando sin convertirlo en una ceremonia imposible.",
+      "Cuidar la cabeza como parte del sistema de trabajo."
+    ],
+    honestVerdict:
+      "Petit BamBou no es una herramienta de trabajo al uso, y por eso me parece importante que esté aquí: cuidar tu cabeza también forma parte de sostener un proyecto a largo plazo. A mí me da calma, la tengo integrada en el día a día y la combinación de meditar paseando con Duna me ha conquistado. No esperes magia: espera una herramienta sencilla que, si la usas, te sienta bien.",
+    importantNotice:
+      "No es una herramienta terapéutica ni una solución mágica. Si estás mal de verdad, busca ayuda profesional. Petit BamBou me sirve como apoyo cotidiano para parar, respirar y volver con algo más de calma.",
+    metrics: [
+      { label: "Uso", value: "Diario" },
+      { label: "App Store España", value: "59,90 €/año" },
+      { label: "Gratis", value: "Sin límite" }
+    ],
+    priceRows: [
+      { label: "Versión gratuita", value: "Contenido y herramientas limitadas sin límite de tiempo" },
+      { label: "Plan anual", value: "59,90 €/año en App Store España" },
+      { label: "Mi referencia", value: "Alrededor de 50 €/año según mi experiencia/oferta" },
+      { label: "Acceso de por vida", value: "Existe en la web; precio variable según mercado" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Yo tengo como referencia unos 50 euros al año, probablemente por oferta o condiciones de entrada. En la App Store española figura una suscripción anual de 59,90 euros, y la web también ofrece versión gratuita y opciones de pago. Confirma siempre el precio actual antes de suscribirte.",
+    faqs: [
+      {
+        question: "¿Petit BamBou tiene versión gratis?",
+        answer:
+          "Sí. La web oficial indica que ofrece una versión gratuita sin límite de tiempo, con una selección de contenidos y herramientas."
+      },
+      {
+        question: "¿La uso todos los días?",
+        answer:
+          "Intento usar sobre todo la meditación diaria. No hago exploración profunda del catálogo cada día; mi hábito principal es entrar, meditar y seguir."
+      },
+      {
+        question: "¿Sirve para meditar caminando?",
+        answer:
+          "Para mí sí. La meditación libre con sonidos de respiración me funciona muy bien mientras paseo a Duna."
+      },
+      {
+        question: "¿Recomiendo pagar el plan anual o el vitalicio?",
+        answer:
+          "Si todavía estás probando el hábito, iría con el anual o con la versión gratuita. El acceso de por vida solo tiene sentido si sabes que vas a usarla durante años."
+      }
+    ]
+  },
+  {
     name: "Notion",
     slug: "notion",
     tagline: "Un espacio flexible para organizar recursos, proyectos, ideas y bases de conocimiento.",
