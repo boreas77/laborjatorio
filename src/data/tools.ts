@@ -1498,6 +1498,130 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Filtro antipop InnoGear",
+    slug: "filtro-antipop-innogear",
+    title: "Filtro antipop InnoGear: cómo quité los \"pop\" de mis grabaciones por 20 euros",
+    metaDescription:
+      "Un filtro antipop de unos 20 euros me quitó los molestos pop de mis grabaciones. Te cuento qué hace, mi experiencia con el InnoGear y un aviso sobre su agarre.",
+    keywords: [
+      "filtro antipop",
+      "InnoGear filtro pop",
+      "reducir sonidos pop",
+      "mejorar audio podcast",
+      "filtro pop para micrófono",
+      "accesorio para grabar voz"
+    ],
+    tagline:
+      "Un accesorio barato para reducir los golpes de aire y mejorar grabaciones de voz sin complicarte.",
+    category: "Equipo físico",
+    subcategories: ["audio", "comunicación", "contenido", "podcast", "grabación"],
+    pricing: "pago-unico",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso desde 2022 delante del micrófono para reducir los sonidos pop en podcasts, vídeos y grabaciones de voz.",
+    bestFor: [
+      "Profes que graban podcast o vídeo con voz",
+      "Creadores que quieren mejorar el audio por poco dinero",
+      "Quien nota golpes de aire al pronunciar p o b cerca del micrófono",
+      "Personas que ya tienen micrófono y quieren cuidar un poco más la grabación"
+    ],
+    notFor: [
+      "Quien solo hace videollamadas ocasionales",
+      "Quien no graba voz ni contenido de audio",
+      "Quien busca una mejora de audio profesional completa",
+      "Quien necesita resolver ruido de habitación, eco o mala acústica"
+    ],
+    pros: [
+      "Mejora mucho el audio por unos 20 euros.",
+      "Reduce los sonidos pop de forma muy sencilla.",
+      "No requiere aprendizaje: lo colocas delante del micro y grabas.",
+      "Me acompaña desde 2022 y sigue cumpliendo.",
+      "Es una compra pequeña con bastante impacto si grabas voz."
+    ],
+    cons: [
+      "El agarre puede balancearse si no lo ajustas bien.",
+      "La pinza puede marcar o dañar la mesa si aprietas demasiado.",
+      "No sustituye una buena técnica de micro ni una habitación decente.",
+      "El enlace de compra concreto está pendiente."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "importante",
+    updatedAt: "2026-06-06",
+    intro:
+      "Si nunca has grabado un podcast, la primera vez que te escuches hay varias cosas que te van a sorprender. Una: lo desagradable que es oír tu propia voz al principio. Y dos: la cantidad de sonidos pop que vas a escuchar. Para lo segundo hay solución barata, y se llama filtro antipop.",
+    whatItDoes:
+      "El InnoGear que uso es un filtro antipop de doble capa para micrófono de estudio. Es esa pantalla, la Oreo gigante, que se coloca entre tu boca y el micrófono para frenar los golpes de aire antes de que lleguen a la cápsula. Se nota especialmente con explosivas como la p o la b.",
+    howIUseIt:
+      "Yo no descubrí el problema solo, porque mi oído es bastante limitado para estas cosas. Me lo señaló una compañía con la que colaboraba: me dijeron que sonaba con mucho pop y me recomendaron comprar un filtro. Lo compré en 2022 por unos 20 euros, lo coloqué delante del micro y desde entonces sigue ahí, haciendo su trabajo sin pedir protagonismo.",
+    teacherUseCases: [
+      "Grabar podcasts con una voz más limpia.",
+      "Reducir golpes de aire en vídeos educativos.",
+      "Mejorar audios para clases, cursos o materiales grabados.",
+      "Montar un pequeño puesto de grabación sin gastar mucho.",
+      "Evitar que una grabación casera suene más molesta de lo necesario."
+    ],
+    honestVerdict:
+      "El filtro antipop es de esas mejoras pequeñas y baratas que dan un resultado desproporcionado para lo que cuestan. El mío, un InnoGear de unos 20 euros, lleva conmigo desde 2022 y cumple. Si grabas voz, te lo recomiendo sin dudar, con un único aviso: cuida el agarre, que la pinza puede balancearse y, si aprietas demasiado, hacerle pupa a tu escritorio.",
+    importantNotice:
+      "Ojo con dónde y con cuánta fuerza lo enganchas. A mí el agarre me ha dado algo de guerra y terminé haciendo una pequeña avería a mi standing desk por apretar demasiado la pinza.",
+    metrics: [
+      { label: "Uso desde", value: "2022" },
+      { label: "Precio orientativo", value: "~20 €" },
+      { label: "Capas", value: "Doble" }
+    ],
+    priceRows: [
+      { label: "Tipo de compra", value: "Pago único" },
+      { label: "Precio orientativo", value: "Alrededor de 20 €" },
+      { label: "Producto", value: "InnoGear filtro antipop de doble capa" },
+      { label: "Afiliación", value: "Pendiente de enlace" }
+    ],
+    priceNote:
+      "El enlace de compra concreto está pendiente. Cuando esté, lo añadiré aquí. La referencia útil por ahora es la categoría: filtro antipop de doble capa para micrófono de estudio.",
+    alternativeDetails: [
+      {
+        name: "Audacity",
+        url: "/herramientas/audacity",
+        description:
+          "Después de grabar, Audacity es donde edito audio y termino de dejar los episodios en condiciones."
+      },
+      {
+        name: "Standing Desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite",
+        description:
+          "No es alternativa de audio, pero entra aquí por el aviso del agarre: cuidado con apretar accesorios al escritorio sin mirar."
+      },
+      {
+        name: "Audio-Technica ATR2100x-USB",
+        description:
+          "Es el micrófono que figura en el inventario del Laborjatorio, pero todavía no tiene ficha publicada."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Qué hace un filtro antipop?",
+        answer:
+          "Reduce los golpes de aire que llegan al micrófono cuando pronuncias sonidos explosivos como p o b. Eso evita esos pop desagradables en la grabación."
+      },
+      {
+        question: "¿Merece la pena si grabo podcast o vídeos?",
+        answer:
+          "Sí. Si grabas voz con cierta frecuencia, por unos 20 euros es una mejora muy razonable."
+      },
+      {
+        question: "¿El InnoGear es el mejor filtro antipop?",
+        answer:
+          "No puedo decir eso porque es el único que he probado. Lo que sí puedo decir es que el mío cumple y me quitó el problema que tenía."
+      },
+      {
+        question: "¿Qué problema tiene?",
+        answer:
+          "El agarre. Puede balancearse si no lo ajustas bien y, si aprietas demasiado la pinza, puedes marcar o dañar el escritorio."
+      }
+    ]
+  },
+  {
     name: "Logitech C920",
     slug: "logitech-c920",
     title: "Logitech C920: la webcam que llevo más de 10 años usando (y sigue viva)",

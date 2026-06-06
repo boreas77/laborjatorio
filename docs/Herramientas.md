@@ -278,6 +278,12 @@
 * Etiquetas: Ergonomía, Bienestar, Productividad
 * Nota: Jsdoin portátil plegable de escritorio, azul. Enlace de afiliado pendiente.
 
+## Filtro antipop InnoGear
+
+* Estado: Importante
+* Etiquetas: Audio, Comunicación, Contenido
+* Nota: Filtro antipop de doble capa para micrófono de estudio. Enlace de afiliado pendiente.
+
 ## Sennheiser Momentum 4 Wireless
 
 * Estado: Importante
@@ -302,4 +308,4 @@
 
 ## Total actual
 
-47 herramientas registradas.
+48 herramientas registradas.
