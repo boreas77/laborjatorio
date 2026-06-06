@@ -68,8 +68,7 @@ export default function HomePage() {
             aunque no te la recomendaría.
           </p>
           <p>
-            Te lo cuento todo aquí abajo. Aunque si tienes prisa, puedes empezar a buscar
-            tu herramienta.
+            Pero hablemos de lo importante. <strong>¿Qué necesitas?</strong>
           </p>
         </div>
       </section>
