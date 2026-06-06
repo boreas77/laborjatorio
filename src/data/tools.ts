@@ -380,6 +380,126 @@ export const tools: Tool[] = [
       "Si quieres que te cuente estas movidas de herramientas con más calma, te las cuento en borjaprofe.com."
   },
   {
+    name: "iLovePDF",
+    slug: "ilovepdf",
+    title: "iLovePDF: la herramienta gratis con la que arreglo PDFs en dos minutos",
+    metaDescription:
+      "iLovePDF es mi herramienta de cabecera para arreglar PDFs rápido: unir, extraer páginas, comprimir o firmar. Te cuento para qué la uso y cuándo tirar de ella.",
+    keywords: [
+      "iLovePDF",
+      "editar PDF gratis",
+      "unir PDF",
+      "comprimir PDF",
+      "extraer páginas de un PDF",
+      "firmar PDF online"
+    ],
+    tagline:
+      "La herramienta online que uso para arreglos rápidos de PDF sin instalar nada ni abrir un programa pesado.",
+    category: "Productividad",
+    subcategories: ["documentación", "pdf", "productividad", "web"],
+    pricing: "gratis-con-plan-pago",
+    officialUrl: "https://www.ilovepdf.com",
+    hasAffiliate: false,
+    myUseCase:
+      "La uso un par de veces al mes para arreglos puntuales de PDF: unir documentos, quitar páginas, comprimir archivos o firmar algo rápido.",
+    bestFor: [
+      "Profes que necesitan arreglar PDFs rápido",
+      "Quien quiere unir, dividir o comprimir un PDF sin instalar nada",
+      "Personas que hacen apaños puntuales de documentación",
+      "Quien no necesita un editor profesional de PDF"
+    ],
+    notFor: [
+      "Documentos muy sensibles que prefieres no subir a un servicio online",
+      "Edición avanzada y constante de PDFs",
+      "Quien necesita trabajar sin conexión",
+      "Quien busca diseño o maquetación, no arreglo técnico de documentos"
+    ],
+    pros: [
+      "Es comodísima para arreglos rápidos.",
+      "Funciona desde el navegador, sin instalar nada.",
+      "Permite unir, dividir, comprimir y firmar PDFs.",
+      "Para mi uso puntual, el plan gratis me basta.",
+      "Resuelve en minutos tareas que suelen dar mucha pereza."
+    ],
+    cons: [
+      "La versión gratuita tiene límites de procesamiento.",
+      "Tiene plan Premium, así que no todo es ilimitado gratis.",
+      "Al ser online, subes el PDF a sus servidores.",
+      "No sustituye un editor profesional si trabajas PDFs a fondo."
+    ],
+    alternatives: ["Canva", "Adobe Acrobat"],
+    rating: 4,
+    difficulty: "facil",
+    status: "opcional",
+    updatedAt: "2026-06-06",
+    intro:
+      "iLovePDF es una maravilla porque tiene una función muy específica: modificar PDFs rápido. No la uso todos los días, pero el día que la necesito me salva en dos minutos. Es de esas herramientas que conviene tener guardadas para cuando aparece el marrón.",
+    whatItDoes:
+      "iLovePDF es una herramienta online para modificar archivos PDF. Hace cosas muy concretas y muy útiles: extraer páginas, unir varios documentos en uno, comprimir el archivo para que pese menos o añadir firmas. Todo desde el navegador, sin instalar nada.",
+    howIUseIt:
+      "La uso para arreglos puntuales que aparecen sin avisar. Un caso reciente: me tocó corregir una presentación de un curso, un PDF que tenía páginas de más, y con iLovePDF lo hice rapidísimo. No la abro a diario; la uso quizá un par de veces al mes, cuando surge algo concreto con un PDF.",
+    teacherUseCases: [
+      "Unir varios PDF en un solo documento.",
+      "Extraer o eliminar páginas de una presentación.",
+      "Comprimir un PDF para enviarlo por correo.",
+      "Firmar documentos online de forma rápida.",
+      "Resolver un apaño de documentación sin instalar software."
+    ],
+    honestVerdict:
+      "iLovePDF no es una herramienta protagonista, y no pasa nada: es una secundaria que cumple un papel muy concreto y lo borda. Rápida, sencilla y sin complicaciones. De esas que no recuerdas que tienes hasta que las necesitas, y entonces las bendices.",
+    importantNotice:
+      "Para documentos muy delicados, recuerda que es un servicio online: subes el archivo para procesarlo. Si el PDF contiene información sensible, valora si prefieres una solución local.",
+    metrics: [
+      { label: "Uso", value: "1-2 veces/mes" },
+      { label: "Instalación", value: "No" },
+      { label: "Plan gratis", value: "Sí" }
+    ],
+    priceRows: [
+      { label: "Basic", value: "Gratis, con límites" },
+      { label: "Premium", value: "Desde 5 US$/mes en plan anual" },
+      { label: "Business", value: "Precio personalizado" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Para mi uso puntual, el plan gratuito me basta. iLovePDF sí tiene planes de pago: Premium desbloquea más herramientas, procesamiento ilimitado, uso en web/móvil/escritorio, firmas digitales y experiencia sin anuncios. Antes de pagar, confirma el precio actual en su página oficial.",
+    alternativeDetails: [
+      {
+        name: "Canva",
+        url: "/herramientas/canva",
+        description:
+          "Puede resolver parte de estos apaños si ya estás trabajando el diseño de un documento, pero para tocar PDFs rápido iLovePDF va más directo."
+      },
+      {
+        name: "Adobe Acrobat",
+        url: "https://www.adobe.com/acrobat.html",
+        description:
+          "Es la opción potente para edición avanzada y trabajo constante con PDF. Para mis apaños puntuales, me sobra."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Necesito instalar algo?",
+        answer:
+          "No. Funciona desde el navegador: entras, eliges la función y subes el archivo."
+      },
+      {
+        question: "¿Es gratis de verdad?",
+        answer:
+          "Tiene plan gratuito, pero no todo es ilimitado. Para unir, extraer, comprimir o firmar de forma puntual, a mí me basta."
+      },
+      {
+        question: "¿La uso para documentos sensibles?",
+        answer:
+          "Con cuidado. Al ser online, subes el archivo a sus servidores. Para documentos delicados, mejor valorar una alternativa local."
+      },
+      {
+        question: "¿iLovePDF, Canva o Adobe Acrobat?",
+        answer:
+          "Para arreglos rápidos de PDF, iLovePDF. Si ya estás diseñando, Canva puede servir. Si necesitas edición avanzada y constante, Adobe Acrobat juega en otra liga."
+      }
+    ]
+  },
+  {
     name: "Kommodo",
     slug: "kommodo",
     title: "Kommodo: cómo grabo y alojo vídeos para mis estudiantes",

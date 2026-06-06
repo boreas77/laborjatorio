@@ -111,7 +111,7 @@
 
 ## iLovePDF
 
-* Estado: Importante
+* Estado: Opcional
 * Etiquetas: Productividad, Documentación
 
 ## OBS
