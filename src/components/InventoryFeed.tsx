@@ -33,10 +33,14 @@ export function InventoryFeed({
   const [query, setQuery] = useState(initialQuery);
   const sortedTools = useMemo(
     () =>
-      [...tools].sort(
-        (first, second) =>
-          new Date(second.updatedAt).getTime() - new Date(first.updatedAt).getTime()
-      ),
+      tools
+        .map((tool, index) => ({ index, tool }))
+        .sort((first, second) => {
+          const dateDifference = getToolSortTime(second.tool) - getToolSortTime(first.tool);
+
+          return dateDifference || second.index - first.index;
+        })
+        .map(({ tool }) => tool),
     [tools]
   );
 
@@ -86,7 +90,6 @@ export function InventoryFeed({
               <InventoryIcon name={iconByCategory[tool.category] ?? "tool"} />
             </div>
             <div className="inventory-entry__content">
-              <time dateTime={tool.updatedAt}>{formatDate(tool.updatedAt)}</time>
               <h2>
                 <Link href={`/herramientas/${tool.slug}`}>{tool.name}</Link>
               </h2>
@@ -221,12 +224,8 @@ function InventoryIcon({ name }: { name: InventoryIconName }) {
   }
 }
 
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("es-ES", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  }).format(new Date(`${value}T00:00:00`));
+function getToolSortTime(tool: Tool) {
+  return new Date(tool.publishedAt ?? `${tool.updatedAt}T00:00:00`).getTime();
 }
 
 function normalizeSearchText(value: string) {

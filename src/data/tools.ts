@@ -56,6 +56,7 @@ export type Tool = {
   difficulty: Difficulty;
   status: ToolStatus;
   updatedAt: string;
+  publishedAt?: string;
   intro: string;
   whatItDoes: string;
   howIUseIt: string;
@@ -946,6 +947,7 @@ export const tools: Tool[] = [
     difficulty: "media",
     status: "importante",
     updatedAt: "2026-06-06",
+    publishedAt: "2026-06-06T23:59:00+02:00",
     intro:
       "Toda web necesita un sitio donde vivir, y ese sitio es el hosting. El mío es Webempresa, un hosting español, y ahí es donde tengo alojada mi web y también mis dominios. La verdad es que solo tengo cosas buenas que decir.",
     whatItDoes:

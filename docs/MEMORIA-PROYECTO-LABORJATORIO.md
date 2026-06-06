@@ -94,7 +94,9 @@ Archivos estrategicos actuales:
 - Esta solucion temporal debe sustituirse mas adelante por paginas editoriales largas: articulo, filosofia, experiencia de Borja, reflexiones y enlaces naturales a fichas de herramientas.
 - Se creo `/inventario` como pagina principal de todas las herramientas.
 - `/inventario` sustituye conceptualmente a la antigua pagina `Herramientas`. Debe sentirse como inventario vivo / cuaderno de taller, no como directorio SEO.
-- El Inventario muestra herramientas en orden cronologico inverso usando `updatedAt`: lo mas reciente arriba.
+- El Inventario muestra herramientas en orden cronologico inverso usando `publishedAt` cuando exista; si no existe, usa `updatedAt`. Para nuevas fichas, anadir `publishedAt` con fecha y hora de publicacion para que la ultima publicada quede arriba aunque comparta dia con otras.
+- Si varias fichas empatan tambien en fecha/hora interna, gana la que aparece mas abajo en `src/data/tools.ts`.
+- Las fechas de actualizacion no se muestran en las tarjetas del Inventario ni en las fichas: son metadato interno, no informacion util para el profe que entra.
 - El componente compartido `src/components/InventoryFeed.tsx` renderiza el feed de fichas para Inventario y para paginas temporales de necesidad.
 - `InventoryFeed` acepta textos adaptables para el buscador y el contador (`searchLabel`, `countLabel`) para poder decir "Buscar dentro de esta categoria" y "en esta categoria" cuando se usa en paginas de necesidad.
 - `/herramientas` redirige a `/inventario`, conservando el parametro `q` si existe.

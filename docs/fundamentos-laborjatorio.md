@@ -183,6 +183,7 @@ Campos minimos recomendados:
 - difficulty.
 - status.
 - updatedAt.
+- publishedAt, opcional pero recomendado en nuevas fichas para ordenar el inventario por publicacion real.
 
 Campos editoriales opcionales:
 
