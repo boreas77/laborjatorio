@@ -649,6 +649,27 @@ main {
   margin-top: 24px;
 }
 
+.about-page__drexler-quote {
+  border: 0;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  font-style: italic;
+  font-weight: 650;
+  line-height: 1.35;
+  margin: 36px auto;
+  max-width: 720px;
+  padding: 0;
+  text-align: center;
+}
+
+.about-page__drexler-quote p {
+  margin: 0;
+}
+
+.about-page__drexler-quote p + p {
+  margin-top: 6px;
+}
+
 .about-page__photo {
   background:
     linear-gradient(135deg, rgb(184 92 92 / 14%), rgb(42 127 118 / 12%)),

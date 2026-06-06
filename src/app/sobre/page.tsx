@@ -94,6 +94,11 @@ export default function AboutPage() {
           Espero que te funcionen. Pero, de verdad, recuerda que lo importante no es la
           herramienta. Es la mano que la empuña. (Qué cursi me ha quedado.)
         </p>
+        <p>O como diría Jorge Drexler:</p>
+        <blockquote className="about-page__drexler-quote">
+          <p>La máquina la hace el hombre...</p>
+          <p>Lo importante es qué hacemos con ella.</p>
+        </blockquote>
         <p>
           Si quieres que estemos en contacto y ver en qué otras mandangas ando metido, te
           recomiendo darte una vuelta por aquí:
