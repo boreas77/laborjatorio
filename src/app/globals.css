@@ -280,7 +280,7 @@ main {
 }
 
 .home-categories__inner h2 {
-  color: var(--rose);
+  color: var(--ink);
   font-size: clamp(1.9rem, 4.5vw, 3.4rem);
   letter-spacing: 0;
   line-height: 1.05;

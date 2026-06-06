@@ -14,6 +14,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="home-lede" aria-label="Introducción al Laborjatorio">
+        <div className="home-lede__inner">
+          <p>
+            Aquí documento las herramientas que uso para <strong>enseñar español, crear
+            contenido y gestionar mi negocio online</strong>. No las mejores del mercado
+            según ningún ranking. Las mías. <strong>Las que me rodean mientras escribo
+            esto</strong>.
+          </p>
+          <p>
+            Algunas son imprescindibles. Otras son un experimento. Alguna la sigo usando
+            aunque no te la recomendaría.
+          </p>
+          <p>
+            Pero hablemos de lo importante. <strong>¿Qué necesitas?</strong>
+          </p>
+        </div>
+      </section>
+
       <section className="home-categories" aria-labelledby="home-categories-title">
         <div className="home-categories__inner">
           <h2 id="home-categories-title">¿Qué estás buscando?</h2>
