@@ -288,6 +288,58 @@ main {
   text-align: center;
 }
 
+.home-need-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-need-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  display: grid;
+  gap: 12px;
+  min-height: 240px;
+  padding: clamp(20px, 2.5vw, 28px);
+}
+
+.home-need-card:hover {
+  border-color: #c8b99f;
+  transform: translateY(-2px);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.home-need-card__icon {
+  color: var(--accent-dark);
+  height: 34px;
+  margin-bottom: 8px;
+  width: 34px;
+}
+
+.home-need-card h3 {
+  font-size: clamp(1.18rem, 1.8vw, 1.45rem);
+  letter-spacing: 0;
+  line-height: 1.18;
+  margin: 0;
+}
+
+.home-need-card p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.home-need-card span {
+  align-self: end;
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 850;
+  padding-top: 6px;
+}
+
 .home-borja-cta__inner h2 {
   color: var(--rose);
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -1467,8 +1519,13 @@ main {
   .filters,
   .tool-hero,
   .content-grid,
+  .home-need-grid,
   .home-borja-cta__inner {
     grid-template-columns: 1fr;
+  }
+
+  .home-need-card {
+    min-height: 0;
   }
 
   .inventory-entry {
