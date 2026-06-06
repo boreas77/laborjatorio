@@ -273,6 +273,124 @@ main {
   border-color: var(--accent);
 }
 
+.home-needs {
+  background: #ebe7df;
+  padding: clamp(26px, 5vw, 58px) clamp(18px, 5vw, 72px) clamp(50px, 7vw, 88px);
+}
+
+.home-needs__inner {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.home-needs__header {
+  margin: 0 auto clamp(22px, 4vw, 34px);
+  max-width: 760px;
+  text-align: center;
+}
+
+.home-needs__header h2,
+.home-borja-cta__content h2 {
+  color: var(--rose);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.home-needs__grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-need-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  display: grid;
+  gap: 12px;
+  min-height: 240px;
+  padding: clamp(20px, 2.5vw, 28px);
+}
+
+.home-need-card:hover {
+  border-color: #c8b99f;
+  transform: translateY(-2px);
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.home-need-card__icon {
+  color: var(--accent-dark);
+  height: 34px;
+  margin-bottom: 8px;
+  width: 34px;
+}
+
+.home-need-card h3 {
+  font-size: clamp(1.18rem, 1.8vw, 1.45rem);
+  letter-spacing: 0;
+  line-height: 1.18;
+  margin: 0;
+}
+
+.home-need-card p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.home-need-card span {
+  align-self: end;
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 850;
+  padding-top: 6px;
+}
+
+.home-borja-cta {
+  background: #f8f5ef;
+  padding: clamp(48px, 8vw, 94px) clamp(18px, 5vw, 72px);
+}
+
+.home-borja-cta__inner {
+  align-items: center;
+  display: grid;
+  gap: clamp(24px, 5vw, 54px);
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1fr);
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+.home-borja-cta__photo {
+  background:
+    linear-gradient(135deg, rgb(184 92 92 / 16%), rgb(42 127 118 / 14%)),
+    #f2ecdf;
+  border: 1px dashed #c8b99f;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  min-height: clamp(280px, 36vw, 430px);
+}
+
+.home-borja-cta__content {
+  display: grid;
+  gap: 18px;
+}
+
+.home-borja-cta__content p {
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 620px;
+}
+
+.home-borja-cta__content .button {
+  justify-self: start;
+}
+
 .home-intent {
   background: #ebe7df;
   padding: 0 clamp(18px, 5vw, 72px) clamp(46px, 7vw, 82px);
@@ -1124,8 +1242,18 @@ main {
   .split,
   .filters,
   .tool-hero,
-  .content-grid {
+  .content-grid,
+  .home-needs__grid,
+  .home-borja-cta__inner {
     grid-template-columns: 1fr;
+  }
+
+  .home-needs__header {
+    text-align: left;
+  }
+
+  .home-need-card {
+    min-height: 0;
   }
 
   .hero {

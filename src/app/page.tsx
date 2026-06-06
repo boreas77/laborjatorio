@@ -9,39 +9,64 @@ const searchSuggestions = [
   "Vender cursos"
 ];
 
-const whatYouWillFind = [
-  "— Las herramientas con las que creo cursos, materiales y contenido sin montar una feria de pestañas abiertas.",
-  "— Lo que uso para grabar, editar vídeo, preparar podcasts y organizar proyectos sin que el software me mire por encima del hombro.",
-  "— Cosas poco glamurosas pero importantes: desde el equipo físico hasta cuándo compensa pagar y cuándo no.",
-  "— Y si dejo de usar algo, intento contar qué lo ha sustituido y por qué. Esto no es una lista congelada."
-];
-
-const faqs = [
+const needs = [
   {
-    question: "¿Qué tipo de herramientas recomiendas?",
-    answer: [
-      "En realidad no recomiendo herramientas en abstracto. Comparto las que uso.",
-      "Eso puede incluir inteligencia artificial, edición de vídeo y audio, diseño, automatización, email marketing, creación de materiales didácticos o hardware: pantallas, micrófonos, sillas, lo que sea.",
-      "Si forma parte de mi trabajo y considero que merece la pena, puede acabar apareciendo aquí. No hay una lista cerrada de categorías. Hay un criterio: si lo uso y me sirve, tiene un sitio."
-    ]
+    title: "Crear contenido",
+    description: "Ideas, guiones, vídeos, podcasts y publicaciones que salen del cajón.",
+    icon: "pen",
+    href: "/herramientas?q=crear%20contenido"
   },
   {
-    question: "¿Cómo encuentro una herramienta concreta?",
-    answer: [
-      "Puedes buscar por nombre directamente en el buscador, o navegar por categorías si todavía no tienes una en mente.",
-      "Las categorías también sirven para descubrir herramientas que quizá no conocías pero que hacen algo parecido a lo que estás buscando. La idea es que encontrar lo que necesitas no requiera más de dos clics."
-    ]
+    title: "Crear materiales",
+    description: "Fichas, PDFs, presentaciones y recursos que pueden entrar en clase.",
+    icon: "layers",
+    href: "/herramientas?q=crear%20materiales"
   },
   {
-    question: "¿Seguro que estas herramientas me van a funcionar?",
-    answer: [
-      "No.",
-      "Cada persona trabaja de una forma diferente. Lo que me funciona a mí puede no funcionarte a ti, y lo que yo descarté igual es exactamente lo que tú necesitas.",
-      "Muchas de las herramientas que uso hoy las descubrí después de probar otras que no me convencieron. Ese proceso de ensayo y error es inevitable. Lo que el Laborjatorio puede hacer es ahorrarte parte del camino: saber qué usa alguien que trabaja de una forma parecida a la tuya, por qué lo usa y qué limitaciones tiene.",
-      "Certezas, ninguna. Referencias basadas en experiencia real, esas sí."
-    ]
+    title: "Dar clases online",
+    description: "Herramientas para explicar, grabar, acompañar y estar presente a distancia.",
+    icon: "screen",
+    href: "/herramientas?q=clases%20online"
+  },
+  {
+    title: "Conseguir estudiantes",
+    description: "Visibilidad, confianza, comunicación y sistemas para que te encuentren.",
+    icon: "users",
+    href: "/herramientas?q=conseguir%20estudiantes"
+  },
+  {
+    title: "Vender y cobrar",
+    description: "Cursos, pagos, correos, productos y ventas sin montar un circo técnico.",
+    icon: "card",
+    href: "/herramientas?q=vender%20cobrar"
+  },
+  {
+    title: "Ahorrar tiempo",
+    description: "Automatizar, ordenar y quitarte tareas repetitivas de encima.",
+    icon: "clock",
+    href: "/herramientas?q=ahorrar%20tiempo"
+  },
+  {
+    title: "Construir mi web",
+    description: "Páginas, presencia online, analítica y estructura digital.",
+    icon: "browser",
+    href: "/herramientas?q=web"
+  },
+  {
+    title: "Mi escritorio",
+    description: "Equipo físico, cámara, sonido, pantalla y entorno de trabajo.",
+    icon: "desk",
+    href: "/herramientas?q=escritorio"
+  },
+  {
+    title: "Cuidarme",
+    description: "Ergonomía, foco, pausas y cosas que ayudan a seguir trabajando.",
+    icon: "heart",
+    href: "/herramientas?q=cuidarme"
   }
 ];
+
+type NeedIconName = (typeof needs)[number]["icon"];
 
 export default function HomePage() {
   return (
@@ -95,45 +120,128 @@ export default function HomePage() {
         </form>
       </section>
 
-      <section className="home-intent" aria-labelledby="home-intent-title">
-        <div className="home-intent__inner">
-          <p className="eyebrow">Lo que vas a encontrar</p>
-          <h2 id="home-intent-title">
-            No vengo a decirte cuáles son las mejores herramientas del universo.
-          </h2>
-          <p>
-            Vengo a enseñarte las que uso yo, para qué las uso y qué hostias me han
-            evitado —o provocado— por el camino.
-          </p>
-          <p>Eso incluye:</p>
-          <ul>
-            {whatYouWillFind.map((item) => (
-              <li key={item}>{item}</li>
+      <section className="home-needs" aria-labelledby="home-needs-title">
+        <div className="home-needs__inner">
+          <div className="home-needs__header">
+            <p className="eyebrow">Mapa de necesidades</p>
+            <h2 id="home-needs-title">¿Qué necesitas resolver?</h2>
+          </div>
+          <div className="home-needs__grid">
+            {needs.map((need) => (
+              <Link className="home-need-card" href={need.href} key={need.title}>
+                <NeedIcon name={need.icon} />
+                <h3>{need.title}</h3>
+                <p>{need.description}</p>
+                <span>Entrar →</span>
+              </Link>
             ))}
-          </ul>
-          <Link className="button button--primary" href="/herramientas">
-            Ver herramientas →
-          </Link>
+          </div>
         </div>
       </section>
 
-      <section className="home-faq" aria-labelledby="home-faq-title">
-        <div className="home-faq__inner">
-          <div className="home-faq__header">
-            <h2 id="home-faq-title">Antes de que esto se llene de tornillos</h2>
-          </div>
-          <div className="home-faq__list">
-            {faqs.map((faq) => (
-              <article className="home-faq__item" key={faq.question}>
-                <h3>{faq.question}</h3>
-                {faq.answer.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </article>
-            ))}
+      <section className="home-borja-cta" aria-labelledby="home-borja-cta-title">
+        <div className="home-borja-cta__inner">
+          <div className="home-borja-cta__photo" aria-label="Foto de Borja pendiente" />
+          <div className="home-borja-cta__content">
+            <p className="eyebrow">Y ahora la obra</p>
+            <h2 id="home-borja-cta-title">Estas son las herramientas que utilizo para mi trabajo.</h2>
+            <p>
+              Si quieres ver lo que hago con ellas en mi día a día, visita borjaprofe.com.
+            </p>
+            <a className="button button--primary" href="https://borjaprofe.com">
+              Visitar borjaprofe.com
+            </a>
           </div>
         </div>
       </section>
     </>
   );
+}
+
+function NeedIcon({ name }: { name: NeedIconName }) {
+  const commonProps = {
+    "aria-hidden": true,
+    className: "home-need-card__icon",
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    strokeWidth: 1.9,
+    viewBox: "0 0 24 24"
+  };
+
+  switch (name) {
+    case "pen":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 20h9" />
+          <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+        </svg>
+      );
+    case "layers":
+      return (
+        <svg {...commonProps}>
+          <path d="m12 3 9 5-9 5-9-5Z" />
+          <path d="m3 12 9 5 9-5" />
+          <path d="m3 16 9 5 9-5" />
+        </svg>
+      );
+    case "screen":
+      return (
+        <svg {...commonProps}>
+          <rect height="13" rx="2" width="18" x="3" y="4" />
+          <path d="M8 21h8" />
+          <path d="M12 17v4" />
+        </svg>
+      );
+    case "users":
+      return (
+        <svg {...commonProps}>
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        </svg>
+      );
+    case "card":
+      return (
+        <svg {...commonProps}>
+          <rect height="14" rx="2" width="20" x="2" y="5" />
+          <path d="M2 10h20" />
+          <path d="M7 15h3" />
+        </svg>
+      );
+    case "clock":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 2" />
+        </svg>
+      );
+    case "browser":
+      return (
+        <svg {...commonProps}>
+          <rect height="16" rx="2" width="20" x="2" y="4" />
+          <path d="M2 9h20" />
+          <path d="M7 14h5" />
+          <path d="M15 14h2" />
+        </svg>
+      );
+    case "desk":
+      return (
+        <svg {...commonProps}>
+          <rect height="8" rx="1.5" width="14" x="5" y="4" />
+          <path d="M3 16h18" />
+          <path d="M7 16v4" />
+          <path d="M17 16v4" />
+          <path d="M12 12v4" />
+        </svg>
+      );
+    case "heart":
+      return (
+        <svg {...commonProps}>
+          <path d="M19.5 12.6 12 20l-7.5-7.4A5 5 0 1 1 12 6a5 5 0 1 1 7.5 6.6Z" />
+        </svg>
+      );
+  }
 }
