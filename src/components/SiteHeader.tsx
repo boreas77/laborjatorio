@@ -7,8 +7,9 @@ export function SiteHeader() {
       <Link className="site-header__brand" href="/">
         <BrandName casing="upper" />
       </Link>
-      <nav aria-label="Navegacion principal">
-        <Link href="/herramientas">Herramientas</Link>
+      <nav aria-label="Navegación principal">
+        <Link href="/">Inicio</Link>
+        <Link href="/inventario">Inventario</Link>
         <Link href="/sobre">Sobre mí</Link>
       </nav>
     </header>

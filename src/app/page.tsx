@@ -14,55 +14,55 @@ const needs = [
     title: "Crear contenido",
     description: "Ideas, guiones, vídeos, podcasts y publicaciones que salen del cajón.",
     icon: "pen",
-    href: "/herramientas?q=crear%20contenido"
+    href: "/inventario?q=crear%20contenido"
   },
   {
     title: "Crear materiales",
     description: "Fichas, PDFs, presentaciones y recursos que pueden entrar en clase.",
     icon: "layers",
-    href: "/herramientas?q=crear%20materiales"
+    href: "/inventario?q=crear%20materiales"
   },
   {
     title: "Dar clases online",
     description: "Herramientas para explicar, grabar, acompañar y estar presente a distancia.",
     icon: "screen",
-    href: "/herramientas?q=clases%20online"
+    href: "/inventario?q=clases%20online"
   },
   {
     title: "Conseguir estudiantes",
     description: "Visibilidad, confianza, comunicación y sistemas para que te encuentren.",
     icon: "users",
-    href: "/herramientas?q=conseguir%20estudiantes"
+    href: "/inventario?q=conseguir%20estudiantes"
   },
   {
     title: "Vender y cobrar",
     description: "Cursos, pagos, correos, productos y ventas sin montar un circo técnico.",
     icon: "card",
-    href: "/herramientas?q=vender%20cobrar"
+    href: "/inventario?q=vender%20cobrar"
   },
   {
     title: "Ahorrar tiempo",
     description: "Automatizar, ordenar y quitarte tareas repetitivas de encima.",
     icon: "clock",
-    href: "/herramientas?q=ahorrar%20tiempo"
+    href: "/inventario?q=ahorrar%20tiempo"
   },
   {
     title: "Construir mi web",
     description: "Páginas, presencia online, analítica y estructura digital.",
     icon: "browser",
-    href: "/herramientas?q=web"
+    href: "/inventario?q=web"
   },
   {
     title: "Mi escritorio",
     description: "Equipo físico, cámara, sonido, pantalla y entorno de trabajo.",
     icon: "desk",
-    href: "/herramientas?q=escritorio"
+    href: "/inventario?q=escritorio"
   },
   {
     title: "Cuidarme",
     description: "Ergonomía, foco, pausas y cosas que ayudan a seguir trabajando.",
     icon: "heart",
-    href: "/herramientas?q=cuidarme"
+    href: "/inventario?q=cuidarme"
   }
 ];
 
@@ -99,7 +99,7 @@ export default function HomePage() {
       </section>
 
       <section className="home-search" aria-label="Búsqueda guiada de herramientas">
-        <form className="home-search__box" action="/herramientas">
+        <form className="home-search__box" action="/inventario">
           <label htmlFor="home-search-input">¿Qué estás buscando?</label>
           <div className="home-search__field">
             <input
@@ -112,7 +112,7 @@ export default function HomePage() {
           </div>
           <div className="home-search__suggestions" aria-label="Sugerencias de búsqueda">
             {searchSuggestions.map((suggestion) => (
-              <Link href={`/herramientas?q=${encodeURIComponent(suggestion)}`} key={suggestion}>
+              <Link href={`/inventario?q=${encodeURIComponent(suggestion)}`} key={suggestion}>
                 {suggestion}
               </Link>
             ))}
