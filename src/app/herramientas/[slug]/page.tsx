@@ -76,7 +76,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         </div>
         {!hasRichEditorialBlocks ? (
           <aside className="tool-summary" aria-label="Resumen rápido">
-            <p className="tool-summary__label">Veredicto corto</p>
+            <p className="tool-summary__label">Veredicto</p>
             <p className="tool-summary__verdict">{tool.honestVerdict}</p>
             <dl>
               <div>
@@ -260,7 +260,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
               </section>
               <section>
                 <div className="tool-verdict">
-                  <p className="tool-verdict__label">Veredicto honesto</p>
+                  <p className="tool-verdict__label">Veredicto</p>
                   <p>{tool.honestVerdict}</p>
                 </div>
               </section>
