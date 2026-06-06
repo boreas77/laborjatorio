@@ -1579,25 +1579,6 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "El enlace de compra concreto está pendiente. Cuando esté, lo añadiré aquí. La referencia útil por ahora es la categoría: filtro antipop de doble capa para micrófono de estudio.",
-    alternativeDetails: [
-      {
-        name: "Audacity",
-        url: "/herramientas/audacity",
-        description:
-          "Después de grabar, Audacity es donde edito audio y termino de dejar los episodios en condiciones."
-      },
-      {
-        name: "Standing Desk Maidesite",
-        url: "/herramientas/standing-desk-maidesite",
-        description:
-          "No es alternativa de audio, pero entra aquí por el aviso del agarre: cuidado con apretar accesorios al escritorio sin mirar."
-      },
-      {
-        name: "Audio-Technica ATR2100x-USB",
-        description:
-          "Es el micrófono que figura en el inventario del Laborjatorio, pero todavía no tiene ficha publicada."
-      }
-    ],
     faqs: [
       {
         question: "¿Qué hace un filtro antipop?",
