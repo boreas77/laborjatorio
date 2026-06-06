@@ -914,7 +914,8 @@ export const tools: Tool[] = [
     subcategories: ["hosting", "wordpress", "dominios", "web", "productividad"],
     pricing: "suscripcion",
     officialUrl: "https://www.webempresa.com/",
-    hasAffiliate: false,
+    affiliateUrl: "https://clientes.webempresa.com/europa/gestion/aff.php?aff=6200",
+    hasAffiliate: true,
     myUseCase:
       "Tengo mi web y mis dominios alojados en Webempresa. Lo uso como base técnica del negocio: hosting, dominio, correos asociados y soporte cuando algo se complica.",
     bestFor: [
@@ -940,7 +941,7 @@ export const tools: Tool[] = [
       "No es gratis ni tiene sentido medirlo como una herramienta menor.",
       "La documentación es tan extensa que puede dar pereza.",
       "El precio público puede variar mucho entre promoción, renovación e impuestos.",
-      "El enlace afiliado está pendiente y todavía no está añadido."
+      "No he probado otros hostings recientes para comparar desde la experiencia."
     ],
     alternatives: [],
     rating: 5,
@@ -963,8 +964,6 @@ export const tools: Tool[] = [
     ],
     honestVerdict:
       "Webempresa hace su trabajo y me da algo que valoro mucho después de un mal susto con otro proveedor: tranquilidad. Precios honestos, soporte en español y la mano tendida para arrancar. Para mí, es la base sobre la que se sostiene todo lo demás. Si estás en España y quieres alojar tu web sin dolores de cabeza, le echaría un ojo.",
-    importantNotice:
-      "El enlace afiliado está pendiente. Hasta que lo tenga, esta ficha enlaza a la web oficial y no incluye mención de afiliación en el cuerpo.",
     metrics: [
       { label: "Mi hosting", value: "126 €/año" },
       { label: "Mi dominio", value: "19 €/año" },
@@ -975,7 +974,7 @@ export const tools: Tool[] = [
       { label: "Mis dominios", value: "19 €/año cada uno" },
       { label: "Plan WordPress Micro", value: "Precio normal 70 €/año; promoción 35 €/año + impuestos" },
       { label: "Plan WordPress Mini", value: "Precio normal 142 €/año; promoción 35,50 €/año + impuestos" },
-      { label: "Afiliación", value: "Pendiente de enlace" }
+      { label: "Afiliación", value: "Sí" }
     ],
     priceNote:
       "Mis cifras son mi caso real. En la web pública de Webempresa hay precios promocionales y precios normales, y pueden cambiar según plan, renovación e impuestos. Antes de contratar, conviene mirar el precio actual y el precio normal tras promoción.",
