@@ -96,9 +96,11 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 <dd>{tool.rating}/5</dd>
               </div>
             </dl>
-            <a className="button button--primary" href={primaryUrl} rel="nofollow sponsored noopener" target="_blank">
-              Ir a {tool.name}
-            </a>
+            {primaryUrl ? (
+              <a className="button button--primary" href={primaryUrl} rel="nofollow sponsored noopener" target="_blank">
+                Ir a {tool.name}
+              </a>
+            ) : null}
           </aside>
         ) : null}
       </div>
@@ -123,16 +125,20 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <p>
               {hasRichEditorialBlocks ? (
                 <>
-                  <a className="tool-inline-link" href={primaryUrl} target="_blank" rel="noopener noreferrer">
-                    {tool.name}
-                  </a>
+                  {primaryUrl ? (
+                    <a className="tool-inline-link" href={primaryUrl} target="_blank" rel="noopener noreferrer">
+                      {tool.name}
+                    </a>
+                  ) : (
+                    tool.name
+                  )}
                   {tool.whatItDoes.startsWith(tool.name) ? tool.whatItDoes.slice(tool.name.length) : ` ${tool.whatItDoes}`}
                 </>
               ) : (
                 tool.whatItDoes
               )}
             </p>
-            {hasRichEditorialBlocks ? (
+            {hasRichEditorialBlocks && primaryUrl ? (
               <div className="tool-action-row">
                 <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
                   Ir a {tool.name}
@@ -300,13 +306,15 @@ export default async function ToolPage({ params }: ToolPageProps) {
               ) : null}
             </>
           ) : null}
-          <section className="tool-final-action">
-            <div className="tool-action-row">
-              <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
-                Ir a {tool.name}
-              </a>
-            </div>
-          </section>
+          {primaryUrl ? (
+            <section className="tool-final-action">
+              <div className="tool-action-row">
+                <a className="tool-action-button" href={primaryUrl} target="_blank" rel="noopener noreferrer">
+                  Ir a {tool.name}
+                </a>
+              </div>
+            </section>
+          ) : null}
         </div>
 
         {!hasRichEditorialBlocks ? (

@@ -43,7 +43,7 @@ export type Tool = {
   category: string;
   subcategories: string[];
   pricing: Pricing;
-  officialUrl: string;
+  officialUrl?: string;
   affiliateUrl?: string;
   hasAffiliate: boolean;
   myUseCase: string;
@@ -1370,6 +1370,130 @@ export const tools: Tool[] = [
         question: "¿Lo recomiendo para gaming?",
         answer:
           "No como recomendación especializada. Yo juego, pero esta ficha va de trabajo diario como profesor online, no de ratones gaming de alto rendimiento."
+      }
+    ]
+  },
+  {
+    name: "Ventilador recargable silencioso",
+    slug: "ventilador-recargable-silencioso",
+    title: "Ventilador recargable y silencioso: la herramienta más rara de mi escritorio (y funciona)",
+    metaDescription:
+      "Un ventilador recargable y casi sin ruido, en el escritorio apuntando a la cara, me ha salvado los veranos dando clases online. No es para tus alumnos, es para ti.",
+    keywords: [
+      "ventilador recargable silencioso",
+      "ventilador de escritorio silencioso",
+      "ventilador para teletrabajo",
+      "ventilador para dar clases online",
+      "ventilador USB recargable",
+      "confort del profesor online"
+    ],
+    tagline:
+      "Un ventilador pequeño, recargable y casi sin ruido para sobrevivir al verano dando clases online.",
+    category: "Equipo físico",
+    subcategories: ["ergonomía", "bienestar", "productividad", "hardware", "confort"],
+    pricing: "pago-unico",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo tengo en el escritorio apuntando a la cara durante los días de calor. No es para los alumnos: es para estar cómodo mientras doy clase o trabajo frente a la pantalla.",
+    bestFor: [
+      "Profes online que dan clase en verano sin aire acondicionado",
+      "Quien quiere refrescarse sin meter ruido en el micrófono",
+      "Personas que trabajan muchas horas frente al ordenador",
+      "Quien busca una mejora barata de confort en el escritorio"
+    ],
+    notFor: [
+      "Quien busca un recurso didáctico para sus alumnos",
+      "Quien ya trabaja con aire acondicionado cómodo y estable",
+      "Quien necesita enfriar una habitación entera",
+      "Quien quiere una compra tecnológica importante"
+    ],
+    pros: [
+      "Apenas hace ruido, que es lo clave con el micrófono abierto.",
+      "Es recargable por USB.",
+      "También puede funcionar con pilas.",
+      "Tiene 5 velocidades.",
+      "Es barato y ocupa poco en el escritorio."
+    ],
+    cons: [
+      "No es un recurso para clase ni para tus alumnos.",
+      "No enfría una habitación entera.",
+      "El enlace de compra concreto está pendiente.",
+      "La marca no tiene una página oficial clara de referencia."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "opcional",
+    updatedAt: "2026-06-06",
+    intro:
+      "Esto te parecerá una marcianada que te lo recomiende aquí, pero escucha. En el Laborjatorio enseño las herramientas que me rodean mientras trabajo, y resulta que una de las que más agradezco en verano no es un software ni un micrófono: es un ventilador recargable y silencioso que tengo en el escritorio, enchufado a la cara.",
+    whatItDoes:
+      "El modelo que uso es un Jsdoin: un ventilador portátil y plegable que puedes sostener en la mano o dejar plantado en el escritorio. Tiene 5 velocidades, se recarga por USB, también funciona con pilas y trae una pequeña pantalla LED. Pero lo importante para mí es que apenas hace ruido y puedo tenerlo apuntando a la cara mientras doy clase.",
+    howIUseIt:
+      "Empecé a dar clases online en Nicaragua, con un ventilador ruidoso detrás que se oía más que yo. Al volver a España agradecí el silencio, hasta que llegó el verano en el País Vasco sin aire acondicionado. Después de aguantar un par de veranos, copié el ventilador que usaba mi novia y lo adopté para mi escritorio. Lo uso en esos días en los que el calor empieza a comerse la paciencia.",
+    teacherUseCases: [
+      "Dar clase online en verano sin que el micrófono capte un ventilador enorme de fondo.",
+      "Mantenerte cómodo durante sesiones largas frente a la pantalla.",
+      "Refrescarte la cara sin depender de aire acondicionado.",
+      "Mejorar el ánimo y la concentración cuando el calor empieza a pesar.",
+      "Tener una solución barata y pequeña para el escritorio."
+    ],
+    honestVerdict:
+      "De todas las herramientas del Laborjatorio, esta es probablemente la más tonta sobre el papel y una de las que más agradezco en la práctica. Es barata, es silenciosa, es recargable y me ha quitado el agobio de varios veranos dando clase. No le pidas más de lo que es, pero lo que es, lo hace de maravilla.",
+    importantNotice:
+      "No es un material para tus alumnos. Es una herramienta para ti, para que estés cómodo dando clase. Y sí, también va de eso un laboratorio de profe: de las cosas pequeñas que te hacen el trabajo más llevadero.",
+    metrics: [
+      { label: "Precio orientativo", value: "~15 €" },
+      { label: "Velocidades", value: "5" },
+      { label: "Ruido", value: "Muy bajo" }
+    ],
+    priceRows: [
+      { label: "Tipo de compra", value: "Pago único" },
+      { label: "Precio orientativo", value: "Alrededor de 15 €" },
+      { label: "Producto", value: "Jsdoin portátil plegable de escritorio, azul" },
+      { label: "Afiliación", value: "Pendiente de enlace" }
+    ],
+    priceNote:
+      "El enlace de compra concreto está pendiente. Cuando esté, lo añadiré aquí. Mientras tanto, la referencia útil es el tipo de producto: ventilador de escritorio silencioso, recargable, pequeño y con potencia ajustable.",
+    alternativeDetails: [
+      {
+        name: "Standing Desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite",
+        description:
+          "Otra herramienta de puesto de trabajo: no enseña por ti, pero puede hacer más sostenible pasar horas delante del ordenador."
+      },
+      {
+        name: "Inphic PM6",
+        url: "/herramientas/inphic-pm6",
+        description:
+          "Otro ejemplo de compra pequeña de escritorio que no cambia la vida, pero sí hace el trabajo diario un poco más cómodo."
+      },
+      {
+        name: "Petit BamBou",
+        description:
+          "Relacionado por bienestar, aunque todavía no tiene ficha publicada en el Laborjatorio."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Es una herramienta para los alumnos?",
+        answer:
+          "No. Es para ti. No mejora la clase como recurso didáctico, pero puede mejorar cómo la vives cuando estás dando clase con calor."
+      },
+      {
+        question: "¿Hace ruido en una clase online?",
+        answer:
+          "Lo valioso de este tipo de ventilador es precisamente que apenas hace ruido. Para usarlo con micrófono abierto, ese detalle importa más que la potencia bruta."
+      },
+      {
+        question: "¿Hace falta gastar mucho?",
+        answer:
+          "No. La gracia es que ronda los 15 euros y resuelve un problema muy concreto: estar menos incómodo en verano mientras trabajas."
+      },
+      {
+        question: "¿Qué tengo que mirar si compro uno parecido?",
+        answer:
+          "Que sea silencioso, recargable, de tamaño escritorio y con potencia ajustable. Con eso cubres lo importante."
       }
     ]
   },

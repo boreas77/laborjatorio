@@ -272,6 +272,12 @@
 * Estado: Importante
 * Etiquetas: Ergonomía, Productividad
 
+## Ventilador recargable silencioso
+
+* Estado: Opcional
+* Etiquetas: Ergonomía, Bienestar, Productividad
+* Nota: Jsdoin portátil plegable de escritorio, azul. Enlace de afiliado pendiente.
+
 ## Sennheiser Momentum 4 Wireless
 
 * Estado: Importante
@@ -296,4 +302,4 @@
 
 ## Total actual
 
-46 herramientas registradas.
+47 herramientas registradas.
