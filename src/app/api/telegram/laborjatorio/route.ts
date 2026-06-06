@@ -28,12 +28,16 @@ type TelegramUpdate = {
   message?: TelegramMessage;
 };
 
+type SessionMode = "tool" | "category";
+
 type SessionState = {
+  mode: SessionMode;
   notes: string[];
   updatedAt: number;
+  categoryName?: string;
 };
 
-type BotCommand = "start" | "ampliar" | "crear-archivo" | "error" | "descartar" | null;
+type BotCommand = "start" | "ampliar" | "crear-archivo" | "error" | "descartar" | "categoria" | null;
 
 const CONTEXT_FILES = [
   "docs/fundamentos-laborjatorio.md",
@@ -81,7 +85,14 @@ export async function POST(request: NextRequest) {
       clearSession(message.chat.id);
       await sendTelegramMessage(
         message.chat.id,
-        "Laborjatorio listo. Enviame una nota de texto o audio sobre una herramienta. Primero te hare preguntas para ampliar; cuando este listo, escribe CREAR ARCHIVO."
+        [
+          "Laborjatorio listo.",
+          "",
+          "Para una ficha de herramienta, enviame una nota de texto o audio.",
+          "Para una pagina de categoria, escribe CATEGORIA y el nombre. Ejemplo: CATEGORIA Conseguir estudiantes.",
+          "",
+          "Primero te hare preguntas para ampliar; cuando este listo, escribe CREAR ARCHIVO."
+        ].join("\n")
       );
 
       return NextResponse.json({ ok: true });
@@ -96,29 +107,57 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
+    if (command === "categoria") {
+      const categoryName = extractCategoryName(rawNotes);
+      startCategorySession(message.chat.id, categoryName);
+
+      if (!categoryName) {
+        await sendTelegramMessage(
+          message.chat.id,
+          "Modo categoria activado. Dime el nombre o necesidad central de la categoria. Ejemplo: Conseguir estudiantes."
+        );
+
+        return NextResponse.json({ ok: true });
+      }
+
+      await sendTelegramMessage(
+        message.chat.id,
+        [
+          `Modo categoria activado: ${categoryName}.`,
+          "",
+          "Enviame notas, audios o respuestas sobre el problema, tu experiencia, errores habituales, filosofia, casos reales y herramientas relacionadas."
+        ].join("\n")
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
     if (command === "descartar") {
+      const currentMode = getExistingChatSession(message.chat.id)?.mode || "tool";
       clearSession(message.chat.id);
       await sendTelegramMessage(
         message.chat.id,
-        "Descartado. He borrado el contexto acumulado de esta herramienta. Cuando quieras, empezamos otra."
+        `Descartado. He borrado el contexto acumulado de esta ${getModeLabel(currentMode)}. Cuando quieras, empezamos otra.`
       );
 
       return NextResponse.json({ ok: true });
     }
 
     if (command === "ampliar") {
+      const currentMode = getExistingChatSession(message.chat.id)?.mode || "tool";
       await sendTelegramMessage(
         message.chat.id,
-        "Perfecto. Enviame la ampliacion en texto o audio y la sumare al contexto de esta herramienta."
+        `Perfecto. Enviame la ampliacion en texto o audio y la sumare al contexto de esta ${getModeLabel(currentMode)}.`
       );
 
       return NextResponse.json({ ok: true });
     }
 
     if (command === "error") {
+      const currentMode = getExistingChatSession(message.chat.id)?.mode || "tool";
       await sendTelegramMessage(
         message.chat.id,
-        "Dime que esta mal o que dato debo corregir. Mandamelo como texto o audio y lo sumare al contexto antes de generar el archivo."
+        `Dime que esta mal o que dato debo corregir. Mandamelo como texto o audio y lo sumare al contexto de esta ${getModeLabel(currentMode)} antes de generar el archivo.`
       );
 
       return NextResponse.json({ ok: true });
@@ -128,12 +167,14 @@ export async function POST(request: NextRequest) {
       appendSessionNote(message.chat.id, rawNotes);
     }
 
+    const session = getExistingChatSession(message.chat.id);
+    const mode = session?.mode || "tool";
     const accumulatedNotes = getSessionText(message.chat.id);
 
     if (!accumulatedNotes) {
       await sendTelegramMessage(
         message.chat.id,
-        "No tengo contexto acumulado para pasar a Claude. Enviame primero una nota sobre la herramienta o reenvia un resumen."
+        `No tengo contexto acumulado para pasar a Claude. Enviame primero una nota sobre la ${getModeLabel(mode)} o reenvia un resumen.`
       );
 
       return NextResponse.json({ ok: true });
@@ -147,8 +188,11 @@ export async function POST(request: NextRequest) {
     await sendTelegramMessage(message.chat.id, statusMessage);
 
     const context = await loadLaborjatorioContext();
-    const draft = await generateLaborjatorioDraft(accumulatedNotes, context);
-    const response = formatTelegramDraftResponse(draft);
+    const draft =
+      mode === "category"
+        ? await generateCategoryDraft(accumulatedNotes, context, session?.categoryName)
+        : await generateLaborjatorioDraft(accumulatedNotes, context);
+    const response = formatTelegramDraftResponse(draft, mode);
 
     if (command === "crear-archivo") {
       await sendTelegramMessage(
@@ -163,7 +207,7 @@ export async function POST(request: NextRequest) {
       );
       await sendTelegramMarkdownDocument(message.chat.id, response, buildDraftFileName(draft));
     } else {
-      await sendLongTelegramMessage(message.chat.id, formatTelegramInterviewResponse(draft));
+      await sendLongTelegramMessage(message.chat.id, formatTelegramInterviewResponse(draft, mode));
     }
 
     return NextResponse.json({ ok: true });
@@ -233,6 +277,17 @@ function detectCommand(rawNotes: string): BotCommand {
     return "start";
   }
 
+  if (
+    normalizedText === "CATEGORIA" ||
+    normalizedText === "NUEVA CATEGORIA" ||
+    normalizedText.startsWith("CATEGORIA ") ||
+    normalizedText.startsWith("NUEVA CATEGORIA ") ||
+    normalizedText === "/CATEGORIA" ||
+    normalizedText.startsWith("/CATEGORIA ")
+  ) {
+    return "categoria";
+  }
+
   if (normalizedText === "AMPLIAR") {
     return "ampliar";
   }
@@ -267,6 +322,13 @@ function detectCommand(rawNotes: string): BotCommand {
   return null;
 }
 
+function extractCategoryName(rawNotes: string) {
+  return rawNotes
+    .replace(/^\/?categor[ií]a\b[:\s-]*/i, "")
+    .replace(/^nueva\s+categor[ií]a\b[:\s-]*/i, "")
+    .trim();
+}
+
 function normalizeCommandText(text: string) {
   return text
     .normalize("NFD")
@@ -278,7 +340,13 @@ function normalizeCommandText(text: string) {
 
 function appendSessionNote(chatId: number, note: string) {
   const session = getChatSession(chatId);
-  session.notes.push(note.trim());
+  const trimmedNote = note.trim();
+
+  if (session.mode === "category" && !session.categoryName) {
+    session.categoryName = trimmedNote.split(/\r?\n/)[0]?.trim().slice(0, 120) || undefined;
+  }
+
+  session.notes.push(trimmedNote);
   session.updatedAt = Date.now();
 
   while (session.notes.length > MAX_SESSION_NOTES) {
@@ -312,7 +380,7 @@ function getChatSession(chatId: number) {
     return currentSession;
   }
 
-  const session = { notes: [], updatedAt: Date.now() };
+  const session: SessionState = { mode: "tool", notes: [], updatedAt: Date.now() };
   sessionStore.set(key, session);
   return session;
 }
@@ -324,6 +392,25 @@ function getExistingChatSession(chatId: number) {
 
 function clearSession(chatId: number) {
   sessionStore.delete(String(chatId));
+}
+
+function startCategorySession(chatId: number, categoryName?: string) {
+  const session: SessionState = {
+    mode: "category",
+    notes: [],
+    updatedAt: Date.now(),
+    categoryName: categoryName || undefined
+  };
+
+  if (categoryName) {
+    session.notes.push(`Categoria indicada por Borja: ${categoryName}`);
+  }
+
+  sessionStore.set(String(chatId), session);
+}
+
+function getModeLabel(mode: SessionMode) {
+  return mode === "category" ? "categoria" : "herramienta";
 }
 
 function cleanupExpiredSessions() {
@@ -448,6 +535,43 @@ async function generateLaborjatorioDraft(rawNotes: string, context: string) {
   return extractResponseText(payload);
 }
 
+async function generateCategoryDraft(rawNotes: string, context: string, categoryName?: string) {
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${getRequiredEnv("OPENAI_API_KEY")}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: process.env.OPENAI_DRAFT_MODEL || "gpt-4.1-mini",
+      instructions:
+        [
+          "Eres el asistente editorial del Laborjatorio.",
+          "Tu trabajo es preparar paquetes editoriales para paginas de categoria del Laborjatorio.",
+          "Una pagina de categoria no es una ficha de herramienta, no es una coleccion de herramientas y no es un listado SEO.",
+          "Es una pagina pilar centrada en un problema real de un profesor online.",
+          "Las herramientas aparecen como apoyo, no como protagonistas.",
+          "La pregunta central es: como resuelve Borja este problema y que herramientas utiliza para hacerlo.",
+          "No inventes experiencia, resultados, casos reales, filosofia personal ni herramientas usadas por Borja.",
+          "Si faltan datos, haz preguntas concretas. Maximo 3 preguntas por iteracion.",
+          "Prioriza experiencias, errores, aprendizajes, cambios de opinion, filosofia personal, casos reales y decisiones.",
+          "Evita keyword stuffing, lenguaje corporativo, listados genericos y tono de enciclopedia.",
+          "La pagina debe seguir siendo util aunque se quitaran todos los enlaces a herramientas.",
+          "No generes el articulo final. Prepara un paquete editorial para Claude."
+        ].join(" "),
+      input: `Contexto obligatorio del repositorio:\n\n${context}\n\nCategoria o necesidad indicada:\n\n${categoryName || "Pendiente de confirmar"}\n\nNotas brutas acumuladas por Telegram:\n\n${rawNotes}\n\nGenera un paquete editorial de categoria para Claude. No generes el articulo final, no generes ficha web definitiva y no prepares commit.\n\nResponde con esta estructura exacta:\n\nConfirmacion breve: una frase corta.\n\n# Paquete editorial de categoria para Claude\n\n## Nombre de la categoria\n\n- Nombre recomendado.\n- Si el nombre no esta claro, marca Pendiente y explica por que.\n\n## Problema principal\n\n- Resume el problema real que intenta resolver esta pagina.\n- No lo conviertas en una lista de herramientas.\n\n## Perfil del lector\n\n- Que situacion vive.\n- Que busca.\n- Que frustraciones tiene.\n\n## Experiencia de Borja\n\n- Historias, errores, aprendizajes, resultados o cambios de opinion confirmados por Borja.\n- Si falta experiencia real, dilo claramente.\n\n## Filosofia personal\n\n- Principios, criterios, formas de trabajar y opiniones relevantes confirmadas por Borja.\n- No inventes creencias.\n\n## Casos reales\n\n- Ejemplos concretos, proyectos relacionados o situaciones vividas.\n- Marca Pendiente si no hay suficientes casos.\n\n## Herramientas relacionadas\n\n### Imprescindibles\n\n- Solo herramientas mencionadas por Borja o claramente presentes en el inventario con estado imprescindible y relacion directa.\n\n### Importantes\n\n- Solo herramientas mencionadas por Borja o claramente presentes en el inventario con estado importante y relacion directa.\n\n### Opcionales\n\n- Solo herramientas mencionadas por Borja o claramente presentes en el inventario con estado opcional/secundario y relacion directa.\n\n## Oportunidades de enlazado interno\n\n- Herramientas o paginas que deberian enlazarse desde esta categoria.\n- No fuerces enlaces.\n\n## Categorias relacionadas\n\n- Otras categorias del Laborjatorio que podrian enlazarse.\n- Explica brevemente la relacion.\n\n## Ideas SEO detectadas\n\n- Orientacion editorial, no keyword stuffing.\n- Incluye necesidades, preguntas y formulaciones naturales del lector.\n\n## FAQ potencial\n\n- Preguntas frecuentes detectadas durante la conversacion.\n- Solo preguntas utiles para la pagina pilar.\n\n## Instrucciones para Claude\n\n- Tipo de contenido: pagina de categoria, no ficha de herramienta.\n- Funcion estrategica: pagina pilar centrada en un problema real.\n- Longitud recomendada: entre 1000 y 2000 palabras; la utilidad manda, no la longitud.\n- Filosofia editorial: no enciclopedia, no listado, no comparador generico.\n- Estructura sugerida: Introduccion; Por que esta categoria importa; Mi experiencia; Errores habituales; Mi forma de entender este problema; Herramientas que utilizo; Si empezara hoy desde cero; Conclusion.\n- Regla principal: las categorias no son colecciones de herramientas, son colecciones de decisiones.\n- Comprobacion final: la pagina debe seguir siendo util si se eliminaran todos los enlaces a herramientas.\n\n## Preguntas pendientes para Borja\n\n1. Maximo tres preguntas concretas para completar experiencia real.\n2. Prioriza problema, experiencia, filosofia, casos reales y herramientas relacionadas.\n3. No hagas preguntas genericas.\n\n# Opciones\n\nAMPLIAR - responder a las preguntas y enriquecer el paquete.\nCREAR ARCHIVO - generar el archivo Markdown para subirlo a Claude.\nERROR - indicar que hay algo mal y mandar una correccion.\nDESCARTAR - no seguir con esta categoria.`,
+      store: false
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error(await response.text());
+  }
+
+  const payload = await response.json();
+  return extractResponseText(payload);
+}
+
 function extractResponseText(payload: unknown) {
   const responsePayload = payload as { output_text?: unknown };
 
@@ -473,11 +597,13 @@ function extractResponseText(payload: unknown) {
   return JSON.stringify(payload, null, 2);
 }
 
-function formatTelegramDraftResponse(draft: string) {
-  return `LABORJATORIO\n\n${draft}\n\n---\n\nResponde con AMPLIAR, CREAR ARCHIVO, ERROR o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para preparar el paquete editorial sin tocar GitHub.`;
+function formatTelegramDraftResponse(draft: string, mode: SessionMode) {
+  const modeTitle = mode === "category" ? "CATEGORIA" : "HERRAMIENTA";
+
+  return `LABORJATORIO / ${modeTitle}\n\n${draft}\n\n---\n\nResponde con AMPLIAR, CREAR ARCHIVO, ERROR o DESCARTAR. En este MVP no se publicara nada automaticamente: sirve para preparar el paquete editorial sin tocar GitHub.`;
 }
 
-function formatTelegramInterviewResponse(draft: string) {
+function formatTelegramInterviewResponse(draft: string, mode: SessionMode) {
   const confirmation = extractSection(
     draft,
     /Confirmacion breve:\s*/i,
@@ -492,7 +618,7 @@ function formatTelegramInterviewResponse(draft: string) {
   return [
     "He procesado lo que me has enviado.",
     "",
-    confirmation ? `Resumen: ${confirmation}` : "Resumen: ya tengo contexto acumulado para esta herramienta.",
+    confirmation ? `Resumen: ${confirmation}` : `Resumen: ya tengo contexto acumulado para esta ${getModeLabel(mode)}.`,
     "",
     "Preguntas para afinar antes de crear el archivo:",
     "",
@@ -503,7 +629,7 @@ function formatTelegramInterviewResponse(draft: string) {
     "AMPLIAR - responder a estas preguntas o anadir mas informacion.",
     "CREAR ARCHIVO - generar el Markdown completo para subirlo a Claude.",
     "ERROR - decirme que dato esta mal y corregirlo.",
-    "DESCARTAR - borrar esta herramienta y empezar otra."
+    `DESCARTAR - borrar esta ${getModeLabel(mode)} y empezar otra.`
   ].join("\n");
 }
 

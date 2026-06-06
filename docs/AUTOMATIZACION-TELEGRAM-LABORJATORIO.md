@@ -4,13 +4,18 @@
 
 Este sistema permite enviar textos o audios a un bot de Telegram y recibir un paquete editorial para Claude.
 
+El bot tiene dos flujos paralelos:
+
+- Fichas de herramientas.
+- Paginas de categoria.
+
 El MVP esta disenado en modo solo borrador:
 
 - Recibe mensajes de Telegram.
 - Transcribe audios.
 - Acumula las ampliaciones de una misma conversacion.
 - Lee el contexto editorial del repositorio.
-- Genera un paquete editorial Markdown revisable.
+- Genera un paquete editorial Markdown revisable para herramienta o categoria.
 - Separa hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles y advertencias.
 - Hace maximo 3 preguntas para extraer experiencia real.
 - Devuelve primero preguntas y opciones por Telegram.
@@ -64,6 +69,68 @@ Comandos actuales:
 - `/start`: reinicia la conversacion y borra el contexto acumulado.
 
 Limitacion importante: esta memoria es temporal y vive dentro de la funcion de Vercel. Para el MVP es suficiente si la conversacion se hace seguida. Si Vercel reinicia la funcion o pasa demasiado tiempo, el bot puede perder el contexto acumulado. Si ocurre, basta con reenviar un resumen de la herramienta. La version robusta futura deberia guardar esta memoria en un almacenamiento persistente como Vercel KV, Redis, una base de datos pequena o GitHub.
+
+## Flujo de categorias
+
+El flujo de categorias se activa con:
+
+```text
+CATEGORIA Nombre de la categoria
+```
+
+Tambien funciona:
+
+```text
+NUEVA CATEGORIA Nombre de la categoria
+```
+
+Ejemplos:
+
+```text
+CATEGORIA Conseguir estudiantes
+```
+
+```text
+NUEVA CATEGORIA Equipar mi escritorio
+```
+
+Cuando se activa este modo, el bot abandona el flujo de fichas y empieza una memoria temporal nueva para esa categoria.
+
+El objetivo no es preparar una ficha de herramienta. El objetivo es preparar una pagina pilar centrada en un problema real de un profesor online.
+
+Ejemplos de categorias editoriales:
+
+- Crear contenido.
+- Crear materiales.
+- Dar clases online.
+- Conseguir estudiantes.
+- Vender y cobrar.
+- Ahorrar tiempo.
+- Construir mi web.
+- Equipar mi escritorio.
+- Cuidarme.
+
+En modo categoria, el bot debe recopilar:
+
+- problema principal.
+- perfil del lector.
+- experiencia de Borja.
+- filosofia personal.
+- casos reales.
+- herramientas relacionadas.
+- oportunidades de enlazado interno.
+- ideas SEO sin keyword stuffing.
+- FAQ potencial.
+
+Regla principal: las categorias no son colecciones de herramientas. Son colecciones de decisiones.
+
+La pagina debe responder:
+
+```text
+Como resuelve Borja este problema y que herramientas utiliza para hacerlo.
+```
+
+Las herramientas aparecen como consecuencia, no como protagonistas.
 
 ## Archivos que consulta
 
@@ -209,13 +276,30 @@ Para probar la memoria:
 5. Descarga el archivo `.md`.
 6. Comprueba que el paquete incluye la informacion de todas las notas anteriores, no solo la ultima frase.
 
+Para probar categorias:
+
+1. Envia:
+
+```text
+CATEGORIA Conseguir estudiantes
+```
+
+2. Envia notas o audios sobre por que ese problema importa, errores habituales, experiencia real, filosofia y herramientas relacionadas.
+3. Responde a las preguntas del bot.
+4. Escribe `CREAR ARCHIVO`.
+5. Descarga el archivo `.md` y subelo a Claude.
+
+Resultado esperado: el archivo debe decir que es una pagina de categoria, no una ficha de herramienta. Debe centrarse en el problema y en el criterio de Borja, con herramientas como apoyo.
+
 ## Que hace y que no hace
 
 Hace:
 
 - convierte notas brutas en paquetes editoriales utiles para Claude.
+- genera paquetes para fichas de herramientas.
+- genera paquetes para paginas de categoria.
 - transcribe audios.
-- acumula ampliaciones de una misma herramienta durante la conversacion.
+- acumula ampliaciones de una misma herramienta o categoria durante la conversacion.
 - hace preguntas antes de generar el archivo final.
 - envia el paquete como archivo Markdown descargable para subirlo a Claude solo cuando Borja lo pide.
 - usa el contexto editorial del proyecto.
