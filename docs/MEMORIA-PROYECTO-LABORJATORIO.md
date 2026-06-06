@@ -57,6 +57,60 @@ Archivos estrategicos actuales:
 
 ## Cambios recientes
 
+### 2026-06-06
+
+- Se reorganizo la arquitectura publica de LABORJATORIO alrededor de necesidades del usuario, no de categorias tecnicas.
+- La Home mantiene el hero visual existente: imagen superior del laboratorio, recuadro con "Has entrado al Laborjatorio" y entradilla editorial. No se debe sustituir ese primer impacto por una home nueva.
+- La entradilla actual de la Home conserva los dos primeros parrafos historicos y elimina el antiguo cierre "Te lo cuento todo aqui abajo...".
+- La Home ya no tiene el buscador grande bajo la entradilla. La busqueda se movio a la navegacion mediante `HeaderSearch`.
+- La navegacion principal queda reducida a logo + `Inventario` + `Sobre mi` + icono de busqueda. No debe volver a aparecer una pestana `Inicio`; el logo lleva a la Home.
+- En movil, la navegacion debe mantenerse en una sola linea siempre que sea posible: logo a la izquierda, enlaces e icono de busqueda a la derecha.
+- Se creo la ruta `/buscar`, con `src/app/buscar/page.tsx`, para buscar dentro de herramientas, categorias tecnicas y paginas del sitio.
+- La logica de busqueda vive en `src/lib/search.ts` y devuelve resultados agrupados en herramientas, categorias y paginas.
+- `HeaderSearch` vive en `src/components/HeaderSearch.tsx`. Es un boton con icono que despliega un formulario hacia `/buscar`.
+- La Home muestra 9 bloques de necesidad con iconos SVG monocolor, sobrios y no infantilizados:
+  1. Crear contenido
+  2. Crear materiales
+  3. Dar clases online
+  4. Conseguir estudiantes
+  5. Vender y cobrar
+  6. Ahorrar tiempo
+  7. Construir mi web
+  8. Mi escritorio
+  9. Cuidarme
+- Esas necesidades se centralizaron en `src/data/needs.ts`, junto con su `slug`, descripcion, icono y lista temporal de herramientas relacionadas.
+- Las tarjetas de la Home ya no apuntan a una busqueda generica: apuntan a paginas reales de necesidad:
+  - `/crear-contenido`
+  - `/crear-materiales`
+  - `/dar-clases-online`
+  - `/conseguir-estudiantes`
+  - `/vender-y-cobrar`
+  - `/ahorrar-tiempo`
+  - `/construir-mi-web`
+  - `/mi-escritorio`
+  - `/cuidarme`
+- Se creo `src/app/[needSlug]/page.tsx` como solucion temporal para esas paginas de necesidad.
+- Mientras Borja no escriba los articulos largos de cada necesidad, cada pagina muestra una cabecera breve y el mismo feed de fichas que Inventario, filtrado por las herramientas relacionadas con esa necesidad.
+- Esta solucion temporal debe sustituirse mas adelante por paginas editoriales largas: articulo, filosofia, experiencia de Borja, reflexiones y enlaces naturales a fichas de herramientas.
+- Se creo `/inventario` como pagina principal de todas las herramientas.
+- `/inventario` sustituye conceptualmente a la antigua pagina `Herramientas`. Debe sentirse como inventario vivo / cuaderno de taller, no como directorio SEO.
+- El Inventario muestra herramientas en orden cronologico inverso usando `updatedAt`: lo mas reciente arriba.
+- El componente compartido `src/components/InventoryFeed.tsx` renderiza el feed de fichas para Inventario y para paginas temporales de necesidad.
+- `InventoryFeed` acepta textos adaptables para el buscador y el contador (`searchLabel`, `countLabel`) para poder decir "Buscar dentro de esta categoria" y "en esta categoria" cuando se usa en paginas de necesidad.
+- `/herramientas` redirige a `/inventario`, conservando el parametro `q` si existe.
+- Las fichas individuales siguen viviendo en `/herramientas/[slug]` por compatibilidad. No renombrarlas todavia.
+- El sitemap incluye `/inventario`, `/sobre`, la Home y las 9 paginas temporales de necesidad.
+- El CTA final de la Home quedo asi:
+  - Titular: "Y esas son las herramientas que utilizo en mi dia a dia."
+  - Texto: "Si quieres ver como las uso para ayudar a estudiantes y a otros profes, puedes comprobarlo aqui.", con "como las uso para ayudar a estudiantes y a otros profes" en negrita.
+  - Boton: "Ir a Borjaprofe.com".
+- El CTA final incluye hueco/foto de Borja. Existe un archivo local pendiente `public/images/Laborjatorio foto Borja.jpg` sin seguimiento en Git en el momento de esta memoria; antes de depender de esa imagen en produccion hay que comprobar si debe versionarse.
+- Se verifico en local que `/crear-materiales` muestra Canva y ChatGPT, `/mi-escritorio` muestra Logitech C920 y la Home enlaza a las rutas reales de necesidad.
+- Se verifico que `npm.cmd run typecheck` y `npm.cmd run build` pasan. `next build` mantiene un warning ya conocido de Turbopack sobre `next.config.ts` trazado desde la ruta del bot de Telegram.
+- Produccion se comprobo durante la sesion en `https://laborjatorio.com` tras los despliegues principales.
+- Hay cambios locales sin commitear ajenos a esta reorganizacion en `.gitignore`, `CODEX_INSTRUCTIONS.md`, `docs/BORJISMO_UNIVERSAL.md` y `src/app/layout.tsx`. No deben revertirse sin permiso de Borja.
+- Hay una carpeta local `.codex-remote-attachments/` sin seguimiento, generada por adjuntos de la conversacion. No debe commitearse salvo decision explicita.
+
 ### 2026-06-03
 
 - Se empezo la automatizacion Telegram para crear borradores de fichas del Laborjatorio desde texto o audio.
@@ -178,24 +232,20 @@ Si vuelve a aparecer un problema de permisos con `.git/index.lock`, revisar perm
 
 ## Ultima sesion registrada
 
-Fecha: 2026-06-04
+Fecha: 2026-06-06
 
 Resumen:
 
-- Borja compro y conecto el dominio `laborjatorio.com`.
-- Vercel reconoce el proyecto `laborjatorio` con `https://laborjatorio.com` como URL de produccion.
-- `https://laborjatorio.com/`, `/herramientas`, `/herramientas/opusclip` y `/herramientas/davinci-resolve-editor-video-gratis-profesores` responden correctamente.
-- A partir de ahora, toda publicacion debe comprobarse en `https://laborjatorio.com`, no solo en `laborjatorio.vercel.app`.
-- Se preparo la ficha de Kommodo, antes Komodo Decks, con estado `Opcional`.
-- Se estreno el estado `Opcional` para herramientas utiles pero de uso no constante.
-- Se sustituyo el CTA final anterior por un faldon global unico: "Aqui solo hay herramientas que uso de verdad, en mis clases y en mi negocio. Si dejo de usar alguna, lo sabras y te ensenare la nueva. Algunos enlaces son de afiliado: si compras desde ellos, me llevo una comision sin coste extra para ti."
-- Se fijo el color de marca `#b85c5c` como variable `--rojo-borja`.
-- Se decidio trabajar desde `C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`, porque es la carpeta que Codex abre como workspace por defecto.
-- Borja copio ahi el contenido reciente de `LABORJATORIO`.
-- Se confirmo que `MI TALLER DE ELE` contiene el MVP del bot de Telegram, los documentos nuevos, el commit local `d6ddad0` y el remoto correcto `boreas77/laborjatorio`.
-- Se anadio `.git-desactivado/` a `.gitignore` para que Git no lo muestre como contenido pendiente.
-- El siguiente bloqueo real es la autenticacion estable con GitHub.
+- La Home quedo reorganizada alrededor de 9 necesidades con iconos editoriales monocolor.
+- El buscador principal paso a la navegacion como `HeaderSearch` y la busqueda vive en `/buscar`.
+- La pagina `Herramientas` se transformo conceptualmente en `/inventario`, con feed cronologico de fichas.
+- `/herramientas` redirige a `/inventario`; las fichas individuales siguen en `/herramientas/[slug]`.
+- Se crearon paginas temporales por necesidad con rutas propias y feeds filtrados de herramientas.
+- Las paginas temporales se reemplazaran mas adelante por articulos largos escritos por Borja.
+- La navegacion publica queda: logo a Home, `Inventario`, `Sobre mi` y boton de busqueda.
+- Se documento el estado real en esta memoria para evitar construir sobre cambios dispersos del chat de estilo.
+- `npm.cmd run typecheck` y `npm.cmd run build` pasan en el estado actual.
 
 Proximo paso recomendado:
 
-- Probar varios audios reales con herramientas distintas y comprobar que el bot genera paquetes editoriales utiles para Claude, no articulos finales.
+- Revisar y ajustar el mapeo de `src/data/needs.ts` antes de escribir los articulos largos de cada necesidad, para que cada pagina temporal muestre exactamente las herramientas que Borja quiere asociar a ese problema.
