@@ -290,7 +290,7 @@ main {
 }
 
 .home-needs__header h2,
-.home-borja-cta__content h2 {
+.home-borja-cta__inner h2 {
   color: var(--rose);
   font-size: clamp(1.8rem, 4vw, 3rem);
   letter-spacing: 0;
@@ -364,6 +364,11 @@ main {
   max-width: 1040px;
 }
 
+.home-borja-cta__inner h2 {
+  grid-column: 1 / -1;
+  max-width: 840px;
+}
+
 .home-borja-cta__photo {
   background:
     linear-gradient(135deg, rgb(184 92 92 / 16%), rgb(42 127 118 / 14%)),
@@ -374,20 +379,20 @@ main {
   min-height: clamp(280px, 36vw, 430px);
 }
 
-.home-borja-cta__content {
+.home-borja-cta__body {
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
-.home-borja-cta__content p {
+.home-borja-cta__body p {
   color: var(--ink);
-  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  font-size: clamp(1.18rem, 2vw, 1.48rem);
   line-height: 1.65;
   margin: 0;
   max-width: 620px;
 }
 
-.home-borja-cta__content .button {
+.home-borja-cta__body .button {
   justify-self: start;
 }
 

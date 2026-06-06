@@ -141,15 +141,15 @@ export default function HomePage() {
 
       <section className="home-borja-cta" aria-labelledby="home-borja-cta-title">
         <div className="home-borja-cta__inner">
+          <h2 id="home-borja-cta-title">Estas son las herramientas que utilizo en mi día a día.</h2>
           <div className="home-borja-cta__photo" aria-label="Foto de Borja pendiente" />
-          <div className="home-borja-cta__content">
-            <p className="eyebrow">Y ahora la obra</p>
-            <h2 id="home-borja-cta-title">Estas son las herramientas que utilizo para mi trabajo.</h2>
+          <div className="home-borja-cta__body">
             <p>
-              Si quieres ver lo que hago con ellas en mi día a día, visita borjaprofe.com.
+              Si quieres ver cómo las uso en mi proyecto para ayudar a estudiantes y a otros
+              profes, puedes comprobarlo aquí.
             </p>
             <a className="button button--primary" href="https://borjaprofe.com">
-              Visitar borjaprofe.com
+              Ir a BorjaProfe.com
             </a>
           </div>
         </div>
