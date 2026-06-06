@@ -17,14 +17,18 @@ export default function HomePage() {
       <section className="home-lede" aria-label="Introducción al Laborjatorio">
         <div className="home-lede__inner">
           <p>
-            Aquí no vas a encontrar las 837 mejores herramientas para profes, solo{" "}
+            Aquí conocerás las herramientas que usa un profe para{" "}
             <strong>
-              las que uso de verdad para enseñar español, crear contenido y gestionar mi
-              negocio
+              enseñar español, crear contenido y gestionar su negocio
             </strong>
-            . Las que me rodean mientras escribo esto.
+            . Yo, en concreto.
           </p>
-          <p>Si puedo, cada año serán menos.</p>
+          <p>
+            No tienen por qué ser mejores que las tuyas. No es un ranking ni la lista de
+            las 837 imprescindibles: son solo las que uso de verdad. Las que me rodean
+            mientras escribo esto.
+          </p>
+          <p>Y mi objetivo es tener cada vez menos, no más.</p>
           <p>Pero hablemos de lo importante:</p>
         </div>
       </section>
