@@ -6,7 +6,9 @@ import type { Tool } from "@/data/tools";
 import { labelFromStatus } from "@/lib/format";
 
 type InventoryFeedProps = {
+  countLabel?: string;
   initialQuery?: string;
+  searchLabel?: string;
   tools: Tool[];
 };
 
@@ -22,7 +24,12 @@ const iconByCategory: Record<string, InventoryIconName> = {
   "Creación de materiales": "layers"
 };
 
-export function InventoryFeed({ initialQuery = "", tools }: InventoryFeedProps) {
+export function InventoryFeed({
+  countLabel = "en el inventario",
+  initialQuery = "",
+  searchLabel = "Buscar en el inventario",
+  tools
+}: InventoryFeedProps) {
   const [query, setQuery] = useState(initialQuery);
   const sortedTools = useMemo(
     () =>
@@ -59,7 +66,7 @@ export function InventoryFeed({ initialQuery = "", tools }: InventoryFeedProps) 
   return (
     <section className="inventory-browser" aria-label="Inventario de herramientas">
       <label className="inventory-search">
-        Buscar en el inventario
+        {searchLabel}
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
@@ -69,8 +76,7 @@ export function InventoryFeed({ initialQuery = "", tools }: InventoryFeedProps) 
       </label>
 
       <p className="inventory-count">
-        {filteredTools.length} herramienta{filteredTools.length === 1 ? "" : "s"} en el
-        inventario
+        {filteredTools.length} herramienta{filteredTools.length === 1 ? "" : "s"} {countLabel}
       </p>
 
       <div className="inventory-feed">

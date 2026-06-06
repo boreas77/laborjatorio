@@ -1,64 +1,6 @@
 import Link from "next/link";
 import { BrandName } from "@/components/BrandName";
-
-const needs = [
-  {
-    title: "Crear contenido",
-    description: "Ideas, guiones, vídeos, podcasts y publicaciones que salen del cajón.",
-    icon: "pen",
-    href: "/buscar?q=crear%20contenido"
-  },
-  {
-    title: "Crear materiales",
-    description: "Fichas, PDFs, presentaciones y recursos que pueden entrar en clase.",
-    icon: "layers",
-    href: "/buscar?q=crear%20materiales"
-  },
-  {
-    title: "Dar clases online",
-    description: "Herramientas para explicar, grabar, acompañar y estar presente a distancia.",
-    icon: "screen",
-    href: "/buscar?q=clases%20online"
-  },
-  {
-    title: "Conseguir estudiantes",
-    description: "Visibilidad, confianza, comunicación y sistemas para que te encuentren.",
-    icon: "users",
-    href: "/buscar?q=conseguir%20estudiantes"
-  },
-  {
-    title: "Vender y cobrar",
-    description: "Cursos, pagos, correos, productos y ventas sin montar un circo técnico.",
-    icon: "card",
-    href: "/buscar?q=vender%20cobrar"
-  },
-  {
-    title: "Ahorrar tiempo",
-    description: "Automatizar, ordenar y quitarte tareas repetitivas de encima.",
-    icon: "clock",
-    href: "/buscar?q=ahorrar%20tiempo"
-  },
-  {
-    title: "Construir mi web",
-    description: "Páginas, presencia online, analítica y estructura digital.",
-    icon: "browser",
-    href: "/buscar?q=web"
-  },
-  {
-    title: "Mi escritorio",
-    description: "Equipo físico, cámara, sonido, pantalla y entorno de trabajo.",
-    icon: "desk",
-    href: "/buscar?q=escritorio"
-  },
-  {
-    title: "Cuidarme",
-    description: "Ergonomía, foco, pausas y cosas que ayudan a seguir trabajando.",
-    icon: "heart",
-    href: "/buscar?q=cuidarme"
-  }
-];
-
-type NeedIconName = (typeof needs)[number]["icon"];
+import { needCategories, type NeedCategoryIcon } from "@/data/needs";
 
 export default function HomePage() {
   return (
@@ -91,8 +33,8 @@ export default function HomePage() {
         <div className="home-categories__inner">
           <h2 id="home-categories-title">¿Qué estás buscando?</h2>
           <div className="home-need-grid">
-            {needs.map((need) => (
-              <Link className="home-need-card" href={need.href} key={need.title}>
+            {needCategories.map((need) => (
+              <Link className="home-need-card" href={`/${need.slug}`} key={need.title}>
                 <NeedIcon name={need.icon} />
                 <h3>{need.title}</h3>
                 <p>{need.description}</p>
@@ -122,7 +64,7 @@ export default function HomePage() {
   );
 }
 
-function NeedIcon({ name }: { name: NeedIconName }) {
+function NeedIcon({ name }: { name: NeedCategoryIcon }) {
   const commonProps = {
     "aria-hidden": true,
     className: "home-need-card__icon",
