@@ -209,8 +209,8 @@
 
 ## SoundMadeSeen
 
-* Estado: Importante
-* Etiquetas: Audio, Vídeo, Contenido, IA
+* Estado: Opcional
+* Etiquetas: IA, Vídeo, Audio, Contenido, Redes Sociales
 
 ## HappyScribe
 

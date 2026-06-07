@@ -719,6 +719,134 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "SoundMadeSeen",
+    slug: "soundmadeseen",
+    title: "SoundMadeSeen: cómo convierto episodios de podcast en clips para redes",
+    metaDescription:
+      "Uso SoundMadeSeen para convertir mis episodios de podcast en audio en clips cortos con subtítulos para redes. Te cuento cómo funciona, su precio y para quién tiene sentido.",
+    keywords: [
+      "SoundMadeSeen",
+      "convertir audio en clips",
+      "clips para redes desde podcast",
+      "clips de podcast solo audio",
+      "crear clips automáticos",
+      "vídeo para redes desde audio"
+    ],
+    tagline:
+      "La herramienta que uso para convertir episodios antiguos de podcast solo audio en clips cortos para redes.",
+    category: "Audio y vídeo",
+    subcategories: ["ia", "video", "audio", "contenido", "redes sociales", "podcast"],
+    pricing: "pago-unico",
+    officialUrl: "https://appsumo.com/products/soundmadeseen/",
+    affiliateUrl: "https://appsumo.8odi.net/ZdZDO0",
+    hasAffiliate: true,
+    myUseCase:
+      "La uso un par de veces al mes para rescatar episodios buenos que solo tienen audio y convertirlos en clips con subtítulos para redes.",
+    bestFor: [
+      "Podcasters con catálogo de episodios solo en audio",
+      "Profes que quieren sacar clips de podcasts antiguos",
+      "Creadores que necesitan vídeos cortos sin haber grabado vídeo",
+      "Quien quiere subtítulos y onda de sonido sin editar desde cero"
+    ],
+    notFor: [
+      "Quien ya graba siempre en vídeo y tiene otros flujos más directos",
+      "Quien necesita procesar muchos episodios largos cada mes con pocos minutos",
+      "Quien busca una herramienta generalista de edición de vídeo",
+      "Quien espera resultados sólidos de la función de historias con IA"
+    ],
+    pros: [
+      "Detecta momentos y propone clips automáticamente.",
+      "Genera subtítulos automáticos editables.",
+      "Permite añadir fondos, imágenes y ondas de sonido.",
+      "Exporta clips en un par de minutos.",
+      "Es útil para dar segunda vida a episodios antiguos solo en audio."
+    ],
+    cons: [
+      "El límite mensual de minutos condiciona cuántos episodios puedes procesar.",
+      "La función de historias con IA todavía no me convence.",
+      "No la uso a diario: mi uso real es ocasional.",
+      "El precio y el modelo pueden cambiar en AppSumo."
+    ],
+    alternatives: ["OpusClip"],
+    rating: 4,
+    difficulty: "facil",
+    status: "opcional",
+    updatedAt: "2026-06-08",
+    publishedAt: "2026-06-08T09:00:00+02:00",
+    intro:
+      "Esta es una herramienta que he comprado hace poco. Y sí, comprado, porque es de pago único. Tiene un objetivo muy específico: convertir episodios de podcast en solo audio en clips cortos para redes sociales. Si tienes un catálogo de episodios viejos que solo existen en audio, SoundMadeSeen es una forma rápida de darles una segunda vida en vídeo.",
+    whatItDoes:
+      "SoundMadeSeen coge un episodio de audio y lo transforma en clips cortos y visuales, listos para publicar en redes. Su gracia está en que no necesitas haber grabado vídeo: parte del audio y le pone una capa visual encima, con fondo, subtítulos y ondas de sonido, para que funcione en Instagram, TikTok y compañía.",
+    howIUseIt:
+      "No la uso todo el tiempo, porque ahora mismo doy prioridad a los episodios que grabo con vídeo. La saco de vez en cuando, un par de veces al mes, para rescatar episodios buenos que solo tienen audio y convertirlos en material para redes. Mis episodios duran de media unos veinte y pico minutos, así que con 100 minutos al mes puedo procesar unos cuatro episodios y sacar entre 15 y 20 clips.",
+    teacherUseCases: [
+      "Convertir episodios antiguos solo en audio en vídeos cortos para redes.",
+      "Recortar momentos destacados sin hacer toda la edición manual.",
+      "Añadir subtítulos editables a clips de podcast.",
+      "Usar imágenes preparadas en Canva como fondo visual.",
+      "Publicar piezas cortas en redes sin haber grabado el episodio en vídeo."
+    ],
+    honestVerdict:
+      "SoundMadeSeen hace una cosa muy concreta y la hace bien: convertir tu audio en clips visuales para redes en un par de clics. No es una herramienta para todo, ni la uso a diario, pero para rescatar episodios antiguos que se merecían más vida tiene un valor claro. Por el precio de pago único que pagué, me ha salido a cuenta.",
+    importantNotice:
+      "Este artículo usa enlace de afiliado de AppSumo vía Impact. Si compras desde ese enlace, a ti te cuesta lo mismo y a mí me llega una comisión que ayuda a mantener el Laborjatorio.",
+    metrics: [
+      { label: "Precio verificado", value: "39 $" },
+      { label: "Minutos", value: "100/mes" },
+      { label: "Uso", value: "Ocasional" }
+    ],
+    priceRows: [
+      { label: "AppSumo", value: "39 $ pago único, verificado el 8 de junio de 2026" },
+      { label: "Límite", value: "100 minutos de generación de vídeo al mes" },
+      { label: "Ampliación", value: "Más códigos aumentan límites, según AppSumo" },
+      { label: "Afiliación", value: "Sí, AppSumo vía Impact" }
+    ],
+    priceNote:
+      "Pagué 39 dólares como pago único. AppSumo muestra actualmente ese precio con 100 minutos de generación de vídeo al mes. Confirma siempre el plan actual antes de comprar, porque estas ofertas pueden cambiar.",
+    alternativeDetails: [
+      {
+        name: "OpusClip",
+        url: "/herramientas/opusclip",
+        description:
+          "OpusClip brilla cuando ya tienes vídeo. SoundMadeSeen tiene más sentido cuando partes de episodios solo en audio."
+      },
+      {
+        name: "Canva",
+        url: "/herramientas/canva",
+        description:
+          "Lo uso para preparar imágenes o fondos visuales que luego puedo llevar a SoundMadeSeen."
+      },
+      {
+        name: "Spotify for Podcasters",
+        url: "/herramientas/spotify-for-podcasters",
+        description:
+          "Es la plataforma donde gestiono la distribución del podcast; SoundMadeSeen entra después para reciclar episodios en redes."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿SoundMadeSeen sirve si mi podcast no tiene vídeo?",
+        answer:
+          "Sí. Ese es precisamente su caso más claro: partir de audio y generar clips visuales con subtítulos, fondo y onda de sonido."
+      },
+      {
+        question: "¿Cuántos episodios puedo procesar con 100 minutos al mes?",
+        answer:
+          "En mi caso, con episodios de unos veinte y pico minutos, calculo unos cuatro episodios al mes."
+      },
+      {
+        question: "¿La uso a diario?",
+        answer:
+          "No. La uso de forma ocasional, un par de veces al mes, para rescatar episodios antiguos solo en audio."
+      },
+      {
+        question: "¿Qué tal la función de historias con IA?",
+        answer:
+          "De momento no me convence. La parte fuerte para mí es convertir audio en clips con subtítulos, no generar historias visuales con IA."
+      }
+    ]
+  },
+  {
     name: "HappyScribe",
     slug: "happyscribe",
     title: "HappyScribe: cómo transcribo mis podcasts y formaciones cada semana",
