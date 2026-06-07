@@ -178,11 +178,11 @@ export const tools: Tool[] = [
     updatedAt: "2026-06-07",
     publishedAt: "2026-06-07T11:00:00+02:00",
     intro:
-      "Canva es una herramienta compleja de la que hablar. No porque sea difícil de usar —al revés—, sino porque mi relación con ella ha cambiado mucho. Llevo utilizándola por lo menos ocho años, y hasta hace poco te habría dicho sin pestañear que era imprescindible para un profe con negocio propio. Hoy ya no lo tengo tan claro.",
+      "Canva es una herramienta compleja, compleja de la que hablar. Y no porque sea difícil de usar —al revés—, sino porque mi relación con ella ha cambiado mucho. Llevo utilizándola por lo menos ocho años, y hasta hace muy poco te habría dicho, sin pestañear, que es un imprescindible para un profe que tiene un negocio propio. Hoy ya no lo tengo tan claro, y de eso va esta ficha.",
     whatItDoes:
-      "Canva es una herramienta de diseño online para crear casi cualquier cosa visual: portadas, posts para redes, presentaciones, materiales y documentos. Funciona con plantillas, recursos gráficos y un catálogo enorme de imágenes, de forma que no necesitas saber diseño para sacar algo decente.",
+      "Canva es una herramienta de diseño online para crear casi cualquier cosa visual: portadas, posts para redes, presentaciones, materiales, documentos. Funciona con plantillas y un catálogo enorme de imágenes, de forma que no necesitas saber diseño para sacar algo decente. Una navaja suiza, vamos.",
     howIUseIt:
-      "Hoy la uso principalmente para mantener coherencia visual. En concreto, para las portadas de episodios de Gramaticón y algún material de redes. Tengo un archivo con fuente, fondo y estructura ya montados, y cada semana sustituyo la imagen principal y el título. Cinco minutos y la portada queda lista con el mismo estilo. Antes la usaba para unidades didácticas y materiales de pago, pero ahora ese flujo me parece demasiado artesanal.",
+      "Hoy la utilizo principalmente para una cosa: mantener la coherencia visual. En concreto, para las portadas de los episodios de mi podcast Gramaticón y para algún material de redes. Lo hago de la forma más vaga y eficiente posible: tengo un archivo con todo montado, la fuente, el fondo y la estructura, y cada semana sustituyo la imagen principal y el título. Cinco minutos y la portada está lista, siempre con el mismo estilo. Para eso, Canva sigue siendo comodísima. Los clips del podcast ya no los toco aquí: esos los hago con OpusClip.",
     teacherUseCases: [
       "Mantener una línea visual estable en portadas de podcast o contenidos.",
       "Crear posts, carruseles o materiales rápidos para redes.",
@@ -191,7 +191,7 @@ export const tools: Tool[] = [
       "Reutilizar una estructura visual y cambiar solo imagen y título."
     ],
     honestVerdict:
-      "Canva sigue siendo una herramienta estupenda y versátil, pero su trono de imprescindible se ha tambaleado en mi caso por culpa de la IA. Hoy la uso para coherencia visual y poco más, y soy consciente de que sigo dentro porque tengo una cuenta EDU en condiciones muy buenas. ¿Merece la pena pagarla? Si creas contenido visual y materiales de forma habitual, sí. Si tu uso es ocasional, piénsatelo dos veces antes de pagar todo un año.",
+      "Canva sigue siendo una herramienta estupenda y versátil, pero su trono de imprescindible se ha tambaleado en mi caso por culpa de la IA. Hoy la uso para coherencia visual, mis portadas y poco más, y soy consciente de que solo sigo dentro porque tengo una cuenta en condiciones muy buenas. Si vives de crear contenido visual y materiales, sí, puede merecer la pena pagarla. Si tu uso es ocasional, piénsatelo dos veces antes del pago anual: analiza tus necesidades reales y mira si la IA y otras herramientas gratuitas no te cubren ya buena parte.",
     importantNotice:
       "Mi situación con el precio no es la normal: tengo acceso a una cuenta EDU compartida con condiciones muy buenas. Si tuviera que pagar Canva Pro solo para mi uso actual, probablemente me habría dado de baja.",
     metrics: [
@@ -206,7 +206,7 @@ export const tools: Tool[] = [
       { label: "Afiliación", value: "No" }
     ],
     priceNote:
-      "No uso Canva como un cliente normal de pago: tengo acceso EDU compartido y con condiciones muy favorables. Por eso mi recomendación sobre pagarla depende mucho del uso. Si haces materiales y diseños constantemente, puede compensar. Si solo haces portadas o piezas sueltas, revisa bien si la IA y herramientas específicas no te cubren ya lo importante.",
+      "Aquí va la respuesta a la pregunta del título, y es el clásico depende: depende del uso y del valor que te aporte. Si creas materiales con Canva de forma habitual, sí, merece la pena. Cuando yo hacía materiales didácticos, amortizaba la suscripción cada mes. Pero si solo la usas para algún diseño suelto, probablemente no te compense un pago anual, y menos ahora que la IA te resuelve buena parte de las imágenes. Mi situación, además, no es la normal: tengo acceso a una cuenta EDU compartida con condiciones muy buenas.",
     alternativeDetails: [
       {
         name: "ChatGPT",
