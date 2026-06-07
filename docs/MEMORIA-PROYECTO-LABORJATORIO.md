@@ -107,6 +107,7 @@ Archivos estrategicos actuales:
   - Texto: "Si quieres ver como las uso para ayudar a estudiantes y a otros profes, puedes comprobarlo aqui.", con "como las uso para ayudar a estudiantes y a otros profes" en negrita.
   - Boton: "Ir a Borjaprofe.com".
 - Se incorporo la imagen de Borja en el laboratorio como imagen real del CTA final de la Home y como icono/social provisional del sitio. La version optimizada para web vive en `public/images/laborjatorio-borja-avatar.jpg` y sustituye al avatar provisional anterior en los metadatos.
+- La pagina `/sobre` no debe mostrar por ahora imagen ni hueco reservado para foto de Borja. Si se incorpora mas adelante, debe hacerse como decision nueva, no como placeholder.
 - Se verifico en local que `/crear-materiales` muestra Canva y ChatGPT, `/mi-escritorio` muestra Logitech C920 y la Home enlaza a las rutas reales de necesidad.
 - Se verifico que `npm.cmd run typecheck` y `npm.cmd run build` pasan. `next build` mantiene un warning ya conocido de Turbopack sobre `next.config.ts` trazado desde la ruta del bot de Telegram.
 - Produccion se comprobo durante la sesion en `https://laborjatorio.com` tras los despliegues principales.

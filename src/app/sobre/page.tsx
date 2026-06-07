@@ -108,7 +108,6 @@ export default function AboutPage() {
             borjaprofe.com
           </a>
         </div>
-        <div className="about-page__photo" aria-label="Foto de Borja pendiente" />
       </div>
     </section>
   );
