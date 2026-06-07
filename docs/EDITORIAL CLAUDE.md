@@ -195,6 +195,37 @@ Interesa:
 
 ---
 
+## Ritmo y formato del artículo
+
+Las fichas deben leerse como artículos cohesionados, no como una sucesión de bloques sueltos.
+
+Puedes usar secciones, subtítulos, tablas, listas y destacados cuando ayuden a escanear o aclarar información, pero el cuerpo principal debe apoyarse más en párrafos desarrollados que en listas.
+
+Prioriza:
+
+* texto seguido
+* transiciones naturales entre ideas
+* argumentos conectados
+* explicación con contexto
+* progresión narrativa
+* secciones que funcionen como partes de un mismo artículo
+
+Evita:
+
+* convertir cada idea en una lista
+* abusar de viñetas
+* separar demasiado frases que pertenecen al mismo razonamiento
+* escribir fichas que parezcan un formulario rellenado
+* trocear el artículo hasta que pierda continuidad
+
+Las listas deben usarse solo cuando aporten claridad real: ventajas e inconvenientes, casos de uso concretos, precios, pasos, alternativas o resumen rápido. Incluso en esos casos, si una explicación gana fuerza en párrafo, escribe párrafo.
+
+La estructura SEO sigue siendo importante, pero no debe romper la lectura. Un H2 no obliga a escribir debajo una lista. Puede abrir una explicación más larga, con ejemplos, matices y una conclusión clara.
+
+La ficha debe mantener todos los criterios anteriores: experiencia real, voz de Borja, utilidad para profes, transparencia, límites, SEO y ausencia de lenguaje corporativo. El cambio es de ritmo: menos ficha troceada, más artículo con criterio.
+
+---
+
 ## Busca siempre alguno de estos elementos
 
 * una cifra concreta
