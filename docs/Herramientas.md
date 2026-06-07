@@ -97,7 +97,7 @@
 
 ## Canva
 
-* Estado: Imprescindible
+* Estado: Importante
 * Etiquetas: Diseño, Redes Sociales, Contenido
 
 ## Squoosh

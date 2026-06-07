@@ -125,48 +125,130 @@ export const tools: Tool[] = [
   {
     name: "Canva",
     slug: "canva",
-    tagline: "Diseño rápido para materiales, portadas, recursos visuales y contenido en redes.",
+    title: "Canva: ¿merece la pena pagarla de verdad?",
+    metaDescription:
+      "Llevo ocho años con Canva y mi relación con ella ha cambiado mucho con la IA. ¿Merece la pena pagarla? Te cuento para qué la uso hoy, sus límites y cuándo sí compensa.",
+    keywords: [
+      "Canva",
+      "merece la pena pagar Canva",
+      "Canva para profesores",
+      "crear materiales didácticos",
+      "plantillas para redes",
+      "diseño para profes"
+    ],
+    tagline:
+      "La navaja suiza de diseño que sigo usando para coherencia visual, aunque ya no es el imprescindible que era antes.",
     category: "Diseño e imagen",
-    subcategories: ["diseño", "materiales", "redes sociales"],
+    subcategories: ["diseño", "materiales", "redes sociales", "contenido", "portadas"],
     pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.canva.com/",
     hasAffiliate: false,
     myUseCase:
-      "Lo uso para montar portadas, recursos visuales, PDFs, miniaturas y materiales de clase sin meterme en programas de diseño complejos.",
+      "La uso sobre todo para mantener coherencia visual en portadas de Gramaticón y algún material de redes. Antes la usaba mucho más para materiales didácticos.",
     bestFor: [
-      "Profes que necesitan materiales visuales",
-      "Creadores de contenido educativo",
-      "Profes que quieren una herramienta sencilla"
+      "Profes que crean materiales visuales con frecuencia",
+      "Creadores que necesitan plantillas y coherencia de marca",
+      "Quien quiere resolver diseño sin saber diseño",
+      "Profes que amortizan una herramienta recurrente con uso real"
     ],
-    notFor: ["Diseñadores que necesitan control profesional absoluto"],
+    notFor: [
+      "Quien solo necesita diseños sueltos de vez en cuando",
+      "Quien ya resuelve imágenes con IA y no crea materiales visuales",
+      "Quien busca edición de vídeo seria",
+      "Quien quiere convertir documentos en materiales didácticos de forma fluida"
+    ],
     pros: [
-      "Muy fácil de usar",
-      "Tiene plantillas útiles",
-      "Permite crear rápido sin saber diseño"
+      "Permite mantener un estilo visual reutilizando plantillas.",
+      "No necesitas saber diseño para sacar algo decente.",
+      "Es muy versátil: portadas, posts, presentaciones, documentos y materiales.",
+      "Para flujos repetidos, como portadas semanales, ahorra mucho tiempo.",
+      "El catálogo y las plantillas siguen siendo útiles."
     ],
     cons: [
-      "Es fácil acabar con diseños parecidos a los de todo el mundo",
-      "Algunas funciones potentes están en el plan de pago"
+      "La IA generativa le ha quitado parte del valor que antes tenía para buscar imágenes.",
+      "El plan gratuito se queda limitado si quieres sacarle jugo de verdad.",
+      "Para crear materiales didácticos puede ser un flujo artesanal.",
+      "Su editor de vídeo no me compensa frente a herramientas específicas.",
+      "Si no tuviera acceso EDU en muy buenas condiciones, probablemente me habría dado de baja."
     ],
-    alternatives: ["Adobe Express", "Figma"],
+    alternatives: ["ChatGPT", "DaVinci Resolve", "OpusClip"],
     rating: 4,
     difficulty: "facil",
-    status: "uso-actual",
-    updatedAt: "2026-05-30",
+    status: "importante",
+    updatedAt: "2026-06-07",
+    publishedAt: "2026-06-07T11:00:00+02:00",
     intro:
-      "Canva es una buena puerta de entrada para crear materiales visuales sin convertir cada ficha en una peregrinación al monte del diseño.",
+      "Canva es una herramienta compleja de la que hablar. No porque sea difícil de usar —al revés—, sino porque mi relación con ella ha cambiado mucho. Llevo utilizándola por lo menos ocho años, y hasta hace poco te habría dicho sin pestañear que era imprescindible para un profe con negocio propio. Hoy ya no lo tengo tan claro.",
     whatItDoes:
-      "Permite crear presentaciones, fichas, publicaciones, portadas, miniaturas, PDFs y recursos visuales a partir de plantillas.",
+      "Canva es una herramienta de diseño online para crear casi cualquier cosa visual: portadas, posts para redes, presentaciones, materiales y documentos. Funciona con plantillas, recursos gráficos y un catálogo enorme de imágenes, de forma que no necesitas saber diseño para sacar algo decente.",
     howIUseIt:
-      "Lo usaría para sacar rápido una versión visualmente digna de una idea docente: una ficha, un carrusel, una portada o un recurso para una formación.",
+      "Hoy la uso principalmente para mantener coherencia visual. En concreto, para las portadas de episodios de Gramaticón y algún material de redes. Tengo un archivo con fuente, fondo y estructura ya montados, y cada semana sustituyo la imagen principal y el título. Cinco minutos y la portada queda lista con el mismo estilo. Antes la usaba para unidades didácticas y materiales de pago, pero ahora ese flujo me parece demasiado artesanal.",
     teacherUseCases: [
-      "Preparar una ficha descargable para clase.",
-      "Crear una portada para un recurso de pago.",
-      "Diseñar apoyos visuales para una explicación.",
-      "Hacer miniaturas o imágenes para contenidos educativos."
+      "Mantener una línea visual estable en portadas de podcast o contenidos.",
+      "Crear posts, carruseles o materiales rápidos para redes.",
+      "Preparar materiales didácticos si ya tienes una plantilla clara.",
+      "Diseñar portadas o recursos de venta sin abrir programas complejos.",
+      "Reutilizar una estructura visual y cambiar solo imagen y título."
     ],
     honestVerdict:
-      "Muy útil para profes. La trampa es dejar que la plantilla mande más que la actividad. Primero va la idea didáctica; luego ya le ponemos zapatos bonitos."
+      "Canva sigue siendo una herramienta estupenda y versátil, pero su trono de imprescindible se ha tambaleado en mi caso por culpa de la IA. Hoy la uso para coherencia visual y poco más, y soy consciente de que sigo dentro porque tengo una cuenta EDU en condiciones muy buenas. ¿Merece la pena pagarla? Si creas contenido visual y materiales de forma habitual, sí. Si tu uso es ocasional, piénsatelo dos veces antes de pagar todo un año.",
+    importantNotice:
+      "Mi situación con el precio no es la normal: tengo acceso a una cuenta EDU compartida con condiciones muy buenas. Si tuviera que pagar Canva Pro solo para mi uso actual, probablemente me habría dado de baja.",
+    metrics: [
+      { label: "Uso", value: "+8 años" },
+      { label: "Estado", value: "Importante" },
+      { label: "Coste real", value: "Cuenta EDU" }
+    ],
+    priceRows: [
+      { label: "Free", value: "Plan gratuito con límites" },
+      { label: "Pro", value: "Plan de pago recurrente" },
+      { label: "Education", value: "Condiciones especiales si cumples requisitos" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "No uso Canva como un cliente normal de pago: tengo acceso EDU compartido y con condiciones muy favorables. Por eso mi recomendación sobre pagarla depende mucho del uso. Si haces materiales y diseños constantemente, puede compensar. Si solo haces portadas o piezas sueltas, revisa bien si la IA y herramientas específicas no te cubren ya lo importante.",
+    alternativeDetails: [
+      {
+        name: "ChatGPT",
+        url: "/herramientas/chatgpt",
+        description:
+          "La IA generativa me ha sustituido buena parte del valor que antes tenía el catálogo de imágenes de Canva."
+      },
+      {
+        name: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores",
+        description:
+          "Para vídeo prefiero una herramienta específica, gratis y mucho más potente que el editor de Canva."
+      },
+      {
+        name: "OpusClip",
+        url: "/herramientas/opusclip",
+        description:
+          "Para clips del podcast ya no paso por Canva: uso OpusClip para convertir vídeos largos en piezas cortas."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Canva sigue mereciendo la pena para profesores?",
+        answer:
+          "Sí, si creas materiales visuales, portadas o contenido de forma frecuente. Si solo haces diseños sueltos, quizá no compense pagar una suscripción."
+      },
+      {
+        question: "¿Por qué ha bajado de imprescindible a importante?",
+        answer:
+          "Porque la IA generativa ha cubierto parte del uso que antes hacía en Canva, sobre todo la búsqueda de imágenes. La sigo usando, pero menos."
+      },
+      {
+        question: "¿Pagaría Canva si no tuviera cuenta EDU?",
+        answer:
+          "Con mi uso actual, probablemente no. La mantengo porque tengo unas condiciones muy buenas. Si volviera a crear materiales didácticos a menudo, la valoración cambiaría."
+      },
+      {
+        question: "¿La usaría para editar vídeo?",
+        answer:
+          "No como herramienta principal. Para vídeo uso DaVinci Resolve, y para clips cortos de podcast uso OpusClip."
+      }
+    ]
   },
   {
     name: "OpusClip",
