@@ -2556,6 +2556,107 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "f.lux",
+    slug: "f-lux",
+    title: "f.lux: la herramienta gratis que cuida tus ojos cuando trabajas de noche",
+    metaDescription:
+      "f.lux es una herramienta gratis que ajusta la luz de tu pantalla según la hora para reducir la fatiga visual. Te cuento cómo la uso, cuándo la apago y por qué deberías instalarla.",
+    keywords: [
+      "f.lux",
+      "reducir fatiga visual",
+      "luz de pantalla de noche",
+      "filtro de luz azul",
+      "cuidar la vista frente al ordenador",
+      "temperatura de color pantalla"
+    ],
+    tagline:
+      "Una herramienta gratuita y automática para que la pantalla canse menos cuando trabajas de noche.",
+    category: "Bienestar",
+    subcategories: ["bienestar", "ergonomía", "productividad", "pantalla"],
+    pricing: "gratis",
+    officialUrl: "https://justgetflux.com/",
+    hasAffiliate: false,
+    myUseCase:
+      "La uso sobre todo en horarios nocturnos y en invierno, cuando la luz natural cae pronto y paso muchas horas delante del ordenador.",
+    bestFor: [
+      "Profes que trabajan de noche frente al ordenador",
+      "Quien pasa muchas horas preparando clases o materiales",
+      "Personas que quieren reducir fatiga visual sin complicarse",
+      "Quien vive inviernos con poca luz natural"
+    ],
+    notFor: [
+      "Tareas donde el color de pantalla debe ser fiel",
+      "Ver series, películas o jugar si te molesta el tono cálido",
+      "Quien ya usa un sistema equivalente y lo tiene bien configurado"
+    ],
+    pros: [
+      "Es gratis.",
+      "Funciona de forma automática según la hora.",
+      "Es fácil de activar y desactivar desde la barra.",
+      "Ayuda a que la pantalla canse menos por la noche."
+    ],
+    cons: [
+      "El tono amarillento puede molestar para ocio o tareas visuales.",
+      "Es fácil apagarla justo cuando llevas muchas horas de pantalla.",
+      "No la uso tanto como debería."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "opcional",
+    updatedAt: "2026-06-07",
+    publishedAt: "2026-06-07T12:30:00+02:00",
+    intro:
+      "f.lux es una herramienta pequeña, muy chula y que, te confieso, no uso tanto como debería. Su misión es sencilla: reducir la fatiga visual que provoca la luz de la pantalla cuando trabajas, sobre todo de noche.",
+    whatItDoes:
+      "Ajusta automáticamente la temperatura de color de tu pantalla según la hora y la luz exterior. Según va anocheciendo, la pantalla se vuelve más cálida y amarillenta para que la luz azul no te espabile tanto ni te canse igual.",
+    howIUseIt:
+      "La uso sobre todo por la noche y entre semana, cuando trabajo hasta tarde o cuando en invierno la luz natural cae prontísimo. La apago cuando el tono amarillo me molesta: por ejemplo, para ver una serie, jugar o hacer algo donde el color importe.",
+    teacherUseCases: [
+      "Preparar clases por la noche con una pantalla menos agresiva.",
+      "Corregir, escribir o diseñar materiales en invierno cuando anochece pronto.",
+      "Reducir la fatiga visual en sesiones largas de ordenador.",
+      "Tener una ayuda automática para cuidar la vista sin pensar demasiado."
+    ],
+    honestVerdict:
+      "f.lux no es protagonista de nada, pero es de esas herramientas pequeñas que están ahí, en segundo plano, cuidándote sin pedir atención. Es gratis, se instala una vez y hace su trabajo. Mi único pero es contra mí mismo: debería tenerla activada más a menudo.",
+    importantNotice:
+      "No la considero imprescindible porque mi uso real es irregular, pero sí me parece una recomendación fácil: cuesta cero euros, ocupa poco espacio mental y puede ayudarte si trabajas muchas horas de noche.",
+    metrics: [
+      { label: "Precio", value: "Gratis" },
+      { label: "Estado", value: "Opcional" },
+      { label: "Uso", value: "Nocturno" }
+    ],
+    priceRows: [
+      { label: "Precio", value: "Gratis" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "No hay compra ni afiliación: la recomendación aquí es simplemente instalarla si trabajas mucho con pantalla por la noche y probar si el tono cálido te ayuda.",
+    faqs: [
+      {
+        question: "¿f.lux es gratis?",
+        answer:
+          "Sí. Para el uso normal que le doy, f.lux es gratis y no tiene sentido complicar más la decisión."
+      },
+      {
+        question: "¿Por qué la pongo como opcional?",
+        answer:
+          "Porque es útil, pero no forma parte central de mi flujo de trabajo. Además, reconozco que no la uso tanto como debería."
+      },
+      {
+        question: "¿Cuándo conviene apagarla?",
+        answer:
+          "Cuando el color importe: vídeo, series, juegos o cualquier tarea en la que el tono amarillento te moleste."
+      },
+      {
+        question: "¿Sirve para cuidar la vista?",
+        answer:
+          "Ayuda a que la pantalla resulte menos agresiva por la noche. No sustituye descansar, apartar la mirada y cuidar tus hábitos, pero es un buen primer paso."
+      }
+    ]
+  },
+  {
     name: "Notion",
     slug: "notion",
     tagline: "Un espacio flexible para organizar recursos, proyectos, ideas y bases de conocimiento.",

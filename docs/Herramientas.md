@@ -227,6 +227,11 @@
 * Estado: Importante
 * Etiquetas: Bienestar, Productividad
 
+## f.lux
+
+* Estado: Opcional
+* Etiquetas: Bienestar, Ergonomía, Productividad
+
 ---
 
 # PAGOS Y FINANZAS
@@ -326,4 +331,4 @@
 
 ## Total actual
 
-51 herramientas registradas.
+52 herramientas registradas.
