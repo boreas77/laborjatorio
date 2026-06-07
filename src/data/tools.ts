@@ -912,9 +912,9 @@ export const tools: Tool[] = [
     intro:
       "Es una herramienta estupenda para algo muy concreto: que tu audiencia te envíe audios. SpeakPipe permite que tus oyentes o estudiantes te dejen un mensaje de voz, y eso, bien usado, da mucho juego. Yo la usé en mi podcast ¡Palabras! para que estudiantes y profesores me mandaran palabras para episodios futuros.",
     whatItDoes:
-      "SpeakPipe es una herramienta que permite a tu audiencia enviarte mensajes de audio, normalmente pensada para podcasts. La gente graba desde una página y a ti te llega ese audio para hacer con él lo que quieras: usarlo en un episodio, responderlo o guardarlo. Es de uso muy específico, eso te lo digo ya: no es una navaja suiza, es una herramienta para una cosa. Pero esa cosa la hace muy bien.",
+      "SpeakPipe es una herramienta que permite a tu audiencia enviarte mensajes de audio, normalmente pensada para podcasts. Creas tu cuenta y te genera una página donde la gente puede grabar directamente, o si lo prefieres embebes esa interfaz en tu WordPress. Tu audiencia graba su audio, a ti te llega un correo con el mensaje y desde ahí decides qué hacer con él: usarlo en un episodio, responderlo o guardarlo. Es de uso muy específico, eso te lo digo ya: no es una navaja suiza, es una herramienta para una cosa. Pero esa cosa la hace muy bien.",
     howIUseIt:
-      "Cuando tenía el podcast de ¡Palabras! activo, usaba SpeakPipe cada semana: los oyentes me mandaban palabras en audio y yo las llevaba a episodios futuros. Una forma muy directa de que la comunidad formara parte del programa. Ahora mismo lo tengo parado, pero sí tengo a la vista un proyecto en el que voy a volver a utilizarlo. Para gestionar los episodios uso Spotify for Podcasters; SpeakPipe es solo la pieza de recoger las voces.",
+      "Cuando tenía el podcast de ¡Palabras! activo, usaba SpeakPipe cada semana: los oyentes me mandaban palabras en audio y yo las llevaba a episodios futuros. Una forma muy directa de que la comunidad formara parte del programa. Ahora mismo lo tengo parado, pero sí tengo a la vista un proyecto en el que voy a volver a utilizarlo. Para gestionar los episodios en sí uso Spotify for Podcasters; SpeakPipe es solo la pieza de recoger las voces.",
     teacherUseCases: [
       "Recibir preguntas de estudiantes en audio.",
       "Pedir participación oral para un podcast educativo.",
@@ -925,7 +925,7 @@ export const tools: Tool[] = [
     honestVerdict:
       "SpeakPipe no es una herramienta que vayas a usar para todo, pero para lo suyo —recibir audios de tu audiencia— es estupenda, sencilla y gratis. A mí me funcionó muy bien con ¡Palabras!, y pienso recuperarla para un proyecto futuro. Si tienes podcast o quieres una interacción más directa con tu audiencia mediante la voz, puede ser una gran idea. Si no, probablemente no la necesites. Tan claro como eso.",
     importantNotice:
-      "Está en pausa en mi flujo actual. La incluyo porque ya la he usado de verdad y porque tengo previsto recuperarla, pero no es una herramienta diaria: es una pieza muy concreta para recoger voces.",
+      "Está en pausa en mi flujo actual. La incluyo porque ya la he usado de verdad y porque tengo previsto recuperarla, pero no es una herramienta diaria: es una pieza muy concreta para recoger voces. Además, pedir el email de quien participa puede ayudarte a construir una lista de potenciales estudiantes.",
     metrics: [
       { label: "Audio gratis", value: "90 s" },
       { label: "Almacenamiento gratis", value: "100 MB" },
