@@ -24,6 +24,10 @@ const iconByCategory: Record<string, InventoryIconName> = {
   "Creación de materiales": "layers"
 };
 
+const iconBySlug: Record<string, InventoryIconName> = {
+  speakpipe: "mic"
+};
+
 export function InventoryFeed({
   countLabel = "en el inventario",
   initialQuery = "",
@@ -87,7 +91,7 @@ export function InventoryFeed({
         {filteredTools.map((tool) => (
           <article className="inventory-entry" key={tool.slug}>
             <div className="inventory-entry__icon">
-              <InventoryIcon name={iconByCategory[tool.category] ?? "tool"} />
+              <InventoryIcon name={iconBySlug[tool.slug] ?? iconByCategory[tool.category] ?? "tool"} />
             </div>
             <div className="inventory-entry__content">
               <h2>
@@ -125,6 +129,7 @@ type InventoryIconName =
   | "folder"
   | "heart"
   | "layers"
+  | "mic"
   | "palette"
   | "sparkles"
   | "tool"
@@ -187,6 +192,15 @@ function InventoryIcon({ name }: { name: InventoryIconName }) {
           <path d="m12 3 9 5-9 5-9-5Z" />
           <path d="m3 12 9 5 9-5" />
           <path d="m3 16 9 5 9-5" />
+        </svg>
+      );
+    case "mic":
+      return (
+        <svg {...commonProps}>
+          <rect height="11" rx="4" width="8" x="8" y="3" />
+          <path d="M5 11a7 7 0 0 0 14 0" />
+          <path d="M12 18v3" />
+          <path d="M9 21h6" />
         </svg>
       );
     case "palette":
