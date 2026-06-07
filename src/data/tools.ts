@@ -2607,21 +2607,21 @@ export const tools: Tool[] = [
     updatedAt: "2026-06-07",
     publishedAt: "2026-06-07T12:30:00+02:00",
     intro:
-      "f.lux es una herramienta pequeña, muy chula y que, te confieso, no uso tanto como debería. Su misión es sencilla: reducir la fatiga visual que provoca la luz de la pantalla cuando trabajas, sobre todo de noche.",
+      "f.lux es una herramientita pequeña, muy chula y que, te confieso, no uso tanto como debería. Su misión es sencilla: reducir la fatiga visual que te provoca la luz de la pantalla cuando trabajas hasta tarde. Profe, ya sabes que hay que cuidar la vista, y esta es de las formas más fáciles, y más baratas, porque es gratis, de empezar a hacerlo.",
     whatItDoes:
-      "Ajusta automáticamente la temperatura de color de tu pantalla según la hora y la luz exterior. Según va anocheciendo, la pantalla se vuelve más cálida y amarillenta para que la luz azul no te espabile tanto ni te canse igual.",
+      "Lo que hace f.lux es ajustar automáticamente la temperatura de color de tu pantalla según la luz que hay fuera y el momento del año. La idea va por el rollo de los ritmos circadianos: a los humanos nos sienta bien la luz cálida, la del fuego, la luz rojiza, cuando cae el día, mientras que la luz fría y azulada de las pantallas nos espabila justo cuando el cuerpo querría ir bajando el ritmo. Según va anocheciendo, la pantalla se vuelve más amarillenta. Es bueno para tus ojos, aunque no siempre lo es para la estética, y ahí está su única trampa.",
     howIUseIt:
-      "La uso sobre todo por la noche y entre semana, cuando trabajo hasta tarde o cuando en invierno la luz natural cae prontísimo. La apago cuando el tono amarillo me molesta: por ejemplo, para ver una serie, jugar o hacer algo donde el color importe.",
+      "La uso sobre todo en horarios nocturnos y entre semana, cuando trabajo hasta tarde o cuando, en invierno, la luz empieza a caer a media tarde. En esos ratos, esa luz cálida descansa bastante la vista. La tengo siempre ahí, como un iconito en la barra de herramientas del escritorio, lista para activarla y desactivarla cuando me apetece. ¿Y cuándo la apago? Justo cuando el tono amarillo me molesta para lo que estoy haciendo. Estar viendo Stranger Things en tonos sepias, pues como que no, y para jugar a videojuegos, lo mismo.",
     teacherUseCases: [
-      "Preparar clases por la noche con una pantalla menos agresiva.",
-      "Corregir, escribir o diseñar materiales en invierno cuando anochece pronto.",
+      "Trabajar por la noche con una pantalla menos agresiva.",
+      "Preparar clases, corregir o escribir cuando en invierno anochece pronto.",
       "Reducir la fatiga visual en sesiones largas de ordenador.",
-      "Tener una ayuda automática para cuidar la vista sin pensar demasiado."
+      "Instalar una ayuda automática para cuidar la vista sin tener que pensar en ello."
     ],
     honestVerdict:
-      "f.lux no es protagonista de nada, pero es de esas herramientas pequeñas que están ahí, en segundo plano, cuidándote sin pedir atención. Es gratis, se instala una vez y hace su trabajo. Mi único pero es contra mí mismo: debería tenerla activada más a menudo.",
+      "f.lux es una herramienta pequeña, con una función muy concreta, que la cumple bien y que encima es gratis. No es protagonista de nada, y precisamente por eso me parece importante que esté en el Laborjatorio: cuidar la vista también forma parte de sostener un proyecto a largo plazo. Mi único pero es contra mí mismo, que debería tenerla encendida más a menudo. La recomiendo justo por lo que cuesta, nada, y por lo poco que te pide a cambio.",
     importantNotice:
-      "No la considero imprescindible porque mi uso real es irregular, pero sí me parece una recomendación fácil: cuesta cero euros, ocupa poco espacio mental y puede ayudarte si trabajas muchas horas de noche.",
+      "Ese pequeño tira y afloja entre cuidar la vista y ver bien los colores es lo único que tienes que negociar con esta herramienta. Para ocio, diseño o vídeo puede apetecerte apagarla, aunque sea justo cuando llevas horas de pantalla acumuladas.",
     metrics: [
       { label: "Precio", value: "Gratis" },
       { label: "Estado", value: "Opcional" },
@@ -2632,27 +2632,27 @@ export const tools: Tool[] = [
       { label: "Afiliación", value: "No" }
     ],
     priceNote:
-      "No hay compra ni afiliación: la recomendación aquí es simplemente instalarla si trabajas mucho con pantalla por la noche y probar si el tono cálido te ayuda.",
+      "Gratis. Es de esas cosas que no entiendes por qué no tienes ya instaladas.",
     faqs: [
       {
-        question: "¿f.lux es gratis?",
+        question: "¿De verdad sirve para la vista?",
         answer:
-          "Sí. Para el uso normal que le doy, f.lux es gratis y no tiene sentido complicar más la decisión."
+          "La idea es reducir la luz azul de la pantalla cuando cae el día, que es la que más espabila. A mí me descansa los ojos cuando trabajo de noche. Pero bueno, es de esas cosas que pruebas y notas tú mismo si te sientan bien."
       },
       {
-        question: "¿Por qué la pongo como opcional?",
+        question: "¿Afecta a los colores si edito imágenes o vídeo?",
         answer:
-          "Porque es útil, pero no forma parte central de mi flujo de trabajo. Además, reconozco que no la uso tanto como debería."
+          "Sí. El tono amarillento altera cómo ves los colores, así que para cualquier tarea donde el color importe, como edición o diseño, o para ver series y jugar, conviene apagarla con el iconito."
       },
       {
-        question: "¿Cuándo conviene apagarla?",
+        question: "¿Es complicada de configurar?",
         answer:
-          "Cuando el color importe: vídeo, series, juegos o cualquier tarea en la que el tono amarillento te moleste."
+          "No. La instalas y funciona sola, ajustándose según la hora. Como mucho, tocas el iconito para encenderla o apagarla."
       },
       {
-        question: "¿Sirve para cuidar la vista?",
+        question: "¿Hace falta pagar algo?",
         answer:
-          "Ayuda a que la pantalla resulte menos agresiva por la noche. No sustituye descansar, apartar la mirada y cuidar tus hábitos, pero es un buen primer paso."
+          "No. Es gratis, sin versión de pago que necesites para lo básico."
       }
     ]
   },
