@@ -773,6 +773,114 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "SpeakPipe",
+    slug: "speakpipe",
+    title: "SpeakPipe: cómo recibo audios de mi audiencia (y consigo sus emails)",
+    metaDescription:
+      "Usé SpeakPipe en mi podcast para que la audiencia me enviara audios de hasta 90 segundos. Te cuento cómo funciona, sus límites y por qué con la versión gratis sobra.",
+    keywords: [
+      "SpeakPipe",
+      "recibir audios de la audiencia",
+      "mensajes de voz para podcast",
+      "interacción con la audiencia",
+      "recoger audios en WordPress",
+      "captar emails"
+    ],
+    tagline:
+      "La herramienta que usé para que la audiencia de mi podcast me enviara mensajes de voz sin montar un lío técnico.",
+    category: "Audio y vídeo",
+    subcategories: ["comunicación", "audio", "contenido", "podcast", "audiencia"],
+    pricing: "gratis-con-plan-pago",
+    officialUrl: "https://www.speakpipe.com/",
+    hasAffiliate: false,
+    myUseCase:
+      "La usé en ¡Palabras! para recibir audios de estudiantes y profesores, recoger ideas para episodios futuros y, de paso, pedir el email de quien participaba.",
+    bestFor: [
+      "Podcasters que quieren recibir mensajes de voz de su audiencia",
+      "Profes que quieren participación oral sin montar una infraestructura propia",
+      "Creadores que necesitan una página sencilla para recoger audios",
+      "Quien quiere captar emails junto con la participación de la audiencia"
+    ],
+    notFor: [
+      "Quien no tiene podcast ni dinámica de participación por voz",
+      "Recoger audios largos en el plan gratuito",
+      "Quien necesita personalización visual completa sin pagar",
+      "Quien busca una herramienta generalista de comunicación"
+    ],
+    pros: [
+      "El plan gratuito es suficiente para mensajes cortos.",
+      "Permite recibir audios desde una página propia o un widget.",
+      "Puedes pedir el email de quien envía el mensaje.",
+      "Es sencilla de configurar.",
+      "Encaja muy bien con podcasts y dinámicas de audiencia."
+    ],
+    cons: [
+      "El plan gratuito limita cada audio a 90 segundos.",
+      "El almacenamiento gratuito es de 100 MB.",
+      "La personalización del widget queda limitada si no pagas.",
+      "Es una herramienta muy específica: si no recibes audios, no la necesitas.",
+      "Ahora mismo la tengo en pausa."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    status: "opcional",
+    updatedAt: "2026-06-07",
+    publishedAt: "2026-06-07T10:00:00+02:00",
+    intro:
+      "SpeakPipe es una herramienta estupenda para algo muy concreto: que tu audiencia te envíe audios. Permite que tus oyentes o estudiantes te dejen un mensaje de voz, y eso, bien usado, da mucho juego. Yo la usé en mi podcast ¡Palabras! para que estudiantes y profesores me mandaran palabras para episodios futuros.",
+    whatItDoes:
+      "SpeakPipe permite recibir mensajes de voz desde una página propia o desde un widget incrustado en tu web. La gente graba desde el navegador y a ti te llega el audio para usarlo en un episodio, responderlo o guardarlo. No es una navaja suiza: hace una cosa muy concreta y la hace bien.",
+    howIUseIt:
+      "Cuando tenía el podcast de ¡Palabras! activo, usaba SpeakPipe cada semana. Los oyentes me mandaban palabras en audio y yo las llevaba a episodios futuros. Ahora mismo lo tengo parado, pero tengo a la vista un proyecto en el que quiero volver a utilizarlo. Para gestionar episodios uso Spotify for Podcasters; SpeakPipe es solo la pieza de recoger las voces.",
+    teacherUseCases: [
+      "Recibir preguntas de estudiantes en audio.",
+      "Pedir participación oral para un podcast educativo.",
+      "Recoger palabras, testimonios o historias de la audiencia.",
+      "Crear una página sencilla para mensajes de voz.",
+      "Pedir email junto con el audio para mantener el contacto."
+    ],
+    honestVerdict:
+      "SpeakPipe no es una herramienta que vayas a usar para todo, pero para lo suyo —recibir audios de tu audiencia— es estupenda, sencilla y gratis para un uso básico. A mí me funcionó muy bien con ¡Palabras!, y pienso recuperarla para un proyecto futuro. Si tienes podcast o quieres interacción por voz, tiene sentido; si no, probablemente no la necesitas.",
+    importantNotice:
+      "Está en pausa en mi flujo actual. La incluyo porque ya la he usado de verdad y porque tengo previsto recuperarla, pero no es una herramienta diaria.",
+    metrics: [
+      { label: "Audio gratis", value: "90 s" },
+      { label: "Almacenamiento gratis", value: "100 MB" },
+      { label: "Uso actual", value: "En pausa" }
+    ],
+    priceRows: [
+      { label: "Free", value: "Gratis, mensajes ilimitados, 90 s por audio, 100 MB" },
+      { label: "Gold", value: "12 $/mes si se paga anual; 15 $/mes mensual" },
+      { label: "Premium", value: "36 $/mes si se paga anual; 45 $/mes mensual" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "Para mi uso, el plan gratuito sobra: mensajes cortos, una página o widget y notificación por email. Si necesitas audios más largos, más almacenamiento, varios widgets o personalizar más el widget, entonces los planes de pago tienen sentido.",
+    faqs: [
+      {
+        question: "¿SpeakPipe sirve para podcasts?",
+        answer:
+          "Sí. De hecho, su caso más claro es recibir mensajes de voz de oyentes para usarlos en episodios, preguntas o dinámicas de participación."
+      },
+      {
+        question: "¿Cuánto permite grabar el plan gratis?",
+        answer:
+          "El plan gratuito permite grabaciones de hasta 90 segundos, con 100 MB de almacenamiento."
+      },
+      {
+        question: "¿Tengo que instalarlo en WordPress?",
+        answer:
+          "No necesariamente. Puedes usar una página propia de SpeakPipe. Si quieres integrarlo en tu web, también puedes incrustar un widget."
+      },
+      {
+        question: "¿Tiene afiliación?",
+        answer:
+          "No. La propia documentación de SpeakPipe indica que no tienen programa de afiliados en este momento."
+      }
+    ]
+  },
+  {
     name: "Metricool",
     slug: "metricool",
     title: "Metricool: cómo veo mis métricas y programo en redes sin entrar en ellas",

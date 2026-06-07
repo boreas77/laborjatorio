@@ -69,6 +69,12 @@
 * Estado: Imprescindible
 * Etiquetas: Comunicación, Formación
 
+## SpeakPipe
+
+* Estado: Opcional
+* Etiquetas: Comunicación, Audio, Contenido
+* Nota: Uso específico para recibir audios de audiencia; actualmente en pausa.
+
 ## DaVinci Resolve
 
 * Estado: Importante
@@ -320,4 +326,4 @@
 
 ## Total actual
 
-50 herramientas registradas.
+51 herramientas registradas.
