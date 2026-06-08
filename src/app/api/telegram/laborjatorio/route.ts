@@ -37,6 +37,19 @@ type SessionState = {
   categoryName?: string;
 };
 
+type PersistedSession = {
+  mode?: SessionMode;
+  notes?: unknown;
+  updatedAt?: unknown;
+  categoryName?: unknown;
+};
+
+type GitHubContentFile = {
+  content?: string;
+  encoding?: string;
+  sha?: string;
+};
+
 type BotCommand = "start" | "ampliar" | "crear-archivo" | "error" | "descartar" | "categoria" | null;
 
 const CONTEXT_FILES = [
@@ -55,6 +68,8 @@ const SESSION_TTL_MS = 1000 * 60 * 60 * 8;
 const MAX_SESSION_NOTES = 24;
 const MAX_SESSION_CHARS = 28000;
 const TELEGRAM_DOCUMENT_CAPTION_LIMIT = 1000;
+const SESSION_BRANCH = process.env.GITHUB_SESSION_BRANCH || "telegram-sessions";
+const SESSION_FOLDER = ".telegram-sessions";
 const sessionStore = new Map<string, SessionState>();
 
 export async function POST(request: NextRequest) {
@@ -82,7 +97,7 @@ export async function POST(request: NextRequest) {
     const command = detectCommand(rawNotes);
 
     if (command === "start") {
-      clearSession(message.chat.id);
+      await clearSession(message.chat.id);
       await sendTelegramMessage(
         message.chat.id,
         [
@@ -109,7 +124,7 @@ export async function POST(request: NextRequest) {
 
     if (command === "categoria") {
       const categoryName = extractCategoryName(rawNotes);
-      startCategorySession(message.chat.id, categoryName);
+      await startCategorySession(message.chat.id, categoryName);
 
       if (!categoryName) {
         await sendTelegramMessage(
@@ -133,8 +148,8 @@ export async function POST(request: NextRequest) {
     }
 
     if (command === "descartar") {
-      const currentMode = getExistingChatSession(message.chat.id)?.mode || "tool";
-      clearSession(message.chat.id);
+      const currentMode = (await getExistingChatSession(message.chat.id))?.mode || "tool";
+      await clearSession(message.chat.id);
       await sendTelegramMessage(
         message.chat.id,
         `Descartado. He borrado el contexto acumulado de esta ${getModeLabel(currentMode)}. Cuando quieras, empezamos otra.`
@@ -144,7 +159,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (command === "ampliar") {
-      const currentMode = getExistingChatSession(message.chat.id)?.mode || "tool";
+      const currentMode = (await getExistingChatSession(message.chat.id))?.mode || "tool";
       await sendTelegramMessage(
         message.chat.id,
         `Perfecto. Enviame la ampliacion en texto o audio y la sumare al contexto de esta ${getModeLabel(currentMode)}.`
@@ -154,7 +169,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (command === "error") {
-      const currentMode = getExistingChatSession(message.chat.id)?.mode || "tool";
+      const currentMode = (await getExistingChatSession(message.chat.id))?.mode || "tool";
       await sendTelegramMessage(
         message.chat.id,
         `Dime que esta mal o que dato debo corregir. Mandamelo como texto o audio y lo sumare al contexto de esta ${getModeLabel(currentMode)} antes de generar el archivo.`
@@ -164,12 +179,12 @@ export async function POST(request: NextRequest) {
     }
 
     if (command !== "crear-archivo") {
-      appendSessionNote(message.chat.id, rawNotes);
+      await appendSessionNote(message.chat.id, rawNotes);
     }
 
-    const session = getExistingChatSession(message.chat.id);
+    const session = await getExistingChatSession(message.chat.id);
     const mode = session?.mode || "tool";
-    const accumulatedNotes = getSessionText(message.chat.id);
+    const accumulatedNotes = getSessionTextFromSession(session);
 
     if (!accumulatedNotes) {
       await sendTelegramMessage(
@@ -358,8 +373,8 @@ function normalizeCommandText(text: string) {
     .toUpperCase();
 }
 
-function appendSessionNote(chatId: number, note: string) {
-  const session = getChatSession(chatId);
+async function appendSessionNote(chatId: number, note: string) {
+  const session = await getChatSession(chatId);
   const trimmedNote = note.trim();
 
   if (session.mode === "category" && !session.categoryName) {
@@ -376,11 +391,11 @@ function appendSessionNote(chatId: number, note: string) {
   while (session.notes.join("\n\n").length > MAX_SESSION_CHARS && session.notes.length > 1) {
     session.notes.shift();
   }
+
+  await saveSession(chatId, session);
 }
 
-function getSessionText(chatId: number) {
-  const session = getExistingChatSession(chatId);
-
+function getSessionTextFromSession(session?: SessionState | null) {
   if (!session || session.notes.length === 0) {
     return "";
   }
@@ -415,7 +430,7 @@ function formatSavedNotePreview(note: string) {
   return `Registrado: ${preview}`;
 }
 
-function getChatSession(chatId: number) {
+async function getChatSession(chatId: number) {
   cleanupExpiredSessions();
 
   const key = String(chatId);
@@ -425,21 +440,42 @@ function getChatSession(chatId: number) {
     return currentSession;
   }
 
+  const persistedSession = await loadPersistedSession(chatId);
+
+  if (persistedSession) {
+    sessionStore.set(key, persistedSession);
+    return persistedSession;
+  }
+
   const session: SessionState = { mode: "tool", notes: [], updatedAt: Date.now() };
   sessionStore.set(key, session);
   return session;
 }
 
-function getExistingChatSession(chatId: number) {
+async function getExistingChatSession(chatId: number) {
   cleanupExpiredSessions();
-  return sessionStore.get(String(chatId));
+  const key = String(chatId);
+  const currentSession = sessionStore.get(key);
+
+  if (currentSession) {
+    return currentSession;
+  }
+
+  const persistedSession = await loadPersistedSession(chatId);
+
+  if (persistedSession) {
+    sessionStore.set(key, persistedSession);
+  }
+
+  return persistedSession;
 }
 
-function clearSession(chatId: number) {
+async function clearSession(chatId: number) {
   sessionStore.delete(String(chatId));
+  await deletePersistedSession(chatId);
 }
 
-function startCategorySession(chatId: number, categoryName?: string) {
+async function startCategorySession(chatId: number, categoryName?: string) {
   const session: SessionState = {
     mode: "category",
     notes: [],
@@ -452,10 +488,190 @@ function startCategorySession(chatId: number, categoryName?: string) {
   }
 
   sessionStore.set(String(chatId), session);
+  await saveSession(chatId, session);
 }
 
 function getModeLabel(mode: SessionMode) {
   return mode === "category" ? "categoria" : "herramienta";
+}
+
+async function loadPersistedSession(chatId: number) {
+  if (!hasGitHubSessionStorage()) {
+    return null;
+  }
+
+  const contentFile = await getGitHubSessionFile(chatId);
+
+  if (!contentFile?.content) {
+    return null;
+  }
+
+  const rawJson = Buffer.from(contentFile.content.replace(/\s/g, ""), "base64").toString("utf8");
+  const parsedSession = JSON.parse(rawJson) as PersistedSession;
+  return normalizePersistedSession(parsedSession);
+}
+
+async function saveSession(chatId: number, session: SessionState) {
+  sessionStore.set(String(chatId), session);
+
+  if (!hasGitHubSessionStorage()) {
+    return;
+  }
+
+  await ensureSessionBranch();
+  const currentFile = await getGitHubSessionFile(chatId);
+  const content = Buffer.from(JSON.stringify(session, null, 2), "utf8").toString("base64");
+  const body: { message: string; content: string; branch: string; sha?: string } = {
+    message: `Actualiza sesion Telegram ${chatId}`,
+    content,
+    branch: SESSION_BRANCH
+  };
+
+  if (currentFile?.sha) {
+    body.sha = currentFile.sha;
+  }
+
+  const response = await fetch(getGitHubSessionUrl(chatId), {
+    method: "PUT",
+    headers: getGitHubHeaders(),
+    body: JSON.stringify(body)
+  });
+
+  if (!response.ok) {
+    throw new Error(`GitHub session save failed: ${await response.text()}`);
+  }
+}
+
+async function deletePersistedSession(chatId: number) {
+  if (!hasGitHubSessionStorage()) {
+    return;
+  }
+
+  const currentFile = await getGitHubSessionFile(chatId);
+
+  if (!currentFile?.sha) {
+    return;
+  }
+
+  const response = await fetch(getGitHubSessionUrl(chatId), {
+    method: "DELETE",
+    headers: getGitHubHeaders(),
+    body: JSON.stringify({
+      message: `Borra sesion Telegram ${chatId}`,
+      sha: currentFile.sha,
+      branch: SESSION_BRANCH
+    })
+  });
+
+  if (!response.ok && response.status !== 404) {
+    throw new Error(`GitHub session delete failed: ${await response.text()}`);
+  }
+}
+
+async function getGitHubSessionFile(chatId: number) {
+  const response = await fetch(`${getGitHubSessionUrl(chatId)}?ref=${encodeURIComponent(SESSION_BRANCH)}`, {
+    headers: getGitHubHeaders()
+  });
+
+  if (response.status === 404) {
+    return null;
+  }
+
+  if (!response.ok) {
+    throw new Error(`GitHub session read failed: ${await response.text()}`);
+  }
+
+  const payload = (await response.json()) as GitHubContentFile;
+  return payload;
+}
+
+async function ensureSessionBranch() {
+  if (await gitHubBranchExists(SESSION_BRANCH)) {
+    return;
+  }
+
+  const baseBranch = process.env.GITHUB_BRANCH || "main";
+  const baseRefResponse = await fetch(
+    `https://api.github.com/repos/${getGitHubRepo()}/git/ref/heads/${encodeURIComponent(baseBranch)}`,
+    { headers: getGitHubHeaders() }
+  );
+
+  if (!baseRefResponse.ok) {
+    throw new Error(`GitHub base branch read failed: ${await baseRefResponse.text()}`);
+  }
+
+  const baseRef = (await baseRefResponse.json()) as { object?: { sha?: string } };
+  const baseSha = baseRef.object?.sha;
+
+  if (!baseSha) {
+    throw new Error("GitHub base branch did not return a SHA");
+  }
+
+  const createRefResponse = await fetch(`https://api.github.com/repos/${getGitHubRepo()}/git/refs`, {
+    method: "POST",
+    headers: getGitHubHeaders(),
+    body: JSON.stringify({
+      ref: `refs/heads/${SESSION_BRANCH}`,
+      sha: baseSha
+    })
+  });
+
+  if (!createRefResponse.ok && createRefResponse.status !== 422) {
+    throw new Error(`GitHub session branch create failed: ${await createRefResponse.text()}`);
+  }
+}
+
+async function gitHubBranchExists(branch: string) {
+  const response = await fetch(
+    `https://api.github.com/repos/${getGitHubRepo()}/git/ref/heads/${encodeURIComponent(branch)}`,
+    { headers: getGitHubHeaders() }
+  );
+
+  if (response.status === 404) {
+    return false;
+  }
+
+  if (!response.ok) {
+    throw new Error(`GitHub branch check failed: ${await response.text()}`);
+  }
+
+  return true;
+}
+
+function normalizePersistedSession(session: PersistedSession): SessionState | null {
+  if (!Array.isArray(session.notes)) {
+    return null;
+  }
+
+  const notes = session.notes.filter((note): note is string => typeof note === "string");
+
+  return {
+    mode: session.mode === "category" ? "category" : "tool",
+    notes,
+    updatedAt: typeof session.updatedAt === "number" ? session.updatedAt : Date.now(),
+    categoryName: typeof session.categoryName === "string" ? session.categoryName : undefined
+  };
+}
+
+function hasGitHubSessionStorage() {
+  return Boolean(process.env.GITHUB_TOKEN && process.env.GITHUB_REPO);
+}
+
+function getGitHubRepo() {
+  return getRequiredEnv("GITHUB_REPO");
+}
+
+function getGitHubSessionUrl(chatId: number) {
+  return `https://api.github.com/repos/${getGitHubRepo()}/contents/${SESSION_FOLDER}/${encodeURIComponent(String(chatId))}.json`;
+}
+
+function getGitHubHeaders() {
+  return {
+    Authorization: `Bearer ${getRequiredEnv("GITHUB_TOKEN")}`,
+    Accept: "application/vnd.github+json",
+    "Content-Type": "application/json",
+    "X-GitHub-Api-Version": "2022-11-28"
+  };
 }
 
 function cleanupExpiredSessions() {

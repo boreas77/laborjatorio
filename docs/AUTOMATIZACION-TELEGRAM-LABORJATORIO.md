@@ -14,6 +14,7 @@ El MVP esta disenado en modo solo borrador:
 - Recibe mensajes de Telegram.
 - Transcribe audios.
 - Acumula las ampliaciones de una misma conversacion.
+- Persiste la memoria de conversacion en GitHub cuando las variables de GitHub estan configuradas.
 - Lee el contexto editorial del repositorio.
 - Genera un paquete editorial Markdown revisable para herramienta o categoria.
 - Separa hechos confirmados, respuestas de Borja, dudas resueltas, datos utiles y advertencias.
@@ -69,7 +70,26 @@ Comandos actuales:
 - `DESCARTAR`: borra el contexto acumulado y permite empezar otra herramienta.
 - `/start`: reinicia la conversacion y borra el contexto acumulado.
 
-Limitacion importante: esta memoria es temporal y vive dentro de la funcion de Vercel. Para el MVP es suficiente si la conversacion se hace seguida. Si Vercel reinicia la funcion o pasa demasiado tiempo, el bot puede perder el contexto acumulado. Si ocurre, basta con reenviar un resumen de la herramienta. La version robusta futura deberia guardar esta memoria en un almacenamiento persistente como Vercel KV, Redis, una base de datos pequena o GitHub.
+La memoria se guarda en dos capas:
+
+1. Memoria rapida dentro de la funcion de Vercel.
+2. Memoria persistente en GitHub, si existen `GITHUB_TOKEN` y `GITHUB_REPO`.
+
+La memoria persistente evita que el bot pierda tus audios y ampliaciones cuando Vercel cambia de instancia entre mensajes.
+
+Por defecto, las sesiones se guardan en una rama separada:
+
+```text
+telegram-sessions
+```
+
+Se puede cambiar con:
+
+```text
+GITHUB_SESSION_BRANCH
+```
+
+Esta rama se usa como almacen tecnico de sesiones, no como contenido editorial publicable.
 
 Proteccion importante: aunque Borja pida `CREAR ARCHIVO`, el bot no debe adjuntar un Markdown si solo tiene contexto debil, por ejemplo solo el nombre de una categoria o una nota demasiado breve. En ese caso debe pedir mas informacion antes de generar el archivo para evitar que Claude rellene huecos.
 
@@ -162,12 +182,16 @@ Opcionales:
   - Valor por defecto: `gpt-4.1-mini`
 - `OPENAI_TRANSCRIPTION_MODEL`
   - Valor por defecto: `gpt-4o-mini-transcribe`
+- `GITHUB_SESSION_BRANCH`
+  - Valor por defecto: `telegram-sessions`
 
 Reservadas para fase 2:
 
 - `GITHUB_TOKEN`
 - `GITHUB_REPO`
 - `GITHUB_BRANCH`
+
+Nota: aunque `GITHUB_TOKEN`, `GITHUB_REPO` y `GITHUB_BRANCH` nacieron como variables de fase 2, el bot ya usa `GITHUB_TOKEN` y `GITHUB_REPO` para guardar memoria persistente de conversaciones.
 
 ## Como conseguir las variables
 
@@ -303,6 +327,7 @@ Hace:
 - genera paquetes para paginas de categoria.
 - transcribe audios.
 - acumula ampliaciones de una misma herramienta o categoria durante la conversacion.
+- recupera la conversacion aunque Vercel cambie de instancia, siempre que la memoria persistente de GitHub este configurada.
 - hace preguntas antes de generar el archivo final.
 - confirma con una vista previa breve que la nota enviada ha quedado registrada.
 - bloquea archivos demasiado vacios o pobres antes de enviarlos a Claude.
