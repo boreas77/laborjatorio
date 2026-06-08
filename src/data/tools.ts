@@ -2754,13 +2754,13 @@ export const tools: Tool[] = [
     rating: 4,
     difficulty: "facil",
     status: "importante",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-09",
     intro:
-      "En el Laborjatorio no todo son micrófonos y plugins. Parte de hacer bien este trabajo es cuidar la cabeza del que lo hace, y para eso uso Petit BamBou, una app de meditación que tengo metida en la rutina. No te va a editar un vídeo ni a montarte una web, pero te ayuda a llegar a la clase con la cabeza en su sitio.",
+      "En el Laborjatorio no todo son micrófonos y plugins. Parte de hacer bien este trabajo es cuidar la cabeza del que lo hace, y para eso uso Petit BamBou, una app de meditación que tengo metida en la rutina. No te va a editar un vídeo ni a montarte una web, pero te ayuda a llegar a la clase con la cabeza en su sitio. No te voy a vender milagros: te cuento simplemente qué uso yo y por qué me aporta calma.",
     whatItDoes:
       "Petit BamBou es una aplicación de meditación, respiración y relajación. Cada día propone una meditación diaria, y además tiene un catálogo amplio con programas sobre sueño, estrés, relaciones familiares, autohipnosis, respiración y otros temas. Puedes seguir la propuesta del día o entrar al catálogo cuando quieras trabajar algo concreto.",
     howIUseIt:
-      "Mi uso real es sencillo: hago sobre todo la meditación diaria. De vez en cuando entro al catálogo, especialmente a programas de temas como relaciones familiares. Y últimamente me ha enganchado la meditación libre: salgo a pasear con Duna, pongo una sesión de unos minutos con sonidos rítmicos y voy respirando al compás. Meditar no tiene por qué ser sentarse quieto en una habitación; también puede ser caminar y respirar.",
+      "Mi uso real es sencillo: sobre todo tiro de la meditación diaria. Generalmente voy con la del día y punto, que es lo que mantengo como hábito sin tener que decidir nada. De vez en cuando entro al catálogo, especialmente a programas de temas concretos como relaciones familiares. Pero mi descubrimiento reciente es la meditación libre: salgo a pasear con Duna, pongo un plan de unos ocho minutos con sonido rítmico y voy respirando al compás. Meditar no tiene por qué ser sentarse quieto en una habitación; también puede ser caminar y respirar.",
     teacherUseCases: [
       "Crear una rutina breve para desconectar entre clases.",
       "Bajar revoluciones después de muchas horas de pantalla.",
@@ -2769,23 +2769,23 @@ export const tools: Tool[] = [
       "Cuidar la cabeza como parte del sistema de trabajo."
     ],
     honestVerdict:
-      "Petit BamBou no es una herramienta de trabajo al uso, y por eso me parece importante que esté aquí: cuidar tu cabeza también forma parte de sostener un proyecto a largo plazo. A mí me da calma, la tengo integrada en el día a día y la combinación de meditar paseando con Duna me ha conquistado. No esperes magia: espera una herramienta sencilla que, si la usas, te sienta bien.",
+      "Petit BamBou no es una herramienta de trabajo al uso, y por eso me parece importante que esté aquí: cuidar tu cabeza también forma parte de sostener un proyecto a largo plazo. A mí me da calma, la tengo integrada en el día a día y la combinación de meditar paseando con Duna me ha conquistado. Como apoyo para parar y respirar, sí la recomiendo. No esperes magia: espera una herramienta sencilla que, si la usas, te sienta bien.",
     importantNotice:
       "No es una herramienta terapéutica ni una solución mágica. Si estás mal de verdad, busca ayuda profesional. Petit BamBou me sirve como apoyo cotidiano para parar, respirar y volver con algo más de calma.",
     metrics: [
       { label: "Uso", value: "Diario" },
-      { label: "App Store España", value: "59,90 €/año" },
+      { label: "Web oficial", value: "64,99 $/año" },
       { label: "Gratis", value: "Sin límite" }
     ],
     priceRows: [
       { label: "Versión gratuita", value: "Contenido y herramientas limitadas sin límite de tiempo" },
-      { label: "Plan anual", value: "59,90 €/año en App Store España" },
+      { label: "Plan anual web", value: "64,99 $/año, verificado el 9 de junio de 2026" },
       { label: "Mi referencia", value: "Alrededor de 50 €/año según mi experiencia/oferta" },
-      { label: "Acceso de por vida", value: "Existe en la web; precio variable según mercado" },
+      { label: "Acceso de por vida", value: "259,99 $ en la web internacional" },
       { label: "Afiliación", value: "No" }
     ],
     priceNote:
-      "Yo tengo como referencia unos 50 euros al año, probablemente por oferta o condiciones de entrada. En la App Store española figura una suscripción anual de 59,90 euros, y la web también ofrece versión gratuita y opciones de pago. Confirma siempre el precio actual antes de suscribirte.",
+      "Yo tengo como referencia unos 50 euros al año, probablemente por oferta o condiciones de entrada. La web oficial muestra plan anual y acceso de por vida, y confirma una versión gratuita sin límite de tiempo. Confirma siempre el precio actual antes de suscribirte, porque puede variar según plataforma, país o promoción.",
     faqs: [
       {
         question: "¿Petit BamBou tiene versión gratis?",
@@ -2793,19 +2793,19 @@ export const tools: Tool[] = [
           "Sí. La web oficial indica que ofrece una versión gratuita sin límite de tiempo, con una selección de contenidos y herramientas."
       },
       {
-        question: "¿La uso todos los días?",
+        question: "¿Tengo que sentarme en silencio sí o sí?",
         answer:
-          "Intento usar sobre todo la meditación diaria. No hago exploración profunda del catálogo cada día; mi hábito principal es entrar, meditar y seguir."
+          "No necesariamente. La modalidad de meditación libre la puedes hacer en movimiento: yo medito paseando con Duna, respirando al ritmo de los sonidos."
       },
       {
-        question: "¿Sirve para meditar caminando?",
+        question: "¿Cuánto dura una sesión?",
         answer:
-          "Para mí sí. La meditación libre con sonidos de respiración me funciona muy bien mientras paseo a Duna."
+          "Pueden ser pocos minutos. Yo tiro de planes de unos ocho minutos, que se integran sin esfuerzo en un paseo o en un hueco del día."
       },
       {
-        question: "¿Recomiendo pagar el plan anual o el vitalicio?",
+        question: "¿Está en español?",
         answer:
-          "Si todavía estás probando el hábito, iría con el anual o con la versión gratuita. El acceso de por vida solo tiene sentido si sabes que vas a usarla durante años."
+          "Sí, la app está disponible en español, así que no tienes barrera de idioma para seguir las meditaciones."
       }
     ]
   },
