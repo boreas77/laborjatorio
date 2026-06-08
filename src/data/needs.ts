@@ -83,7 +83,7 @@ export const needCategories: NeedCategory[] = [
     slug: "vender-y-cobrar",
     description: "Cursos, pagos, correos, productos y ventas sin montar un circo técnico.",
     icon: "card",
-    toolSlugs: ["mailpoet", "metricool", "canva", "ilovepdf", "lastpass"]
+    toolSlugs: []
   },
   {
     title: "Ahorrar tiempo",

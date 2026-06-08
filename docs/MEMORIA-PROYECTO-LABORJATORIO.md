@@ -57,6 +57,12 @@ Archivos estrategicos actuales:
 
 ## Cambios recientes
 
+### 2026-06-08
+
+- Se vacio temporalmente la pagina de necesidad `/vender-y-cobrar`: las herramientas que aparecian antes no encajaban con esa necesidad.
+- La categoria `Vender y cobrar` debe permanecer sin fichas hasta incorporar herramientas especificas de venta/cobro.
+- Fichas previstas para esa necesidad: Stripe, PayPal, WooCommerce y una ficha sobre la importancia de contar con una gestoria.
+
 ### 2026-06-06
 
 - Se reorganizo la arquitectura publica de LABORJATORIO alrededor de necesidades del usuario, no de categorias tecnicas.

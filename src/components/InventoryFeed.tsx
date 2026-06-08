@@ -7,6 +7,7 @@ import { labelFromStatus } from "@/lib/format";
 
 type InventoryFeedProps = {
   countLabel?: string;
+  emptyLabel?: string;
   initialQuery?: string;
   searchLabel?: string;
   tools: Tool[];
@@ -30,6 +31,7 @@ const iconBySlug: Record<string, InventoryIconName> = {
 
 export function InventoryFeed({
   countLabel = "en el inventario",
+  emptyLabel = "No hay herramientas con esa búsqueda todavía.",
   initialQuery = "",
   searchLabel = "Buscar en el inventario",
   tools
@@ -112,10 +114,12 @@ export function InventoryFeed({
 
       {filteredTools.length === 0 ? (
         <div className="empty-state">
-          <p>No hay herramientas con esa búsqueda todavía.</p>
-          <button type="button" onClick={() => setQuery("")}>
-            Limpiar búsqueda
-          </button>
+          <p>{query ? "No hay herramientas con esa búsqueda todavía." : emptyLabel}</p>
+          {query ? (
+            <button type="button" onClick={() => setQuery("")}>
+              Limpiar búsqueda
+            </button>
+          ) : null}
         </div>
       ) : null}
     </section>

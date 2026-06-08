@@ -54,6 +54,7 @@ export default async function NeedPage({ params }: NeedPageProps) {
       <InventoryFeed
         tools={relatedTools}
         countLabel="en esta categoría"
+        emptyLabel="Todavía no hay herramientas en esta categoría."
         searchLabel="Buscar dentro de esta categoría"
       />
     </section>
