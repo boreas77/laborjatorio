@@ -20,6 +20,7 @@ El MVP esta disenado en modo solo borrador:
 - Hace maximo 3 preguntas para extraer experiencia real.
 - Devuelve primero preguntas y opciones por Telegram.
 - Solo genera el archivo Markdown descargable cuando Borja lo pide.
+- Bloquea la generacion del archivo si el contexto acumulado es insuficiente.
 - No modifica archivos.
 - No hace commit.
 - No hace push.
@@ -69,6 +70,8 @@ Comandos actuales:
 - `/start`: reinicia la conversacion y borra el contexto acumulado.
 
 Limitacion importante: esta memoria es temporal y vive dentro de la funcion de Vercel. Para el MVP es suficiente si la conversacion se hace seguida. Si Vercel reinicia la funcion o pasa demasiado tiempo, el bot puede perder el contexto acumulado. Si ocurre, basta con reenviar un resumen de la herramienta. La version robusta futura deberia guardar esta memoria en un almacenamiento persistente como Vercel KV, Redis, una base de datos pequena o GitHub.
+
+Proteccion importante: aunque Borja pida `CREAR ARCHIVO`, el bot no debe adjuntar un Markdown si solo tiene contexto debil, por ejemplo solo el nombre de una categoria o una nota demasiado breve. En ese caso debe pedir mas informacion antes de generar el archivo para evitar que Claude rellene huecos.
 
 ## Flujo de categorias
 
@@ -301,6 +304,8 @@ Hace:
 - transcribe audios.
 - acumula ampliaciones de una misma herramienta o categoria durante la conversacion.
 - hace preguntas antes de generar el archivo final.
+- confirma con una vista previa breve que la nota enviada ha quedado registrada.
+- bloquea archivos demasiado vacios o pobres antes de enviarlos a Claude.
 - envia el paquete como archivo Markdown descargable para subirlo a Claude solo cuando Borja lo pide.
 - usa el contexto editorial del proyecto.
 - limita el bot a tu `TELEGRAM_CHAT_ID`.

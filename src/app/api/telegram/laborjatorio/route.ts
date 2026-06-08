@@ -180,10 +180,30 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
+    if (command === "crear-archivo" && session && !hasEnoughContentForFile(session)) {
+      await sendTelegramMessage(
+        message.chat.id,
+        [
+          "No voy a crear el archivo todavia.",
+          "",
+          `Ahora mismo solo tengo ${getMeaningfulNotes(session).length} nota(s) util(es) para esta ${getModeLabel(mode)}.`,
+          "Si genero el Markdown asi, Claude tendria que rellenar huecos y eso es justo lo que queremos evitar.",
+          "",
+          "Enviame una nota o audio con experiencia real, ejemplos, errores, criterio o herramientas relacionadas. Despues escribe CREAR ARCHIVO."
+        ].join("\n")
+      );
+
+      return NextResponse.json({ ok: true });
+    }
+
     const statusMessage =
       command === "crear-archivo"
         ? "Recibido. Estoy creando el archivo Markdown con todo lo acumulado."
-        : "Recibido. He guardado esta nota y estoy preparando preguntas para afinar el paquete.";
+        : [
+            "Recibido. He guardado esta nota y estoy preparando preguntas para afinar el paquete.",
+            "",
+            formatSavedNotePreview(rawNotes)
+          ].join("\n");
 
     await sendTelegramMessage(message.chat.id, statusMessage);
 
@@ -368,6 +388,31 @@ function getSessionText(chatId: number) {
   return session.notes
     .map((note, index) => `Nota ${index + 1} de Borja:\n${note}`)
     .join("\n\n---\n\n");
+}
+
+function getMeaningfulNotes(session: SessionState) {
+  return session.notes.filter((note) => {
+    const trimmedNote = note.trim();
+    return trimmedNote.length > 0 && !trimmedNote.toLowerCase().startsWith("categoria indicada por borja:");
+  });
+}
+
+function hasEnoughContentForFile(session: SessionState) {
+  const meaningfulNotes = getMeaningfulNotes(session);
+  const totalChars = meaningfulNotes.join("\n\n").trim().length;
+
+  if (session.mode === "category") {
+    return meaningfulNotes.length >= 1 && totalChars >= 180;
+  }
+
+  return meaningfulNotes.length >= 1 && totalChars >= 120;
+}
+
+function formatSavedNotePreview(note: string) {
+  const compactNote = note.replace(/\s+/g, " ").trim();
+  const preview = compactNote.length > 220 ? `${compactNote.slice(0, 220)}...` : compactNote;
+
+  return `Registrado: ${preview}`;
 }
 
 function getChatSession(chatId: number) {
