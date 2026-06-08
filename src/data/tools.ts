@@ -1213,6 +1213,132 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "WordPress",
+    slug: "wordpress",
+    title: "WordPress.org: por qué todo profe debería tener su propia casa en internet",
+    metaDescription:
+      "Llevo casi diez años con mi web en WordPress.org, mi casa en internet. Te cuento qué es, en qué se diferencia de .com, sus límites y por qué hoy también miraría otras opciones.",
+    keywords: [
+      "WordPress.org",
+      "WordPress para profesores",
+      "crear tu propia web",
+      "WordPress.org vs WordPress.com",
+      "tu propia web frente a redes sociales",
+      "montar una web de negocio"
+    ],
+    tagline:
+      "La base de mi casa en internet durante casi diez años: abierta, flexible y tuya.",
+    category: "Web",
+    subcategories: ["web", "ventas", "documentación", "negocio", "cms", "wordpress"],
+    pricing: "gratis",
+    officialUrl: "https://wordpress.org",
+    hasAffiliate: false,
+    myUseCase:
+      "Es la base sobre la que he construido mi web principal durante casi diez años: mi casa propia en internet, fuera de los algoritmos de las redes.",
+    bestFor: [
+      "Profes que quieren una web propia a largo plazo",
+      "Negocios educativos que necesitan vender, captar leads o publicar contenido",
+      "Quien quiere controlar su audiencia fuera de redes sociales",
+      "Proyectos que pueden crecer con plugins y funcionalidades nuevas"
+    ],
+    notFor: [
+      "Quien quiere una página ultrarrápida sin aprender nada",
+      "Quien no quiere contratar dominio ni hosting",
+      "Quien prefiere una solución cerrada y muy guiada",
+      "Quien quiere experimentar con webs generadas con IA sin tocar WordPress"
+    ],
+    pros: [
+      "Es gratuito y de código abierto.",
+      "Te permite construir una web muy flexible, módulo a módulo.",
+      "No dependes solo de redes sociales ni de algoritmos ajenos.",
+      "Tiene un ecosistema enorme de plugins y documentación.",
+      "Con un buen hosting, instalarlo cada vez es más sencillo."
+    ],
+    cons: [
+      "Tiene curva de aprendizaje.",
+      "Necesitas dominio, hosting y cierto mantenimiento.",
+      "El ecosistema de plugins puede complicarse si no eliges bien.",
+      "La IA está abriendo alternativas nuevas para construir webs."
+    ],
+    alternatives: ["Web con IA", "Constructores cerrados"],
+    rating: 5,
+    difficulty: "media",
+    status: "imprescindible",
+    updatedAt: "2026-06-08",
+    publishedAt: "2026-06-08T10:00:00+02:00",
+    intro:
+      "Empecemos deshaciendo un malentendido muy común. Si alguna vez te han dicho que WordPress es de pago, no: posiblemente hayas mirado WordPress.com. Yo la que utilizo es la punto org, WordPress.org, que es gratuita y abierta. Y es la herramienta sobre la que he construido toda mi web. Ha sido mi fiel compañero durante casi diez años, y siempre la he defendido a muerte.",
+    whatItDoes:
+      "WordPress.org es una plataforma de código abierto para crear y gestionar tu web. Si tu web es tu casa de internet, hay diferentes formas de fabricarla: puedes tener casas prefabricadas o puedes construirla poco a poco, módulo a módulo. WordPress es justo lo segundo: te permite construir algo a la medida de tus necesidades, con diseño, formularios, membresías, ventas, plugins y funciones avanzadas.",
+    howIUseIt:
+      "WordPress es la base de mi proyecto desde hace casi diez años. Antes de tener WordPress, yo solo tenía redes sociales, y eso tiene un peligro tremendo: si solo estás en redes y no tienes tu propia casa en internet, dependes de algoritmos y decisiones que no controlas. Montarte tu propia casa en internet es importante. Esa web vive en tu hosting y nadie te la puede apagar por un cambio de política ajena.",
+    teacherUseCases: [
+      "Crear una web profesional propia.",
+      "Publicar contenido que no dependa de redes sociales.",
+      "Captar suscriptores y estudiantes desde formularios propios.",
+      "Vender cursos, clases, membresías o recursos.",
+      "Construir una base de negocio educativo a largo plazo."
+    ],
+    honestVerdict:
+      "WordPress.org ha sido mi fiel compañero durante casi diez años y lo sigo defendiendo: para montarte tu propia casa en internet, con control y sin depender de los algoritmos de nadie, es una opción sólida, abierta y probada. Mi honestidad añadida es que internet se mueve rápido y yo mismo ya estoy mirando qué traen las herramientas de IA. Pero el consejo de fondo no cambia: ten tu propia casa en internet. Lo demás es secundario.",
+    importantNotice:
+      "Hablo de WordPress.org, no de WordPress.com. El software es gratuito, pero una web profesional necesita dominio, hosting y, según el caso, plugins o temas de pago.",
+    metrics: [
+      { label: "Uso", value: "Casi 10 años" },
+      { label: "Software", value: "Gratis" },
+      { label: "Estado", value: "Imprescindible" }
+    ],
+    priceRows: [
+      { label: "WordPress.org", value: "Gratis y de código abierto" },
+      { label: "Costes reales", value: "Dominio, hosting y posibles plugins" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "El software de WordPress.org es gratuito. Lo que pagas son las piezas que lo rodean: dominio y hosting, que son costes inevitables, y a veces algún plugin o tema de pago.",
+    alternativeDetails: [
+      {
+        name: "Webempresa",
+        url: "/herramientas/webempresa",
+        description:
+          "El hosting que uso y la vía más sencilla para instalar WordPress prácticamente de la mano."
+      },
+      {
+        name: "MailPoet",
+        url: "/herramientas/mailpoet",
+        description:
+          "El plugin que uso dentro de WordPress para gestionar mi newsletter y mi lista."
+      },
+      {
+        name: "GitHub + Vercel + Codex",
+        url: "/herramientas/codex",
+        description:
+          "El Laborjatorio no está hecho con WordPress: es una alternativa más técnica que estoy explorando con IA, GitHub y Vercel."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿WordPress.org es lo mismo que WordPress.com?",
+        answer:
+          "No. WordPress.org es el software abierto y gratuito que instalas en tu hosting. WordPress.com es una plataforma alojada con sus propios planes y condiciones."
+      },
+      {
+        question: "¿WordPress.org es gratis de verdad?",
+        answer:
+          "Sí, el software es gratis. Lo que pagas es el dominio, el hosting y, si los necesitas, plugins o temas concretos."
+      },
+      {
+        question: "¿Sigue mereciendo la pena con la llegada de la IA?",
+        answer:
+          "Sí, si quieres una base sólida y control propio. Pero hoy también tiene sentido mirar nuevas formas de construir webs con IA, sobre todo si quieres experimentar."
+      },
+      {
+        question: "¿Por qué insisto tanto en tener web propia?",
+        answer:
+          "Porque si solo vives en redes, dependes de algoritmos y reglas ajenas. Tu web es tu casa: tu contenido, tus formularios y tu relación con la audiencia viven en un lugar que controlas."
+      }
+    ]
+  },
+  {
     name: "Webempresa",
     slug: "webempresa",
     title: "Webempresa: el hosting español donde tengo mi web (y por qué no me cambio)",
