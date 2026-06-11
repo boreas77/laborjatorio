@@ -2360,6 +2360,132 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Audio-Technica ATR2100x-USB",
+    slug: "audio-technica-atr2100x-usb",
+    title: "Audio-Technica ATR2100x-USB: el micro con el que grabo (aunque no te lo recomiende del todo)",
+    metaDescription:
+      "Grabo mis podcasts, entrevistas y vídeos con el Audio-Technica ATR2100x-USB. Suena bien, pero no estoy 100% satisfecho. Te cuento por qué, con anécdota de taza incluida.",
+    keywords: [
+      "Audio-Technica ATR2100x-USB",
+      "micrófono para podcast",
+      "micrófono USB para grabar",
+      "micrófono para grabar clases y vídeos",
+      "micrófono dinámico USB XLR",
+      "micrófono para entrevistas"
+    ],
+    tagline:
+      "El micrófono con el que grabo podcasts, entrevistas y vídeos, aunque hoy no te lo recomendaría sin matices.",
+    category: "Audio y vídeo",
+    subcategories: ["audio", "comunicación", "formación", "contenido", "podcast", "micrófono"],
+    pricing: "pago-unico",
+    officialUrl: "https://www.audio-technica.com/en-eu/atr2100x-usb",
+    affiliateUrl: "https://amzn.to/4dXGalj",
+    hasAffiliate: true,
+    myUseCase:
+      "Lo uso para grabar mis entrevistas, episodios de podcast y vídeos. Es imprescindible por uso real, no porque esté plenamente satisfecho ni porque lo recomiende al 100%.",
+    bestFor: [
+      "Profes que quieren escuchar una experiencia real antes de comprar un micro",
+      "Podcasters que valoran un micrófono dinámico USB/XLR",
+      "Creadores que quieren grabar voz con calidad decente",
+      "Quien quiere una referencia honesta, con ventajas y problemas"
+    ],
+    notFor: [
+      "Quien quiere una recomendación redonda y sin dudas",
+      "Quien necesita volumen alto de grabación sin tocar nada después",
+      "Quien busca una base de escritorio resistente",
+      "Quien prefiere esperar a que encuentre mi micrófono ideal"
+    ],
+    pros: [
+      "La calidad de sonido me parece buena.",
+      "Permite conexión USB-C y XLR.",
+      "Me ha servido para podcasts, entrevistas y vídeos.",
+      "Es fácil escuchar muestras reales en Gramaticón y ¡Palabras!."
+    ],
+    cons: [
+      "En mi uso por USB se graba demasiado bajo.",
+      "No he encontrado cómo subir el volumen desde el propio micro.",
+      "La base de plástico se me rompió.",
+      "No estoy 100% satisfecho con él."
+    ],
+    alternatives: [],
+    rating: 3,
+    difficulty: "facil",
+    status: "imprescindible",
+    updatedAt: "2026-06-11",
+    publishedAt: "2026-06-11T09:00:00+02:00",
+    intro:
+      "Empiezo por lo más honesto que te voy a decir en toda la ficha: no te voy a recomendar este micrófono. Y no porque sea malo, sino porque no estoy 100% satisfecho con él. Aun así, es el micro con el que grabo mis entrevistas, los episodios de mi podcast y mis vídeos, así que se ha ganado un sitio en el Laborjatorio.",
+    whatItDoes:
+      "El Audio-Technica ATR2100x-USB es un micrófono dinámico que puedes conectar de dos formas: por USB-C o por XLR. Lo bueno es que la calidad me parece buena: se escucha bien. No tienes que fiarte de mi palabra; puedes juzgarlo escuchando episodios de Gramaticón o de ¡Palabras!, que están grabados con él.",
+    howIUseIt:
+      "De momento he grabado siempre por USB, normalmente en una sola pista con Audacity. Ahí viene mi gran frustración: se escucha muy bajito. Se puede subir después, claro, pero si grabas todo en una sola pista tienes que ir igualando el volumen a mano. Mientras preparaba esta ficha decidí probar la conexión XLR en próximos audios para ver si mejora ese problema.",
+    teacherUseCases: [
+      "Grabar podcasts educativos.",
+      "Grabar entrevistas online o presenciales.",
+      "Mejorar el audio de vídeos y clases grabadas.",
+      "Tener un micrófono USB/XLR flexible.",
+      "Escuchar una experiencia real antes de comprar."
+    ],
+    honestVerdict:
+      "Este es de los pocos casos en los que mi veredicto es un no lo recomiendo, y quiero que se entienda bien. No es que sea un mal micrófono: la calidad de sonido es buena y llevo años grabando con él todo lo que hago. Es que no estoy plenamente satisfecho, sobre todo por lo del volumen y por la base frágil. Lo tienes en el Laborjatorio porque es lo que uso de verdad, no como recomendación de compra.",
+    importantNotice:
+      "Esta ficha incluye enlace de afiliado de Amazon. Si compras desde él, a ti te cuesta lo mismo y a mí me llega una pequeña comisión. Aun así, mi veredicto no cambia: es el micro que uso, pero no te lo recomiendo sin reservas.",
+    metrics: [
+      { label: "Uso", value: "Diario" },
+      { label: "Conexión", value: "USB-C / XLR" },
+      { label: "Estado", value: "Imprescindible por uso" }
+    ],
+    priceRows: [
+      { label: "Compra", value: "Pago único" },
+      { label: "Precio", value: "Variable en Amazon" },
+      { label: "Afiliación", value: "Sí, Amazon" }
+    ],
+    priceNote:
+      "El precio exacto lo dejo como pendiente porque varía. Si después de todo lo que te he contado decides hacerte con él, el enlace principal de esta ficha es mi enlace de afiliado de Amazon.",
+    alternativeDetails: [
+      {
+        name: "Filtro antipop InnoGear",
+        url: "/herramientas/filtro-antipop-innogear",
+        description:
+          "Al margen del micrófono concreto, sí recomiendo usar un filtro antipop para reducir golpes de aire en las p y las b."
+      },
+      {
+        name: "Audacity",
+        url: "/herramientas/audacity",
+        description:
+          "Es el editor con el que grabo y ajusto audio, especialmente cuando toca igualar volumen después."
+      },
+      {
+        name: "Logitech C920",
+        url: "/herramientas/logitech-c920",
+        description:
+          "Otra pieza de mi equipo de grabación, en este caso para vídeo."
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Se conecta por USB o por XLR?",
+        answer:
+          "Por las dos. Yo he grabado siempre por USB-C, pero voy a probar XLR para ver si mejora lo del volumen bajo."
+      },
+      {
+        question: "¿Por qué se escucha tan bajo?",
+        answer:
+          "En mi caso, el volumen de grabación por USB sale muy bajo y no he encontrado cómo subirlo desde el propio micrófono. Si grabas en una sola pista, tendrás que igualar niveles después en tu editor."
+      },
+      {
+        question: "¿Necesito un filtro antipop?",
+        answer:
+          "Te lo recomiendo, sí. Mejora bastante el resultado evitando golpes de aire al hablar. La marca concreta es lo de menos."
+      },
+      {
+        question: "¿Entonces por qué está marcado como imprescindible?",
+        answer:
+          "Porque es el micro con el que grabo todo. Es imprescindible por uso real en mi flujo, no porque lo recomiende como compra ideal."
+      }
+    ]
+  },
+  {
     name: "Filtro antipop InnoGear",
     slug: "filtro-antipop-innogear",
     title: "Filtro antipop InnoGear: cómo quité los \"pop\" de mis grabaciones por 20 euros",
