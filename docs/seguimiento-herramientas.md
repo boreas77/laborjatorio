@@ -24,7 +24,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Squoosh | Sí | 1.0 | No |
 | LastPass | Sí | 1.0 | No |
 | Standing Desk Maidesite | Sí | 1.0 | Sí |
-| Silla de oficina de malla | Sí | 3.0 | Pendiente |
+| Silla de oficina de malla | Sí | 3.0 | Sí |
 | Inphic PM6 | Sí | 1.0 | Sí |
 | Ventilador recargable silencioso | Sí | 1.0 | Sí |
 | Filtro antipop InnoGear | Sí | 1.0 | Sí |

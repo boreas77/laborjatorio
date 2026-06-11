@@ -1420,11 +1420,85 @@ export const tools: Tool[] = [
     alternatives: [],
     rating: 5,
     difficulty: "media",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-12",
     publishedAt: "2026-06-06T23:59:00+02:00",
     intro:
       "Toda web necesita un sitio donde vivir, y ese sitio es el hosting. El mío es Webempresa, un hosting español, y ahí es donde tengo alojada mi web y también mis dominios. La verdad es que solo tengo cosas buenas que decir.",
+    narrativeIntro: [
+      "Toda web necesita un sitio donde vivir, y ese sitio es el hosting. El mío es Webempresa, un hosting español, y ahí es donde tengo alojada mi web y también mi dominio. La verdad es que solo tengo cosas buenas que decir.",
+      "Esta ficha es para profes que se preguntan: ¿dónde alojo mi web sin acabar peleándome con soporte en inglés ni con sorpresas en la factura? Te cuento mi experiencia real, lo que pago y a quién se lo recomendaría."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es Webempresa",
+        paragraphs: [
+          "Webempresa es una empresa española de hosting, alojamiento web, y registro de dominios. En cristiano: es donde guardas tu web para que esté disponible en internet, y donde puedes registrar el nombre de tu dominio, eso de tuweb.com. Lo de que sea española no es un detalle menor, y ahora te cuento por qué."
+        ],
+        actions: [
+          {
+            label: "Ver Webempresa",
+            url: "https://clientes.webempresa.com/europa/gestion/aff.php?aff=6200"
+          }
+        ]
+      },
+      {
+        title: "Por qué la elegí, y de dónde venía",
+        paragraphs: [
+          "Antes usaba otro hosting cuyo nombre, sinceramente, ni recuerdo. Funcionaba bien, pero tuve una mala experiencia con el precio de renovación, de esas que te dejan mal cuerpo. Y eso me empujó a buscar algo distinto.",
+          "Con Webempresa estoy contento por varias razones, y la primera es justo esa: son muy honestos con el precio. Tú eliges un plan y no te van a hacer trampas. Al menos yo no me he sentido engañado nunca con el precio, y después de venir de un susto en la renovación, esa tranquilidad vale mucho."
+        ]
+      },
+      {
+        title: "El soporte y la facilidad: en español y de la mano",
+        paragraphs: [
+          "Aquí es donde más se nota que sea una empresa española. El soporte es excelente y en tu idioma: las pocas veces que les he pedido ayuda con algún problema, escribes y en poco tiempo te responden, y comunicarte en español lo hace todo más fácil.",
+          "Además, te acompañan desde el principio. El proceso para contratar y configurar es sencillo, y cuando vas a instalar tu WordPress te ayudan a hacerlo desde el primer paso, algo que para alguien sin experiencia técnica es oro. Tienen también una base de documentación enorme, con un montón de artículos que explican cómo funciona todo. Te seré sincero: a veces da pereza ponerse a leerla y, para respuestas rápidas, yo acabo tirando de ChatGPT, pero ahí está si la quieres. Y para los correos de tu dominio tienes un panel bastante visual y nada recargado."
+        ],
+        actions: [
+          {
+            label: "Ver planes de Webempresa",
+            url: "https://clientes.webempresa.com/europa/gestion/aff.php?aff=6200"
+          }
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Estos son mis números reales: pago 19 euros al año por dominio, tengo dos registrados, y 126 euros al año por el hosting, en pago anual.",
+          "Sé que a alguien que empieza, soltar 100 y pico euros al año por un hosting le puede parecer mucho, así que te lo pongo en perspectiva, que es como lo veo yo: es la base física de tu negocio. Piensa cuánto te costaría el alquiler de un local en un negocio físico. Pagar poco más de 10 euros al mes por el alojamiento de tu negocio online es, sinceramente, un lujo.",
+          "Y un apunte: si estás arrancando, seguro que tienen algún plan un poquito más asequible que el mío. Conviene confirmar los planes actuales en su web, porque estas cosas cambian."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Resumiendo lo bueno: es honesto con el precio, sin trampas ni sustos en la renovación; el soporte en español es rápido y bueno; te acompañan para instalar WordPress y arrancar sin saber; y el panel de correos es visual y sencillo.",
+          "¿Y lo malo? Pues mira, desde que estoy con ellos no me he planteado cambiarme a ningún otro, así que no te puedo señalar grandes problemas. El precio es muy similar al de cualquier otro hosting y sé que funcionan bien, conque estoy a gusto. Si le pongo un pero, es que la documentación es tan extensa que da pereza leerla, pero para eso ya tengo mis atajos."
+        ]
+      },
+      {
+        title: "Para quién tiene sentido",
+        paragraphs: [
+          "No te voy a dar una recomendación absoluta, porque hay muchos hostings buenos. Pero si vives en España, échale un vistazo: el soporte en tu idioma y el acompañamiento marcan la diferencia, sobre todo si estás empezando y no quieres pelearte con tecnicismos."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Aquí soy transparente: vengo de otro hosting, cuyo nombre ni recuerdo, y desde que estoy en Webempresa no he probado otras opciones, así que dejo las alternativas como pendiente en lugar de inventarme comparaciones. Hay muchos hostings solventes, pero yo solo te puedo hablar bien del que uso."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Webempresa hace su trabajo y me da algo que valoro mucho después de un mal susto con otro proveedor: tranquilidad. Precios honestos, soporte en español y la mano tendida para arrancar. Para mí, la base sobre la que se sostiene todo lo demás.",
+          "¿Lo recomiendo? Si estás en España y quieres alojar tu web sin dolores de cabeza, sí, échale un ojo. No es una decisión para angustiarse: es elegir una base fiable y olvidarte.",
+          "Resumen para profes ocupados: hosting español, honesto con el precio y con soporte excelente en tu idioma. Ideal si empiezas y no quieres complicaciones."
+        ]
+      }
+    ],
     whatItDoes:
       "Webempresa es una empresa española de hosting y registro de dominios. En cristiano: es donde guardas tu web para que esté disponible en internet, y donde puedes registrar el nombre de tu dominio. También puedes gestionar correos asociados a ese dominio y pedir soporte cuando algo técnico se atasca.",
     howIUseIt:
@@ -1452,6 +1526,27 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "Mis cifras son mi caso real. En la web pública de Webempresa hay precios promocionales y precios normales, y pueden cambiar según plan, renovación e impuestos. Antes de contratar, conviene mirar el precio actual y el precio normal tras promoción.",
+    purchaseLinks: [
+      {
+        label: "Ver Webempresa",
+        url: "https://clientes.webempresa.com/europa/gestion/aff.php?aff=6200"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "WordPress",
+        url: "/herramientas/wordpress"
+      },
+      {
+        label: "ChatGPT",
+        url: "/herramientas/chatgpt"
+      }
+    ],
+    narrativeOutro: [
+      "Enlace oficial: webempresa.com."
+    ],
+    cta:
+      "Aquí te enseño las herramientas. Lo que hago con ellas está en borjaprofe.com.",
     faqs: [
       {
         question: "¿Webempresa sirve para WordPress?",
