@@ -2109,7 +2109,7 @@ export const tools: Tool[] = [
     rating: 4,
     difficulty: "facil",
     status: "importante",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-11",
     intro:
       "Cuando empecé a dar clases online en Nicaragua, usaba una silla de plástico cutre, no muy diferente de la de la portada del último disco de Bad Bunny. Para salir del paso valía, pero en cuanto volví a España y quise montarme un setup más permanente, di el salto a una silla de oficina de malla de las de verdad. No es la silla de mis sueños, pero es la que uso cada día y me sirve.",
     whatItDoes:
