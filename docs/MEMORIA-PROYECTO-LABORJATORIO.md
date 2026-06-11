@@ -65,6 +65,7 @@ Archivos estrategicos actuales:
 - Los paquetes editoriales de herramientas y categorias incluyen una seccion especifica de frases de Borja que conviene conservar para que Claude no reciba solo datos secos.
 - Se elimino la necesidad `Conseguir estudiantes` porque se solapaba con visibilidad, creacion de contenido y creacion de materiales.
 - El mapa principal de la Home queda en 8 categorias de necesidad. No volver a crear `/conseguir-estudiantes` salvo decision explicita.
+- En vista de ordenador, las 8 categorias de la Home deben mostrarse en 2 filas de 4 tarjetas, con tarjetas mas grandes que la version anterior de 3 columnas.
 
 ### 2026-06-08
 

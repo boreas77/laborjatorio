@@ -276,7 +276,7 @@ main {
 
 .home-categories__inner {
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1320px;
 }
 
 .home-categories__inner h2 {
@@ -290,8 +290,8 @@ main {
 
 .home-need-grid {
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .home-need-card {
@@ -301,9 +301,9 @@ main {
   box-shadow: var(--shadow);
   color: var(--ink);
   display: grid;
-  gap: 12px;
-  min-height: 240px;
-  padding: clamp(20px, 2.5vw, 28px);
+  gap: 14px;
+  min-height: 270px;
+  padding: clamp(22px, 2.5vw, 32px);
 }
 
 .home-need-card:hover {
@@ -314,13 +314,13 @@ main {
 
 .home-need-card__icon {
   color: var(--accent-dark);
-  height: 34px;
+  height: 40px;
   margin-bottom: 8px;
-  width: 34px;
+  width: 40px;
 }
 
 .home-need-card h3 {
-  font-size: clamp(1.18rem, 1.8vw, 1.45rem);
+  font-size: clamp(1.24rem, 1.65vw, 1.55rem);
   letter-spacing: 0;
   line-height: 1.18;
   margin: 0;
@@ -338,6 +338,12 @@ main {
   font-size: 0.9rem;
   font-weight: 850;
   padding-top: 6px;
+}
+
+@media (max-width: 1100px) {
+  .home-need-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .home-borja-cta__inner h2 {
