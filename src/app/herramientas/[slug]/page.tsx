@@ -137,6 +137,21 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 </section>
               ) : null}
 
+              {tool.purchaseLinks?.length ? (
+                <section>
+                  <h2>Comprar</h2>
+                  <ul className="tool-alternative-links">
+                    {tool.purchaseLinks.map((link) => (
+                      <li key={link.url}>
+                        <a href={link.url} target="_blank" rel="nofollow sponsored noopener">
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+
               {tool.relatedLinks?.length ? (
                 <section>
                   <h2>Relacionadas</h2>

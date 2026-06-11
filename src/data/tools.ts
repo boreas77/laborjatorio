@@ -34,6 +34,11 @@ export type ToolRelatedLink = {
   url: string;
 };
 
+export type ToolPurchaseLink = {
+  label: string;
+  url: string;
+};
+
 export type ToolFaq = {
   question: string;
   answer: string;
@@ -79,6 +84,7 @@ export type Tool = {
   metrics?: ToolMetric[];
   priceRows?: ToolPriceRow[];
   priceNote?: string;
+  purchaseLinks?: ToolPurchaseLink[];
   relatedLinks?: ToolRelatedLink[];
   alternativeDetails?: ToolAlternativeDetail[];
   faqs?: ToolFaq[];
@@ -2095,7 +2101,9 @@ export const tools: Tool[] = [
     category: "Equipo físico",
     subcategories: ["ergonomía", "productividad", "hardware", "silla", "teletrabajo"],
     pricing: "pago-unico",
-    hasAffiliate: false,
+    officialUrl: "https://www.amazon.es/",
+    affiliateUrl: "https://amzn.to/4vJQDa0",
+    hasAffiliate: true,
     myUseCase:
       "La uso a diario para dar clases y trabajar desde casa. Y debajo tengo un protector de suelo de PVC porque las ruedas y la madera no siempre se llevan bien.",
     bestFor: [
@@ -2121,8 +2129,7 @@ export const tools: Tool[] = [
       "No es una silla premium.",
       "Hay sillas de gama alta bastante superiores si puedes invertir más.",
       "Las ruedas pueden marcar la madera si no usas protector.",
-      "Sobre alfombra no desliza demasiado bien.",
-      "Los enlaces concretos de Amazon están pendientes."
+      "Sobre alfombra no desliza demasiado bien."
     ],
     alternatives: [],
     rating: 4,
@@ -2210,10 +2217,20 @@ export const tools: Tool[] = [
       { label: "Silla", value: "50-60 € aprox." },
       { label: "Protector de suelo", value: "Extra barato, PVC transparente 120x90 cm" },
       { label: "Dónde", value: "Amazon" },
-      { label: "Afiliación", value: "Pendiente de enlaces" }
+      { label: "Afiliación", value: "Sí, Amazon" }
     ],
     priceNote:
-      "La silla ronda los 50-60 euros y el protector de suelo es un extra barato. Los enlaces concretos de Amazon siguen pendientes: uno para la silla y otro para el protector. Cuando los tenga, los añadiré. Mientras tanto, la referencia útil es esa: una silla de oficina de malla barata, ligera y regulable, más un protector de suelo si tienes madera.",
+      "La silla ronda los 50-60 euros y el protector de suelo es un extra barato. Ya he dejado enlazados los dos productos en Amazon: la silla por un lado y el protector por otro, para que no tengas que buscarlos.",
+    purchaseLinks: [
+      {
+        label: "Ver silla en Amazon",
+        url: "https://amzn.to/4vJQDa0"
+      },
+      {
+        label: "Ver protector de suelo en Amazon",
+        url: "https://amzn.to/4uw6DeQ"
+      }
+    ],
     relatedLinks: [
       {
         label: "Standing Desk Maidesite",
@@ -2229,7 +2246,7 @@ export const tools: Tool[] = [
       }
     ],
     narrativeOutro: [
-      "Comprar: enlaces de Amazon pendientes, silla y protector de suelo. Los añadiré cuando Borja me los pase."
+      "Si te interesa montar el mismo dúo, te dejo enlazados la silla y el protector de suelo por separado para que veas exactamente cuáles son."
     ],
     cta:
       "Aquí te enseño las herramientas. Lo que hago con ellas está en borjaprofe.com."
