@@ -28,6 +28,12 @@ export type ToolAlternativeDetail = {
   url?: string;
 };
 
+export type ToolRelatedLink = {
+  label: string;
+  description?: string;
+  url: string;
+};
+
 export type ToolFaq = {
   question: string;
   answer: string;
@@ -54,6 +60,8 @@ export type Tool = {
   alternatives: string[];
   rating: number;
   difficulty: Difficulty;
+  editorialVersion?: "1.0" | "2.0" | "3.0";
+  hideDifficulty?: boolean;
   status: ToolStatus;
   updatedAt: string;
   publishedAt?: string;
@@ -66,6 +74,7 @@ export type Tool = {
   metrics?: ToolMetric[];
   priceRows?: ToolPriceRow[];
   priceNote?: string;
+  relatedLinks?: ToolRelatedLink[];
   alternativeDetails?: ToolAlternativeDetail[];
   faqs?: ToolFaq[];
   cta?: string;
@@ -2108,6 +2117,7 @@ export const tools: Tool[] = [
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
     updatedAt: "2026-06-11",
     intro:

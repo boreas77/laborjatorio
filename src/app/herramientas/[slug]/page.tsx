@@ -52,10 +52,12 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
   const primaryUrl = tool.affiliateUrl || tool.officialUrl;
   const title = tool.title || `${tool.name} para profesores`;
+  const isNarrativeTool = tool.editorialVersion === "3.0";
   const hasRichEditorialBlocks =
     Boolean(tool.importantNotice) ||
     Boolean(tool.metrics?.length) ||
     Boolean(tool.priceRows?.length) ||
+    Boolean(tool.relatedLinks?.length) ||
     Boolean(tool.alternativeDetails?.length);
 
   return (
@@ -147,7 +149,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             ) : null}
           </section>
 
-          {tool.metrics?.length ? (
+          {tool.metrics?.length && !isNarrativeTool ? (
             <section>
               <div className="tool-metrics" aria-label="Estadísticas reales">
                 {tool.metrics.map((metric) => (
@@ -165,7 +167,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <p>{tool.howIUseIt}</p>
           </section>
 
-          {hasRichEditorialBlocks ? (
+          {hasRichEditorialBlocks && !isNarrativeTool ? (
             <section>
               <h2>Ventajas e inconvenientes</h2>
               <div className="tool-pros-cons">
@@ -234,36 +236,55 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 )}
                 {tool.priceNote ? <p>{tool.priceNote}</p> : null}
               </section>
-              <section>
-                <h2>Para quién tiene sentido</h2>
-                <ul>
-                  {tool.bestFor.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-              <section>
-                <h2>No la usaría para...</h2>
-                <ul>
-                  {tool.notFor.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-              <section>
-                <h2>Casos de uso para profes</h2>
-                <ul>
-                  {tool.teacherUseCases.map((useCase) => (
-                    <li key={useCase}>{useCase}</li>
-                  ))}
-                </ul>
-              </section>
+              {!isNarrativeTool ? (
+                <>
+                  <section>
+                    <h2>Para quién tiene sentido</h2>
+                    <ul>
+                      {tool.bestFor.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>No la usaría para...</h2>
+                    <ul>
+                      {tool.notFor.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+                  <section>
+                    <h2>Casos de uso para profes</h2>
+                    <ul>
+                      {tool.teacherUseCases.map((useCase) => (
+                        <li key={useCase}>{useCase}</li>
+                      ))}
+                    </ul>
+                  </section>
+                </>
+              ) : null}
               <section>
                 <div className="tool-verdict">
                   <p className="tool-verdict__label">Veredicto</p>
                   <p>{tool.honestVerdict}</p>
                 </div>
               </section>
+              {tool.relatedLinks?.length ? (
+                <section>
+                  <h2>Enlaces relacionados</h2>
+                  <ul className="tool-alternative-links">
+                    {tool.relatedLinks.map((link) => (
+                      <li key={link.url}>
+                        <a href={link.url} target="_blank" rel="nofollow sponsored noopener">
+                          {link.label}
+                        </a>
+                        {link.description ? <span>{link.description}</span> : null}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
               {tool.alternativeDetails?.length || tool.alternatives.length ? (
                 <section>
                   <h2>Alternativas</h2>

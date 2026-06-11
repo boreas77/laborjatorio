@@ -1,0 +1,160 @@
+# Seguimiento editorial de herramientas
+
+Este documento no es público.
+
+No debe aparecer en la web, no debe formar parte del contenido mostrado a los usuarios y no debe utilizarse para almacenar notas, ideas o borradores.
+
+Su única función es servir como panel de control editorial del estado de las fichas del Laborjatorio.
+
+| Herramienta | Ficha | Versión | Afiliado |
+|---|---|---|---|
+| ChatGPT | Sí | 1.0 | No |
+| Canva | Sí | 2.0 | No |
+| OpusClip | Sí | 1.0 | Sí |
+| DaVinci Resolve | Sí | 1.0 | No |
+| iLovePDF | Sí | 1.0 | No |
+| Kommodo | Sí | 1.0 | Sí |
+| HappyScribe | Sí | 1.0 | Sí |
+| SpeakPipe | Sí | 2.0 | No |
+| Metricool | Sí | 1.0 | Sí |
+| Webempresa | Sí | 2.0 | Sí |
+| MailPoet | Sí | 1.0 | No |
+| Audacity | Sí | 1.0 | No |
+| Spotify for Podcasters | Sí | 1.0 | No |
+| Squoosh | Sí | 1.0 | No |
+| LastPass | Sí | 1.0 | No |
+| Standing Desk Maidesite | Sí | 1.0 | Sí |
+| Silla de oficina de malla | Sí | 3.0 | Pendiente |
+| Inphic PM6 | Sí | 1.0 | Sí |
+| Ventilador recargable silencioso | Sí | 1.0 | Sí |
+| Filtro antipop InnoGear | Sí | 1.0 | Sí |
+| Logitech C920 | Sí | 1.0 | Sí |
+| Acer Nitro 5 | Sí | 1.0 | No |
+| Petit BamBou | Sí | 1.0 | No |
+| f.lux | Sí | 2.0 | No |
+| Notion | Sí | 1.0 | No |
+| WordPress | No | — | No |
+| LearnDash | No | — | No |
+| WooCommerce | No | — | No |
+| Zoom | No | — | No |
+| H5P | No | — | No |
+| OBS | No | — | No |
+| Google Drive | No | — | No |
+| Google Calendar | No | — | No |
+| Telegram | No | — | No |
+| Codex | No | — | No |
+| GitHub | No | — | No |
+| Vercel | No | — | No |
+| Google Docs | No | — | No |
+| LinkedIn | No | — | No |
+| YouTube | No | — | No |
+| Spotify | No | — | No |
+| Rank Math | No | — | No |
+| Brave | No | — | No |
+| Divi | No | — | No |
+| SoundMadeSeen | No | — | No |
+| Lightshot | No | — | No |
+| Stripe | No | — | No |
+| PayPal | No | — | No |
+| MyInvestor | No | — | No |
+| Tukonta | No | — | No |
+| Punto y Coma | No | — | No |
+| Sennheiser Momentum 4 Wireless | No | — | No |
+| Soundcore Sport X20 | No | — | No |
+| Audio-Technica ATR2100x-USB | No | — | No |
+
+## Significado de las versiones
+
+Las versiones no indican únicamente antigüedad. También indican el nivel editorial de la ficha.
+
+### Versión 1.0
+
+Primera generación de fichas del Laborjatorio.
+
+Características habituales:
+
+- Más breves.
+- Más esquemáticas.
+- Más cercanas a una ficha clásica.
+- Menor desarrollo narrativo.
+- Menor presencia de experiencia personal.
+- Menor integración del Borjismo Universal.
+
+No significa que sean malas.
+
+Simplemente fueron creadas antes de consolidar los criterios editoriales actuales.
+
+### Versión 2.0
+
+Segunda generación de fichas.
+
+Estas fichas ya han sido revisadas siguiendo los criterios editoriales actuales del Laborjatorio.
+
+Características:
+
+- Más conversacionales.
+- Más centradas en experiencia real.
+- Mejor integración del Borjismo Universal.
+- Más ejemplos concretos.
+- Más criterio personal.
+- Más conexión con proyectos reales de Borja.
+- Menos sensación de reseña.
+- Más sensación de recomendación entre profesores.
+
+En general, una ficha 2.0 debería responder mejor a la pregunta:
+
+«¿Por qué Borja sigue utilizando esta herramienta?»
+
+que a la pregunta:
+
+«¿Qué características tiene esta herramienta?»
+
+### Versión 3.0
+
+Tercera generación de fichas.
+
+Estas fichas priorizan la voz de Borja y la lectura como artículo por encima de la sensación de ficha técnica.
+
+Características:
+
+- Más texto corrido.
+- Menos fragmentación en bloques visuales.
+- Menos listas, salvo cuando aclaran algo de verdad.
+- Más sensación de conversación directa con profes.
+- Más respeto por la versión textual trabajada con Claude/CLOV.
+- La estructura técnica de la web se mantiene, pero no debe deshidratar el artículo.
+- Las tablas de precio y datos se usan como apoyo, no como centro de la ficha.
+- El criterio editorial principal es que el lector sienta que Borja le está hablando, no que está leyendo un catálogo.
+
+### Regla de actualización
+
+No aumentar la versión por cambios menores.
+
+Ejemplos de cambios menores:
+
+- corregir erratas
+- actualizar precios
+- actualizar enlaces
+- añadir una imagen
+- modificar una frase
+
+Estos cambios no modifican la versión.
+
+Solo subir de versión cuando exista una revisión editorial significativa.
+
+## Mantenimiento futuro
+
+Cada vez que se publique una ficha:
+
+- Cambiar Ficha a `Sí`.
+- Actualizar la versión correspondiente.
+
+Cada vez que una ficha se reescriba de forma importante:
+
+- Actualizar el número de versión.
+
+Ejemplos:
+
+- `1.0`: primera versión publicada.
+- `2.0`: reescritura importante.
+- `3.0`: actualización profunda posterior.
