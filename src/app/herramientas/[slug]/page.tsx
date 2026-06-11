@@ -126,6 +126,21 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
+                  {section.actions?.length ? (
+                    <div className="tool-action-row">
+                      {section.actions.map((action) => (
+                        <a
+                          key={action.url}
+                          className="tool-action-button"
+                          href={action.url}
+                          target="_blank"
+                          rel="nofollow sponsored noopener"
+                        >
+                          {action.label}
+                        </a>
+                      ))}
+                    </div>
+                  ) : null}
                 </section>
               ))}
 

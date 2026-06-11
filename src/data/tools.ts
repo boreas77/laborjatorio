@@ -39,6 +39,11 @@ export type ToolPurchaseLink = {
   url: string;
 };
 
+export type ToolNarrativeAction = {
+  label: string;
+  url: string;
+};
+
 export type ToolFaq = {
   question: string;
   answer: string;
@@ -47,6 +52,7 @@ export type ToolFaq = {
 export type ToolNarrativeSection = {
   title: string;
   paragraphs: string[];
+  actions?: ToolNarrativeAction[];
 };
 
 export type Tool = {
@@ -2149,6 +2155,12 @@ export const tools: Tool[] = [
         paragraphs: [
           "Es una silla de oficina giratoria, con ruedas, regulable en altura y con respaldo y asiento de malla transpirable. Nada de gama alta, no puedo decirte que sea de una calidad excelente, porque hay otras de gama mucho más alta. Pero es cómoda y, sobre todo, es fresca. No te pega la espalda en verano, que para quien pasa horas sentado es un detalle enorme.",
           "Para mí era importante que fuera ligera. No quería el típico trasto pesado como el que tenía en casa de mis padres. Esta la mueves con un dedo, la giras, ajustas la altura y listo. Eso sí, te tocará montarla, aunque no tiene mayor complicación: un rato de tornillos y a rodar."
+        ],
+        actions: [
+          {
+            label: "Ver silla en Amazon",
+            url: "https://amzn.to/4vJQDa0"
+          }
         ]
       },
       {
@@ -2163,6 +2175,12 @@ export const tools: Tool[] = [
         paragraphs: [
           "Aquí viene lo importante, y es justo lo que no te cuentan en la descripción del producto: estas sillas con ruedas y tu suelo no siempre se llevan bien. Si tienes alfombra, no va a deslizar demasiado bien, porque las ruedas y la alfombra no son muy amigas. Y si tienes suelo de madera, cuidadito, porque puede dejar marcas.",
           "A mí esto me llevó a comprar un complemento casi obligatorio: un protector de suelo de PVC transparente, antideslizante, de 120x90 cm. Es lo más feo que existe, te aviso, pero prefiero tener una superficie antiestética debajo de los pies que rayar la madera de casa. Si vas a poner una silla con ruedas sobre parqué o tarima, este protector, o cualquiera equivalente, te va a ahorrar disgustos. No es glamuroso, pero hace su trabajo."
+        ],
+        actions: [
+          {
+            label: "Ver protector de suelo en Amazon",
+            url: "https://amzn.to/4uw6DeQ"
+          }
         ]
       },
       {
