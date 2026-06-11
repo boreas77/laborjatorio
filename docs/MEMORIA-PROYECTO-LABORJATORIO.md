@@ -57,6 +57,13 @@ Archivos estrategicos actuales:
 
 ## Cambios recientes
 
+### 2026-06-11
+
+- Se creo `docs/TELEGRAM_CONTEXT.md` como contexto operativo reducido para el bot de Telegram.
+- El bot de Telegram deja de cargar en cada peticion los documentos largos `fundamentos-laborjatorio.md`, `BORJISMO_UNIVERSAL.md`, `SEO-LABORATORIO.md`, `MEMORIA-PROYECTO-LABORJATORIO.md`, `EDITORIAL CLAUDE.md` y `propuestas-borjismo.md`.
+- A partir de ahora el bot carga solo `docs/TELEGRAM_CONTEXT.md` y `docs/Herramientas.md`, manteniendo las reglas clave de voz, experiencia real, no invencion, utilidad sobre SEO y herramientas como medio.
+- Los paquetes editoriales de herramientas y categorias incluyen una seccion especifica de frases de Borja que conviene conservar para que Claude no reciba solo datos secos.
+
 ### 2026-06-08
 
 - Se vacio temporalmente la pagina de necesidad `/vender-y-cobrar`: las herramientas que aparecian antes no encajaban con esa necesidad.

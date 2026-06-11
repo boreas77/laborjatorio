@@ -157,13 +157,24 @@ Las herramientas aparecen como consecuencia, no como protagonistas.
 
 ## Archivos que consulta
 
-La ruta lee estos archivos del repositorio:
+La ruta carga un contexto reducido para bajar coste y tiempo de procesamiento.
 
-- `docs/fundamentos-laborjatorio.md`
-- `docs/BORJISMO_UNIVERSAL.md`
-- `docs/SEO-LABORATORIO.md`
+Archivos cargados en cada peticion:
+
+- `docs/TELEGRAM_CONTEXT.md`
 - `docs/Herramientas.md`
-- `docs/MEMORIA-PROYECTO-LABORJATORIO.md`
+
+`docs/TELEGRAM_CONTEXT.md` concentra las reglas operativas que antes estaban repartidas entre documentos largos: fundamentos, Borjismo Universal, SEO, memoria y editorial Claude. No sustituye esos documentos como memoria del proyecto; solo evita que el bot tenga que mandarlos enteros a OpenAI en cada audio o mensaje.
+
+Reglas que debe preservar siempre:
+
+- La transcripcion es fuente de informacion y tambien fuente de voz.
+- Prioridad absoluta a experiencias reales.
+- Conservar frases literales, comparaciones, humor, frustraciones y opiniones.
+- No traducir la voz de Borja a lenguaje corporativo.
+- La utilidad manda sobre el SEO.
+- Las herramientas son un medio, no un fin.
+- El objetivo es ayudar a tomar decisiones.
 
 Para controlar coste y tamano de peticion, el MVP limita cada documento a los primeros 18.000 caracteres.
 
