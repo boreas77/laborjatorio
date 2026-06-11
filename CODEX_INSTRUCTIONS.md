@@ -2,7 +2,23 @@
 
 Es fundamental releer este archivo al comienzo de cada sesión de trabajo en LABORJATORIO.
 
-También es obligatorio releer `docs/BORJISMO_UNIVERSAL.md` al comienzo de cada sesión. Ese documento representa la personalidad, el criterio creativo y la forma de entender la enseñanza, la tecnología y el negocio de Borja. Si alguna decisión técnica o editorial puede afectar a la voz del proyecto, ese archivo manda.
+Carpeta activa de trabajo para Codex:
+
+`C:\Users\borja\OneDrive\Documentos\MI TALLER DE ELE`
+
+Aunque el proyecto se llame LABORJATORIO y exista una carpeta `LABORJATORIO`, en esta configuracion Codex debe trabajar desde `MI TALLER DE ELE`, porque es el workspace que se abre por defecto y contiene el estado reciente del proyecto.
+
+También es obligatorio releer estos dos documentos al comienzo de cada nuevo chat de trabajo en este proyecto:
+
+* `docs/BORJISMO_UNIVERSAL.md`
+* `docs/fundamentos-laborjatorio.md`
+* `docs/MEMORIA-PROYECTO-LABORJATORIO.md`
+
+`docs/BORJISMO_UNIVERSAL.md` representa la personalidad, el criterio creativo y la forma de entender la enseñanza, la tecnología y el negocio de Borja. Si alguna decisión técnica o editorial puede afectar a la voz del proyecto, ese archivo manda.
+
+`docs/fundamentos-laborjatorio.md` recoge la base estratégica y conceptual de LABORJATORIO. Si alguna decisión afecta al enfoque, la utilidad real para profesores o la dirección del proyecto, ese archivo también manda.
+
+`docs/MEMORIA-PROYECTO-LABORJATORIO.md` recoge el estado vivo del proyecto: qué se ha hecho, qué decisiones están tomadas, qué está pendiente y cuál es el siguiente paso lógico. Debe actualizarse al final de cada sesión de trabajo importante.
 
 ## Tu papel dentro del proyecto
 
@@ -45,6 +61,26 @@ El valor diferencial está en el criterio acumulado de Borja como profesor, crea
 Cuando exista una duda, prioriza siempre la utilidad para el profesor por encima de la sofisticación técnica.
 
 La voz del proyecto debe respetar el BORJISMO UNIVERSAL: claridad por encima de postureo, personalidad sin chistes vacíos, humor con estructura debajo, criterio propio y sensación de persona real detrás. La tecnología debe multiplicar la humanidad de Borja, no sustituirla.
+
+## Regla editorial nueva: textos de blog como patrón
+
+Cuando Borja entregue a Codex un texto ya trabajado fuera de la web, por ejemplo desde Cloth, Claude o un borrador de blog propio, ese texto debe considerarse el patrón principal de la futura página.
+
+Esto significa:
+
+* No convertirlo por defecto en una ficha tradicional de producto.
+* No trocearlo en campos técnicos si eso deshidrata el artículo.
+* Mantener la estructura editorial original siempre que funcione: H1, H2, orden de secciones, ritmo, comparaciones, avisos, remates y voz.
+* Usar la estructura técnica de la web como soporte del artículo, no como molde que obligue a reescribirlo.
+* Tratar las herramientas como excusa para contar criterio y experiencia real, no como protagonistas de un catálogo.
+
+En caso de duda, priorizar siempre:
+
+1. Fidelidad al artículo enviado por Borja.
+2. Voz y experiencia real.
+3. Claridad para el lector.
+4. SEO natural.
+5. Datos técnicos como apoyo, no como centro.
 
 ---
 

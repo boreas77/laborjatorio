@@ -63,6 +63,10 @@ Archivos estrategicos actuales:
 - El bot de Telegram deja de cargar en cada peticion los documentos largos `fundamentos-laborjatorio.md`, `BORJISMO_UNIVERSAL.md`, `SEO-LABORATORIO.md`, `MEMORIA-PROYECTO-LABORJATORIO.md`, `EDITORIAL CLAUDE.md` y `propuestas-borjismo.md`.
 - A partir de ahora el bot carga solo `docs/TELEGRAM_CONTEXT.md` y `docs/Herramientas.md`, manteniendo las reglas clave de voz, experiencia real, no invencion, utilidad sobre SEO y herramientas como medio.
 - Los paquetes editoriales de herramientas y categorias incluyen una seccion especifica de frases de Borja que conviene conservar para que Claude no reciba solo datos secos.
+- Se fijo una nueva regla editorial para las fichas 3.0: cuando Borja entregue un articulo ya trabajado desde su blog, Cloth, Claude u otro borrador externo, ese texto pasa a ser el patron principal de la pagina web.
+- La web no debe volver a convertir por defecto esos textos en fichas tradicionales de producto. La estructura tecnica debe adaptarse al articulo, no al reves.
+- Se amplio la plantilla de `src/app/herramientas/[slug]/page.tsx` para soportar fichas 3.0 basadas en secciones narrativas propias.
+- La ficha `Silla de oficina de malla` se rehizo como primer ejemplo real de esta logica nueva, usando una estructura de articulo mas cercana al texto de origen.
 - Se elimino la necesidad `Conseguir estudiantes` porque se solapaba con visibilidad, creacion de contenido y creacion de materiales.
 - El mapa principal de la Home queda en 8 categorias de necesidad. No volver a crear `/conseguir-estudiantes` salvo decision explicita.
 - En vista de ordenador, las 8 categorias de la Home deben mostrarse en 2 columnas y 4 filas, con tarjetas mas anchas y todas del mismo tamano.

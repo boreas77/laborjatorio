@@ -118,6 +118,10 @@ Una ficha de herramienta debe responder:
 
 "Por que deberia importarle esta herramienta a un profesor ocupado?"
 
+En realidad, el destino final ideal no es una ficha tecnica. Es un articulo editorial con estructura web.
+
+Si Borja despues redacta o pule el texto fuera del bot, por ejemplo en Claude, Cloth o un borrador propio, ese articulo debe pesar mas que cualquier plantilla tecnica del sitio.
+
 El paquete para Claude debe preparar una futura ficha, no escribirla. Debe recoger:
 
 - que es la herramienta;
@@ -131,7 +135,16 @@ El paquete para Claude debe preparar una futura ficha, no escribirla. Debe recog
 - alternativas solo si Borja las menciono o estan claramente en inventario;
 - veredicto honesto;
 - enlaces oficiales o afiliados si existen;
-- estado provisional: imprescindible, importante, opcional, secundaria, en prueba, abandonada.
+- estado provisional: Imprescindible, Importante, Opcional, En prueba o Abandonada.
+
+El paquete tambien debe ayudar a que el futuro articulo conserve:
+
+- el posible H1;
+- los H2 naturales si ya se intuyen;
+- el orden narrativo;
+- los avisos importantes;
+- las comparaciones o bromas que sostienen la voz;
+- el cierre o remate si aparece.
 
 El paquete no debe convertir una nota breve en articulo final. Si solo hay una idea, hay que pedir mas informacion.
 

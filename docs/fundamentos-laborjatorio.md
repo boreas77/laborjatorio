@@ -78,25 +78,33 @@ La prioridad tecnica es que sea facil de mantener, no que sea sofisticado.
 
 ## Estructura editorial de cada herramienta
 
-Cada ficha debe responder a:
+Cada ficha-articulo debe responder a:
 
 > Por que deberia importarle esta herramienta a un profesor ocupado?
 
-Cada ficha funcionara tambien como articulo SEO. Debe arrancar con una introduccion breve y clara, orientada a busqueda, pero con voz propia. La estructura base sera:
+La forma por defecto ya no es una ficha tradicional de producto, sino un articulo editorial con voz de Borja.
+
+Si Borja entrega un texto ya redactado desde su blog, Cloth, Claude u otro borrador externo, ese texto marca la estructura principal de la pagina.
+
+Reglas:
+
+1. Mantener, siempre que funcionen, el H1, los H2, el orden de ideas, el ritmo y el remate del articulo original.
+2. No reventar el texto en mini-bloques tecnicos si eso le quita continuidad.
+3. Usar precio, enlaces, tablas o metadatos como apoyo de lectura, no como esqueleto obligatorio.
+4. Priorizar experiencia, criterio, ejemplos y decisiones reales por encima de listas de funciones.
+5. Si hace falta adaptar el articulo a la web, la adaptacion debe proteger la voz, no normalizarla.
+
+La estructura base orientativa puede incluir:
 
 1. Introduccion breve: para que la utiliza Borja y por que merece atencion.
-2. Que es la herramienta.
-3. Como funciona lo basico, explicado sin tecnicismos innecesarios.
-4. Formas concretas en las que Borja la utiliza.
+2. Que es la herramienta o por que entro en su trabajo.
+3. Como la usa Borja de verdad.
+4. Problemas, avisos, limites o matices que un profe deberia saber.
 5. Ejemplos reales conectados con proyectos propios, cursos, recursos, articulos o contenidos.
-6. Enlaces internos a la web de Borja o a proyectos propios cuando tenga sentido.
-7. Ventajas reales.
-8. Limitaciones.
-9. Precio o modelo.
-10. Cuando merece pagar.
-11. Alternativas.
-12. Veredicto honesto.
-13. Enlaces normal y afiliado, si aplica.
+6. Precio o modelo, cuando sea util.
+7. Alternativas, si Borja tiene criterio para nombrarlas.
+8. Veredicto honesto.
+9. Enlaces normal y afiliado, si aplica.
 
 ## Objetivo de conversion
 

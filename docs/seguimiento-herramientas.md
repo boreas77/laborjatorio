@@ -122,9 +122,16 @@ Características:
 - Menos listas, salvo cuando aclaran algo de verdad.
 - Más sensación de conversación directa con profes.
 - Más respeto por la versión textual trabajada con Claude/CLOV.
+- Más fidelidad a la estructura del artículo de origen cuando Borja lo entregue ya redactado.
 - La estructura técnica de la web se mantiene, pero no debe deshidratar el artículo.
 - Las tablas de precio y datos se usan como apoyo, no como centro de la ficha.
 - El criterio editorial principal es que el lector sienta que Borja le está hablando, no que está leyendo un catálogo.
+
+Regla operativa nueva:
+
+- Si Borja envía un artículo desde su blog, Cloth, Claude o un borrador equivalente, la web debe adaptarse a ese artículo.
+- No se debe forzar ese texto a encajar en una ficha clásica de producto.
+- H1, H2, ritmo y orden argumental tienen prioridad sobre la antigua estructura de campos.
 
 ### Regla de actualización
 

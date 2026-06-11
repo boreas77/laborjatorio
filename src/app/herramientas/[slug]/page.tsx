@@ -53,12 +53,15 @@ export default async function ToolPage({ params }: ToolPageProps) {
   const primaryUrl = tool.affiliateUrl || tool.officialUrl;
   const title = tool.title || `${tool.name} para profesores`;
   const isNarrativeTool = tool.editorialVersion === "3.0";
+  const hasNarrativeSections = Boolean(tool.narrativeSections?.length);
+  const pageLabel = hasNarrativeSections || isNarrativeTool ? "Artículo de laboratorio" : "Ficha de laboratorio";
   const hasRichEditorialBlocks =
     Boolean(tool.importantNotice) ||
     Boolean(tool.metrics?.length) ||
     Boolean(tool.priceRows?.length) ||
     Boolean(tool.relatedLinks?.length) ||
-    Boolean(tool.alternativeDetails?.length);
+    Boolean(tool.alternativeDetails?.length) ||
+    hasNarrativeSections;
 
   return (
     <article className="page-shell tool-page">
@@ -67,12 +70,12 @@ export default async function ToolPage({ params }: ToolPageProps) {
           <Link className="back-link" href="/herramientas">
             Volver al directorio
           </Link>
-          <p className="eyebrow">Ficha de laboratorio / {tool.category}</p>
+          <p className="eyebrow">{pageLabel} / {tool.category}</p>
           <h1>{title}</h1>
           {!hasRichEditorialBlocks ? <p>{tool.tagline}</p> : null}
           <div className="lab-notes lab-notes--dark" aria-label="Resumen editorial">
             <span>{labelFromPricing(tool.pricing)}</span>
-            <span>Dificultad {labelFromDifficulty(tool.difficulty)}</span>
+            {!tool.hideDifficulty ? <span>Dificultad {labelFromDifficulty(tool.difficulty)}</span> : null}
             <span>{labelFromStatus(tool.status)}</span>
           </div>
         </div>
@@ -85,10 +88,12 @@ export default async function ToolPage({ params }: ToolPageProps) {
                 <dt>Precio</dt>
                 <dd>{labelFromPricing(tool.pricing)}</dd>
               </div>
-              <div>
-                <dt>Dificultad</dt>
-                <dd>{labelFromDifficulty(tool.difficulty)}</dd>
-              </div>
+              {!tool.hideDifficulty ? (
+                <div>
+                    <dt>Dificultad</dt>
+                    <dd>{labelFromDifficulty(tool.difficulty)}</dd>
+                </div>
+              ) : null}
               <div>
                 <dt>Estado</dt>
                 <dd>{labelFromStatus(tool.status)}</dd>
@@ -109,6 +114,57 @@ export default async function ToolPage({ params }: ToolPageProps) {
 
       <div className={hasRichEditorialBlocks ? "tool-single-column" : "content-grid"}>
         <div className="prose">
+          {hasNarrativeSections ? (
+            <>
+              {(tool.narrativeIntro || [tool.intro]).map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+
+              {tool.narrativeSections?.map((section) => (
+                <section key={section.title}>
+                  <h2>{section.title}</h2>
+                  {section.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </section>
+              ))}
+
+              {tool.narrativeOutro?.length ? (
+                <section>
+                  {tool.narrativeOutro.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </section>
+              ) : null}
+
+              {tool.relatedLinks?.length ? (
+                <section>
+                  <h2>Relacionadas</h2>
+                  <ul className="tool-alternative-links">
+                    {tool.relatedLinks.map((link) => (
+                      <li key={link.url}>
+                        {link.url.startsWith("/") ? (
+                          <Link href={link.url}>{link.label}</Link>
+                        ) : (
+                          <a href={link.url} target="_blank" rel="nofollow sponsored noopener">
+                            {link.label}
+                          </a>
+                        )}
+                        {link.description ? <span>{link.description}</span> : null}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
+
+              {tool.cta ? (
+                <section>
+                  <p>{tool.cta}</p>
+                </section>
+              ) : null}
+            </>
+          ) : (
+            <>
           {tool.importantNotice ? (
             <aside className="tool-alert">
               <p>{tool.importantNotice}</p>
@@ -167,28 +223,30 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <p>{tool.howIUseIt}</p>
           </section>
 
-          {hasRichEditorialBlocks && !isNarrativeTool ? (
-            <section>
-              <h2>Ventajas e inconvenientes</h2>
-              <div className="tool-pros-cons">
-                <div>
-                  <h3>Lo que funciona bien</h3>
-                  <ul className="tool-pros">
-                    {tool.pros.map((pro) => (
-                      <li key={pro}>{pro}</li>
-                    ))}
-                  </ul>
+          {hasRichEditorialBlocks ? (
+            !isNarrativeTool ? (
+              <section>
+                <h2>Ventajas e inconvenientes</h2>
+                <div className="tool-pros-cons">
+                  <div>
+                    <h3>Lo que funciona bien</h3>
+                    <ul className="tool-pros">
+                      {tool.pros.map((pro) => (
+                        <li key={pro}>{pro}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>Lo que hay que saber</h3>
+                    <ul>
+                      {tool.cons.map((con) => (
+                        <li key={con}>{con}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h3>Lo que hay que saber</h3>
-                  <ul>
-                    {tool.cons.map((con) => (
-                      <li key={con}>{con}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
+              </section>
+            ) : null
           ) : (
             <>
               <section>
@@ -276,9 +334,13 @@ export default async function ToolPage({ params }: ToolPageProps) {
                   <ul className="tool-alternative-links">
                     {tool.relatedLinks.map((link) => (
                       <li key={link.url}>
-                        <a href={link.url} target="_blank" rel="nofollow sponsored noopener">
-                          {link.label}
-                        </a>
+                        {link.url.startsWith("/") ? (
+                          <Link href={link.url}>{link.label}</Link>
+                        ) : (
+                          <a href={link.url} target="_blank" rel="nofollow sponsored noopener">
+                            {link.label}
+                          </a>
+                        )}
                         {link.description ? <span>{link.description}</span> : null}
                       </li>
                     ))}
@@ -336,6 +398,8 @@ export default async function ToolPage({ params }: ToolPageProps) {
               </div>
             </section>
           ) : null}
+            </>
+          )}
         </div>
 
         {!hasRichEditorialBlocks ? (

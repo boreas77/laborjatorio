@@ -39,6 +39,11 @@ export type ToolFaq = {
   answer: string;
 };
 
+export type ToolNarrativeSection = {
+  title: string;
+  paragraphs: string[];
+};
+
 export type Tool = {
   name: string;
   slug: string;
@@ -77,6 +82,9 @@ export type Tool = {
   relatedLinks?: ToolRelatedLink[];
   alternativeDetails?: ToolAlternativeDetail[];
   faqs?: ToolFaq[];
+  narrativeIntro?: string[];
+  narrativeSections?: ToolNarrativeSection[];
+  narrativeOutro?: string[];
   cta?: string;
 };
 
@@ -268,8 +276,9 @@ export const tools: Tool[] = [
     category: "Audio y vídeo",
     subcategories: ["video", "redes sociales", "contenido", "ia", "podcast"],
     pricing: "suscripcion",
-    officialUrl: "https://www.opus.pro/?via=laborjatorio",
-    hasAffiliate: false,
+    officialUrl: "https://www.opus.pro/",
+    affiliateUrl: "https://www.opus.pro/?via=laborjatorio",
+    hasAffiliate: true,
     myUseCase:
       "Lo uso para transformar episodios largos de Gramaticón y el podcast de Palabras en clips cortos para Instagram, TikTok, YouTube Shorts y otras redes.",
     bestFor: [
@@ -326,7 +335,7 @@ export const tools: Tool[] = [
       { label: "Plan anual Pro", value: "~174 euros" },
       { label: "Créditos incluidos", value: "3.600 minutos al año" },
       { label: "Crédito", value: "1 minuto de vídeo procesado" },
-      { label: "Afiliación", value: "No" }
+      { label: "Afiliación", value: "Sí" }
     ],
     priceNote:
       "Al verlo por primera vez me pareció caro. Luego me pregunté cuánto estaría dispuesto a pagar en publicidad para conseguir esa visibilidad, y 174 euros al año dejó de parecer tanto. Eso sí: solo tiene sentido si vas a darle uso real.",
@@ -2010,7 +2019,8 @@ export const tools: Tool[] = [
     subcategories: ["ergonomía", "productividad", "hardware", "stamindesk", "standing desk"],
     pricing: "pago-unico",
     officialUrl: "https://www.maidesite.de/",
-    hasAffiliate: false,
+    affiliateUrl: "https://amzn.to/4eqeGoy",
+    hasAffiliate: true,
     myUseCase:
       "La tengo registrada en el Laborjatorio como parte del equipo físico que sostiene muchas horas de clases, escritura, grabación y trabajo online.",
     bestFor: [
@@ -2059,10 +2069,10 @@ export const tools: Tool[] = [
     priceRows: [
       { label: "Modelo", value: "Pendiente de concretar" },
       { label: "Tipo de pago", value: "Compra única" },
-      { label: "Afiliación", value: "No" }
+      { label: "Afiliación", value: "Sí, Amazon" }
     ],
     priceNote:
-      "No fijo un precio aquí porque depende del modelo, país y tienda. Conviene confirmarlo antes de actualizar la ficha definitiva.",
+      "El enlace de Amazon corresponde al standing desk Maidesite. No fijo un precio aquí porque depende del modelo, país y tienda.",
     cta:
       "Si te interesa montar un puesto de trabajo más cómodo para enseñar, grabar y crear contenido, en borjaprofe.com voy contando estas decisiones sin convertirlas en postureo de escritorio."
   },
@@ -2081,13 +2091,13 @@ export const tools: Tool[] = [
       "protector de suelo para silla"
     ],
     tagline:
-      "La silla ligera y fresca que uso para dar clase, con el protector de suelo que evita disgustos en la madera.",
+      "La silla de malla ligera y fresca que uso para dar clases, con el protector de suelo que evita disgustos en la madera.",
     category: "Equipo físico",
     subcategories: ["ergonomía", "productividad", "hardware", "silla", "teletrabajo"],
     pricing: "pago-unico",
     hasAffiliate: false,
     myUseCase:
-      "La uso a diario para dar clases y trabajar desde casa. El protector de suelo va debajo para que las ruedas no acaben marcando la madera.",
+      "La uso a diario para dar clases y trabajar desde casa. Y debajo tengo un protector de suelo de PVC porque las ruedas y la madera no siempre se llevan bien.",
     bestFor: [
       "Profes online que quieren una silla barata y digna para trabajar",
       "Quien busca una silla fresca para pasar horas sentado en verano",
@@ -2122,10 +2132,64 @@ export const tools: Tool[] = [
     updatedAt: "2026-06-11",
     intro:
       "Cuando empecé a dar clases online en Nicaragua, usaba una silla de plástico cutre, no muy diferente de la de la portada del último disco de Bad Bunny. Para salir del paso valía, pero en cuanto volví a España y quise montarme un setup más permanente, di el salto a una silla de oficina de malla de las de verdad. No es la silla de mis sueños, pero es la que uso cada día y me sirve.",
+    narrativeIntro: [
+      "Cuando empecé a dar clases online en Nicaragua, usaba una silla de plástico cutre, no muy diferente de la de la portada del último disco de Bad Bunny. Para salir del paso valía, pero en cuanto volví a España y quise montarme un setup más permanente, di el salto a una silla de oficina de malla de las de verdad. No es la silla de mis sueños, pero es la que uso cada día y me sirve.",
+      "Esta ficha es para profes que se preguntan: ¿qué silla compro para pasar horas dando clase sin arruinarme ni acabar con la espalda pegada? Y, de paso, te aviso de algo que casi nadie te cuenta: el problema que estas sillas le pueden hacer a tu suelo."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es y por qué la elegí",
+        paragraphs: [
+          "Es una silla de oficina giratoria, con ruedas, regulable en altura y con respaldo y asiento de malla transpirable. Nada de gama alta, no puedo decirte que sea de una calidad excelente, porque hay otras de gama mucho más alta. Pero es cómoda y, sobre todo, es fresca. No te pega la espalda en verano, que para quien pasa horas sentado es un detalle enorme.",
+          "Para mí era importante que fuera ligera. No quería el típico trasto pesado como el que tenía en casa de mis padres. Esta la mueves con un dedo, la giras, ajustas la altura y listo. Eso sí, te tocará montarla, aunque no tiene mayor complicación: un rato de tornillos y a rodar."
+        ]
+      },
+      {
+        title: "Mi experiencia",
+        paragraphs: [
+          "La uso a diario y cumple. La mejor prueba de que está bien es algo que ha pasado con tantos otros objetos de mi setup: mi novia la probó y terminó comprándose una igual. Cuando alguien que te ve usar algo va y se lo compra, mala no es.",
+          "No te voy a vender humo. No te digo que compres esta silla y vayas a llorar de felicidad. Está bien y a mí me sirve, y para el precio que tiene me parece una compra muy sensata."
+        ]
+      },
+      {
+        title: "El aviso que casi nadie te da: cuidado con el suelo",
+        paragraphs: [
+          "Aquí viene lo importante, y es justo lo que no te cuentan en la descripción del producto: estas sillas con ruedas y tu suelo no siempre se llevan bien. Si tienes alfombra, no va a deslizar demasiado bien, porque las ruedas y la alfombra no son muy amigas. Y si tienes suelo de madera, cuidadito, porque puede dejar marcas.",
+          "A mí esto me llevó a comprar un complemento casi obligatorio: un protector de suelo de PVC transparente, antideslizante, de 120x90 cm. Es lo más feo que existe, te aviso, pero prefiero tener una superficie antiestética debajo de los pies que rayar la madera de casa. Si vas a poner una silla con ruedas sobre parqué o tarima, este protector, o cualquiera equivalente, te va a ahorrar disgustos. No es glamuroso, pero hace su trabajo."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "La silla ronda los 50-60 euros. El protector de suelo es un extra barato. Ambos se compran en Amazon."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que más me gusta es que es fresca: la malla transpirable evita el sudor de espalda en verano, que para quien pasa horas sentado es un puntazo. Además es ligera y ajustable, la mueves, la giras y la pones a tu altura sin pelearte, el montaje es sencillo y el precio, de 50-60 euros, la convierte en una silla digna para trabajar sin arruinarte.",
+          "¿Y lo que menos? Pues que no es premium. Es cómoda y cumple, pero hay sillas de gama alta muy superiores si tu prioridad es la ergonomía seria y el presupuesto da para ello. Y el tema del suelo que ya te he contado, que entre la alfombra y la madera casi te obliga a sumar el protector aparte."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Aquí soy transparente: no he probado otras sillas para compararlas con esta, así que dejo las alternativas como pendiente en lugar de inventarme una comparativa. Si en algún momento pruebo otra, lo contaré.",
+          "Lo que sí te digo es que, si vas a pasar muchas horas sentado y te lo puedes permitir, mirar una silla ergonómica de gama más alta es una inversión razonable. Esta es la opción sensata y económica, no la definitiva."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Esta silla de malla no te va a cambiar la vida, pero por 50-60 euros es una compra muy sensata para dar clases o teletrabajar: ligera, fresca y ajustable. Eso sí, no te olvides del protector de suelo si tienes madera, porque ahí sí te puede dar un disgusto.",
+          "Resumen para profes ocupados: silla fresca, ligera y barata que cumple. Suma el protector de suelo si tienes parqué y no quieres rayarlo."
+        ]
+      }
+    ],
     whatItDoes:
-      "Es una silla de oficina giratoria, con ruedas, regulable en altura y con respaldo y asiento de malla transpirable. No es de gama alta, pero es cómoda y, sobre todo, fresca: no se te queda la espalda pegada en verano. El protector de suelo es una pieza aparte, de PVC transparente antideslizante, que pongo debajo para no rayar la madera.",
+      "Es una silla de oficina giratoria, con ruedas, regulable en altura y con respaldo y asiento de malla transpirable. No puedo decirte que sea de una calidad excelente, porque hay otras de gama mucho más alta, pero es cómoda y, sobre todo, fresca. No te deja la espalda pegada en verano, que para quien pasa horas sentado es un detalle enorme. Y aquí entra también el otro protagonista de esta ficha: el protector de suelo de PVC transparente y antideslizante que pongo debajo para no rayar la madera.",
     howIUseIt:
-      "La uso a diario para dar clases, escribir, preparar materiales y trabajar en el ordenador. Para mí era importante que fuera ligera, no el típico trasto pesado que cuesta mover. La mueves con un dedo, la giras, ajustas la altura y listo. Y debajo tengo el protector de suelo de 120x90 cm: es feo, sí, pero prefiero eso a dejar marcas en la madera de casa.",
+      "La uso a diario para dar clases, escribir, preparar materiales y trabajar en el ordenador. Para mí era importante que fuera ligera. No quería el típico trasto pesado como el que tenía en casa de mis padres. Esta la mueves con un dedo, la giras, ajustas la altura y listo. La mejor prueba de que cumple es que mi novia la probó y terminó comprándose una igual. No te voy a vender humo: no es una silla premium ni una epifanía ergonómica, pero para el precio que tiene me parece una compra muy sensata. Y debajo tengo el protector de suelo de 120x90 cm: es feo, sí, pero prefiero una superficie antiestética bajo los pies antes que rayar la madera de casa.",
     teacherUseCases: [
       "Dar clases online durante varias horas con una silla cómoda y fresca.",
       "Teletrabajar sin gastar en una silla premium.",
@@ -2134,9 +2198,9 @@ export const tools: Tool[] = [
       "Montar un setup de profe online sensato sin convertirlo en showroom."
     ],
     honestVerdict:
-      "Esta silla de malla no te va a cambiar la vida, pero por 50-60 euros es una compra muy sensata para dar clases o teletrabajar: ligera, fresca y ajustable. Eso sí, no te olvides del protector de suelo si tienes madera, porque ahí sí te puede dar un disgusto. Es una solución económica que cumple, no la silla definitiva de la humanidad.",
+      "Esta silla de malla no te va a cambiar la vida, pero por 50-60 euros me parece una compra muy sensata para dar clases o teletrabajar: ligera, fresca y ajustable. Eso sí, no te olvides del protector de suelo si tienes madera, porque ahí sí te puede dar un disgusto. Es la opción sensata y económica, no la silla definitiva.",
     importantNotice:
-      "Si tienes suelo de madera, cuidadito: las ruedas pueden dejar marcas. Y si tienes alfombra, probablemente no va a deslizar demasiado bien. El protector de suelo no es bonito, pero puede ahorrarte un disgusto bastante más feo.",
+      "Aquí está el aviso que casi nadie te da: si tienes suelo de madera, cuidadito, porque las ruedas pueden dejar marcas. Y si tienes alfombra, probablemente no va a deslizar demasiado bien. El protector de suelo no es bonito, pero puede ahorrarte un disgusto bastante más feo.",
     metrics: [
       { label: "Precio silla", value: "50-60 €" },
       { label: "Protector", value: "120x90 cm" },
@@ -2149,7 +2213,26 @@ export const tools: Tool[] = [
       { label: "Afiliación", value: "Pendiente de enlaces" }
     ],
     priceNote:
-      "Los enlaces concretos de Amazon están pendientes: uno para la silla y otro para el protector de suelo. Cuando los tenga, los añadiré. Mientras tanto, la referencia útil es el tipo de compra: silla de oficina de malla barata, ligera y regulable, más protector de suelo si tienes madera."
+      "La silla ronda los 50-60 euros y el protector de suelo es un extra barato. Los enlaces concretos de Amazon siguen pendientes: uno para la silla y otro para el protector. Cuando los tenga, los añadiré. Mientras tanto, la referencia útil es esa: una silla de oficina de malla barata, ligera y regulable, más un protector de suelo si tienes madera.",
+    relatedLinks: [
+      {
+        label: "Standing Desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite"
+      },
+      {
+        label: "Ventilador recargable silencioso",
+        url: "/herramientas/ventilador-recargable-silencioso"
+      },
+      {
+        label: "Inphic PM6",
+        url: "/herramientas/inphic-pm6"
+      }
+    ],
+    narrativeOutro: [
+      "Comprar: enlaces de Amazon pendientes, silla y protector de suelo. Los añadiré cuando Borja me los pase."
+    ],
+    cta:
+      "Aquí te enseño las herramientas. Lo que hago con ellas está en borjaprofe.com."
   },
   {
     name: "Inphic PM6",
@@ -2275,7 +2358,9 @@ export const tools: Tool[] = [
     category: "Equipo físico",
     subcategories: ["ergonomía", "bienestar", "productividad", "hardware", "confort"],
     pricing: "pago-unico",
-    hasAffiliate: false,
+    officialUrl: "https://www.amazon.es/",
+    affiliateUrl: "https://amzn.to/4as6XDV",
+    hasAffiliate: true,
     myUseCase:
       "Lo tengo en el escritorio apuntando a la cara durante los días de calor. No es para los alumnos: es para estar cómodo mientras doy clase o trabajo frente a la pantalla.",
     bestFor: [
@@ -2300,12 +2385,13 @@ export const tools: Tool[] = [
     cons: [
       "No es un recurso para clase ni para tus alumnos.",
       "No enfría una habitación entera.",
-      "El enlace de compra concreto está pendiente.",
+      "No tiene mucho misterio: es un ventilador pequeño con varias velocidades.",
       "La marca no tiene una página oficial clara de referencia."
     ],
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    hideDifficulty: true,
     status: "opcional",
     updatedAt: "2026-06-06",
     intro:
@@ -2334,10 +2420,10 @@ export const tools: Tool[] = [
       { label: "Tipo de compra", value: "Pago único" },
       { label: "Precio orientativo", value: "Alrededor de 15 €" },
       { label: "Producto", value: "Jsdoin portátil plegable de escritorio, azul" },
-      { label: "Afiliación", value: "Pendiente de enlace" }
+      { label: "Afiliación", value: "Sí, Amazon" }
     ],
     priceNote:
-      "El enlace de compra concreto está pendiente. Cuando esté, lo añadiré aquí. Mientras tanto, la referencia útil es el tipo de producto: ventilador de escritorio silencioso, recargable, pequeño y con potencia ajustable.",
+      "El enlace de Amazon corresponde al ventilador de escritorio silencioso, recargable, pequeño y con potencia ajustable que uso.",
     alternativeDetails: [
       {
         name: "Standing Desk Maidesite",
@@ -2525,7 +2611,9 @@ export const tools: Tool[] = [
     category: "Equipo físico",
     subcategories: ["audio", "comunicación", "contenido", "podcast", "grabación"],
     pricing: "pago-unico",
-    hasAffiliate: false,
+    officialUrl: "https://www.amazon.es/",
+    affiliateUrl: "https://amzn.to/4o9rJhj",
+    hasAffiliate: true,
     myUseCase:
       "Lo uso desde 2022 delante del micrófono para reducir los sonidos pop en podcasts, vídeos y grabaciones de voz.",
     bestFor: [
@@ -2551,7 +2639,7 @@ export const tools: Tool[] = [
       "El agarre puede balancearse si no lo ajustas bien.",
       "La pinza puede marcar o dañar la mesa si aprietas demasiado.",
       "No sustituye una buena técnica de micro ni una habitación decente.",
-      "El enlace de compra concreto está pendiente."
+      "Hay que cuidar el agarre para no marcar el escritorio."
     ],
     alternatives: [],
     rating: 4,
@@ -2584,10 +2672,10 @@ export const tools: Tool[] = [
       { label: "Tipo de compra", value: "Pago único" },
       { label: "Precio orientativo", value: "Alrededor de 20 €" },
       { label: "Producto", value: "InnoGear filtro antipop de doble capa" },
-      { label: "Afiliación", value: "Pendiente de enlace" }
+      { label: "Afiliación", value: "Sí, Amazon" }
     ],
     priceNote:
-      "El enlace de compra concreto está pendiente. Cuando esté, lo añadiré aquí. La referencia útil por ahora es la categoría: filtro antipop de doble capa para micrófono de estudio.",
+      "El enlace de Amazon corresponde al filtro antipop InnoGear de doble capa. La referencia útil es esa: filtro antipop de doble capa para micrófono de estudio.",
     faqs: [
       {
         question: "¿Qué hace un filtro antipop?",
