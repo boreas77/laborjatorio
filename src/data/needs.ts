@@ -6,8 +6,7 @@ export type NeedCategoryIcon =
   | "heart"
   | "layers"
   | "pen"
-  | "screen"
-  | "users";
+  | "screen";
 
 export type NeedCategory = {
   title: string;
@@ -61,21 +60,6 @@ export const needCategories: NeedCategory[] = [
       "ilovepdf",
       "notion",
       "chatgpt"
-    ]
-  },
-  {
-    title: "Conseguir estudiantes",
-    slug: "conseguir-estudiantes",
-    description: "Visibilidad, confianza, comunicación y sistemas para que te encuentren.",
-    icon: "users",
-    toolSlugs: [
-      "metricool",
-      "mailpoet",
-      "opusclip",
-      "canva",
-      "squoosh",
-      "spotify-for-podcasters",
-      "happyscribe"
     ]
   },
   {

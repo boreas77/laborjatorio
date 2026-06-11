@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
           "Laborjatorio listo.",
           "",
           "Para una ficha de herramienta, enviame una nota de texto o audio.",
-          "Para una pagina de categoria, escribe CATEGORIA y el nombre. Ejemplo: CATEGORIA Conseguir estudiantes.",
+          "Para una pagina de categoria, escribe CATEGORIA y el nombre. Ejemplo: CATEGORIA Crear materiales.",
           "",
           "Primero te hare preguntas para ampliar; cuando este listo, escribe CREAR ARCHIVO."
         ].join("\n")
@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
       if (!categoryName) {
         await sendTelegramMessage(
           message.chat.id,
-          "Modo categoria activado. Dime el nombre o necesidad central de la categoria. Ejemplo: Conseguir estudiantes."
+          "Modo categoria activado. Dime el nombre o necesidad central de la categoria. Ejemplo: Crear materiales."
         );
 
         return NextResponse.json({ ok: true });

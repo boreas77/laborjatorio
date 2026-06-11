@@ -110,7 +110,7 @@ NUEVA CATEGORIA Nombre de la categoria
 Ejemplos:
 
 ```text
-CATEGORIA Conseguir estudiantes
+CATEGORIA Crear materiales
 ```
 
 ```text
@@ -126,7 +126,6 @@ Ejemplos de categorias editoriales:
 - Crear contenido.
 - Crear materiales.
 - Dar clases online.
-- Conseguir estudiantes.
 - Vender y cobrar.
 - Ahorrar tiempo.
 - Construir mi web.
@@ -319,7 +318,7 @@ Para probar categorias:
 1. Envia:
 
 ```text
-CATEGORIA Conseguir estudiantes
+CATEGORIA Crear materiales
 ```
 
 2. Envia notas o audios sobre por que ese problema importa, errores habituales, experiencia real, filosofia y herramientas relacionadas.

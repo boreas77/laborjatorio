@@ -63,6 +63,8 @@ Archivos estrategicos actuales:
 - El bot de Telegram deja de cargar en cada peticion los documentos largos `fundamentos-laborjatorio.md`, `BORJISMO_UNIVERSAL.md`, `SEO-LABORATORIO.md`, `MEMORIA-PROYECTO-LABORJATORIO.md`, `EDITORIAL CLAUDE.md` y `propuestas-borjismo.md`.
 - A partir de ahora el bot carga solo `docs/TELEGRAM_CONTEXT.md` y `docs/Herramientas.md`, manteniendo las reglas clave de voz, experiencia real, no invencion, utilidad sobre SEO y herramientas como medio.
 - Los paquetes editoriales de herramientas y categorias incluyen una seccion especifica de frases de Borja que conviene conservar para que Claude no reciba solo datos secos.
+- Se elimino la necesidad `Conseguir estudiantes` porque se solapaba con visibilidad, creacion de contenido y creacion de materiales.
+- El mapa principal de la Home queda en 8 categorias de necesidad. No volver a crear `/conseguir-estudiantes` salvo decision explicita.
 
 ### 2026-06-08
 
@@ -81,22 +83,20 @@ Archivos estrategicos actuales:
 - Se creo la ruta `/buscar`, con `src/app/buscar/page.tsx`, para buscar dentro de herramientas, categorias tecnicas y paginas del sitio.
 - La logica de busqueda vive en `src/lib/search.ts` y devuelve resultados agrupados en herramientas, categorias y paginas.
 - `HeaderSearch` vive en `src/components/HeaderSearch.tsx`. Es un boton con icono que despliega un formulario hacia `/buscar`.
-- La Home muestra 9 bloques de necesidad con iconos SVG monocolor, sobrios y no infantilizados:
+- La Home muestra 8 bloques de necesidad con iconos SVG monocolor, sobrios y no infantilizados:
   1. Crear contenido
   2. Crear materiales
   3. Dar clases online
-  4. Conseguir estudiantes
-  5. Vender y cobrar
-  6. Ahorrar tiempo
-  7. Construir mi web
-  8. Mi escritorio
-  9. Cuidarme
+  4. Vender y cobrar
+  5. Ahorrar tiempo
+  6. Construir mi web
+  7. Mi escritorio
+  8. Cuidarme
 - Esas necesidades se centralizaron en `src/data/needs.ts`, junto con su `slug`, descripcion, icono y lista temporal de herramientas relacionadas.
 - Las tarjetas de la Home ya no apuntan a una busqueda generica: apuntan a paginas reales de necesidad:
   - `/crear-contenido`
   - `/crear-materiales`
   - `/dar-clases-online`
-  - `/conseguir-estudiantes`
   - `/vender-y-cobrar`
   - `/ahorrar-tiempo`
   - `/construir-mi-web`
@@ -114,7 +114,7 @@ Archivos estrategicos actuales:
 - `InventoryFeed` acepta textos adaptables para el buscador y el contador (`searchLabel`, `countLabel`) para poder decir "Buscar dentro de esta categoria" y "en esta categoria" cuando se usa en paginas de necesidad.
 - `/herramientas` redirige a `/inventario`, conservando el parametro `q` si existe.
 - Las fichas individuales siguen viviendo en `/herramientas/[slug]` por compatibilidad. No renombrarlas todavia.
-- El sitemap incluye `/inventario`, `/sobre`, la Home y las 9 paginas temporales de necesidad.
+- El sitemap incluye `/inventario`, `/sobre`, la Home y las 8 paginas temporales de necesidad.
 - El CTA final de la Home quedo asi:
   - Titular: "Y esas son las herramientas que utilizo en mi dia a dia."
   - Texto: "Si quieres ver como las uso para ayudar a estudiantes y a otros profes, puedes comprobarlo aqui.", con "como las uso para ayudar a estudiantes y a otros profes" en negrita.
