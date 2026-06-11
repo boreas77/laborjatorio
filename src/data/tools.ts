@@ -1744,17 +1744,18 @@ export const tools: Tool[] = [
     rating: 5,
     difficulty: "facil",
     status: "imprescindible",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-11",
     intro:
       "Si tienes un podcast o planes de crearlo, necesitas un sitio desde el que subir los episodios y gestionar la publicación. Spotify for Podcasters, lo que antes se llamaba Anchor y que ahora vive bajo Spotify for Creators, es justo eso. Lo uso desde 2022 y para mí es fantástico porque funciona como panel de control del podcast.",
     whatItDoes:
-      "Spotify for Podcasters permite subir episodios de audio o vídeo, gestionar el programa, ver estadísticas y trabajar con el RSS del podcast. Si alojas el podcast ahí, se publica automáticamente en Spotify. Para llegar a otras plataformas, como Apple Podcasts o Amazon Music, tienes que activar el RSS y configurarlas la primera vez; después, los episodios nuevos se actualizan a través de ese feed.",
+      "Spotify for Podcasters permite subir episodios de audio o vídeo, gestionar el programa, ver estadísticas y trabajar con el RSS del podcast. Si alojas el podcast ahí, se publica automáticamente en Spotify. Para llegar a otras plataformas, como Apple Podcasts o Amazon Music, tienes que activar el RSS y configurarlas la primera vez; después, los episodios nuevos se actualizan a través de ese feed. Si subes episodios en vídeo, Spotify los muestra como vídeo en Spotify y los sirve como audio en las plataformas donde el vídeo no está disponible.",
     howIUseIt:
       "No grabo dentro de Spotify for Podcasters. Mi flujo real es este: escribo el guion en Notion, grabo o edito el audio con Audacity, preparo vídeo cuando toca con DaVinci Resolve y subo el resultado a Spotify for Podcasters. Es la última pieza del proceso: no crea el alma del podcast, pero hace que el episodio salga al mundo. Así gestiono mis podcasts ¡Palabras! y Gramaticón.",
     teacherUseCases: [
       "Subir episodios de podcast sin pagar una plataforma de hosting al principio.",
       "Mantener un panel sencillo con episodios y estadísticas.",
       "Publicar audio o vídeo en Spotify.",
+      "Cubrir un episodio en vídeo sin dejar fuera a las plataformas que funcionan solo con audio.",
       "Activar un RSS para enviar el podcast a otras plataformas.",
       "Separar bien el trabajo creativo de la parte de publicación."
     ],
@@ -1792,9 +1793,19 @@ export const tools: Tool[] = [
           "No exactamente. En Spotify se publica automáticamente si alojas ahí el podcast. Para otras plataformas tienes que activar el RSS y configurarlas la primera vez."
       },
       {
+        question: "¿Sirve si hago el podcast en vídeo?",
+        answer:
+          "Sí. Puedes subir episodios en vídeo para Spotify y, cuando otras plataformas no admiten ese formato, el episodio funciona como audio."
+      },
+      {
         question: "¿Sirve para grabar o editar?",
         answer:
           "No es mi herramienta para eso. Yo llego con el episodio ya preparado y uso Spotify for Podcasters para publicarlo y gestionarlo."
+      },
+      {
+        question: "¿Necesito saber mucho de tecnología para empezar?",
+        answer:
+          "No demasiado. Lo más técnico es activar el RSS y configurar las plataformas externas la primera vez; después el día a día es subir el episodio y revisar el panel."
       }
     ]
   },
