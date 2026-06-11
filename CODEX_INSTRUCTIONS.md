@@ -73,6 +73,14 @@ Esto significa:
 * Mantener la estructura editorial original siempre que funcione: H1, H2, orden de secciones, ritmo, comparaciones, avisos, remates y voz.
 * Usar la estructura técnica de la web como soporte del artículo, no como molde que obligue a reescribirlo.
 * Tratar las herramientas como excusa para contar criterio y experiencia real, no como protagonistas de un catálogo.
+* Introducir enlaces y botones de afiliado o acceso sin esperar al final del artículo, cuando Borja los haya dado.
+
+Regla concreta para enlaces y botones dentro del artículo:
+
+* Debe aparecer una llamada a la acción en el primer punto natural en que el lector ya entiende qué herramienta se está recomendando.
+* Si en el artículo aparece un complemento relevante, como accesorio, protector o segunda compra necesaria, debe añadirse también su propia llamada a la acción en el primer punto en que ese complemento tenga sentido.
+* Al final del artículo puede repetirse una sección de compra más completa, pero no debe ser el único lugar con acceso al enlace.
+* El estilo visual del botón debe seguir un criterio constante en la web. Por defecto, usar el botón editorial rojo ya existente salvo que haya un motivo claro para otra variante.
 
 En caso de duda, priorizar siempre:
 

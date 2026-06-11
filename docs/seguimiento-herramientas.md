@@ -125,6 +125,7 @@ Características:
 - Más fidelidad a la estructura del artículo de origen cuando Borja lo entregue ya redactado.
 - La estructura técnica de la web se mantiene, pero no debe deshidratar el artículo.
 - Las tablas de precio y datos se usan como apoyo, no como centro de la ficha.
+- Los enlaces de compra no deben quedar enterrados al final si ya hay un momento natural antes para introducirlos.
 - El criterio editorial principal es que el lector sienta que Borja le está hablando, no que está leyendo un catálogo.
 
 Regla operativa nueva:
@@ -132,6 +133,9 @@ Regla operativa nueva:
 - Si Borja envía un artículo desde su blog, Cloth, Claude o un borrador equivalente, la web debe adaptarse a ese artículo.
 - No se debe forzar ese texto a encajar en una ficha clásica de producto.
 - H1, H2, ritmo y orden argumental tienen prioridad sobre la antigua estructura de campos.
+- Debe aparecer una CTA en el primer punto natural donde ya tenga sentido pulsar.
+- Si hay un complemento relevante dentro del artículo, debe llevar también su propia CTA.
+- Puede repetirse una sección de compra al final, pero no como única llamada a la acción.
 
 ### Regla de actualización
 

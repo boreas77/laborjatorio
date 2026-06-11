@@ -93,6 +93,10 @@ Reglas:
 3. Usar precio, enlaces, tablas o metadatos como apoyo de lectura, no como esqueleto obligatorio.
 4. Priorizar experiencia, criterio, ejemplos y decisiones reales por encima de listas de funciones.
 5. Si hace falta adaptar el articulo a la web, la adaptacion debe proteger la voz, no normalizarla.
+6. Cuando Borja haya dado enlaces de compra o acceso, no esconderlos solo al final: deben aparecer en el primer punto natural del articulo donde ya tenga sentido pulsarlos.
+7. Si el articulo introduce un complemento relevante, por ejemplo un accesorio o una segunda compra necesaria, ese complemento debe tener su propia llamada a la accion en el momento en que entra en juego.
+8. La seccion final de compra puede repetirse, pero no debe ser la unica via para llegar a los enlaces.
+9. El estilo del boton debe mantenerse constante en toda la web; por defecto, usar el boton editorial rojo ya establecido.
 
 La estructura base orientativa puede incluir:
 
