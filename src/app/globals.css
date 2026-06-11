@@ -276,7 +276,7 @@ main {
 
 .home-categories__inner {
   margin: 0 auto;
-  max-width: 1320px;
+  max-width: 980px;
 }
 
 .home-categories__inner h2 {
@@ -290,8 +290,9 @@ main {
 
 .home-need-grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .home-need-card {
@@ -302,7 +303,8 @@ main {
   color: var(--ink);
   display: grid;
   gap: 14px;
-  min-height: 270px;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 260px;
   padding: clamp(22px, 2.5vw, 32px);
 }
 
@@ -338,12 +340,6 @@ main {
   font-size: 0.9rem;
   font-weight: 850;
   padding-top: 6px;
-}
-
-@media (max-width: 1100px) {
-  .home-need-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 .home-borja-cta__inner h2 {
