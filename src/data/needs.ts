@@ -228,7 +228,73 @@ export const needCategories: NeedCategory[] = [
     slug: "vender-y-cobrar",
     description: "Cursos, pagos, correos, productos y ventas sin montar un circo técnico.",
     icon: "card",
-    toolSlugs: []
+    toolSlugs: [],
+    articleTitle: "Vender y cobrar siendo profe online: cómo gestiono el dinero de mi negocio (y duermo tranquilo)",
+    metaDescription:
+      "Cómo gestiono el dinero de mi negocio como profe online para ganar tranquilidad y control: cobros, tienda propia, fiscalidad y herramientas.",
+    narrativeIntro: [
+      "Durante cuatro años viví en Nicaragua. Me planteé establecerme allí legalmente, pero nunca conseguí un permiso de trabajo, así que no podía cotizar. Y en España, estando fuera, tampoco. Cobraba por transferencia de una academia de California, aunque el dueño era de Guatemala, de modo que el dinero me llegaba desde otra cuenta distinta. Todo era enormemente precario, y yo seguía adelante confiando en que la cosa funcionaría y en que, al final del mes, me pagarían.",
+      "Te cuento esto porque explica todo lo demás. Cuando has vivido sin red, sin poder cotizar en ningún sitio y dependiendo de que un tercero te haga una transferencia, aprendes a valorar dos cosas por encima de cualquier otra: la tranquilidad y el control.",
+      "Esta página va justo de eso, de cómo gestiono hoy el dinero de mi negocio como profe online para no volver a sentir aquella inseguridad. Porque el dinero, en la enseñanza, no es un tabú ni tiene por qué darte ansiedad. Es una parte más del trabajo, y se puede llevar con honestidad y criterio."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué gestionar bien el dinero importa más de lo que parece",
+        paragraphs: [
+          "El problema de cobrar y vender no es solo técnico, no va únicamente de qué plataforma usas. Es también mental. A muchos profes nos cuesta hablar de dinero, nos incomoda ponerle precio a lo nuestro, y esa incomodidad se acaba pagando: en márgenes que regalas, en tiempo que pierdes, en una sensación constante de no llevar tú el timón.",
+          "Si no ordenas esta parte, pasa lo que me pasaba a mí. Dependes de terceros, no generas un excedente, no puedes ahorrar ni invertir, y la cabeza se te va al dinero justo cuando debería estar en enseñar y crear. Gestionar bien esto no es avaricia ni obsesión. Es quitarte un peso de encima para poder dedicarte a lo tuyo con la mente despejada."
+        ]
+      },
+      {
+        title: "Mi forma de verlo: tranquilidad y control",
+        paragraphs: [
+          "Si tuviera que resumir mi filosofía en dos palabras, serían esas: tranquilidad y control. No me interesa montar sistemas financieros complicadísimos ni exprimir cada céntimo a costa de pasarme la vida metido en hojas de cálculo. Me interesa que el dinero entre de forma segura, que yo controle el proceso y que me robe el menor tiempo posible. Tengo clarísimo que se puede ganar dinero sin volverse loco con tecnicismos."
+        ]
+      },
+      {
+        title: "Lo que he aprendido: mis criterios",
+        paragraphs: [
+          "Con el tiempo he destilado un puñado de criterios. El primero ya lo conoces: la tranquilidad manda. De hecho, hay casos en los que podría no importarme que una plataforma se quede un porcentaje, si a cambio me ahorra líos. Pero hay algo que valoro casi tanto como la tranquilidad, y es la libertad de hacer las cosas a mi gusto. No me importa dedicar un poco de tiempo a configurar una herramienta para que funcione exactamente como yo quiero.",
+          "El mejor ejemplo es mi propia tienda. Con [WooCommerce](/buscar?q=WooCommerce) pasé mucho tiempo al principio, porque no soy particularmente habilidoso y me costó configurarlo. Pero el resultado mereció la pena: hoy tengo una plataforma donde vendo lo que da la gana, a mi manera, sin pagarle comisiones a terceros. Esa es mi regla de fondo. Cuando puedo controlar el proceso yo mismo y quedarme el margen, lo hago, aunque me cueste un rato montarlo. Y cuando no, no me cierro a una plataforma con comisión, siempre que lo que me quita de encima compense lo que se lleva.",
+          "Y luego está lo fiscal, que es donde más fácil resulta agobiarse. Ahí mi criterio es muy claro: rodearme de profesionales. Lo que busco en una gestoría es, otra vez, tranquilidad, no navegar solo en los temas fiscales y administrativos. Y junto a eso, un software que me ponga fácil emitir las facturas y llevar el día a día, aunque no sea exactamente como a mí me gustaría. Entre el acompañamiento de la gestoría y la comodidad del software, me quito de la cabeza justo lo que no quiero que esté ahí."
+        ]
+      },
+      {
+        title: "Las herramientas y los sistemas que uso",
+        paragraphs: [
+          "No te voy a detallar aquí cada herramienta, que para eso está su ficha y esto es la categoría. Te las dejo agrupadas por lo que hago con cada una.",
+          "Para vender y cobrar sin intermediarios, mi tienda propia montada con [WooCommerce](/buscar?q=WooCommerce), con [Stripe](/buscar?q=Stripe) y [PayPal](/buscar?q=PayPal) como formas de pago. Para la facturación y la administración del día a día, un software que me lo pone fácil, [Tukonta](/buscar?q=Tukonta). Para lo fiscal, una buena gestoría que me acompañe y no me deje solo. Y si en algún momento sobra dinero, procuro no dejarlo parado: ahí asoma [MyInvestor](/buscar?q=MyInvestor), aunque eso ya es otra conversación y no el foco de esta."
+        ]
+      },
+      {
+        title: "Si empezara de cero hoy",
+        paragraphs: [
+          "Haría tres cosas desde el primer día. Montaría mi propia forma de cobrar para no depender de terceros ni regalar comisiones, asumiendo que dejarla a mi gusto me llevará un rato. Me buscaría una gestoría desde el principio, sin esperar a tener un lío fiscal encima del que salir corriendo. Y trataría el dinero sin tabú, poniéndole precio a mi trabajo sin pedir perdón por ello.",
+          "Lo que no haría es obsesionarme con optimizar cada céntimo. El equilibrio entre margen, facilidad y control vale mucho más que exprimir el último euro a costa de tu tiempo y de tu tranquilidad."
+        ]
+      },
+      {
+        title: "Índice rápido",
+        paragraphs: [
+          "Para que lo tengas a mano:"
+        ],
+        bullets: [
+          "Tienda propia y cobros sin comisión: [WooCommerce](/buscar?q=WooCommerce) (Imprescindible)",
+          "Formas de pago: [Stripe](/buscar?q=Stripe) (Imprescindible), [PayPal](/buscar?q=PayPal) (Importante)",
+          "Facturación y administración: [Tukonta](/buscar?q=Tukonta) (Imprescindible)",
+          "Acompañamiento fiscal: una buena gestoría (servicio profesional, no una herramienta)",
+          "Qué hacer con el excedente: [MyInvestor](/buscar?q=MyInvestor) (Importante)",
+          "Y si quieres seguir tirando del hilo, esta categoría se da la mano con [Ahorrar tiempo](/ahorrar-tiempo), [Mi escritorio](/mi-escritorio) y [Construir mi web](/construir-mi-web), porque tu propia web es el sitio desde el que vendes sin depender de nadie."
+        ]
+      },
+      {
+        title: "Conclusión",
+        paragraphs: [
+          "Vender y cobrar no va de montar la ingeniería financiera más sofisticada del mundo. Va de dormir tranquilo. Vengo de la precariedad absoluta, de cobrar por transferencias desde la otra punta del mundo y de no poder cotizar en ningún sitio, y por eso hoy lo tengo claro: tranquilidad y control, el dinero sin tabú, y rodearte de quien sabe para que tú puedas dedicarte a lo que de verdad importa, que es enseñar.",
+          "Si quieres que te cuente con calma cómo aplico todo esto en mi día a día, y lo que he ido aprendiendo por el camino, te espero en [borjaprofe.com](https://borjaprofe.com). Y si tienes una duda concreta o quieres contarme tu situación, escríbeme a hola@borjaprofe.com, que de esto se habla mucho mejor sin tabúes."
+        ]
+      }
+    ]
   },
   {
     title: "Ahorrar tiempo",
