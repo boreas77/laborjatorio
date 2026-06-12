@@ -486,8 +486,77 @@ export const needCategories: NeedCategory[] = [
       "petit-bambou",
       "standing-desk-maidesite",
       "silla-oficina-malla",
+      "f-lux",
       "ventilador-recargable-silencioso",
       "inphic-pm6"
+    ],
+    articleTitle: "Cuidarme siendo profe online: cómo dejé de trabajar como un animal",
+    metaDescription:
+      "Cómo aprendí a cuidarme como profe online para no quemarme: moverme más, poner límites y apoyarme en herramientas que lo hacen más fácil.",
+    narrativeIntro: [
+      "Te lo confieso de entrada: soy bastante bruto y he tenido épocas de trabajar sin parar. Durante la pandemia llegué a pasar hasta doce horas seguidas delante del ordenador creando materiales. Y aprendí, tarde, que eso no solo es insostenible, es que tiene luego serias secuelas, para el cuerpo y para la cabeza.",
+      "Esta página va de lo que vino después: de cómo he ido aprendiendo a cuidarme para poder seguir haciendo este trabajo durante muchos años sin quemarme por el camino. Porque cuidar el cuerpo y la mente no es un lujo ni un capricho, es imprescindible para sostener la labor docente a largo plazo. Y te adelanto la idea principal: el cambio de verdad no vino de comprar objetos, vino de cambiar hábitos y de aprender a poner límites."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué cuidarte importa, y qué pasa si no lo haces",
+        paragraphs: [
+          "Los profes nos movemos poco. Como tantos otros trabajos, este te tiene atado a una silla, mirando una pantalla, horas y horas. Y cuando además trabajas desde casa, donde no hay un horario que te eche ni compañeros que se vayan a comer, es facilísimo encadenar jornadas maratonianas sin darte cuenta.",
+          "El problema es que es muy fácil quemarse si no nos cuidamos. No es solo cansancio puntual: es dolor de cuello y espalda, es fatiga mental, es ese desgaste que se va acumulando hasta que un día no puedes más. Y aquí está la trampa: cuando te quemas, no es que trabajes peor un rato, es que pones en riesgo tu capacidad de seguir enseñando. Cuidarte, por tanto, no es lo contrario de trabajar. Es lo que te permite seguir haciéndolo."
+        ]
+      },
+      {
+        title: "Mi gran error",
+        paragraphs: [
+          "Si tengo que señalar un error por encima de todos, es este: el gran error que he cometido en mi rutina es pensar que podía ponerme a trabajar como un animal sin que eso tuviera consecuencias. Creía que aguantar más horas era ser más productivo, y resulta que era justo lo contrario, porque lo pagaba después en cuerpo y en ánimo.",
+          "Tardé en entenderlo. Venía de esa idea, muy metida, de que parar es perder el tiempo. Y no. Parar, moverte y desconectar no son el premio que te das cuando acabas todo. Son parte del trabajo, porque sin ellos no hay un tú en condiciones de hacer el resto."
+        ]
+      },
+      {
+        title: "Los cambios que hice, y el que más me costó",
+        paragraphs: [
+          "Gran parte de mi cambio ha venido de un sitio muy concreto: del hecho de moverme más, de no estar sentado todo el día delante del ordenador. Suena simple, y lo es, pero para alguien que se clavaba a la silla doce horas fue una pequeña revolución. Hacer pausas para levantarme, moverme un poco, cambiar de postura. No es gran cosa cada vez, pero sumado a lo largo del día lo cambia todo.",
+          "El segundo cambio fue mental: aprender a poner límites y a aceptar que no voy a dejarlo todo perfecto. Y aquí va el spoiler más honesto de esta página: sigo teniendo la sensación de que todo está inacabado, pero estoy aprendiendo a vivir con ello. Esa sensación probablemente no se va nunca del todo. La diferencia es dejar de pelearte con ella y entender que cerrar el ordenador con tareas pendientes no te convierte en mal profesional, te convierte en una persona que también quiere llegar entera a mañana.",
+          "Y el tercero, la meditación, que me ayuda mucho a desconectar. Es mi forma de bajar revoluciones y de sacar la cabeza del trabajo aunque sea un rato."
+        ]
+      },
+      {
+        title: "Las herramientas que me ayudan a cuidarme",
+        paragraphs: [
+          "Una cosa antes de nombrarte nada: las herramientas físicas y digitales son apoyos, no soluciones mágicas. Ninguna te va a cuidar por ti si no cambias los hábitos. Dicho esto, sí hay unas cuantas que me lo ponen más fácil, y te las cuento por para qué las uso.",
+          "Para la cabeza, [Petit BamBou](/herramientas/petit-bambou), mi app de meditación. Tiro de la meditación diaria como hábito, y mi favorita es la meditación libre paseando con mi perra Duna, respirando al ritmo de unos sonidos. Mato dos pájaros de un tiro: muevo el cuerpo y desconecto la mente.",
+          "Para moverme y no estar clavado, mi [escritorio elevable Maidesite](/herramientas/standing-desk-maidesite), que me deja alternar entre estar sentado y de pie sin tener que parar de trabajar. Y para las horas que sí paso sentado, una [silla de malla](/herramientas/silla-oficina-malla) decente, que al menos no me machaca la espalda y es fresca. Para la vista, que también se cansa de tanta pantalla, [f.lux](/herramientas/f-lux). Y para estar a gusto cuando aprieta el calor y no acabar de mal humor, hasta un simple [ventilador](/herramientas/ventilador-recargable-silencioso) cumple su papel.",
+          "Fíjate en que ninguna es milagrosa. Son piezas que acompañan un cambio que, en el fondo, es de actitud."
+        ]
+      },
+      {
+        title: "Recomendaciones para quien empieza a cuidarse",
+        paragraphs: [
+          "Si te reconoces en lo del animal de trabajo, empieza por lo más barato y lo más difícil a la vez: muévete. Levántate cada cierto tiempo, da una vuelta, cambia de postura, sal a la calle aunque sea diez minutos. No hace falta que montes un plan de gimnasio, basta con romper esas horas seguidas de silla.",
+          "Después, ponte límites de verdad, con horario de cierre incluido, y haz las paces con lo inacabado: cerrar con cosas pendientes está bien si a cambio descansas. Busca tu manera de desconectar la cabeza, sea meditar, pasear o lo que te funcione. Y recuerda que los objetos ayudan, pero no hacen el trabajo por ti. El cambio lo haces tú."
+        ]
+      },
+      {
+        title: "Índice rápido",
+        paragraphs: [
+          "Lo que uso para cuidarme, por función y con su estado entre paréntesis:"
+        ],
+        bullets: [
+          "Meditar y desconectar: [Petit BamBou](/herramientas/petit-bambou) (Importante)",
+          "Moverte y alternar postura: [Standing Desk Maidesite](/herramientas/standing-desk-maidesite) (Importante)",
+          "Sentarte mejor las horas que toca: [Silla de oficina de malla](/herramientas/silla-oficina-malla) (Importante)",
+          "Cuidar la vista: [f.lux](/herramientas/f-lux) (Opcional)",
+          "Estar a gusto con el calor: [Ventilador recargable y silencioso](/herramientas/ventilador-recargable-silencioso) (Opcional)",
+          "Y si quieres seguir tirando del hilo, esto se da la mano con [Mi escritorio](/mi-escritorio), donde te cuento el montaje físico con más detalle, y con [Ahorrar tiempo](/ahorrar-tiempo), porque trabajar de forma más sostenible también es cuidarse."
+        ]
+      },
+      {
+        title: "Conclusión",
+        paragraphs: [
+          "Cuidarte no es lo que haces cuando te sobra tiempo. Es lo que te permite seguir teniendo tiempo, energía y ganas de enseñar dentro de cinco años. Yo aprendí por las malas que trabajar como un animal se paga, y que moverme, poner límites y aprender a convivir con lo inacabado me han hecho, además de estar mejor, ser mejor profe.",
+          "Si quieres que te cuente con calma cómo voy ajustando todo esto en mi día a día, te lo cuento en [borjaprofe.com](https://borjaprofe.com). Y si estás en esa fase de no parar y quieres contármelo o pedirme ideas, escríbeme a hola@borjaprofe.com, que de cuidarse también se habla mejor acompañado."
+        ]
+      }
     ]
   }
 ];
