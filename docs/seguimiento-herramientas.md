@@ -17,7 +17,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | HappyScribe | Sí | 1.0 | Sí |
 | SpeakPipe | Sí | 2.0 | No |
 | Metricool | Sí | 1.0 | Sí |
-| Webempresa | Sí | 2.0 | Sí |
+| Webempresa | Sí | 3.0 | Sí |
 | MailPoet | Sí | 1.0 | No |
 | Audacity | Sí | 1.0 | No |
 | Spotify for Podcasters | Sí | 1.0 | No |
@@ -159,6 +159,7 @@ Cada vez que se publique una ficha:
 
 - Cambiar Ficha a `Sí`.
 - Actualizar la versión correspondiente.
+- A partir de ahora, toda ficha publicada o reescrita con el flujo editorial actual debe registrarse como mínimo en `3.0`.
 
 Cada vez que una ficha se reescriba de forma importante:
 

@@ -3222,11 +3222,70 @@ export const tools: Tool[] = [
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "opcional",
-    updatedAt: "2026-06-07",
+    updatedAt: "2026-06-12",
     publishedAt: "2026-06-07T12:30:00+02:00",
     intro:
       "f.lux es una herramientita pequeña, muy chula y que, te confieso, no uso tanto como debería. Su misión es sencilla: reducir la fatiga visual que te provoca la luz de la pantalla cuando trabajas hasta tarde. Profe, ya sabes que hay que cuidar la vista, y esta es de las formas más fáciles, y más baratas, porque es gratis, de empezar a hacerlo.",
+    narrativeIntro: [
+      "f.lux es una herramientita pequeña, muy chula y que, te confieso, no uso tanto como debería. Su misión es sencilla: reducir la fatiga visual que te provoca la luz de la pantalla cuando trabajas hasta tarde. Profe, ya sabes que hay que cuidar la vista, y esta es de las formas más fáciles, y más baratas, porque es gratis, de empezar a hacerlo.",
+      "Si pasas muchas horas delante del ordenador, sobre todo de noche o en esos inviernos en que la luz natural se va prontísimo, sigue leyendo."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué hace y por qué",
+        paragraphs: [
+          "Lo que hace f.lux es ajustar automáticamente la temperatura de color de tu pantalla según la luz que hay fuera y el momento del año. La idea va por el rollo de los ritmos circadianos: a los humanos nos sienta bien la luz cálida, la del fuego, la luz rojiza, cuando cae el día, mientras que la luz fría y azulada de las pantallas nos espabila justo cuando el cuerpo querría ir bajando el ritmo.",
+          "Así que la herramienta sigue el momento del año y el tipo de luz que toca, e intenta reproducirlo en tu monitor: según va anocheciendo, la pantalla se vuelve más amarillenta. Es bueno para tus ojos, aunque, ya te aviso, no siempre lo es para la estética, y ahí está su única trampa."
+        ],
+        actions: [
+          {
+            label: "Ver f.lux",
+            url: "https://justgetflux.com/"
+          }
+        ]
+      },
+      {
+        title: "Cómo la uso y cuándo la apago",
+        paragraphs: [
+          "La uso sobre todo en horarios nocturnos y entre semana, cuando trabajo hasta tarde o cuando, en invierno, la luz empieza a caer a media tarde. En esos ratos, esa luz cálida descansa bastante la vista. La tengo siempre ahí, como un iconito en la barra de herramientas del escritorio, lista para activarla y desactivarla cuando me apetece.",
+          "¿Y cuándo la apago? Justo cuando el tono amarillo me molesta para lo que estoy haciendo. Estar viendo Stranger Things en tonos sepias, pues como que no, y para jugar a videojuegos, lo mismo. Te confieso que apagarla para el ocio es malísimo para mi fatiga visual, es precisamente cuando llevo horas de pantalla acumuladas, pero hay momentos en que la estética manda. Ese pequeño tira y afloja entre cuidar la vista y ver bien los colores es, en el fondo, lo único que tienes que negociar con esta herramienta."
+        ]
+      },
+      {
+        title: "Por qué deberías instalarla",
+        paragraphs: [
+          "No le voy a buscar tres pies al gato: f.lux es gratis, se aplica sola y, una vez instalada, no tienes que tocar nada. Para algo que te cuida la vista en segundo plano, eso es exactamente lo que quieres. La instalas, te aparece el iconito y te olvidas. Ella sola va calentando la pantalla a medida que cae la tarde.",
+          "Por eso se la recomendaría sin pensarlo a cualquier profe que trabaje mucho de noche o que viva donde el invierno se traga la luz pronto. Realmente no cuesta nada y se aplica automáticamente, así que no instalarla es casi pereza. Cuida esos ojos, profe."
+        ],
+        actions: [
+          {
+            label: "Instalar f.lux",
+            url: "https://justgetflux.com/"
+          }
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Gratis. Es de esas cosas que no entiendes por qué no tienes ya instaladas."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Aquí soy transparente: no he probado ninguna alternativa, así que lo dejo como pendiente en lugar de inventarme comparaciones. Nunca busqué otra cosa, sencillamente porque f.lux me cumple lo que le pido y, cuando algo me funciona, no le doy más vueltas."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "f.lux es una herramienta pequeña, con una función muy concreta, que la cumple bien y que encima es gratis. No es protagonista de nada, y precisamente por eso me parece importante que esté en el Laborjatorio: cuidar la vista también forma parte de sostener un proyecto a largo plazo. Mi único pero es contra mí mismo, que debería tenerla encendida más a menudo. La recomiendo justo por lo que cuesta, nada, y por lo poco que te pide a cambio.",
+          "Resumen para profes ocupados: gratis y automática para descansar la vista de noche. El único pero es el tono amarillo, que tendrás que apagar para series y juegos."
+        ]
+      }
+    ],
     whatItDoes:
       "Lo que hace f.lux es ajustar automáticamente la temperatura de color de tu pantalla según la luz que hay fuera y el momento del año. La idea va por el rollo de los ritmos circadianos: a los humanos nos sienta bien la luz cálida, la del fuego, la luz rojiza, cuando cae el día, mientras que la luz fría y azulada de las pantallas nos espabila justo cuando el cuerpo querría ir bajando el ritmo. Según va anocheciendo, la pantalla se vuelve más amarillenta. Es bueno para tus ojos, aunque no siempre lo es para la estética, y ahí está su única trampa.",
     howIUseIt:
@@ -3252,6 +3311,31 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "Gratis. Es de esas cosas que no entiendes por qué no tienes ya instaladas.",
+    purchaseLinks: [
+      {
+        label: "Ir a f.lux",
+        url: "https://justgetflux.com/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Petit BamBou",
+        url: "/herramientas/petit-bambou"
+      },
+      {
+        label: "Standing Desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite"
+      },
+      {
+        label: "Ventilador recargable silencioso",
+        url: "/herramientas/ventilador-recargable-silencioso"
+      }
+    ],
+    narrativeOutro: [
+      "Enlace oficial: justgetflux.com."
+    ],
+    cta:
+      "Aquí te enseño las herramientas. Lo que hago con ellas está en borjaprofe.com.",
     faqs: [
       {
         question: "¿De verdad sirve para la vista?",
