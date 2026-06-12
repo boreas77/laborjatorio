@@ -310,6 +310,75 @@ export const needCategories: NeedCategory[] = [
       "lastpass",
       "notion",
       "squoosh"
+    ],
+    articleTitle: "Ahorrar tiempo siendo profe online: qué automatizo, qué no, y por qué",
+    metaDescription:
+      "Cómo ahorro tiempo como profe online: qué automatizo, qué elimino y qué reservo para mi voz y mi criterio.",
+    narrativeIntro: [
+      "Cuando empiezas por tu cuenta online, la prioridad absoluta es ahorrar dinero. Es normal, vas con lo justo y cada euro cuenta. Pero con el tiempo te das cuenta de una cosa: hay un recurso mucho más valioso que el dinero, y es el tiempo. El dinero, dentro de lo que cabe, se recupera. Las horas, no.",
+      "Esta página va de eso, de cómo intento que las mil tareas que rodean a la enseñanza no me roben las horas que debería dedicar a enseñar. Y te aviso ya de mi postura, para que no te lleves a engaño: no soy ningún gurú de la automatización, estoy bastante verde en lo de la IA, y aun así he aprendido lo suficiente como para ganar tiempo cada semana sin perder lo que me hace a mí."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué ahorrar tiempo es el problema de verdad",
+        paragraphs: [
+          "Cuando das clases online por tu cuenta, lo fácil de ver es la clase. Lo que no se ve son todas esas tareas que poco a poco van cubriendo todo el tiempo que no dedicas a las clases: preparar materiales, darte visibilidad, vender, contestar mensajes, montar y publicar contenido. Cada una parece pequeña, pero juntas se comen el calendario.",
+          "¿Y qué pasa si no le pones remedio? Te lo cuento desde mi propia experiencia: antes, crear contenido me llevaba tanto tiempo y esfuerzo que he pasado temporadas muy largas sin publicar nada. No por falta de ganas, sino porque el proceso era tan pesado que lo iba dejando. Ese es el precio real de no cuidar tu tiempo: no es solo cansancio, es que dejas de hacer cosas que importan para tu negocio."
+        ]
+      },
+      {
+        title: "Mi experiencia: del ahorrar dinero al proteger el tiempo",
+        paragraphs: [
+          "Mi evolución ha sido justo esa, pasar de proteger el dinero a proteger el tiempo. Y lo bonito es para qué sirve ese tiempo que rescatas. Estoy creando algunas automatizaciones súper chulas que me hacen ganar tiempo cada día, tiempo que puedo dedicar a cosas más importantes, como meter mis servicios, pasear a mi perra o meter los pies en el agua paseando por la playa.",
+          "No te lo cuento como una frase bonita. Lo cuento porque ese es el objetivo de verdad. No automatizo por el gusto de automatizar ni por parecer moderno. Automatizo para recuperar trozos de vida, unos para el negocio y otros, sencillamente, para vivir."
+        ]
+      },
+      {
+        title: "Lo que he aprendido: automatiza, pero con criterio",
+        paragraphs: [
+          "Aquí está la parte importante, la que de verdad quiero que te lleves, porque es donde casi todo el mundo se equivoca. Antes de pensar en automatizar nada, es importante valorar cada cierto tiempo las tareas que estamos haciendo cada semana y ver cuáles realmente tienen un impacto y cuáles no. Automatizar eso que no nos aporta nada no es la solución. Si una tarea no sirve para nada, no la automatices: elimínala. Automatizar una tontería solo te da una tontería más rápida.",
+          "Y hay una segunda regla que para mí es sagrada: no automatices ni delegues lo que te hace único. Los guiones no los delego, los newsletters los escribo yo. Eso es mi voz, mi criterio, mi valor, y ahí no entra ninguna máquina. Pero si puedes crear las portadas de esos contenidos más rápido, pues genial. La frontera está clara: lo repetitivo y sin alma, fuera de tu mesa. Lo que solo puedes hacer tú, se queda contigo.",
+          "Lo tercero es honestidad sobre mí mismo. Estoy muy verde todavía en automatizaciones con IA. No te voy a vender que tengo un sistema perfecto, porque sigo experimentando y metiendo la pata. Pero precisamente por eso lo cuento, porque puede que tú estés en el mismo punto."
+        ]
+      },
+      {
+        title: "Las herramientas y automatizaciones que uso",
+        paragraphs: [
+          "No te voy a detallar cada herramienta, que para eso está su ficha. Te cuento dónde me ahorran tiempo de verdad.",
+          "Mi caso estrella ahora mismo es [OpusClip](/herramientas/opus-clip): cojo contenido de vídeo que ya tengo y lo convierto en clips listos para redes en un momento, cuando antes eso me llevaba un mundo. También estoy experimentando con [Codex](/buscar?q=Codex) para crear resúmenes diarios y automatizar parte de la gestión de mis tareas de preparación, aunque te aviso de que esto lo tengo todavía en fase muy de pruebas.",
+          "Para lo demás, las piezas de siempre cumplen su papel sin que les dé mucha vuelta: [Google Calendar](/buscar?q=Google%20Calendar) y [Google Drive](/buscar?q=Google%20Drive) para tener el tiempo y los recursos a mano, [ChatGPT](/herramientas/chatgpt) como segundo cerebro para filtrar ideas y ordenar, [Canva](/herramientas/canva) para sacar diseños rápidos como esas portadas, [MailPoet](/herramientas/mailpoet) para los emails y [Metricool](/herramientas/metricool) para no perder tiempo planificando redes a mano. Cada una me quita un poco de fricción de encima. Sumadas, me devuelven horas."
+        ]
+      },
+      {
+        title: "Consejos para quien empieza",
+        paragraphs: [
+          "Si estás arrancando, no te lances a automatizarlo todo el primer día. Empieza por lo aburrido pero esencial: siéntate y mira en qué se te va la semana. Detecta lo que repites una y otra vez y lo que no te aporta nada. Lo segundo, elimínalo. Lo primero, mira si una herramienta puede hacerlo por ti.",
+          "No te obsesiones con tener el sistema más sofisticado, y sobre todo no toques lo que te hace especial. El objetivo no es trabajar como una máquina, es liberar tiempo para enseñar mejor y, de paso, para vivir. Y no te agobies si vas lento con la IA: yo también, y no pasa nada."
+        ]
+      },
+      {
+        title: "Índice rápido",
+        paragraphs: [
+          "Las herramientas que más tiempo me ahorran:"
+        ],
+        bullets: [
+          "Clips para redes desde vídeo: [OpusClip](/herramientas/opus-clip) (Importante)",
+          "Gestión de tareas y automatizaciones, en pruebas: [Codex](/buscar?q=Codex) (Importante)",
+          "Organización del tiempo y los recursos: [Google Calendar](/buscar?q=Google%20Calendar) (Imprescindible), [Google Drive](/buscar?q=Google%20Drive) (Imprescindible)",
+          "Segundo cerebro para ideas y orden: [ChatGPT](/herramientas/chatgpt) (Imprescindible)",
+          "Diseño rápido: [Canva](/herramientas/canva) (Importante)",
+          "Emails: [MailPoet](/herramientas/mailpoet) (Imprescindible)",
+          "Planificación de redes: [Metricool](/herramientas/metricool) (Importante)",
+          "Y si quieres seguir tirando del hilo, esto se da la mano con [Crear contenido](/crear-contenido), [Crear materiales](/crear-materiales), [Automatización](/categorias/automatizacion) y, aunque no lo parezca, con [Mi escritorio](/mi-escritorio): ganar tiempo también es una forma de cuidarte y no quemarte."
+        ]
+      },
+      {
+        title: "Conclusión",
+        paragraphs: [
+          "Ahorrar tiempo no va de automatizar todo lo que se mueve. Va de tener claro qué te aporta valor y proteger ese tiempo con uñas y dientes. Automatiza lo repetitivo, elimina lo inútil, y guárdate para ti lo que solo tú puedes hacer: tu voz, tu criterio, tu manera de enseñar. Todo lo demás es negociable.",
+          "Si quieres que te cuente con calma cómo voy montando estas automatizaciones y qué aprendo por el camino, incluidos los tropiezos, te lo cuento en [borjaprofe.com](https://borjaprofe.com). Y si tienes una duda o quieres contarme en qué se te va el tiempo a ti, escríbeme a hola@borjaprofe.com y le buscamos solución."
+        ]
+      }
     ]
   },
   {
