@@ -1170,11 +1170,77 @@ export const tools: Tool[] = [
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "opcional",
-    updatedAt: "2026-06-07",
+    updatedAt: "2026-06-12",
     publishedAt: "2026-06-07T10:00:00+02:00",
     intro:
       "Es una herramienta estupenda para algo muy concreto: que tu audiencia te envíe audios. SpeakPipe permite que tus oyentes o estudiantes te dejen un mensaje de voz, y eso, bien usado, da mucho juego. Yo la usé en mi podcast ¡Palabras! para que estudiantes y profesores me mandaran palabras para episodios futuros.",
+    narrativeIntro: [
+      "Es una herramienta estupenda para algo muy concreto: que tu audiencia te envíe audios. SpeakPipe permite que tus oyentes o estudiantes te dejen un mensaje de voz, y eso, bien usado, da mucho juego.",
+      "Yo la usé en mi podcast ¡Palabras! para que estudiantes y profesores me mandaran palabras para episodios futuros. Esta ficha es para profes y creadores que se preguntan cómo conseguir esa participación sin montar un lío técnico."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es SpeakPipe",
+        paragraphs: [
+          "SpeakPipe es una herramienta que permite a tu audiencia enviarte mensajes de audio, normalmente pensada para podcasts. La gente graba desde una página y a ti te llega ese audio para hacer con él lo que quieras: usarlo en un episodio, responderlo, lo que sea.",
+          "Es de uso muy específico, eso te lo digo ya: no es una navaja suiza, es una herramienta para una cosa. Pero esa cosa la hace muy bien."
+        ],
+        actions: [
+          {
+            label: "Probar SpeakPipe",
+            url: "https://www.speakpipe.com/"
+          }
+        ]
+      },
+      {
+        title: "Cómo funciona",
+        paragraphs: [
+          "El funcionamiento es sencillo y sin tecnicismos. Creas tu cuenta y SpeakPipe te genera una página donde la gente puede grabar directamente, o si lo prefieres embebes esa interfaz en tu WordPress.",
+          "Tu audiencia graba su audio, hasta 90 segundos en la versión gratuita, a ti te llega un correo con el mensaje y desde ahí decides qué hacer con él. Hay un detalle que para un profe es oro: puedes pedir el email de quien envía el audio, una forma estupenda de ir reuniendo direcciones de potenciales estudiantes.",
+          "La personalización es mínima, por ejemplo el texto que ve la persona tras enviar su audio, pero suficiente para empezar. Y esos 90 segundos del plan gratis, para mis objetivos, son más que de sobra, y posiblemente para ti también."
+        ]
+      },
+      {
+        title: "Cómo lo usé yo",
+        paragraphs: [
+          "Cuando tenía el podcast de ¡Palabras! activo, usaba SpeakPipe cada semana: los oyentes me mandaban palabras en audio y yo las llevaba a episodios futuros. Una forma muy directa de que la comunidad formara parte del programa.",
+          "Ahora mismo lo tengo parado, pero sí tengo a la vista un proyecto en el que voy a volver a utilizarlo. Si tienes curiosidad por saber cuál, apúntate en borjaprofe.com, que te lo contaré por ahí.",
+          "Para gestionar los episodios en sí uso otra herramienta más amplia, Spotify for Podcasters. SpeakPipe es solo la pieza de recoger las voces."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que más valoro es que es gratis y suficiente: no he pagado nunca la versión Pro y no me ha hecho falta. Es sencilla, no necesitas configuraciones complejas para arrancar, y la puedes integrar en tu WordPress o usar su página propia, como prefieras.",
+          "Pero, sobre todo, está la captación de emails: pedir el correo de quien participa te va construyendo una lista de potenciales estudiantes, y para un profe eso vale mucho.",
+          "¿Lo menos bueno? Los topes del plan gratuito, que conviene conocer. Cada audio dura un máximo de 90 segundos, perfecto para mensajes cortos pero justo si los quieres largos. Solo puedes tener un micrófono o proyecto activo, aunque hay truco: creas varias cuentas con correos distintos si necesitas más.",
+          "El botón es naranja y no se puede cambiar de color en la versión gratis, así que tendrás que vivir con ello. Y hay un límite de almacenamiento que te obliga a ir borrando los audios que ya has descargado para liberar espacio. Ninguno de estos me ha supuesto un drama, pero mejor que los sepas de antemano."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Tiene versión gratuita y versión de pago. Mi recomendación honesta: con la gratuita sobra para el uso típico de un profe o podcaster que empieza.",
+          "Yo no he necesitado pagar, así que no te voy a empujar a hacerlo."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Aquí soy transparente: no he probado alternativas para recibir audios de la audiencia, así que dejo ese apartado como pendiente en lugar de inventarme comparaciones."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "SpeakPipe no es una herramienta que vayas a usar para todo, pero para lo suyo, recibir audios de tu audiencia, es estupenda, sencilla y gratis. A mí me funcionó muy bien con ¡Palabras!, y pienso recuperarla para un proyecto futuro.",
+          "Si tienes podcast o quieres una interacción más directa con tu audiencia mediante la voz, puede ser una gran idea. Si no, probablemente no la necesites. Tan claro como eso.",
+          "Resumen para profes y creadores ocupados: gratis y sencilla para que tu audiencia te mande audios. Ideal si tienes podcast, y de paso te ayuda a captar emails."
+        ]
+      }
+    ],
     whatItDoes:
       "SpeakPipe es una herramienta que permite a tu audiencia enviarte mensajes de audio, normalmente pensada para podcasts. Creas tu cuenta y te genera una página donde la gente puede grabar directamente, o si lo prefieres embebes esa interfaz en tu WordPress. Tu audiencia graba su audio, a ti te llega un correo con el mensaje y desde ahí decides qué hacer con él: usarlo en un episodio, responderlo o guardarlo. Es de uso muy específico, eso te lo digo ya: no es una navaja suiza, es una herramienta para una cosa. Pero esa cosa la hace muy bien.",
     howIUseIt:
@@ -1187,7 +1253,7 @@ export const tools: Tool[] = [
       "Pedir email junto con el audio para mantener el contacto."
     ],
     honestVerdict:
-      "SpeakPipe no es una herramienta que vayas a usar para todo, pero para lo suyo —recibir audios de tu audiencia— es estupenda, sencilla y gratis. A mí me funcionó muy bien con ¡Palabras!, y pienso recuperarla para un proyecto futuro. Si tienes podcast o quieres una interacción más directa con tu audiencia mediante la voz, puede ser una gran idea. Si no, probablemente no la necesites. Tan claro como eso.",
+      "SpeakPipe no es una herramienta que vayas a usar para todo, pero para lo suyo, recibir audios de tu audiencia, es estupenda, sencilla y gratis. A mí me funcionó muy bien con ¡Palabras!, y pienso recuperarla para un proyecto futuro. Si tienes podcast o quieres una interacción más directa con tu audiencia mediante la voz, puede ser una gran idea. Si no, probablemente no la necesites. Tan claro como eso.",
     importantNotice:
       "Está en pausa en mi flujo actual. La incluyo porque ya la he usado de verdad y porque tengo previsto recuperarla, pero no es una herramienta diaria: es una pieza muy concreta para recoger voces. Además, pedir el email de quien participa puede ayudarte a construir una lista de potenciales estudiantes.",
     metrics: [
@@ -1203,6 +1269,27 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "Tiene versión gratuita y versión de pago. Mi recomendación honesta: con la gratuita sobra para el uso típico de un profe o podcaster que empieza. Yo no he necesitado pagar, así que no te voy a empujar a hacerlo.",
+    purchaseLinks: [
+      {
+        label: "Ir a SpeakPipe",
+        url: "https://www.speakpipe.com/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Spotify for Podcasters",
+        url: "/herramientas/spotify-for-podcasters"
+      },
+      {
+        label: "WordPress",
+        url: "/herramientas/wordpress"
+      },
+      {
+        label: "MailPoet",
+        url: "/herramientas/mailpoet"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: speakpipe.com."],
     faqs: [
       {
         question: "¿SpeakPipe sirve para podcasts?",
