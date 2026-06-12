@@ -386,7 +386,81 @@ export const needCategories: NeedCategory[] = [
     slug: "construir-mi-web",
     description: "Páginas, presencia online, analítica y estructura digital.",
     icon: "browser",
-    toolSlugs: ["mailpoet", "metricool", "squoosh", "lastpass", "ilovepdf", "canva"]
+    toolSlugs: ["wordpress", "webempresa", "mailpoet", "metricool", "squoosh", "lastpass", "canva"],
+    articleTitle: "Construir tu web siendo profe online: tu fortaleza en internet (no territorio alquilado)",
+    metaDescription:
+      "Por qué un profe online necesita su propia web y cómo decido yo qué herramientas usar para construirla y mantenerla sin depender de redes sociales.",
+    narrativeIntro: [
+      "Te lo digo sin rodeos desde el principio: si todo tu negocio está en redes sociales, estás construyendo tu negocio sobre territorio alquilado. Un cambio de algoritmo, una cuenta suspendida sin avisar, una red que pasa de moda, y te quedas sin nada de un día para otro. Tu web, en cambio, es tu propia fortaleza en internet. Es el castillo que sí es tuyo.",
+      "Esta página va de eso, de mi experiencia construyendo y manteniendo mi web a lo largo de los años, con los aciertos y, sobre todo, con los errores. No es un tutorial de botones. Es cómo entiendo yo este problema y qué decisiones he ido tomando, para que tú tomes las tuyas con algo más de criterio."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué necesitas una web propia",
+        paragraphs: [
+          "Un profe online con un negocio propio no puede prescindir de tener un dominio y un hosting propios. Esa es la base. Las redes son estupendas para que te encuentren, pero son la casa de otro: tú pones el contenido y ellos ponen las reglas, que cambian cuando quieren.",
+          "Tu web es lo único de tu presencia digital que controlas de verdad. Ahí mandas tú: el diseño, la estructura, lo que ofreces, cómo lo cobras, cómo te comunicas. Si te tomas en serio vivir de esto, tarde o temprano necesitas tu propia fortaleza. No para abandonar las redes, sino para no depender solo de ellas."
+        ]
+      },
+      {
+        title: "Mi experiencia: una web de 2017 que ya pesa",
+        paragraphs: [
+          "Mi web principal, borjaprofe.com, la creé en 2017 con [WordPress](/herramientas/wordpress). Y esa decisión, tantos años después, todavía condiciona mi forma de ver todo esto. Con el tiempo he acumulado muchísimos recursos ahí dentro, y eso tiene una cara buena y una mala. La buena es que es sólida y es mía. La mala es que cambiar cosas importantes me da vértigo, porque sé la de cosas que hay montadas encima.",
+          "En paralelo, sí me he soltado la melena con proyectos secundarios y experimentos. Este mismo Laborjatorio, por ejemplo, lo he construido con tecnologías más nuevas, con [Codex](/buscar?q=Codex), [GitHub](/buscar?q=GitHub) y [Vercel](/buscar?q=Vercel), e incluso generando buena parte de los textos por voz con inteligencia artificial. Ahí me permito probar, porque si algo sale mal no se cae mi negocio entero. En la web principal, en cambio, voy con mucho más cuidado."
+        ]
+      },
+      {
+        title: "Los errores que he cometido, para que tú no los repitas",
+        paragraphs: [
+          "El primero y más importante: copiar webs ajenas sin entender por qué están hechas así. Yo lo he hecho, construir páginas imitando otras, y es un error. No tiene sentido copiar a ciegas, porque ni tú ni la otra persona sabéis por qué se hace la web de esa manera. Inspírate, claro, pero entiende siempre el porqué de cada decisión antes de copiarla.",
+          "El segundo error tiene que ver con el diseño. Para mi web principal uso Divi, un editor visual, y hoy no te lo recomendaría. El problema es de los que enganchan: una vez que usas [Divi](/buscar?q=Divi) para tu web, es una especie de trampa mortal. Si la quitas, te da problemas, porque tu web entera queda amarrada a esa herramienta. Lo sigo usando precisamente por eso, porque desengancharme ahora sería un lío, pero si empezara hoy no entraría por ahí.",
+          "Y el tercero, más sutil, es el miedo a cambiar. Ese vértigo del que te hablaba puede dejarte con una web anticuada solo por no atreverte a tocarla. Y eso también es un error."
+        ]
+      },
+      {
+        title: "Mi filosofía: la casa se adapta a ti, no al revés",
+        paragraphs: [
+          "Si algo tengo claro es esto: todas las casas necesitan remodelaciones cada cierto tiempo, y es importante que tú no tengas que adaptarte a la casa, sino que la casa se adapte a ti. Tu web tiene que servir a tus necesidades reales, no a una idea abstracta de cómo debería ser una web.",
+          "En mi caso, eso se ha traducido en reducir de forma radical. He pasado de tener un montón de pestañas a quedarme con tres o cuatro, y he eliminado canales que no me aportaban, como la página de contacto directa, concentrando la comunicación por otras vías. Menos puertas, pero mejores. Una web no mejora por tener más cosas, mejora por tener las que importan y quitar el ruido."
+        ]
+      },
+      {
+        title: "Las herramientas que he usado y para qué",
+        paragraphs: [
+          "No te voy a detallar cada herramienta, que para eso está su ficha. Te cuento el mapa.",
+          "Para mi web principal, la casa estable, [WordPress](/herramientas/wordpress) sobre el hosting de [Webempresa](/herramientas/webempresa), que es donde vive y donde tengo el dominio. El diseño lo llevo con Divi, con la advertencia que ya te he dado. Y para los proyectos nuevos y experimentales, me muevo con [Codex](/buscar?q=Codex), [GitHub](/buscar?q=GitHub) y [Vercel](/buscar?q=Vercel), apoyándome en la IA.",
+          "Porque esa es la otra pata de todo esto: con la inteligencia artificial puedes crear una web con tu voz, y eso es un lujazo, aunque todavía es algo nuevo. Las herramientas de IA para montar webs son muy prometedoras y muy fáciles para quien empieza, pero siguen siendo experimentales y con poca documentación. Yo las uso para probar, no todavía para sostener lo importante."
+        ]
+      },
+      {
+        title: "Consejos para quien empieza hoy",
+        paragraphs: [
+          "Lo primero, mentalidad: no te desanimes, no tengas miedo a la curva de aprendizaje. Es mucho más duro el trabajo que haces día a día como profe que aprender a montar una web. Si puedes con un aula, puedes con esto.",
+          "Lo segundo, decisiones. Móntate tu propia casa cuanto antes, con dominio y hosting propios, aunque empieces pequeño. Diséñala para lo que tú necesitas, no copiando a nadie a ciegas. Y elige tus herramientas pensando en el futuro: huye de las que te dejan atrapado. Si te atrae lo nuevo y lo de la IA, perfecto para experimentar, pero para tu proyecto principal prioriza la simplicidad y el control por encima de lo más moderno pero inmaduro."
+        ]
+      },
+      {
+        title: "Índice rápido",
+        paragraphs: [
+          "Las herramientas de este viaje:"
+        ],
+        bullets: [
+          "Plataforma de tu web, la casa estable: [WordPress](/herramientas/wordpress) (Imprescindible)",
+          "Hosting y dominio: [Webempresa](/herramientas/webempresa) (Importante)",
+          "Diseño de la web, con advertencia: [Divi](/buscar?q=Divi) (Importante, no recomendado para empezar hoy)",
+          "Proyectos nuevos y experimentos con IA: [Codex](/buscar?q=Codex) (Importante), [GitHub](/buscar?q=GitHub) (Importante), [Vercel](/buscar?q=Vercel) (Importante)",
+          "Recursos y documentos: [Google Drive](/buscar?q=Google%20Drive) (Imprescindible)",
+          "Y si quieres seguir tirando del hilo, esto se da la mano con [Crear contenido](/crear-contenido), [Vender y cobrar](/vender-y-cobrar), porque tu web es donde vendes, y [Ahorrar tiempo](/ahorrar-tiempo)."
+        ]
+      },
+      {
+        title: "Conclusión y mirada al futuro",
+        paragraphs: [
+          "Construir tu web no va de tener la página más bonita ni la tecnología más moderna. Va de tener un sitio que sea tuyo de verdad, hecho a tu medida, que puedas cambiar cuando lo necesites sin pedirle permiso a nadie. Las herramientas cambiarán, y con la IA van a cambiar rápido, pero el principio se queda: ten tu propia fortaleza y haz que se adapte a ti.",
+          "Si quieres que te cuente con calma cómo está montada la mía y qué voy probando con lo nuevo, te lo cuento en [borjaprofe.com](https://borjaprofe.com). Y si estás dándole vueltas a tu web y tienes una duda, escríbeme a hola@borjaprofe.com, que de esto hablo encantado."
+        ]
+      }
+    ]
   },
   {
     title: "Mi escritorio",
