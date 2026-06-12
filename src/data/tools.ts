@@ -1227,12 +1227,6 @@ export const tools: Tool[] = [
         ]
       },
       {
-        title: "Alternativas",
-        paragraphs: [
-          "Aquí soy transparente: no he probado alternativas para recibir audios de la audiencia, así que dejo ese apartado como pendiente en lugar de inventarme comparaciones."
-        ]
-      },
-      {
         title: "Veredicto",
         paragraphs: [
           "SpeakPipe no es una herramienta que vayas a usar para todo, pero para lo suyo, recibir audios de tu audiencia, es estupenda, sencilla y gratis. A mí me funcionó muy bien con ¡Palabras!, y pienso recuperarla para un proyecto futuro.",
@@ -1680,7 +1674,7 @@ export const tools: Tool[] = [
       {
         title: "Alternativas",
         paragraphs: [
-          "Aquí soy transparente: vengo de otro hosting, cuyo nombre ni recuerdo, y desde que estoy en Webempresa no he probado otras opciones, así que dejo las alternativas como pendiente en lugar de inventarme comparaciones. Hay muchos hostings solventes, pero yo solo te puedo hablar bien del que uso."
+          "Vengo de otro hosting, cuyo nombre ni recuerdo, y desde que estoy en Webempresa no he probado otras opciones, así que dejo las alternativas como pendiente en lugar de inventarme comparaciones. Hay muchos hostings solventes, pero yo solo te puedo hablar bien del que uso."
         ]
       },
       {
@@ -2487,7 +2481,7 @@ export const tools: Tool[] = [
       {
         title: "Alternativas",
         paragraphs: [
-          "Aquí soy transparente: no he probado otras sillas para compararlas con esta, así que dejo las alternativas como pendiente en lugar de inventarme una comparativa. Si en algún momento pruebo otra, lo contaré.",
+          "No he probado otras sillas para compararlas con esta, así que dejo las alternativas como pendiente en lugar de inventarme una comparativa. Si en algún momento pruebo otra, lo contaré.",
           "Lo que sí te digo es que, si vas a pasar muchas horas sentado y te lo puedes permitir, mirar una silla ergonómica de gama más alta es una inversión razonable. Esta es la opción sensata y económica, no la definitiva."
         ]
       },
@@ -3468,7 +3462,7 @@ export const tools: Tool[] = [
       {
         title: "Alternativas",
         paragraphs: [
-          "Aquí soy transparente: no he probado ninguna alternativa, así que lo dejo como pendiente en lugar de inventarme comparaciones. Nunca busqué otra cosa, sencillamente porque f.lux me cumple lo que le pido y, cuando algo me funciona, no le doy más vueltas."
+          "No he probado ninguna alternativa, así que lo dejo como pendiente en lugar de inventarme comparaciones. Nunca busqué otra cosa, sencillamente porque f.lux me cumple lo que le pido y, cuando algo me funciona, no le doy más vueltas."
         ]
       },
       {
