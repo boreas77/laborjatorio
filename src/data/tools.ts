@@ -997,11 +997,91 @@ export const tools: Tool[] = [
     alternatives: ["OpusClip"],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "opcional",
-    updatedAt: "2026-06-08",
+    updatedAt: "2026-06-12",
     publishedAt: "2026-06-08T09:00:00+02:00",
     intro:
       "Esta es una herramienta que he comprado hace poco. Y sí, comprado, porque es de pago único. Tiene un objetivo muy específico: convertir episodios de podcast en solo audio en clips cortos para redes sociales. Si tienes un catálogo de episodios viejos que solo existen en audio, SoundMadeSeen es una forma rápida de darles una segunda vida en vídeo.",
+    narrativeIntro: [
+      "Esta es una herramienta que he comprado hace poco. Y sí, comprado, porque es de pago único. Tiene un objetivo muy específico: convertir episodios de podcast en solo audio en clips cortos para redes sociales. Si tienes un catálogo de episodios viejos que solo existen en audio, SoundMadeSeen es una forma rápida de darles una segunda vida en vídeo.",
+      "Esta ficha es para profes y podcasters que se preguntan cómo sacar clips para redes de episodios que nunca grabaron en vídeo. Te cuento cómo funciona, lo que pago y para quién tiene sentido de verdad."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es SoundMadeSeen",
+        paragraphs: [
+          "SoundMadeSeen es una herramienta que coge un episodio de audio y lo transforma en clips cortos y visuales, listos para publicar en redes. Su gracia está en que no necesitas haber grabado vídeo: parte del audio y le pone una capa visual encima, fondo, subtítulos y ondas de sonido, para que funcione en Instagram, TikTok y compañía.",
+          "Es muy de una sola cosa, pero esa cosa la resuelve bien."
+        ],
+        actions: [
+          {
+            label: "Ver SoundMadeSeen en AppSumo",
+            url: "https://appsumo.8odi.net/ZdZDO0"
+          }
+        ]
+      },
+      {
+        title: "Cómo funciona",
+        paragraphs: [
+          "El proceso es sencillo y rápido. Subes uno de tus episodios a la plataforma y SoundMadeSeen identifica, a su criterio, cuáles son los mejores momentos, ofreciéndote una serie de clips cortos ya recortados. Puedes quedarte con los que te sugiere o hacerte uno a medida desde un editor sencillo pero relativamente completo.",
+          "A partir de ahí, lo vistes. Puedes elegir un fondo visual y añadir imágenes desde su banco o subiendo las tuyas propias, que en mi caso suelo preparar en Canva. Genera subtítulos automáticamente, y los puedes editar, que esto es un puntazo, y le añades una de esas ondas de sonido que se mueven sincronizadas con el audio.",
+          "Le das a exportar y listo. Cada clip tarda literalmente un par de minutos en generarse.",
+          "Tiene además una función para generar historias con imágenes mediante IA, pero ahí mi experiencia no queda muy bien. Es mejorable, así que de momento no es lo que me lleva a usarla."
+        ]
+      },
+      {
+        title: "Cómo lo uso yo",
+        paragraphs: [
+          "No la uso todo el tiempo, porque ahora mismo estoy dando prioridad a los episodios que grabo con vídeo. SoundMadeSeen la saco de vez en cuando, un par de veces al mes, para ir rescatando episodios buenos que solo tienen audio y convertirlos en material para redes. Para eso me parece especialmente útil: cuando tienes un catálogo grande de episodios solo en audio, es una mina.",
+          "Te doy mis números para que te hagas una idea. Mis episodios duran de media unos 20 y pico minutos, así que con mi plan puedo procesar unos cuatro episodios al mes, y de esos cuatro saco a lo mejor entre 15 y 20 clips. Para mi caso, no está nada mal.",
+          "Y si te preocupa la dificultad, tranquilo: si ya tienes un podcast, esto es pan comido en comparación."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo mejor es la automatización: que te detecte los mejores momentos y te genere el clip en un par de minutos ahorra muchísimo tiempo. Los subtítulos automáticos y editables son un puntazo, la edición visual es sencilla y el conjunto es muy fácil de usar. Para revivir un catálogo de audio, cumple de sobra.",
+          "¿Lo menos bueno? El límite mensual de minutos, que te marca cuántos episodios puedes procesar. En mi plan, esos cuatro al mes. Y la función de generar historias con IA, que de momento no me convence y deja un resultado mejorable. Más que un defecto grave, es una parte que todavía le falta pulir."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Pagué 39 dólares como pago único, y con eso tengo 100 minutos de audio o vídeo al mes, con la opción de pagar más para ampliar minutos. El deal visible actual en AppSumo sigue arrancando en 39, pero estas cosas pueden cambiar.",
+          "Existe la posibilidad de que en algún momento cambie el modelo o cambien los tiers, así que mi situación de partida quizá no sea la tuya. Para el precio que tiene en este momento, a mí al menos me ha merecido la pena.",
+          "Confirma el plan actual antes de comprar. Y si decides hacerte con él, puedes usar mi enlace de afiliado: a ti te cuesta exactamente lo mismo y a mí me cae una pequeña comisión que ayuda a mantener el Laborjatorio."
+        ],
+        actions: [
+          {
+            label: "Comprar SoundMadeSeen",
+            url: "https://appsumo.8odi.net/ZdZDO0"
+          }
+        ]
+      },
+      {
+        title: "A quién le interesa",
+        paragraphs: [
+          "Sobre todo a podcasters con un catálogo de episodios solo en audio que quieren aprovecharlos en redes sin tener que regrabar nada en vídeo. Si ese es tu caso, le vas a sacar mucho partido.",
+          "Si grabas siempre en vídeo, probablemente tengas otras vías más directas."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "La comparación natural es OpusClip, que también genera clips cortos automáticamente, aunque parte de vídeo. La diferencia está justo ahí: OpusClip brilla cuando ya tienes vídeo, y SoundMadeSeen es la opción cuando lo que tienes es solo audio.",
+          "En mi flujo conviven las dos, cada una para lo suyo. Más allá de eso, no he probado otras herramientas equivalentes a fondo."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "SoundMadeSeen hace una cosa muy concreta y la hace bien: convertir tu audio en clips visuales para redes en un par de clics. No es una herramienta para todo, ni la uso a diario, pero para rescatar episodios antiguos que se merecían más vida tiene un valor claro, y por el precio de pago único que pagué me ha salido a cuenta.",
+          "¿La recomiendo? Si tienes podcast en audio y quieres llevarlo a redes sin complicarte, sí. Si no haces clips o ya trabajas en vídeo, probablemente no la necesites. La función de historias con IA, por ahora, la dejaría aparcada.",
+          "Resumen para profes y creadores ocupados: ideal para convertir episodios solo de audio en clips para redes. Automática, rápida y con subtítulos, aunque limitada por los minutos del plan."
+        ]
+      }
+    ],
     whatItDoes:
       "SoundMadeSeen coge un episodio de audio y lo transforma en clips cortos y visuales, listos para publicar en redes. Su gracia está en que no necesitas haber grabado vídeo: parte del audio y le pone una capa visual encima, con fondo, subtítulos y ondas de sonido, para que funcione en Instagram, TikTok y compañía.",
     howIUseIt:
@@ -1023,13 +1103,34 @@ export const tools: Tool[] = [
       { label: "Uso", value: "Ocasional" }
     ],
     priceRows: [
-      { label: "AppSumo", value: "39 $ pago único, verificado el 8 de junio de 2026" },
+      { label: "AppSumo", value: "39 $ pago único, verificado el 12 de junio de 2026" },
       { label: "Límite", value: "100 minutos de generación de vídeo al mes" },
       { label: "Ampliación", value: "Más códigos aumentan límites, según AppSumo" },
       { label: "Afiliación", value: "Sí, AppSumo vía Impact" }
     ],
     priceNote:
-      "Pagué 39 dólares como pago único. AppSumo muestra actualmente ese precio con 100 minutos de generación de vídeo al mes. Confirma siempre el plan actual antes de comprar, porque estas ofertas pueden cambiar.",
+      "Pagué 39 dólares como pago único. AppSumo sigue mostrando un arranque de 39 dólares con tiers superiores disponibles, pero confirma siempre el plan actual antes de comprar, porque estas ofertas pueden cambiar.",
+    purchaseLinks: [
+      {
+        label: "Comprar SoundMadeSeen en AppSumo",
+        url: "https://appsumo.8odi.net/ZdZDO0"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "OpusClip",
+        url: "/herramientas/opus-clip"
+      },
+      {
+        label: "Canva",
+        url: "/herramientas/canva"
+      },
+      {
+        label: "Spotify for Podcasters",
+        url: "/herramientas/spotify-for-podcasters"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: deal de SoundMadeSeen en AppSumo."],
     alternativeDetails: [
       {
         name: "OpusClip",

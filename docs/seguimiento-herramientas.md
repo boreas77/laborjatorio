@@ -52,7 +52,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Rank Math | No | — | No |
 | Brave | No | — | No |
 | Divi | No | — | No |
-| SoundMadeSeen | No | — | No |
+| SoundMadeSeen | Sí | 3.0 | Sí |
 | Lightshot | No | — | No |
 | Stripe | No | — | No |
 | PayPal | No | — | No |
