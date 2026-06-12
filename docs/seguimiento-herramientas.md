@@ -136,6 +136,7 @@ Regla operativa nueva:
 - Debe aparecer una CTA en el primer punto natural donde ya tenga sentido pulsar.
 - Si hay un complemento relevante dentro del artículo, debe llevar también su propia CTA.
 - Puede repetirse una sección de compra al final, pero no como única llamada a la acción.
+- No usar muletillas como `aquí soy transparente` o equivalentes; cuando falten alternativas reales, se afirma de forma directa o se elimina esa sección.
 
 ### Regla de actualización
 

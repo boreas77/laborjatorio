@@ -82,6 +82,13 @@ Regla concreta para enlaces y botones dentro del artículo:
 * Al final del artículo puede repetirse una sección de compra más completa, pero no debe ser el único lugar con acceso al enlace.
 * El estilo visual del botón debe seguir un criterio constante en la web. Por defecto, usar el botón editorial rojo ya existente salvo que haya un motivo claro para otra variante.
 
+Regla concreta de tono en fichas 3.0:
+
+* No usar fórmulas de autopresentación como `aquí soy transparente`, `voy a ser transparente` o equivalentes.
+* Si Borja no ha probado alternativas, debe decirse de forma directa, sin justificar el tono.
+* Si la sección `Alternativas` no aporta información real, es preferible eliminarla antes que mantenerla vacía o defensiva.
+* La credibilidad debe sostenerse en el contenido y en las afirmaciones concretas, no en declarar honestidad de forma explícita.
+
 En caso de duda, priorizar siempre:
 
 1. Fidelidad al artículo enviado por Borja.

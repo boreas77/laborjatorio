@@ -97,6 +97,7 @@ Reglas:
 7. Si el articulo introduce un complemento relevante, por ejemplo un accesorio o una segunda compra necesaria, ese complemento debe tener su propia llamada a la accion en el momento en que entra en juego.
 8. La seccion final de compra puede repetirse, pero no debe ser la unica via para llegar a los enlaces.
 9. El estilo del boton debe mantenerse constante en toda la web; por defecto, usar el boton editorial rojo ya establecido.
+10. Evitar muletillas de autopresentacion como "aqui soy transparente" o "voy a ser transparente". Cuando no haya alternativas reales, se dice de forma directa o se elimina esa seccion.
 
 La estructura base orientativa puede incluir:
 
@@ -109,6 +110,11 @@ La estructura base orientativa puede incluir:
 7. Alternativas, si Borja tiene criterio para nombrarlas.
 8. Veredicto honesto.
 9. Enlaces normal y afiliado, si aplica.
+
+Nota editorial:
+
+- Si la seccion `Alternativas` no aporta alternativas reales, no hace falta mantenerla por sistema.
+- La honestidad debe notarse en el contenido, no declararse como etiqueta de tono.
 
 ## Objetivo de conversion
 
