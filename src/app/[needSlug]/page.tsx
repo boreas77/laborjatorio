@@ -60,29 +60,31 @@ export default async function NeedPage({ params }: NeedPageProps) {
       {hasNarrativeSections ? (
         <div className="tool-single-column">
           <div className="prose">
-            {(need.narrativeIntro || []).map((paragraph) => (
-              <p key={paragraph}>{renderInlineMarkdown(paragraph)}</p>
-            ))}
+            <div className="need-article-body">
+              {(need.narrativeIntro || []).map((paragraph) => (
+                <p key={paragraph}>{renderInlineMarkdown(paragraph)}</p>
+              ))}
 
-            {need.narrativeSections?.map((section) => (
-              <section key={section.title}>
-                <h2>{section.title}</h2>
-                {section.paragraphs?.map((paragraph) => (
-                  <p key={paragraph}>{renderInlineMarkdown(paragraph)}</p>
-                ))}
-                {section.bullets?.length ? (
-                  <ul>
-                    {section.bullets.map((bullet) => (
-                      <li key={bullet}>{renderInlineMarkdown(bullet)}</li>
-                    ))}
-                  </ul>
-                ) : null}
-              </section>
-            ))}
+              {need.narrativeSections?.map((section) => (
+                <section key={section.title}>
+                  <h2>{section.title}</h2>
+                  {section.paragraphs?.map((paragraph) => (
+                    <p key={paragraph}>{renderInlineMarkdown(paragraph)}</p>
+                  ))}
+                  {section.bullets?.length ? (
+                    <ul>
+                      {section.bullets.map((bullet) => (
+                        <li key={bullet}>{renderInlineMarkdown(bullet)}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </section>
+              ))}
 
-            {need.narrativeOutro?.map((paragraph) => (
-              <p key={paragraph}>{renderInlineMarkdown(paragraph)}</p>
-            ))}
+              {need.narrativeOutro?.map((paragraph) => (
+                <p key={paragraph}>{renderInlineMarkdown(paragraph)}</p>
+              ))}
+            </div>
 
             <section>
               <h2>Herramientas relacionadas</h2>

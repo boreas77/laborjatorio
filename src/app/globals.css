@@ -1191,14 +1191,14 @@ main {
   color: #25211d;
 }
 
-.tool-page .prose a {
+.need-article-body a {
   color: var(--rose);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
-.tool-page .prose a:hover {
+.need-article-body a:hover {
   color: #984545;
 }
 
