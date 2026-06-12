@@ -115,7 +115,7 @@ export const needCategories: NeedCategory[] = [
       {
         title: "Índice rápido",
         paragraphs: [
-          "Lo que uso para mi aula online, por función y con su estado entre paréntesis:"
+          "Lo que uso para mi aula online:"
         ],
         bullets: [
           "Videollamada, el centro de la clase: [Zoom](/buscar?q=Zoom) (Imprescindible)",

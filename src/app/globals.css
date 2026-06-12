@@ -1191,6 +1191,17 @@ main {
   color: #25211d;
 }
 
+.tool-page .prose a {
+  color: var(--rose);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.tool-page .prose a:hover {
+  color: #984545;
+}
+
 .tool-single-column {
   max-width: 760px;
 }
