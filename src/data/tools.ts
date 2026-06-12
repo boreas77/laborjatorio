@@ -2146,10 +2146,67 @@ export const tools: Tool[] = [
     alternatives: [],
     rating: 5,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "imprescindible",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-06-12",
     intro:
       "Si tienes un podcast o planes de crearlo, necesitas un sitio desde el que subir los episodios y gestionar la publicación. Spotify for Podcasters, lo que antes se llamaba Anchor y que ahora vive bajo Spotify for Creators, es justo eso. Lo uso desde 2022 y para mí es fantástico porque funciona como panel de control del podcast.",
+    narrativeIntro: [
+      "Si tienes un podcast o planes de crearlo, necesitas un sitio desde el que subir los episodios y repartirlos por las plataformas. Spotify for Podcasters, lo que antes se llamaba Anchor y que hoy vive bajo Spotify for Creators, es justo eso, y es lo que uso desde 2022.",
+      "Esta ficha es para profes y creadores que se preguntan dónde subir un podcast para que llegue a la gente sin volverse locos. Mi respuesta lleva años siendo la misma, y encima es gratis."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es Spotify for Podcasters",
+        paragraphs: [
+          "Es la plataforma de Spotify para creadores de podcast. Desde ahí subes tus episodios, ves estadísticas de tus oyentes y conectas con el resto de plataformas de podcasting. En la práctica, es tu centro de control: no vas a pasar mucho tiempo en él, pero es una pieza importante.",
+          "Un apunte de nombres, porque aquí ha habido lío: antes se llamaba Anchor, luego Spotify for Podcasters, y ahora la capa oficial de marca es Spotify for Creators. La herramienta de fondo es la misma idea."
+        ],
+        actions: [
+          {
+            label: "Abrir Spotify for Podcasters",
+            url: "https://podcasters.spotify.com/"
+          }
+        ]
+      },
+      {
+        title: "Cómo funciona lo básico",
+        paragraphs: [
+          "El flujo es directo. Subes tu episodio, en audio o en vídeo, consultas las estadísticas de tus oyentes y conectas el resto de plataformas para que el podcast se distribuya también fuera de Spotify.",
+          "Aquí va el matiz importante: si alojas el podcast ahí, en Spotify se publica automático. Para Apple Podcasts, iVoox y demás, tienes que activar el RSS y configurarlas la primera vez. Eso puede llevarte una hora o un par de horas al principio, pero luego los episodios nuevos se actualizan a través de ese feed y te olvidas.",
+          "Otro detalle útil: permite subir episodios en vídeo, y en las plataformas que no admiten vídeo se sirven como audio. Así cubres ambos mundos desde un mismo sitio."
+        ]
+      },
+      {
+        title: "Cómo lo uso yo",
+        paragraphs: [
+          "Te cuento mi flujo real, que para eso está el Laborjatorio. No grabo dentro de Spotify for Podcasters, llego ahí con el episodio ya hecho. Primero escribo el guion en Notion, luego grabo, el audio con Audacity o el vídeo con DaVinci Resolve, y por último subo el resultado a Spotify for Podcasters, desde donde se reparte.",
+          "Así es como saco adelante mis podcasts ¡Palabras! y Gramaticón: el trabajo creativo pasa fuera, y esta herramienta es la última pieza, la que publica y distribuye."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que más me gusta es que te resuelve la publicación desde un único panel: episodios, estadísticas y distribución en un mismo sitio. También suma poder subir en vídeo y no quedarte fuera de las plataformas que solo aceptan audio. Y, por supuesto, que sea gratis.",
+          "¿Y lo que menos? Para el uso que le doy no he encontrado limitaciones importantes. Lo único un poco pesado es la configuración inicial de las plataformas externas y el RSS. Una vez hecho, te olvidas."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Gratis, sin planes de pago conocidos para este uso. Y si te preguntas dónde está la trampa, no la veo como trampa sino como lógica de plataforma: a Spotify le interesa tener a muchos creadores subiendo contenido para alimentar su ecosistema.",
+          "A ti, como creador, el panel te sale gratis. A mí me parece un trato bastante razonable."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Spotify for Podcasters hace una cosa y la hace muy bien: ser el centro desde el que subes y repartes tu podcast. Es gratis, es sencillo y, salvo la pereza de la configuración inicial, no me ha dado problemas en años.",
+          "¿Lo recomiendo? Sin dudarlo, para cualquiera que tenga o quiera tener un podcast. No es la parte glamurosa del proceso, porque el alma está en el contenido, pero sí es la pieza que hace que ese contenido llegue a la gente.",
+          "Resumen para profes y creadores ocupados: gratis y sencillo. Subes una vez, configuras bien el arranque, y desde ahí tu podcast sale al mundo sin demasiada fricción."
+        ]
+      }
+    ],
     whatItDoes:
       "Spotify for Podcasters permite subir episodios de audio o vídeo, gestionar el programa, ver estadísticas y trabajar con el RSS del podcast. Si alojas el podcast ahí, se publica automáticamente en Spotify. Para llegar a otras plataformas, como Apple Podcasts o Amazon Music, tienes que activar el RSS y configurarlas la primera vez; después, los episodios nuevos se actualizan a través de ese feed. Si subes episodios en vídeo, Spotify los muestra como vídeo en Spotify y los sirve como audio en las plataformas donde el vídeo no está disponible.",
     howIUseIt:
@@ -2179,6 +2236,31 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "No conozco planes de pago para el uso básico que hago. La lógica es clara: Spotify quiere que haya creadores subiendo contenido a su ecosistema, y a mí el panel me resuelve la publicación sin coste.",
+    purchaseLinks: [
+      {
+        label: "Abrir Spotify for Podcasters",
+        url: "https://podcasters.spotify.com/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Audacity",
+        url: "/herramientas/audacity"
+      },
+      {
+        label: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve"
+      },
+      {
+        label: "Notion",
+        url: "/herramientas/notion"
+      },
+      {
+        label: "HappyScribe",
+        url: "/herramientas/happyscribe"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: podcasters.spotify.com."],
     faqs: [
       {
         question: "¿Spotify for Podcasters sigue existiendo?",
