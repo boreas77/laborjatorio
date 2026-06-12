@@ -33,7 +33,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Petit BamBou | Sí | 3.0 | No |
 | f.lux | Sí | 2.0 | No |
 | Notion | Sí | 1.0 | No |
-| WordPress | No | — | No |
+| WordPress | Sí | 3.0 | No |
 | LearnDash | No | — | No |
 | WooCommerce | No | — | No |
 | Zoom | No | — | No |

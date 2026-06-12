@@ -1672,11 +1672,83 @@ export const tools: Tool[] = [
     alternatives: ["Web con IA", "Constructores cerrados"],
     rating: 5,
     difficulty: "media",
+    editorialVersion: "3.0",
     status: "imprescindible",
-    updatedAt: "2026-06-08",
+    updatedAt: "2026-06-12",
     publishedAt: "2026-06-08T10:00:00+02:00",
     intro:
       "Empecemos deshaciendo un malentendido muy común. Si alguna vez te han dicho que WordPress es de pago, no: posiblemente hayas mirado WordPress.com. Yo la que utilizo es la punto org, WordPress.org, que es gratuita y abierta. Y es la herramienta sobre la que he construido toda mi web. Ha sido mi fiel compañero durante casi diez años, y siempre la he defendido a muerte.",
+    narrativeIntro: [
+      "Empecemos deshaciendo un malentendido muy común. Si alguna vez te han dicho que WordPress es de pago, no: posiblemente hayas mirado WordPress.com. Yo la que utilizo es la punto org, WordPress.org, que es gratuita y abierta. Y es la herramienta sobre la que he construido toda mi web. Para que te hagas una idea de lo que la valoro: ha sido mi fiel compañero durante casi diez años, y siempre la he defendido a muerte.",
+      "Esta ficha es para profes que se preguntan algo más de fondo que qué CMS uso: por qué deberían montar su propia web en lugar de vivir solo en redes sociales. Te lo cuento desde la experiencia, con una advertencia importante al final, porque internet está cambiando rápido."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es WordPress.org",
+        paragraphs: [
+          "WordPress.org es una plataforma de código abierto para crear y gestionar tu web. La mejor forma de explicarlo es con una imagen: si tu web es tu casa de internet, hay diferentes formas de fabricarla. Puedes tener casas prefabricadas, con un número de habitaciones ya determinado, o puedes elegir construírtela tú poco a poco, módulo a módulo. WordPress es justo lo segundo: te permite construirte algo a la medida de tus necesidades.",
+          "Esa es su gran baza. Puedes elegir el diseño que quieras, ponerle tus cajetillas de suscripción, montar membresías, vender, añadir funciones avanzadas con plugins. Todo lo que se te ocurra que pueda tener una web, lo puedes combinar e introducir en WordPress."
+        ],
+        actions: [
+          {
+            label: "Ir a WordPress.org",
+            url: "https://wordpress.org"
+          }
+        ]
+      },
+      {
+        title: "Cómo funciona lo básico",
+        paragraphs: [
+          "Tiene fama de tener cierta curva de aprendizaje, y algo hay, pero la buena noticia es que tampoco es para tanto, y cada vez menos, porque cada vez es más fácil instalarla automáticamente. Con un hosting adecuado, montarla es cuestión de unos clics.",
+          "Mi hosting es Webempresa, que te instala WordPress prácticamente de la mano. A partir de ahí, gestionas todo desde su panel."
+        ]
+      },
+      {
+        title: "Mi experiencia: casi diez años y la importancia de tener casa propia",
+        paragraphs: [
+          "WordPress es la base de mi proyecto desde hace casi diez años, y aquí va la parte que de verdad quiero que te lleves. Antes de tener WordPress, yo solo tenía redes sociales. Y eso tiene un peligro tremendo: si solo estás en redes y no tienes tu propia casa en internet, dependes de algoritmos y de decisiones que no controlas.",
+          "Un cambio de las reglas ajenas y te quedas sin tu audiencia de un día para otro. Montarte tu propia casa en internet es muy importante, y WordPress es una excelente forma de hacerlo. Esa web es tuya, vive en tu hosting, y nadie te la puede apagar por un cambio de política.",
+          "Para un profe que quiere construir algo a largo plazo, esa diferencia lo es todo."
+        ]
+      },
+      {
+        title: "El giro honesto: la IA está cambiando el tablero",
+        paragraphs: [
+          "Y ahora la parte que no te contaría un folleto de WordPress. Sí, es una opción sólida, pero ten en cuenta que WordPress lleva existiendo cerca de veinte años, e internet está cambiando muy rápido.",
+          "Con la llegada de la inteligencia artificial hemos llegado a un punto en el que es posible explicarle a una IA cómo quieres que sea tu web, mandarle pantallazos de referencia de lo que te gusta y lo que no, e ir creándola sobre la marcha.",
+          "Te pongo un ejemplo cercano: esta misma web, el Laborjatorio, no está hecha con WordPress, sino con una combinación de GitHub, Vercel e instrucciones a través de Codex. Suena muy marciano todo, lo sé, pero ya te lo contaré otro día. Lo cuento solo para que veas que yo mismo, defensor de WordPress a muerte, estoy explorando otras formas de construir webs."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "El software de WordPress.org es gratuito. Lo que pagas son las piezas que lo rodean: el dominio y el hosting, que son costes inevitables, y a veces algún plugin. Los hay gratuitos y de pago, según lo que necesites.",
+          "Es decir, puedes tener una web profesional pagando, como mínimo, solo dominio y hosting."
+        ]
+      },
+      {
+        title: "Cuándo merece la pena",
+        paragraphs: [
+          "Si quieres una casa en internet de verdad tuya, con control total y posibilidad de crecer, vender, membresías, lo que sea, WordPress sigue siendo una apuesta sólida y probadísima.",
+          "Si en cambio buscas algo más sencillo y ágil, y no te asusta lo nuevo, hoy quizá también te plantearía montar algo con inteligencia artificial. No hay una única respuesta correcta: depende de cuánto quieras construir y de cuánto quieras complicarte."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Más allá de la mención general a herramientas de IA para crear webs, no tengo todavía una alternativa concreta que recomendarte por experiencia propia.",
+          "De hecho, este mismo Laborjatorio es una de esas alternativas más técnicas. Estoy explorando ese terreno y, cuando tenga algo que pueda contarte de primera mano, lo traeré aquí."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "WordPress.org ha sido mi fiel compañero durante casi diez años y lo he defendido a muerte, y lo sigo haciendo: para montarte tu propia casa en internet, con control y sin depender de los algoritmos de nadie, es una opción sólida, abierta y probada.",
+          "Mi único matiz añadido es que internet se mueve rápido y que yo mismo ya estoy mirando qué traen las herramientas de IA. Pero el consejo de fondo no cambia: ten tu propia casa en internet. Lo demás es secundario.",
+          "Resumen para profes ocupados: WordPress.org, la gratis, no la .com, es de lo más sólido para tener tu propia web sin depender de redes. Tiene algo de curva, cada vez menos, y hoy conviene echar un ojo también a lo que llega con la IA."
+        ]
+      }
+    ],
     whatItDoes:
       "WordPress.org es una plataforma de código abierto para crear y gestionar tu web. Si tu web es tu casa de internet, hay diferentes formas de fabricarla: puedes tener casas prefabricadas o puedes construirla poco a poco, módulo a módulo. WordPress es justo lo segundo: te permite construir algo a la medida de tus necesidades, con diseño, formularios, membresías, ventas, plugins y funciones avanzadas.",
     howIUseIt:
@@ -1704,6 +1776,31 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "El software de WordPress.org es gratuito. Lo que pagas son las piezas que lo rodean: dominio y hosting, que son costes inevitables, y a veces algún plugin o tema de pago.",
+    purchaseLinks: [
+      {
+        label: "Ir a WordPress.org",
+        url: "https://wordpress.org"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Webempresa",
+        url: "/herramientas/webempresa"
+      },
+      {
+        label: "MailPoet",
+        url: "/herramientas/mailpoet"
+      },
+      {
+        label: "WooCommerce",
+        url: "/herramientas/woocommerce"
+      },
+      {
+        label: "LearnDash",
+        url: "/herramientas/learndash"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: wordpress.org."],
     alternativeDetails: [
       {
         name: "Webempresa",
