@@ -35,17 +35,96 @@ export const needCategories: NeedCategory[] = [
     icon: "pen",
     toolSlugs: [
       "chatgpt",
-      "opusclip",
-      "davinci-resolve-editor-video-gratis-profesores",
       "kommodo",
       "happyscribe",
       "metricool",
       "audacity",
       "spotify-for-podcasters",
-      "squoosh",
-      "filtro-antipop-innogear",
-      "logitech-c920",
-      "acer-nitro-5"
+      "canva",
+      "speakpipe",
+      "opusclip"
+    ],
+    articleTitle: "Crear contenido: cómo darte a conocer como profesor online, sin olvidarte de vender",
+    metaDescription:
+      "Cómo doy a conocer mi trabajo como profesor online sin intentar estar en todas partes: foco, contenido largo, reutilización y una visibilidad que sirva para vender.",
+    narrativeIntro: [
+      "Te voy a confesar algo de entrada: la visibilidad siempre ha sido la pata más coja de mi negocio, la parte que más me cuesta. Se me da bien dar clases, crear materiales, montar un podcast. Pero eso de salir ahí fuera a que la gente me conozca... ay. Ahí es donde más he sufrido y más me he equivocado.",
+      "Durante un tiempo intenté estar en todas partes. Instagram, TikTok, Twitter, LinkedIn, YouTube, el podcast, la newsletter, todo a la vez. ¿El resultado? Me sentía como un trozo de mantequilla untado sobre demasiado pan. Sí, es lo que decía Bilbo en El Señor de los Anillos, y describe perfectamente la sensación: estás en todos lados y en ninguno, estirado, fino, sin sustancia en ningún punto.",
+      "Esta categoría va de eso, de cómo darte a conocer como profesor online sin acabar siendo mantequilla. Y te adelanto la tesis, porque es importante: darte a conocer no es estar en todas partes. Es concentrarte, conectar de verdad con quien te interesa y, ojo a esto, saber presentar lo que ofreces. Porque tener audiencia y tener ventas no son lo mismo, y confundirlos es uno de los errores más caros que puedes cometer."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué la visibilidad importa, y por qué visibilidad no es venta",
+        paragraphs: [
+          "Puedes ser el mejor profesor del mundo. Puedes tener los materiales más currados, las clases más divertidas, el método más eficaz. Pero si nadie sabe que existes, da igual. La visibilidad es la puerta: sin ella, todo lo bueno que haces dentro no le llega a nadie.",
+          "Hasta aquí, lo obvio. Lo que no es tan obvio es la segunda parte: la visibilidad, por sí sola, no paga las facturas. Conozco gente con comunidades enormes en redes que luego no venden ni una clase, y conozco proyectos pequeñitos que facturan de lujo. Tener seguidores no es tener clientes. Por eso, cuando hablo de crear contenido, no hablo solo de que te vean. Hablo de que te vean las personas adecuadas, de que conectes con ellas y de que sepas transmitirles por qué lo que ofreces les interesa. Lo demás son números de vanidad."
+        ]
+      },
+      {
+        title: "Mi experiencia: del multicanal disperso al foco",
+        paragraphs: [
+          "Mi gran cambio fue dejar de intentar estar en todo. En cuanto me lo permití, todo mejoró.",
+          "Las redes sociales, te seré sincero, me generan mucha fricción. O sea, me generan urticaria. No es mi medio, no disfruto, y cuando algo no lo disfrutas se nota en lo que produces. Así que hice las paces conmigo mismo y elegí mis dos canales: [YouTube](/buscar?q=YouTube) y [Spotify for Podcasters](/herramientas/spotify-for-podcasters). Ahí sí me encuentro cómodo, porque son formatos largos, donde puedo profundizar, explicarme, ser yo.",
+          "El podcast, sobre todo, ha sido un descubrimiento. Es un formato muy íntimo que crea una conexión muy fuerte con tu audiencia. Alguien que te escucha cuarenta minutos mientras pasea o conduce te conoce de una manera que ningún reel de quince segundos consigue. Esa cercanía es la que luego se convierte en confianza, y la confianza es la que se convierte en alumnos.",
+          "¿Y las redes, entonces? No las abandoné del todo. El gran descubrimiento que he hecho este año es la posibilidad de crear clips de forma semiautomática a partir del contenido largo que ya grabo. O sea, el trabajo pesado lo hago una vez, el vídeo, el episodio, y de ahí salen piezas pequeñas para las redes sin tener que desgastarme creando contenido nuevo desde cero. Reutilizo en lugar de multiplicarme. Eso me ha quitado un peso enorme de encima.",
+          "¿He construido una comunidad gigante? No. Y aunque en todos estos años no he conseguido construir una comunidad muy grande, estoy orgulloso de la que tengo: pequeña, pero fiel de verdad. Gente que no solo me escucha, sino que compra, colabora y se implica. Y eso, al final, vale más que cien mil seguidores fantasma."
+        ]
+      },
+      {
+        title: "Lo que he aprendido por las malas",
+        paragraphs: [
+          "Si tuviera que resumir lo aprendido en tres ideas, serían estas."
+        ],
+        bullets: [
+          "Mata tu ego. Suena bestia, pero es así: tienes que matar tu ego. El contenido no va de lo que tú quieres mostrar ni de lo guay que quieres parecer. Va de lo que tu estudiante necesita. El día que dejas de pensar en ti y empiezas a pensar en él, tu contenido cambia.",
+          "Busca el match. La clave está en encontrar un punto de encuentro entre lo que disfrutas, lo que se te da bien y lo que de verdad le interesa a tu perfil de estudiante. Si solo haces lo que te gusta, te diviertes pero no conectas. Si solo persigues lo que funciona, te quemas. El oro está en la intersección.",
+          "Una cosa bien. Si tratas de hacer todo a la vez, lo más probable es que nada te salga bien. Y, en cambio, haciendo una sola cosa bien, conozco muchos negocios a los que les va de lujo. Empieza por un canal, domínalo, y solo cuando lo tengas rodado piensa en expandirte. No al revés."
+        ]
+      },
+      {
+        title: "Cómo lo entiendo yo, en una frase",
+        paragraphs: [
+          "Crear contenido no es alimentar un algoritmo. Es elegir bien dónde estar, aparecer con algo que de verdad aporte y construir, poco a poco, una relación con gente que acaba confiando en ti. La tecnología ayuda, pero la conexión la pones tú. Esto es lo que de verdad importa, aunque borres todas las herramientas que menciono a continuación."
+        ]
+      },
+      {
+        title: "Las herramientas que uso, y para qué",
+        paragraphs: [
+          "Te las agrupo por la función que cumplen en este proceso. Son secundarias: el protagonista eres tú y tu mensaje. Pero ayudan.",
+          "Para crear el contenido largo. Mi base son [YouTube](/buscar?q=YouTube) para el vídeo y [Spotify for Podcasters](/herramientas/spotify-for-podcasters) para el podcast. Son mis dos canales principales, donde vive lo importante.",
+          "Para producirlo y pulirlo. [Audacity](/herramientas/audacity) para editar el audio, [HappyScribe](/herramientas/happyscribe) para transcribir, que además me sirve para sacar textos de lo que ya he dicho, y [Canva](/herramientas/canva) para las imágenes y portadas.",
+          "Para pensar y escribir. [Google Docs](/buscar?q=Google%20Docs) es donde planifico y escribo los guiones, y [ChatGPT](/herramientas/chatgpt) me echa una mano para ordenar ideas y desatascarme cuando me quedo en blanco. Ojo: como segundo cerebro, no como piloto automático. La voz la pongo yo.",
+          "Para reutilizar en redes sin morir en el intento. Aquí está la joya: [Opus Clip](/herramientas/opusclip) me genera los clips semiautomáticos a partir del contenido largo, y [Metricool](/herramientas/metricool) me ayuda a programarlos y a ver qué funciona sin tener que vivir pegado a las redes.",
+          "Y un par de apoyos puntuales: [SpeakPipe](/herramientas/speakpipe), que uso a ratos para que la audiencia me deje audios, y [Kommodo](/herramientas/kommodo) para algún vídeo formativo suelto."
+        ]
+      },
+      {
+        title: "Si empezara hoy desde cero",
+        paragraphs: [
+          "Elegiría un único canal. Uno. El que mejor encaje con cómo soy y con dónde está mi estudiante. En mi caso sería el podcast, casi seguro, porque es donde mejor conecto y menos fricción me genera.",
+          "Me concentraría en hacer eso bien durante una buena temporada, sin mirar de reojo lo que hacen los demás en otras plataformas. Cuando lo tuviera rodado, y solo entonces, empezaría a reutilizar ese contenido en clips para asomar la cabeza en redes sin desgastarme. Y mientras tanto, trabajaría lo otro, lo que casi nadie trabaja: aprender a contar lo que ofrezco para que quien me escucha entienda por qué le interesa. Porque la visibilidad sin esa pata es una casa preciosa sin puerta de entrada."
+        ]
+      },
+      {
+        title: "El contenido, de un vistazo",
+        paragraphs: [
+          "Si quieres ir directo a una herramienta, aquí tienes todo lo que uso para crear contenido, ordenado por su función. Entre paréntesis, el peso que tiene cada una en el Laborjatorio."
+        ],
+        bullets: [
+          "El contenido largo, el núcleo: [YouTube](/buscar?q=YouTube), vídeo (Importante), y [Spotify for Podcasters](/herramientas/spotify-for-podcasters), podcast (Imprescindible)",
+          "Producir y pulir: [Audacity](/herramientas/audacity), edición de audio (Imprescindible), [HappyScribe](/herramientas/happyscribe), transcripción (Imprescindible), y [Canva](/herramientas/canva), diseño e imágenes (Imprescindible)",
+          "Pensar y escribir: [Google Docs](/buscar?q=Google%20Docs), guiones y planificación (Imprescindible), y [ChatGPT](/herramientas/chatgpt), apoyo de ideas y redacción (Imprescindible)",
+          "Reutilizar en redes: [Opus Clip](/herramientas/opusclip), clips semiautomáticos (Importante), y [Metricool](/herramientas/metricool), programación y analítica (Importante)",
+          "Apoyos puntuales: [SpeakPipe](/herramientas/speakpipe), audios de la audiencia (Opcional), y [Kommodo](/herramientas/kommodo), vídeo formativo suelto (Importante)"
+        ]
+      },
+      {
+        title: "En resumen",
+        paragraphs: [
+          "Darte a conocer como profesor online no va de estar en todas partes ni de perseguir números enormes. Va de elegir bien dónde estar, conectar de verdad con tu gente y saber contarles lo que ofreces. Foco, conexión y un poquito de cabeza para que esa visibilidad acabe sirviendo para algo.",
+          "A mí me ha costado años llegar hasta aquí, y sigo aprendiendo. Si andas peleándote con esto, o si has encontrado tu propia manera de darte a conocer sin acabar hecho mantequilla, cuéntamelo en hola@borjaprofe.com. Y si quieres que te cuente estas movidas con calma, nos vemos en [borjaprofe.com](https://borjaprofe.com)."
+        ]
+      }
     ]
   },
   {
