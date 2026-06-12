@@ -475,6 +475,79 @@ export const needCategories: NeedCategory[] = [
       "filtro-antipop-innogear",
       "logitech-c920",
       "acer-nitro-5"
+    ],
+    articleTitle: "Mi escritorio: qué equipo necesita de verdad un profesor online, o no",
+    metaDescription:
+      "El equipo físico que de verdad me ayuda a dar clase online sin fricción: ordenador, webcam, silla, mesa y esos pequeños cacharros que te salvan la jornada.",
+    narrativeIntro: [
+      "Durante una temporada di clases desde la cama. Literal. El portátil encima de las piernas y, debajo, una maleta para subirlo a la altura de la cámara. Funcionaba: daba clases, cobraba, los alumnos volvían. Pero al rato tenía la espalda hecha un cromo y la sensación de estar haciendo malabares para algo que debería ser lo más simple del mundo, que es sentarme a trabajar.",
+      "Te cuento esto porque Mi escritorio es, probablemente, la categoría menos importante del Laborjatorio. Y aun así es la que tienes delante cada día, la que te acompaña hora tras hora. Aquí no hay software que te cambie la vida ni una IA que te ahorre media jornada. Hay una silla, un ordenador, una webcam y cuatro cacharros. Cosas que no lucen, que nadie pregunta y que, cuando fallan, te amargan la mañana.",
+      "La tesis es sencilla: el equipo físico de un profesor online no va de tener lo mejor ni lo más caro. Va de quitar fricción y de aguantar el cuerpo durante las muchas horas que pasas sentado. Nada más. Y, sobre todo, nada menos."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué importa, aunque parezca lo que menos",
+        paragraphs: [
+          "Piensa en las horas. Si das clases online, vives sentado. Y no es solo dar clase: es preparar, grabar, editar, responder correos, montar materiales. Todo en la misma silla, delante de la misma pantalla. El cuerpo lo nota. Yo lo noté.",
+          "Lo que pasa cuando ignoras esto es que la fricción se acumula sin que te des cuenta. Una silla mala no te rompe la espalda en un día, te la rompe en seis meses. Un ratón incómodo no te molesta en una clase, te molesta en la número doscientos. Un ordenador que va lento no te arruina una grabación, te roba diez minutos cada vez, hasta que has perdido tardes enteras. Son micropérdidas. Y las micropérdidas, repetidas mil veces, son lo que de verdad te desgasta.",
+          "Por eso esta categoría, siendo la menos glamurosa, es la que más se nota a largo plazo. No te va a dar un superpoder. Te va a quitar un montón de pequeñas molestias que, sumadas, marcan la diferencia entre acabar el día entero o acabar molido."
+        ]
+      },
+      {
+        title: "Cómo lo enfoco yo",
+        paragraphs: [
+          "Aquí voy a justificarte siempre por qué he elegido cada cosa. No porque sea la mejor del mundo, sino porque resolvió algo que yo necesitaba resolver. Es muy probable que tú conozcas opciones mejores o más cómodas. Yo te cuento lo que he descubierto y por qué me está funcionando, y tú valoras lo tuyo.",
+          "El principio que lo ordena todo es este: lo importante no es encontrar el setup perfecto ni la herramienta ideal, es encontrar una que cumpla con tu trabajo. Que cumpla con tus necesidades. Punto.",
+          "Eso significa que no hace falta convertirse en el típico youtuber con luces de neón y una silla que parece del Fórmula 1, sacada de una nave espacial. No necesitas eso. Necesitas tu microespacio, uno que se adecue a cómo trabajas tú, porque ya sabes la cantidad de horas que pasas ahí sentado. La diferencia entre un setup de revista y uno que funciona no es el dinero. Es saber qué necesitas de verdad."
+        ]
+      },
+      {
+        title: "Las cuatro maneras de tirar el dinero en hardware",
+        paragraphs: [
+          "Comprar hardware siempre duele. Es un desembolso, y encima en algo que no produce nada por sí mismo: una silla no te trae alumnos. Por eso conviene gastar con cabeza. Con los años he identificado cuatro formas clásicas de tirar el dinero:"
+        ],
+        bullets: [
+          "Lo barato que se rompe rápido. Compras lo más económico, dura cuatro meses y acabas comprándolo otra vez. Te ha salido caro lo barato.",
+          "Lo demasiado profesional para lo que de verdad haces. El micro de estudio de mil euros para grabar un podcast que, de momento, escuchan cuatro gatos. Sobra equipo por todas partes.",
+          "Lo que compras y no usas. El cacharro que parecía imprescindible en el vídeo de un influencer y que lleva en un cajón desde que llegó.",
+          "El impulso que, a veces, acierta. Este es el tramposo: a veces compras por capricho y resulta que era justo lo que te faltaba. Pasa. Pero no construyas tu escritorio a base de impulsos y rezando para tener suerte.",
+          "El truco está en gastar en lo que usas todos los días y ser tacaño con lo que usarás una vez al mes. Una silla y un ordenador los tocas cada día, ahí merece la pena. Un trípode que sacas para una grabación al trimestre, ahí, lo justo."
+        ]
+      },
+      {
+        title: "Qué hay en mi escritorio",
+        paragraphs: [
+          "Te lo agrupo por la función que cumple cada cosa, que es como tiene sentido pensarlo.",
+          "Lo que hace el trabajo. El [Acer Nitro 5](/herramientas/acer-nitro-5) es mi ordenador. No es una máquina de diseñador ni de gamer hardcore, es un portátil que aguanta bien dar clase, grabar, editar vídeo ligero y tener mil pestañas abiertas sin morirse. Y la [Logitech C920](/herramientas/logitech-c920) es la webcam con la que me ven los alumnos. Estos dos son los imprescindibles de verdad: sin ordenador y sin cámara no hay clase online que valga.",
+          "La postura y el cuerpo. Aquí entran la [mesa elevable Maidesite](/herramientas/standing-desk-maidesite) y la [silla de oficina de malla](/herramientas/silla-oficina-malla). La mesa me deja alternar entre estar sentado y de pie, que para las jornadas largas es oro. Y la silla de malla respira, que cuando pasas seis horas pegado a ella se agradece más de lo que parece. Las dos son importantes: no salvan la vida, pero salvan la espalda.",
+          "Los que quitan fricción. Y luego están los pequeños. El [ratón Inphic PM6](/herramientas/inphic-pm6), silencioso y cómodo, de esos que no notas hasta que vuelves a uno malo. El [filtro antipop InnoGear](/herramientas/filtro-antipop-innogear), que es una tontería de cuatro euros que mejora cómo suenas al grabar. Y un [ventilador recargable silencioso](/herramientas/ventilador-recargable-silencioso) para el verano, porque dar clase sudando es más regular. Este último es opcional, claro, es comodidad pura. Pero la comodidad, en jornadas largas, también es productividad."
+        ]
+      },
+      {
+        title: "Si tuviera que montarlo hoy desde cero",
+        paragraphs: [
+          "Empezaría por lo que toco cada día y dejaría lo demás para después. Primero, un ordenador que aguante y una webcam decente, que es lo mínimo para trabajar. Después, la silla, porque tu espalda te lo va a agradecer antes que ninguna otra cosa. Y la mesa, si puedes.",
+          "Lo pequeño, el ratón, el filtro, el ventilador, lo iría sumando sobre la marcha, según notara la molestia que cada cosa resuelve. No me lanzaría a comprarlo todo de golpe el primer día. El escritorio bueno no se compra, se va afinando. Vas detectando qué te molesta y le pones remedio. Esa es la única lista de la compra que de verdad funciona."
+        ]
+      },
+      {
+        title: "El escritorio, de un vistazo",
+        paragraphs: [
+          "Si quieres ir directo a una herramienta concreta, aquí tienes todo mi escritorio ordenado por la función que cumple. Entre paréntesis, el peso que tiene cada cosa para mí: no todo importa igual."
+        ],
+        bullets: [
+          "Lo que hace el trabajo: [Acer Nitro 5](/herramientas/acer-nitro-5), ordenador (Imprescindible), y [Logitech C920](/herramientas/logitech-c920), webcam (Imprescindible)",
+          "La postura y el cuerpo: [Mesa elevable Maidesite](/herramientas/standing-desk-maidesite), escritorio (Importante), y [Silla de oficina de malla](/herramientas/silla-oficina-malla), silla (Importante)",
+          "Los pequeños que quitan fricción: [Ratón Inphic PM6](/herramientas/inphic-pm6), ratón (Importante), [Filtro antipop InnoGear](/herramientas/filtro-antipop-innogear), accesorio de grabación (Importante), y [Ventilador recargable silencioso](/herramientas/ventilador-recargable-silencioso), ventilador (Opcional)"
+        ]
+      },
+      {
+        title: "En resumen",
+        paragraphs: [
+          "Mi escritorio no es un escaparate. Es un sitio que funciona, montado para aguantar muchas horas sin que el cuerpo proteste y sin que los cacharros me hagan perder el tiempo. Eso es todo lo que le pido, y eso es justo lo que te recomendaría buscar a ti: no el setup de revista, sino el que te deja trabajar a gusto.",
+          "Seguramente tú tengas cosas mejores que las mías, o al menos distintas. Si has dado con algo que te funciona y te apetece contármelo, escríbeme a hola@borjaprofe.com, que de esto se aprende un montón entre profes. Y si quieres que te cuente estas movidas con más calma, te espero en [borjaprofe.com](https://borjaprofe.com)."
+        ]
+      }
     ]
   },
   {
