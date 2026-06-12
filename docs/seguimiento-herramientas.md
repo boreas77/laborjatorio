@@ -30,7 +30,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Filtro antipop InnoGear | Sí | 1.0 | Sí |
 | Logitech C920 | Sí | 1.0 | Sí |
 | Acer Nitro 5 | Sí | 1.0 | No |
-| Petit BamBou | Sí | 1.0 | No |
+| Petit BamBou | Sí | 3.0 | No |
 | f.lux | Sí | 2.0 | No |
 | Notion | Sí | 1.0 | No |
 | WordPress | No | — | No |

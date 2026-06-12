@@ -3305,10 +3305,60 @@ export const tools: Tool[] = [
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-09",
+    updatedAt: "2026-06-12",
     intro:
       "En el Laborjatorio no todo son micrófonos y plugins. Parte de hacer bien este trabajo es cuidar la cabeza del que lo hace, y para eso uso Petit BamBou, una app de meditación que tengo metida en la rutina. No te va a editar un vídeo ni a montarte una web, pero te ayuda a llegar a la clase con la cabeza en su sitio. No te voy a vender milagros: te cuento simplemente qué uso yo y por qué me aporta calma.",
+    narrativeIntro: [
+      "En el Laborjatorio no todo son micrófonos y plugins. Parte de hacer bien este trabajo es cuidar la cabeza del que lo hace, y para eso uso Petit BamBou, una app de meditación que tengo metida en la rutina. No te va a editar un vídeo ni a montarte una web, pero te ayuda a llegar a la clase con la cabeza en su sitio.",
+      "Esta ficha es para profes que se preguntan cómo desconectar un poco entre tanta pantalla. No te voy a vender milagros, te cuento simplemente qué uso yo y por qué me aporta calma."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es Petit BamBou",
+        paragraphs: [
+          "Petit BamBou es una aplicación de meditación. Cada día te sugiere una meditación diaria, pero además tiene un catálogo amplio con planes para temas concretos: dormir, relaciones familiares, autohipnosis y más.",
+          "Tú vas a tu ritmo, puedes seguir la del día o explorar lo que te apetezca del catálogo."
+        ],
+        actions: [
+          {
+            label: "Ver Petit BamBou",
+            url: "https://www.petitbambou.com/"
+          }
+        ]
+      },
+      {
+        title: "Cómo la uso yo",
+        paragraphs: [
+          "Te cuento mi uso real, sin adornos. Sobre todo tiro de la meditación diaria: generalmente voy con la del día y punto, que es lo que mantengo como hábito sin tener que decidir nada. De vez en cuando me meto en el catálogo, y he usado bastante los planes de temas concretos, como el de relaciones familiares. La autohipnosis, por ejemplo, la tengo pendiente.",
+          "Pero mi descubrimiento reciente, y lo que más me ha enganchado, es la meditación libre. Esta está muy chula: mientras salgo a pasear con mi perrita Duna, me pongo un plan de, por ejemplo, ocho minutos, con un sonido rítmico para ajustar las respiraciones. Voy respirando al ritmo de esos sonidos y me relaja mogollón.",
+          "Porque meditar no tiene por qué ser sentarse quieto en una habitación. También puede ser caminar y respirar."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que más valoro es lo más simple: me aporta calma, me transmite buen rollo y me deja más tranquilo. La meditación diaria me quita la pereza de decidir qué hacer, la meditación libre con sonidos es perfecta para combinar con un paseo, y el catálogo es lo bastante variado como para no aburrirme con lo mismo.",
+          "¿Y lo que menos? No puedo hablarte de limitaciones ni de problemas. Para el uso que le doy, no me he topado con nada que me moleste. No es que sea perfecta y yo lo sepa todo de ella, es que le pido una cosa muy concreta, ayudarme a parar y respirar, y eso lo cumple."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Lo que yo pago son 50 euros al año. También existe la opción de acceso de por vida por 200 euros. Y me suena que en algún momento pillé alguna oferta, no sé si por ser la primera vez te dan un cupón o algo así, conque echa un ojo por si hay promoción al empezar.",
+          "¿Anual o vitalicio? Es una cuenta sencilla. Si crees que vas a seguir meditando muchos años, el vitalicio se amortiza. Si todavía estás probando si el hábito te cuaja, mejor el anual. Yo, de momento, voy con el anual."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Petit BamBou no es una herramienta de trabajo al uso, y por eso me parece importante que esté aquí: cuidar tu cabeza también forma parte de sostener un proyecto a largo plazo. A mí me da calma, la tengo integrada en el día a día y la combinación de meditar paseando con Duna me ha conquistado.",
+          "¿La recomiendo? Como apoyo para parar y respirar, sí. No esperes magia: espera una herramienta sencilla que, si la usas, te sienta bien.",
+          "Resumen para profes ocupados: no edita vídeos ni vende cursos, pero te ayuda a llegar entero al final del día. Meditación diaria sencilla y una modalidad libre estupenda para pasear."
+        ]
+      }
+    ],
     whatItDoes:
       "Petit BamBou es una aplicación de meditación, respiración y relajación. Cada día propone una meditación diaria, y además tiene un catálogo amplio con programas sobre sueño, estrés, relaciones familiares, autohipnosis, respiración y otros temas. Puedes seguir la propuesta del día o entrar al catálogo cuando quieras trabajar algo concreto.",
     howIUseIt:
@@ -3331,13 +3381,33 @@ export const tools: Tool[] = [
     ],
     priceRows: [
       { label: "Versión gratuita", value: "Contenido y herramientas limitadas sin límite de tiempo" },
-      { label: "Plan anual web", value: "64,99 $/año, verificado el 9 de junio de 2026" },
-      { label: "Mi referencia", value: "Alrededor de 50 €/año según mi experiencia/oferta" },
-      { label: "Acceso de por vida", value: "259,99 $ en la web internacional" },
+      { label: "Plan anual", value: "50 €/año en mi caso" },
+      { label: "Acceso de por vida", value: "200 €" },
       { label: "Afiliación", value: "No" }
     ],
     priceNote:
-      "Yo tengo como referencia unos 50 euros al año, probablemente por oferta o condiciones de entrada. La web oficial muestra plan anual y acceso de por vida, y confirma una versión gratuita sin límite de tiempo. Confirma siempre el precio actual antes de suscribirte, porque puede variar según plataforma, país o promoción.",
+      "Yo tengo como referencia 50 euros al año y un vitalicio de 200 euros. Aun así, conviene mirar el precio actual antes de suscribirte, porque puede variar según plataforma o promoción.",
+    purchaseLinks: [
+      {
+        label: "Ver Petit BamBou",
+        url: "https://www.petitbambou.com/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Standing Desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite"
+      },
+      {
+        label: "Ventilador recargable y silencioso",
+        url: "/herramientas/ventilador-recargable-silencioso"
+      },
+      {
+        label: "f.lux",
+        url: "/herramientas/f-lux"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: petitbambou.com."],
     faqs: [
       {
         question: "¿Petit BamBou tiene versión gratis?",
