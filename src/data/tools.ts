@@ -203,11 +203,92 @@ export const tools: Tool[] = [
     alternatives: ["ChatGPT", "DaVinci Resolve", "OpusClip"],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-07",
+    updatedAt: "2026-06-12",
     publishedAt: "2026-06-07T11:00:00+02:00",
     intro:
       "Canva es una herramienta compleja, compleja de la que hablar. Y no porque sea difícil de usar —al revés—, sino porque mi relación con ella ha cambiado mucho. Llevo utilizándola por lo menos ocho años, y hasta hace muy poco te habría dicho, sin pestañear, que es un imprescindible para un profe que tiene un negocio propio. Hoy ya no lo tengo tan claro, y de eso va esta ficha.",
+    narrativeIntro: [
+      "Canva es una herramienta compleja, compleja de la que hablar. Y no porque sea difícil de usar, al revés, sino porque mi relación con ella ha cambiado mucho. Llevo utilizándola por lo menos ocho años, y hasta hace muy poco te habría dicho, sin pestañear, que es un imprescindible para un profe que tiene un negocio propio. Hoy ya no lo tengo tan claro, y de eso va esta ficha.",
+      "La pregunta que de verdad te interesa no es qué es Canva, eso ya lo sabes, sino si merece la pena pagarla. Te respondo con mi experiencia real, con sus matices, y con un aviso de honestidad importante sobre mi propia situación."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es Canva",
+        paragraphs: [
+          "Canva es una herramienta de diseño online para crear casi cualquier cosa visual: portadas, posts para redes, presentaciones, materiales, documentos. Funciona con plantillas y un catálogo enorme de imágenes, de forma que no necesitas saber diseño para sacar algo decente. Una navaja suiza, vamos."
+        ],
+        actions: [
+          {
+            label: "Ver Canva",
+            url: "https://www.canva.com/"
+          }
+        ]
+      },
+      {
+        title: "Mi relación con Canva, y por qué ha cambiado",
+        paragraphs: [
+          "Durante años fue una de mis herramientas estrella, pero ha pasado algo: la IA generativa. Uno de los grandes valores de Canva era ese catálogo gigante de imágenes para buscar y usar. Y claro, ¿para qué estar buscando una imagen de un chimpancé cabalgando sobre un velociraptor cuando puedes generarla en segundos con IA?",
+          "He generado muchas imágenes con ChatGPT, como todo el mundo, y eso le ha quitado a Canva una de sus grandes bazas para mí. Así que mi uso ha bajado bastante: no la he abandonado, pero ya no es el centro de nada."
+        ]
+      },
+      {
+        title: "Cómo la uso ahora",
+        paragraphs: [
+          "Hoy la utilizo principalmente para una cosa, mantener la coherencia visual, y en concreto para las portadas de los episodios de mi podcast Gramaticón y para algún material de redes.",
+          "Y lo hago de la forma más vaga y eficiente posible: tengo un archivo con todo montado, la fuente, el fondo, etcétera, y lo único que hago cada semana es sustituir la imagen principal y el título. Cinco minutos y la portada está lista, siempre con el mismo estilo. Para eso, Canva sigue siendo comodísima. Los clips del podcast, por cierto, ya no los toco aquí: esos los hago con OpusClip."
+        ],
+        actions: [
+          {
+            label: "Entrar en Canva",
+            url: "https://www.canva.com/"
+          }
+        ]
+      },
+      {
+        title: "Para qué la usé antes: materiales didácticos",
+        paragraphs: [
+          "Hubo una época en la que creaba unidades didácticas y materiales de pago con Canva. Funcionaba, pero te seré sincero: no era el método más fluido, era trabajo bastante artesanal.",
+          "Hoy ya no lo haría así. Buscaría una herramienta más específica, a poder ser de pago único o mensual, que convierta un documento, tipo Word, en un material con formato visual. No he probado ninguna en concreto todavía, pero es por ahí por donde miraría."
+        ]
+      },
+      {
+        title: "El aviso honesto: mi cuenta EDU",
+        paragraphs: [
+          "Antes de que te fíes de mi opinión sobre el precio, tienes que saber esto: yo tengo la suerte de acceder a una cuenta EDU compartida en la que, además, conseguí acceso de por vida. Eso significa que mi experiencia con el coste no es la tuya.",
+          "Te lo digo claro: ahora mismo, que no hago materiales, creo que me habría dado de baja si no tuviera acceso a esa cuenta con tan buenas condiciones. Así que cuando leas más abajo mi merece la pena, ten presente este matiz."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo mejor de Canva, y lo que la mantiene en mi rutina, son las plantillas y la coherencia visual: montas un estilo una vez y lo reutilizas en segundos sin saber nada de diseño. Esa accesibilidad, sumada a su versatilidad de navaja suiza, es lo que la hizo tan valiosa durante años. El catálogo de imágenes era otra de sus grandes bazas, aunque ya te he contado que la IA le ha comido bastante terreno ahí.",
+          "¿Y lo que menos? Para empezar, el plan gratuito es muy limitado, con acceso restringido a imágenes y funciones, así que para sacarle jugo de verdad toca pagar. Además, para crear materiales el flujo es artesanal: funciona, pero no es ágil. Y varios de sus extras no me convencen: los documentos inteligentes a mí no me han terminado de funcionar, el editor de vídeo se queda corto frente a DaVinci Resolve, gratis y mejor, y para quitar fondos hay herramientas especializadas que lo hacen mejor."
+        ]
+      },
+      {
+        title: "Precio: ¿merece la pena pagarla?",
+        paragraphs: [
+          "Aquí va la respuesta a la pregunta del título, y es el clásico depende: depende del uso y del valor que te aporte. Si creas materiales con Canva de forma habitual, sí, merece la pena. Cuando yo hacía materiales didácticos, desde luego amortizaba la suscripción cada mes. Pero si solo la usas para algún diseño suelto, probablemente no te compense un pago anual, y menos ahora que la IA te resuelve buena parte de las imágenes.",
+          "Mi consejo es el mismo que me daría a mí mismo: Canva es una buena navaja suiza, pero analiza cuáles son tus necesidades exactas antes de meterte en una herramienta de pago recurrente en la que posiblemente acabes pagando por todo un año de golpe. Y si puedes entrar en algún plan especial, EDU, cuentas compartidas, mejor que mejor."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "No tengo una alternativa única, sino una por cada cosa que antes hacía con Canva. Para imágenes, la IA generativa tipo ChatGPT me ha sustituido buena parte del catálogo. Para vídeo, DaVinci Resolve, gratis y mejor que el editor de Canva. Para quitar fondos hay herramientas especializadas que lo bordan, aunque dejo pendiente detallar cuáles uso en una ficha futura. Y para crear materiales a partir de un documento, lo dejo también como pendiente: es justo lo que buscaría hoy, pero aún no he probado ninguna que pueda recomendarte por experiencia."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Canva sigue siendo una herramienta estupenda y versátil, pero su trono de imprescindible se ha tambaleado en mi caso por culpa de la IA. Hoy la uso para coherencia visual, mis portadas, y poco más, y soy consciente de que solo sigo dentro porque tengo una cuenta en condiciones muy buenas.",
+          "¿Merece la pena pagarla? Si vives de crear contenido visual y materiales, sí, sin duda. Si tu uso es ocasional, piénsatelo dos veces antes del pago anual: analiza tus necesidades reales y mira si la IA y otras herramientas gratuitas no te cubren ya buena parte.",
+          "Resumen para profes ocupados: gran navaja suiza, pero ya no es el imprescindible de antes. Paga solo si creas materiales a menudo, y antes mira si la IA no te resuelve ya lo que buscas."
+        ]
+      }
+    ],
     whatItDoes:
       "Canva es una herramienta de diseño online para crear casi cualquier cosa visual: portadas, posts para redes, presentaciones, materiales, documentos. Funciona con plantillas y un catálogo enorme de imágenes, de forma que no necesitas saber diseño para sacar algo decente. Una navaja suiza, vamos.",
     howIUseIt:
@@ -236,6 +317,31 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "Aquí va la respuesta a la pregunta del título, y es el clásico depende: depende del uso y del valor que te aporte. Si creas materiales con Canva de forma habitual, sí, merece la pena. Cuando yo hacía materiales didácticos, amortizaba la suscripción cada mes. Pero si solo la usas para algún diseño suelto, probablemente no te compense un pago anual, y menos ahora que la IA te resuelve buena parte de las imágenes. Mi situación, además, no es la normal: tengo acceso a una cuenta EDU compartida con condiciones muy buenas.",
+    purchaseLinks: [
+      {
+        label: "Ir a Canva",
+        url: "https://www.canva.com/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores"
+      },
+      {
+        label: "OpusClip",
+        url: "/herramientas/opusclip"
+      },
+      {
+        label: "ChatGPT",
+        url: "/herramientas/chatgpt"
+      }
+    ],
+    narrativeOutro: [
+      "Enlace oficial: canva.com."
+    ],
+    cta:
+      "Aquí te enseño las herramientas. Lo que hago con ellas está en borjaprofe.com.",
     alternativeDetails: [
       {
         name: "ChatGPT",
