@@ -12,7 +12,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Canva | Sí | 2.0 | No |
 | OpusClip | Sí | 1.0 | Sí |
 | DaVinci Resolve | Sí | 1.0 | No |
-| iLovePDF | Sí | 1.0 | No |
+| iLovePDF | Sí | 3.0 | No |
 | Kommodo | Sí | 1.0 | Sí |
 | HappyScribe | Sí | 1.0 | Sí |
 | SpeakPipe | Sí | 3.0 | No |

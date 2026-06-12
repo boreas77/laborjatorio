@@ -649,10 +649,80 @@ export const tools: Tool[] = [
     alternatives: ["Canva", "Adobe Acrobat"],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "opcional",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-12",
     intro:
       "iLovePDF es una maravilla porque tiene una función muy específica: modificar PDFs rápido. No la uso todos los días, pero el día que la necesito me salva en dos minutos. Es de esas herramientas que conviene tener guardadas para cuando aparece el marrón.",
+    narrativeIntro: [
+      "iLovePDF es una maravilla porque tiene una función muy específica, modificar PDFs, y porque además tiene una versión gratuita que para lo habitual da muchísimo juego. No la uso todos los días, pero el día que la necesito me salva en dos minutos. Es de esas herramientas que conviene tener guardadas para cuando aparece el marrón.",
+      "Esta ficha es para profes que se preguntan cómo arreglar un PDF sin instalar nada ni pelearse con programas caros. Es una herramienta secundaria en mi flujo, pero cuando toca, es justo lo que necesitas."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es iLovePDF",
+        paragraphs: [
+          "iLovePDF es una herramienta online para modificar archivos PDF. Hace cosas muy concretas y muy útiles: extraer páginas, unir varios documentos en uno, comprimir el archivo para que pese menos o añadir firmas. Todo desde el navegador, sin instalar nada.",
+          "No es un editor de diseño ni pretende serlo. Es la navaja suiza para esos arreglos rápidos de PDF que de otra forma te harían perder el rato."
+        ],
+        actions: [
+          {
+            label: "Abrir iLovePDF",
+            url: "https://www.ilovepdf.com"
+          }
+        ]
+      },
+      {
+        title: "Cómo funciona lo básico",
+        paragraphs: [
+          "El funcionamiento no tiene misterio: entras, eliges la función que necesitas y subes tu archivo. Las que más se usan son unir varios PDF en uno solo, extraer o eliminar páginas, comprimir el documento para que pese menos y firmar.",
+          "Arrastras el PDF, le das un par de clics y tienes el resultado listo para descargar. Así de simple."
+        ]
+      },
+      {
+        title: "Cómo la uso yo",
+        paragraphs: [
+          "Te cuento un caso real y reciente, que es la mejor forma de explicarlo: justo la semana pasada me tocó corregir una presentación de un curso, un PDF que tenía páginas de más, y con iLovePDF lo hice rapidísimo. Ese tipo de cosa, arreglos puntuales que aparecen sin avisar.",
+          "No la abro a diario. La uso un par de veces al mes, cuando surge algo concreto con un PDF. Por eso te recomiendo lo mismo que hago yo: tenla por ahí guardada en tu barra de navegación, o simplemente busca iLovePDF cuando la necesites.",
+          "No es una herramienta de vivir dentro de ella, es de tenerla a mano."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que más me gusta es lo cómoda y directa que es. Mucho de esto lo puedes hacer también desde tu programa de diseño tipo Canva o desde Adobe Acrobat, pero iLovePDF va al grano: es rápida y no instalas absolutamente nada, todo ocurre en el navegador.",
+          "¿Y lo que menos? Pues poco, precisamente porque le pido poco. Es una herramienta secundaria y puntual, no el centro de nada. Si buscas un editor de PDF potente para trabajo avanzado y constante, esto se queda en lo básico. Pero para lo básico, cumple de sobra."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Tiene versión gratuita, que es la que yo uso, y también planes de pago. En la página oficial aparecen un plan Basic gratis, un Premium y un Business.",
+          "Para las funciones que le doy yo, no he necesitado pagar nada. Si lo tuyo es un apaño rápido de PDF de vez en cuando, la gratuita te puede sobrar perfectamente."
+        ]
+      },
+      {
+        title: "Cuándo merece la pena usarla",
+        paragraphs: [
+          "Siempre que tengas un apaño rápido de PDF: juntar dos documentos, quitar una página, bajar el peso de un archivo para enviarlo por correo o firmar algo. Para eso es ideal.",
+          "Si tu trabajo gira en torno a la edición intensiva de documentos, quizá quieras algo más completo y de pago. Para el resto de los mortales, iLovePDF sobra."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Las que yo sí ubico aquí son Canva y Adobe Acrobat, porque hacen parte de estas cosas. Canva si ya lo usas para diseño, y Adobe Acrobat si necesitas la artillería pesada del PDF.",
+          "Aun así, para arreglos rápidos yo me quedo con iLovePDF por pura comodidad. Más allá de esas, no he probado otras a fondo."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "iLovePDF no es una herramienta protagonista, y no pasa nada. Es una secundaria que cumple un papel muy concreto y lo borda: gratis para lo habitual, rápida y sin complicaciones. De esas que no recuerdas que tienes hasta que las necesitas, y entonces las bendices.",
+          "Resumen para profes ocupados: sencilla y para arreglos puntuales de PDF. Tenla guardada en marcadores y tira de ella el día que la necesites."
+        ]
+      }
+    ],
     whatItDoes:
       "iLovePDF es una herramienta online para modificar archivos PDF. Hace cosas muy concretas y muy útiles: extraer páginas, unir varios documentos en uno, comprimir el archivo para que pese menos o añadir firmas. Todo desde el navegador, sin instalar nada.",
     howIUseIt:
@@ -675,12 +745,33 @@ export const tools: Tool[] = [
     ],
     priceRows: [
       { label: "Basic", value: "Gratis, con límites" },
-      { label: "Premium", value: "Desde 5 US$/mes en plan anual" },
+      { label: "Premium", value: "$5/mes con facturación anual o $9/mes mensual" },
       { label: "Business", value: "Precio personalizado" },
       { label: "Afiliación", value: "No" }
     ],
     priceNote:
-      "Para mi uso puntual, el plan gratuito me basta. iLovePDF sí tiene planes de pago: Premium desbloquea más herramientas, procesamiento ilimitado, uso en web/móvil/escritorio, firmas digitales y experiencia sin anuncios. Antes de pagar, confirma el precio actual en su página oficial.",
+      "Para mi uso puntual, el plan gratuito me basta. La página oficial muestra un plan Premium y uno Business, así que conviene confirmar el precio actual antes de pagar.",
+    purchaseLinks: [
+      {
+        label: "Abrir iLovePDF",
+        url: "https://www.ilovepdf.com"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Canva",
+        url: "/herramientas/canva"
+      },
+      {
+        label: "Squoosh",
+        url: "/herramientas/squoosh"
+      },
+      {
+        label: "Google Docs",
+        url: "/herramientas/google-docs"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: ilovepdf.com."],
     alternativeDetails: [
       {
         name: "Canva",
