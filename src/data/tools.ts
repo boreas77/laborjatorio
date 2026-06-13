@@ -1645,122 +1645,199 @@ export const tools: Tool[] = [
   {
     name: "Metricool",
     slug: "metricool",
-    title: "Metricool: cómo veo mis métricas y programo en redes sin entrar en ellas",
+    title: "Metricool: con qu\u00e9 veo las m\u00e9tricas de mi web y programo redes sin entrar en ellas",
     metaDescription:
-      "Llevo más de seis años usando Metricool para ver las métricas de mi web y programar en redes sin tener que entrar en ellas. Te cuento para qué la uso, sus límites y cuándo merece pagarla.",
+      "Llevo m\u00e1s de seis a\u00f1os con Metricool para ver las m\u00e9tricas de mi web y programar redes sin tener que entrar en ellas. Te cuento c\u00f3mo lo uso, su plan gratis y cu\u00e1ndo compensa pagar.",
     keywords: [
       "Metricool",
-      "métricas de web",
+      "m\u00e9tricas de web sencillas",
       "programar publicaciones en redes",
-      "analítica web sencilla",
       "alternativa a Google Analytics",
-      "programación de redes sociales"
+      "programar Instagram y TikTok",
+      "centralizar redes sociales"
     ],
     tagline:
-      "La herramienta que uso para ver métricas sencillas y programar publicaciones sin vivir dentro de cada red social.",
+      "La herramienta que uso para ver las m\u00e9tricas de mi web y programar redes sin tener que entrar en ellas.",
     category: "Marketing y ventas",
-    subcategories: ["analítica", "redes sociales", "productividad", "contenido", "programación"],
+    subcategories: ["anal\u00edtica", "redes sociales", "productividad", "contenido", "programaci\u00f3n"],
     pricing: "gratis-con-plan-pago",
     officialUrl: "https://metricool.com",
     affiliateUrl: "https://f.mtr.cool/laborjatorio",
     hasAffiliate: true,
     myUseCase:
-      "La uso desde hace más de seis años para consultar métricas básicas de mi web y programar publicaciones en Instagram, TikTok, Shorts y Facebook sin entrar constantemente en cada red.",
+      "La uso desde hace m\u00e1s de seis a\u00f1os para consultar m\u00e9tricas b\u00e1sicas de mi web y programar publicaciones en redes sin tener que entrar en ellas.",
     bestFor: [
-      "Profes que quieren ver métricas web sencillas sin pelearse con Google Analytics",
+      "Profes que quieren ver m\u00e9tricas web sencillas sin pelearse con Google Analytics",
       "Creadores educativos que programan contenido en varias redes",
-      "Quien quiere publicar en redes sin tener que entrar en ellas cada día",
-      "Profes con una marca o proyecto que necesitan un panel claro para redes y métricas"
+      "Quien quiere publicar en redes sin tener que entrar en ellas cada d\u00eda",
+      "Profes con una marca o proyecto que necesitan un panel claro para redes y m\u00e9tricas"
     ],
     notFor: [
-      "Quien necesita analítica web profunda y muy técnica",
+      "Quien necesita anal\u00edtica web profunda y muy t\u00e9cnica",
       "Quien ya programa publicaciones desde otra herramienta que paga y le cubre",
-      "Quien publica muy poco y no supera los límites del plan gratuito",
-      "Quien necesita LinkedIn o X/Twitter dentro del plan gratis"
+      "Quien publica muy poco y no supera los l\u00edmites del plan gratuito",
+      "Quien necesita LinkedIn o X dentro del plan gratis"
     ],
     pros: [
-      "El plan gratuito es generoso para empezar.",
-      "La interfaz es mucho más amable que Google Analytics para mirar lo básico.",
-      "Centraliza métricas y programación en un solo sitio.",
+      "El plan gratuito es muy generoso para empezar.",
+      "La interfaz es mucho m\u00e1s amable que Google Analytics para mirar lo b\u00e1sico.",
+      "Centraliza m\u00e9tricas y programaci\u00f3n en un solo sitio.",
       "Permite programar sin tener que entrar en cada red social.",
-      "Los informes son personalizables y digeribles."
+      "Los informes son personalizables y m\u00e1s amigables para la vista."
     ],
     cons: [
-      "El plan gratuito tiene límite de 20 publicaciones programadas al mes.",
-      "LinkedIn y X/Twitter quedan fuera del plan gratuito.",
+      "El plan gratuito tiene l\u00edmite de 20 publicaciones programadas al mes.",
+      "Facebook, LinkedIn y otras redes tienen l\u00edmites seg\u00fan el plan.",
       "Solo permite una marca en el plan gratis.",
-      "Las autolistas existen, pero no las he explorado mucho.",
-      "En mi caso actual no pagaría la mensualidad porque tengo una licencia antigua y OpusClip ya cubre parte de la programación."
+      "Las autolistas existen, pero apenas las he explorado.",
+      "En mi caso actual no pagar\u00eda la mensualidad."
     ],
     alternatives: ["OpusClip", "Google Analytics"],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-04",
+    updatedAt: "2026-06-13",
     intro:
-      "Metricool es una pedazo de herramienta que llevo usando desde hace más de seis años para dos cosas que suelen dar bastante pereza: mirar métricas de la web y programar publicaciones en redes. Me permite ver lo básico sin marearme y publicar sin vivir pegado a Instagram, TikTok, Shorts o Facebook.",
+      "Metricool es una pedazo de herramienta que llevo utilizando desde hace m\u00e1s de seis a\u00f1os. Y la uso para dos cosas que parecen distintas pero que a m\u00ed me sirven juntas: ver las m\u00e9tricas de mi web de forma sencilla y programar mis publicaciones en redes sin tener que entrar en ellas.",
+    narrativeIntro: [
+      "Metricool es una pedazo de herramienta que llevo utilizando desde hace m\u00e1s de seis a\u00f1os. Y la uso para dos cosas que parecen distintas pero que a m\u00ed me sirven juntas: ver las m\u00e9tricas de mi web de forma sencilla y programar mis publicaciones en redes sin tener que entrar en ellas. Esto \u00faltimo, para alguien al que las redes le dan un poco de alergia como a m\u00ed, vale oro.",
+      "Esta ficha es para profes que se preguntan c\u00f3mo controlar sus n\u00fameros y publicar en redes sin que se les vaya el d\u00eda en ello. Te cuento mi uso real, sus l\u00edmites y por qu\u00e9, aun queri\u00e9ndola, hoy no pagar\u00eda su mensualidad."
+    ],
+    narrativeSections: [
+      {
+        title: "Qu\u00e9 es Metricool",
+        paragraphs: [
+          "Metricool es una herramienta que junta dos mundos: la anal\u00edtica, es decir, las m\u00e9tricas de tu web y de tus redes, y la programaci\u00f3n de publicaciones en redes sociales.",
+          "La gracia est\u00e1 en tenerlo todo centralizado en un mismo sitio, con una interfaz visual y amigable, sin volverte loco."
+        ],
+        actions: [
+          {
+            label: "Probar Metricool",
+            url: "https://f.mtr.cool/laborjatorio"
+          }
+        ]
+      },
+      {
+        title: "C\u00f3mo la uso para las m\u00e9tricas de mi web",
+        paragraphs: [
+          "Empec\u00e9 a usarla por aqu\u00ed. Antes no usaba ninguna herramienta de m\u00e9tricas, hasta que prob\u00e9 Google Analytics y acab\u00e9 tan horrorizado que no lo he vuelto a abrir. Siempre me ha parecido muy lioso y que da demasiada informaci\u00f3n para lo que yo necesito.",
+          "Y lo que yo necesito es sencillo: ver mis visitas mensuales, semanales y en tiempo real, y poco m\u00e1s. Metricool me lo da as\u00ed de claro, adem\u00e1s de permitirme generar informes personalizables que me gustan mucho m\u00e1s que los de Google Analytics, y que son mucho m\u00e1s amigables para la vista. Para un profe que quiere enterarse de c\u00f3mo va su web sin un m\u00e1ster en anal\u00edtica, es ideal."
+        ]
+      },
+      {
+        title: "C\u00f3mo la uso para programar redes",
+        paragraphs: [
+          "La otra gran pata es la programaci\u00f3n. Desde Metricool programo mis publicaciones en Instagram, en TikTok, en Shorts y en Reels, con plantillas que se adaptan a cada red. S\u00e9 que hay muchas herramientas que permiten programar en redes, pero a m\u00ed me gusta tenerlo todo centralizado aqu\u00ed.",
+          "Y aqu\u00ed est\u00e1 la clave de por qu\u00e9 me encaja tanto. Metricool es ideal si quieres ganar tiempo con las publicaciones y, sobre todo, si te pasa como a m\u00ed y te dan un poquito de alergia las redes y quieres entrar en ellas lo menos posible. El mejor ejemplo: no entro nunca a Facebook, pero publico ah\u00ed regularmente. Programar sin estar ah\u00ed es justo lo que buscaba.",
+          "Te ser\u00e9 sincero en una cosa, eso s\u00ed: soy un poquito anal\u00f3gico para esto. Hay una funci\u00f3n llamada autolistas, para republicar autom\u00e1ticamente el contenido que funcion\u00f3, que no he explorado apenas. Est\u00e1 ah\u00ed para quien quiera afinar m\u00e1s que yo."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que m\u00e1s valoro ya lo has ido viendo: que su plan gratuito sea tremendamente generoso, que centralice m\u00e9tricas y programaci\u00f3n en un solo sitio, que sea sencillo y amigable a la vista, y que me deje publicar en redes sin tener que pisarlas. Para mi forma de trabajar, encaja como un guante.",
+          "Y los l\u00edmites est\u00e1n sobre todo en el plan gratuito, y conviene que los conozcas. La cuenta gratis te limita las publicaciones programadas al mes y el n\u00famero de marcas. Si necesitas m\u00e1s, el primer plan de pago sube bastante el techo. As\u00ed que la gratis cunde much\u00edsimo para empezar, pero tiene su tope si vas en serio con varias redes."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "El plan gratuito es muy generoso, de los que de verdad te sirven para arrancar. Yo, en su momento, compr\u00e9 una oferta de pago \u00fanico que ya no est\u00e1 disponible, y es la versi\u00f3n que sigo usando.",
+          "Y aqu\u00ed viene mi matiz honesto: hoy, sinceramente, no pagar\u00eda cada mes por Metricool. No porque no lo valga, sino por mi caso concreto: desde [OpusClip](/herramientas/opusclip), que es una herramienta que s\u00ed pago mensualmente, ya tengo tambi\u00e9n la opci\u00f3n de programar mis publicaciones. As\u00ed que Metricool ha dejado de ser mi \u00fanica v\u00eda para eso.",
+          "Como los precios y los planes cambian, confirma siempre el actual en metricool.com. Y si a ti te encaja un plan de pago, puedes entrar por mi enlace de afiliado: a ti te cuesta exactamente lo mismo y a m\u00ed me cae una peque\u00f1a comisi\u00f3n que ayuda a mantener el Laborjatorio."
+        ],
+        actions: [
+          {
+            label: "Ver Metricool",
+            url: "https://f.mtr.cool/laborjatorio"
+          }
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Para las m\u00e9tricas, la alternativa de manual es Google Analytics, que para m\u00ed es justo lo contrario de lo que busco: potente, s\u00ed, pero liosa y con demasiada informaci\u00f3n.",
+          "Para programar, mi propia alternativa actual es [OpusClip](/herramientas/opusclip), desde donde tambi\u00e9n publico. M\u00e1s all\u00e1 de eso, hay muchas herramientas de programaci\u00f3n en el mercado, pero no las he probado a fondo, as\u00ed que no te las vendo como recomendaci\u00f3n."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Metricool es una gran herramienta y por algo lleva conmigo m\u00e1s de seis a\u00f1os. Para ver las m\u00e9tricas de tu web sin agobiarte y para programar tus redes sin tener que vivir dentro de ellas, es de lo m\u00e1s c\u00f3modo y sencillo que vas a encontrar, y encima su plan gratis da much\u00edsimo de s\u00ed.",
+          "La recomiendo mucho, sobre todo si eres de los que prefieren publicar sin entrar en las redes. Lo \u00fanico que te digo con la mano en el coraz\u00f3n es que valores bien si te compensa el plan mensual o si, como en mi caso, con la versi\u00f3n gratis o con otra herramienta que ya pagues tienes de sobra.",
+          "Resumen para profes ocupados: m\u00e9tricas de web sencillas y programaci\u00f3n de redes centralizada, ideal si quieres publicar sin entrar en las redes. Plan gratis muy generoso. La mensualidad, val\u00f3rala seg\u00fan tu caso."
+        ]
+      }
+    ],
     whatItDoes:
-      "Metricool muestra métricas de web y redes sociales, genera informes y permite programar publicaciones desde un solo panel. Su valor, para mí, no está en tener mil datos, sino en que puedo ver visitas, actividad y planificación sin abrir cada red por separado ni pelearme con paneles llenos de ruido.",
+      "Metricool muestra m\u00e9tricas de web y redes sociales, genera informes y permite programar publicaciones desde un solo panel.",
     howIUseIt:
-      "Antes no usaba ninguna herramienta de métricas. Probé Google Analytics y acabé tan horrorizado que no lo volví a abrir: siempre me ha parecido lioso y con demasiada información para lo que necesito. Metricool fue mi alternativa amable. Hoy miro ahí las métricas básicas de la web y también programo contenido en Instagram, Reels, TikTok, Shorts y Facebook, aunque a Facebook no entro prácticamente nunca. Esa es la clave: publicar sin estar ahí.",
+      "La uso para mirar m\u00e9tricas web sencillas y para programar publicaciones en varias redes sin tener que abrir cada una por separado.",
     teacherUseCases: [
       "Consultar visitas mensuales, semanales y en tiempo real sin entrar en Google Analytics.",
       "Programar publicaciones educativas en varias redes desde un solo panel.",
       "Publicar en Facebook u otras redes sin tener que entrar a distraerse.",
-      "Preparar informes sencillos de evolución del contenido.",
-      "Centralizar redes y métricas si tienes una marca educativa online."
+      "Preparar informes sencillos de evoluci\u00f3n del contenido.",
+      "Centralizar redes y m\u00e9tricas si tienes una marca educativa online."
     ],
     honestVerdict:
-      "Metricool me acompaña desde hace más de seis años, y eso ya dice bastante. Me parece comodísima para ver métricas sencillas y programar redes sin entrar en ellas. Mi matiz honesto es que hoy yo no pagaría la mensualidad en mi caso concreto: tengo una licencia antigua de pago único y OpusClip ya incorpora programación. Pero si empiezas de cero y quieres una herramienta sencilla para métricas básicas y redes, Metricool es una opción muy sólida. Empieza por el gratis y paga solo cuando sus límites te aprieten.",
+      "Metricool me acompa\u00f1a desde hace m\u00e1s de seis a\u00f1os, y eso ya dice bastante. Me parece comod\u00edsima para ver m\u00e9tricas sencillas y programar redes sin entrar en ellas. Mi matiz honesto es que hoy yo no pagar\u00eda la mensualidad en mi caso concreto.",
     importantNotice:
-      "Mi situación no es la habitual: compré en su día una oferta de pago único que ya no está disponible. Hoy Metricool funciona con planes recurrentes, así que mi coste real y el de alguien que entre ahora no son el mismo.",
+      "Mi situaci\u00f3n no es la habitual: compr\u00e9 en su d\u00eda una oferta de pago \u00fanico que ya no est\u00e1 disponible. Hoy Metricool funciona con planes recurrentes, as\u00ed que mi coste real y el de alguien que entre ahora no son el mismo.",
     metrics: [
-      { label: "Tiempo usándola", value: "+6 años" },
-      { label: "Límite gratis", value: "20 posts/mes" },
-      { label: "Primer plan de pago", value: "20 $/mes" }
+      { label: "Tiempo us\u00e1ndola", value: "+6 a\u00f1os" },
+      { label: "Plan gratis", value: "Muy generoso" },
+      { label: "Afiliaci\u00f3n", value: "S\u00ed" }
     ],
     priceRows: [
-      { label: "Free", value: "1 marca, hasta 20 posts/mes" },
-      { label: "Starter", value: "Hasta 5 marcas, 20 $/mes" },
-      { label: "Mi caso", value: "Pago único antiguo, ya no disponible" },
-      { label: "Afiliación", value: "Sí" }
+      { label: "Plan gratis", value: "Suficiente para arrancar" },
+      { label: "Pago mensual", value: "Val\u00f3ralo seg\u00fan tu caso" },
+      { label: "Mi caso", value: "Pago \u00fanico antiguo, ya no disponible" },
+      { label: "Afiliaci\u00f3n", value: "S\u00ed" }
     ],
     priceNote:
-      "El plan gratis permite empezar sin coste, pero tiene límites: una marca, 20 publicaciones programadas al mes y sin conexión de LinkedIn ni X/Twitter. El primer plan de pago añade hasta 5 marcas y elimina varios límites. Como los precios cambian, conviene confirmarlos en la web oficial antes de pagar.",
+      "Si entras desde mi enlace y acabas contratando, yo puedo llevarme una peque\u00f1a comisi\u00f3n sin coste extra para ti. Pero confirma siempre los precios y planes actuales en la web oficial, porque cambian.",
+    purchaseLinks: [
+      {
+        label: "Probar Metricool",
+        url: "https://f.mtr.cool/laborjatorio"
+      }
+    ],
     alternativeDetails: [
       {
         name: "OpusClip",
         url: "/herramientas/opusclip",
         description:
-          "La pago cada mes para crear clips y ahora también permite programar publicaciones. Si algún día tuviera que elegir, podría mover parte de la programación ahí."
+          "Hoy tambi\u00e9n me cubre parte de la programaci\u00f3n, as\u00ed que para m\u00ed se ha convertido en una alternativa real en ese terreno."
       },
       {
         name: "Google Analytics",
         url: "https://analytics.google.com/",
         description:
-          "Es el estándar para analítica web profunda, pero a mí me resulta demasiado lioso para mirar lo básico que necesito en mi día a día."
+          "Es el est\u00e1ndar para anal\u00edtica web profunda, pero a m\u00ed me resulta demasiado lioso para mirar lo b\u00e1sico que necesito."
       }
     ],
     faqs: [
       {
-        question: "¿Metricool sirve como alternativa a Google Analytics?",
+        question: "\u00bfMetricool sirve como alternativa a Google Analytics?",
         answer:
-          "Para métricas sencillas, sí. Si quieres ver visitas y evolución sin entrar en un panel complejo, Metricool puede ser mucho más amable. Para analítica profunda, Google Analytics sigue siendo otra cosa."
+          "Para m\u00e9tricas sencillas, s\u00ed. Si quieres ver visitas y evoluci\u00f3n sin entrar en un panel complejo, Metricool puede ser mucho m\u00e1s amable. Para anal\u00edtica profunda, Google Analytics sigue siendo otra cosa."
       },
       {
-        question: "¿El plan gratuito de Metricool merece la pena?",
+        question: "\u00bfEl plan gratuito de Metricool merece la pena?",
         answer:
-          "Sí, sobre todo si tienes una sola marca y no programas más de 20 publicaciones al mes. Para empezar, da bastante de sí."
+          "S\u00ed, sobre todo si tienes una sola marca y un volumen moderado de publicaciones. Para empezar, da bastante de s\u00ed."
       },
       {
-        question: "¿Pagaría Metricool hoy?",
+        question: "\u00bfPagar\u00eda Metricool hoy?",
         answer:
-          "En mi caso concreto, no pagaría la mensualidad porque tengo una licencia antigua y otra herramienta que ya cubre parte de la programación. Pero para alguien que empieza de cero y publica mucho, el pago puede tener sentido."
+          "En mi caso concreto, no pagar\u00eda la mensualidad porque tengo una licencia antigua y otra herramienta que ya cubre parte de la programaci\u00f3n. Pero para alguien que empieza de cero y publica mucho, el pago puede tener sentido."
       },
       {
-        question: "¿Uso mucho las autolistas?",
+        question: "\u00bfUso mucho las autolistas?",
         answer:
-          "No demasiado. Sé que existen y pueden ser útiles para republicar contenido que funcionó, pero yo sigo siendo un poquito analógico para esa parte."
+          "No demasiado. S\u00e9 que existen y pueden ser \u00fatiles para republicar contenido que funcion\u00f3, pero yo sigo siendo un poquito anal\u00f3gico para esa parte."
       }
     ]
   },
