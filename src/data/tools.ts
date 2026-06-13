@@ -3931,131 +3931,178 @@ export const tools: Tool[] = [
   {
     name: "Acer Nitro 5",
     slug: "acer-nitro-5",
-    title: "Acer Nitro 5: mi portátil para dar clases, editar y jugar (y por qué no te lo recomiendo hoy)",
+    title: "Acer Nitro 5: el port?til con el que trabajo (pero que no te recomiendo comprar)",
     metaDescription:
-      "Doy clases, edito y juego con un Acer Nitro 5 desde 2022. Estoy contento, pero no te lo recomiendo comprar hoy. Te cuento mis criterios para elegir portátil y qué tendría de referencia.",
+      "Trabajo con un Acer Nitro 5 desde 2022 para clases, edici?n y juegos. Estoy contento, pero no te lo recomiendo comprar hoy. Te cuento mis criterios para elegir port?til.",
     keywords: [
       "Acer Nitro 5",
-      "portátil para dar clases online",
-      "portátil para profesores",
-      "ordenador para editar vídeo",
-      "portátil para profes y gaming",
-      "qué portátil comprar"
+      "port?til para profesores online",
+      "ordenador para dar clases y editar v?deo",
+      "port?til para clases y juegos",
+      "qu? port?til comprar para teletrabajo",
+      "port?til gaming econ?mico"
     ],
     tagline:
-      "Mi portátil principal desde 2022: útil para explicar qué miro al elegir ordenador, no para recomendarte comprar ese modelo hoy.",
-    category: "Equipo físico",
-    subcategories: ["productividad", "vídeo", "comunicación", "formación", "contenido", "portátil", "gaming"],
+      "El port?til con el que hago todo desde 2022 y que hoy me sirve m?s como criterio de compra que como recomendaci?n directa.",
+    category: "Equipo f?sico",
+    subcategories: ["productividad", "comunicaci?n", "formaci?n", "contenido", "port?til", "gaming"],
     pricing: "pago-unico",
-    officialUrl: "https://store.acer.com/en-us/nitro-5-gaming-laptop-an515-44-r078",
-    hasAffiliate: false,
+    affiliateUrl: "https://amzn.to/4ulS4Kt",
+    hasAffiliate: true,
     myUseCase:
-      "Uso mi Acer Nitro 5 AN515-44 desde 2022 como ordenador principal para dar clases, editar vídeo y audio, tareas administrativas, grabar contenido y jugar.",
+      "Uso mi Acer Nitro 5 AN515-44 desde 2022 como ordenador principal para clases, administraci?n, edici?n de v?deo y audio, grabaciones y juegos.",
     bestFor: [
-      "Profes que quieren pensar bien qué portátil necesitan",
-      "Profes online que también editan vídeo o audio",
-      "Creadores educativos que abren muchas pestañas y usan programas pesados",
-      "Quien además de trabajar quiere jugar en el mismo equipo"
+      "Profes que quieren pensar bien qu? port?til necesitan de verdad",
+      "Quien da clases, edita y trabaja con muchas pesta?as abiertas",
+      "Quien adem?s quiere jugar en el mismo equipo",
+      "Personas que prefieren aprender criterios antes que copiar un modelo concreto"
     ],
     notFor: [
-      "Comprar este modelo concreto en 2026",
-      "Quien no juega y puede ahorrar comprando un equipo menos gaming",
-      "Quien busca una recomendación técnica cerrada de procesadores y gráficas",
-      "Usuarios de Mac que quieren una recomendación dentro del ecosistema Apple"
+      "Quien busca una recomendaci?n literal de compra del Nitro 5 hoy",
+      "Quien no juega y puede ahorrar comprando algo menos gaming",
+      "Quien quiere una recomendaci?n cerrada de hardware muy t?cnico",
+      "Quien busca consejo dentro del ecosistema Mac"
     ],
     pros: [
-      "Me ha servido para dar clases, editar, trabajar y jugar.",
-      "Un portátil gaming suele ir sobrado para Zoom, edición ligera y mil pestañas.",
-      "Me ha ayudado a definir criterios claros para comprar mi próximo equipo.",
-      "Sigo contento con él después de varios años de uso real."
+      "Me ha servido para clases, edici?n, trabajo y juegos.",
+      "Un port?til gaming suele ir sobrado para dar clases y editar.",
+      "Me ha ayudado a afinar mis criterios para la pr?xima compra.",
+      "Sigo contento con ?l despu?s de varios a?os de uso real."
     ],
     cons: [
-      "El modelo AN515-44 ya es antiguo para comprarlo nuevo en 2026.",
-      "Posiblemente sea difícil de encontrar a la venta.",
-      "No es una recomendación directa de compra actual.",
+      "El modelo AN515-44 ya es antiguo para comprarlo hoy.",
+      "Probablemente sea dif?cil encontrarlo nuevo.",
+      "No es una recomendaci?n directa de compra en 2026.",
       "Si no juegas, pagar potencia gaming puede no tener sentido.",
-      "Para afinar detalles técnicos conviene consultar a alguien que sepa de hardware."
+      "Para afinar detalles t?cnicos, yo mismo consulto a alguien que sepa m?s de hardware."
     ],
     alternatives: ["ASUS TUF Gaming A16", "Lenovo gaming actual"],
     rating: 4,
     difficulty: "media",
+    editorialVersion: "3.0",
     status: "imprescindible",
-    updatedAt: "2026-06-05",
+    updatedAt: "2026-06-13",
     intro:
-      "Mi Acer Nitro 5, modelo AN515-44, es el portátil con el que hago literalmente todo mi trabajo desde 2022: clases, administración, edición de vídeo y audio, grabaciones, veinte pestañas abiertas y juegos. Estoy muy contento con él. Y, aun así, no te recomiendo comprarlo hoy.",
+      "Voy a empezar por lo raro: te voy a hablar de mi port?til y a la vez te voy a decir que no te lo recomiendo comprar.",
+    narrativeIntro: [
+      "Voy a empezar por lo raro: te voy a hablar de mi port?til, un Acer Nitro 5 AN515-44 que compr? en 2022, y a la vez te voy a decir que no te lo recomiendo comprar. No porque sea malo, que estoy s?per contento con ?l, sino porque en 2026 dudo que tenga sentido comprar un laptop tan antiguo, y porque posiblemente ni lo encuentres ya.",
+      "Entonces, para qu? esta ficha. Para algo m?s ?til que venderte un modelo concreto: para contarte con qu? criterios elijo yo un port?til, que es lo que de verdad te va a servir cuando te toque comprar el tuyo."
+    ],
+    narrativeSections: [
+      {
+        title: "Para qu? lo uso",
+        paragraphs: [
+          "Este ordenador es mi herramienta central, y le pido de todo. Lo uso para dar mis clases, con Zoom y para grabar v?deos, para las tareas administrativas, para editar v?deo y audio, y tambi?n para jugar a videojuegos, que soy de los que juegan.",
+          "Que cumpla todo eso a la vez, durante a?os, dice bastante a su favor."
+        ]
+      },
+      {
+        title: "Mis tres requisitos para un port?til",
+        paragraphs: [
+          "Para m?, un ordenador debe cumplir tres requisitos: que me deje dar clases sin problemas, que me permita editar v?deo sin ahogarse, y que pueda jugar a videojuegos. A eso le sumo una man?a que consume recursos: soy muy de tener veinte pesta?as abiertas a la vez, as? que necesito m?sculo de sobra.",
+          "Y hay un truco que te ahorra muchas dudas: si eliges uno bueno para jugar, lo m?s probable es que te sirva para todo lo dem?s. Un port?til que mueve juegos actuales va sobrad?simo para dar clases y editar. Por eso uso los videojuegos como vara de medir.",
+          "Como m?nimo, busca 16 GB de RAM, que hoy es el suelo para no sufrir."
+        ]
+      },
+      {
+        title: "Para mi pr?xima compra",
+        paragraphs: [
+          "Cuando me toque renovar, ir? a por un t?rmino medio: ni lo m?s caro ni lo m?s barato, en torno a los 1.200 euros. Estoy mirando marcas como Lenovo o Asus. Lo que s? descarto es Mac, porque busco m?quinas para videojuegos, as? que si eres de la secta de Apple, lo siento, no tengo recomendaciones para ti.",
+          "Y te confieso algo: no soy ning?n experto en hardware. Para afinar los detalles t?cnicos siempre suelo consultar a un amigo que sabe, y te recomiendo que hagas lo mismo antes de soltar el dinero.",
+          "Como el Nitro 5 ya no es opci?n, te digo cu?l tengo fichado de referencia para cuando renueve: el ASUS TUF Gaming A16, modelo FA608UM-RV005. Sobre el papel cumple de sobra todo lo que pido, con su pantalla de 16 pulgadas a 165 Hz, un AMD Ryzen 7, 32 GB de RAM, 1 TB de SSD y una NVIDIA RTX 5060. Un aviso importante: viene sin sistema operativo, as? que cuenta con instalarlo t? o que te lo instalen.",
+          "Si te sirve de punto de partida, te dejo [mi enlace de afiliado de Amazon](https://amzn.to/4ulS4Kt): a ti te cuesta exactamente lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio. Que quede claro, eso s?: es mi referencia para el futuro, no un port?til que ya haya probado a fondo."
+        ],
+        actions: [
+          {
+            label: "Ver el ASUS TUF de referencia",
+            url: "https://amzn.to/4ulS4Kt"
+          }
+        ]
+      },
+      {
+        title: "Y si t? no juegas",
+        paragraphs: [
+          "Importante, porque mis necesidades son muy espec?ficas y posiblemente no se correspondan con las tuyas. Si los videojuegos no son una prioridad para ti, te ahorras un buen pellizco: con un port?til de entre 800 y 1.000 euros ir?s sobrado para dar clases, editar lo b?sico y trabajar con muchas pesta?as.",
+          "No necesitas gastarte lo que me gastar? yo solo porque a m? me guste jugar."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "El Acer Nitro 5 ha sido un compa?ero estupendo y me ha dado todo lo que le he pedido durante a?os. Pero un port?til bueno es el que encaja con tus necesidades, no el que usa otro, as? que no te voy a recomendar que corras a comprar el m?o, que adem?s ya es dif?cil de encontrar.",
+          "Si te llevas una sola idea de aqu?, que sea esta: decide primero para qu? vas a usarlo de verdad. Si juegas, sube a la franja de los 1.200 euros y mira algo actual, Lenovo o Asus, con 16 GB de RAM m?nimo. Si no juegas, con 800 a 1.000 euros vas servido. Y ante la duda t?cnica, pregunta a alguien que sepa antes de pagar.",
+          "Resumen para profes ocupados: para clases, edici?n y multitarea, m?delo por si mueve videojuegos y tendr?s potencia de sobra. Sin juegos, 800-1.000 euros bastan. Con juegos, apunta a unos 1.200. Mac, fuera si quieres jugar."
+        ]
+      }
+    ],
     whatItDoes:
-      "El Acer Nitro 5 es un portátil gaming. En mi caso, eso significa que tiene potencia suficiente para dar clases online, mover programas de edición y aguantar un uso bastante intenso. Pero esta ficha no va de venderte este modelo: va de usar mi experiencia para explicar qué criterios miro al elegir un portátil para trabajar como profesor online.",
+      "El Acer Nitro 5 es mi port?til principal desde 2022 y esta ficha lo usa como ejemplo pr?ctico para explicar qu? criterios sigo al elegir un ordenador para clases, edici?n, multitarea y juegos.",
     howIUseIt:
-      "Lo uso como ordenador principal para Zoom, grabar vídeos, editar, escribir, hacer tareas administrativas y jugar. También soy de tener muchas pestañas abiertas, y eso consume más recursos de lo que parece. Por eso uso el gaming como vara de medir: si un portátil puede con juegos actuales, normalmente va sobrado para clases, edición y trabajo diario.",
+      "Lo uso como ordenador principal para dar clases, grabar v?deos, editar audio y v?deo, hacer tareas administrativas, trabajar con muchas pesta?as abiertas y jugar.",
     teacherUseCases: [
-      "Dar clases online con Zoom sin que el ordenador sufra.",
-      "Editar vídeo y audio sin que el equipo se ahogue a la primera.",
-      "Trabajar con muchas pestañas, documentos y programas abiertos.",
-      "Grabar contenido educativo y gestionar un negocio online desde el mismo equipo.",
-      "Elegir un portátil pensando en potencia real, no solo en precio."
+      "Dar clases online sin que el equipo sufra.",
+      "Editar v?deo y audio con margen suficiente.",
+      "Trabajar con muchas pesta?as, documentos y programas abiertos.",
+      "Grabar contenido educativo desde el mismo equipo.",
+      "Pensar la compra de un port?til en funci?n de necesidades reales."
     ],
     honestVerdict:
-      "El Acer Nitro 5 ha sido un grandísimo compañero de trabajo, pero no compraría este modelo concreto en 2026. Lo importante no es copiar mi portátil, sino mis criterios: mínimo 16 GB de RAM, potencia suficiente para editar y margen para trabajar cómodo. Si juegas, sube presupuesto; si no juegas, probablemente con 800-1.000 euros tengas más que suficiente.",
+      "El Acer Nitro 5 ha sido un grand?simo compa?ero de trabajo, pero no comprar?a este modelo concreto hoy. Lo ?til aqu? no es copiar mi port?til, sino quedarte con mis criterios: 16 GB de RAM m?nimo, potencia suficiente para editar y margen para trabajar c?modo. Si juegas, sube presupuesto; si no juegas, no hace falta tanto.",
     importantNotice:
-      "Esta ficha no recomienda comprar el Acer Nitro 5 AN515-44 hoy. Es mi ordenador actual y me ha salido bueno, pero en 2026 lo usaría como referencia de criterios, no como compra directa.",
+      "Esta ficha no recomienda comprar el Acer Nitro 5 AN515-44 hoy. El enlace afiliado que aparece aqu? no es para este modelo, sino para el ASUS TUF Gaming A16 que tengo fichado como referencia para una compra futura. A ti te cuesta lo mismo y a m? me llega una peque?a comisi?n si acabas compr?ndolo.",
     metrics: [
       { label: "Uso desde", value: "2022" },
-      { label: "RAM mínima futura", value: "16 GB" },
-      { label: "Presupuesto gaming", value: "~1.200 €" }
+      { label: "RAM m?nima", value: "16 GB" },
+      { label: "Presupuesto con gaming", value: "~1.200 ?" }
     ],
     priceRows: [
-      { label: "Mi Acer Nitro 5", value: "Comprado en 2022" },
-      { label: "Si juegas", value: "Referencia alrededor de 1.200 €" },
-      { label: "Si no juegas", value: "800-1.000 € puede bastar" },
-      { label: "Afiliación", value: "Sí, solo en la referencia ASUS" }
+      { label: "Mi Nitro 5", value: "Comprado en 2022" },
+      { label: "Si juegas", value: "Referencia alrededor de 1.200 ?" },
+      { label: "Si no juegas", value: "800-1.000 ? puede bastar" },
+      { label: "Afiliaci?n", value: "S?, solo en la referencia ASUS" }
     ],
     priceNote:
-      "No pongo un precio actual del Nitro 5 porque este modelo ya no es una compra que recomendaría. Para mi próxima compra miro equipos actuales alrededor de 1.200 euros si incluyen gaming. Si no juegas, no pagues el sobreprecio de una gráfica que no vas a usar.",
-    alternativeDetails: [
+      "No pongo un precio actual del Nitro 5 porque este modelo ya no es una compra que recomendar?a. Si buscas algo parecido hoy, la referencia ?til es el rango de precio y las especificaciones que s? te encajan a ti.",
+    purchaseLinks: [
       {
-        name: "ASUS TUF Gaming A16 FA608UM-RV005",
-        url: "https://amzn.to/4ulS4Kt",
-        description:
-          "Es el portátil que tengo fichado como referencia futura, no un equipo que ya haya probado. Lo miro por sus 32 GB de RAM, 1 TB SSD, RTX 5060 y porque viene sin sistema operativo."
+        label: "Ver el ASUS TUF de referencia",
+        url: "https://amzn.to/4ulS4Kt"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Mi escritorio",
+        url: "/mi-escritorio"
       },
       {
-        name: "Lenovo gaming actual",
-        description:
-          "Lenovo es una de las marcas que miraría para mi próxima compra, siempre comparando ofertas y especificaciones reales en ese momento."
+        label: "DaVinci Resolve",
+        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores"
       },
       {
-        name: "DaVinci Resolve",
-        url: "/herramientas/davinci-resolve-editor-video-gratis-profesores",
-        description:
-          "No es alternativa de portátil, pero sí una de las razones por las que necesito margen de potencia: editar vídeo consume recursos."
-      },
-      {
-        name: "Audacity",
-        url: "/herramientas/audacity",
-        description:
-          "Para edición de audio no hace falta tanta máquina, pero forma parte de mi uso real del ordenador."
+        label: "Zoom",
+        url: "/herramientas/zoom"
       }
     ],
     faqs: [
       {
-        question: "¿Recomiendo comprar el Acer Nitro 5 en 2026?",
+        question: "?Recomiendo comprar el Acer Nitro 5 hoy?",
         answer:
-          "No este modelo concreto. A mí me ha salido muy bueno, pero en 2026 lo usaría como referencia de criterios, no como compra directa."
+          "No este modelo concreto. A m? me ha salido muy bueno, pero hoy lo usar?a como referencia de criterios, no como compra directa."
       },
       {
-        question: "¿Por qué uso un portátil gaming para dar clases?",
+        question: "?Por qu? uso un port?til gaming para dar clases?",
         answer:
-          "Porque si un ordenador puede con juegos actuales, normalmente va sobrado para Zoom, edición, grabación y muchas pestañas abiertas."
+          "Porque si un ordenador puede con juegos actuales, normalmente va sobrado para clases, edici?n, grabaci?n y multitarea seria."
       },
       {
-        question: "¿Cuánta RAM pediría como mínimo?",
+        question: "?Cu?nta RAM pedir?a como m?nimo?",
         answer:
-          "Mínimo 16 GB. Por debajo de eso, yo no me lo plantearía para un equipo principal de trabajo."
+          "M?nimo 16 GB. Por debajo de eso, yo no me lo plantear?a para un equipo principal de trabajo."
       },
       {
-        question: "¿Y si no juego?",
+        question: "?Y si no juego?",
         answer:
-          "Entonces probablemente no necesitas gastar tanto. Para clases, tareas normales y edición básica, una franja de 800 a 1.000 euros puede ser suficiente."
+          "Entonces probablemente no necesitas gastar tanto. Para clases, tareas normales y edici?n b?sica, una franja de 800 a 1.000 euros puede ser suficiente."
       }
     ]
   },
