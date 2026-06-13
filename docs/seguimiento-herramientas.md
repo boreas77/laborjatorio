@@ -23,7 +23,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | MailPoet | Sí | 3.0 | No |
 | Audacity | Sí | 3.0 | No |
 | Spotify for Podcasters | Sí | 3.0 | No |
-| Squoosh | Sí | 1.0 | No |
+| Squoosh | Sí | 3.0 | No |
 | LastPass | Sí | 1.0 | No |
 | Standing Desk Maidesite | Sí | 1.0 | Sí |
 | Silla de oficina de malla | Sí | 3.0 | Sí |
