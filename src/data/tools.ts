@@ -3190,69 +3190,202 @@ export const tools: Tool[] = [
   {
     name: "Standing Desk Maidesite",
     slug: "standing-desk-maidesite",
-    title: "Standing Desk Maidesite: ergonomía también es productividad",
+    title: "Escritorio elevable Maidesite: el cambio que m?s agradeci? mi espalda",
+    metaDescription:
+      "Un escritorio elevable Maidesite de unos 180 euros fue un antes y un despu?s para mi espalda. Te cuento c?mo lo uso a diario para clases y grabaciones, y si merece la pena.",
+    keywords: [
+      "escritorio elevable",
+      "standing desk",
+      "escritorio regulable en altura",
+      "Maidesite",
+      "escritorio de pie para teletrabajo",
+      "ergonom?a para profesores"
+    ],
     tagline:
-      "Mesa elevable para alternar trabajo sentado y de pie en un puesto de profesor online.",
-    category: "Equipo físico",
-    subcategories: ["ergonomía", "productividad", "hardware", "stamindesk", "standing desk"],
+      "La mesa que m?s ha agradecido mi espalda y que me deja alternar entre sentado y de pie con solo pulsar un bot?n.",
+    category: "Equipo f?sico",
+    subcategories: ["ergonom?a", "productividad", "bienestar", "standing desk", "teletrabajo"],
     pricing: "pago-unico",
-    officialUrl: "https://www.maidesite.de/",
+    officialUrl: "https://www.maidesite.de/en/products/maidesite-sn1-basic-elektrisch-hohenverstellbarer-schreibtisch-100x60cm-120x60-cm",
     affiliateUrl: "https://amzn.to/4eqeGoy",
     hasAffiliate: true,
     myUseCase:
-      "La tengo registrada en el Laborjatorio como parte del equipo físico que sostiene muchas horas de clases, escritura, grabación y trabajo online.",
+      "Lo uso a diario para dar clases, grabar entrevistas y podcasts, y crear materiales, alternando entre trabajar sentado y de pie.",
     bestFor: [
       "Profes online que pasan muchas horas delante del ordenador",
-      "Creadores educativos que graban, editan y escriben en el mismo puesto",
-      "Quien quiere mejorar la ergonomía sin convertir el escritorio en una reforma completa"
+      "Quien quiere aliviar espalda y cuello sin dejar de trabajar",
+      "Creadores que graban, escriben y preparan materiales en el mismo puesto",
+      "Quien busca una mejora ergon?mica real sin irse a un modelo car?simo"
     ],
     notFor: [
-      "Quien trabaja pocas horas sentado al día",
+      "Quien trabaja pocas horas sentado al d?a",
       "Quien no tiene espacio para una mesa regulable",
-      "Quien espera que una mesa solucione por sí sola todos los problemas posturales"
+      "Quien espera que una mesa arregle por s? sola todos sus h?bitos",
+      "Quien est? dudando entre esto y una bandeja de palanca y quiera ahorrarse dinero a corto plazo"
     ],
     pros: [
-      "Permite alternar trabajo sentado y de pie.",
-      "Recuerda que el equipo físico también influye en la energía de trabajo.",
-      "Tiene sentido para rutinas largas de clases, edición, escritura y gestión.",
-      "Encaja mejor como inversión de puesto de trabajo que como capricho tecnológico."
+      "Permite alternar entre sentado y de pie con un bot?n.",
+      "Para la espalda y el cuello se nota much?simo.",
+      "Las memorias de altura ahorran estar ajustando cada vez.",
+      "Un modelo barato puede cumplir de sobra.",
+      "Tambi?n me resulta ?til para grabar de pie con m?s comodidad."
     ],
     cons: [
-      "Ocupa más espacio y exige medir bien antes de comprar.",
-      "No sustituye pausas, movimiento ni una buena organización del puesto.",
-      "La ficha necesita ampliarse con detalles concretos de uso y modelo exacto.",
-      "El precio depende del modelo y de la tienda."
+      "Ocupa m?s espacio y exige medir bien antes de comprar.",
+      "Los precios cambian bastante seg?n modelo y oferta.",
+      "No sustituye pausas, movimiento ni buenos h?bitos.",
+      "Las bandejas elevables baratas no son buena alternativa frente a una mesa completa."
     ],
-    alternatives: ["FlexiSpot", "IKEA Bekant", "Escritorio fijo con soporte elevador"],
-    rating: 4,
-    difficulty: "media",
+    alternatives: [],
+    rating: 5,
+    difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-03",
+    updatedAt: "2026-06-14",
     intro:
-      "Standing Desk Maidesite aparece en el Laborjatorio por una razón sencilla: el trabajo de un profesor online no vive solo dentro del navegador. También vive en la espalda, en la postura, en las horas sentado y en el puesto físico desde el que grabas, corriges, escribes y das clase.",
+      "Te lo digo sin rodeos: el escritorio elevable fue para m? un antes y un despu?s, sobre todo para mi espalda.",
+    narrativeIntro: [
+      "Te lo digo sin rodeos: el escritorio elevable fue para m? un antes y un despu?s, sobre todo para mi espalda. Es de esas compras que no parecen gran cosa hasta que la pruebas y te preguntas c?mo trabajabas antes sin ella.",
+      "El m?o es un Maidesite, lo uso a diario, y esta ficha va de por qu? creo que cualquier profe deber?a plante?rselo. Porque al final, aunque seas una persona que anda bastante, como profes pasamos much?simas horas sentados. Y eso el cuerpo lo nota."
+    ],
+    narrativeSections: [
+      {
+        title: "Qu? es un escritorio elevable",
+        paragraphs: [
+          "Es una mesa de altura regulable el?ctricamente. Dicho en cristiano: con un bot?n, la subes o la bajas para trabajar sentado o de pie cuando te apetezca.",
+          "Me gusta justo por eso, porque puedo subirlo y ponerme de pie a trabajar sin montar ning?n n?mero, solo pulsando."
+        ]
+      },
+      {
+        title: "C?mo lo uso en mi d?a a d?a",
+        paragraphs: [
+          "Lo uso para todo: para dar clases, para grabar entrevistas y podcasts, y para crear materiales. Es mi puesto de mando, y el hecho de poder alternar entre sentado y de pie a lo largo del d?a le cambia la cara a la jornada.",
+          "Si quieres ver el modelo oficial, te dejo [la p?gina de Maidesite](https://www.maidesite.de/en/products/maidesite-sn1-basic-elektrisch-hohenverstellbarer-schreibtisch-100x60cm-120x60-cm). Y si prefieres mirar el que tengo enlazado en Amazon, puedes hacerlo desde [mi enlace de afiliado](https://amzn.to/4eqeGoy): a ti te cuesta lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio."
+        ],
+        actions: [
+          {
+            label: "Ver escritorio en Amazon",
+            url: "https://amzn.to/4eqeGoy"
+          }
+        ]
+      },
+      {
+        title: "Lo que de verdad he notado",
+        paragraphs: [
+          "Voy a separar lo que s? seguro de lo que es percepci?n m?a, porque me parece lo honesto. Lo que noto clar?simo es el alivio en la espalda y el cuello, que antes sufr?an por la mala postura de tantas horas sentado. Eso para m? es innegable, se nota, se nota.",
+          "Y luego est?n las sensaciones m?s subjetivas. Noto m?s energ?a y me siento m?s creativo cuando estoy de pie, aunque eso igual son fumadas m?as. Tambi?n me da la impresi?n de que grabo mejor la voz de pie, seguramente por el diafragma, me noto mejor proyectando hablando de pie. No te lo vendo como ciencia, te lo cuento como mi experiencia.",
+          "Esto entronca con algo que defiendo mucho, que cuidarse es parte del trabajo, y de eso hablo a fondo en [Cuidarme](/cuidarme)."
+        ]
+      },
+      {
+        title: "El modelo que tengo",
+        paragraphs: [
+          "No me fui al m?s caro ni mucho menos. Compr? un modelo barato que cumple de sobra: ajusta la altura y, lo mejor, guarda memorias de tus posiciones favoritas, as? no tienes que estar regul?ndolo a mano todo el rato. Lo dejas grabado y a pulsar.",
+          "Adem?s tiene una bolsa lateral para almacenaje, un detalle peque?o pero c?modo para tener cosas a mano. Pagu? unos 180 euros, aunque los precios var?an bastante, as? que t?malo como una referencia."
+        ]
+      },
+      {
+        title: "Lo que prob? antes y no recomiendo",
+        paragraphs: [
+          "Antes de dar el salto al escritorio entero, prob? una de esas bandejas elevables que se manejan con una palanca y que pones encima de tu mesa normal. Y no la recomendar?a.",
+          "Solo ten?a dos posiciones fijas, sin ajuste fino, y encima era poco est?tica. Si est?s dudando entre una bandeja de esas y un escritorio elevable de verdad, mi consejo es claro: ahorra un poco m?s y ve a por el escritorio completo. La diferencia de comodidad no tiene color."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Unos 180 euros en mi caso, pero insisto en que los precios bailan seg?n el modelo y la oferta. Lo importante es que no necesitas gastarte una fortuna: un modelo econ?mico con ajuste de altura y memorias hace el trabajo perfectamente.",
+          "Sobre d?nde comprarlo, te dejo tanto el enlace oficial de Maidesite como el enlace de afiliado que ya ten?a esta ficha en Amazon."
+        ],
+        actions: [
+          {
+            label: "Ver escritorio en Amazon",
+            url: "https://amzn.to/4eqeGoy"
+          },
+          {
+            label: "Ver en Maidesite",
+            url: "https://www.maidesite.de/en/products/maidesite-sn1-basic-elektrisch-hohenverstellbarer-schreibtisch-100x60cm-120x60-cm"
+          }
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "No he probado otras marcas ni modelos de escritorio elevable, as? que dejo las alternativas como pendiente en lugar de inventarme comparaciones.",
+          "Lo ?nico que s? te digo, por experiencia, es lo que no har?a: tirar de bandeja de palanca. Para el resto, mi Maidesite barato me cumple, y por ah? empezar?a yo."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "El escritorio elevable es una de las mejores compras que he hecho para mi salud y mi d?a a d?a de trabajo. Para la espalda fue un antes y un despu?s, y la posibilidad de alternar sentado y de pie con un bot?n se agradece much?simo cuando pasas tantas horas frente al ordenador.",
+          "No hace falta gastarse mucho: un modelo econ?mico con ajuste de altura y memorias, como el m?o, cumple de sobra. Lo recomiendo mucho, sobre todo a profes que vivimos pegados a la silla. Empieza por un modelo barato, huye de las bandejas de palanca, y deja que tu espalda te d? las gracias.",
+          "Resumen para profes ocupados: mesa que subes y bajas con un bot?n para trabajar de pie o sentado. Gran alivio para la espalda, modelo barato, unos 180 euros, con memorias de altura. Olv?date de las bandejas de palanca."
+        ]
+      }
+    ],
     whatItDoes:
-      "Una standing desk es una mesa regulable en altura que permite trabajar sentado o de pie. En un proyecto como este no entra por ser un mueble bonito, sino porque la ergonomía afecta directamente a la constancia, la comodidad y la energía con la que se trabaja.",
+      "Es una mesa regulable en altura que me permite trabajar sentado o de pie con solo pulsar un bot?n, algo que ha mejorado much?simo c?mo aguanto las jornadas largas.",
     howIUseIt:
-      "La tengo clasificada como herramienta importante dentro del bloque de ergonomía y productividad. No es software, pero forma parte del sistema: si pasas muchas horas preparando clases, grabando vídeos, editando podcasts o escribiendo materiales, el escritorio deja de ser decorado y empieza a ser infraestructura.",
+      "La uso a diario para clases, grabaciones y creaci?n de materiales, alternando posturas y aprovechando las memorias guardadas para no perder tiempo reajustando la altura.",
     teacherUseCases: [
       "Alternar postura durante jornadas largas de clases online.",
-      "Grabar vídeos o explicaciones de pie con más naturalidad.",
-      "Preparar materiales, corregir y escribir sin estar siempre en la misma posición.",
-      "Construir un puesto de trabajo más sostenible para un negocio educativo online."
+      "Grabar entrevistas, podcasts o v?deos de pie con m?s comodidad.",
+      "Preparar materiales, corregir y escribir sin estar siempre en la misma posici?n.",
+      "Montar un puesto de trabajo m?s sostenible para un negocio educativo online."
     ],
     honestVerdict:
-      "No es una herramienta mágica ni va a arreglar por sí sola una mala rutina. Pero si trabajas muchas horas desde casa, una mesa elevable puede ser una decisión bastante sensata. Esta ficha queda publicada como entrada breve y pendiente de ampliar con modelo exacto, precio pagado y experiencia concreta de uso.",
+      "Para m? ha sido una de las compras m?s agradecidas del escritorio. No porque sea una mesa futurista ni nada as?, sino porque la espalda y el cuello lo notan de verdad. Si pasas media vida sentado, esto tiene much?simo sentido.",
     importantNotice:
-      "Ficha breve: Standing Desk Maidesite estaba registrada como herramienta importante en la documentación interna, pero todavía falta ampliar la experiencia concreta antes de convertirla en un artículo largo.",
+      "Mantengo el enlace de afiliado de Amazon que ya ten?a esta ficha. Si compras desde ?l, a ti te cuesta lo mismo y a m? me llega una peque?a comisi?n. Tambi?n te dejo el enlace oficial de Maidesite para que compares con calma.",
+    metrics: [
+      { label: "Uso", value: "Diario" },
+      { label: "Precio orientativo", value: "~180 ?" },
+      { label: "Estado", value: "Importante" }
+    ],
     priceRows: [
-      { label: "Modelo", value: "Pendiente de concretar" },
-      { label: "Tipo de pago", value: "Compra única" },
-      { label: "Afiliación", value: "Sí, Amazon" }
+      { label: "Compra", value: "Pago ?nico" },
+      { label: "Precio orientativo", value: "Alrededor de 180 ?" },
+      { label: "Afiliaci?n", value: "S?, Amazon" }
     ],
     priceNote:
-      "El enlace de Amazon corresponde al standing desk Maidesite. No fijo un precio aquí porque depende del modelo, país y tienda.",
-    cta:
-      "Si te interesa montar un puesto de trabajo más cómodo para enseñar, grabar y crear contenido, en borjaprofe.com voy contando estas decisiones sin convertirlas en postureo de escritorio."
+      "Los precios cambian bastante seg?n modelo y oferta. Qu?date m?s con la idea que con la cifra exacta: no hace falta irse a un modelo caro para notar el cambio.",
+    purchaseLinks: [
+      {
+        label: "Ver escritorio en Amazon",
+        url: "https://amzn.to/4eqeGoy"
+      },
+      {
+        label: "Ver en Maidesite",
+        url: "https://www.maidesite.de/en/products/maidesite-sn1-basic-elektrisch-hohenverstellbarer-schreibtisch-100x60cm-120x60-cm"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Silla de oficina de malla",
+        url: "/herramientas/silla-oficina-malla"
+      },
+      {
+        label: "Filtro antipop InnoGear",
+        url: "/herramientas/filtro-antipop-innogear"
+      },
+      {
+        label: "Cuidarme",
+        url: "/cuidarme"
+      }
+    ],
+    faqs: [
+      {
+        question: "?Merece la pena el modelo barato o hay que gastar m?s?",
+        answer:
+          "En mi experiencia, un modelo econ?mico con ajuste de altura y memorias cumple de sobra. Yo pagu? unos 180 euros y no echo nada en falta para mi uso diario."
+      },
+      {
+        question: "?De verdad se nota la diferencia en la espalda?",
+        answer:
+          "A m? me cambi? la vida en ese sentido, fue un antes y un despu?s. Pasamos tantas horas sentados que poder ponerte de pie a ratos alivia much?simo la tensi?n de espalda y cuello."
+      }
+    ]
   },
   {
     name: "Silla de oficina de malla",
