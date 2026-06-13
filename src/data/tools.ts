@@ -388,93 +388,171 @@ export const tools: Tool[] = [
   {
     name: "OpusClip",
     slug: "opusclip",
-    title: "OpusClip: cómo publico clips de Gramaticón y el podcast de Palabras",
+    title: "OpusClip: c\u00f3mo creo clips para redes desde mis v\u00eddeos largos (y cu\u00e1ndo merece la pena)",
+    metaDescription:
+      "Uso OpusClip para sacar clips de mis episodios de Gramatic\u00f3n. Es una inversi\u00f3n que solo merece la pena con volumen y estrategia. Te cuento c\u00f3mo lo uso, sus condiciones y alternativas.",
+    keywords: [
+      "OpusClip",
+      "crear clips para redes",
+      "clips autom\u00e1ticos con IA",
+      "clips desde v\u00eddeos largos",
+      "herramienta para shorts y reels",
+      "repurposing de v\u00eddeo"
+    ],
     tagline:
-      "La herramienta que uso para convertir vídeos largos en clips cortos y verticales para redes sociales.",
-    category: "Audio y vídeo",
+      "La herramienta que uso para convertir v\u00eddeos largos en clips cortos para redes cuando ya hay volumen y estrategia.",
+    category: "Audio y v\u00eddeo",
     subcategories: ["video", "redes sociales", "contenido", "ia", "podcast"],
     pricing: "suscripcion",
     officialUrl: "https://www.opus.pro/",
     affiliateUrl: "https://www.opus.pro/?via=laborjatorio",
     hasAffiliate: true,
     myUseCase:
-      "Lo uso para transformar episodios largos de Gramaticón y el podcast de Palabras en clips cortos para Instagram, TikTok, YouTube Shorts y otras redes.",
+      "Lo uso sobre todo para convertir episodios largos de Gramatic\u00f3n en clips cortos para redes sin tener que montarlos a mano uno por uno.",
     bestFor: [
-      "Profes que ya graban vídeos largos, clases, episodios o tutoriales",
-      "Profes de idiomas que quieren aparecer en redes sin editar cada clip a mano",
-      "Creadores educativos con un ritmo mínimo de publicación semanal",
-      "Quien entiende los clips como inversión de visibilidad, no como adorno"
+      "Profes que ya graban v\u00eddeos largos, clases, episodios o tutoriales",
+      "Creadores educativos que quieren reutilizar contenido en formato corto",
+      "Quien publica con cierta constancia y tiene estrategia de distribuci\u00f3n",
+      "Quien entiende los clips como una inversi\u00f3n de visibilidad"
     ],
     notFor: [
-      "Quien publica vídeos largos solo de vez en cuando",
-      "Quien no tiene una estrategia clara de distribución",
+      "Quien publica v\u00eddeos largos solo de vez en cuando",
+      "Quien no tiene una estrategia clara de distribuci\u00f3n",
       "Quien busca una herramienta barata para usar una vez al mes",
-      "Quien quiere delegar también la programación de publicaciones"
+      "Quien espera que la IA sustituya su criterio editorial"
     ],
     pros: [
-      "Detecta momentos interesantes dentro de vídeos largos.",
-      "El subtitulado automático en español funciona bastante bien.",
-      "Permite guardar fuentes y colores de marca.",
-      "La detección de caras en entrevistas ayuda mucho en formato vertical.",
-      "Ahorra el tiempo que antes hacía que directamente no publicara clips."
+      "Convierte v\u00eddeos largos en clips sin montar cada pieza a mano.",
+      "Me ha hecho empezar a publicar clips, cuando antes ni lo hac\u00eda.",
+      "Ahorra muchas horas si ya tienes contenido largo y volumen.",
+      "El formato vertical y los subt\u00edtulos salen bastante encaminados.",
+      "Facilita reutilizar en redes contenido que ya existe."
     ],
     cons: [
-      "El precio da respeto al principio.",
-      "Tiene más sentido si ya produces contenido con cierta regularidad.",
-      "La puntuación de viralidad orienta, pero no sustituye el criterio propio.",
-      "No lo uso para programar publicaciones, aunque la plataforma lo permite."
+      "Es una inversi\u00f3n considerable.",
+      "Solo compensa si tienes volumen de contenido o constancia real.",
+      "Sin estrategia de publicaci\u00f3n, pierde bastante sentido.",
+      "No lo recomendar\u00eda como compra impulsiva."
     ],
-    alternatives: ["CapCut", "Descript", "Klap", "Captions"],
+    alternatives: ["CapCut", "SoundMadeSeen", "Descript"],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-03",
+    updatedAt: "2026-06-13",
     intro:
-      "OpusClip es la herramienta que uso para convertir episodios largos de Gramaticón y el podcast de Palabras en clips cortos y verticales para redes. Empecé a usarla en 2026 y, aunque al principio me costó aceptar el precio, ha cambiado bastante mi forma de distribuir contenido.",
+      "OpusClip es la herramienta con la que convierto mis v\u00eddeos largos en clips cortos para redes. Antes de OpusClip, la verdad es que no publicaba clips. As\u00ed que para m\u00ed ha sido la pieza que me ha abierto esa puerta.",
+    narrativeIntro: [
+      "OpusClip es la herramienta con la que convierto mis v\u00eddeos largos en clips cortos para redes. Y te lo digo ya: antes de OpusClip, la verdad es que no publicaba clips. As\u00ed que para m\u00ed ha sido la pieza que me ha abierto esa puerta. Pero ojo, no es una compra que le recomiende a cualquiera sin m\u00e1s, porque tiene una condici\u00f3n importante que te cuento enseguida.",
+      "Esta ficha es para profes y creadores que se preguntan c\u00f3mo sacar clips para redes sin pasarse horas mont\u00e1ndolos. Te cuento para qu\u00e9 lo uso, cu\u00e1ndo sale a cuenta de verdad y cu\u00e1ndo no."
+    ],
+    narrativeSections: [
+      {
+        title: "Qu\u00e9 es OpusClip",
+        paragraphs: [
+          "OpusClip es una herramienta que, con ayuda de IA, crea clips cortos autom\u00e1ticamente a partir de tus v\u00eddeos largos. Le das un v\u00eddeo de varios minutos y te devuelve fragmentos listos para publicar en redes, recortados, en vertical y con subt\u00edtulos.",
+          "La idea es aprovechar contenido que ya tienes para multiplicarlo en formato corto sin rehacer nada."
+        ],
+        actions: [
+          {
+            label: "Probar OpusClip",
+            url: "https://www.opus.pro/?via=laborjatorio"
+          }
+        ]
+      },
+      {
+        title: "C\u00f3mo lo uso yo",
+        paragraphs: [
+          "Lo utilizo en tan solo un par de proyectos, sobre todo en mis nuevos episodios de Gramatic\u00f3n. Cojo el episodio largo y, en lugar de quedarme solo con \u00e9l, saco varios clips para ir publicando en redes. Esa misma l\u00f3gica la puedes aplicar a cualquier contenido largo: haces una pieza potente y luego la repartes en p\u00edldoras peque\u00f1as.",
+          "Antes de probar OpusClip, traste\u00e9 un poquito con CapCut, pero se me hac\u00eda un poco liosa y no ten\u00eda claro c\u00f3mo encajarla en mi plan de publicaci\u00f3n. OpusClip me result\u00f3 m\u00e1s claro y directo para lo que yo quer\u00eda."
+        ]
+      },
+      {
+        title: "Lo importante: cu\u00e1ndo merece la pena de verdad",
+        paragraphs: [
+          "Aqu\u00ed est\u00e1 la clave de toda la ficha, as\u00ed que presta atenci\u00f3n antes de sacar la tarjeta. OpusClip no me parece caro si le vas a sacar provecho, pero s\u00ed es una inversi\u00f3n considerable. Y esa frase tiene truco: la palabra importante es provecho.",
+          "Merece la pena si ya tienes un cat\u00e1logo abultado de v\u00eddeos o si planeas publicar de manera constante. Si cada semana haces uno o dos v\u00eddeos largos, eso quiere decir que cada semana vas a tener varios clips que publicar. Ah\u00ed la herramienta vuela y se amortiza sola.",
+          "Pero si no tienes ese volumen ni esa intenci\u00f3n, la cosa cambia. Porque todo esto funciona si hay una estrategia detr\u00e1s. Sin un plan de publicaci\u00f3n, por muy buena que sea la herramienta, no le vas a sacar el jugo que justifica lo que cuesta."
+        ],
+        actions: [
+          {
+            label: "Ver OpusClip",
+            url: "https://www.opus.pro/?via=laborjatorio"
+          }
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Es un producto de pago. No te doy aqu\u00ed una cifra cerrada porque este tipo de herramientas cambian precios y planes con facilidad, y prefiero no dejarte un n\u00famero que ma\u00f1ana no valga.",
+          "Lo que s\u00ed te traslado es c\u00f3mo lo veo yo: no es caro en relaci\u00f3n a lo que te ahorra, pero s\u00ed supone una inversi\u00f3n considerable, as\u00ed que solo tiene sentido si vas a usarlo con cierta intensidad."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "La alternativa que prob\u00e9 es CapCut, que descart\u00e9 porque se me hizo liosa, aunque es una opci\u00f3n popular y m\u00e1s econ\u00f3mica que quiz\u00e1 a ti te encaje.",
+          "Y si tu contenido es sobre todo de audio en lugar de v\u00eddeo, \u00e9chale un ojo a [SoundMadeSeen](/herramientas/soundmadeseen), que hace algo parecido partiendo de episodios solo de audio. Cada una tiene su terreno: OpusClip y CapCut parten de v\u00eddeo, SoundMadeSeen de audio."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "OpusClip es una herramienta estupenda para una cosa muy concreta: exprimir tus v\u00eddeos largos convirti\u00e9ndolos en clips para redes sin pasarte la vida editando. A m\u00ed me ha hecho empezar a publicar clips, que antes ni tocaba.",
+          "Pero no es para todo el mundo, y prefiero dec\u00edrtelo claro: solo le sacar\u00e1s partido si tienes volumen de contenido y una estrategia detr\u00e1s. Si publicas de forma constante, es una gran inversi\u00f3n. Si vas a usarlo de vez en cuando, probablemente no lo amortices.",
+          "Resumen para profes y creadores ocupados: convierte tus v\u00eddeos largos en clips para redes con IA. Es una inversi\u00f3n que merece la pena solo si tienes cat\u00e1logo o publicas de forma constante, y siempre con una estrategia detr\u00e1s."
+        ]
+      }
+    ],
     whatItDoes:
-      "OpusClip analiza un vídeo largo con inteligencia artificial, detecta momentos que pueden funcionar como clips y los convierte en piezas verticales preparadas para redes sociales. También ayuda con subtítulos automáticos, eliminación de silencios, ajustes de encuadre, efectos básicos y plantillas de marca.",
+      "OpusClip analiza un v\u00eddeo largo con inteligencia artificial, detecta momentos que pueden funcionar como clips y los convierte en piezas verticales preparadas para redes sociales.",
     howIUseIt:
-      "Cuando sale un episodio nuevo de Gramaticón, subo el vídeo a OpusClip y reviso los momentos que propone. Elijo los que me parecen más interesantes, corrijo los subtítulos cuando hace falta y exporto. Con el podcast de Palabras hago algo parecido: vídeo largo dentro, varios clips fuera. Antes no publicaba clips porque localizar el momento, cortarlo, subtitularlo y pasarlo a vertical era una movida que no cabía en mi flujo de trabajo. Ahora publico contenido en redes prácticamente cada día con muy poco esfuerzo.",
+      "Lo uso sobre todo con episodios largos de Gramatic\u00f3n. Subo el contenido, reviso las propuestas y me quedo con los fragmentos que s\u00ed encajan con lo que quiero publicar.",
     teacherUseCases: [
       "Convertir una clase grabada en varios clips breves para redes.",
-      "Sacar fragmentos didácticos de un episodio largo de YouTube.",
+      "Sacar fragmentos did\u00e1cticos de un episodio largo de YouTube.",
       "Reutilizar entrevistas o podcasts educativos en formato vertical.",
-      "Crear piezas cortas para atraer alumnos hacia contenidos más largos.",
-      "Mantener presencia en redes sin dedicar horas a edición manual."
+      "Crear piezas cortas para atraer alumnos hacia contenidos m\u00e1s largos.",
+      "Mantener presencia en redes sin dedicar horas a edici\u00f3n manual."
     ],
     honestVerdict:
-      "OpusClip merece la pena si ya produces vídeos largos y quieres distribuirlos mejor. Para mí ha sido la diferencia entre publicar clips y no publicarlos. No lo recomendaría como capricho aislado: necesita volumen, estrategia y cierta continuidad. Pero si grabas cada semana, el precio empieza a parecer menos un gasto y más una forma razonable de comprar tiempo y visibilidad.",
+      "OpusClip merece la pena si ya produces v\u00eddeos largos y quieres distribuirlos mejor. Para m\u00ed ha sido la diferencia entre publicar clips y no publicarlos. No lo recomendar\u00eda como capricho aislado: necesita volumen, estrategia y continuidad.",
     metrics: [
-      { label: "Créditos incluidos en el plan anual", value: "3.600" },
-      { label: "Horas de vídeo al año", value: "60" },
-      { label: "Año en que empecé a usarlo", value: "2026" }
+      { label: "A\u00f1o en que empec\u00e9 a usarlo", value: "2026" },
+      { label: "Afiliaci\u00f3n", value: "S\u00ed" },
+      { label: "Modelo", value: "Suscripci\u00f3n" }
     ],
     priceRows: [
-      { label: "Plan anual Pro", value: "~174 euros" },
-      { label: "Créditos incluidos", value: "3.600 minutos al año" },
-      { label: "Crédito", value: "1 minuto de vídeo procesado" },
-      { label: "Afiliación", value: "Sí" }
+      { label: "Precio exacto", value: "Conviene confirmarlo en la web oficial" },
+      { label: "Tipo de gasto", value: "Inversi\u00f3n considerable" },
+      { label: "Cu\u00e1ndo compensa", value: "Con volumen y estrategia" },
+      { label: "Afiliaci\u00f3n", value: "S\u00ed" }
     ],
     priceNote:
-      "Al verlo por primera vez me pareció caro. Luego me pregunté cuánto estaría dispuesto a pagar en publicidad para conseguir esa visibilidad, y 174 euros al año dejó de parecer tanto. Eso sí: solo tiene sentido si vas a darle uso real.",
+      "Si entras desde mi enlace y acabas contratando, yo puedo llevarme una peque\u00f1a comisi\u00f3n sin coste extra para ti. Pero de verdad creo que solo tiene sentido si vas a usarlo con bastante regularidad.",
+    purchaseLinks: [
+      {
+        label: "Probar OpusClip",
+        url: "https://www.opus.pro/?via=laborjatorio"
+      }
+    ],
     alternativeDetails: [
       {
         name: "CapCut",
         description:
-          "Lo probé brevemente, pero me pareció algo lioso y no encontré claro cómo encajaba en mi flujo."
+          "La prob\u00e9 brevemente, pero se me hizo algo liosa y no vi claro c\u00f3mo encajarla en mi flujo. Aun as\u00ed, puede encajarte si buscas algo m\u00e1s econ\u00f3mico."
+      },
+      {
+        name: "SoundMadeSeen",
+        description:
+          "La tendr\u00eda m\u00e1s en cuenta si tu contenido parte de audio y no de v\u00eddeo."
       },
       {
         name: "Descript"
-      },
-      {
-        name: "Klap"
-      },
-      {
-        name: "Captions"
       }
     ],
     cta:
-      "Si quieres ver cómo convierto contenido largo en piezas más pequeñas para redes, en borjaprofe.com voy contando estas pruebas con calma."
+      "Si quieres ver c\u00f3mo convierto contenido largo en piezas m\u00e1s peque\u00f1as para redes, en borjaprofe.com voy contando estas pruebas con calma."
   },
   {
     name: "DaVinci Resolve",
