@@ -3796,107 +3796,165 @@ export const tools: Tool[] = [
   {
     name: "Filtro antipop InnoGear",
     slug: "filtro-antipop-innogear",
-    title: "Filtro antipop InnoGear: cómo quité los \"pop\" de mis grabaciones por 20 euros",
+    title: "Filtro antipop: por qu? lo necesitas si grabas (y el m?o, un InnoGear de 20 euros)",
     metaDescription:
-      "Un filtro antipop de unos 20 euros me quitó los molestos pop de mis grabaciones. Te cuento qué hace, mi experiencia con el InnoGear y un aviso sobre su agarre.",
+      "Un filtro antipop de 20 euros mejor? mucho el audio de mis grabaciones quitando esos sonidos pop tan desagradables. Te cuento mi InnoGear, lo que aporta y su ?nico pero.",
     keywords: [
       "filtro antipop",
-      "InnoGear filtro pop",
-      "reducir sonidos pop",
-      "mejorar audio podcast",
-      "filtro pop para micrófono",
-      "accesorio para grabar voz"
+      "filtro pop micr?fono",
+      "InnoGear filtro antipop",
+      "reducir sonidos pop al grabar",
+      "mejorar audio podcast barato",
+      "accesorios para grabar voz"
     ],
     tagline:
-      "Un accesorio barato para reducir los golpes de aire y mejorar grabaciones de voz sin complicarte.",
-    category: "Equipo físico",
-    subcategories: ["audio", "comunicación", "contenido", "podcast", "grabación"],
+      "Ese accesorio peque?o y barato que limpia tu voz al grabar y evita los golpes de aire m?s desagradables.",
+    category: "Equipo f?sico",
+    subcategories: ["audio", "comunicaci?n", "contenido", "podcast", "grabaci?n"],
     pricing: "pago-unico",
-    officialUrl: "https://www.amazon.es/",
-    affiliateUrl: "https://amzn.to/4o9rJhj",
-    hasAffiliate: true,
+    hasAffiliate: false,
     myUseCase:
-      "Lo uso desde 2022 delante del micrófono para reducir los sonidos pop en podcasts, vídeos y grabaciones de voz.",
+      "Lo uso desde 2022 delante del micr?fono para quitar esos golpes de aire en podcasts, v?deos y otros audios grabados.",
     bestFor: [
-      "Profes que graban podcast o vídeo con voz",
-      "Creadores que quieren mejorar el audio por poco dinero",
-      "Quien nota golpes de aire al pronunciar p o b cerca del micrófono",
-      "Personas que ya tienen micrófono y quieren cuidar un poco más la grabación"
+      "Profes que graban podcast, v?deo o audios para clase",
+      "Quien oye golpes de aire al pronunciar p o b cerca del micro",
+      "Creadores que quieren mejorar el sonido por muy poco dinero",
+      "Quien ya tiene micr?fono y quiere pulir la grabaci?n"
     ],
     notFor: [
       "Quien solo hace videollamadas ocasionales",
       "Quien no graba voz ni contenido de audio",
-      "Quien busca una mejora de audio profesional completa",
-      "Quien necesita resolver ruido de habitación, eco o mala acústica"
+      "Quien busca resolver eco, ruido de sala o ac?stica mala",
+      "Quien espera una mejora total sin cuidar el resto de la grabaci?n"
     ],
     pros: [
-      "Mejora mucho el audio por unos 20 euros.",
-      "Reduce los sonidos pop de forma muy sencilla.",
-      "No requiere aprendizaje: lo colocas delante del micro y grabas.",
-      "Me acompaña desde 2022 y sigue cumpliendo.",
-      "Es una compra pequeña con bastante impacto si grabas voz."
+      "Mejora de forma clara la limpieza de la voz al grabar.",
+      "Cuesta poco y se nota bastante.",
+      "No tiene curva de aprendizaje: lo colocas y ya est?.",
+      "Lleva conmigo desde 2022 y sigue cumpliendo.",
+      "Es una compra peque?a con impacto real si grabas voz."
     ],
     cons: [
-      "El agarre puede balancearse si no lo ajustas bien.",
-      "La pinza puede marcar o dañar la mesa si aprietas demasiado.",
-      "No sustituye una buena técnica de micro ni una habitación decente.",
-      "Hay que cuidar el agarre para no marcar el escritorio."
+      "La pinza puede dar un poco de guerra si no la ajustas bien.",
+      "Si aprietas demasiado, puedes marcar o da?ar la mesa.",
+      "No sustituye una buena t?cnica de micro ni un espacio razonable.",
+      "No he probado otros, as? que no puedo compararlo con criterio."
     ],
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-14",
     intro:
-      "Si nunca has grabado un podcast, la primera vez que te escuches hay varias cosas que te van a sorprender. Una: lo desagradable que es oír tu propia voz al principio. Y dos: la cantidad de sonidos pop que vas a escuchar. Para lo segundo hay solución barata, y se llama filtro antipop.",
+      "Igual me has visto en alg?n v?deo hablando encima de una especie de Oreo gigante. Bueno, pues ese algo es el filtro antipop.",
+    narrativeIntro: [
+      "Igual me has visto en alg?n v?deo hablando encima de una especie de Oreo gigante. Bueno, pues ese algo es el filtro antipop. Es un accesorio peque?o y barato que, si grabas tu voz, marca una diferencia real en c?mo suenas. Y aunque parezca un detalle tonto, no lo es.",
+      "Esta ficha es para profes que graban podcast, v?deos o audios para sus clases y se preguntan por qu? su voz suena rara y llena de golpes al grabar. Buena parte de la respuesta tiene nombre, y son los sonidos pop."
+    ],
+    narrativeSections: [
+      {
+        title: "El problema que resuelve",
+        paragraphs: [
+          "Si nunca has grabado un podcast, la primera vez que te escuches hay varias cosas que te van a sorprender. Una, lo desagradable que es o?r tu propia voz al principio, algo por lo que pasamos todos. Y dos, la cantidad de sonidos pop que vas a escuchar. Ese sonido viene por las explosivas, por la forma de hablar, esas p y b que sueltan un golpe de aire contra el micro. Y es un sonido muy desagradable para quien lo escucha.",
+          "El filtro antipop se coloca entre tu boca y el micr?fono, y suaviza justo esos golpes de aire. El resultado es una voz m?s limpia y agradable, sin esos peque?os petardazos que distraen."
+        ]
+      },
+      {
+        title: "C?mo descubr? que lo necesitaba",
+        paragraphs: [
+          "Yo solo no me habr?a dado cuenta, porque mi o?do es p?simo. Lo descubr? por una compa??a con la que colaboraba: me dijeron que sonaba con mucho pop y me recomendaron comprar un filtro. As? que eso fue lo que hice.",
+          "Lo compr? en 2022, me cost? unos veinte euros, y sigue en uso a d?a de hoy. A veces necesitas que alguien con mejor o?do te abra los ojos, o m?s bien las orejas."
+        ]
+      },
+      {
+        title: "Qu? filtro uso",
+        paragraphs: [
+          "El m?o es un InnoGear con doble capa, pensado para micr?fono de estudio y compatible con micros tipo Blue Yeti. No es nada ex?tico ni caro: por unos veinte euros tienes un accesorio que mejora de forma clara la calidad de tu audio.",
+          "Para m? es una buena inversi?n, de esas que dan mucho a cambio de poco."
+        ]
+      },
+      {
+        title: "Lo que menos me gusta",
+        paragraphs: [
+          "Aqu? va el ?nico pero, y conviene que lo sepas. El agarre de este filtro puede dar un poquito de guerra: si no lo ajustas bien, puede que se te balancee hacia los lados y tengas que recolocarlo.",
+          "Y hay algo m?s serio, que cuento para que no te pase. Con el tiempo, he terminado haci?ndole una peque?a aver?a a mi [standing desk](/herramientas/standing-desk-maidesite) de tanto apretar la pinza del filtro contra el borde. Puede que sea porque soy de Bilbao y aprieto, y soy tan bruto que lo aprieto demasiado, no s?. Moraleja: aprieta lo justo para que sujete, sin pasarte, y protege tu mesa."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Unos veinte euros. Es de las inversiones m?s baratas que puedes hacer para mejorar tu sonido, y de las que m?s se notan en proporci?n a lo que cuestan. Si grabas con cierta frecuencia, se amortiza solo con la primera grabaci?n que suene limpia.",
+          "El enlace de compra est? pendiente: en cuanto lo tenga, lo a?ado aqu?."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Este es el ?nico filtro antipop que he probado, as? que no puedo recomendarlo por encima de otros porque no tengo con qu? compararlo.",
+          "Lo que s? te digo es que la diferencia entre tener filtro y no tenerlo es enorme, as? que el salto importante es ese, no tanto qu? marca elijas."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "El filtro antipop es uno de esos accesorios peque?os y baratos que mejoran tu audio m?s de lo que esperar?as. El m?o, un InnoGear de veinte euros, lleva desde 2022 cumpliendo, y para grabar voz lo considero una compra muy acertada.",
+          "Si grabas podcast, v?deos o audios y a?n no tienes uno, lo recomiendo sin dudarlo. No necesitas el m?s caro, necesitas tener uno. La mejora en c?mo suenas justifica de sobra los pocos euros que cuesta.",
+          "Resumen para profes ocupados: accesorio barato, unos 20 euros, que quita los sonidos pop y limpia tu voz al grabar. Ojo con la pinza, que aprieta fuerte y puede marcar la mesa. M?s importante tener uno que cu?l."
+        ]
+      }
+    ],
     whatItDoes:
-      "El InnoGear que uso es un filtro antipop de doble capa para micrófono de estudio. Es esa pantalla, la Oreo gigante, que se coloca entre tu boca y el micrófono para frenar los golpes de aire antes de que lleguen a la cápsula. Se nota especialmente con explosivas como la p o la b.",
+      "Es un filtro antipop de doble capa que se coloca entre tu boca y el micr?fono para frenar los golpes de aire de consonantes como la p o la b y limpiar la grabaci?n.",
     howIUseIt:
-      "Yo no descubrí el problema solo, porque mi oído es bastante limitado para estas cosas. Me lo señaló una compañía con la que colaboraba: me dijeron que sonaba con mucho pop y me recomendaron comprar un filtro. Lo compré en 2022 por unos 20 euros, lo coloqué delante del micro y desde entonces sigue ahí, haciendo su trabajo sin pedir protagonismo.",
+      "Lo tengo montado delante del micr?fono desde 2022 para grabar podcast, v?deos y otros audios de voz con menos golpes de aire y una sensaci?n m?s limpia al escucharme.",
     teacherUseCases: [
-      "Grabar podcasts con una voz más limpia.",
-      "Reducir golpes de aire en vídeos educativos.",
+      "Grabar podcasts con una voz m?s limpia.",
+      "Reducir golpes de aire en v?deos educativos.",
       "Mejorar audios para clases, cursos o materiales grabados.",
-      "Montar un pequeño puesto de grabación sin gastar mucho.",
-      "Evitar que una grabación casera suene más molesta de lo necesario."
+      "Pulir un puesto de grabaci?n casero sin gastar mucho."
     ],
     honestVerdict:
-      "El filtro antipop es de esas mejoras pequeñas y baratas que dan un resultado desproporcionado para lo que cuestan. El mío, un InnoGear de unos 20 euros, lleva conmigo desde 2022 y cumple. Si grabas voz, te lo recomiendo sin dudar, con un único aviso: cuida el agarre, que la pinza puede balancearse y, si aprietas demasiado, hacerle pupa a tu escritorio.",
+      "El filtro antipop es uno de esos accesorios peque?os y baratos que mejoran tu audio m?s de lo que esperar?as. El m?o, un InnoGear de unos veinte euros, lleva desde 2022 cumpliendo. Si grabas voz, me parece una compra muy acertada.",
     importantNotice:
-      "Ojo con dónde y con cuánta fuerza lo enganchas. A mí el agarre me ha dado algo de guerra y terminé haciendo una pequeña avería a mi standing desk por apretar demasiado la pinza.",
+      "Ojo con la pinza. Si no la ajustas bien puede balancearse, y si aprietas demasiado puedes marcar o da?ar la mesa.",
     metrics: [
       { label: "Uso desde", value: "2022" },
-      { label: "Precio orientativo", value: "~20 €" },
+      { label: "Precio orientativo", value: "~20 ?" },
       { label: "Capas", value: "Doble" }
     ],
     priceRows: [
-      { label: "Tipo de compra", value: "Pago único" },
-      { label: "Precio orientativo", value: "Alrededor de 20 €" },
+      { label: "Tipo de compra", value: "Pago ?nico" },
+      { label: "Precio orientativo", value: "Alrededor de 20 ?" },
       { label: "Producto", value: "InnoGear filtro antipop de doble capa" },
-      { label: "Afiliación", value: "Sí, Amazon" }
+      { label: "Afiliaci?n", value: "Pendiente" }
     ],
     priceNote:
-      "El enlace de Amazon corresponde al filtro antipop InnoGear de doble capa. La referencia útil es esa: filtro antipop de doble capa para micrófono de estudio.",
+      "De momento dejo pendiente el enlace de compra. La referencia ?til es esa: filtro antipop InnoGear de doble capa para micr?fono de estudio.",
+    relatedLinks: [
+      {
+        label: "Audio-Technica ATR2100x-USB",
+        url: "/herramientas/audio-technica-atr2100x-usb"
+      },
+      {
+        label: "Standing desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite"
+      },
+      {
+        label: "Audacity",
+        url: "/herramientas/audacity"
+      }
+    ],
     faqs: [
       {
-        question: "¿Qué hace un filtro antipop?",
+        question: "?De verdad se nota la diferencia?",
         answer:
-          "Reduce los golpes de aire que llegan al micrófono cuando pronuncias sonidos explosivos como p o b. Eso evita esos pop desagradables en la grabación."
+          "S?, y mucho. Los sonidos pop son de esas cosas que no percibes hasta que alguien te las se?ala, y una vez puesto el filtro, tu voz suena bastante m?s limpia y agradable."
       },
       {
-        question: "¿Merece la pena si grabo podcast o vídeos?",
+        question: "?Vale cualquier filtro o tengo que comprar el tuyo?",
         answer:
-          "Sí. Si grabas voz con cierta frecuencia, por unos 20 euros es una mejora muy razonable."
-      },
-      {
-        question: "¿El InnoGear es el mejor filtro antipop?",
-        answer:
-          "No puedo decir eso porque es el único que he probado. Lo que sí puedo decir es que el mío cumple y me quitó el problema que tenía."
-      },
-      {
-        question: "¿Qué problema tiene?",
-        answer:
-          "El agarre. Puede balancearse si no lo ajustas bien y, si aprietas demasiado la pinza, puedes marcar o dañar el escritorio."
+          "No puedo decirte que el m?o sea el mejor, porque es el ?nico que he usado. Lo importante es dar el paso de tener uno. Aseg?rate solo de que sea compatible con tu micr?fono."
       }
     ]
   },

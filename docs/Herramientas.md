@@ -304,8 +304,8 @@
 ## Filtro antipop InnoGear
 
 * Estado: Importante
-* Etiquetas: Audio, Comunicación, Contenido
-* Nota: Filtro antipop de doble capa para micrófono de estudio. Enlace de afiliado pendiente.
+* Etiquetas: Audio, Comunicaci?n, Contenido
+* Nota: Filtro antipop de doble capa para micr?fono de estudio. Sin enlace oficial ni de afiliado confirmado por ahora.
 
 ## Sennheiser Momentum 4 Wireless
 
