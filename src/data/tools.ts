@@ -3672,122 +3672,218 @@ export const tools: Tool[] = [
     slug: "audio-technica-atr2100x-usb",
     title: "Audio-Technica ATR2100x-USB: el micro con el que grabo (aunque no te lo recomiende del todo)",
     metaDescription:
-      "Grabo mis podcasts, entrevistas y vídeos con el Audio-Technica ATR2100x-USB. Suena bien, pero no estoy 100% satisfecho. Te cuento por qué, con anécdota de taza incluida.",
+      "Grabo mis podcasts, entrevistas y v?deos con el Audio-Technica ATR2100x-USB. Suena bien, pero no estoy 100% satisfecho. Te cuento por qu?, con an?cdota de taza incluida.",
     keywords: [
       "Audio-Technica ATR2100x-USB",
-      "micrófono para podcast",
-      "micrófono USB para grabar",
-      "micrófono para grabar clases y vídeos",
-      "micrófono dinámico USB XLR",
-      "micrófono para entrevistas"
+      "micr?fono para podcast",
+      "micr?fono USB para grabar",
+      "micr?fono para grabar clases y v?deos",
+      "micr?fono din?mico USB jack",
+      "micr?fono para entrevistas"
     ],
     tagline:
-      "El micrófono con el que grabo podcasts, entrevistas y vídeos, aunque hoy no te lo recomendaría sin matices.",
-    category: "Audio y vídeo",
-    subcategories: ["audio", "comunicación", "formación", "contenido", "podcast", "micrófono"],
+      "El micr?fono con el que grabo podcasts, entrevistas y v?deos, aunque hoy no te lo recomendar?a sin matices.",
+    category: "Audio y v?deo",
+    subcategories: ["audio", "comunicaci?n", "formaci?n", "contenido", "podcast", "micr?fono"],
     pricing: "pago-unico",
-    officialUrl: "https://www.audio-technica.com/en-eu/atr2100x-usb",
     affiliateUrl: "https://amzn.to/4dXGalj",
     hasAffiliate: true,
     myUseCase:
-      "Lo uso para grabar mis entrevistas, episodios de podcast y vídeos. Es imprescindible por uso real, no porque esté plenamente satisfecho ni porque lo recomiende al 100%.",
+      "Lo uso para grabar mis entrevistas, episodios de podcast y v?deos. Es imprescindible por uso real, no porque est? plenamente satisfecho ni porque lo recomiende al 100%.",
     bestFor: [
       "Profes que quieren escuchar una experiencia real antes de comprar un micro",
-      "Podcasters que valoran un micrófono dinámico USB/XLR",
-      "Creadores que quieren grabar voz con calidad decente",
-      "Quien quiere una referencia honesta, con ventajas y problemas"
+      "Quien necesita grabar podcast, entrevistas o v?deos con un mismo micro",
+      "Creadores que valoran m?s la experiencia real que una recomendaci?n idealizada",
+      "Quien quiere un micro que ya ha pasado por mucho uso real"
     ],
     notFor: [
-      "Quien quiere una recomendación redonda y sin dudas",
-      "Quien necesita volumen alto de grabación sin tocar nada después",
+      "Quien quiere una recomendaci?n redonda y sin dudas",
+      "Quien necesita volumen alto de grabaci?n sin tocar nada despu?s",
       "Quien busca una base de escritorio resistente",
-      "Quien prefiere esperar a que encuentre mi micrófono ideal"
+      "Quien prefiere esperar a que encuentre mi micr?fono ideal"
     ],
     pros: [
       "La calidad de sonido me parece buena.",
-      "Permite conexión USB-C y XLR.",
-      "Me ha servido para podcasts, entrevistas y vídeos.",
-      "Es fácil escuchar muestras reales en Gramaticón y ¡Palabras!."
+      "Sirve para podcasts, entrevistas y v?deos.",
+      "Permite dos formas de conexi?n.",
+      "Es f?cil juzgar su sonido porque hay muestras reales publicadas."
     ],
     cons: [
-      "En mi uso por USB se graba demasiado bajo.",
-      "No he encontrado cómo subir el volumen desde el propio micro.",
-      "La base de plástico se me rompió.",
-      "No estoy 100% satisfecho con él."
+      "En mi uso se graba demasiado bajo.",
+      "No he encontrado la forma de subir el volumen desde el propio micro.",
+      "La base de pl?stico se me ha roto.",
+      "No estoy 100% satisfecho con ?l."
     ],
     alternatives: [],
     rating: 3,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "imprescindible",
-    updatedAt: "2026-06-11",
+    updatedAt: "2026-06-14",
     publishedAt: "2026-06-11T09:00:00+02:00",
     intro:
-      "Empiezo por lo más honesto que te voy a decir en toda la ficha: no te voy a recomendar este micrófono. Y no porque sea malo, sino porque no estoy 100% satisfecho con él. Aun así, es el micro con el que grabo mis entrevistas, los episodios de mi podcast y mis vídeos, así que se ha ganado un sitio en el Laborjatorio.",
+      "Empiezo por lo m?s honesto que te voy a decir en toda la ficha: no te voy a recomendar este micr?fono.",
+    narrativeIntro: [
+      "Empiezo por lo m?s honesto que te voy a decir en toda la ficha: no te voy a recomendar este micr?fono. Y no porque sea malo, sino porque no estoy 100% satisfecho con ?l. Para ser sincero, tampoco con ning?n otro micr?fono de los que he usado hasta el momento.",
+      "Aun as?, es el micro con el que grabo mis entrevistas, los episodios de mi podcast y mis v?deos, as? que se ha ganado un sitio en el Laborjatorio. Esta ficha no es una recomendaci?n, sino una experiencia real con sus cosas buenas y sus frustraciones. A partir de ah?, t? decides."
+    ],
+    narrativeSections: [
+      {
+        title: "Qu? es y c?mo suena",
+        paragraphs: [
+          "El Audio-Technica ATR2100x-USB es un micr?fono que puedes conectar de dos formas: por USB o por un cable jack, la clavija de toda la vida. Y lo primero, lo bueno: la calidad es buena, o al menos a mi juicio se escucha bien.",
+          "Lo mejor es que no tienes que fiarte de mi palabra. Puedes juzgarlo t? mismo escuchando cualquier episodio de [Gramatic?n](https://borjaprofe.com/gramaticon/) hasta el 16 como m?nimo, o de [?Palabras!](https://borjaprofe.com/escucha/), que est?n grabados con ?l. Pones, escuchas y decides.",
+          "Si despu?s de leerme quieres echarle un ojo, puedes verlo en [Amazon](https://amzn.to/4dXGalj). Es un enlace de afiliado: a ti te cuesta lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio."
+        ],
+        actions: [
+          {
+            label: "Ver micro en Amazon",
+            url: "https://amzn.to/4dXGalj"
+          }
+        ]
+      },
+      {
+        title: "Mi experiencia y mi pelea con el volumen",
+        paragraphs: [
+          "Aqu? viene mi gran frustraci?n. Se escucha muy bajito. Y te parecer? una estupidez, porque el volumen se puede subir, pero el tema es que no encuentro la forma de subirlo desde el propio micr?fono, ni s? a ciencia cierta si se puede.",
+          "Si grabas todo en una sola pista, como hago yo con [Audacity](/herramientas/audacity), esto es un problema, porque luego tienes que ir igualando el volumen a mano.",
+          "De momento he grabado siempre por USB, pero mientras preparaba esta ficha decid? una cosa: los pr?ximos audios los grabar? por jack, a ver si esa conexi?n soluciona lo del volumen bajo. Te contar? por aqu? los resultados en cuanto los tenga, as? que esta ficha tendr? actualizaci?n."
+        ]
+      },
+      {
+        title: "La an?cdota de la taza",
+        paragraphs: [
+          "La base del micr?fono es un peque?o tr?pode desplegable de pl?stico que, a m?, se me acaba de romper. Soluci?n de emergencia: he grabado con el micr?fono metido dentro de una taza.",
+          "Te cuento esto por dos razones: porque es verdad, y porque resume bastante bien mi relaci?n con este micro. Funciona, pero todo el rato hay algo que apa?ar."
+        ]
+      },
+      {
+        title: "El filtro antipop, eso s?",
+        paragraphs: [
+          "Una cosa que s? te recomiendo, al margen del micro: invierte en un filtro antipop. Yo tengo uno, y te dejo enlazada [su ficha](/herramientas/filtro-antipop-innogear), pero ojo, no es que recomiende ese en concreto, simplemente es el que tengo.",
+          "La recomendaci?n es el filtro en general, no la marca. Mejora el sonido y evita esos golpes de aire molestos al pronunciar las p y las b."
+        ]
+      },
+      {
+        title: "Lo que menos me gusta",
+        paragraphs: [
+          "Resumo mis peros, que ya los has ido viendo. El volumen de grabaci?n es demasiado bajo y no he dado con la forma de subirlo desde el micro. La base de pl?stico es fr?gil, tanto que la m?a se rompi?.",
+          "Y, en parte, reconozco que algunas de estas limitaciones son tanto del aparato como de mi propio desconocimiento, porque no soy ning?n experto en audio. Te lo cuento tal cual para que sepas a qu? atenerte."
+        ]
+      },
+      {
+        title: "Precio y d?nde comprarlo",
+        paragraphs: [
+          "El precio exacto lo dejo como pendiente, porque var?a y prefiero no darte una cifra que ma?ana no valga.",
+          "Si despu?s de todo lo que te he contado decides hacerte con ?l, puedes comprarlo desde [mi enlace de afiliado](https://amzn.to/4dXGalj): a ti te cuesta exactamente lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio."
+        ],
+        actions: [
+          {
+            label: "Comprar en Amazon",
+            url: "https://amzn.to/4dXGalj"
+          }
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "No estoy satisfecho del todo con ning?n micr?fono que haya probado, as? que no te puedo se?alar una alternativa mejor por experiencia propia. Lo dejo como pendiente.",
+          "Lo que s? te prometo es que, el d?a que encuentre mi micr?fono ideal, lo sabr?s aqu?."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Este es de los pocos casos en los que mi veredicto es un no lo recomiendo, y quiero que se entienda bien. No es que sea un mal micr?fono: la calidad de sonido es buena y llevo a?os grabando con ?l todo lo que hago. Es que no estoy plenamente satisfecho, sobre todo por lo del volumen, y no ser?a honesto venderte como ideal algo que a m? todav?a me deja con dudas.",
+          "Lo tienes en el Laborjatorio porque es lo que uso de verdad, no como recomendaci?n de compra. Si te sirve mi experiencia para decidir, perfecto. Y si esperas a que encuentre algo mejor, tambi?n lo entender?, porque es justo lo que estoy haciendo yo.",
+          "Resumen para profes ocupados: buena calidad de sonido, pero volumen muy bajo y base fr?gil. Lo uso a diario, aunque hoy por hoy no te lo recomiendo. Invierte s? o s? en un filtro antipop."
+        ]
+      }
+    ],
     whatItDoes:
-      "El Audio-Technica ATR2100x-USB es un micrófono dinámico que puedes conectar de dos formas: por USB-C o por XLR. Lo bueno es que la calidad me parece buena: se escucha bien. No tienes que fiarte de mi palabra; puedes juzgarlo escuchando episodios de Gramaticón o de ¡Palabras!, que están grabados con él.",
+      "Es un micr?fono con el que grabo podcasts, entrevistas y v?deos, con un sonido que a m? me parece bueno, pero con un problema persistente de volumen bajo en mi uso real.",
     howIUseIt:
-      "De momento he grabado siempre por USB, normalmente en una sola pista con Audacity. Ahí viene mi gran frustración: se escucha muy bajito. Se puede subir después, claro, pero si grabas todo en una sola pista tienes que ir igualando el volumen a mano. Mientras preparaba esta ficha decidí probar la conexión XLR en próximos audios para ver si mejora ese problema.",
+      "Lo uso como micro principal para grabar entrevistas, episodios de podcast y v?deos. Hasta ahora lo he usado por USB y edito luego el audio en Audacity, ajustando niveles a mano cuando hace falta.",
     teacherUseCases: [
       "Grabar podcasts educativos.",
       "Grabar entrevistas online o presenciales.",
-      "Mejorar el audio de vídeos y clases grabadas.",
-      "Tener un micrófono USB/XLR flexible.",
-      "Escuchar una experiencia real antes de comprar."
+      "Mejorar el audio de v?deos y clases grabadas.",
+      "Tener un micr?fono principal de uso diario aunque no sea perfecto."
     ],
     honestVerdict:
-      "Este es de los pocos casos en los que mi veredicto es un no lo recomiendo, y quiero que se entienda bien. No es que sea un mal micrófono: la calidad de sonido es buena y llevo años grabando con él todo lo que hago. Es que no estoy plenamente satisfecho, sobre todo por lo del volumen y por la base frágil. Lo tienes en el Laborjatorio porque es lo que uso de verdad, no como recomendación de compra.",
+      "Es el micro con el que grabo todo y por eso es imprescindible dentro de mi flujo, pero no lo recomiendo al 100%. Suena bien, s?, pero sigo pele?ndome con el volumen y con una base bastante floja.",
     importantNotice:
-      "Esta ficha incluye enlace de afiliado de Amazon. Si compras desde él, a ti te cuesta lo mismo y a mí me llega una pequeña comisión. Aun así, mi veredicto no cambia: es el micro que uso, pero no te lo recomiendo sin reservas.",
+      "Esta ficha incluye enlace de afiliado de Amazon. Si compras desde ?l, a ti te cuesta lo mismo y a m? me llega una peque?a comisi?n. La coletilla importante es la otra: el enlace existe, pero mi veredicto no cambia.",
     metrics: [
       { label: "Uso", value: "Diario" },
-      { label: "Conexión", value: "USB-C / XLR" },
+      { label: "Conexi?n", value: "USB / jack" },
       { label: "Estado", value: "Imprescindible por uso" }
     ],
     priceRows: [
-      { label: "Compra", value: "Pago único" },
+      { label: "Compra", value: "Pago ?nico" },
       { label: "Precio", value: "Variable en Amazon" },
-      { label: "Afiliación", value: "Sí, Amazon" }
+      { label: "Afiliaci?n", value: "S?, Amazon" }
     ],
     priceNote:
-      "El precio exacto lo dejo como pendiente porque varía. Si después de todo lo que te he contado decides hacerte con él, el enlace principal de esta ficha es mi enlace de afiliado de Amazon.",
+      "No fijo precio porque cambia. Si quieres mirarlo, el enlace principal de esta ficha es mi enlace de afiliado de Amazon.",
+    purchaseLinks: [
+      {
+        label: "Ver micro en Amazon",
+        url: "https://amzn.to/4dXGalj"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Filtro antipop InnoGear",
+        url: "/herramientas/filtro-antipop-innogear"
+      },
+      {
+        label: "Audacity",
+        url: "/herramientas/audacity"
+      },
+      {
+        label: "Logitech C920",
+        url: "/herramientas/logitech-c920"
+      }
+    ],
     alternativeDetails: [
       {
         name: "Filtro antipop InnoGear",
         url: "/herramientas/filtro-antipop-innogear",
         description:
-          "Al margen del micrófono concreto, sí recomiendo usar un filtro antipop para reducir golpes de aire en las p y las b."
+          "Al margen del micr?fono concreto, s? recomiendo usar un filtro antipop para reducir golpes de aire en las p y las b."
       },
       {
         name: "Audacity",
         url: "/herramientas/audacity",
         description:
-          "Es el editor con el que grabo y ajusto audio, especialmente cuando toca igualar volumen después."
+          "Es el editor con el que grabo y ajusto audio, especialmente cuando toca igualar volumen despu?s."
       },
       {
         name: "Logitech C920",
         url: "/herramientas/logitech-c920",
         description:
-          "Otra pieza de mi equipo de grabación, en este caso para vídeo."
+          "Otra pieza de mi equipo de grabaci?n, en este caso para v?deo."
       }
     ],
     faqs: [
       {
-        question: "¿Se conecta por USB o por XLR?",
+        question: "?Se conecta por USB o por jack?",
         answer:
-          "Por las dos. Yo he grabado siempre por USB-C, pero voy a probar XLR para ver si mejora lo del volumen bajo."
+          "Por las dos. Yo he grabado siempre por USB, pero voy a probar la otra conexi?n a ver si mejora lo del volumen bajo, y lo contar? aqu?."
       },
       {
-        question: "¿Por qué se escucha tan bajo?",
+        question: "?Por qu? se escucha tan bajo?",
         answer:
-          "En mi caso, el volumen de grabación por USB sale muy bajo y no he encontrado cómo subirlo desde el propio micrófono. Si grabas en una sola pista, tendrás que igualar niveles después en tu editor."
+          "En mi caso, el volumen de grabaci?n sale muy bajo y no he encontrado c?mo subirlo desde el propio micr?fono. Si grabas en una sola pista, tendr?s que igualar niveles despu?s en tu editor."
       },
       {
-        question: "¿Necesito un filtro antipop?",
+        question: "?Necesito un filtro antipop?",
         answer:
-          "Te lo recomiendo, sí. Mejora bastante el resultado evitando golpes de aire al hablar. La marca concreta es lo de menos."
+          "Te lo recomiendo, s?. Mejora bastante el resultado evitando los golpes de aire al hablar. La marca es lo de menos."
       },
       {
-        question: "¿Entonces por qué está marcado como imprescindible?",
+        question: "?Entonces por qu? est? marcado como imprescindible?",
         answer:
           "Porque es el micro con el que grabo todo. Es imprescindible por uso real en mi flujo, no porque lo recomiende como compra ideal."
       }
