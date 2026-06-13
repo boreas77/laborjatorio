@@ -20,7 +20,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Metricool | Sí | 3.0 | Sí |
 | WordPress | Sí | 3.0 | No |
 | Webempresa | Sí | 3.0 | Sí |
-| MailPoet | Sí | 1.0 | No |
+| MailPoet | Sí | 3.0 | No |
 | Audacity | Sí | 3.0 | No |
 | Spotify for Podcasters | Sí | 3.0 | No |
 | Squoosh | Sí | 1.0 | No |
