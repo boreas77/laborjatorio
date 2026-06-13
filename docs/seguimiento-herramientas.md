@@ -25,7 +25,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Spotify for Podcasters | Sí | 3.0 | No |
 | Squoosh | Sí | 3.0 | No |
 | LastPass | Sí | 1.0 | No |
-| Standing Desk Maidesite | Sí | 1.0 | Sí |
+| Standing Desk Maidesite | Sí | 3.0 | Sí |
 | Silla de oficina de malla | Sí | 3.0 | Sí |
 | Inphic PM6 | Sí | 1.0 | Sí |
 | Ventilador recargable silencioso | Sí | 1.0 | Sí |
