@@ -29,7 +29,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | Silla de oficina de malla | Sí | 3.0 | Sí |
 | Inphic PM6 | Sí | 1.0 | Sí |
 | Ventilador recargable silencioso | Sí | 1.0 | Sí |
-| Audio-Technica ATR2100x-USB | Sí | 1.0 | Sí |
+| Audio-Technica ATR2100x-USB | Sí | 3.0 | Sí |
 | Filtro antipop InnoGear | Sí | 3.0 | No |
 | Logitech C920 | Sí | 3.0 | Sí |
 | Acer Nitro 5 | Sí | 3.0 | Sí |
