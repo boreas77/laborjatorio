@@ -9,14 +9,16 @@ Su única función es servir como panel de control editorial del estado de las f
 | Herramienta | Ficha | Versión | Afiliado |
 |---|---|---|---|
 | ChatGPT | Sí | 1.0 | No |
-| Canva | Sí | 2.0 | No |
+| Canva | Sí | 3.0 | No |
 | OpusClip | Sí | 1.0 | Sí |
-| DaVinci Resolve | Sí | 1.0 | No |
+| DaVinci Resolve | Sí | 3.0 | No |
 | iLovePDF | Sí | 3.0 | No |
 | Kommodo | Sí | 1.0 | Sí |
+| SoundMadeSeen | Sí | 3.0 | Sí |
 | HappyScribe | Sí | 1.0 | Sí |
 | SpeakPipe | Sí | 3.0 | No |
 | Metricool | Sí | 1.0 | Sí |
+| WordPress | Sí | 3.0 | No |
 | Webempresa | Sí | 3.0 | Sí |
 | MailPoet | Sí | 1.0 | No |
 | Audacity | Sí | 1.0 | No |
@@ -27,13 +29,13 @@ Su única función es servir como panel de control editorial del estado de las f
 | Silla de oficina de malla | Sí | 3.0 | Sí |
 | Inphic PM6 | Sí | 1.0 | Sí |
 | Ventilador recargable silencioso | Sí | 1.0 | Sí |
+| Audio-Technica ATR2100x-USB | Sí | 1.0 | Sí |
 | Filtro antipop InnoGear | Sí | 1.0 | Sí |
 | Logitech C920 | Sí | 1.0 | Sí |
 | Acer Nitro 5 | Sí | 1.0 | No |
 | Petit BamBou | Sí | 3.0 | No |
-| f.lux | Sí | 2.0 | No |
+| f.lux | Sí | 3.0 | No |
 | Notion | Sí | 1.0 | No |
-| WordPress | Sí | 3.0 | No |
 | LearnDash | No | — | No |
 | WooCommerce | No | — | No |
 | Zoom | No | — | No |
@@ -52,7 +54,6 @@ Su única función es servir como panel de control editorial del estado de las f
 | Rank Math | No | — | No |
 | Brave | No | — | No |
 | Divi | No | — | No |
-| SoundMadeSeen | Sí | 3.0 | Sí |
 | Lightshot | No | — | No |
 | Stripe | No | — | No |
 | PayPal | No | — | No |
@@ -61,7 +62,6 @@ Su única función es servir como panel de control editorial del estado de las f
 | Punto y Coma | No | — | No |
 | Sennheiser Momentum 4 Wireless | No | — | No |
 | Soundcore Sport X20 | No | — | No |
-| Audio-Technica ATR2100x-USB | No | — | No |
 
 ## Significado de las versiones
 

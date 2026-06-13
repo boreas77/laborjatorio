@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:editorial": "node scripts/sync-editorial-tracking.mjs",
+    "sync:editorial:gdoc": "node scripts/sync-editorial-google-doc.mjs",
+    "check:editorial": "node scripts/sync-editorial-tracking.mjs --check"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -20,6 +23,7 @@
     "@types/react-dom": "19.1.5",
     "eslint": "9.28.0",
     "eslint-config-next": "16.2.6",
+    "googleapis": "^173.0.0",
     "tailwindcss": "4.1.8",
     "typescript": "5.8.3"
   }

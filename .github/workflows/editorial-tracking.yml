@@ -1,0 +1,73 @@
+name: Editorial tracking
+
+on:
+  push:
+    paths:
+      - "src/data/tools.ts"
+      - "docs/seguimiento-herramientas.md"
+      - "scripts/sync-editorial-tracking.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/editorial-tracking.yml"
+  pull_request:
+    paths:
+      - "src/data/tools.ts"
+      - "docs/seguimiento-herramientas.md"
+      - "scripts/sync-editorial-tracking.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/editorial-tracking.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  editorial-tracking:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync internal editorial tracking
+        if: github.event_name == 'push'
+        run: npm run sync:editorial
+
+      - name: Sync Google Doc editorial tracking
+        if: github.event_name == 'push'
+        env:
+          GOOGLE_DOC_ID: 1XYhGTqgE8Idl04eGzm0PM1gPvVgHHprlvL_er3vy8Q8
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: |
+          if [ -n "$GOOGLE_SERVICE_ACCOUNT_EMAIL" ] && [ -n "$GOOGLE_PRIVATE_KEY" ]; then
+            npm run sync:editorial:gdoc
+          else
+            echo "Google Doc sync skipped: missing GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY secrets."
+          fi
+
+      - name: Check internal editorial tracking
+        if: github.event_name == 'pull_request'
+        run: npm run check:editorial
+
+      - name: Commit synchronized tracking
+        if: github.event_name == 'push'
+        run: |
+          if ! git diff --quiet -- docs/seguimiento-herramientas.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/seguimiento-herramientas.md
+            git commit -m "chore: sincronizar seguimiento editorial"
+            git push
+          fi
