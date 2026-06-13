@@ -2921,103 +2921,190 @@ export const tools: Tool[] = [
   {
     name: "Squoosh",
     slug: "squoosh",
-    title: "Squoosh: cómo comprimo imágenes para que no me revienten la web",
+    title: "Squoosh: c?mo comprimo im?genes para que mi web no vaya lenta",
     metaDescription:
-      "Uso Squoosh para comprimir imágenes y que no me ralenticen la web ni me saturen el correo. Te cuento cómo funciona, para qué la uso y por qué deberías tenerla a mano.",
+      "Squoosh es la herramienta gratis con la que comprimo im?genes cuando pesan demasiado para mi web o el correo. Sencilla, r?pida y me ha salvado m?s de una vez. Te cuento c?mo la uso.",
     keywords: [
       "Squoosh",
-      "comprimir imágenes",
-      "reducir peso de imágenes",
-      "optimizar imágenes para web",
-      "comprimir imágenes gratis",
-      "imágenes ligeras para la web"
+      "comprimir im?genes",
+      "reducir peso de im?genes",
+      "optimizar im?genes para la web",
+      "comprimir fotos online gratis",
+      "im?genes que pesan demasiado"
     ],
-    tagline: "Compresor de imágenes gratuito y rápido para que una foto pesada no te reviente la web, el podcast o el correo.",
-    category: "Diseño e imagen",
-    subcategories: ["diseño", "productividad", "web", "contenido", "imagen", "optimización"],
+    tagline:
+      "La herramienta gratis que tengo siempre a mano para bajar el peso de una imagen antes de subirla a la web o mandarla por correo.",
+    category: "Dise?o e imagen",
+    subcategories: ["dise?o", "productividad", "web", "contenido", "im?genes"],
     pricing: "gratis",
     officialUrl: "https://squoosh.app/",
     hasAffiliate: false,
     myUseCase:
-      "Lo uso de vez en cuando para comprimir imágenes antes de subirlas a la web, preparar portadas de podcast o enviar archivos sin saturar el correo.",
+      "La uso cuando una imagen pesa demasiado para subirla a mi web o para enviarla por correo, sobre todo con portadas y recursos visuales.",
     bestFor: [
-      "Profes que suben imágenes a su web",
-      "Creadores que preparan portadas de podcast o imágenes para contenido",
-      "Quien quiere aligerar imágenes sin aprender Photoshop",
-      "Quien necesita resolver rápido un aviso de imagen demasiado pesada"
+      "Profes con web que quieren im?genes ligeras",
+      "Quien necesita reducir el peso de una imagen sin instalar nada",
+      "Podcasters o creadores que suben portadas a la web",
+      "Quien manda im?genes pesadas por correo y quiere evitar problemas"
     ],
     notFor: [
-      "Procesar muchas imágenes a la vez de forma automatizada",
-      "Editar diseños complejos",
-      "Quien necesita una cadena completa de optimización web",
-      "Quien quiere tener una herramienta abierta todo el día"
+      "Quien necesita edici?n avanzada de imagen",
+      "Quien quiere automatizaciones complejas de optimizaci?n",
+      "Quien no va a tocar nunca una web ni a mover im?genes pesadas",
+      "Quien comprime tanto que acepta perder calidad sin mirar"
     ],
     pros: [
-      "Es gratis y no tiene plan de pago.",
-      "El flujo es subir, comprimir y descargar.",
-      "La vista previa en tiempo real permite controlar la calidad.",
-      "Funciona directamente en el navegador.",
-      "Procesa las imágenes en tu propio navegador.",
-      "Ayuda a evitar webs lentas, hosting saturado y correos pesados."
+      "Es gratis y muy sencilla.",
+      "Permite ver la calidad en tiempo real mientras comprimes.",
+      "No necesitas instalar nada.",
+      "Tambi?n sirve para redimensionar o recortar lo b?sico.",
+      "Resuelve r?pido un problema muy habitual en webs y correos."
     ],
     cons: [
-      "Si te pasas con la compresión, la imagen pierde calidad.",
-      "Es una herramienta de uso puntual, no una solución completa para toda la optimización web.",
-      "No está pensada para editar diseños complejos.",
-      "No la usaría como sistema automático para procesar grandes lotes."
+      "Si te pasas con la compresi?n, la imagen pierde calidad.",
+      "No es una herramienta de edici?n avanzada.",
+      "Es de uso puntual, no algo que uses todo el d?a.",
+      "No le veo pegas reales m?s all? de comprimir con cabeza."
     ],
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-04",
+    updatedAt: "2026-06-14",
     intro:
-      "Squoosh parece una tontería hasta que tienes una web, un podcast o un correo que te dice que esa imagen pesa demasiado. Entonces entiendes la gracia: abres la herramienta, metes la imagen, bajas el peso y sigues con tu vida.",
+      "Esto igual te parece una tonter?a, pero si es as? es porque no tienes web.",
+    narrativeIntro: [
+      "Esto igual te parece una tonter?a, pero si es as? es porque no tienes web. Squoosh es una herramienta gratuita y sencill?sima para comprimir im?genes, y es de esas cosas que no usas todos los d?as pero que conviene tener siempre a mano. Yo la uso quiz? una vez a la semana, y cada vez que la uso, me alegro de tenerla.",
+      "Esta ficha es para profes con web, podcast o newsletter que se preguntan por qu? su web va lenta o por qu? no les deja subir una imagen. Muchas veces la respuesta es que tus im?genes pesan demasiado. Y eso tiene arreglo f?cil."
+    ],
+    narrativeSections: [
+      {
+        title: "Qu? es Squoosh",
+        paragraphs: [
+          "Squoosh es una herramienta online y gratuita para comprimir im?genes. Su funci?n principal es reducir el peso de una imagen para que ocupe menos espacio y se cargue m?s r?pido, sin que tengas que instalar nada.",
+          "No hay opci?n m?s simple que esta, y encima es gratis."
+        ],
+        actions: [
+          {
+            label: "Ir a Squoosh",
+            url: "https://squoosh.app/"
+          }
+        ]
+      },
+      {
+        title: "C?mo funciona lo b?sico",
+        paragraphs: [
+          "Es tan f?cil que casi da risa. Subes tu imagen, eliges el porcentaje de compresi?n y ves en tiempo real c?mo queda la calidad mientras ajustas.",
+          "As? controlas t? mismo el equilibrio entre peso y nitidez, sin ir a ciegas. Adem?s trae funciones b?sicas para recortar y ajustar el tama?o, por si necesitas algo m?s que comprimir."
+        ]
+      },
+      {
+        title: "C?mo la uso yo",
+        paragraphs: [
+          "La saco sobre todo cuando una imagen pesa demasiado para subirla a mi web o para enviarla por correo. Te cuento un caso real: me ha salvado bastantes veces cuando estoy a punto de subir la portada de uno de mis episodios del podcast y me salta el aviso de que la imagen pesa demasiado, que tiene m?s de tres megas.",
+          "Paso la imagen por Squoosh, la dejo en un peso razonable y a subir. Listo."
+        ],
+        actions: [
+          {
+            label: "Probar Squoosh",
+            url: "https://squoosh.app/"
+          }
+        ]
+      },
+      {
+        title: "Por qu? esto importa m?s de lo que parece",
+        paragraphs: [
+          "Un error t?pico, y que yo comet? durante mucho tiempo, es subir im?genes muy pesadas a la web. Parece inofensivo, pero no lo es: las im?genes grandes sin comprimir ralentizan tu web y te consumen el hosting. Una web lenta espanta visitas y a Google tampoco le encanta.",
+          "Y lo mismo pasa con el correo: si mandas im?genes enormes, saturas el almacenamiento de servicios como Gmail antes de tiempo. Comprimir es una de esas peque?as costumbres que te evitan problemas grandes m?s adelante.",
+          "Si quieres ahondar en montar tu sitio con cabeza, te dejo la categor?a de [Construir mi web](/construir-mi-web)."
+        ]
+      },
+      {
+        title: "Lo que menos me gusta",
+        paragraphs: [
+          "Sinceramente, no le noto ning?n inconveniente. El ?nico cuidado que debes tener es no pasarte con la compresi?n, porque si exageras, la imagen va a perder calidad. Es cuesti?n de mirar la vista previa y parar a tiempo.",
+          "Por lo dem?s, es una herramienta de uso puntual, no algo en lo que vivas, pero precisamente por eso conviene tenerla siempre localizada para cuando la necesites."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Gratis, sin m?s. Otra de esas herramientas que demuestran que para resolver un problema concreto no siempre hace falta pagar."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "He probado alguna otra herramienta parecida, pero ni recuerdo los nombres ni le veo motivo para cambiar, as? que dejo las alternativas como pendiente antes que inventarme comparaciones.",
+          "Si Squoosh te resuelve la papeleta y es gratis, para qu? buscar m?s."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Squoosh hace una sola cosa, comprimir im?genes, y la hace de maravilla: gratis, r?pida y sin complicaciones. No es una herramienta protagonista, es una de esas piezas peque?as del taller que te sacan de un apuro justo cuando lo necesitas.",
+          "La recomiendo sin dudar si tienes web, podcast o mandas im?genes por correo. Lo ?nico que debes vigilar es no comprimir de m?s. Por lo dem?s, es de esas cosas que, una vez las conoces, no entiendes c?mo viv?as sin ellas.",
+          "Resumen para profes ocupados: comprime im?genes gratis y en segundos para que tu web no se ralentice ni satures el correo. Ojo con pasarte de compresi?n. Tenla siempre localizada."
+        ]
+      }
+    ],
     whatItDoes:
-      "Squoosh comprime imágenes desde el navegador. Reduce el peso del archivo, permite ajustar la calidad viendo el resultado en tiempo real y también ofrece opciones básicas para redimensionar, recortar o exportar a formatos modernos como WebP.",
+      "Squoosh comprime im?genes desde el navegador para reducir su peso, acelerar la carga en la web y facilitar su env?o por correo, con vista previa en tiempo real y ajustes b?sicos de tama?o.",
     howIUseIt:
-      "La uso sobre todo cuando una imagen pesa demasiado para subirla a la web o cuando preparo portadas de podcast y me encuentro el aviso de que la imagen pasa de tres megas. También me sirve antes de enviar archivos por correo para no ir llenando Gmail con imágenes absurdamente grandes. No la uso todos los días; quizá una vez a la semana. Pero cuando la necesitas, la necesitas ya.",
+      "La uso cuando una imagen pesa demasiado para subirla a la web o para enviarla por correo, sobre todo con portadas de episodios y recursos visuales que de otro modo me dar?an problemas.",
     teacherUseCases: [
-      "Comprimir imágenes antes de subirlas a una entrada de blog.",
-      "Reducir portadas, miniaturas o imágenes de podcast que superan el límite permitido.",
-      "Preparar imágenes ligeras para materiales descargables o páginas de cursos.",
-      "Convertir una imagen a WebP para mejorar la carga de una página.",
-      "Enviar imágenes por correo sin saturar el almacenamiento."
+      "Comprimir portadas antes de subirlas a una web.",
+      "Reducir el peso de im?genes para newsletters o correos.",
+      "Optimizar recursos visuales para que la web cargue m?s r?pido.",
+      "Redimensionar o recortar una imagen sin abrir un editor grande."
     ],
     honestVerdict:
-      "Squoosh es gratis, simple y de tener siempre a mano. No la vas a usar todo el día, y no pasa nada: su valor está en resolver rápido el problema concreto de una imagen demasiado pesada. Si tienes web, blog o podcast, yo la tendría en marcadores. Solo hay que comprimir con cabeza para no cargarse la calidad.",
+      "Squoosh hace una cosa muy peque?a, pero muy ?til, y por eso lo tengo siempre a mano. No es protagonista de nada, pero te evita muchos problemas tontos con webs lentas, correos pesados o im?genes que no suben.",
+    importantNotice:
+      "El ?nico cuidado real es no pasarte con la compresi?n. Mira la vista previa y para antes de cargarte la nitidez. Si tienes web, esto no es una man?a: es mantenimiento b?sico.",
     metrics: [
-      { label: "Precio", value: "0 €" },
-      { label: "Instalación", value: "No" },
-      { label: "Uso aproximado", value: "Semanal" }
+      { label: "Precio", value: "Gratis" },
+      { label: "Uso", value: "Puntual, casi semanal" },
+      { label: "Estado", value: "Importante" }
     ],
     priceRows: [
-      { label: "Squoosh", value: "Gratis" },
-      { label: "Plan de pago", value: "No" },
-      { label: "Afiliación", value: "No" }
+      { label: "Herramienta", value: "Gratis" },
+      { label: "Instalaci?n", value: "No hace falta" },
+      { label: "Afiliaci?n", value: "No" }
     ],
     priceNote:
-      "Squoosh es gratis. No hay suscripción, ni plan premium, ni asterisco raro por el camino.",
+      "No tiene misterio: entras, comprimes y descargas. Gratis.",
+    purchaseLinks: [
+      {
+        label: "Ir a Squoosh",
+        url: "https://squoosh.app/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Canva",
+        url: "/herramientas/canva"
+      },
+      {
+        label: "iLovePDF",
+        url: "/herramientas/ilovepdf"
+      },
+      {
+        label: "Spotify for Podcasters",
+        url: "/herramientas/spotify-for-podcasters"
+      }
+    ],
     faqs: [
       {
-        question: "¿Squoosh sube mis imágenes a internet?",
+        question: "?Pierdo calidad al comprimir?",
         answer:
-          "No. Procesa las imágenes en tu propio navegador, en tu equipo, así que tus archivos no viajan a un servidor para comprimirse."
+          "Solo si te pasas. Squoosh te deja ver la calidad en tiempo real mientras ajustas el nivel, as? que es cuesti?n de bajar el peso sin cargarte la nitidez. Mira la vista previa y para a tiempo."
       },
       {
-        question: "¿Cuánto puedo comprimir sin que se note?",
+        question: "?Me sirve si no tengo web?",
         answer:
-          "No hay un número mágico. Para eso está la vista previa en tiempo real: bajas la calidad y te paras antes de que la imagen empiece a verse fea."
-      },
-      {
-        question: "¿A qué formato conviene exportar?",
-        answer:
-          "Para web, WebP suele ser una buena opción porque pesa menos que JPG o PNG manteniendo buena calidad. Pero depende de dónde vayas a usar la imagen."
-      },
-      {
-        question: "¿Necesito instalar algo?",
-        answer:
-          "No. Funciona directamente en el navegador: abres Squoosh, comprimes, descargas y cierras."
+          "Tambi?n. Va igual de bien para no saturar tu correo cuando env?as im?genes pesadas. Pero donde m?s se nota es cuando tienes una web que mantener ?gil."
       }
     ]
   },
