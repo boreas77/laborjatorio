@@ -264,7 +264,7 @@ export const tools: Tool[] = [
         title: "Lo que me gusta y lo que no",
         paragraphs: [
           "Lo mejor de Canva, y lo que la mantiene en mi rutina, son las plantillas y la coherencia visual: montas un estilo una vez y lo reutilizas en segundos sin saber nada de diseño. Esa accesibilidad, sumada a su versatilidad de navaja suiza, es lo que la hizo tan valiosa durante años. El catálogo de imágenes era otra de sus grandes bazas, aunque ya te he contado que la IA le ha comido bastante terreno ahí.",
-          "¿Y lo que menos? Para empezar, el plan gratuito es muy limitado, con acceso restringido a imágenes y funciones, así que para sacarle jugo de verdad toca pagar. Además, para crear materiales el flujo es artesanal: funciona, pero no es ágil. Y varios de sus extras no me convencen: los documentos inteligentes a mí no me han terminado de funcionar, el editor de vídeo se queda corto frente a DaVinci Resolve, gratis y mejor, y para quitar fondos hay herramientas especializadas que lo hacen mejor."
+          "¿Y lo que menosé Para empezar, el plan gratuito es muy limitado, con acceso restringido a imágenes y funciones, así que para sacarle jugo de verdad toca pagar. Además, para crear materiales el flujo es artesanal: funciona, pero no es ágil. Y varios de sus extras no me convencen: los documentos inteligentes a mí no me han terminado de funcionar, el editor de vídeo se queda corto frente a DaVinci Resolve, gratis y mejor, y para quitar fondos hay herramientas especializadas que lo hacen mejor."
         ]
       },
       {
@@ -834,7 +834,7 @@ export const tools: Tool[] = [
         title: "Lo que me gusta y lo que no",
         paragraphs: [
           "Lo que más me gusta es lo cómoda y directa que es. Mucho de esto lo puedes hacer también desde tu programa de diseño tipo Canva o desde Adobe Acrobat, pero iLovePDF va al grano: es rápida y no instalas absolutamente nada, todo ocurre en el navegador.",
-          "¿Y lo que menos? Pues poco, precisamente porque le pido poco. Es una herramienta secundaria y puntual, no el centro de nada. Si buscas un editor de PDF potente para trabajo avanzado y constante, esto se queda en lo básico. Pero para lo básico, cumple de sobra."
+          "¿Y lo que menosé Pues poco, precisamente porque le pido poco. Es una herramienta secundaria y puntual, no el centro de nada. Si buscas un editor de PDF potente para trabajo avanzado y constante, esto se queda en lo básico. Pero para lo básico, cumple de sobra."
         ]
       },
       {
@@ -2337,7 +2337,7 @@ export const tools: Tool[] = [
     slug: "mailpoet",
     title: "MailPoet: c?mo gestiono mi newsletter dentro de mi propia web",
     metaDescription:
-      "Llevo m?s de seis a?os con MailPoet para enviar mi newsletter desde mi propia web en WordPress. Te cuento por qu? es el coraz?n de mi negocio, sus l?os y cu?ndo merece la pena.",
+      "Llevo más de seis años con MailPoet para enviar mi newsletter desde mi propia web en WordPress. Te cuento por qué es el coraz?n de mi negocio, sus l?os y cu?ndo merece la pena.",
     keywords: [
       "MailPoet",
       "newsletter para profesores",
@@ -2347,14 +2347,14 @@ export const tools: Tool[] = [
       "lista de suscriptores"
     ],
     tagline:
-      "El plugin de WordPress con el que llevo a?os enviando mi newsletter desde casa, dentro de mi propia web.",
+      "El plugin de WordPress con el que llevo años enviando mi newsletter desde casa, dentro de mi propia web.",
     category: "Marketing y ventas",
     subcategories: ["email marketing", "ventas", "web", "newsletter", "WordPress"],
     pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.mailpoet.com",
     hasAffiliate: false,
     myUseCase:
-      "Lo uso desde hace m?s de seis a?os para enviar mi newsletter, gestionar mi lista y mantener la relaci?n directa con mi comunidad desde WordPress.",
+      "Lo uso desde hace más de seis años para enviar mi newsletter, gestionar mi lista y mantener la relación directa con mi comunidad desde WordPress.",
     bestFor: [
       "Profes con WordPress que quieren montar su newsletter dentro de su propia web",
       "Negocios educativos que necesitan lista propia para vender cursos, clases o formaciones",
@@ -2364,7 +2364,7 @@ export const tools: Tool[] = [
     notFor: [
       "Quien no usa WordPress ni quiere trabajar dentro de WordPress",
       "Quien prefiere una newsletter totalmente separada de su web",
-      "Quien necesita automatizaciones muy complejas desde el primer d?a",
+      "Quien necesita automatizaciones muy complejas desde el primer día",
       "Quien busca que la herramienta le haga la estrategia"
     ],
     pros: [
@@ -2387,16 +2387,16 @@ export const tools: Tool[] = [
     status: "imprescindible",
     updatedAt: "2026-06-13",
     intro:
-      "MailPoet es la herramienta que yo utilizo para enviar mis newsletters, y llevo con ella por lo menos seis a?os.",
+      "MailPoet es la herramienta que yo utilizo para enviar mis newsletters, y llevo con ella por lo menos seis años.",
     narrativeIntro: [
-      "MailPoet es la herramienta que yo utilizo para enviar mis newsletters, y llevo con ella por lo menos seis a?os. Te lo digo sin rodeos: para m? es imprescindible, porque realmente es el coraz?n de mi negocio. Si eres profe y todav?a no tienes newsletter, esta ficha va muy en serio contigo.",
-      "Esta ficha responde a una pregunta que deber?as hacerte ya: c?mo construyo una relaci?n directa con mi comunidad sin depender de que una red social decida si me ven o no. La respuesta, para m?, pasa por el email. Y mi forma de hacerlo es esta."
+      "MailPoet es la herramienta que yo utilizo para enviar mis newsletters, y llevo con ella por lo menos seis años. Te lo digo sin rodeos: para mí es imprescindible, porque realmente es el coraz?n de mi negocio. Si eres profe y todavía no tienes newsletter, esta ficha va muy en serio contigo.",
+      "Esta ficha responde a una pregunta que deber?as hacerte ya: c?mo construyo una relación directa con mi comunidad sin depender de que una red social decida si me ven o no. La respuesta, para mí, pasa por el email. Y mi forma de hacerlo es esta."
     ],
     narrativeSections: [
       {
         title: "Qu? es MailPoet",
         paragraphs: [
-          "MailPoet es un plugin de WordPress para email marketing. Lo que me gusta es justo eso, que est? integrado dentro de tu propia web, como un plugin que te instalas. No te vas a una plataforma externa: lo gestionas todo desde casa.",
+          "MailPoet es un plugin de WordPress para email marketing. Lo que me gusta es justo eso, que está integrado dentro de tu propia web, como un plugin que te instalas. No te vas a una plataforma externa: lo gestionas todo desde casa.",
           "Con ?l puedes crear formularios, enviar campa?as, gestionar tus listas de suscriptores y, desde hace un tiempo, hacer automatizaciones sencillas y visuales. Y es una herramienta muy sencilla y muy intuitiva, que no es poco en este mundillo."
         ],
         actions: [
@@ -2410,30 +2410,30 @@ export const tools: Tool[] = [
         title: "Por qu? le doy tanta importancia",
         paragraphs: [
           "Voy a ponerme un poco intenso, pero es que lo creo de verdad. Con el mundo de los newsletters vivimos tal boom que hay montones de herramientas, y la mayor?a van a ser buenas opciones. Lo importante no es tanto cu?l eliges, sino que tengas una.",
-          "La relaci?n, el v?nculo que formas con tu comunidad por correo es incre?ble, y est? demostrado que es el m?todo con mayor retorno de inversi?n. Para un profe que quiere vender cursos, llenar clases o construir comunidad, tener newsletter no es un capricho, es una de las mejores decisiones que puedes tomar.",
+          "La relación, el v?nculo que formas con tu comunidad por correo es incre?ble, y está demostrado que es el m?todo con mayor retorno de inversi?n. Para un profe que quiere vender cursos, llenar clases o construir comunidad, tener newsletter no es un capricho, es una de las mejores decisiones que puedes tomar.",
           "Por cierto, si quieres ver c?mo son mis newsletters por dentro, ap?ntate en [borjaprofe.com](https://borjaprofe.com) y lo compruebas t? mismo."
         ]
       },
       {
         title: "C?mo lo uso y qu? me ha pasado",
         paragraphs: [
-          "Lo uso para enviar mis newsletters a mi comunidad, gestionar la lista y mantener ese contacto directo. En seis a?os me ha dado muy pocos sustos, pero no te voy a vender que sea perfecto, porque ha habido un par de cosas que conviene que sepas.",
+          "Lo uso para enviar mis newsletters a mi comunidad, gestionar la lista y mantener ese contacto directo. En seis años me ha dado muy pocos sustos, pero no te voy a vender que sea perfecto, porque ha habido un par de cosas que conviene que sepas.",
           "La primera: a veces, cuando hay actualizaciones del plugin, puede haber fallos en las primeras horas. Por eso te recomiendo planear con cuidado cu?ndo actualizas, y no hacerlo justo antes de un env?o importante.",
-          "La segunda fue mi ?nico problema serio: en un momento dado, alguien report? como spam alguno de mis correos, y eso llev? a un bloqueo temporal de env?os. Son? peor de lo que fue, porque se solucion? en pocas horas, y aqu? va algo importante, el soporte siempre me ha atendido muy bien. Que una herramienta responda cuando tienes un problema vale oro."
+          "La segunda fue mi ?nico problema serio: en un momento dado, alguien report? como spam alguno de mis correos, y eso llev? a un bloqueo temporal de env?os. Son? peor de lo que fue, porque se solucion? en pocas horas, y aquí va algo importante, el soporte siempre me ha atendido muy bien. Que una herramienta responda cuando tienes un problema vale oro."
         ]
       },
       {
         title: "No te quedas atrapado",
         paragraphs: [
-          "Esto me parece clave y mucha gente no lo mira al empezar: con MailPoet no est?s encadenado. Si la pruebas y no te gusta, es tan f?cil como descargar tu base de datos de suscriptores y llev?rtela a cualquier otro lado. Tus suscriptores son tuyos, y poder exportarlos sin dramas es una tranquilidad enorme.",
-          "Elige sabiendo que la puerta de salida est? abierta."
+          "Esto me parece clave y mucha gente no lo mira al empezar: con MailPoet no estás encadenado. Si la pruebas y no te gusta, es tan fácil como descargar tu base de datos de suscriptores y llev?rtela a cualquier otro lado. Tus suscriptores son tuyos, y poder exportarlos sin dramas es una tranquilidad enorme.",
+          "Elige sabiendo que la puerta de salida está abierta."
         ]
       },
       {
         title: "Precio y modelo",
         paragraphs: [
-          "Yo tengo una versi?n de pago que adquir? en su momento como pago ?nico, pero me estoy acercando al l?mite de ese plan y pronto pasar? a pago mensual. Hoy MailPoet ofrece planes con precios que me parecen muy razonables, as? que no es una herramienta que te vaya a arruinar.",
-          "El enlace de afiliado est? pendiente de aprobaci?n, as? que de momento te dejo solo el oficial. En cuanto lo tenga, lo a?ado aqu?."
+          "Yo tengo una versi?n de pago que adquir? en su momento como pago ?nico, pero me estoy acercando al l?mite de ese plan y pronto pasar? a pago mensual. Hoy MailPoet ofrece planes con precios que me parecen muy razonables, asé que no es una herramienta que te vaya a arruinar.",
+          "El enlace de afiliado está pendiente de aprobaci?n, asé que de momento te dejo solo el oficial. En cuanto lo tenga, lo a?ado aquí."
         ],
         actions: [
           {
@@ -2445,16 +2445,16 @@ export const tools: Tool[] = [
       {
         title: "Alternativas",
         paragraphs: [
-          "Te hablo solo de lo que conozco. No te recomiendo MailChimp, porque a m? me parec?a una herramienta muy abrumadora para empezar, demasiada cosa de golpe.",
+          "Te hablo solo de lo que conozco. No te recomiendo MailChimp, porque a mí me parec?a una herramienta muy abrumadora para empezar, demasiada cosa de golpe.",
           "Y estoy valorando Substack para un proyecto secundario, pero ojo, no porque sea mejor para lo m?o, sino porque para mi negocio principal no termina de encajar con lo que necesito. M?s all? de eso, ya te he dicho que hay un boom de newsletters y casi todas las herramientas serias cumplen. Lo importante es que te lances."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "MailPoet es, para m?, imprescindible, porque es el coraz?n de mi negocio y lo lleva siendo seis a?os. Si trabajas sobre WordPress y quieres tu email marketing integrado en tu propia web, sin plataformas externas, es una opci?n sencilla, intuitiva y con buen soporte.",
-          "No es perfecta, las actualizaciones piden cuidado, pero la confianza que da en el d?a a d?a compensa de sobra.",
-          "La recomiendo sin dudarlo si est?s en WordPress. Y si no est?s en WordPress, el consejo de fondo sigue valiendo: monta tu newsletter ya, con la herramienta que sea. Tu yo del futuro te lo agradecer?.",
+          "MailPoet es, para mí, imprescindible, porque es el coraz?n de mi negocio y lo lleva siendo seis años. Si trabajas sobre WordPress y quieres tu email marketing integrado en tu propia web, sin plataformas externas, es una opci?n sencilla, intuitiva y con buen soporte.",
+          "No es perfecta, las actualizaciones piden cuidado, pero la confianza que da en el día a día compensa de sobra.",
+          "La recomiendo sin dudarlo si estás en WordPress. Y si no estás en WordPress, el consejo de fondo sigue valiendo: monta tu newsletter ya, con la herramienta que sea. Tu yo del futuro te lo agradecer?.",
           "Resumen para profes ocupados: plugin de newsletter para WordPress, integrado en tu web, sencillo y con buen soporte. Cuida las actualizaciones y exporta tu lista cuando quieras. Lo importante no es cu?l eliges, es que tengas newsletter."
         ]
       }
@@ -2468,14 +2468,14 @@ export const tools: Tool[] = [
       "Enviar una newsletter semanal o mensual a tu comunidad.",
       "Montar automatizaciones b?sicas de bienvenida.",
       "Mantener una lista propia para vender cursos, clases o formaciones.",
-      "Construir una relaci?n directa con tu comunidad sin depender de redes."
+      "Construir una relación directa con tu comunidad sin depender de redes."
     ],
     honestVerdict:
-      "Para m? MailPoet es imprescindible, sin matices: es el coraz?n de mi negocio y lo que me permite mantener vivo el v?nculo con mi comunidad. Es sencillo, est? integrado en mi web y, cuando algo ha fallado, el soporte ha respondido.",
+      "Para mí MailPoet es imprescindible, sin matices: es el coraz?n de mi negocio y lo que me permite mantener vivo el v?nculo con mi comunidad. Es sencillo, está integrado en mi web y, cuando algo ha fallado, el soporte ha respondido.",
     importantNotice:
-      "No actualices el plugin justo antes de un env?o importante. En mi experiencia, a veces las actualizaciones pueden traer fallos puntuales durante las primeras horas. Mejor actualizar con margen. Y si alg?n d?a quieres salirte, recuerda que tu lista es tuya y puedes exportarla.",
+      "No actualices el plugin justo antes de un env?o importante. En mi experiencia, a veces las actualizaciones pueden traer fallos puntuales durante las primeras horas. Mejor actualizar con margen. Y si alg?n día quieres salirte, recuerda que tu lista es tuya y puedes exportarla.",
     metrics: [
-      { label: "Tiempo us?ndolo", value: "+6 a?os" },
+      { label: "Tiempo us?ndolo", value: "+6 años" },
       { label: "Estado", value: "Imprescindible" },
       { label: "Base", value: "WordPress" }
     ],
@@ -2483,10 +2483,10 @@ export const tools: Tool[] = [
       { label: "Plan gratis", value: "Disponible" },
       { label: "Planes de pago", value: "Escalan seg?n la lista" },
       { label: "Mi caso", value: "Vengo de un pago ?nico antiguo" },
-      { label: "Afiliaci?n", value: "Pendiente" }
+      { label: "Afiliación", value: "Pendiente" }
     ],
     priceNote:
-      "Antes de pagar, confirma el plan y el precio actual en la web oficial. Mi situaci?n viene de una compra antigua y no quiero darte una referencia enga?osa.",
+      "Antes de pagar, confirma el plan y el precio actual en la web oficial. Mi situaci?n viene de una compra antigua y no quiero darte una referencia engañosa.",
     purchaseLinks: [
       {
         label: "Ir a MailPoet",
@@ -2511,7 +2511,7 @@ export const tools: Tool[] = [
       {
         question: "?Necesito WordPress para usar MailPoet?",
         answer:
-          "S?. Es un plugin que vive dentro de tu web de WordPress. Esa integraci?n es precisamente su mayor ventaja. Si no tienes WordPress, tendr?s que mirar otras herramientas de email."
+          "S?. Es un plugin que vive dentro de tu web de WordPress. Esa integraci?n es precisamente su mayor ventaja. Si no tienes WordPress, tendrás que mirar otras herramientas de email."
       },
       {
         question: "?Me quedo atrapado si luego quiero cambiar?",
@@ -2528,9 +2528,9 @@ export const tools: Tool[] = [
   {
     name: "Audacity",
     slug: "audacity",
-    title: "Audacity: el editor de audio gratis y feo con el que llevo m?s de 200 episodios",
+    title: "Audacity: el editor de audio gratis y feo con el que llevo más de 200 episodios",
     metaDescription:
-      "Audacity es el ?nico editor de audio que he usado, y con ?l llevo m?s de 200 episodios de podcast. Es feo, r?stico y manual, pero gratis y te da control absoluto. Te cuento mi experiencia.",
+      "Audacity es el ?nico editor de audio que he usado, y con ?l llevo más de 200 episodios de podcast. Es feo, r?stico y manual, pero gratis y te da control absoluto. Te cuento mi experiencia.",
     keywords: [
       "Audacity",
       "editar audio gratis",
@@ -2540,14 +2540,14 @@ export const tools: Tool[] = [
       "mejorar sonido de un v?deo"
     ],
     tagline:
-      "El editor de audio gratis, feo y manual con el que sigo editando podcasts despu?s de m?s de 200 episodios.",
-    category: "Audio y v?deo",
+      "El editor de audio gratis, feo y manual con el que sigo editando podcasts después de más de 200 episodios.",
+    category: "Audio y vídeo",
     subcategories: ["audio", "contenido", "productividad", "podcast", "edici?n"],
     pricing: "gratis",
     officialUrl: "https://www.audacityteam.org/",
     hasAffiliate: false,
     myUseCase:
-      "Lo uso para editar la mayor?a de los episodios de mis podcasts en solo audio y tambi?n para mejorar algunas pistas de sonido de v?deos.",
+      "Lo uso para editar la mayor?a de los episodios de mis podcasts en solo audio y también para mejorar algunas pistas de sonido de vídeos.",
     bestFor: [
       "Profes que quieren editar audio sin pagar",
       "Podcasters que prefieren control manual y criterio propio",
@@ -2581,17 +2581,17 @@ export const tools: Tool[] = [
     status: "imprescindible",
     updatedAt: "2026-06-13",
     intro:
-      "Audacity es el ?nico programa de edici?n de audio que he utilizado en mi vida, y empiezo con la verdad por delante: es m?s feo que un frigor?fico visto desde atr?s.",
+      "Audacity es el ?nico programa de edici?n de audio que he utilizado en mi vida, y empiezo con la verdad por delante: es más feo que un frigor?fico visto desde atr?s.",
     narrativeIntro: [
-      "Vamos a crear la ficha de Audacity, el ?nico programa de edici?n de audio que he utilizado en mi vida. Y empiezo con la verdad por delante: Audacity es m?s feo que un frigor?fico visto desde atr?s. Si eres capaz de superar eso, esta herramienta te va a encantar. Con ella he editado m?s de doscientos episodios de podcast, as? que algo bueno tendr?.",
-      "Esta ficha es para profes que se preguntan con qu? editar su audio sin pagar ni volverse locos. Mi respuesta lleva a?os siendo la misma, y es gratis."
+      "Vamos a crear la ficha de Audacity, el ?nico programa de edici?n de audio que he utilizado en mi vida. Y empiezo con la verdad por delante: Audacity es más feo que un frigor?fico visto desde atr?s. Si eres capaz de superar eso, esta herramienta te va a encantar. Con ella he editado más de doscientos episodios de podcast, asé que algo bueno tendrá.",
+      "Esta ficha es para profes que se preguntan con qu? editar su audio sin pagar ni volverse locos. Mi respuesta lleva años siendo la misma, y es gratis."
     ],
     narrativeSections: [
       {
         title: "Qu? es Audacity",
         paragraphs: [
-          "Audacity es un editor de audio, y es lo m?s b?sico que puede existir. Te ofrece la opci?n de hacer cortes, de subir y bajar el volumen, y adem?s puedes a?adir un mont?n de efectos.",
-          "No est? integrado, que yo sepa, con ninguna inteligencia artificial ni ofrece nada extraordinario. Pero lo que ofrece es todo lo que necesitas para editar tus audios, ni m?s ni menos."
+          "Audacity es un editor de audio, y es lo más b?sico que puede existir. Te ofrece la opci?n de hacer cortes, de subir y bajar el volumen, y además puedes a?adir un mont?n de efectos.",
+          "No está integrado, que yo sepa, con ninguna inteligencia artificial ni ofrece nada extraordinario. Pero lo que ofrece es todo lo que necesitas para editar tus audios, ni más ni menos."
         ],
         actions: [
           {
@@ -2604,16 +2604,16 @@ export const tools: Tool[] = [
         title: "C?mo funciona lo b?sico",
         paragraphs: [
           "Si nunca has usado una herramienta de edici?n de audio, no pasa nada, tienes un mont?n de tutoriales por ah?. Pero en el fondo se trata de cargar una pista de audio, ver unas ondas en una l?nea de tiempo, y empezar a dividirla en trozos, cortar, ajustar y montar.",
-          "Y aqu? va el consejo m?s importante de toda la ficha, porque a m? me cost? un disgusto aprenderlo. En Audacity hay dos formas de guardar, y conviene no confundirlas: puedes exportar el audio, que es para sacar la versi?n final ya montada, y puedes guardar el proyecto, que conserva la l?nea de tiempo entera para poder seguir editando despu?s.",
-          "Tenlo muy en cuenta, porque a m? al principio me pas? de perder algunos audios por esa tonter?a de no guardar el proyecto. Si solo exportas, te quedas sin la posibilidad de retocar. Guarda siempre el proyecto."
+          "Y aquí va el consejo más importante de toda la ficha, porque a mí me cost? un disgusto aprenderlo. En Audacity hay dos formas de guardar, y conviene no confundirlas: puedes exportar el audio, que es para sacar la versi?n final ya montada, y puedes guardar el proyecto, que conserva la l?nea de tiempo entera para poder seguir editando después.",
+          "Tenlo muy en cuenta, porque a mí al principio me pasé de perder algunos audios por esa tonter?a de no guardar el proyecto. Si solo exportas, te quedas sin la posibilidad de retocar. Guarda siempre el proyecto."
         ]
       },
       {
         title: "C?mo lo uso yo",
         paragraphs: [
-          "Lo uso sobre todo para editar la mayor?a de los episodios de mi podcast en formato solo audio, como [?Palabras!](https://borjaprofe.com/escucha/). Tambi?n me ha servido para mejorar las pistas de sonido de algunos v?deos. Para audio puro y duro, es mi herramienta.",
-          "Y te cuento una an?cdota que lo resume. Me ha pasado que amigos profes me ven editar con Audacity y me dicen pero c?mo puedes utilizar eso. Y yo respondo: pues, c?mo no. Si algo te est? funcionando, no tiene ning?n sentido cambiarlo.",
-          "Para editar los episodios del podcast hay algo artesanal ah? que veo dif?cil de reemplazar. Necesito mantener mi criterio, y lo que esta herramienta me da es justo eso, sencillez y control."
+          "Lo uso sobre todo para editar la mayor?a de los episodios de mi podcast en formato solo audio, como [¡Palabras!](https://borjaprofe.com/escucha/). Tambi?n me ha servido para mejorar las pistas de sonido de algunos vídeos. Para audio puro y duro, es mi herramienta.",
+          "Y te cuento una anécdota que lo resume. Me ha pasado que amigos profes me ven editar con Audacity y me dicen pero c?mo puedes utilizar eso. Y yo respondo: pues, c?mo no. Si algo te está funcionando, no tiene ningún sentido cambiarlo.",
+          "Para editar los episodios del podcast hay algo artesanal ah? que veo difácil de reemplazar. Necesito mantener mi criterio, y lo que esta herramienta me da es justo eso, sencillez y control."
         ],
         actions: [
           {
@@ -2625,9 +2625,9 @@ export const tools: Tool[] = [
       {
         title: "Lo que me gusta y lo que no",
         paragraphs: [
-          "Lo que m?s valoro es la combinaci?n de tres cosas: que es gratis, que es sencilla y que me da un control absoluto sobre la edici?n. No hay automatismos que decidan por ti, lo tocas todo t?, y para alguien que quiere mantener su criterio en cada corte, eso es una ventaja.",
+          "Lo que más valoro es la combinaci?n de tres cosas: que es gratis, que es sencilla y que me da un control absoluto sobre la edici?n. No hay automatismos que decidan por ti, lo tocas todo t?, y para alguien que quiere mantener su criterio en cada corte, eso es una ventaja.",
           "Y lo que menos me gusta es la otra cara de esa misma moneda. Audacity sigue siendo un programa muy r?stico y muy manual. Eso tiene la parte buena del control absoluto, pero la mala es que no puedes automatizar nada, lo tienes que hacer t?.",
-          "Y hay un l?mite real: en ciertas grabaciones con un ruido o un sonido muy concreto que interfiere, el set de herramientas de Audacity no es suficiente para solucionarlo. Si tienes problemas de audio extraordinarios, posiblemente no los puedas arreglar desde aqu?.",
+          "Y hay un l?mite real: en ciertas grabaciones con un ruido o un sonido muy concreto que interfiere, el set de herramientas de Audacity no es suficiente para solucionarlo. Si tienes problemas de audio extraordinarios, posiblemente no los puedas arreglar desde aquí.",
           "Por eso, me planteo en alg?n momento dar el salto a un programa que permita algo de automatizaci?n. Pero, de momento, sigo con Audacity, porque para lo que hago me cumple."
         ]
       },
@@ -2641,13 +2641,13 @@ export const tools: Tool[] = [
         title: "Alternativas",
         paragraphs: [
           "La ?nica alternativa que toco es [DaVinci Resolve](/herramientas/davinci-resolve-editor-video-gratis-profesores), pero con un matiz: lo uso para editar el audio que va asociado a un v?deo, no para audio solo.",
-          "Abrir DaVinci ?nicamente para editar un podcast de audio no me parece l?gico, es matar moscas a ca?onazos. Para audio puro, me quedo con Audacity, y todav?a no he encontrado nada que me haga abandonar ese punto artesanal. Si lo encuentro, lo contar? aqu?."
+          "Abrir DaVinci ?nicamente para editar un podcast de audio no me parece l?gico, es matar moscas a ca?onazos. Para audio puro, me quedo con Audacity, y todavía no he encontrado nada que me haga abandonar ese punto artesanal. Si lo encuentro, lo contar? aquí."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "Audacity es feo, r?stico y manual, y aun as? es la herramienta con la que llevo m?s de doscientos episodios encima. Es gratis, te da control absoluto y hace todo lo que un profe necesita para editar sus audios.",
+          "Audacity es feo, r?stico y manual, y aun asé es la herramienta con la que llevo más de doscientos episodios encima. Es gratis, te da control absoluto y hace todo lo que un profe necesita para editar sus audios.",
           "No es para quien busque automatizaci?n ni para resolver problemas de sonido muy complejos, pero para editar tus podcasts y tus audios con criterio, cumple de sobra.",
           "Lo recomiendo mucho, sobre todo si valoras la sencillez y el control por encima de los automatismos. Y recuerda la regla de oro: si algo te funciona, no tiene sentido cambiarlo.",
           "Resumen para profes ocupados: editor de audio gratis, feo pero sencillo y con control total. Ideal para podcasts de audio. No automatiza nada y se queda corto con ruidos muy complejos. Guarda siempre el proyecto."
@@ -2657,18 +2657,18 @@ export const tools: Tool[] = [
     whatItDoes:
       "Audacity es un editor y grabador de audio gratuito que te permite cargar una pista, ver las ondas en una l?nea de tiempo, cortar, ajustar volumen, aplicar efectos y exportar el resultado final.",
     howIUseIt:
-      "Lo uso sobre todo para editar la mayor?a de los episodios de mis podcasts en formato solo audio y tambi?n para mejorar algunas pistas de sonido de v?deos. Para audio puro, sigue siendo mi herramienta principal.",
+      "Lo uso sobre todo para editar la mayor?a de los episodios de mis podcasts en formato solo audio y también para mejorar algunas pistas de sonido de vídeos. Para audio puro, sigue siendo mi herramienta principal.",
     teacherUseCases: [
       "Editar un podcast educativo sin pagar una herramienta mensual.",
-      "Cortar silencios, errores o repeticiones de una grabaci?n.",
+      "Cortar silencios, errores o repeticiones de una grabación.",
       "Ajustar volumen de una pista de voz.",
       "Preparar audios para materiales de clase o recursos descargables.",
-      "Exportar un episodio final en MP3 despu?s de editarlo a mano."
+      "Exportar un episodio final en MP3 después de editarlo a mano."
     ],
     honestVerdict:
-      "Audacity es feo, r?stico y manual, y aun as? es la herramienta con la que llevo m?s de doscientos episodios de podcast. Su gracia no est? en lo que automatiza, sino en el control absoluto que te da. Si editas audio y quieres control total sin pagar, es dif?cil pedirle m?s.",
+      "Audacity es feo, r?stico y manual, y aun asé es la herramienta con la que llevo más de doscientos episodios de podcast. Su gracia no está en lo que automatiza, sino en el control absoluto que te da. Si editas audio y quieres control total sin pagar, es difácil pedirle más.",
     importantNotice:
-      "Ojo con una diferencia importante: exportar el audio no es lo mismo que guardar el proyecto. Exportar genera el archivo final; guardar el proyecto conserva tus cortes y tu l?nea de tiempo para seguir editando despu?s. Yo perd? algunos audios al principio por no tener esto claro.",
+      "Ojo con una diferencia importante: exportar el audio no es lo mismo que guardar el proyecto. Exportar genera el archivo final; guardar el proyecto conserva tus cortes y tu l?nea de tiempo para seguir editando después. Yo perd? algunos audios al principio por no tener esto claro.",
     metrics: [
       { label: "Episodios editados", value: "+200" },
       { label: "Precio", value: "0 ?" },
@@ -2677,7 +2677,7 @@ export const tools: Tool[] = [
     priceRows: [
       { label: "Audacity", value: "Gratis" },
       { label: "C?digo abierto", value: "S?" },
-      { label: "Afiliaci?n", value: "No" }
+      { label: "Afiliación", value: "No" }
     ],
     priceNote:
       "Audacity es gratis y de c?digo abierto. No hay suscripci?n ni enlace de afiliado.",
@@ -2715,7 +2715,7 @@ export const tools: Tool[] = [
       {
         question: "?Necesito saber de edici?n para empezar?",
         answer:
-          "No. Hay muchos tutoriales y la base es sencilla: cargas una pista, ves las ondas y la vas cortando. Lo dem?s se aprende trasteando."
+          "No. Hay muchos tutoriales y la base es sencilla: cargas una pista, ves las ondas y la vas cortando. Lo demás se aprende trasteando."
       }
     ]
   },
@@ -2812,7 +2812,7 @@ export const tools: Tool[] = [
         title: "Lo que me gusta y lo que no",
         paragraphs: [
           "Lo que más me gusta es que te resuelve la publicación desde un único panel: episodios, estadísticas y distribución en un mismo sitio. También suma poder subir en vídeo y no quedarte fuera de las plataformas que solo aceptan audio. Y, por supuesto, que sea gratis.",
-          "¿Y lo que menos? Para el uso que le doy no he encontrado limitaciones importantes. Lo único un poco pesado es la configuración inicial de las plataformas externas y el RSS. Una vez hecho, te olvidas."
+          "¿Y lo que menosé Para el uso que le doy no he encontrado limitaciones importantes. Lo único un poco pesado es la configuración inicial de las plataformas externas y el RSS. Una vez hecho, te olvidas."
         ]
       },
       {
@@ -2923,7 +2923,7 @@ export const tools: Tool[] = [
     slug: "squoosh",
     title: "Squoosh: c?mo comprimo im?genes para que mi web no vaya lenta",
     metaDescription:
-      "Squoosh es la herramienta gratis con la que comprimo im?genes cuando pesan demasiado para mi web o el correo. Sencilla, r?pida y me ha salvado m?s de una vez. Te cuento c?mo la uso.",
+      "Squoosh es la herramienta gratis con la que comprimo im?genes cuando pesan demasiado para mi web o el correo. Sencilla, r?pida y me ha salvado más de una vez. Te cuento c?mo la uso.",
     keywords: [
       "Squoosh",
       "comprimir im?genes",
@@ -2963,8 +2963,8 @@ export const tools: Tool[] = [
     cons: [
       "Si te pasas con la compresi?n, la imagen pierde calidad.",
       "No es una herramienta de edici?n avanzada.",
-      "Es de uso puntual, no algo que uses todo el d?a.",
-      "No le veo pegas reales m?s all? de comprimir con cabeza."
+      "Es de uso puntual, no algo que uses todo el día.",
+      "No le veo pegas reales más all? de comprimir con cabeza."
     ],
     alternatives: [],
     rating: 4,
@@ -2973,17 +2973,17 @@ export const tools: Tool[] = [
     status: "importante",
     updatedAt: "2026-06-14",
     intro:
-      "Esto igual te parece una tonter?a, pero si es as? es porque no tienes web.",
+      "Esto igual te parece una tonter?a, pero si es asé es porque no tienes web.",
     narrativeIntro: [
-      "Esto igual te parece una tonter?a, pero si es as? es porque no tienes web. Squoosh es una herramienta gratuita y sencill?sima para comprimir im?genes, y es de esas cosas que no usas todos los d?as pero que conviene tener siempre a mano. Yo la uso quiz? una vez a la semana, y cada vez que la uso, me alegro de tenerla.",
-      "Esta ficha es para profes con web, podcast o newsletter que se preguntan por qu? su web va lenta o por qu? no les deja subir una imagen. Muchas veces la respuesta es que tus im?genes pesan demasiado. Y eso tiene arreglo f?cil."
+      "Esto igual te parece una tonter?a, pero si es asé es porque no tienes web. Squoosh es una herramienta gratuita y sencill?sima para comprimir im?genes, y es de esas cosas que no usas todos los días pero que conviene tener siempre a mano. Yo la uso quiz? una vez a la semana, y cada vez que la uso, me alegro de tenerla.",
+      "Esta ficha es para profes con web, podcast o newsletter que se preguntan por qué su web va lenta o por qué no les deja subir una imagen. Muchas veces la respuesta es que tus im?genes pesan demasiado. Y eso tiene arreglo fácil."
     ],
     narrativeSections: [
       {
         title: "Qu? es Squoosh",
         paragraphs: [
-          "Squoosh es una herramienta online y gratuita para comprimir im?genes. Su funci?n principal es reducir el peso de una imagen para que ocupe menos espacio y se cargue m?s r?pido, sin que tengas que instalar nada.",
-          "No hay opci?n m?s simple que esta, y encima es gratis."
+          "Squoosh es una herramienta online y gratuita para comprimir im?genes. Su funci?n principal es reducir el peso de una imagen para que ocupe menos espacio y se cargue más r?pido, sin que tengas que instalar nada.",
+          "No hay opci?n más simple que esta, y encima es gratis."
         ],
         actions: [
           {
@@ -2995,14 +2995,14 @@ export const tools: Tool[] = [
       {
         title: "C?mo funciona lo b?sico",
         paragraphs: [
-          "Es tan f?cil que casi da risa. Subes tu imagen, eliges el porcentaje de compresi?n y ves en tiempo real c?mo queda la calidad mientras ajustas.",
-          "As? controlas t? mismo el equilibrio entre peso y nitidez, sin ir a ciegas. Adem?s trae funciones b?sicas para recortar y ajustar el tama?o, por si necesitas algo m?s que comprimir."
+          "Es tan fácil que casi da risa. Subes tu imagen, eliges el porcentaje de compresi?n y ves en tiempo real c?mo queda la calidad mientras ajustas.",
+          "Asé controlas t? mismo el equilibrio entre peso y nitidez, sin ir a ciegas. Además trae funciones b?sicas para recortar y ajustar el tama?o, por si necesitas algo más que comprimir."
         ]
       },
       {
         title: "C?mo la uso yo",
         paragraphs: [
-          "La saco sobre todo cuando una imagen pesa demasiado para subirla a mi web o para enviarla por correo. Te cuento un caso real: me ha salvado bastantes veces cuando estoy a punto de subir la portada de uno de mis episodios del podcast y me salta el aviso de que la imagen pesa demasiado, que tiene m?s de tres megas.",
+          "La saco sobre todo cuando una imagen pesa demasiado para subirla a mi web o para enviarla por correo. Te cuento un caso real: me ha salvado bastantes veces cuando estoy a punto de subir la portada de uno de mis episodios del podcast y me salta el aviso de que la imagen pesa demasiado, que tiene más de tres megas.",
           "Paso la imagen por Squoosh, la dejo en un peso razonable y a subir. Listo."
         ],
         actions: [
@@ -3013,38 +3013,38 @@ export const tools: Tool[] = [
         ]
       },
       {
-        title: "Por qu? esto importa m?s de lo que parece",
+        title: "Por qu? esto importa más de lo que parece",
         paragraphs: [
           "Un error t?pico, y que yo comet? durante mucho tiempo, es subir im?genes muy pesadas a la web. Parece inofensivo, pero no lo es: las im?genes grandes sin comprimir ralentizan tu web y te consumen el hosting. Una web lenta espanta visitas y a Google tampoco le encanta.",
-          "Y lo mismo pasa con el correo: si mandas im?genes enormes, saturas el almacenamiento de servicios como Gmail antes de tiempo. Comprimir es una de esas peque?as costumbres que te evitan problemas grandes m?s adelante.",
+          "Y lo mismo pasa con el correo: si mandas im?genes enormes, saturas el almacenamiento de servicios como Gmail antes de tiempo. Comprimir es una de esas pequeñas costumbres que te evitan problemas grandes más adelante.",
           "Si quieres ahondar en montar tu sitio con cabeza, te dejo la categor?a de [Construir mi web](/construir-mi-web)."
         ]
       },
       {
         title: "Lo que menos me gusta",
         paragraphs: [
-          "Sinceramente, no le noto ning?n inconveniente. El ?nico cuidado que debes tener es no pasarte con la compresi?n, porque si exageras, la imagen va a perder calidad. Es cuesti?n de mirar la vista previa y parar a tiempo.",
-          "Por lo dem?s, es una herramienta de uso puntual, no algo en lo que vivas, pero precisamente por eso conviene tenerla siempre localizada para cuando la necesites."
+          "Sinceramente, no le noto ningún inconveniente. El ?nico cuidado que debes tener es no pasarte con la compresi?n, porque si exageras, la imagen va a perder calidad. Es cuesti?n de mirar la vista previa y parar a tiempo.",
+          "Por lo demás, es una herramienta de uso puntual, no algo en lo que vivas, pero precisamente por eso conviene tenerla siempre localizada para cuando la necesites."
         ]
       },
       {
         title: "Precio",
         paragraphs: [
-          "Gratis, sin m?s. Otra de esas herramientas que demuestran que para resolver un problema concreto no siempre hace falta pagar."
+          "Gratis, sin más. Otra de esas herramientas que demuestran que para resolver un problema concreto no siempre hace falta pagar."
         ]
       },
       {
         title: "Alternativas",
         paragraphs: [
-          "He probado alguna otra herramienta parecida, pero ni recuerdo los nombres ni le veo motivo para cambiar, as? que dejo las alternativas como pendiente antes que inventarme comparaciones.",
-          "Si Squoosh te resuelve la papeleta y es gratis, para qu? buscar m?s."
+          "He probado alguna otra herramienta parecida, pero ni recuerdo los nombres ni le veo motivo para cambiar, asé que dejo las alternativas como pendiente antes que inventarme comparaciones.",
+          "Si Squoosh te resuelve la papeleta y es gratis, para qu? buscar más."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "Squoosh hace una sola cosa, comprimir im?genes, y la hace de maravilla: gratis, r?pida y sin complicaciones. No es una herramienta protagonista, es una de esas piezas peque?as del taller que te sacan de un apuro justo cuando lo necesitas.",
-          "La recomiendo sin dudar si tienes web, podcast o mandas im?genes por correo. Lo ?nico que debes vigilar es no comprimir de m?s. Por lo dem?s, es de esas cosas que, una vez las conoces, no entiendes c?mo viv?as sin ellas.",
+          "Squoosh hace una sola cosa, comprimir im?genes, y la hace de maravilla: gratis, r?pida y sin complicaciones. No es una herramienta protagonista, es una de esas piezas pequeñas del taller que te sacan de un apuro justo cuando lo necesitas.",
+          "La recomiendo sin dudar si tienes web, podcast o mandas im?genes por correo. Lo ?nico que debes vigilar es no comprimir de más. Por lo demás, es de esas cosas que, una vez las conoces, no entiendes c?mo viv?as sin ellas.",
           "Resumen para profes ocupados: comprime im?genes gratis y en segundos para que tu web no se ralentice ni satures el correo. Ojo con pasarte de compresi?n. Tenla siempre localizada."
         ]
       }
@@ -3056,11 +3056,11 @@ export const tools: Tool[] = [
     teacherUseCases: [
       "Comprimir portadas antes de subirlas a una web.",
       "Reducir el peso de im?genes para newsletters o correos.",
-      "Optimizar recursos visuales para que la web cargue m?s r?pido.",
+      "Optimizar recursos visuales para que la web cargue más r?pido.",
       "Redimensionar o recortar una imagen sin abrir un editor grande."
     ],
     honestVerdict:
-      "Squoosh hace una cosa muy peque?a, pero muy ?til, y por eso lo tengo siempre a mano. No es protagonista de nada, pero te evita muchos problemas tontos con webs lentas, correos pesados o im?genes que no suben.",
+      "Squoosh hace una cosa muy pequeña, pero muy ?til, y por eso lo tengo siempre a mano. No es protagonista de nada, pero te evita muchos problemas tontos con webs lentas, correos pesados o im?genes que no suben.",
     importantNotice:
       "El ?nico cuidado real es no pasarte con la compresi?n. Mira la vista previa y para antes de cargarte la nitidez. Si tienes web, esto no es una man?a: es mantenimiento b?sico.",
     metrics: [
@@ -3071,7 +3071,7 @@ export const tools: Tool[] = [
     priceRows: [
       { label: "Herramienta", value: "Gratis" },
       { label: "Instalaci?n", value: "No hace falta" },
-      { label: "Afiliaci?n", value: "No" }
+      { label: "Afiliación", value: "No" }
     ],
     priceNote:
       "No tiene misterio: entras, comprimes y descargas. Gratis.",
@@ -3099,12 +3099,12 @@ export const tools: Tool[] = [
       {
         question: "?Pierdo calidad al comprimir?",
         answer:
-          "Solo si te pasas. Squoosh te deja ver la calidad en tiempo real mientras ajustas el nivel, as? que es cuesti?n de bajar el peso sin cargarte la nitidez. Mira la vista previa y para a tiempo."
+          "Solo si te pasas. Squoosh te deja ver la calidad en tiempo real mientras ajustas el nivel, asé que es cuesti?n de bajar el peso sin cargarte la nitidez. Mira la vista previa y para a tiempo."
       },
       {
         question: "?Me sirve si no tengo web?",
         answer:
-          "Tambi?n. Va igual de bien para no saturar tu correo cuando env?as im?genes pesadas. Pero donde m?s se nota es cuando tienes una web que mantener ?gil."
+          "Tambi?n. Va igual de bien para no saturar tu correo cuando env?as im?genes pesadas. Pero donde más se nota es cuando tienes una web que mantener ?gil."
       }
     ]
   },
@@ -3359,7 +3359,7 @@ export const tools: Tool[] = [
         title: "Lo que me gusta y lo que no",
         paragraphs: [
           "Lo que más me gusta es que es fresca: la malla transpirable evita el sudor de espalda en verano, que para quien pasa horas sentado es un puntazo. Además es ligera y ajustable, la mueves, la giras y la pones a tu altura sin pelearte, el montaje es sencillo y el precio, de 50-60 euros, la convierte en una silla digna para trabajar sin arruinarte.",
-          "¿Y lo que menos? Pues que no es premium. Es cómoda y cumple, pero hay sillas de gama alta muy superiores si tu prioridad es la ergonomía seria y el presupuesto da para ello. Y el tema del suelo que ya te he contado, que entre la alfombra y la madera casi te obliga a sumar el protector aparte."
+          "¿Y lo que menosé Pues que no es premium. Es cómoda y cumple, pero hay sillas de gama alta muy superiores si tu prioridad es la ergonomía seria y el presupuesto da para ello. Y el tema del suelo que ya te he contado, que entre la alfombra y la madera casi te obliga a sumar el protector aparte."
         ]
       },
       {
@@ -3672,47 +3672,47 @@ export const tools: Tool[] = [
     slug: "audio-technica-atr2100x-usb",
     title: "Audio-Technica ATR2100x-USB: el micro con el que grabo (aunque no te lo recomiende del todo)",
     metaDescription:
-      "Grabo mis podcasts, entrevistas y v?deos con el Audio-Technica ATR2100x-USB. Suena bien, pero no estoy 100% satisfecho. Te cuento por qu?, con an?cdota de taza incluida.",
+      "Grabo mis podcasts, entrevistas y vídeos con el Audio-Technica ATR2100x-USB. Suena bien, pero no estoy 100% satisfecho. Te cuento por qué, con anécdota de taza incluida.",
     keywords: [
       "Audio-Technica ATR2100x-USB",
-      "micr?fono para podcast",
-      "micr?fono USB para grabar",
-      "micr?fono para grabar clases y v?deos",
-      "micr?fono din?mico USB jack",
-      "micr?fono para entrevistas"
+      "micrófono para podcast",
+      "micrófono USB para grabar",
+      "micrófono para grabar clases y vídeos",
+      "micrófono dinámico USB jack",
+      "micrófono para entrevistas"
     ],
     tagline:
-      "El micr?fono con el que grabo podcasts, entrevistas y v?deos, aunque hoy no te lo recomendar?a sin matices.",
-    category: "Audio y v?deo",
-    subcategories: ["audio", "comunicaci?n", "formaci?n", "contenido", "podcast", "micr?fono"],
+      "El micrófono con el que grabo podcasts, entrevistas y vídeos, aunque hoy no te lo recomendaría sin matices.",
+    category: "Audio y vídeo",
+    subcategories: ["audio", "comunicación", "formación", "contenido", "podcast", "micrófono"],
     pricing: "pago-unico",
     affiliateUrl: "https://amzn.to/4dXGalj",
     hasAffiliate: true,
     myUseCase:
-      "Lo uso para grabar mis entrevistas, episodios de podcast y v?deos. Es imprescindible por uso real, no porque est? plenamente satisfecho ni porque lo recomiende al 100%.",
+      "Lo uso para grabar mis entrevistas, episodios de podcast y vídeos. Es imprescindible por uso real, no porque está plenamente satisfecho ni porque lo recomiende al 100%.",
     bestFor: [
       "Profes que quieren escuchar una experiencia real antes de comprar un micro",
-      "Quien necesita grabar podcast, entrevistas o v?deos con un mismo micro",
-      "Creadores que valoran m?s la experiencia real que una recomendaci?n idealizada",
+      "Quien necesita grabar podcast, entrevistas o vídeos con un mismo micro",
+      "Creadores que valoran más la experiencia real que una recomendación idealizada",
       "Quien quiere un micro que ya ha pasado por mucho uso real"
     ],
     notFor: [
-      "Quien quiere una recomendaci?n redonda y sin dudas",
-      "Quien necesita volumen alto de grabaci?n sin tocar nada despu?s",
+      "Quien quiere una recomendación redonda y sin dudas",
+      "Quien necesita volumen alto de grabación sin tocar nada después",
       "Quien busca una base de escritorio resistente",
-      "Quien prefiere esperar a que encuentre mi micr?fono ideal"
+      "Quien prefiere esperar a que encuentre mi micrófono ideal"
     ],
     pros: [
       "La calidad de sonido me parece buena.",
-      "Sirve para podcasts, entrevistas y v?deos.",
-      "Permite dos formas de conexi?n.",
-      "Es f?cil juzgar su sonido porque hay muestras reales publicadas."
+      "Sirve para podcasts, entrevistas y vídeos.",
+      "Permite dos formas de conexión.",
+      "Es fácil juzgar su sonido porque hay muestras reales publicadas."
     ],
     cons: [
       "En mi uso se graba demasiado bajo.",
       "No he encontrado la forma de subir el volumen desde el propio micro.",
-      "La base de pl?stico se me ha roto.",
-      "No estoy 100% satisfecho con ?l."
+      "La base de plástico se me ha roto.",
+      "No estoy 100% satisfecho con él."
     ],
     alternatives: [],
     rating: 3,
@@ -3722,18 +3722,18 @@ export const tools: Tool[] = [
     updatedAt: "2026-06-14",
     publishedAt: "2026-06-11T09:00:00+02:00",
     intro:
-      "Empiezo por lo m?s honesto que te voy a decir en toda la ficha: no te voy a recomendar este micr?fono.",
+      "Empiezo por lo más honesto que te voy a decir en toda la ficha: no te voy a recomendar este micrófono.",
     narrativeIntro: [
-      "Empiezo por lo m?s honesto que te voy a decir en toda la ficha: no te voy a recomendar este micr?fono. Y no porque sea malo, sino porque no estoy 100% satisfecho con ?l. Para ser sincero, tampoco con ning?n otro micr?fono de los que he usado hasta el momento.",
-      "Aun as?, es el micro con el que grabo mis entrevistas, los episodios de mi podcast y mis v?deos, as? que se ha ganado un sitio en el Laborjatorio. Esta ficha no es una recomendaci?n, sino una experiencia real con sus cosas buenas y sus frustraciones. A partir de ah?, t? decides."
+      "Empiezo por lo más honesto que te voy a decir en toda la ficha: no te voy a recomendar este micrófono. Y no porque sea malo, sino porque no estoy 100% satisfecho con él. Para ser sincero, tampoco con ningún otro micrófono de los que he usado hasta el momento.",
+      "Aun así, es el micro con el que grabo mis entrevistas, los episodios de mi podcast y mis vídeos, asé que se ha ganado un sitio en el Laborjatorio. Esta ficha no es una recomendación, sino una experiencia real con sus cosas buenas y sus frustraciones. A partir de ahí, t? decides."
     ],
     narrativeSections: [
       {
-        title: "Qu? es y c?mo suena",
+        title: "Qué es y cómo suena",
         paragraphs: [
-          "El Audio-Technica ATR2100x-USB es un micr?fono que puedes conectar de dos formas: por USB o por un cable jack, la clavija de toda la vida. Y lo primero, lo bueno: la calidad es buena, o al menos a mi juicio se escucha bien.",
-          "Lo mejor es que no tienes que fiarte de mi palabra. Puedes juzgarlo t? mismo escuchando cualquier episodio de [Gramatic?n](https://borjaprofe.com/gramaticon/) hasta el 16 como m?nimo, o de [?Palabras!](https://borjaprofe.com/escucha/), que est?n grabados con ?l. Pones, escuchas y decides.",
-          "Si despu?s de leerme quieres echarle un ojo, puedes verlo en [Amazon](https://amzn.to/4dXGalj). Es un enlace de afiliado: a ti te cuesta lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio."
+          "El Audio-Technica ATR2100x-USB es un micrófono que puedes conectar de dos formas: por USB o por un cable jack, la clavija de toda la vida. Y lo primero, lo bueno: la calidad es buena, o al menos a mi juicio se escucha bien.",
+          "Lo mejor es que no tienes que fiarte de mi palabra. Puedes juzgarlo t? mismo escuchando cualquier episodio de [Gramaticón](https://borjaprofe.com/gramaticon/) hasta el 16 como mínimo, o de [¡Palabras!](https://borjaprofe.com/escucha/), que están grabados con él. Pones, escuchas y decides.",
+          "Si después de leerme quieres echarle un ojo, puedes verlo en [Amazon](https://amzn.to/4dXGalj). Es un enlace de afiliado: a ti te cuesta lo mismo y a mí me cae una pequeña comisi?n que ayuda a mantener el Laborjatorio."
         ],
         actions: [
           {
@@ -3745,37 +3745,37 @@ export const tools: Tool[] = [
       {
         title: "Mi experiencia y mi pelea con el volumen",
         paragraphs: [
-          "Aqu? viene mi gran frustraci?n. Se escucha muy bajito. Y te parecer? una estupidez, porque el volumen se puede subir, pero el tema es que no encuentro la forma de subirlo desde el propio micr?fono, ni s? a ciencia cierta si se puede.",
+          "Aquí viene mi gran frustración. Se escucha muy bajito. Y te parecerá una estupidez, porque el volumen se puede subir, pero el tema es que no encuentro la forma de subirlo desde el propio micrófono, ni sé a ciencia cierta si se puede.",
           "Si grabas todo en una sola pista, como hago yo con [Audacity](/herramientas/audacity), esto es un problema, porque luego tienes que ir igualando el volumen a mano.",
-          "De momento he grabado siempre por USB, pero mientras preparaba esta ficha decid? una cosa: los pr?ximos audios los grabar? por jack, a ver si esa conexi?n soluciona lo del volumen bajo. Te contar? por aqu? los resultados en cuanto los tenga, as? que esta ficha tendr? actualizaci?n."
+          "De momento he grabado siempre por USB, pero mientras preparaba esta ficha decid? una cosa: los próximos audios los grabaré por jack, a ver si esa conexión soluciona lo del volumen bajo. Te contar? por aquí los resultados en cuanto los tenga, asé que esta ficha tendrá actualización."
         ]
       },
       {
-        title: "La an?cdota de la taza",
+        title: "La anécdota de la taza",
         paragraphs: [
-          "La base del micr?fono es un peque?o tr?pode desplegable de pl?stico que, a m?, se me acaba de romper. Soluci?n de emergencia: he grabado con el micr?fono metido dentro de una taza.",
-          "Te cuento esto por dos razones: porque es verdad, y porque resume bastante bien mi relaci?n con este micro. Funciona, pero todo el rato hay algo que apa?ar."
+          "La base del micrófono es un pequeño trípode desplegable de plástico que, a mí, se me acaba de romper. Solución de emergencia: he grabado con el micrófono metido dentro de una taza.",
+          "Te cuento esto por dos razones: porque es verdad, y porque resume bastante bien mi relación con este micro. Funciona, pero todo el rato hay algo que apañar."
         ]
       },
       {
-        title: "El filtro antipop, eso s?",
+        title: "El filtro antipop, eso sí",
         paragraphs: [
-          "Una cosa que s? te recomiendo, al margen del micro: invierte en un filtro antipop. Yo tengo uno, y te dejo enlazada [su ficha](/herramientas/filtro-antipop-innogear), pero ojo, no es que recomiende ese en concreto, simplemente es el que tengo.",
-          "La recomendaci?n es el filtro en general, no la marca. Mejora el sonido y evita esos golpes de aire molestos al pronunciar las p y las b."
+          "Una cosa que sé te recomiendo, al margen del micro: invierte en un filtro antipop. Yo tengo uno, y te dejo enlazada [su ficha](/herramientas/filtro-antipop-innogear), pero ojo, no es que recomiende ese en concreto, simplemente es el que tengo.",
+          "La recomendación es el filtro en general, no la marca. Mejora el sonido y evita esos golpes de aire molestos al pronunciar las p y las b."
         ]
       },
       {
         title: "Lo que menos me gusta",
         paragraphs: [
-          "Resumo mis peros, que ya los has ido viendo. El volumen de grabaci?n es demasiado bajo y no he dado con la forma de subirlo desde el micro. La base de pl?stico es fr?gil, tanto que la m?a se rompi?.",
-          "Y, en parte, reconozco que algunas de estas limitaciones son tanto del aparato como de mi propio desconocimiento, porque no soy ning?n experto en audio. Te lo cuento tal cual para que sepas a qu? atenerte."
+          "Resumo mis peros, que ya los has ido viendo. El volumen de grabación es demasiado bajo y no he dado con la forma de subirlo desde el micro. La base de plástico es frágil, tanto que la mía se rompió.",
+          "Y, en parte, reconozco que algunas de estas limitaciones son tanto del aparato como de mi propio desconocimiento, porque no soy ningún experto en audio. Te lo cuento tal cual para que sepas a qué atenerte."
         ]
       },
       {
-        title: "Precio y d?nde comprarlo",
+        title: "Precio y dónde comprarlo",
         paragraphs: [
-          "El precio exacto lo dejo como pendiente, porque var?a y prefiero no darte una cifra que ma?ana no valga.",
-          "Si despu?s de todo lo que te he contado decides hacerte con ?l, puedes comprarlo desde [mi enlace de afiliado](https://amzn.to/4dXGalj): a ti te cuesta exactamente lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio."
+          "El precio exacto lo dejo como pendiente, porque varía y prefiero no darte una cifra que mañana no valga.",
+          "Si después de todo lo que te he contado decides hacerte con él, puedes comprarlo desde [mi enlace de afiliado](https://amzn.to/4dXGalj): a ti te cuesta exactamente lo mismo y a mí me cae una pequeña comisi?n que ayuda a mantener el Laborjatorio."
         ],
         actions: [
           {
@@ -3787,42 +3787,42 @@ export const tools: Tool[] = [
       {
         title: "Alternativas",
         paragraphs: [
-          "No estoy satisfecho del todo con ning?n micr?fono que haya probado, as? que no te puedo se?alar una alternativa mejor por experiencia propia. Lo dejo como pendiente.",
-          "Lo que s? te prometo es que, el d?a que encuentre mi micr?fono ideal, lo sabr?s aqu?."
+          "No estoy satisfecho del todo con ningún micrófono que haya probado, asé que no te puedo señalar una alternativa mejor por experiencia propia. Lo dejo como pendiente.",
+          "Lo que sé te prometo es que, el día que encuentre mi micrófono ideal, lo sabrás aquí."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "Este es de los pocos casos en los que mi veredicto es un no lo recomiendo, y quiero que se entienda bien. No es que sea un mal micr?fono: la calidad de sonido es buena y llevo a?os grabando con ?l todo lo que hago. Es que no estoy plenamente satisfecho, sobre todo por lo del volumen, y no ser?a honesto venderte como ideal algo que a m? todav?a me deja con dudas.",
-          "Lo tienes en el Laborjatorio porque es lo que uso de verdad, no como recomendaci?n de compra. Si te sirve mi experiencia para decidir, perfecto. Y si esperas a que encuentre algo mejor, tambi?n lo entender?, porque es justo lo que estoy haciendo yo.",
-          "Resumen para profes ocupados: buena calidad de sonido, pero volumen muy bajo y base fr?gil. Lo uso a diario, aunque hoy por hoy no te lo recomiendo. Invierte s? o s? en un filtro antipop."
+          "Este es de los pocos casos en los que mi veredicto es un no lo recomiendo, y quiero que se entienda bien. No es que sea un mal micrófono: la calidad de sonido es buena y llevo años grabando con ?l todo lo que hago. Es que no estoy plenamente satisfecho, sobre todo por lo del volumen, y no sería honesto venderte como ideal algo que a mí todavía me deja con dudas.",
+          "Lo tienes en el Laborjatorio porque es lo que uso de verdad, no como recomendación de compra. Si te sirve mi experiencia para decidir, perfecto. Y si esperas a que encuentre algo mejor, también lo entenderé, porque es justo lo que estoy haciendo yo.",
+          "Resumen para profes ocupados: buena calidad de sonido, pero volumen muy bajo y base frágil. Lo uso a diario, aunque hoy por hoy no te lo recomiendo. Invierte sé o sé en un filtro antipop."
         ]
       }
     ],
     whatItDoes:
-      "Es un micr?fono con el que grabo podcasts, entrevistas y v?deos, con un sonido que a m? me parece bueno, pero con un problema persistente de volumen bajo en mi uso real.",
+      "Es un micrófono con el que grabo podcasts, entrevistas y vídeos, con un sonido que a mí me parece bueno, pero con un problema persistente de volumen bajo en mi uso real.",
     howIUseIt:
-      "Lo uso como micro principal para grabar entrevistas, episodios de podcast y v?deos. Hasta ahora lo he usado por USB y edito luego el audio en Audacity, ajustando niveles a mano cuando hace falta.",
+      "Lo uso como micro principal para grabar entrevistas, episodios de podcast y vídeos. Hasta ahora lo he usado por USB y edito luego el audio en Audacity, ajustando niveles a mano cuando hace falta.",
     teacherUseCases: [
       "Grabar podcasts educativos.",
       "Grabar entrevistas online o presenciales.",
-      "Mejorar el audio de v?deos y clases grabadas.",
-      "Tener un micr?fono principal de uso diario aunque no sea perfecto."
+      "Mejorar el audio de vídeos y clases grabadas.",
+      "Tener un micrófono principal de uso diario aunque no sea perfecto."
     ],
     honestVerdict:
-      "Es el micro con el que grabo todo y por eso es imprescindible dentro de mi flujo, pero no lo recomiendo al 100%. Suena bien, s?, pero sigo pele?ndome con el volumen y con una base bastante floja.",
+      "Es el micro con el que grabo todo y por eso es imprescindible dentro de mi flujo, pero no lo recomiendo al 100%. Suena bien, sí, pero sigo pele?ndome con el volumen y con una base bastante floja.",
     importantNotice:
-      "Esta ficha incluye enlace de afiliado de Amazon. Si compras desde ?l, a ti te cuesta lo mismo y a m? me llega una peque?a comisi?n. La coletilla importante es la otra: el enlace existe, pero mi veredicto no cambia.",
+      "Esta ficha incluye enlace de afiliado de Amazon. Si compras desde ?l, a ti te cuesta lo mismo y a mí me llega una pequeña comisi?n. La coletilla importante es la otra: el enlace existe, pero mi veredicto no cambia.",
     metrics: [
       { label: "Uso", value: "Diario" },
-      { label: "Conexi?n", value: "USB / jack" },
+      { label: "Conexión", value: "USB / jack" },
       { label: "Estado", value: "Imprescindible por uso" }
     ],
     priceRows: [
-      { label: "Compra", value: "Pago ?nico" },
+      { label: "Compra", value: "Pago único" },
       { label: "Precio", value: "Variable en Amazon" },
-      { label: "Afiliaci?n", value: "S?, Amazon" }
+      { label: "Afiliación", value: "Sí, Amazon" }
     ],
     priceNote:
       "No fijo precio porque cambia. Si quieres mirarlo, el enlace principal de esta ficha es mi enlace de afiliado de Amazon.",
@@ -3851,39 +3851,39 @@ export const tools: Tool[] = [
         name: "Filtro antipop InnoGear",
         url: "/herramientas/filtro-antipop-innogear",
         description:
-          "Al margen del micr?fono concreto, s? recomiendo usar un filtro antipop para reducir golpes de aire en las p y las b."
+          "Al margen del micrófono concreto, sé recomiendo usar un filtro antipop para reducir golpes de aire en las p y las b."
       },
       {
         name: "Audacity",
         url: "/herramientas/audacity",
         description:
-          "Es el editor con el que grabo y ajusto audio, especialmente cuando toca igualar volumen despu?s."
+          "Es el editor con el que grabo y ajusto audio, especialmente cuando toca igualar volumen después."
       },
       {
         name: "Logitech C920",
         url: "/herramientas/logitech-c920",
         description:
-          "Otra pieza de mi equipo de grabaci?n, en este caso para v?deo."
+          "Otra pieza de mi equipo de grabación, en este caso para v?deo."
       }
     ],
     faqs: [
       {
-        question: "?Se conecta por USB o por jack?",
+        question: "¿Se conecta por USB o por jack?",
         answer:
-          "Por las dos. Yo he grabado siempre por USB, pero voy a probar la otra conexi?n a ver si mejora lo del volumen bajo, y lo contar? aqu?."
+          "Por las dos. Yo he grabado siempre por USB, pero voy a probar la otra conexión a ver si mejora lo del volumen bajo, y lo contar? aquí."
       },
       {
-        question: "?Por qu? se escucha tan bajo?",
+        question: "¿Por qué se escucha tan bajo?",
         answer:
-          "En mi caso, el volumen de grabaci?n sale muy bajo y no he encontrado c?mo subirlo desde el propio micr?fono. Si grabas en una sola pista, tendr?s que igualar niveles despu?s en tu editor."
+          "En mi caso, el volumen de grabación sale muy bajo y no he encontrado c?mo subirlo desde el propio micrófono. Si grabas en una sola pista, tendrás que igualar niveles después en tu editor."
       },
       {
-        question: "?Necesito un filtro antipop?",
+        question: "¿Necesito un filtro antipop?",
         answer:
-          "Te lo recomiendo, s?. Mejora bastante el resultado evitando los golpes de aire al hablar. La marca es lo de menos."
+          "Te lo recomiendo, sí. Mejora bastante el resultado evitando los golpes de aire al hablar. La marca es lo de menos."
       },
       {
-        question: "?Entonces por qu? est? marcado como imprescindible?",
+        question: "?Entonces por qué está marcado como imprescindible?",
         answer:
           "Porque es el micro con el que grabo todo. Es imprescindible por uso real en mi flujo, no porque lo recomiende como compra ideal."
       }
@@ -3892,49 +3892,49 @@ export const tools: Tool[] = [
   {
     name: "Filtro antipop InnoGear",
     slug: "filtro-antipop-innogear",
-    title: "Filtro antipop: por qu? lo necesitas si grabas (y el m?o, un InnoGear de 20 euros)",
+    title: "Filtro antipop: por qué lo necesitas si grabas (y el m?o, un InnoGear de 20 euros)",
     metaDescription:
       "Un filtro antipop de 20 euros mejor? mucho el audio de mis grabaciones quitando esos sonidos pop tan desagradables. Te cuento mi InnoGear, lo que aporta y su ?nico pero.",
     keywords: [
       "filtro antipop",
-      "filtro pop micr?fono",
+      "filtro pop micrófono",
       "InnoGear filtro antipop",
       "reducir sonidos pop al grabar",
       "mejorar audio podcast barato",
       "accesorios para grabar voz"
     ],
     tagline:
-      "Ese accesorio peque?o y barato que limpia tu voz al grabar y evita los golpes de aire m?s desagradables.",
+      "Ese accesorio pequeño y barato que limpia tu voz al grabar y evita los golpes de aire más desagradables.",
     category: "Equipo f?sico",
-    subcategories: ["audio", "comunicaci?n", "contenido", "podcast", "grabaci?n"],
+    subcategories: ["audio", "comunicación", "contenido", "podcast", "grabación"],
     pricing: "pago-unico",
     hasAffiliate: false,
     myUseCase:
-      "Lo uso desde 2022 delante del micr?fono para quitar esos golpes de aire en podcasts, v?deos y otros audios grabados.",
+      "Lo uso desde 2022 delante del micrófono para quitar esos golpes de aire en podcasts, vídeos y otros audios grabados.",
     bestFor: [
       "Profes que graban podcast, v?deo o audios para clase",
       "Quien oye golpes de aire al pronunciar p o b cerca del micro",
       "Creadores que quieren mejorar el sonido por muy poco dinero",
-      "Quien ya tiene micr?fono y quiere pulir la grabaci?n"
+      "Quien ya tiene micrófono y quiere pulir la grabación"
     ],
     notFor: [
       "Quien solo hace videollamadas ocasionales",
       "Quien no graba voz ni contenido de audio",
       "Quien busca resolver eco, ruido de sala o ac?stica mala",
-      "Quien espera una mejora total sin cuidar el resto de la grabaci?n"
+      "Quien espera una mejora total sin cuidar el resto de la grabación"
     ],
     pros: [
       "Mejora de forma clara la limpieza de la voz al grabar.",
       "Cuesta poco y se nota bastante.",
-      "No tiene curva de aprendizaje: lo colocas y ya est?.",
+      "No tiene curva de aprendizaje: lo colocas y ya está.",
       "Lleva conmigo desde 2022 y sigue cumpliendo.",
-      "Es una compra peque?a con impacto real si grabas voz."
+      "Es una compra pequeña con impacto real si grabas voz."
     ],
     cons: [
       "La pinza puede dar un poco de guerra si no la ajustas bien.",
       "Si aprietas demasiado, puedes marcar o da?ar la mesa.",
       "No sustituye una buena t?cnica de micro ni un espacio razonable.",
-      "No he probado otros, as? que no puedo compararlo con criterio."
+      "No he probado otros, asé que no puedo compararlo con criterio."
     ],
     alternatives: [],
     rating: 4,
@@ -3945,73 +3945,73 @@ export const tools: Tool[] = [
     intro:
       "Igual me has visto en alg?n v?deo hablando encima de una especie de Oreo gigante. Bueno, pues ese algo es el filtro antipop.",
     narrativeIntro: [
-      "Igual me has visto en alg?n v?deo hablando encima de una especie de Oreo gigante. Bueno, pues ese algo es el filtro antipop. Es un accesorio peque?o y barato que, si grabas tu voz, marca una diferencia real en c?mo suenas. Y aunque parezca un detalle tonto, no lo es.",
-      "Esta ficha es para profes que graban podcast, v?deos o audios para sus clases y se preguntan por qu? su voz suena rara y llena de golpes al grabar. Buena parte de la respuesta tiene nombre, y son los sonidos pop."
+      "Igual me has visto en alg?n v?deo hablando encima de una especie de Oreo gigante. Bueno, pues ese algo es el filtro antipop. Es un accesorio pequeño y barato que, si grabas tu voz, marca una diferencia real en c?mo suenas. Y aunque parezca un detalle tonto, no lo es.",
+      "Esta ficha es para profes que graban podcast, vídeos o audios para sus clases y se preguntan por qué su voz suena rara y llena de golpes al grabar. Buena parte de la respuesta tiene nombre, y son los sonidos pop."
     ],
     narrativeSections: [
       {
         title: "El problema que resuelve",
         paragraphs: [
           "Si nunca has grabado un podcast, la primera vez que te escuches hay varias cosas que te van a sorprender. Una, lo desagradable que es o?r tu propia voz al principio, algo por lo que pasamos todos. Y dos, la cantidad de sonidos pop que vas a escuchar. Ese sonido viene por las explosivas, por la forma de hablar, esas p y b que sueltan un golpe de aire contra el micro. Y es un sonido muy desagradable para quien lo escucha.",
-          "El filtro antipop se coloca entre tu boca y el micr?fono, y suaviza justo esos golpes de aire. El resultado es una voz m?s limpia y agradable, sin esos peque?os petardazos que distraen."
+          "El filtro antipop se coloca entre tu boca y el micrófono, y suaviza justo esos golpes de aire. El resultado es una voz más limpia y agradable, sin esos pequeños petardazos que distraen."
         ]
       },
       {
         title: "C?mo descubr? que lo necesitaba",
         paragraphs: [
-          "Yo solo no me habr?a dado cuenta, porque mi o?do es p?simo. Lo descubr? por una compa??a con la que colaboraba: me dijeron que sonaba con mucho pop y me recomendaron comprar un filtro. As? que eso fue lo que hice.",
-          "Lo compr? en 2022, me cost? unos veinte euros, y sigue en uso a d?a de hoy. A veces necesitas que alguien con mejor o?do te abra los ojos, o m?s bien las orejas."
+          "Yo solo no me habr?a dado cuenta, porque mi o?do es p?simo. Lo descubr? por una compa??a con la que colaboraba: me dijeron que sonaba con mucho pop y me recomendaron comprar un filtro. Asé que eso fue lo que hice.",
+          "Lo compr? en 2022, me cost? unos veinte euros, y sigue en uso a día de hoy. A veces necesitas que alguien con mejor o?do te abra los ojos, o más bien las orejas."
         ]
       },
       {
         title: "Qu? filtro uso",
         paragraphs: [
-          "El m?o es un InnoGear con doble capa, pensado para micr?fono de estudio y compatible con micros tipo Blue Yeti. No es nada ex?tico ni caro: por unos veinte euros tienes un accesorio que mejora de forma clara la calidad de tu audio.",
-          "Para m? es una buena inversi?n, de esas que dan mucho a cambio de poco."
+          "El m?o es un InnoGear con doble capa, pensado para micrófono de estudio y compatible con micros tipo Blue Yeti. No es nada ex?tico ni caro: por unos veinte euros tienes un accesorio que mejora de forma clara la calidad de tu audio.",
+          "Para mí es una buena inversi?n, de esas que dan mucho a cambio de poco."
         ]
       },
       {
         title: "Lo que menos me gusta",
         paragraphs: [
-          "Aqu? va el ?nico pero, y conviene que lo sepas. El agarre de este filtro puede dar un poquito de guerra: si no lo ajustas bien, puede que se te balancee hacia los lados y tengas que recolocarlo.",
-          "Y hay algo m?s serio, que cuento para que no te pase. Con el tiempo, he terminado haci?ndole una peque?a aver?a a mi [standing desk](/herramientas/standing-desk-maidesite) de tanto apretar la pinza del filtro contra el borde. Puede que sea porque soy de Bilbao y aprieto, y soy tan bruto que lo aprieto demasiado, no s?. Moraleja: aprieta lo justo para que sujete, sin pasarte, y protege tu mesa."
+          "Aquí va el ?nico pero, y conviene que lo sepas. El agarre de este filtro puede dar un poquito de guerra: si no lo ajustas bien, puede que se te balancee hacia los lados y tengas que recolocarlo.",
+          "Y hay algo más serio, que cuento para que no te pase. Con el tiempo, he terminado haci?ndole una pequeña aver?a a mi [standing desk](/herramientas/standing-desk-maidesite) de tanto apretar la pinza del filtro contra el borde. Puede que sea porque soy de Bilbao y aprieto, y soy tan bruto que lo aprieto demasiado, no s?. Moraleja: aprieta lo justo para que sujete, sin pasarte, y protege tu mesa."
         ]
       },
       {
         title: "Precio",
         paragraphs: [
-          "Unos veinte euros. Es de las inversiones m?s baratas que puedes hacer para mejorar tu sonido, y de las que m?s se notan en proporci?n a lo que cuestan. Si grabas con cierta frecuencia, se amortiza solo con la primera grabaci?n que suene limpia.",
-          "El enlace de compra est? pendiente: en cuanto lo tenga, lo a?ado aqu?."
+          "Unos veinte euros. Es de las inversiones más baratas que puedes hacer para mejorar tu sonido, y de las que más se notan en proporci?n a lo que cuestan. Si grabas con cierta frecuencia, se amortiza solo con la primera grabación que suene limpia.",
+          "El enlace de compra está pendiente: en cuanto lo tenga, lo a?ado aquí."
         ]
       },
       {
         title: "Alternativas",
         paragraphs: [
-          "Este es el ?nico filtro antipop que he probado, as? que no puedo recomendarlo por encima de otros porque no tengo con qu? compararlo.",
-          "Lo que s? te digo es que la diferencia entre tener filtro y no tenerlo es enorme, as? que el salto importante es ese, no tanto qu? marca elijas."
+          "Este es el ?nico filtro antipop que he probado, asé que no puedo recomendarlo por encima de otros porque no tengo con qu? compararlo.",
+          "Lo que sé te digo es que la diferencia entre tener filtro y no tenerlo es enorme, asé que el salto importante es ese, no tanto qu? marca elijas."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "El filtro antipop es uno de esos accesorios peque?os y baratos que mejoran tu audio m?s de lo que esperar?as. El m?o, un InnoGear de veinte euros, lleva desde 2022 cumpliendo, y para grabar voz lo considero una compra muy acertada.",
-          "Si grabas podcast, v?deos o audios y a?n no tienes uno, lo recomiendo sin dudarlo. No necesitas el m?s caro, necesitas tener uno. La mejora en c?mo suenas justifica de sobra los pocos euros que cuesta.",
-          "Resumen para profes ocupados: accesorio barato, unos 20 euros, que quita los sonidos pop y limpia tu voz al grabar. Ojo con la pinza, que aprieta fuerte y puede marcar la mesa. M?s importante tener uno que cu?l."
+          "El filtro antipop es uno de esos accesorios pequeños y baratos que mejoran tu audio más de lo que esperar?as. El m?o, un InnoGear de veinte euros, lleva desde 2022 cumpliendo, y para grabar voz lo considero una compra muy acertada.",
+          "Si grabas podcast, vídeos o audios y a?n no tienes uno, lo recomiendo sin dudarlo. No necesitas el más caro, necesitas tener uno. La mejora en c?mo suenas justifica de sobra los pocos euros que cuesta.",
+          "Resumen para profes ocupados: accesorio barato, unos 20 euros, que quita los sonidos pop y limpia tu voz al grabar. Ojo con la pinza, que aprieta fuerte y puede marcar la mesa. M?s importante tener uno que cuél."
         ]
       }
     ],
     whatItDoes:
-      "Es un filtro antipop de doble capa que se coloca entre tu boca y el micr?fono para frenar los golpes de aire de consonantes como la p o la b y limpiar la grabaci?n.",
+      "Es un filtro antipop de doble capa que se coloca entre tu boca y el micrófono para frenar los golpes de aire de consonantes como la p o la b y limpiar la grabación.",
     howIUseIt:
-      "Lo tengo montado delante del micr?fono desde 2022 para grabar podcast, v?deos y otros audios de voz con menos golpes de aire y una sensaci?n m?s limpia al escucharme.",
+      "Lo tengo montado delante del micrófono desde 2022 para grabar podcast, vídeos y otros audios de voz con menos golpes de aire y una sensaci?n más limpia al escucharme.",
     teacherUseCases: [
-      "Grabar podcasts con una voz m?s limpia.",
-      "Reducir golpes de aire en v?deos educativos.",
+      "Grabar podcasts con una voz más limpia.",
+      "Reducir golpes de aire en vídeos educativos.",
       "Mejorar audios para clases, cursos o materiales grabados.",
-      "Pulir un puesto de grabaci?n casero sin gastar mucho."
+      "Pulir un puesto de grabación casero sin gastar mucho."
     ],
     honestVerdict:
-      "El filtro antipop es uno de esos accesorios peque?os y baratos que mejoran tu audio m?s de lo que esperar?as. El m?o, un InnoGear de unos veinte euros, lleva desde 2022 cumpliendo. Si grabas voz, me parece una compra muy acertada.",
+      "El filtro antipop es uno de esos accesorios pequeños y baratos que mejoran tu audio más de lo que esperar?as. El m?o, un InnoGear de unos veinte euros, lleva desde 2022 cumpliendo. Si grabas voz, me parece una compra muy acertada.",
     importantNotice:
       "Ojo con la pinza. Si no la ajustas bien puede balancearse, y si aprietas demasiado puedes marcar o da?ar la mesa.",
     metrics: [
@@ -4020,13 +4020,13 @@ export const tools: Tool[] = [
       { label: "Capas", value: "Doble" }
     ],
     priceRows: [
-      { label: "Tipo de compra", value: "Pago ?nico" },
+      { label: "Tipo de compra", value: "Pago único" },
       { label: "Precio orientativo", value: "Alrededor de 20 ?" },
       { label: "Producto", value: "InnoGear filtro antipop de doble capa" },
-      { label: "Afiliaci?n", value: "Pendiente" }
+      { label: "Afiliación", value: "Pendiente" }
     ],
     priceNote:
-      "De momento dejo pendiente el enlace de compra. La referencia ?til es esa: filtro antipop InnoGear de doble capa para micr?fono de estudio.",
+      "De momento dejo pendiente el enlace de compra. La referencia ?til es esa: filtro antipop InnoGear de doble capa para micrófono de estudio.",
     relatedLinks: [
       {
         label: "Audio-Technica ATR2100x-USB",
@@ -4045,12 +4045,12 @@ export const tools: Tool[] = [
       {
         question: "?De verdad se nota la diferencia?",
         answer:
-          "S?, y mucho. Los sonidos pop son de esas cosas que no percibes hasta que alguien te las se?ala, y una vez puesto el filtro, tu voz suena bastante m?s limpia y agradable."
+          "S?, y mucho. Los sonidos pop son de esas cosas que no percibes hasta que alguien te las se?ala, y una vez puesto el filtro, tu voz suena bastante más limpia y agradable."
       },
       {
         question: "?Vale cualquier filtro o tengo que comprar el tuyo?",
         answer:
-          "No puedo decirte que el m?o sea el mejor, porque es el ?nico que he usado. Lo importante es dar el paso de tener uno. Aseg?rate solo de que sea compatible con tu micr?fono."
+          "No puedo decirte que el m?o sea el mejor, porque es el ?nico que he usado. Lo importante es dar el paso de tener uno. Aseg?rate solo de que sea compatible con tu micrófono."
       }
     ]
   },
@@ -4256,9 +4256,9 @@ export const tools: Tool[] = [
       "port?til gaming econ?mico"
     ],
     tagline:
-      "El port?til con el que hago todo desde 2022 y que hoy me sirve m?s como criterio de compra que como recomendaci?n directa.",
+      "El port?til con el que hago todo desde 2022 y que hoy me sirve más como criterio de compra que como recomendación directa.",
     category: "Equipo f?sico",
-    subcategories: ["productividad", "comunicaci?n", "formaci?n", "contenido", "port?til", "gaming"],
+    subcategories: ["productividad", "comunicación", "formación", "contenido", "port?til", "gaming"],
     pricing: "pago-unico",
     affiliateUrl: "https://amzn.to/4ulS4Kt",
     hasAffiliate: true,
@@ -4267,27 +4267,27 @@ export const tools: Tool[] = [
     bestFor: [
       "Profes que quieren pensar bien qu? port?til necesitan de verdad",
       "Quien da clases, edita y trabaja con muchas pesta?as abiertas",
-      "Quien adem?s quiere jugar en el mismo equipo",
+      "Quien además quiere jugar en el mismo equipo",
       "Personas que prefieren aprender criterios antes que copiar un modelo concreto"
     ],
     notFor: [
-      "Quien busca una recomendaci?n literal de compra del Nitro 5 hoy",
+      "Quien busca una recomendación literal de compra del Nitro 5 hoy",
       "Quien no juega y puede ahorrar comprando algo menos gaming",
-      "Quien quiere una recomendaci?n cerrada de hardware muy t?cnico",
+      "Quien quiere una recomendación cerrada de hardware muy t?cnico",
       "Quien busca consejo dentro del ecosistema Mac"
     ],
     pros: [
       "Me ha servido para clases, edici?n, trabajo y juegos.",
       "Un port?til gaming suele ir sobrado para dar clases y editar.",
       "Me ha ayudado a afinar mis criterios para la pr?xima compra.",
-      "Sigo contento con ?l despu?s de varios a?os de uso real."
+      "Sigo contento con ?l después de varios años de uso real."
     ],
     cons: [
       "El modelo AN515-44 ya es antiguo para comprarlo hoy.",
-      "Probablemente sea dif?cil encontrarlo nuevo.",
-      "No es una recomendaci?n directa de compra en 2026.",
+      "Probablemente sea difácil encontrarlo nuevo.",
+      "No es una recomendación directa de compra en 2026.",
       "Si no juegas, pagar potencia gaming puede no tener sentido.",
-      "Para afinar detalles t?cnicos, yo mismo consulto a alguien que sepa m?s de hardware."
+      "Para afinar detalles t?cnicos, yo mismo consulto a alguien que sepa más de hardware."
     ],
     alternatives: ["ASUS TUF Gaming A16", "Lenovo gaming actual"],
     rating: 4,
@@ -4299,31 +4299,31 @@ export const tools: Tool[] = [
       "Voy a empezar por lo raro: te voy a hablar de mi port?til y a la vez te voy a decir que no te lo recomiendo comprar.",
     narrativeIntro: [
       "Voy a empezar por lo raro: te voy a hablar de mi port?til, un Acer Nitro 5 AN515-44 que compr? en 2022, y a la vez te voy a decir que no te lo recomiendo comprar. No porque sea malo, que estoy s?per contento con ?l, sino porque en 2026 dudo que tenga sentido comprar un laptop tan antiguo, y porque posiblemente ni lo encuentres ya.",
-      "Entonces, para qu? esta ficha. Para algo m?s ?til que venderte un modelo concreto: para contarte con qu? criterios elijo yo un port?til, que es lo que de verdad te va a servir cuando te toque comprar el tuyo."
+      "Entonces, para qu? esta ficha. Para algo más ?til que venderte un modelo concreto: para contarte con qu? criterios elijo yo un port?til, que es lo que de verdad te va a servir cuando te toque comprar el tuyo."
     ],
     narrativeSections: [
       {
         title: "Para qu? lo uso",
         paragraphs: [
-          "Este ordenador es mi herramienta central, y le pido de todo. Lo uso para dar mis clases, con Zoom y para grabar v?deos, para las tareas administrativas, para editar v?deo y audio, y tambi?n para jugar a videojuegos, que soy de los que juegan.",
-          "Que cumpla todo eso a la vez, durante a?os, dice bastante a su favor."
+          "Este ordenador es mi herramienta central, y le pido de todo. Lo uso para dar mis clases, con Zoom y para grabar vídeos, para las tareas administrativas, para editar v?deo y audio, y también para jugar a videojuegos, que soy de los que juegan.",
+          "Que cumpla todo eso a la vez, durante años, dice bastante a su favor."
         ]
       },
       {
         title: "Mis tres requisitos para un port?til",
         paragraphs: [
-          "Para m?, un ordenador debe cumplir tres requisitos: que me deje dar clases sin problemas, que me permita editar v?deo sin ahogarse, y que pueda jugar a videojuegos. A eso le sumo una man?a que consume recursos: soy muy de tener veinte pesta?as abiertas a la vez, as? que necesito m?sculo de sobra.",
-          "Y hay un truco que te ahorra muchas dudas: si eliges uno bueno para jugar, lo m?s probable es que te sirva para todo lo dem?s. Un port?til que mueve juegos actuales va sobrad?simo para dar clases y editar. Por eso uso los videojuegos como vara de medir.",
-          "Como m?nimo, busca 16 GB de RAM, que hoy es el suelo para no sufrir."
+          "Para mí, un ordenador debe cumplir tres requisitos: que me deje dar clases sin problemas, que me permita editar v?deo sin ahogarse, y que pueda jugar a videojuegos. A eso le sumo una man?a que consume recursos: soy muy de tener veinte pesta?as abiertas a la vez, asé que necesito másculo de sobra.",
+          "Y hay un truco que te ahorra muchas dudas: si eliges uno bueno para jugar, lo más probable es que te sirva para todo lo demás. Un port?til que mueve juegos actuales va sobrad?simo para dar clases y editar. Por eso uso los videojuegos como vara de medir.",
+          "Como mínimo, busca 16 GB de RAM, que hoy es el suelo para no sufrir."
         ]
       },
       {
         title: "Para mi pr?xima compra",
         paragraphs: [
-          "Cuando me toque renovar, ir? a por un t?rmino medio: ni lo m?s caro ni lo m?s barato, en torno a los 1.200 euros. Estoy mirando marcas como Lenovo o Asus. Lo que s? descarto es Mac, porque busco m?quinas para videojuegos, as? que si eres de la secta de Apple, lo siento, no tengo recomendaciones para ti.",
-          "Y te confieso algo: no soy ning?n experto en hardware. Para afinar los detalles t?cnicos siempre suelo consultar a un amigo que sabe, y te recomiendo que hagas lo mismo antes de soltar el dinero.",
-          "Como el Nitro 5 ya no es opci?n, te digo cu?l tengo fichado de referencia para cuando renueve: el ASUS TUF Gaming A16, modelo FA608UM-RV005. Sobre el papel cumple de sobra todo lo que pido, con su pantalla de 16 pulgadas a 165 Hz, un AMD Ryzen 7, 32 GB de RAM, 1 TB de SSD y una NVIDIA RTX 5060. Un aviso importante: viene sin sistema operativo, as? que cuenta con instalarlo t? o que te lo instalen.",
-          "Si te sirve de punto de partida, te dejo [mi enlace de afiliado de Amazon](https://amzn.to/4ulS4Kt): a ti te cuesta exactamente lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio. Que quede claro, eso s?: es mi referencia para el futuro, no un port?til que ya haya probado a fondo."
+          "Cuando me toque renovar, ir? a por un t?rmino medio: ni lo más caro ni lo más barato, en torno a los 1.200 euros. Estoy mirando marcas como Lenovo o Asus. Lo que sé descarto es Mac, porque busco m?quinas para videojuegos, asé que si eres de la secta de Apple, lo siento, no tengo recomendaciones para ti.",
+          "Y te confieso algo: no soy ningún experto en hardware. Para afinar los detalles t?cnicos siempre suelo consultar a un amigo que sabe, y te recomiendo que hagas lo mismo antes de soltar el dinero.",
+          "Como el Nitro 5 ya no es opci?n, te digo cu?l tengo fichado de referencia para cuando renueve: el ASUS TUF Gaming A16, modelo FA608UM-RV005. Sobre el papel cumple de sobra todo lo que pido, con su pantalla de 16 pulgadas a 165 Hz, un AMD Ryzen 7, 32 GB de RAM, 1 TB de SSD y una NVIDIA RTX 5060. Un aviso importante: viene sin sistema operativo, asé que cuenta con instalarlo t? o que te lo instalen.",
+          "Si te sirve de punto de partida, te dejo [mi enlace de afiliado de Amazon](https://amzn.to/4ulS4Kt): a ti te cuesta exactamente lo mismo y a mí me cae una pequeña comisi?n que ayuda a mantener el Laborjatorio. Que quede claro, eso sí: es mi referencia para el futuro, no un port?til que ya haya probado a fondo."
         ],
         actions: [
           {
@@ -4336,22 +4336,22 @@ export const tools: Tool[] = [
         title: "Y si t? no juegas",
         paragraphs: [
           "Importante, porque mis necesidades son muy espec?ficas y posiblemente no se correspondan con las tuyas. Si los videojuegos no son una prioridad para ti, te ahorras un buen pellizco: con un port?til de entre 800 y 1.000 euros ir?s sobrado para dar clases, editar lo b?sico y trabajar con muchas pesta?as.",
-          "No necesitas gastarte lo que me gastar? yo solo porque a m? me guste jugar."
+          "No necesitas gastarte lo que me gastar? yo solo porque a mí me guste jugar."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "El Acer Nitro 5 ha sido un compa?ero estupendo y me ha dado todo lo que le he pedido durante a?os. Pero un port?til bueno es el que encaja con tus necesidades, no el que usa otro, as? que no te voy a recomendar que corras a comprar el m?o, que adem?s ya es dif?cil de encontrar.",
-          "Si te llevas una sola idea de aqu?, que sea esta: decide primero para qu? vas a usarlo de verdad. Si juegas, sube a la franja de los 1.200 euros y mira algo actual, Lenovo o Asus, con 16 GB de RAM m?nimo. Si no juegas, con 800 a 1.000 euros vas servido. Y ante la duda t?cnica, pregunta a alguien que sepa antes de pagar.",
-          "Resumen para profes ocupados: para clases, edici?n y multitarea, m?delo por si mueve videojuegos y tendr?s potencia de sobra. Sin juegos, 800-1.000 euros bastan. Con juegos, apunta a unos 1.200. Mac, fuera si quieres jugar."
+          "El Acer Nitro 5 ha sido un compa?ero estupendo y me ha dado todo lo que le he pedido durante años. Pero un port?til bueno es el que encaja con tus necesidades, no el que usa otro, asé que no te voy a recomendar que corras a comprar el m?o, que además ya es difácil de encontrar.",
+          "Si te llevas una sola idea de aquí, que sea esta: decide primero para qu? vas a usarlo de verdad. Si juegas, sube a la franja de los 1.200 euros y mira algo actual, Lenovo o Asus, con 16 GB de RAM mínimo. Si no juegas, con 800 a 1.000 euros vas servido. Y ante la duda t?cnica, pregunta a alguien que sepa antes de pagar.",
+          "Resumen para profes ocupados: para clases, edici?n y multitarea, m?delo por si mueve videojuegos y tendrás potencia de sobra. Sin juegos, 800-1.000 euros bastan. Con juegos, apunta a unos 1.200. Mac, fuera si quieres jugar."
         ]
       }
     ],
     whatItDoes:
       "El Acer Nitro 5 es mi port?til principal desde 2022 y esta ficha lo usa como ejemplo pr?ctico para explicar qu? criterios sigo al elegir un ordenador para clases, edici?n, multitarea y juegos.",
     howIUseIt:
-      "Lo uso como ordenador principal para dar clases, grabar v?deos, editar audio y v?deo, hacer tareas administrativas, trabajar con muchas pesta?as abiertas y jugar.",
+      "Lo uso como ordenador principal para dar clases, grabar vídeos, editar audio y v?deo, hacer tareas administrativas, trabajar con muchas pesta?as abiertas y jugar.",
     teacherUseCases: [
       "Dar clases online sin que el equipo sufra.",
       "Editar v?deo y audio con margen suficiente.",
@@ -4360,9 +4360,9 @@ export const tools: Tool[] = [
       "Pensar la compra de un port?til en funci?n de necesidades reales."
     ],
     honestVerdict:
-      "El Acer Nitro 5 ha sido un grand?simo compa?ero de trabajo, pero no comprar?a este modelo concreto hoy. Lo ?til aqu? no es copiar mi port?til, sino quedarte con mis criterios: 16 GB de RAM m?nimo, potencia suficiente para editar y margen para trabajar c?modo. Si juegas, sube presupuesto; si no juegas, no hace falta tanto.",
+      "El Acer Nitro 5 ha sido un grand?simo compa?ero de trabajo, pero no comprar?a este modelo concreto hoy. Lo ?til aquí no es copiar mi port?til, sino quedarte con mis criterios: 16 GB de RAM mínimo, potencia suficiente para editar y margen para trabajar c?modo. Si juegas, sube presupuesto; si no juegas, no hace falta tanto.",
     importantNotice:
-      "Esta ficha no recomienda comprar el Acer Nitro 5 AN515-44 hoy. El enlace afiliado que aparece aqu? no es para este modelo, sino para el ASUS TUF Gaming A16 que tengo fichado como referencia para una compra futura. A ti te cuesta lo mismo y a m? me llega una peque?a comisi?n si acabas compr?ndolo.",
+      "Esta ficha no recomienda comprar el Acer Nitro 5 AN515-44 hoy. El enlace afiliado que aparece aquí no es para este modelo, sino para el ASUS TUF Gaming A16 que tengo fichado como referencia para una compra futura. A ti te cuesta lo mismo y a mí me llega una pequeña comisi?n si acabas compr?ndolo.",
     metrics: [
       { label: "Uso desde", value: "2022" },
       { label: "RAM m?nima", value: "16 GB" },
@@ -4372,10 +4372,10 @@ export const tools: Tool[] = [
       { label: "Mi Nitro 5", value: "Comprado en 2022" },
       { label: "Si juegas", value: "Referencia alrededor de 1.200 ?" },
       { label: "Si no juegas", value: "800-1.000 ? puede bastar" },
-      { label: "Afiliaci?n", value: "S?, solo en la referencia ASUS" }
+      { label: "Afiliación", value: "S?, solo en la referencia ASUS" }
     ],
     priceNote:
-      "No pongo un precio actual del Nitro 5 porque este modelo ya no es una compra que recomendar?a. Si buscas algo parecido hoy, la referencia ?til es el rango de precio y las especificaciones que s? te encajan a ti.",
+      "No pongo un precio actual del Nitro 5 porque este modelo ya no es una compra que recomendaría. Si buscas algo parecido hoy, la referencia ?til es el rango de precio y las especificaciones que sé te encajan a ti.",
     purchaseLinks: [
       {
         label: "Ver el ASUS TUF de referencia",
@@ -4405,10 +4405,10 @@ export const tools: Tool[] = [
       {
         question: "?Por qu? uso un port?til gaming para dar clases?",
         answer:
-          "Porque si un ordenador puede con juegos actuales, normalmente va sobrado para clases, edici?n, grabaci?n y multitarea seria."
+          "Porque si un ordenador puede con juegos actuales, normalmente va sobrado para clases, edici?n, grabación y multitarea seria."
       },
       {
-        question: "?Cu?nta RAM pedir?a como m?nimo?",
+        question: "?Cu?nta RAM pedir?a como mínimo?",
         answer:
           "M?nimo 16 GB. Por debajo de eso, yo no me lo plantear?a para un equipo principal de trabajo."
       },
@@ -4505,7 +4505,7 @@ export const tools: Tool[] = [
         title: "Lo que me gusta y lo que no",
         paragraphs: [
           "Lo que más valoro es lo más simple: me aporta calma, me transmite buen rollo y me deja más tranquilo. La meditación diaria me quita la pereza de decidir qué hacer, la meditación libre con sonidos es perfecta para combinar con un paseo, y el catálogo es lo bastante variado como para no aburrirme con lo mismo.",
-          "¿Y lo que menos? No puedo hablarte de limitaciones ni de problemas. Para el uso que le doy, no me he topado con nada que me moleste. No es que sea perfecta y yo lo sepa todo de ella, es que le pido una cosa muy concreta, ayudarme a parar y respirar, y eso lo cumple."
+          "¿Y lo que menosé No puedo hablarte de limitaciones ni de problemas. Para el uso que le doy, no me he topado con nada que me moleste. No es que sea perfecta y yo lo sepa todo de ella, es que le pido una cosa muy concreta, ayudarme a parar y respirar, y eso lo cumple."
         ]
       },
       {
@@ -4887,7 +4887,7 @@ export const tools: Tool[] = [
         title: "Lo que me gusta y lo que no",
         paragraphs: [
           "Lo que más valoro ya lo has visto: la claridad de su diseño minimalista, lo bien que va para el texto, y esas dos funciones, los botones y la publicación de páginas como web. Para organizar el trabajo de un profe sin marearte, encaja de maravilla.",
-          "¿Y los límites? El primero es justo su minimalismo: si buscas algo muy visual y lleno de adornos, Notion no es para ti. Y el segundo está en el plan gratuito, que solo te permite compartir tu Notion con un número limitado de personas. Si necesitas colaborar con mucha gente, ahí te empuja al plan de pago."
+          "¿Y los límitesé El primero es justo su minimalismo: si buscas algo muy visual y lleno de adornos, Notion no es para ti. Y el segundo está en el plan gratuito, que solo te permite compartir tu Notion con un número limitado de personas. Si necesitas colaborar con mucha gente, ahí te empuja al plan de pago."
         ]
       },
       {
