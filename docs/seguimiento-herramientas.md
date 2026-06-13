@@ -10,18 +10,18 @@ Su única función es servir como panel de control editorial del estado de las f
 |---|---|---|---|
 | ChatGPT | Sí | 1.0 | No |
 | Canva | Sí | 3.0 | No |
-| OpusClip | Sí | 1.0 | Sí |
+| OpusClip | Sí | 3.0 | Sí |
 | DaVinci Resolve | Sí | 3.0 | No |
 | iLovePDF | Sí | 3.0 | No |
-| Kommodo | Sí | 1.0 | Sí |
+| Kommodo | Sí | 3.0 | Sí |
 | SoundMadeSeen | Sí | 3.0 | Sí |
 | HappyScribe | Sí | 1.0 | Sí |
 | SpeakPipe | Sí | 3.0 | No |
-| Metricool | Sí | 1.0 | Sí |
+| Metricool | Sí | 3.0 | Sí |
 | WordPress | Sí | 3.0 | No |
 | Webempresa | Sí | 3.0 | Sí |
 | MailPoet | Sí | 1.0 | No |
-| Audacity | Sí | 1.0 | No |
+| Audacity | Sí | 3.0 | No |
 | Spotify for Podcasters | Sí | 3.0 | No |
 | Squoosh | Sí | 1.0 | No |
 | LastPass | Sí | 1.0 | No |
@@ -31,11 +31,11 @@ Su única función es servir como panel de control editorial del estado de las f
 | Ventilador recargable silencioso | Sí | 1.0 | Sí |
 | Audio-Technica ATR2100x-USB | Sí | 1.0 | Sí |
 | Filtro antipop InnoGear | Sí | 1.0 | Sí |
-| Logitech C920 | Sí | 1.0 | Sí |
-| Acer Nitro 5 | Sí | 1.0 | No |
+| Logitech C920 | Sí | 3.0 | Sí |
+| Acer Nitro 5 | Sí | 3.0 | Sí |
 | Petit BamBou | Sí | 3.0 | No |
 | f.lux | Sí | 3.0 | No |
-| Notion | Sí | 1.0 | No |
+| Notion | Sí | 3.0 | No |
 | LearnDash | No | — | No |
 | WooCommerce | No | — | No |
 | Zoom | No | — | No |
