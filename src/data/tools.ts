@@ -4290,50 +4290,197 @@ export const tools: Tool[] = [
   {
     name: "Notion",
     slug: "notion",
-    tagline: "Un espacio flexible para organizar recursos, proyectos, ideas y bases de conocimiento.",
-    category: "Organización",
-    subcategories: ["productividad", "bases de conocimiento", "planificación"],
+    title: "Notion: cómo organizo mis textos y mis podcasts (y publico webs en un clic)",
+    metaDescription:
+      "Uso Notion por su claridad para organizar textos y montar la estructura de mis episodios con botones. Te cuento qué me encanta, sus límites y por qué lo prefiero a Airtable.",
+    keywords: [
+      "Notion",
+      "Notion para profesores",
+      "organizar con Notion",
+      "Notion para texto",
+      "publicar página web con Notion",
+      "plantillas y botones en Notion"
+    ],
+    tagline:
+      "La herramienta que uso para organizar textos, montar la estructura de mis podcasts y publicar páginas web en un clic.",
+    category: "Productividad",
+    subcategories: ["productividad", "documentación", "organización", "texto", "podcast"],
     pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.notion.so/",
     hasAffiliate: false,
     myUseCase:
-      "Lo usaría como centro de operaciones para guardar herramientas, ideas de clase, recursos propios, guiones y proyectos en marcha.",
+      "Lo uso para organizar y escribir, sobre todo textos y estructuras de episodios de podcast con botones que me ahorran empezar de cero cada vez.",
     bestFor: [
-      "Profes con muchos recursos dispersos",
-      "Creadores que necesitan ordenar ideas",
-      "Equipos pequeños que quieren una base común"
+      "Profes que trabajan mucho con texto y documentación",
+      "Creadores que quieren ordenar ideas, guiones y proyectos",
+      "Quien busca claridad antes que efectos y decoración",
+      "Personas que quieren publicar una página web rápida sin complicarse"
     ],
     notFor: [
-      "Quien solo necesita una lista de tareas sencilla",
-      "Quien se pierde ajustando sistemas en vez de usarlos"
+      "Quien quiere una herramienta muy visual y decorativa",
+      "Quien necesita bases de datos más potentes que textuales",
+      "Quien solo quiere una lista de tareas mínima",
+      "Quien se pierde montando sistemas y nunca se pone a usarlos"
     ],
     pros: [
-      "Muy flexible",
-      "Bueno para crear bibliotecas internas",
-      "Permite conectar notas, tablas y documentos"
+      "Su diseño minimalista da mucha claridad.",
+      "Funciona muy bien para escribir y organizar textos.",
+      "Los botones ahorran repetir estructuras una y otra vez.",
+      "Puedes publicar páginas como web en un clic.",
+      "El plan gratuito da bastante de sí para uso individual."
     ],
     cons: [
-      "Puede volverse demasiado complejo",
-      "Requiere disciplina para mantenerlo ordenado"
+      "Si buscas algo muy visual, se te puede quedar seco.",
+      "El plan gratuito limita la colaboración con más gente.",
+      "La IA integrada no me aporta mucho frente a otras herramientas.",
+      "Si te lías montando sistemas, puedes perderte en vez de trabajar."
     ],
-    alternatives: ["Obsidian", "Airtable", "Google Docs"],
+    alternatives: ["Airtable", "ChatGPT"],
     rating: 4,
     difficulty: "media",
-    status: "probada",
-    updatedAt: "2026-05-30",
+    editorialVersion: "3.0",
+    status: "importante",
+    updatedAt: "2026-06-13",
     intro:
-      "Notion puede ser un buen taller interno para profesores que acumulan ideas, materiales y proyectos en demasiados rincones digitales.",
+      "Notion es mi herramienta para organizar y escribir, y lo primero que tienes que saber es que apuesta por la claridad por encima de todo.",
+    narrativeIntro: [
+      "Notion es mi herramienta para organizar y escribir, y lo primero que tienes que saber es que apuesta por la claridad por encima de todo. Si te gustan mucho los colorinchis y llenarlo todo de efectos, imágenes y tal, te aviso: no está pensado para eso. Es bastante minimalista, precisamente para dar prioridad a la claridad. Y para mí, eso es una virtud, no un defecto.",
+      "Esta ficha es para profes que se preguntan dónde ordenar sus ideas, sus textos y sus proyectos sin perderse. Te cuento para qué lo uso, las dos funciones que me tienen enamorado y dónde están sus límites."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es Notion",
+        paragraphs: [
+          "Notion es una plataforma de productividad y documentación. Te permite crear páginas, bases de datos y todo tipo de contenido, con un enfoque muy centrado en el texto.",
+          "Puedes montar tablas si quieres, pero su terreno natural, al menos para mí, es escribir y organizar."
+        ],
+        actions: [
+          {
+            label: "Ir a Notion",
+            url: "https://www.notion.so/"
+          }
+        ]
+      },
+      {
+        title: "Por qué Notion y no Airtable",
+        paragraphs: [
+          "Antes había probado Airtable, que está más centrado en tablas inteligentes que en otra cosa. Y aunque no es mala herramienta, me quedé con Notion por una razón muy concreta: funciona mejor con texto que con tablas.",
+          "Si lo tuyo son las bases de datos potentes, quizá Airtable te encaje más. Si lo tuyo es escribir, ordenar ideas y documentar, Notion gana."
+        ]
+      },
+      {
+        title: "Las dos funciones que me encantan",
+        paragraphs: [
+          "Aquí está lo que de verdad quería contarte, porque son dos cosas que no todo el mundo conoce.",
+          "La primera son los botones. Hay una función que me encanta, que es la de crear botones: tú creas un botón y dentro le añades una serie de bloques, textos y contenidos que se manifiestan cada vez que lo presionas. Te pongo mi ejemplo real: tengo una estructura que utilizo siempre en los episodios de mi podcast, así que cuando voy a crear un episodio nuevo, hago clic en el botón y se me genera una página nueva con los bloques básicos que tengo que ir completando para hacer el guion. Cero pereza, cero empezar de cero cada vez. Puede sonar un poco lioso, pero es cuestión de ponerte a trastear. Ya verás que es una gozada.",
+          "La segunda es que puedes publicar tus páginas como páginas web. Es decir, compartes una página con un enlace y eso queda publicado, accesible para cualquiera. Esto abre una posibilidad muy chula: si estás pensando en lanzar tu web y te da miedo toda la parte técnica, que sepas que puedes tener una hoy mismo en Notion, al menos de manera temporal, mientras te montas algo más serio. Para profundizar en ese paso, te dejo la categoría de [Construir mi web](/construir-mi-web)."
+        ],
+        actions: [
+          {
+            label: "Probar Notion",
+            url: "https://www.notion.so/"
+          }
+        ]
+      },
+      {
+        title: "La IA de Notion (que yo no uso)",
+        paragraphs: [
+          "Como todas las herramientas hoy en día, Notion tiene una inteligencia artificial integrada que te asiste con los textos, te revisa cosas y demás. En la versión gratuita es muy limitada, así que eso ya cada uno que valore si lo necesita.",
+          "En mi caso, no me hace falta, porque ya tengo otras historias para eso, como [ChatGPT](/herramientas/chatgpt). Te lo cuento para que sepas que existe, pero no es lo que me lleva a usar Notion."
+        ]
+      },
+      {
+        title: "Lo que me gusta y lo que no",
+        paragraphs: [
+          "Lo que más valoro ya lo has visto: la claridad de su diseño minimalista, lo bien que va para el texto, y esas dos funciones, los botones y la publicación de páginas como web. Para organizar el trabajo de un profe sin marearte, encaja de maravilla.",
+          "¿Y los límites? El primero es justo su minimalismo: si buscas algo muy visual y lleno de adornos, Notion no es para ti. Y el segundo está en el plan gratuito, que solo te permite compartir tu Notion con un número limitado de personas. Si necesitas colaborar con mucha gente, ahí te empuja al plan de pago."
+        ]
+      },
+      {
+        title: "Precio y modelo",
+        paragraphs: [
+          "Tiene plan gratuito y plan de pago. La diferencia principal, por lo que a mí me afecta, está en cuánta gente puede compartir tu espacio y en el acceso a esa IA integrada con más capacidad.",
+          "El precio exacto lo dejo como pendiente para no darte una cifra que cambie, así que confírmalo en notion.so. Para un uso individual como el mío, el plan gratuito da mucho de sí."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "La alternativa que conozco de primera mano es Airtable, que ya te he comentado: mejor si lo tuyo son las tablas inteligentes, peor si lo tuyo es el texto.",
+          "Para la parte de IA, yo tiro de otras herramientas como ChatGPT en lugar de la de Notion. Más allá de eso, no he probado otras a fondo, así que el resto lo dejo como pendiente."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Notion es una gran herramienta si valoras la claridad y trabajas mucho con texto. A mí me ha conquistado sobre todo por los botones, que me ahorran montar la misma estructura una y otra vez, y por poder publicar páginas como web en un momento. No es para quien quiere algo muy decorado y visual, pero si lo que buscas es orden y foco, es de lo mejor que hay.",
+          "Lo recomiendo mucho, sobre todo a profes que escriben y organizan bastante. Eso sí, dale un rato de trasteo al principio, porque su potencial no se ve hasta que te pones a juguetear con él.",
+          "Resumen para profes ocupados: plataforma minimalista ideal para organizar y escribir, con dos joyas, botones para contenido repetible y publicar páginas como web. No es para amantes de lo muy visual."
+        ]
+      }
+    ],
     whatItDoes:
-      "Combina documentos, bases de datos, listas, calendarios y páginas enlazadas en un espacio editable.",
+      "Notion combina documentos, bases de datos, botones, listas y páginas enlazadas en un espacio editable muy centrado en el texto y la organización.",
     howIUseIt:
-      "Lo usaría para construir una biblioteca viva: ideas de episodios, fichas de herramientas, secuencias de clase y recursos propios conectados.",
+      "Lo uso sobre todo para organizar textos y para montar la estructura repetible de mis episodios de podcast con botones que me generan páginas y bloques base.",
     teacherUseCases: [
-      "Organizar una biblioteca de actividades por nivel y objetivo.",
-      "Planificar una newsletter o calendario de contenidos.",
-      "Centralizar enlaces, lecturas y recursos para alumnos.",
-      "Documentar procesos repetibles del negocio educativo."
+      "Organizar guiones, textos y recursos de trabajo.",
+      "Montar plantillas repetibles para episodios, clases o procesos.",
+      "Publicar una página web simple mientras montas algo más serio.",
+      "Documentar proyectos y materiales sin perder claridad."
     ],
     honestVerdict:
-      "Tiene mucho potencial si se usa con sobriedad. Si empiezas a diseñar el sistema perfecto, acabas construyendo una catedral para guardar tres notas y una lista de tareas."
+      "Notion es una gran herramienta si valoras la claridad y trabajas mucho con texto. No es para quien quiere algo muy visual, pero si buscas orden, foco y un sistema cómodo para escribir y organizar, funciona de maravilla.",
+    importantNotice:
+      "El plan gratuito da mucho de sí para uso individual, pero si necesitas colaborar con más personas o te interesa la IA integrada con más capacidad, conviene revisar los planes actuales en su web oficial.",
+    metrics: [
+      { label: "Enfoque", value: "Texto y organización" },
+      { label: "Plan base", value: "Gratis" },
+      { label: "Estado", value: "Importante" }
+    ],
+    priceRows: [
+      { label: "Plan gratuito", value: "Sí" },
+      { label: "Plan de pago", value: "Sí" },
+      { label: "Precio exacto", value: "Confirmar en la web oficial" }
+    ],
+    priceNote:
+      "No fijo aquí una cifra porque puede cambiar. Para mi uso, la referencia importante es que el plan gratuito me parece suficiente si trabajas por tu cuenta.",
+    purchaseLinks: [
+      {
+        label: "Ir a Notion",
+        url: "https://www.notion.so/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "ChatGPT",
+        url: "/herramientas/chatgpt"
+      },
+      {
+        label: "Spotify for Podcasters",
+        url: "/herramientas/spotify-for-podcasters"
+      },
+      {
+        label: "Construir mi web",
+        url: "/construir-mi-web"
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Me vale el plan gratuito?",
+        answer:
+          "Para un uso individual, da mucho de sí. El plan de pago entra en juego sobre todo si necesitas compartir tu espacio con mucha gente o quieres la IA integrada con más capacidad."
+      },
+      {
+        question: "¿De verdad puedo montar una web con Notion?",
+        answer:
+          "Puedes publicar tus páginas como web mediante un enlace. No es una web profesional al uso, pero para empezar rápido o salir del paso mientras montas algo más serio, va estupendamente."
+      },
+      {
+        question: "¿Notion o Airtable?",
+        answer:
+          "Si trabajas sobre todo con texto y documentación, Notion. Si lo tuyo son las tablas y bases de datos potentes, mira Airtable."
+      }
+    ]
   }
 ];
