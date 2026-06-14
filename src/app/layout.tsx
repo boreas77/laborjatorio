@@ -47,6 +47,21 @@ export default function RootLayout({
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
+        <img
+          src="https://tracker.metricool.com/c3po.jpg?hash=797c2f69c1499494f4c8714d8313dc60"
+          alt=""
+          aria-hidden="true"
+          width="1"
+          height="1"
+          loading="eager"
+          style={{
+            height: 1,
+            opacity: 0,
+            pointerEvents: "none",
+            position: "absolute",
+            width: 1
+          }}
+        />
       </body>
     </html>
   );
