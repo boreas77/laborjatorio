@@ -1202,15 +1202,19 @@ main {
   color: #984545;
 }
 
-.need-sales-cta {
+.tool-page .prose section.need-sales-cta {
   border: 2px dashed var(--accent);
+  border-bottom: 2px dashed var(--accent);
   border-radius: 8px;
-  margin: 34px 0 40px;
-  padding: clamp(22px, 4vw, 34px);
+  box-sizing: border-box;
+  margin: 42px 0 48px;
+  padding: clamp(34px, 5vw, 52px);
 }
 
-.need-sales-cta h2 {
-  margin-top: 0;
+.tool-page .prose section.need-sales-cta h2 {
+  font-weight: 850;
+  line-height: 1.08;
+  margin: 0 0 26px;
 }
 
 .need-sales-cta ul {

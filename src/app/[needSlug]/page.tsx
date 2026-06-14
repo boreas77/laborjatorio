@@ -86,7 +86,9 @@ export default async function NeedPage({ params }: NeedPageProps) {
               ))}
             </div>
 
-            {need.slug === "crear-contenido" ? <CreateContentSalesCta /> : null}
+            {["crear-contenido", "crear-materiales"].includes(need.slug) ? (
+              <CreateContentSalesCta />
+            ) : null}
 
             <section>
               <h2>Herramientas relacionadas</h2>
