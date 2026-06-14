@@ -86,6 +86,8 @@ export default async function NeedPage({ params }: NeedPageProps) {
               ))}
             </div>
 
+            {need.slug === "crear-contenido" ? <CreateContentSalesCta /> : null}
+
             <section>
               <h2>Herramientas relacionadas</h2>
               <InventoryFeed
@@ -115,6 +117,36 @@ export default async function NeedPage({ params }: NeedPageProps) {
         </section>
       )}
     </article>
+  );
+}
+
+function CreateContentSalesCta() {
+  return (
+    <section className="need-sales-cta" aria-labelledby="need-sales-cta-title">
+      <h2 id="need-sales-cta-title">
+        Crear materiales está muy bien, pero que te los compren es todavía mejor
+      </h2>
+      <p>
+        Muchos profes dedican infinitas horas a crear cursos y formaciones, pero luego se
+        topan con dos problemas:
+      </p>
+      <ul>
+        <li>Les da miedito venderlas.</li>
+        <li>Lo intentan, pero los estudiantes pasan en moto (y vuelta al problema 1).</li>
+      </ul>
+      <p>
+        Si quieres que los estudiantes te persigan a ti y no al revés, esto igual te
+        interesa.
+      </p>
+      <div className="need-sales-cta__actions">
+        <a
+          className="need-sales-cta__button"
+          href="https://borjaprofe.com/escritura-persuasiva-para-profes/"
+        >
+          Escritura persuasiva para profes
+        </a>
+      </div>
+    </section>
   );
 }
 

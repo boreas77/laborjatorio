@@ -1202,6 +1202,45 @@ main {
   color: #984545;
 }
 
+.need-sales-cta {
+  border: 2px dashed var(--accent);
+  border-radius: 8px;
+  margin: 34px 0 40px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.need-sales-cta h2 {
+  margin-top: 0;
+}
+
+.need-sales-cta ul {
+  margin: 12px 0 18px;
+}
+
+.need-sales-cta__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.need-sales-cta__button {
+  background: var(--rose);
+  border-radius: 8px;
+  color: #fffdf8;
+  display: inline-flex;
+  font-weight: 850;
+  justify-content: center;
+  line-height: 1.15;
+  padding: 13px 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.need-sales-cta__button:hover {
+  background: #984545;
+  color: #fffdf8;
+}
+
 .tool-single-column {
   max-width: 760px;
 }
