@@ -5,7 +5,24 @@ import { tools } from "@/data/tools";
 export const metadata: Metadata = {
   title: "Inventario",
   description:
-    "Inventario vivo de herramientas que Borja usa, prueba, mantiene o descarta para enseñar español, crear contenido y trabajar online."
+    "Inventario vivo de herramientas para profesores: apps, IA, automatizaciones y recursos que Borja usa, prueba, mantiene o descarta para enseñar español, crear contenido y trabajar online.",
+  keywords: [
+    "herramientas para profesores",
+    "apps para profes",
+    "ia para profesores",
+    "negocio online para profes",
+    "automatizaciones para profes"
+  ],
+  alternates: {
+    canonical: "/inventario"
+  },
+  openGraph: {
+    title: "Inventario de herramientas para profesores",
+    description:
+      "Apps, IA, automatizaciones y recursos que uso para enseñar, crear contenido y gestionar mi negocio online.",
+    type: "website",
+    url: "/inventario"
+  }
 };
 
 type InventoryPageProps = {

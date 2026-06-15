@@ -37,7 +37,13 @@ export async function generateMetadata({ params }: ToolPageProps): Promise<Metad
     openGraph: {
       title,
       description: tool.metaDescription || tool.tagline,
-      type: "article"
+      type: "article",
+      url: `/herramientas/${tool.slug}`
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description: tool.metaDescription || tool.tagline
     }
   };
 }

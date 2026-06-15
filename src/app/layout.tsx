@@ -10,6 +10,16 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
+  keywords: [
+    "herramientas para profes",
+    "herramientas para profesores online",
+    "negocio online para profesores",
+    "crear materiales didacticos",
+    "crear contenido para profes",
+    "automatizaciones para profesores",
+    "apps para profes de espanol",
+    "recursos para profesores de idiomas"
+  ],
   metadataBase: new URL(siteConfig.url),
   icons: {
     icon: "/images/laborjatorio-borja-avatar.jpg",
@@ -33,6 +43,9 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: ["/images/laborjatorio-borja-avatar.jpg"]
+  },
+  alternates: {
+    canonical: "/"
   }
 };
 

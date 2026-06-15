@@ -29,7 +29,23 @@ export async function generateMetadata({ params }: NeedPageProps): Promise<Metad
   return {
     title: need.articleTitle || need.title,
     description:
-      need.metaDescription || `${need.description} Herramientas del Laborjatorio relacionadas con esta necesidad.`
+      need.metaDescription || `${need.description} Herramientas del Laborjatorio relacionadas con esta necesidad.`,
+    keywords: [
+      need.title,
+      "herramientas para profesores",
+      "negocio online para profesores",
+      "recursos para profes"
+    ],
+    alternates: {
+      canonical: `/${need.slug}`
+    },
+    openGraph: {
+      title: need.articleTitle || need.title,
+      description:
+        need.metaDescription || `${need.description} Herramientas del Laborjatorio relacionadas con esta necesidad.`,
+      type: "article",
+      url: `/${need.slug}`
+    }
   };
 }
 
