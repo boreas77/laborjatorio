@@ -98,6 +98,9 @@ Reglas:
 8. La seccion final de compra puede repetirse, pero no debe ser la unica via para llegar a los enlaces.
 9. El estilo del boton debe mantenerse constante en toda la web; por defecto, usar el boton editorial rojo ya establecido.
 10. Evitar muletillas de autopresentacion como "aqui soy transparente" o "voy a ser transparente". Cuando no haya alternativas reales, se dice de forma directa o se elimina esa seccion.
+11. No introducir ni reescribir copy editorial en espanol mediante scripts inline que pasen por codificaciones ambiguas del terminal.
+12. Para texto final visible en la web, usar `apply_patch` o un flujo que garantice UTF-8 real antes de compilar y publicar.
+13. Si despues de una edicion aparecen `?` sustituyendo tildes o signos de apertura, hay que detener la publicacion, corregir el archivo fuente y verificar el HTML publicado antes de dar la tarea por cerrada.
 
 La estructura base orientativa puede incluir:
 

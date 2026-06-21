@@ -1386,51 +1386,51 @@ export const tools: Tool[] = [
   {
     name: "HappyScribe",
     slug: "happyscribe",
-    title: "HappyScribe: c?mo transcribo mis podcasts y los convierto en art?culos casi solos",
+    title: "HappyScribe: cómo transcribo mis podcasts y los convierto en artículos casi solos",
     metaDescription:
-      "Uso HappyScribe cada semana para transcribir mis podcasts, y con una automatizaci?n los convierto casi solos en art?culos del blog. Te cuento c?mo funciona, su precio y cu?ndo merece la pena.",
+      "Uso HappyScribe cada semana para transcribir mis podcasts, y con una automatización los convierto casi solos en artículos del blog. Te cuento cómo funciona, su precio y cuándo merece la pena.",
     keywords: [
       "HappyScribe",
-      "transcribir audio y v?deo",
+      "transcribir audio y vídeo",
       "transcripciones para podcast",
-      "generar subt?tulos",
-      "transcripci?n autom?tica",
-      "transcripci?n con IA",
+      "generar subtítulos",
+      "transcripción automática",
+      "transcripción con IA",
       "pasar audio a texto"
     ],
     tagline:
-      "La herramienta que uso cada semana para transcribir podcasts y convertirlos casi solos en art?culos del blog.",
-    category: "Audio y v?deo",
-    subcategories: ["ia", "audio", "contenido", "productividad", "transcripci?n", "subt?tulos"],
+      "La herramienta que uso cada semana para transcribir podcasts y convertirlos casi solos en artículos del blog.",
+    category: "Audio y vídeo",
+    subcategories: ["ia", "audio", "contenido", "productividad", "transcripción", "subtítulos"],
     pricing: "suscripcion",
     officialUrl: "https://www.happyscribe.com",
     affiliateUrl: "https://happyscribe.cello.so/QLTRpQgTSlY",
     hasAffiliate: true,
     myUseCase:
-      "La uso todas las semanas para transcribir mis podcasts y convertirlos en texto reutilizable. Con una automatizaci?n, esos episodios acaban casi solos convertidos en art?culos del blog.",
+      "La uso todas las semanas para transcribir mis podcasts y convertirlos en texto reutilizable. Con una automatización, esos episodios acaban casi solos convertidos en artículos del blog.",
     bestFor: [
-      "Profes y creadores que graban podcast, v?deos o formaciones",
+      "Profes y creadores que graban podcast, vídeos o formaciones",
       "Quien quiere reutilizar lo grabado sin teclear media vida",
-      "Quien necesita subt?tulos y transcripciones dentro del mismo flujo",
+      "Quien necesita subtítulos y transcripciones dentro del mismo flujo",
       "Quien quiere montar automatizaciones a partir de transcripciones"
     ],
     notFor: [
       "Quien transcribe un audio suelto una vez cada muchos meses",
-      "Quien espera una transcripci?n perfecta sin revisar nada",
-      "Quien no va a aprovechar ni subt?tulos ni reutilizaci?n del texto",
-      "Quien no quiere pagar una suscripci?n mensual"
+      "Quien espera una transcripción perfecta sin revisar nada",
+      "Quien no va a aprovechar ni subtítulos ni reutilización del texto",
+      "Quien no quiere pagar una suscripción mensual"
     ],
     pros: [
       "Hace las mejores transcripciones que he encontrado hasta el momento.",
-      "Permite editar texto, nombrar interlocutores y sacar subt?tulos.",
+      "Permite editar texto, nombrar interlocutores y sacar subtítulos.",
       "Tiene API y encaja muy bien en automatizaciones.",
-      "Me ahorra much?simas horas cuando lo conecto con IA y Telegram.",
-      "Sirve tanto para transcribir como para convertir episodios en art?culos."
+      "Me ahorra muchísimas horas cuando lo conecto con IA y Telegram.",
+      "Sirve tanto para transcribir como para convertir episodios en artículos."
     ],
     cons: [
-      "La transcripci?n no queda perfecta y requiere revisi?n.",
-      "La oferta de AppSumo con la que entr? ya no existe.",
-      "Hoy la entrada normal es por suscripci?n mensual.",
+      "La transcripción no queda perfecta y requiere revisión.",
+      "La oferta de AppSumo con la que entré ya no existe.",
+      "Hoy la entrada normal es por suscripción mensual.",
       "Para un uso muy puntual puede no compensar pagar cada mes."
     ],
     alternatives: [],
@@ -1440,18 +1440,18 @@ export const tools: Tool[] = [
     status: "imprescindible",
     updatedAt: "2026-06-21",
     intro:
-      "Si haces podcast, v?deos o formaciones, hay una tarea que aparece una y otra vez: pasar a texto lo que has grabado.",
+      "Si haces podcast, vídeos o formaciones, hay una tarea que aparece una y otra vez: pasar a texto lo que has grabado.",
     narrativeIntro: [
-      "Si haces podcast, v?deos o formaciones, hay una tarea que aparece una y otra vez: pasar a texto lo que has grabado. Para subt?tulos, para art?culos de blog, para reutilizar lo que dices en clase, para tener un guion de algo que improvisaste.",
-      "HappyScribe es la herramienta que uso todas las semanas justo para eso. Hace las mejores transcripciones que he encontrado hasta el momento, y adem?s me permite montar un flujo que me ahorra un mont?n de horas."
+      "Si haces podcast, vídeos o formaciones, hay una tarea que aparece una y otra vez: pasar a texto lo que has grabado. Para subtítulos, para artículos de blog, para reutilizar lo que dices en clase, para tener un guion de algo que improvisaste.",
+      "HappyScribe es la herramienta que uso todas las semanas justo para eso. Hace las mejores transcripciones que he encontrado hasta el momento, y además me permite montar un flujo que me ahorra un montón de horas."
     ],
     narrativeSections: [
       {
-        title: "Qu? es y c?mo funciona",
+        title: "Qué es y cómo funciona",
         paragraphs: [
-          "El funcionamiento es simple. Coges un link, por ejemplo de un v?deo de YouTube, o subes un archivo de audio o v?deo desde tu ordenador, y te lo transcribe. Esperas un poco y tienes tu texto.",
-          "A partir de ah? no es solo texto y a correr: puedes editar la transcripci?n, nombrar a las personas que hablan, lo cual es ?til si es una entrevista o una conversaci?n a varias voces, y exportar subt?tulos a partir del archivo transcrito.",
-          "Si quieres mirarlo por tu cuenta, te dejo [la web oficial](https://www.happyscribe.com) y tambi?n [mi enlace de afiliado](https://happyscribe.cello.so/QLTRpQgTSlY): a ti te cuesta lo mismo y a m? me cae una peque?a comisi?n que ayuda a mantener el Laborjatorio."
+          "El funcionamiento es simple. Coges un link, por ejemplo de un vídeo de YouTube, o subes un archivo de audio o vídeo desde tu ordenador, y te lo transcribe. Esperas un poco y tienes tu texto.",
+          "A partir de ahí no es solo texto y a correr: puedes editar la transcripción, nombrar a las personas que hablan, lo cual es útil si es una entrevista o una conversación a varias voces, y exportar subtítulos a partir del archivo transcrito.",
+          "Si quieres mirarlo por tu cuenta, te dejo [la web oficial](https://www.happyscribe.com) y también [mi enlace de afiliado](https://happyscribe.cello.so/QLTRpQgTSlY): a ti te cuesta lo mismo y a mí me cae una pequeña comisión que ayuda a mantener el Laborjatorio."
         ],
         actions: [
           {
@@ -1463,30 +1463,30 @@ export const tools: Tool[] = [
       {
         title: "La calidad y las revisiones",
         paragraphs: [
-          "Voy con la verdad por delante. ?Queda impecable? No. No te va a quedar perfecto, y siempre requiere una revisi?n manual para corregir nombres, interlocutores y alg?n error suelto. Es lo normal en cualquier transcripci?n autom?tica.",
-          "Hay una opci?n curiosa, y es que pagando un extra puedes contratar a personas humanas para que te lo revisen. Yo nunca he hecho eso. Con la transcripci?n autom?tica m?s mi repaso me llega de sobra."
+          "Voy con la verdad por delante. ¿Queda impecable? No. No te va a quedar perfecto, y siempre requiere una revisión manual para corregir nombres, interlocutores y algún error suelto. Es lo normal en cualquier transcripción automática.",
+          "Hay una opción curiosa, y es que pagando un extra puedes contratar a personas humanas para que te lo revisen. Yo nunca he hecho eso. Con la transcripción automática más mi repaso me llega de sobra."
         ]
       },
       {
-        title: "Lo que lo cambi? todo: la IA y mis automatizaciones",
+        title: "Lo que lo cambió todo: la IA y mis automatizaciones",
         paragraphs: [
-          "Antes dedicaba un buen rato a retocar bien las transcripciones, una a una, a mano. La buena noticia es que con la inteligencia artificial esto se acelera much?simo.",
-          "Ahora mismo tengo creada una automatizaci?n en la que simplemente env?o el enlace a [Telegram](/herramientas/telegram), y a partir de ah? se hace la transcripci?n, una inteligencia la retoca y corrige los errores, y se sube todo al blog como art?culo. De grabar a tener el art?culo publicado, casi sin tocar nada.",
-          "Esto es posible porque HappyScribe tiene API para conectarla con otras herramientas, que es justo lo que aprovecho para automatizar y convertir los episodios en art?culos. De esta filosof?a hablo a fondo en [Ahorrar tiempo](/ahorrar-tiempo)."
+          "Antes dedicaba un buen rato a retocar bien las transcripciones, una a una, a mano. La buena noticia es que con la inteligencia artificial esto se acelera muchísimo.",
+          "Ahora mismo tengo creada una automatización en la que simplemente envío el enlace a [Telegram](/herramientas/telegram), y a partir de ahí se hace la transcripción, una inteligencia la retoca y corrige los errores, y se sube todo al blog como artículo. De grabar a tener el artículo publicado, casi sin tocar nada.",
+          "Esto es posible porque HappyScribe tiene API para conectarla con otras herramientas, que es justo lo que aprovecho para automatizar y convertir los episodios en artículos. De esta filosofía hablo a fondo en [Ahorrar tiempo](/ahorrar-tiempo)."
         ]
       },
       {
         title: "Otros usos",
         paragraphs: [
-          "M?s all? de transcribir, HappyScribe permite crear subt?tulos directamente para tus v?deos, que salen del propio archivo transcrito, as? que matas dos p?jaros de un tiro.",
-          "Tambi?n tiene cada vez m?s opciones de IA para tomar notas de reuniones, aunque eso todav?a no lo he probado, porque esa funci?n ya la cubro con [Zoom](/herramientas/zoom)."
+          "Más allá de transcribir, HappyScribe permite crear subtítulos directamente para tus vídeos, que salen del propio archivo transcrito, así que matas dos pájaros de un tiro.",
+          "También tiene cada vez más opciones de IA para tomar notas de reuniones, aunque eso todavía no lo he probado, porque esa función ya la cubro con [Zoom](/herramientas/zoom)."
         ]
       },
       {
         title: "Precio y modelo",
         paragraphs: [
-          "Yo la compr? en su momento mediante un pago ?nico en AppSumo, que me da un n?mero limitado de horas a la semana. Esa oferta ya no existe, as? que hoy solo puedes acceder mediante suscripci?n mensual.",
-          "No es un defecto de la herramienta, pero s? un cambio importante respecto a mi punto de partida: yo no pago cada mes y t? probablemente s?. Como estas cifras cambian, confirma siempre el precio actualizado en [happyscribe.com](https://www.happyscribe.com)."
+          "Yo la compré en su momento mediante un pago único en AppSumo, que me da un número limitado de horas a la semana. Esa oferta ya no existe, así que hoy solo puedes acceder mediante suscripción mensual.",
+          "No es un defecto de la herramienta, pero sí un cambio importante respecto a mi punto de partida: yo no pago cada mes y tú probablemente sí. Como estas cifras cambian, confirma siempre el precio actualizado en [happyscribe.com](https://www.happyscribe.com)."
         ],
         actions: [
           {
@@ -1496,54 +1496,54 @@ export const tools: Tool[] = [
         ]
       },
       {
-        title: "Cu?ndo merece la pena",
+        title: "Cuándo merece la pena",
         paragraphs: [
           "Merece la pena para un perfil concreto: si tu estrategia de visibilidad se basa en el podcast, o si creas cursos con muchas transcripciones, te va a interesar invertir algo de dinero en esto.",
-          "Y si solo la necesitas de forma puntual, mira la opci?n de contratar un n?mero de horas en lugar de atarte a una mensualidad. Ajusta el gasto a tu uso real."
+          "Y si solo la necesitas de forma puntual, mira la opción de contratar un número de horas en lugar de atarte a una mensualidad. Ajusta el gasto a tu uso real."
         ]
       },
       {
         title: "Alternativas",
         paragraphs: [
-          "Antes de usar HappyScribe prob? alguna herramienta gratuita, alguna vez una que se llama Turbo no s? qu?, pero no tiene punto de comparaci?n. HappyScribe hace un acabado mucho m?s profesional, y por eso me qued? con ella.",
-          "Y luego est?n las herramientas que uso para tareas vecinas, que no son lo mismo que transcribir: para reuniones tiro de [Zoom](/herramientas/zoom), y para pulir un texto me apoyo en [ChatGPT](/herramientas/chatgpt). Si lo tuyo es el audio de podcast, en el Laborjatorio tienes tambi?n [Audacity](/herramientas/audacity) y [Spotify for Podcasters](/herramientas/spotify-for-podcasters), que juegan en otra parte del proceso."
+          "Antes de usar HappyScribe probé alguna herramienta gratuita, alguna vez una que se llama Turbo no sé qué, pero no tiene punto de comparación. HappyScribe hace un acabado mucho más profesional, y por eso me quedé con ella.",
+          "Y luego están las herramientas que uso para tareas vecinas, que no son lo mismo que transcribir: para reuniones tiro de [Zoom](/herramientas/zoom), y para pulir un texto me apoyo en [ChatGPT](/herramientas/chatgpt). Si lo tuyo es el audio de podcast, en el Laborjatorio tienes también [Audacity](/herramientas/audacity) y [Spotify for Podcasters](/herramientas/spotify-for-podcasters), que juegan en otra parte del proceso."
         ]
       },
       {
         title: "Veredicto",
         paragraphs: [
-          "HappyScribe hace, para m?, las mejores transcripciones que he encontrado, y donde de verdad se dispara es cuando la conectas con la IA y la automatizaci?n. Convertir un episodio en un art?culo casi sin tocar nada es de esas cosas que, una vez las pruebas, no quieres soltar.",
-          "La recomiendo sin dudar a profes y creadores que van en serio con su podcast, sus v?deos o sus formaciones. Para un uso muy espor?dico, valora la opci?n por horas antes que la mensualidad.",
-          "Resumen para profes ocupados: transcribe audio y v?deo desde un enlace o un archivo, genera subt?tulos y, con su API, te permite montar automatizaciones que convierten tus episodios en art?culos casi solos. No queda perfecta, pero es la mejor que he probado. Hoy va por suscripci?n mensual."
+          "HappyScribe hace, para mí, las mejores transcripciones que he encontrado, y donde de verdad se dispara es cuando la conectas con la IA y la automatización. Convertir un episodio en un artículo casi sin tocar nada es de esas cosas que, una vez las pruebas, no quieres soltar.",
+          "La recomiendo sin dudar a profes y creadores que van en serio con su podcast, sus vídeos o sus formaciones. Para un uso muy esporádico, valora la opción por horas antes que la mensualidad.",
+          "Resumen para profes ocupados: transcribe audio y vídeo desde un enlace o un archivo, genera subtítulos y, con su API, te permite montar automatizaciones que convierten tus episodios en artículos casi solos. No queda perfecta, pero es la mejor que he probado. Hoy va por suscripción mensual."
         ]
       }
     ],
     whatItDoes:
-      "Transcribe audio y v?deo a texto, permite editar esa transcripci?n, sacar subt?tulos y usar la API para conectarlo con otros flujos de automatizaci?n.",
+      "Transcribe audio y vídeo a texto, permite editar esa transcripción, sacar subtítulos y usar la API para conectarlo con otros flujos de automatización.",
     howIUseIt:
-      "La uso cada semana para transcribir mis podcasts y convertirlos en texto reutilizable. Lo m?s potente en mi caso no es solo la transcripci?n, sino c?mo la conecto con Telegram e IA para publicar art?culos casi sin tocar nada.",
+      "La uso cada semana para transcribir mis podcasts y convertirlos en texto reutilizable. Lo más potente en mi caso no es solo la transcripción, sino cómo la conecto con Telegram e IA para publicar artículos casi sin tocar nada.",
     teacherUseCases: [
-      "Transcribir podcasts y convertirlos en art?culos de blog.",
-      "Generar subt?tulos para v?deos educativos.",
+      "Transcribir podcasts y convertirlos en artículos de blog.",
+      "Generar subtítulos para vídeos educativos.",
       "Pasar clases o formaciones grabadas a texto.",
-      "Enviar la transcripci?n a una IA para limpiarla, resumirla o reutilizarla."
+      "Enviar la transcripción a una IA para limpiarla, resumirla o reutilizarla."
     ],
     honestVerdict:
-      "HappyScribe es una de las herramientas m?s ?tiles de todo mi flujo. La uso todas las semanas y, conectada con automatizaciones, me ahorra una barbaridad de horas. No queda perfecta, pero es la mejor que he probado y por eso sigue aqu? como imprescindible.",
+      "HappyScribe es una de las herramientas más útiles de todo mi flujo. La uso todas las semanas y, conectada con automatizaciones, me ahorra una barbaridad de horas. No queda perfecta, pero es la mejor que he probado y por eso sigue aquí como imprescindible.",
     importantNotice:
-      "Yo entr? con una oferta antigua de AppSumo y esa situaci?n ya no es la normal. Si entras hoy, probablemente lo har?s por suscripci?n mensual. El enlace de esta ficha es de afiliado.",
+      "Yo entré con una oferta antigua de AppSumo y esa situación ya no es la normal. Si entras hoy, probablemente lo harás por suscripción mensual. El enlace de esta ficha es de afiliado.",
     metrics: [
       { label: "Uso real", value: "Semanal" },
       { label: "Estado", value: "Imprescindible" },
       { label: "Entrada original", value: "AppSumo" }
     ],
     priceRows: [
-      { label: "Modelo actual", value: "Suscripci?n mensual" },
-      { label: "Mi entrada", value: "Pago ?nico antiguo en AppSumo" },
-      { label: "Afiliaci?n", value: "S?" }
+      { label: "Modelo actual", value: "Suscripción mensual" },
+      { label: "Mi entrada", value: "Pago único antiguo en AppSumo" },
+      { label: "Afiliación", value: "Sí" }
     ],
     priceNote:
-      "Los planes cambian, as? que conviene confirmarlos siempre en la web oficial antes de pagar. La diferencia importante es esa: mi acceso viene de una oferta antigua y hoy la v?a normal es la suscripci?n.",
+      "Los planes cambian, así que conviene confirmarlos siempre en la web oficial antes de pagar. La diferencia importante es esa: mi acceso viene de una oferta antigua y hoy la vía normal es la suscripción.",
     purchaseLinks: [
       {
         label: "Ver HappyScribe",
@@ -1573,19 +1573,19 @@ export const tools: Tool[] = [
         name: "Zoom",
         url: "/herramientas/zoom",
         description:
-          "Lo uso para reuniones y clases online. Si necesito transcripci?n de reuniones, esa parte la cubro por ah?."
+          "Lo uso para reuniones y clases online. Si necesito transcripción de reuniones, esa parte la cubro por ahí."
       },
       {
         name: "ChatGPT",
         url: "/herramientas/chatgpt",
         description:
-          "No transcribe por s? solo en este flujo, pero me sirve para pulir texto, corregir incoherencias y reutilizar mejor lo transcrito."
+          "No transcribe por sí solo en este flujo, pero me sirve para pulir texto, corregir incoherencias y reutilizar mejor lo transcrito."
       },
       {
         name: "Audacity",
         url: "/herramientas/audacity",
         description:
-          "Juega en otra parte del proceso: editar el audio antes o despu?s, no transcribirlo."
+          "Juega en otra parte del proceso: editar el audio antes o después, no transcribirlo."
       },
       {
         name: "Spotify for Podcasters",
@@ -1596,19 +1596,19 @@ export const tools: Tool[] = [
     ],
     faqs: [
       {
-        question: "?La transcripci?n queda perfecta?",
+        question: "¿La transcripción queda perfecta?",
         answer:
-          "No. Siempre conviene un repaso para corregir nombres, interlocutores y alg?n error. Lo bueno es que con una IA encima ese repaso se acelera much?simo."
+          "No. Siempre conviene un repaso para corregir nombres, interlocutores y algún error. Lo bueno es que con una IA encima ese repaso se acelera muchísimo."
       },
       {
-        question: "?Me sirve si solo transcribo de vez en cuando?",
+        question: "¿Me sirve si solo transcribo de vez en cuando?",
         answer:
-          "Para uso puntual, mira la opci?n de contratar un n?mero de horas en lugar de una suscripci?n mensual. Si vives del podcast o los cursos, ah? s? compensa el plan recurrente."
+          "Para uso puntual, mira la opción de contratar un número de horas en lugar de una suscripción mensual. Si vives del podcast o los cursos, ahí sí compensa el plan recurrente."
       },
       {
-        question: "?Hace falta saber programar para las automatizaciones?",
+        question: "¿Hace falta saber programar para las automatizaciones?",
         answer:
-          "No para empezar, pero s? dedicarle un rato a configurarlo. Tiene API, y con eso puedes conectarla con otras herramientas para automatizar todo el proceso."
+          "No para empezar, pero sí dedicarle un rato a configurarlo. Tiene API, y con eso puedes conectarla con otras herramientas para automatizar todo el proceso."
       }
     ]
   },
