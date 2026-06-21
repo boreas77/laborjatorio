@@ -15,7 +15,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | iLovePDF | Sí | 3.0 | No |
 | Kommodo | Sí | 3.0 | Sí |
 | SoundMadeSeen | Sí | 3.0 | Sí |
-| HappyScribe | Sí | 1.0 | Sí |
+| HappyScribe | Sí | 3.0 | Sí |
 | SpeakPipe | Sí | 3.0 | No |
 | Metricool | Sí | 3.0 | Sí |
 | WordPress | Sí | 3.0 | No |
