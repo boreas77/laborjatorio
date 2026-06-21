@@ -3204,81 +3204,180 @@ export const tools: Tool[] = [
   {
     name: "LastPass",
     slug: "lastpass",
-    title: "LastPass: 336 contraseñas guardadas y solo recuerdo una",
-    tagline: "336 contraseñas guardadas. Solo recuerdo una.",
+    title: "LastPass: cómo guardo todas mis contraseñas sin volverme loco",
+    metaDescription:
+      "Uso LastPass para guardar todas mis contraseñas en una bóveda y recordar solo una. Te cuento cómo lo uso, su plan gratuito generoso y la advertencia importante sobre su filtración de seguridad.",
+    keywords: [
+      "LastPass",
+      "gestor de contraseñas",
+      "guardar contraseñas seguras",
+      "contraseña maestra",
+      "gestor de contraseñas gratis",
+      "seguridad para profesores online"
+    ],
+    tagline:
+      "La bóveda con la que guardo todas mis contraseñas y solo tengo que recordar una clave maestra.",
     category: "Productividad",
-    subcategories: ["seguridad", "organización"],
+    subcategories: ["seguridad", "organización", "productividad", "contraseñas"],
     pricing: "gratis-con-plan-pago",
     officialUrl: "https://www.lastpass.com",
     hasAffiliate: false,
     myUseCase:
-      "Lo uso en mi ordenador principal para guardar las contraseñas de plataformas educativas, hosting, redes sociales, banca, herramientas de edición y servicios de facturación.",
+      "Lo uso para guardar todas mis contraseñas en una bóveda, generar claves largas y no volverme loco recordándolas una a una.",
     bestFor: [
-      "Profes que gestionan muchas cuentas desde un ordenador principal",
-      "Personas que quieren dejar de reutilizar contraseñas simples",
-      "Quien necesita generar claves largas sin acordarse de todas"
+      "Profes que acumulan muchas cuentas y quieren dejar de ir de kamikaze con la misma clave",
+      "Quien quiere una extensión cómoda que rellene formularios y genere contraseñas",
+      "Quien puede empezar con un solo dispositivo y aprovechar el plan gratuito"
     ],
     notFor: [
-      "Quien no quiera depender de una contraseña maestra",
-      "Quien necesita sincronización gratuita entre móvil, tablet y ordenador"
+      "Quien quiere sincronización gratis entre varios dispositivos",
+      "Quien no quiere asumir el historial de seguridad que arrastra LastPass",
+      "Quien busca guardar información extremadamente sensible como frases semilla de cripto"
     ],
     pros: [
-      "La extensión detecta formularios y rellena automáticamente.",
-      "Generador de contraseñas seguras integrado.",
-      "Organización en carpetas para tener orden con muchas cuentas.",
-      "Versión gratuita completa para un dispositivo.",
-      "No tiene curva de aprendizaje real."
+      "Muy cómodo de usar como extensión del navegador.",
+      "Genera contraseñas seguras y las guarda sin fricción.",
+      "El plan gratuito es generoso para un solo equipo.",
+      "Te permite salir del desastre de repetir la misma contraseña en todo."
     ],
     cons: [
-      "Tuvo una brecha de seguridad en 2022 que no se puede ignorar.",
-      "La contraseña maestra hay que cuidarla: si se pierde, se pierde todo.",
-      "Sin plan de pago no hay sincronización entre dispositivos.",
-      "Como toda herramienta en la nube, requiere confiar en un tercero."
+      "Tuvo una filtración grave en 2022 que no se puede ignorar.",
+      "Si tu contraseña maestra es débil, el riesgo sube mucho.",
+      "El plan gratuito no sincroniza entre varios dispositivos.",
+      "No es la herramienta ideal para guardar secretos tipo frases semilla de criptomonedas."
     ],
-    alternatives: ["Bitwarden", "1Password", "Dashlane"],
+    alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-03",
+    updatedAt: "2026-06-21",
     intro:
-      "LastPass es el gestor de contraseñas que uso para no tener que recordar las 336 claves que viven repartidas por mi vida digital.",
+      "A medida que vas acumulando herramientas, llega un momento en que tienes un problema de contraseñas. LastPass es la herramienta con la que yo resuelvo justo esto.",
     whatItDoes:
-      "LastPass es un gestor de contraseñas que funciona como extensión del navegador. Guarda credenciales en una bóveda cifrada, las rellena automáticamente cuando las necesitas y genera contraseñas nuevas seguras cuando creas una cuenta. La única contraseña que tienes que recordar es la maestra.",
+      "Guarda tus contraseñas en una bóveda cifrada, las rellena automáticamente en el navegador y te permite generar claves largas sin tener que recordarlas todas.",
     howIUseIt:
-      "Tengo LastPass en mi ordenador principal y uso la versión gratuita, que para un único dispositivo es suficiente. Cuando entro en cualquier plataforma, la extensión detecta el formulario y rellena usuario y contraseña. Antes tenía dos opciones igual de malas: reutilizar contraseñas simples o apuntarlas en algún sitio poco seguro. Ahora cada cuenta tiene una contraseña generada, larga y única, y yo no sé ninguna de ellas. Solo la maestra.",
+      "Lo uso como extensión del navegador para guardar todas mis claves en una bóveda y recordar solo la contraseña maestra. Así dejo de reutilizar contraseñas y no dependo de mi memoria para cada herramienta.",
     teacherUseCases: [
-      "Guardar accesos de plataformas educativas y herramientas de clase.",
-      "Gestionar credenciales de hosting, web, redes sociales y servicios de facturación.",
+      "Guardar accesos de plataformas educativas y herramientas del negocio.",
       "Generar contraseñas largas y únicas al crear cuentas nuevas.",
-      "Organizar muchas cuentas en carpetas sin convertir el navegador en una libreta de claves."
+      "Centralizar credenciales de web, correo, banca y servicios de trabajo.",
+      "Evitar el clásico desastre de repetir la misma contraseña en todo."
     ],
     honestVerdict:
-      "Llevo cuatro o cinco años con LastPass y no lo he cambiado, incluso después del susto de 2022. Funciona y la versión gratuita es suficiente para trabajar desde un ordenador. No lo recomendaría sin mencionar la brecha, porque eso sería hacerte un flaco favor. Pero tampoco lo descarto por eso: ellos avisaron, yo reforcé mis hábitos y aquí seguimos.",
+      "Me resuelve un problema muy real y me resulta cómodo, pero no te la vendería como si no arrastrara nada detrás. Usar un gestor de contraseñas sigue siendo mejor que repetir la misma clave en todo, pero con LastPass tienes que decidir sabiendo que su filtración de 2022 fue seria.",
     importantNotice:
-      "Ojo antes de seguir: en 2022 LastPass sufrió una brecha de seguridad. Ellos mismos avisaron a todos los usuarios. Lo cuento aquí porque si no lo cuento, esta ficha miente por omisión. Sigo usándolo, pero con más criterio: contraseña maestra muy larga, vigilancia activa y autenticación de dos factores en las cuentas críticas con herramientas externas, no dentro de LastPass.",
+      "Estado provisional: me sigue resultando útil, pero esta ficha queda marcada por la filtración de 2022 y por la duda razonable sobre hasta qué punto conviene seguir confiando en LastPass si empiezas hoy de cero.",
+    narrativeIntro: [
+      "A medida que vas acumulando herramientas, y como profe es muy probable que lo hagas, llega un momento en que tienes un problema de contraseñas. Y solo tienes dos opciones malas. O ser un kamikaze que pone una única contraseña para todo, y el día que te la hackean te pueden acceder a todo. O poner un montón de contraseñas diferentes, que es lo que se debería hacer, pero claro, luego tienes el problema de si se te olvidan o pierdes el acceso.",
+      "LastPass es la herramienta con la que yo resuelvo justo esto. Esta ficha es para profes que se reconocen en ese lío y se preguntan cómo gestiono mis contraseñas sin ser un kamikaze ni volverme loco recordándolas."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué es y cómo funciona",
+        paragraphs: [
+          "LastPass es, básicamente, una bóveda para tus contraseñas. Lo que hace es guardártelas todas, y tú solamente tienes que memorizar una contraseña muy larga, la maestra, para acceder a todo lo demás. Una sola llave para abrir el cofre entero. Además, te permite tomar anotaciones y guardar información privada, no solo claves.",
+          "Se instala de forma muy sencilla, como una extensión en tu navegador, por ejemplo en [Brave](/herramientas/brave). Y a partir de ahí es muy cómodo, la verdad: te genera contraseñas automáticamente cuando te registras en un sitio y te las guarda sin que tengas que hacer nada.",
+          "Si quieres verla por tu cuenta, aquí tienes [la web oficial de LastPass](https://www.lastpass.com)."
+        ],
+        actions: [
+          {
+            label: "Ver LastPass",
+            url: "https://www.lastpass.com"
+          }
+        ]
+      },
+      {
+        title: "Advertencia de seguridad: la filtración de LastPass",
+        paragraphs: [
+          "Aquí tengo que parar, porque no sería justo recomendarte LastPass sin contarte esto con claridad. En 2022 LastPass sufrió una filtración grave, y no fue ninguna tontería.",
+          "La brecha llegó en dos fases. Primero robaron información técnica y código fuente. Después, usando esa información, accedieron a copias de seguridad de las bóvedas de clientes y a metadatos como correos, teléfonos y direcciones de webs guardadas.",
+          "Las contraseñas no estaban en claro, porque la bóveda va cifrada con tu contraseña maestra. Pero al tener una copia de la bóveda, un atacante puede intentar descifrarla sin prisa y sin conexión, y ahí una contraseña maestra débil se convierte en un problema serio.",
+          "Entonces, traducido al mundo real: si tienes una cuenta anterior a diciembre de 2022, da por hecho que tu bóveda cifrada pudo estar entre las robadas. Usa una contraseña maestra larguísima, cambia las claves importantes y activa la verificación en dos pasos donde puedas. Y no guardes ahí cosas tipo frases semilla de cripto."
+        ]
+      },
+      {
+        title: "Mi postura con todo esto",
+        paragraphs: [
+          "Mi postura, con todos los datos delante, es matizada. Usar un gestor de contraseñas sigue siendo mucho mejor que ir de kamikaze con la misma clave en todo, y a mí LastPass me sigue resultando cómodo.",
+          "Pero LastPass arrastra este historial, así que si empiezas hoy de cero, es totalmente legítimo que te plantees si quieres confiar en ellos o mirar otra opción. No hay nada 100% seguro en internet, y aquí menos aún por las bravas."
+        ]
+      },
+      {
+        title: "Planes: el gratuito es muy generoso",
+        paragraphs: [
+          "Yo utilizo el plan gratuito, y es tan generoso que por eso me quedo en él. Básicamente, puedes guardar todas las contraseñas que quieras, sin límite de número. Para mucha gente, con eso sobra.",
+          "¿Dónde está el truco? En la sincronización. En el plan gratuito no puedes sincronizar entre varios dispositivos. Si quieres tener esto en ordenador, móvil y tablet, entonces toca mirar un plan de pago."
+        ],
+        actions: [
+          {
+            label: "Ver LastPass",
+            url: "https://www.lastpass.com"
+          }
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "El plan gratuito es justo eso, gratis, y muy completo para guardar tus claves en un solo equipo. Los planes de pago entran en juego sobre todo por la sincronización entre dispositivos.",
+          "No te doy cifras exactas porque cambian, así que conviene confirmarlas directamente en la web oficial antes de decidir."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "LastPass me resuelve un problema muy real, el de tener decenas de contraseñas sin convertirme en un kamikaze digital, y lo hace de forma muy cómoda y con un plan gratuito generoso. Estoy contento con ella en el día a día.",
+          "Dicho esto, no te la vendo como infalible, porque ninguna lo es, y porque arrastra la filtración de 2022, que fue seria. Mi postura es matizada: usar un gestor de contraseñas es mucho mejor que no usarlo, y este me cumple, pero con una contraseña maestra fuerte por bandera y sabiendo en lo que te metes.",
+          "Resumen para profes ocupados: bóveda de contraseñas con una sola clave maestra, extensión de navegador muy cómoda y plan gratuito generoso para un dispositivo. Ojo importante con la filtración de 2022: protege la contraseña maestra y no guardes ahí secretos especialmente delicados."
+        ]
+      }
+    ],
     priceRows: [
-      { label: "Un solo dispositivo", value: "Gratis" },
-      { label: "Sincronización entre varios dispositivos", value: "Plan de pago" },
-      { label: "Cuándo pagar", value: "Si trabajas desde móvil, tablet y ordenador" }
+      { label: "Plan gratuito", value: "Sí" },
+      { label: "Qué cubre bien", value: "Un solo dispositivo" },
+      { label: "Cuándo pagar", value: "Si necesitas sincronización entre varios dispositivos" }
     ],
     priceNote:
-      "Si solo usas el ordenador, la versión gratuita llega. Si necesitas que tu móvil y tu ordenador estén coordinados, el plan de pago existe, funciona y el precio no va a ser el problema.",
-    alternativeDetails: [
+      "Si solo usas el ordenador, el plan gratuito da bastante de sí. Si necesitas coordinación real entre móvil, tablet y ordenador, ahí sí toca plantearse el pago.",
+    metrics: [
+      { label: "Estado", value: "Importante (provisional)" },
+      { label: "Mi uso", value: "Actual" },
+      { label: "Filtración grave", value: "Sí, en 2022" }
+    ],
+    purchaseLinks: [
       {
-        name: "Bitwarden",
-        url: "https://bitwarden.com/"
+        label: "Ver LastPass",
+        url: "https://www.lastpass.com"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Brave",
+        url: "/herramientas/brave"
       },
       {
-        name: "1Password",
-        url: "https://1password.com/"
+        label: "Notion",
+        url: "/herramientas/notion"
       },
       {
-        name: "Dashlane",
-        url: "https://www.dashlane.com/"
+        label: "Google Drive",
+        url: "/herramientas/google-drive"
+      }
+    ],
+    faqs: [
+      {
+        question: "¿Es seguro usar LastPass después de la filtración?",
+        answer:
+          "La filtración de 2022 fue seria: robaron copias de las bóvedas cifradas, y con el tiempo se han vinculado robos reales a contraseñas maestras débiles. Si la usas, tu protección clave es una contraseña maestra larga y única, cambiar tus claves importantes y no guardar ahí frases semilla de cripto."
+      },
+      {
+        question: "¿Me vale el plan gratuito?",
+        answer:
+          "Para guardar todas tus contraseñas en un solo dispositivo, sí. Si necesitas sincronizarlas entre ordenador, móvil y tablet, ahí tendrás que mirar los planes de pago."
       }
     ],
     cta:
-      "Si te interesa organizar mejor tu vida digital como profesor, en borjaprofe.com cuento estas cosas con calma."
+      "Si te interesa organizar mejor tu vida digital como profesor, en borjaprofe.com cuento estas cosas con más calma."
   },
   {
     name: "Standing Desk Maidesite",
