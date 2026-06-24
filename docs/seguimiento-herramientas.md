@@ -27,8 +27,8 @@ Su única función es servir como panel de control editorial del estado de las f
 | LastPass | Sí | 3.0 | No |
 | Standing Desk Maidesite | Sí | 3.0 | Sí |
 | Silla de oficina de malla | Sí | 3.0 | Sí |
-| Inphic PM6 | Sí | 1.0 | Sí |
-| Ventilador recargable silencioso | Sí | 1.0 | Sí |
+| Inphic PM6 | Sí | 3.0 | Sí |
+| Ventilador recargable silencioso | Sí | 3.0 | No |
 | Audio-Technica ATR2100x-USB | Sí | 3.0 | Sí |
 | Filtro antipop InnoGear | Sí | 3.0 | No |
 | Logitech C920 | Sí | 3.0 | Sí |

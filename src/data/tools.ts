@@ -3763,72 +3763,136 @@ export const tools: Tool[] = [
   {
     name: "Inphic PM6",
     slug: "inphic-pm6",
-    title: "Inphic PM6: el ratón inalámbrico barato con el que trabajo cada día",
+    title: "Ratón inalámbrico barato: el Inphic PM6 que repito sin pensarlo",
     metaDescription:
-      "Uso un ratón inalámbrico barato, de unos 20 euros, con botones laterales para navegar rápido entre mis mil pestañas. Te cuento por qué repito el mismo modelo y para quién tiene sentido.",
+      "Uso un ratón inalámbrico de unos 20 euros con botones laterales para avanzar y retroceder entre pestañas. Me dura años y repito modelo sin pensarlo. Te cuento por qué.",
     keywords: [
+      "ratón inalámbrico",
       "Inphic PM6",
-      "ratón inalámbrico barato",
       "ratón con botones laterales",
-      "ratón para teletrabajo",
+      "ratón barato para teletrabajo",
       "ratón recargable",
       "ratón para profesores online"
     ],
     tagline:
-      "El ratón inalámbrico barato que uso a diario por una razón muy simple: funciona y tiene botones laterales.",
+      "El ratón inalámbrico barato que repito sin pensarlo porque cumple, dura y tiene justo los botones que necesito.",
     category: "Equipo físico",
     subcategories: ["ergonomía", "productividad", "hardware", "ratón", "teletrabajo"],
     pricing: "pago-unico",
-    officialUrl: "https://www.amazon.es/",
     affiliateUrl: "https://amzn.to/4uexpYP",
     hasAffiliate: true,
     myUseCase:
-      "Lo uso como ratón principal para trabajar, navegar entre pestañas, preparar clases y moverme rápido por el navegador gracias a sus botones laterales.",
+      "Lo uso a diario para trabajar, moverme entre pestañas, preparar clases y navegar más rápido gracias a los botones laterales de avanzar y retroceder.",
     bestFor: [
-      "Profes online que quieren un ratón inalámbrico barato",
-      "Quien trabaja con muchas pestañas abiertas",
-      "Personas que quieren botones laterales para avanzar y retroceder",
-      "Quien busca una compra sencilla y funcional sin gastar de más"
+      "Profes online que solo quieren un ratón cómodo y barato para trabajar a gusto",
+      "Quien vive con muchas pestañas abiertas y quiere avanzar y retroceder con el pulgar",
+      "Quien busca un ratón recargable y sencillo sin pensar demasiado la compra"
     ],
     notFor: [
-      "Quien necesita un ratón ergonómico vertical o muy específico",
-      "Gamers exigentes que buscan precisión y respuesta de gama alta",
-      "Diseñadores o editores que necesitan funciones avanzadas",
-      "Quien quiere una comparativa técnica profunda de ratones"
+      "Quien busca un ratón ergonómico muy específico",
+      "Quien necesita una comparativa técnica seria entre muchos modelos",
+      "Quien quiere funciones avanzadas más allá de la navegación diaria"
     ],
     pros: [
-      "Es barato: ronda los 20 euros o menos.",
-      "Tiene dos botones laterales muy útiles para navegar.",
-      "Es inalámbrico y recargable.",
-      "Se puede usar mientras carga.",
-      "Me ha durado varios años con uso diario."
+      "Es barato, unos 20 euros o menos.",
+      "Los botones laterales ahorran mucho tiempo en el navegador.",
+      "Es inalámbrico, recargable y se puede usar mientras carga.",
+      "Con uso normal me dura años.",
+      "No requiere pensar demasiado: compras y te olvidas."
     ],
     cons: [
-      "No tiene características ergonómicas avanzadas.",
-      "No es una compra para quien necesita precisión gaming seria.",
-      "No hay una web oficial clara del producto fuera de Amazon.",
-      "No he hecho una comparativa real con otros modelos."
+      "No aporta nada especial más allá de cumplir bien.",
+      "No he detectado pegas reales, pero tampoco lo analizo como si fuera hardware premium.",
+      "Si buscas ergonomía avanzada, tendrás que mirar otra cosa."
     ],
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     status: "importante",
-    updatedAt: "2026-06-05",
+    updatedAt: "2026-06-24",
     intro:
-      "Vamos a hablar de algo que como profes online usamos todos los días y que, a la vez, no es ni de lejos lo más importante de nuestro equipo: el ratón. Te lo digo ya para rebajar expectativas: aquí no tienes que tomar una decisión súper acertada, cualquiera te sirve. Pero ya que toca comprar uno, te cuento cuál uso yo y por qué repito el mismo modelo.",
+      "El ratón es una herramienta que como profes online usamos todos los días, y aun así no es ni de lejos la más importante. Aquí no tienes que tomar una decisión súper acertada, porque casi cualquiera sirve.",
     whatItDoes:
-      "El Inphic PM6 es un ratón inalámbrico económico. Lo que me interesa de él no es una lista infinita de especificaciones, sino cuatro cosas muy concretas: no tiene cable, se carga por USB, puedes seguir usándolo mientras carga y trae dos botones laterales para avanzar y retroceder en el navegador.",
+      "Es un ratón inalámbrico barato y recargable con dos botones laterales que uso sobre todo para avanzar y retroceder entre páginas del navegador.",
     howIUseIt:
-      "Lo uso cada día para trabajar con muchas pestañas abiertas. Los botones laterales son la clave: avanzar y retroceder con el pulgar, sin ir a buscar la flecha del navegador, agiliza mucho cuando estás investigando, preparando clases o creando materiales. Cuando el anterior se gastó después de unos años, no me puse a estudiar el mercado: compré el mismo otra vez.",
+      "Lo uso cada día para trabajar con muchas pestañas abiertas. Lo mejor son los botones laterales: avanzar y retroceder con el pulgar agiliza mucho cuando estás preparando clases, investigando o creando materiales. Cuando el anterior murió, compré el mismo sin pensarlo.",
     teacherUseCases: [
-      "Moverte rápido entre páginas mientras preparas una clase.",
-      "Trabajar con muchas pestañas sin depender tanto del teclado o de la barra del navegador.",
-      "Tener un ratón inalámbrico barato para clases, administración y creación de materiales.",
-      "Seguir trabajando aunque se agote la batería, conectándolo por USB.",
-      "Resolver una compra pequeña sin convertirla en una investigación de tres tardes."
+      "Avanzar y retroceder entre páginas mientras preparas clases o materiales.",
+      "Tener un ratón recargable barato para el trabajo diario.",
+      "Seguir trabajando si se queda sin batería, usándolo con cable.",
+      "Resolver una compra pequeña sin convertirla en una investigación absurda."
     ],
     honestVerdict:
-      "No te voy a vender que este ratón te va a cambiar la vida, porque sería mentira y porque un ratón es un ratón. Pero es cómodo, es barato, tiene los botones laterales que de verdad uso a diario y me ha durado años. Por eso repito modelo sin pensármelo. Si eres profe online y solo quieres algo que funcione sin gastar de más, es una opción de las de compra y olvídate.",
+      "No te voy a vender que este ratón te cambie la vida, porque un ratón es un ratón. Pero es barato, cómodo, tiene los botones que uso de verdad y me dura años. Por eso repito modelo sin pensarlo.",
+    narrativeIntro: [
+      "El ratón es una herramienta que como profes online usamos todos los días, y aun así no es ni de lejos la más importante. Aquí no tienes que tomar una decisión súper acertada, porque casi cualquiera sirve.",
+      "Por eso esta ficha es de las relajadas: te cuento el que uso, un Inphic inalámbrico de unos veinte euros, y por qué lo repito sin darle más vueltas. Si solo quieres saber qué ratón comprar para trabajar a gusto sin gastar ni pensar de más, va por aquí."
+    ],
+    narrativeSections: [
+      {
+        title: "Qué uso y por qué",
+        paragraphs: [
+          "Lo que me gusta de este, aparte de ser cómodo, es que es inalámbrico. A estas alturas trabajar con un ratón con cable no tiene mucho sentido para mí. Pero el detalle que de verdad me conquistó son los dos botoncitos laterales, que no todos los ratones traen.",
+          "Esos dos botones los uso principalmente para avanzar y retroceder por la navegación. Y se nota: cuando estás investigando, preparando clases o creando materiales, es muy probable que tengas un millón de pestañas abiertas. Poder moverte con el pulgar, sin ir a buscar la flecha del navegador, agiliza muchísimo las cosas.",
+          "Si lo quieres ver, puedes hacerlo desde [mi enlace de afiliado de Amazon](https://amzn.to/4uexpYP): a ti te cuesta lo mismo y a mí me cae una pequeña comisión que ayuda a mantener el Laborjatorio."
+        ],
+        actions: [
+          {
+            label: "Ver ratón en Amazon",
+            url: "https://amzn.to/4uexpYP"
+          }
+        ]
+      },
+      {
+        title: "Cómo funciona",
+        paragraphs: [
+          "Nada complicado, y eso es bueno. Viene con un cable que te sirve para cargarlo, así que es recargable y te olvidas de andar comprando pilas.",
+          "Y un detalle práctico: no tienes que dejarlo cargando parado. Si se te agota la batería en mitad de la faena, lo conectas con el cable y lo sigues usando sin problemas. Además tiene otro botón para ajustar la sensibilidad, que está bien para dejarlo a tu gusto."
+        ]
+      },
+      {
+        title: "Por qué repito el mismo modelo",
+        paragraphs: [
+          "Aquí va mi filosofía con esto: un ratón no es una compra que haya que meditar demasiado. El último que tuve me duró dos o tres años, que teniendo en cuenta el uso que le doy me parece que está muy bien.",
+          "Así que cuando le llegó la hora, no me puse a investigar mil opciones ni a leer comparativas. Compré el mismo y a seguir. Yo con este me conformo, y esa tranquilidad de no tener que pensar también vale."
+        ]
+      },
+      {
+        title: "Lo que menos me gusta",
+        paragraphs: [
+          "No le reporto ninguna limitación real. Es un ratón barato que cumple, y para mi uso no le he encontrado pegas.",
+          "Lo único que te digo es sobre la durabilidad: a mí me dura dos o tres años, pero si tú no te dedicas a matar zombis y alienígenas haciendo clic como un loco, seguramente te durará todavía más. Para trabajo de profe, va sobradísimo."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Unos veinte euros o incluso menos, en Amazon. Es de esas compras que no merecen ni un minuto de agobio: poco dinero, cumple, y si se gasta en un par de años, repites y listo."
+        ],
+        actions: [
+          {
+            label: "Ver ratón en Amazon",
+            url: "https://amzn.to/4uexpYP"
+          }
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "No te voy a marear con alternativas, porque sería deshonesto: yo no valoro otras opciones, ya que para mí un ratón es una compra simple que va de funcionalidad básica y poco más.",
+          "Mi único criterio sería este: que sea inalámbrico, recargable y que tenga esos dos botones laterales. Con eso, casi cualquier ratón decente te servirá."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Este Inphic inalámbrico es un ratón barato, cómodo y con un par de detalles que marcan la diferencia en el día a día: los botones laterales para navegar y la opción de usarlo enchufado cuando se queda sin batería.",
+          "No es una compra para perder el sueño, y precisamente por eso me encanta, porque cumple y me olvido de ella durante años. Si valoras los botones de avanzar y retroceder, lo vas a agradecer cada día con tu millón de pestañas abiertas.",
+          "Resumen para profes ocupados: ratón inalámbrico recargable de unos 20 euros con botones laterales para avanzar y retroceder. Dura años con uso normal, se usa enchufado si se queda sin batería. Barato, cómodo y para olvidarte."
+        ]
+      }
+    ],
     metrics: [
       { label: "Precio habitual", value: "~20 € o menos" },
       { label: "Duración anterior", value: "2-3 años" },
@@ -3842,53 +3906,61 @@ export const tools: Tool[] = [
     ],
     priceNote:
       "El precio puede cambiar según disponibilidad y vendedor. Lo importante aquí no es perseguir una oferta exacta, sino la idea: un ratón inalámbrico barato con botones laterales basta para la mayoría de profes online.",
+    purchaseLinks: [
+      {
+        label: "Ver ratón en Amazon",
+        url: "https://amzn.to/4uexpYP"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Brave",
+        url: "/herramientas/brave"
+      },
+      {
+        label: "Acer Nitro 5",
+        url: "/herramientas/acer-nitro-5"
+      },
+      {
+        label: "Mi escritorio",
+        url: "/mi-escritorio"
+      }
+    ],
     faqs: [
       {
-        question: "¿El Inphic PM6 merece la pena para dar clases online?",
+        question: "¿Merece la pena gastar más en un ratón?",
         answer:
-          "Sí, si buscas un ratón barato, inalámbrico y cómodo para trabajo diario. No es una pieza crítica del equipo, pero cumple de sobra."
+          "Para trabajo de profe, en mi opinión no hace falta. Uno barato con botones laterales y recargable cumple de sobra. Solo gastaría más si buscas características ergonómicas muy concretas."
       },
       {
-        question: "¿Por qué me importan tanto los botones laterales?",
+        question: "¿Para qué sirven los botones laterales?",
         answer:
-          "Porque sirven para avanzar y retroceder en el navegador con el pulgar. Cuando trabajas con muchas pestañas, ese gesto pequeño se nota muchísimo."
-      },
-      {
-        question: "¿Se puede usar mientras carga?",
-        answer:
-          "Sí. Si se queda sin batería, lo conectas por USB y puedes seguir usándolo."
-      },
-      {
-        question: "¿Lo recomiendo para gaming?",
-        answer:
-          "No como recomendación especializada. Yo juego, pero esta ficha va de trabajo diario como profesor online, no de ratones gaming de alto rendimiento."
+          "Sobre todo para avanzar y retroceder entre páginas con el pulgar, sin tocar las flechas del navegador. Con muchas pestañas abiertas, ahorras un montón de tiempo."
       }
     ]
   },
   {
     name: "Ventilador recargable silencioso",
     slug: "ventilador-recargable-silencioso",
-    title: "Ventilador recargable y silencioso: la herramienta más rara de mi escritorio (y funciona)",
+    title: "Ventilador recargable silencioso: mi capricho para dar clases sin derretirme",
     metaDescription:
-      "Un ventilador recargable y casi sin ruido, en el escritorio apuntando a la cara, me ha salvado los veranos dando clases online. No es para tus alumnos, es para ti.",
+      "Un ventilador recargable y casi silencioso de unos 15 euros me salva los veranos dando clases online sin aire acondicionado. No es material para alumnos, es para ti. Te cuento.",
     keywords: [
       "ventilador recargable silencioso",
       "ventilador de escritorio silencioso",
       "ventilador para teletrabajo",
-      "ventilador para dar clases online",
+      "dar clases online con calor",
       "ventilador USB recargable",
-      "confort del profesor online"
+      "accesorios para profesores online"
     ],
     tagline:
-      "Un ventilador pequeño, recargable y casi sin ruido para sobrevivir al verano dando clases online.",
+      "Un ventilador pequeño, recargable y silencioso para no derretirte delante de la pantalla en verano.",
     category: "Equipo físico",
     subcategories: ["ergonomía", "bienestar", "productividad", "hardware", "confort"],
     pricing: "pago-unico",
-    officialUrl: "https://www.amazon.es/",
-    affiliateUrl: "https://amzn.to/4as6XDV",
-    hasAffiliate: true,
+    hasAffiliate: false,
     myUseCase:
-      "Lo tengo en el escritorio apuntando a la cara durante los días de calor. No es para los alumnos: es para estar cómodo mientras doy clase o trabajo frente a la pantalla.",
+      "Lo uso en el escritorio, apuntando a la cara, para dar clase o trabajar en verano sin derretirme y sin meter ruido en el micrófono.",
     bestFor: [
       "Profes online que dan clase en verano sin aire acondicionado",
       "Quien quiere refrescarse sin meter ruido en el micrófono",
@@ -3903,29 +3975,29 @@ export const tools: Tool[] = [
     ],
     pros: [
       "Apenas hace ruido, que es lo clave con el micrófono abierto.",
-      "Es recargable por USB.",
-      "También puede funcionar con pilas.",
-      "Tiene 5 velocidades.",
-      "Es barato y ocupa poco en el escritorio."
+      "Es recargable y con potencia regulable.",
+      "Es barato y ocupa poco en el escritorio.",
+      "Me hace mucho más llevadero dar clase con calor."
     ],
     cons: [
       "No es un recurso para clase ni para tus alumnos.",
       "No enfría una habitación entera.",
-      "No tiene mucho misterio: es un ventilador pequeño con varias velocidades.",
-      "La marca no tiene una página oficial clara de referencia."
+      "De momento no tengo marca ni modelo exacto cerrados para enlazar.",
+      "Es un accesorio de confort personal, no una compra importante del setup."
     ],
     alternatives: [],
     rating: 4,
     difficulty: "facil",
+    editorialVersion: "3.0",
     hideDifficulty: true,
     status: "opcional",
-    updatedAt: "2026-06-06",
+    updatedAt: "2026-06-24",
     intro:
-      "Esto te parecerá una marcianada que te lo recomiende aquí, pero escucha. En el Laborjatorio enseño las herramientas que me rodean mientras trabajo, y resulta que una de las que más agradezco en verano no es un software ni un micrófono: es un ventilador recargable y silencioso que tengo en el escritorio, enchufado a la cara.",
+      "Esto te parecerá una marcianada, pero no todo en el escritorio de un profe online son micrófonos, cámaras y software. A veces lo que te salva el día es un cacharro de quince euros que te echa aire fresco a la cara.",
     whatItDoes:
-      "El modelo que uso es un Jsdoin: un ventilador portátil y plegable que puedes sostener en la mano o dejar plantado en el escritorio. Tiene 5 velocidades, se recarga por USB, también funciona con pilas y trae una pequeña pantalla LED. Pero lo importante para mí es que apenas hace ruido y puedo tenerlo apuntando a la cara mientras doy clase.",
+      "Es un ventilador pequeño, recargable y pensado para el escritorio. Lo importante para mí no es la marca, sino que sea silencioso de verdad, regulable y que pueda tenerlo enchufado a la cara mientras trabajo o doy clase.",
     howIUseIt:
-      "Empecé a dar clases online en Nicaragua, con un ventilador ruidoso detrás que se oía más que yo. Al volver a España agradecí el silencio, hasta que llegó el verano en el País Vasco sin aire acondicionado. Después de aguantar un par de veranos, copié el ventilador que usaba mi novia y lo adopté para mi escritorio. Lo uso en esos días en los que el calor empieza a comerse la paciencia.",
+      "Empecé a dar clases online en Nicaragua, con un ventilador ruidoso detrás que se oía más que yo. Al volver a España agradecí el silencio, hasta que llegó el verano en el País Vasco sin aire acondicionado. Después de un par de veranos aguantando, terminé copiándole uno a mi novia y me lo quedé para el escritorio.",
     teacherUseCases: [
       "Dar clase online en verano sin que el micrófono capte un ventilador enorme de fondo.",
       "Mantenerte cómodo durante sesiones largas frente a la pantalla.",
@@ -3934,39 +4006,83 @@ export const tools: Tool[] = [
       "Tener una solución barata y pequeña para el escritorio."
     ],
     honestVerdict:
-      "De todas las herramientas del Laborjatorio, esta es probablemente la más tonta sobre el papel y una de las que más agradezco en la práctica. Es barata, es silenciosa, es recargable y me ha quitado el agobio de varios veranos dando clase. No le pidas más de lo que es, pero lo que es, lo hace de maravilla.",
+      "Este ventilador no te va a hacer mejor profe. Pero sí te puede hacer un profe más cómodo y de mejor humor en días de calor, y eso, después de varios veranos sufriendo, lo valoro muchísimo.",
     importantNotice:
-      "No es un material para tus alumnos. Es una herramienta para ti, para que estés cómodo dando clase. Y sí, también va de eso un laboratorio de profe: de las cosas pequeñas que te hacen el trabajo más llevadero.",
+      "No es un material para tus alumnos. Es para ti. Lo meto aquí porque el confort del profe también forma parte del trabajo.",
+    narrativeIntro: [
+      "Esto te parecerá una marcianada que te lo recomiende aquí, pero escucha. No todo en el escritorio de un profe online son micrófonos, cámaras y software. A veces, lo que te salva el día es un cacharro de quince euros que te echa aire fresco a la cara.",
+      "Este ventilador recargable y silencioso es justo eso, y te aviso desde ya: no es un material para tus alumnos, es para ti. Esta ficha es para profes que dan clase en verano sin aire acondicionado y se preguntan cómo aguanto las horas de pantalla sin derretirme y sin que el ruido me arruine el audio."
+    ],
+    narrativeSections: [
+      {
+        title: "De dónde viene esto",
+        paragraphs: [
+          "Yo empecé a dar clases online viviendo en Nicaragua, y allí tenía un ventilador a mi espalda que metía un ruido tremendo. Cuando volví a España, de pronto sentí la calma, se me hacía rarísimo ese silencio. Pero claro, llegó el calor.",
+          "Y aquí en el País Vasco, sin aire acondicionado, las horas frente a la pantalla en verano se pueden hacer agobiantes de verdad. Después de un par de veranos aguantando estoicamente, al final me rendí y le copié a mi novia, que ya usaba uno."
+        ]
+      },
+      {
+        title: "Qué es y por qué es una maravilla",
+        paragraphs: [
+          "Es un ventilador pequeño, recargable y pensado para tenerlo en el escritorio. Lo que lo hace especial para nuestro trabajo es que no hace prácticamente nada de ruido, cosa clave si grabas o das clase con micrófono abierto.",
+          "Es recargable, tiene la potencia regulable y se recarga rápido. Es ideal para tenerlo en el escritorio enchufado a la cara en esos momentos de calor. Para mi comodidad personal, es una maravilla."
+        ]
+      },
+      {
+        title: "¿Sirve para tus clases? Seamos claros",
+        paragraphs: [
+          "¿Es un material para clase? No. No tiene ninguna función didáctica, no le va a enseñar nada a tu alumno y no mejora directamente el aprendizaje. Para tu alumno, no. Para ti, sí.",
+          "Ahora bien, si tú estás de buen humor y fresco en lugar de derritiéndote y de mala leche, tu clase lo nota. El confort del profe también es parte del trabajo, y de eso hablo a fondo en la categoría de [Cuidarme](/cuidarme)."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Unos quince euros. Es de esos pequeños gastos que no duelen y que te cambian el verano.",
+          "No te doy marca ni enlace exacto todavía porque lo dejo como pendiente, pero cualquier ventilador recargable, silencioso y con potencia regulable de ese rango de precio te hará el mismo apaño. En cuanto tenga el enlace concreto, lo añado aquí."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "No te voy a inventar una lista de modelos, porque solo conozco el que uso. Mi único criterio, y te vale para elegir cualquiera, es este: que sea recargable, que sea de verdad silencioso y que puedas regular la potencia.",
+          "Con eso, vas servido."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Este ventilador no te va a hacer mejor profe, no nos engañemos. Pero sí te va a hacer un profe más cómodo y de mejor humor en los días de calor, y eso, después de varios veranos sufriendo, lo valoro muchísimo.",
+          "Por quince euros, silencioso y recargable, es uno de esos caprichos pequeños que acaban siendo importantísimos para tu bienestar, aunque no para tu temario.",
+          "Resumen para profes ocupados: ventilador recargable, silencioso y regulable de unos 15 euros para el escritorio. No es para tus alumnos, es para que tú no te derritas dando clase en verano."
+        ]
+      }
+    ],
     metrics: [
       { label: "Precio orientativo", value: "~15 €" },
-      { label: "Velocidades", value: "5" },
-      { label: "Ruido", value: "Muy bajo" }
+      { label: "Ruido", value: "Muy bajo" },
+      { label: "Estado", value: "Opcional" }
     ],
     priceRows: [
       { label: "Tipo de compra", value: "Pago único" },
       { label: "Precio orientativo", value: "Alrededor de 15 €" },
-      { label: "Producto", value: "Jsdoin portátil plegable de escritorio, azul" },
-      { label: "Afiliación", value: "Sí, Amazon" }
+      { label: "Marca y modelo", value: "Pendiente de confirmar" },
+      { label: "Afiliación", value: "Pendiente" }
     ],
     priceNote:
-      "El enlace de Amazon corresponde al ventilador de escritorio silencioso, recargable, pequeño y con potencia ajustable que uso.",
-    alternativeDetails: [
+      "Cuando tenga marca concreta o enlace de compra cerrado, lo añadiré aquí. Lo importante por ahora es el criterio: silencioso de verdad, recargable y con potencia regulable.",
+    relatedLinks: [
       {
-        name: "Standing Desk Maidesite",
-        url: "/herramientas/standing-desk-maidesite",
-        description:
-          "Otra herramienta de puesto de trabajo: no enseña por ti, pero puede hacer más sostenible pasar horas delante del ordenador."
+        label: "Standing Desk Maidesite",
+        url: "/herramientas/standing-desk-maidesite"
       },
       {
-        name: "Inphic PM6",
-        url: "/herramientas/inphic-pm6",
-        description:
-          "Otro ejemplo de compra pequeña de escritorio que no cambia la vida, pero sí hace el trabajo diario un poco más cómodo."
+        label: "Cuidarme",
+        url: "/cuidarme"
       },
       {
-        name: "Petit BamBou",
-        description:
-          "Relacionado por bienestar, aunque todavía no tiene ficha publicada en el Laborjatorio."
+        label: "Dar clases online",
+        url: "/dar-clases-online"
       }
     ],
     faqs: [
