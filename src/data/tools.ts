@@ -1802,6 +1802,192 @@ export const tools: Tool[] = [
     ]
   },
   {
+    name: "Zoom",
+    slug: "zoom",
+    title: "Zoom: por qué sigue siendo mi herramienta para dar clases online",
+    metaDescription:
+      "Zoom es la herramienta con la que doy mis clases online desde que cerró Skype. No por sus funciones avanzadas, sino por fiabilidad y familiaridad. Te cuento cómo la uso y su único pero.",
+    keywords: [
+      "Zoom",
+      "dar clases online",
+      "videoconferencia para profesores",
+      "herramienta para clases por videollamada",
+      "compartir pantalla en clase",
+      "grabar entrevistas online"
+    ],
+    tagline:
+      "La herramienta de videollamada que sigo usando para dar clases online porque es fiable y mis estudiantes ya la conocen.",
+    category: "Audio y vídeo",
+    subcategories: ["comunicación", "formación", "vídeo", "audio", "contenido"],
+    pricing: "suscripcion",
+    officialUrl: "https://zoom.us/",
+    hasAffiliate: false,
+    myUseCase:
+      "Lo uso para mis clases online individuales y grupales, para compartir pantalla y sonido, y a veces para grabar entrevistas o revisar resúmenes automáticos de reuniones.",
+    bestFor: [
+      "Profes que dan clases online y quieren una plataforma conocida por los estudiantes",
+      "Clases individuales o grupales por videollamada",
+      "Sesiones donde compartir pantalla y sonido es parte de la dinámica",
+      "Quien prioriza fiabilidad y familiaridad antes que probar la herramienta más nueva"
+    ],
+    notFor: [
+      "Quien busca una opción gratuita suficiente para clases largas o uso profesional",
+      "Quien solo quiere grabarse en solitario con la máxima calidad",
+      "Quien necesita reducir al mínimo el coste mensual",
+      "Quien prefiere experimentar con alternativas menos conocidas"
+    ],
+    pros: [
+      "Es fiable para dar clase online.",
+      "La mayoría de estudiantes ya sabe usarlo.",
+      "Compartir pantalla y sonido funciona muy bien para dinámicas de clase.",
+      "El resumen automático de reuniones puede ahorrar preparación.",
+      "También sirve para grabar entrevistas si no buscas la máxima calidad."
+    ],
+    cons: [
+      "Es una herramienta cara si necesitas funciones profesionales.",
+      "No aprovecho ni la mitad de sus funciones avanzadas.",
+      "Para grabarte en solitario hay opciones mejores como OBS.",
+      "La calidad de imagen en entrevistas grabadas en directo puede resentirse."
+    ],
+    alternatives: [],
+    rating: 4,
+    difficulty: "facil",
+    editorialVersion: "3.0",
+    status: "imprescindible",
+    updatedAt: "2026-06-25",
+    intro:
+      "¿Qué se puede decir de Zoom que no hayas escuchado ya? Poco, la verdad. Es de esas herramientas que ha usado todo el mundo, así que en lugar de contarte lo que ya sabes, voy a contarte para qué lo uso yo de verdad, qué aprovecho y qué no, y por qué sigue siendo mi sitio para dar clases. Por cierto, antes de seguir, un momento de silencio: descanse en paz, Skype.",
+    whatItDoes:
+      "Zoom es una herramienta de videoconferencia para clases, reuniones, entrevistas y sesiones online. En mi caso, su valor no está en tener mil funciones, sino en que funciona, es estable y la mayoría de estudiantes ya sabe entrar, activar el micrófono y seguir una clase sin demasiadas explicaciones.",
+    howIUseIt:
+      "Lo uso para mis clases individuales y grupales. Sobre todo comparto pantalla, a veces comparto sonido y, de vez en cuando, uso la pizarra. También he usado Zoom durante mucho tiempo para grabar entrevistas de podcast, aunque para grabarme solo prefiero OBS.",
+    teacherUseCases: [
+      "Dar clases individuales o grupales por videollamada.",
+      "Compartir pantalla para explicar materiales, webs o ejercicios.",
+      "Compartir sonido para música ambiental, podcasts o dinámicas de clase.",
+      "Usar pizarra para explicar algo sobre la marcha.",
+      "Grabar entrevistas online cuando prima la comodidad sobre la máxima calidad."
+    ],
+    honestVerdict:
+      "Zoom no es la herramienta más emocionante del mundo, y no te voy a vender lo contrario. Pero para dar clases online es justo lo que quiero: fiable, conocida por todos y sin sorpresas. No aprovecho ni la mitad de sus funciones, y aun así me quedo, porque lo que necesito que haga, lo hace bien.",
+    importantNotice:
+      "El principal pero es el precio. Es una herramienta cara y duele pagarla, pero por ahora me compensa por fiabilidad y por lo familiar que resulta para mis estudiantes.",
+    narrativeIntro: [
+      "¿Qué se puede decir de Zoom que no hayas escuchado ya? Poco, la verdad. Es de esas herramientas que ha usado todo el mundo, así que en lugar de contarte lo que ya sabes, voy a contarte para qué lo uso yo de verdad, qué aprovecho y qué no, y por qué sigue siendo mi sitio para dar clases. Por cierto, antes de seguir, un momento de silencio: descanse en paz, Skype.",
+      "Esta ficha es para profes que se preguntan: ¿con qué doy mis clases online sin complicarme y sin que se me caiga a mitad de sesión? Para mí, esa respuesta lleva tiempo siendo la misma."
+    ],
+    narrativeSections: [
+      {
+        title: "Por qué uso Zoom",
+        paragraphs: [
+          "Voy a ser claro: no uso Zoom porque tenga mil funciones espectaculares. La razón principal por la que lo utilizo es su fiabilidad y la familiaridad de los estudiantes con la plataforma.",
+          "Al final, todo el mundo ha usado Zoom al menos desde la pandemia, todo el mundo sabe más o menos cómo funciona, y eso vale oro. Cuando un estudiante entra a tu clase, no quieres perder diez minutos explicándole dónde está el botón del micrófono. Con Zoom, ese lío desaparece bastante porque ya lo conoce."
+        ],
+        actions: [
+          {
+            label: "Ir a Zoom",
+            url: "https://zoom.us/"
+          }
+        ]
+      },
+      {
+        title: "Cómo lo uso en mis clases",
+        paragraphs: [
+          "Esta es la herramienta que uso para mis clases, tanto las individuales como las grupales. Y aquí viene una confesión: cada vez han ido añadiendo funcionalidades y debo decir que no aprovecho casi nada.",
+          "Lo que sí uso constantemente es compartir pantalla, y a veces compartir sonido. Esto último me da mucho juego, porque me permite poner música ambiental, pistas para juegos de rol o escuchar un podcast durante la clase. Pequeños detalles que hacen la sesión más viva.",
+          "También uso de vez en cuando la función de compartir pizarra, que está muy bien para explicar cosas sobre la marcha. La que casi no toco es la de compartir documentos: está bien, pero como ya trabajo con Google Docs para eso, no le saco partido."
+        ]
+      },
+      {
+        title: "La función que sí me ha conquistado",
+        paragraphs: [
+          "Si hay algo que llevo un tiempo utilizando y que me gusta mucho, es el resumen automático de la reunión. Al terminar la clase, Zoom me genera un resumen que puedo enviar a los estudiantes, y eso es una maravilla para que se queden con lo importante.",
+          "Y aquí le he dado una vuelta más, porque ya me conoces. Tengo montada con inteligencia artificial una automatización para que ese resumen de la reunión me llegue por Telegram la mañana de la clase siguiente. Así llego a la sesión con todo fresco, sin tener que rebuscar nada. De este tipo de automatizaciones hablo más a fondo en la categoría de [Ahorrar tiempo](/ahorrar-tiempo)."
+        ]
+      },
+      {
+        title: "Grabar con Zoom",
+        paragraphs: [
+          "Durante mucho tiempo he utilizado Zoom para grabar entrevistas para mis podcasts, y para eso cumple. Eso sí, con un matiz honesto: como estás conectado en directo mientras grabas, la calidad de imagen se resiente un poco. Es decente, pero no es la mejor.",
+          "Por eso, según lo que vayas a grabar, igual te interesa otra cosa. Si te vas a grabar tú en solitario, la webcam o la pantalla, yo para eso llevo un tiempo usando OBS. Y para grabar la pantalla con la webcam encendida está [Kommodo](/herramientas/kommodo), aunque te aviso de una cosa: si ya estás pagando Zoom, no te merece la pena tener Kommodo solo para eso. No acumules herramientas que se pisan."
+        ]
+      },
+      {
+        title: "Precio",
+        paragraphs: [
+          "Aquí está el punto que más me escuece. Zoom es una herramienta carita, y es un poco doloroso pagarlo, no te lo voy a negar.",
+          "No te doy cifras exactas porque los planes cambian, pero que sepas que de gratis no tiene lo que yo necesito. Aun así, por ahora creo que seguiré utilizándola, porque la fiabilidad y que mis estudiantes la conozcan me compensan ese gasto."
+        ]
+      },
+      {
+        title: "Alternativas",
+        paragraphs: [
+          "Voy a serte sincero: estoy abierto a sugerencias de alternativas para videoconferencias, así que si conoces una buena, soy todo oídos.",
+          "OBS y Kommodo no son sustitutos de Zoom para dar clase, sino herramientas para grabar en casos concretos. Para la videoconferencia en sí, de momento sigo en Zoom y dejo las alternativas como pendiente antes que recomendarte algo que no uso."
+        ]
+      },
+      {
+        title: "Veredicto",
+        paragraphs: [
+          "Zoom no es la herramienta más emocionante del mundo, y no te voy a vender lo contrario. Pero para dar clases online es justo lo que quieres: fiable, conocida por todos y sin sorpresas. No aprovecho ni la mitad de sus funciones, y aun así me quedo, porque lo que hace, lo hace bien y sin fallarme.",
+          "¿La recomiendo? Para dar clases, sí, sobre todo por esa familiaridad que te ahorra explicaciones con cada estudiante. El pero es el precio, que duele. Si encuentras una alternativa igual de fiable y más barata, cuéntamelo, porque me interesa tanto como a ti.",
+          "Resumen para profes ocupados: videoconferencia fiable y que todos tus estudiantes ya conocen. Brilla en compartir pantalla y sonido, y su resumen automático de reunión es oro. Graba con calidad decente, pero para grabar en serio mejor OBS. Es cara."
+        ]
+      }
+    ],
+    metrics: [
+      { label: "Estado", value: "Imprescindible" },
+      { label: "Uso principal", value: "Clases online" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceRows: [
+      { label: "Tipo de compra", value: "Suscripción" },
+      { label: "Precio", value: "Cambiante según plan" },
+      { label: "Afiliación", value: "No" }
+    ],
+    priceNote:
+      "No doy cifras exactas porque los planes cambian. En mi caso, no me cubre lo que necesito con uso gratuito, así que lo trato como una herramienta de pago.",
+    purchaseLinks: [
+      {
+        label: "Ir a Zoom",
+        url: "https://zoom.us/"
+      }
+    ],
+    relatedLinks: [
+      {
+        label: "Kommodo",
+        url: "/herramientas/kommodo"
+      },
+      {
+        label: "OBS",
+        url: "/buscar?q=OBS"
+      },
+      {
+        label: "Google Docs",
+        url: "/buscar?q=Google%20Docs"
+      },
+      {
+        label: "Dar clases online",
+        url: "/dar-clases-online"
+      }
+    ],
+    narrativeOutro: ["Enlace oficial: zoom.us."],
+    faqs: [
+      {
+        question: "¿Por qué no uso algo gratuito o más barato?",
+        answer:
+          "Porque para clases priorizo la fiabilidad y que el estudiante ya sepa usar la herramienta, y eso Zoom me lo da. El precio me escuece, pero por ahora me compensa. Estoy abierto a alternativas mejores."
+      },
+      {
+        question: "¿Me sirve Zoom para grabar entrevistas o vídeos?",
+        answer:
+          "Para entrevistas en directo cumple, aunque la imagen pierde algo de calidad al estar conectado. Si vas a grabarte en solitario, OBS te dará mejor resultado."
+      }
+    ],
+    cta:
+      "Aquí te enseño las herramientas, lo que hago con ellas está en borjaprofe.com."
+  },
+  {
     name: "Metricool",
     slug: "metricool",
     title: "Metricool: con qu\u00e9 veo las m\u00e9tricas de mi web y programo redes sin entrar en ellas",

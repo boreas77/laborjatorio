@@ -17,6 +17,7 @@ Su única función es servir como panel de control editorial del estado de las f
 | SoundMadeSeen | Sí | 3.0 | Sí |
 | HappyScribe | Sí | 3.0 | Sí |
 | SpeakPipe | Sí | 3.0 | No |
+| Zoom | Sí | 3.0 | No |
 | Metricool | Sí | 3.0 | Sí |
 | WordPress | Sí | 3.0 | No |
 | Webempresa | Sí | 3.0 | Sí |
@@ -38,7 +39,6 @@ Su única función es servir como panel de control editorial del estado de las f
 | Notion | Sí | 3.0 | No |
 | LearnDash | No | — | No |
 | WooCommerce | No | — | No |
-| Zoom | No | — | No |
 | H5P | No | — | No |
 | OBS | No | — | No |
 | Google Drive | No | — | No |

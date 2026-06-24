@@ -226,6 +226,7 @@ export const needCategories: NeedCategory[] = [
     description: "Herramientas para explicar, grabar, acompañar y estar presente a distancia.",
     icon: "screen",
     toolSlugs: [
+      "zoom",
       "logitech-c920",
       "acer-nitro-5",
       "standing-desk-maidesite",
@@ -252,7 +253,7 @@ export const needCategories: NeedCategory[] = [
         title: "Mi experiencia: de la mosquitera a un aula cómoda",
         paragraphs: [
           "Yo no empecé en un setup bonito, ni mucho menos. Cuando arranqué daba clases a treinta y pico grados bajo una mosquitera, con el portátil encima de una maleta. Te lo cuento para que veas que se puede empezar con lo que tengas y que la comodidad llega con el tiempo. Hoy me siento muy cómodo, desde luego muchísimo más que entonces.",
-          "Por el camino he cambiado de herramientas sin dramatizar. Durante años usé Skype, hasta que un buen día anunció que cerraba. Pues bueno, no fue ningún drama, la verdad, siempre vas a tener alternativas. Me pasé a [Zoom](/buscar?q=Zoom) y a seguir. Esa es justo la actitud que defiendo: si una herramienta desaparece o deja de servirte, cambias y ya está. Por eso insisto tanto en no encariñarte con ninguna."
+          "Por el camino he cambiado de herramientas sin dramatizar. Durante años usé Skype, hasta que un buen día anunció que cerraba. Pues bueno, no fue ningún drama, la verdad, siempre vas a tener alternativas. Me pasé a [Zoom](/herramientas/zoom) y a seguir. Esa es justo la actitud que defiendo: si una herramienta desaparece o deja de servirte, cambias y ya está. Por eso insisto tanto en no encariñarte con ninguna."
         ]
       },
       {
@@ -266,7 +267,7 @@ export const needCategories: NeedCategory[] = [
         title: "Las herramientas y los objetos que uso",
         paragraphs: [
           "No te voy a detallar cada cosa, que para eso está su ficha. Te cuento mi aula por piezas.",
-          "El centro es el programa de videollamada, en mi caso [Zoom](/buscar?q=Zoom), por donde pasa la clase. Para el registro y la organización, [Notion](/herramientas/notion) y mi agenda de papel, cada uno en lo suyo. Para que tus estudiantes te vean y te oigan bien, una cámara decente como mi [Logitech C920](/herramientas/logitech-c920) y un micrófono como mi [Audio-Technica ATR2100x-USB](/buscar?q=Audio-Technica%20ATR2100x-USB), aunque de este último ya te cuento en su ficha que tengo mis peros.",
+          "El centro es el programa de videollamada, en mi caso [Zoom](/herramientas/zoom), por donde pasa la clase. Para el registro y la organización, [Notion](/herramientas/notion) y mi agenda de papel, cada uno en lo suyo. Para que tus estudiantes te vean y te oigan bien, una cámara decente como mi [Logitech C920](/herramientas/logitech-c920) y un micrófono como mi [Audio-Technica ATR2100x-USB](/buscar?q=Audio-Technica%20ATR2100x-USB), aunque de este último ya te cuento en su ficha que tengo mis peros.",
           "Y luego está el aula física, que también cuenta más de lo que crees. Uso un [escritorio elevable](/herramientas/standing-desk-maidesite) para alternar postura sin parar de dar clase, y una segunda pantalla que me permite ver bien a mis estudiantes mientras tengo los materiales delante. Para los documentos y la agenda compartida, [Google Drive](/buscar?q=Google%20Drive) y [Google Calendar](/buscar?q=Google%20Calendar). Y si en algún momento quiero que mis estudiantes me manden audios, ahí está [SpeakPipe](/herramientas/speakpipe), aunque ahora mismo lo tengo en pausa."
         ]
       },
@@ -283,7 +284,7 @@ export const needCategories: NeedCategory[] = [
           "Lo que uso para mi aula online:"
         ],
         bullets: [
-          "Videollamada, el centro de la clase: [Zoom](/buscar?q=Zoom) (Imprescindible)",
+          "Videollamada, el centro de la clase: [Zoom](/herramientas/zoom) (Imprescindible)",
           "Registro y organización: [Notion](/herramientas/notion) (Importante) y una agenda física",
           "Cámara: [Logitech C920](/herramientas/logitech-c920) (Imprescindible)",
           "Micrófono: [Audio-Technica ATR2100x-USB](/buscar?q=Audio-Technica%20ATR2100x-USB) (Imprescindible, con peros)",
